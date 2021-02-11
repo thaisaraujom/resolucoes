@@ -1,1 +1,1 @@
-# Resolucoes
+# Resolucões
