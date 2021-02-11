@@ -1,0 +1,26 @@
+.owl-carousel {
+    margin-top: 5%;
+    .item {
+        height: 10rem;
+        padding: 1rem;
+        border-radius: 17px;
+    }
+    .item h4 {
+        font: bold 22px "Montserrat" black;
+        font-family: Montserrat;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots span {
+    background: #282c35 !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 3px !important;
+    height: 3px !important;
+    background-color: #ffffff !important;
+    border: solid #282c35 !important;
+}

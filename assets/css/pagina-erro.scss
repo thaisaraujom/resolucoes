@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Arboria-Bold;
+    src: url("/assets/fonte/Arboria-Bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Arboria-Book";
+    src: url("/assets/fonte/Arboria-Book.ttf") format("truetype");
+}
+
+#erro {
+    height: 100%;
+    background: #d7d5d4;
+    .mobile {
+        display: none;
+    }
+    .overlay {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .imagem {
+        margin-top: 50px;
+    }
+    .texto {
+        color: #282c35;
+        margin-top: 30px;
+        font-family: Arboria-Bold;
+        font-size: 43px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .botao-voltar {
+        button {
+            cursor: pointer;
+            margin-top: 30px;
+            width: 104px;
+            height: 42px;
+            border: 0;
+
+            background: #f58e08;
+            border-radius: 6px;
+
+            font-family: Arboria-Book;
+            font-size: 18px;
+            line-height: 21px;
+            color: #fafafa;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #erro {
+        .imagem {
+            img {
+                width: 400px;
+                height: auto;
+            }
+        }
+        .texto {
+            font-size: 33px;
+        }
+    }
+}
+
+@media (max-width: 501px) {
+    #erro {
+        .imagem {
+            img {
+                height: 300px;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #erro {
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+        .imagem {
+            img {
+                height: 169px;
+                width: auto;
+            }
+        }
+        .texto {
+            margin-top: 15px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+    .botao-voltar {
+        button {
+            width: 111px !important;
+            height: 25.16px !important;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px !important;
+            line-height: 15px;
+            margin-top: 15px !important;
+
+            border-radius: 17px !important;
+        }
+    }
+}

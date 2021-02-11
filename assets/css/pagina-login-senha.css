@@ -1,0 +1,211 @@
+#redefinir {
+  background: #d7d5d4;
+}
+
+#redefinir .conteudo {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+  width: 85%;
+  height: 100%;
+  background: none;
+}
+
+#redefinir .conteudo .coluna1 {
+  padding: 0;
+  margin-top: 5%;
+  margin-right: 10px;
+}
+
+#redefinir .conteudo .paragrafo p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #2c313b;
+}
+
+#redefinir .conteudo .texto-redefinir {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 40px;
+  color: #2c313b;
+}
+
+#redefinir .conteudo .formulario2 .linha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 30px;
+}
+
+#redefinir .conteudo .formulario2 input {
+  border: none;
+  border-radius: 0;
+  background: none;
+  border-bottom: 1px solid #2c313b;
+  color: #2c313b;
+  line-height: 0;
+  display: block;
+  padding: 0 1% !important;
+  height: 17px !important;
+}
+
+#redefinir .conteudo .formulario2 input:focus,
+#redefinir .conteudo .formulario2 select:focus {
+  outline: 0;
+}
+
+#redefinir .conteudo .formulario2 .icon-editar {
+  margin-left: 10px;
+}
+
+#redefinir .conteudo .formulario2 label {
+  width: 130px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 112%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #2c313b;
+}
+
+#redefinir .conteudo .formulario2 .conf-senha {
+  width: 210px;
+}
+
+#redefinir .conteudo button {
+  background: #e6e1dd;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  width: 313px;
+  height: 43px;
+  color: #000000;
+  text-transform: initial;
+}
+
+#redefinir .conteudo button:hover {
+  opacity: 0.9;
+}
+
+#redefinir .conteudo .aviso p {
+  margin-top: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#redefinir .imagem-senha img {
+  margin-top: 20%;
+  width: 479px !important;
+  height: 331px !important;
+}
+
+@media (max-width: 1085px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  #redefinir .conteudo {
+    margin: 0 !important;
+  }
+  #redefinir .conteudo .coluna1 {
+    margin: 0 !important;
+    width: 85% !important;
+  }
+  #redefinir .conteudo .imagem-senha img {
+    width: 287px !important;
+    height: 199px !important;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+  #redefinir .conteudo .icon-editar {
+    width: 11px;
+    height: 11px;
+  }
+  #redefinir .conteudo button {
+    width: 213px;
+    height: 25px;
+    background: #f58e08;
+    color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    border: none;
+    border-radius: 17px;
+  }
+  #redefinir .conteudo .paragrafo p {
+    font-size: 12px;
+    line-height: 15px;
+    color: #2c313b;
+  }
+  #redefinir .conteudo .aviso p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  #redefinir .conteudo input {
+    margin-bottom: 0;
+  }
+  #redefinir .conteudo .formulario2 label {
+    font-size: 10px;
+  }
+  #redefinir .conteudo .titulo p {
+    border: none !important;
+  }
+  #redefinir .conteudo .coluna1 {
+    width: 80% !important;
+    margin: 0 !important;
+    height: 70%;
+    margin: 0 auto !important;
+  }
+  #redefinir .conteudo .imagem-senha img {
+    width: 287px !important;
+    height: 199px !important;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+  #redefinir .conteudo label {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 320px) {
+  #redefinir .conteudo .coluna1 {
+    width: 90% !important;
+    margin-top: 20px !important;
+  }
+}
+/*# sourceMappingURL=pagina-login-senha.css.map */

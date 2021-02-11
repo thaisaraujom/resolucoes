@@ -1,0 +1,50 @@
+#redefinir .conteudo .coluna1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+#redefinir .conteudo .paragrafo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  width: 80%;
+  color: rgba(44, 49, 59, 0.8);
+}
+
+#redefinir .conteudo .imagem1 img {
+  width: 350px;
+  height: 320px;
+}
+
+#redefinir .conteudo .icones {
+  margin-top: 50px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+}
+
+#redefinir .conteudo .icones img {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#redefinir .conteudo .icones img:hover {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=pagina-login-email-enviado.css.map */

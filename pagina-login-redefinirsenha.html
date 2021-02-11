@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/pagina-login-redefinirsenha.css">
+
+    <link rel="stylesheet" href="assets/css/carousel.css" />
+    <link rel="stylesheet" href="assets/css/owl-carousel.css" />
+    <link rel="stylesheet" href="assets/css/owl-theme.css" />
+
+    <title>Esqueci minha senha | Resoluções.com</title>
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="inicio-navbar navbar  fixed-top navbar-fixed-top navbar-expand-lg navbar-light bg-light">
+
+            <div>
+                <h1><a class="link-logo" href="index.html"><img class="logo" src="assets/img/index_imagens/logo.png"
+                            alt=""></a>
+                </h1>
+            </div>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="menu collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="ml-auto navbar-itens main-nav itens" id="js-menu">
+                    <li class="nav-item"><a href="index.html#inicio">Home</a></li>
+                    <li class="nav-item"><a href="index.html#quem-somos">Quem Somos</a></li>
+                    <li class="nav-item"><a href="index.html#simulacao">Simulação</a></li>
+                    <li class="nav-item"><a href="index.html#parceiros">Parceiros</a></li>
+                    <li class="nav-item"><a href="index.html#contato">Contato</a></li>
+                    <a href="pagina-login.html"><button class="botao-entrar">Entrar</button></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="redefinir">
+        <div class="container">
+            <div class="overlay">
+                <div class="conteudo">
+
+                    <div class="coluna1">
+                        <div class="titulo">
+                            <p>Esqueci minha senha</p>
+                        </div>
+
+                        <div class="paragrafo">
+                            <p>Digite seu email cadastrado para que possamos enviar o link de redefinição de senha</p>
+                        </div>
+
+                        <div class="formulario desktop">
+                            <form class="needs-validation" novalidate>
+                                <input type="email" name="email" id="Nemail" placeholder="Digite seu email">
+                                <div id="invalidfeedback" ></div>
+                            </form>
+
+                            
+                        </div>
+
+                        <div class="formulario1 mobile">
+                            <form class="needs-validation" novalidate>
+                                <input type="email" name="email" id="Nemail1" placeholder="Digite seu email">
+                                <div id="invalidfeedback1" ></div>
+                            </form>
+                        </div>
+
+                        <div class="botao-enviar desktop">
+                            <button type="submit" id="enviar1" onclick="validar()">Enviar</button>
+                        </div>
+
+                        <div class="botao-enviar mobile">
+                            <button type="submit" id="enviar1" onclick="validar1()">Enviar</button>
+                        </div>
+                    </div>
+
+                    <div class="imagem1">
+                        <img src="assets/img/pagina-login-redefinirsenha/img1.png" alt="">
+                    </div>
+
+                    <div class="imagem2 desktop">
+                        <a href="pagina-login.html"><img src="assets/img/pagina-login-redefinirsenha/icon-sair.png" alt=""></a>
+                    </div>
+
+                    <div class="imagem3 mobile">
+                        <a href="pagina-login.html"><img src="assets/img/pagina-login-redefinirsenha/arrow.png" alt=""></a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        document.getElementById("enviar").addEventListener("click", validar, false);
+
+        function validar() {
+            var $invalidfeedback = document.getElementById('invalidfeedback');
+            var $Nemail = document.getElementById('Nemail');
+
+            if ($Nemail.value.length == 0){
+                $invalidfeedback.innerHTML = '* Campo necessário para localizarmos seu email'; // formatação do texto adicionado ao id invalidfeedback
+                $('#Nemail').addClass('active'); // classe .active... é onde está a mudança na cor da borda
+            }else {
+                $invalidfeedback.innerHTML = '';
+            }
+        }
+
+        document.getElementById("enviar1").addEventListener("click", validar1, false);
+
+        function validar1() {
+            var $invalidfeedback1 = document.getElementById('invalidfeedback1');
+            var $Nemail1 = document.getElementById('Nemail1');
+
+            if ($Nemail1.value.length == 0){
+                $invalidfeedback1.innerHTML = '* Campo necessário para localizarmos seu email'; // formatação do texto adicionado ao id invalidfeedback
+                $('#Nemail1').addClass('active-mobile'); // classe .active... é onde está a mudança na cor da borda
+            }else {
+                $invalidfeedback1.innerHTML = '';
+            }
+        }
+    </script>
+</body>
+
+</html>
