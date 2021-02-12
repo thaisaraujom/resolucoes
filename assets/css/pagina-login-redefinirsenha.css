@@ -235,6 +235,7 @@ html {
     display: flex;
   }
   #redefinir .conteudo {
+    height: 100%;
     width: 100%;
     display: block;
     background: none;
@@ -259,6 +260,7 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 130px !important;
   }
   #redefinir .conteudo .titulo p {
     font-size: 15px;
@@ -359,7 +361,7 @@ html {
   }
   #redefinir .imagem3 img {
     position: absolute;
-    top: -8%;
+    top: 100px;
     left: 10.5%;
   }
   #redefinir .imagem3:hover {

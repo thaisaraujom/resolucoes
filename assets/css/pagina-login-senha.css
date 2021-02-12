@@ -202,6 +202,12 @@
   }
 }
 
+@media (max-width: 1075px) {
+  #redefinir .conteudo .titulo {
+    margin-top: 0 !important;
+  }
+}
+
 @media (max-width: 320px) {
   #redefinir .conteudo .coluna1 {
     width: 90% !important;

@@ -198,6 +198,7 @@ html {
             display: flex;
         }
         .conteudo {
+            height: 100%;
             #invalidfeedback1 {
                 font-family: Roboto;
                 font-style: normal;
@@ -220,7 +221,7 @@ html {
 
             .titulo {
                 display: flex;
-
+                margin-top: 130px !important;
                 p {
                     font-size: 15px;
                     width: 50% !important;
@@ -313,7 +314,7 @@ html {
         .imagem3 {
             img {
                 position: absolute;
-                top: -8%;
+                top: 100px;
                 left: 10.5%;
             }
         }
