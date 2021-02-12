@@ -353,7 +353,7 @@ html {
   #redefinir .imagem1 img {
     width: 240px !important;
     height: 238px !important;
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
   }
