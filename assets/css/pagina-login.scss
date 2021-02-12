@@ -1,11 +1,11 @@
 .mobile {
     display: none;
 }
+
 #login {
     background-color: #282c35;
     height: 100%;
-    width: 100%;
-
+  
     .container {
         min-height: 100vh;
         display: flex;
@@ -120,6 +120,7 @@
     #login {
         .container {
             .itens {
+                height: 75vh;
                 flex-direction: column;
                 display: flex;
 
@@ -129,7 +130,10 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
+    .desktop {
+        display: none;
+    }
     #login {
         background: #d7d5d4 !important;
         min-height: 100vh !important;
@@ -139,13 +143,6 @@
         }
         .mobile {
             display: flex;
-        }
-        .overlay {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         .container {
             background: none;
@@ -252,14 +249,11 @@
             background: none;
         }
         .itens {
-            height: 100%;
+            margin-top: 100px;
             display: flex;
-            justify-content: center;
             margin-left: auto;
             margin-right: auto;
-            .titulo {
-                margin-top: 100px;
-            }
+            height: 100% !important;
             p {
                 width: 50%;
             }

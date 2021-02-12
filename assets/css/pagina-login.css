@@ -5,7 +5,6 @@
 #login {
   background-color: #282c35;
   height: 100%;
-  width: 100%;
 }
 
 #login .container {
@@ -136,6 +135,7 @@
 
 @media (max-width: 1024px) and (min-width: 1024px) {
   #login .container .itens {
+    height: 75vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -149,7 +149,10 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
+  .desktop {
+    display: none;
+  }
   #login {
     background: #d7d5d4 !important;
     min-height: 100vh !important;
@@ -162,19 +165,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  #login .overlay {
-    height: 100%;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   #login .container {
     background: none;
@@ -301,18 +291,13 @@
     background: none;
   }
   #login .itens {
-    height: 100%;
+    margin-top: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-left: auto;
     margin-right: auto;
-  }
-  #login .itens .titulo {
-    margin-top: 100px;
+    height: 100% !important;
   }
   #login .itens p {
     width: 50%;
