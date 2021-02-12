@@ -147,7 +147,7 @@
         .container {
             background: none;
             height: 100% !important;
-
+            width: 100%;
             .formulario1 {
                 width: 100%;
                 display: inline;
@@ -241,14 +241,14 @@
             }
         }
         .overlay {
-            position: none;
-            width: 100%;
+            position: static;
+            min-width: 100% !important;
+            height: 100% !important;
             background: none;
         }
         .itens {
             display: flex;
-            margin-left: auto;
-            margin-right: auto;
+      
             height: 100% !important;
             p {
                 width: 50%;
@@ -257,6 +257,7 @@
         .conteudo {
             display: flex;
             flex-direction: column;
+            align-items: center;
         
             .desktop {
                 display: none;
@@ -265,6 +266,7 @@
             padding: 0;
             height: 100% !important;
             .titulo {
+                margin-top: 100px;
                 display: inline;
                 font-size: 15px;
                 width: 100%;

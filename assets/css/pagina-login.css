@@ -169,6 +169,7 @@
   #login .container {
     background: none;
     height: 100% !important;
+    width: 100%;
   }
   #login .container .formulario1 {
     width: 100%;
@@ -281,16 +282,15 @@
     height: 250px;
   }
   #login .overlay {
-    position: none;
-    width: 100%;
+    position: static;
+    min-width: 100% !important;
+    height: 100% !important;
     background: none;
   }
   #login .itens {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     height: 100% !important;
   }
   #login .itens p {
@@ -304,6 +304,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0;
     height: 100% !important;
   }
@@ -311,6 +314,7 @@
     display: none;
   }
   #login .conteudo .titulo {
+    margin-top: 100px;
     display: inline;
     font-size: 15px;
     width: 100%;
