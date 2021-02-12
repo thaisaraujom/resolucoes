@@ -120,7 +120,6 @@
     #login {
         .container {
             .itens {
-                height: 75vh;
                 flex-direction: column;
                 display: flex;
 
@@ -130,7 +129,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     #login {
         background: #d7d5d4 !important;
         min-height: 100vh !important;
@@ -253,12 +252,14 @@
             background: none;
         }
         .itens {
-            margin-top: 70px;
+            height: 100%;
             display: flex;
             justify-content: center;
             margin-left: auto;
             margin-right: auto;
-            height: 50vh !important;
+            .titulo {
+                margin-top: 100px;
+            }
             p {
                 width: 50%;
             }
