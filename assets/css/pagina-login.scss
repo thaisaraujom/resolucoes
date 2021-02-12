@@ -219,7 +219,8 @@
             }
             .imagem1 {
                 text-align: end;
-                width: 100%;
+                width: 100% !important;
+                height: 100%;
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-end;
@@ -255,7 +256,7 @@
         .conteudo {
             display: flex;
             flex-direction: column;
-
+            height: 100%;
             .desktop {
                 display: none;
             }

@@ -258,7 +258,8 @@
   }
   #login .container .imagem1 {
     text-align: end;
-    width: 100%;
+    width: 100% !important;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -308,6 +309,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
     padding: 0;
     min-height: 100vh !important;
   }
