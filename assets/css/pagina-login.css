@@ -168,7 +168,7 @@
   }
   #login .container {
     background: none;
-    min-height: 100vh !important;
+    height: 100% !important;
   }
   #login .container .formulario1 {
     width: 100%;
@@ -263,7 +263,6 @@
   #login .container .imagem1 {
     text-align: end;
     width: 100% !important;
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -282,16 +281,11 @@
     height: 250px;
   }
   #login .overlay {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    position: static !important;
+    position: none;
     width: 100%;
-    height: 100%;
     background: none;
   }
   #login .itens {
-    margin-top: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -310,9 +304,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 100%;
     padding: 0;
-    min-height: 100vh !important;
+    height: 100% !important;
   }
   #login .conteudo .desktop {
     display: none;
