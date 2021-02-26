@@ -93,7 +93,7 @@
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
-  #questao .enunciado .icon-correta {
+  #questao .enunciado .icon-errada {
     position: absolute;
     left: 3px;
   }
@@ -119,7 +119,7 @@
     display: -ms-flexbox;
     display: flex;
   }
-  #questao .enunciado .icon-correta {
+  #questao .enunciado .icon-errada {
     position: absolute;
     top: 219px;
     left: 5px;
