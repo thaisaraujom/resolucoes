@@ -8,6 +8,8 @@
         border-radius: 5px;
         width: 470px;
 
+        margin-bottom: 20px;
+
         form {
             padding: 31px 0 0;
             .custom-radio {
@@ -81,6 +83,9 @@
 }
 
 @media (max-width: 499px) {
+    #questao .alternativas .gabarito {
+        border: none !important;
+    }
     #questao .gabarito p {
         padding: 0px 21px 21px;
     }
@@ -91,6 +96,7 @@
         .alternativas {
             background: none !important;
             box-shadow: none !important;
+            margin-bottom: 0 !important;
         }
         .enunciado {
             .icon-errada {
@@ -101,6 +107,11 @@
         .correta {
             background: none !important;
             box-shadow: none !important;
+        }
+        .gabarito {
+            display: flex;
+
+            justify-content: flex-start !important;
         }
     }
     .alternativas form {
