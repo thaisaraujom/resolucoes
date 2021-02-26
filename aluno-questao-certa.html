@@ -10,10 +10,11 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/pagina-questao.css">
-    <link rel="stylesheet" href="assets/css/pagina-questao-certa.css">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/aluno-questao-certa.css">
 
     <link rel="stylesheet" href="assets/css/carousel.css" />
     <link rel="stylesheet" href="assets/css/owl-carousel.css" />
@@ -23,31 +24,81 @@
 </head>
 
 <body>
+
+    
     <header id="navbar">
-        <nav class="inicio-navbar navbar  fixed-top navbar-fixed-top navbar-expand-lg navbar-light bg-light">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
 
-            <div>
-                <h1><a class="link-logo" href="index.html"><img class="logo" src="assets/img/index_imagens/logo.png"
-                            alt=""></a>
-                </h1>
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                  </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="direita">
+                        <div class="texto">
+                            <a href=""><p>Sair</p></a>
+                        </div>
+        
+                        <div class="imagem">
+                            <a href=""><img src="/assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </nav>
+    </header>
 
+    
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header id="navbar-lateral"  class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="/assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+            
 
-            <div class="menu collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="ml-auto navbar-itens main-nav itens" id="js-menu">
-                    <li class="nav-item"><a href="index.html#inicio">Home</a></li>
-                    <li class="nav-item"><a href="index.html#quem-somos">Quem Somos</a></li>
-                    <li class="nav-item"><a href="index.html#simulacao">Simulação</a></li>
-                    <li class="nav-item"><a href="index.html#parceiros">Parceiros</a></li>
-                    <li class="nav-item"><a href="index.html#contato">Contato</a></li>
-                    <a href="pagina-login.html"><button class="botao-entrar">Entrar</button></a>
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href=""><img src="/assets/img/aluno-questao/home.svg" alt=""></a><a class="item-link" href="">Home</a></li>
+
+                    <li class="nav-item item-apostila"><a href=""><img src="/assets/img/aluno-questao/apostilas.svg" alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href=""><img src="/assets/img/aluno-questao/materias.svg" alt=""></a><a class="item-link" href="">Matérias</a></li>
+
+                    <li class="nav-item"><a href=""><img src="/assets/img/aluno-questao/monitores.svg" alt=""></a><a href="" class="item-link">Monitores</a></li>
+
+                    <li class="nav-item"><a href=""><img src="/assets/img/aluno-questao/perfil.svg" alt=""></a><a href="" class="item-link">Perfil</a></li>
+
+                    <li class="nav-item"><a href=""><img src="/assets/img/aluno-questao/sugerir.svg" alt=""></a><a href="" class="item-link">Seguir Questão</a></li>
+
+                    <li class="nav-item"><a href=""><img src="/assets/img/aluno-questao/anotacoes.svg" alt=""></a><a href="" class="item-link">Anotações</a></li>
+
+                    <li class="nav-item"><a href=""><img src="/assets/img/aluno-questao/simulado.svg" alt=""></a><a href="" class="item-link">Simulado</a></li>
                 </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
             </div>
+            
         </nav>
     </header>
 
@@ -140,15 +191,24 @@
                             </div>
 
                         </div>
+
+                        <div class="questao-duvida">
+                            <form action="">
+                                <label class="check"> <p>Questão com dúvida</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </form>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
     </section>
 
-
-    <div class="progress-bar-line desktop"></div>
-    <footer id="footer">
+     <footer id="footer">
         <div class="back">
 
             <div class="img-back">
@@ -184,15 +244,19 @@
 
             <div class="imagens">
                 <div class="imagem1">
-                    <a class="link-img" href=""><img src="assets/img/pagina-questao/film.svg" alt=""></a>
+                    <a class="link-img" href=""><img src="assets/img/aluno-questao/video.svg" alt=""></a>
                 </div>
 
                 <div class="imagem2">
-                    <a class="link-img" href=""><img src="assets/img/pagina-questao/chat.svg" alt=""></a>
+                    <a class="link-img" href=""><img src="assets/img/aluno-questao/anotacao.svg" alt=""></a>
                 </div>
 
                 <div class="imagem3">
-                    <a class="link-img" href=""><img src="assets/img/pagina-questao/grafico.svg" alt=""></a>
+                    <a class="link-img" href=""><img src="assets/img/aluno-questao/grafico.svg" alt=""></a>
+                </div>
+
+                <div class="imagem4">
+                    <a class="link-img" href=""><img src="assets/img/aluno-questao/whatsapp.svg" alt=""></a>
                 </div>
             </div>
 
@@ -212,9 +276,12 @@
 
     </footer>
 
+    <div class="tela hide"></div>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
 </body>
 
 </html>
