@@ -65,6 +65,10 @@ html {
   margin-top: 20px;
 }
 
+#navbar-lateral .nav-item {
+  white-space: nowrap;
+}
+
 #navbar-lateral ul {
   list-style: none;
 }
