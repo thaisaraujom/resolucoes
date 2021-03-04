@@ -55,6 +55,18 @@
   margin-bottom: 20px;
 }
 
+.modal .back, .next {
+  display: flex;
+}
+
+.modal .img-back{
+  margin-right: 10px;
+}
+
+.modal .img-next {
+  margin-left: 10px;
+}
+
 .modal form {
   width: 90%;
   height: 100%;
@@ -115,7 +127,35 @@
 }
 
 @media (max-width: 450px){
+  .desktop {
+    display: none;
+  }
   .rodape-modal .imagens {
     width: 50% !important;
+  }
+  .modal .anotacoes {
+    flex-direction: column;
+  }
+  .modal .img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+
+    background-color: #5C5E64;
+
+    height: 21px;
+
+    padding-right: 6px;
+  }
+  .modal .img img{
+    width: 15px;
+  }
+  .modal form {
+    order: 2;
+    margin-right: 0;
+  }
+  .modal .anotacoes textarea {
+    width: 90%;
   }
 }
