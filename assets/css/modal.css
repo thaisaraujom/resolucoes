@@ -24,7 +24,7 @@
 
   z-index: 999;
 
-  transition: 0.4s;
+  transition-delay: 0.3s;
 }
 
 .modal {
@@ -45,19 +45,40 @@
 
   font-family: Montserrat;
   font-style: normal;
-  padding: 2rem;
+
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
 
   color: #000000;
-
+  
   margin-bottom: 20px;
+}
+
+.modal form {
+  width: 90%;
+  height: 100%;
+
+  margin-right: 35px;
+}
+.modal .anotacoes textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+
+  background: #e6e1dd;
+  border: none;
+  padding: 1.5rem;
+}
+
+.modal .anotacoes textarea:focus {
+  border: none;
+  outline: 0;
 }
 
 .modal .img {
   display: flex;
-
+  padding: 1rem;
   align-items: flex-start;
 }
 
@@ -92,3 +113,5 @@
 .rodape-modal img {
   cursor: pointer;
 }
+
+@media (max-width: 500px)
