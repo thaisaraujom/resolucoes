@@ -243,6 +243,10 @@ html {
             width: 30%;
             display: flex;
             justify-content: space-around;
+
+            img { 
+                cursor: pointer;
+            }
         }
         select {
             margin: 0 3%;

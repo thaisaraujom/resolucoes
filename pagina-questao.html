@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/pagina-questao.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
 
     <link rel="stylesheet" href="assets/css/carousel.css" />
     <link rel="stylesheet" href="assets/css/owl-carousel.css" />
@@ -188,7 +189,8 @@
                 </div>
 
                 <div class="imagem2">
-                    <a class="link-img" href=""><img src="assets/img/pagina-questao/chat.svg" alt=""></a>
+                    <a onclick="Modal.open()" class="link-img"><img src="assets/img/pagina-questao/anotacao.svg"
+                            alt=""></a>
                 </div>
 
                 <div class="imagem3">
@@ -212,9 +214,66 @@
 
     </footer>
 
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="anotacoes">
+                <p>Primeiro, vamos ordenar os números.
+                    10, 12, 15, 17, 20, 30
+                    Agora, temos que pegar o elemento central. Mas, temos que reparar em um detalhe. Diferentemente do
+                    exemplo anterior, não temos apenas um elemento central. Nesse caso nós temos dois elementos
+                    centrais, o 15 e o 17.
+                    Quando temos dois elementos centrais, a mediana é a m édia aritmética desses dois números.
+                    (15 + 17) / 2
+                    = 32 / 2
+                    = 16
+                    Primeiro, vamos ordenar os números.
+                    10, 12, 15, 17, 20, 30
+                    Agora, temos que pegar o elemento central. Mas, temos que reparar em um detalhe. Diferentemente do
+                    exemplo anterior, não temos apenas um elemento
+                    = 16
+                    Primeiro, vamos ordenar os números.
+                    10, 12, 15, 17, 20, 30
+                    Agora, temos que pegar o elemento central. Mas, temos que reparar em um detalhe. Diferentemente do
+                    exemplo anterior, não temos apenas um elemento </p>
+
+                <div class="img">
+                    <img onclick="Modal.close()" src="./assets/img/pagina-questao/sair.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="rodape-modal">
+                <div class="back">
+
+                    <div class="img-back">
+                        <a href=""><img src="assets/img/pagina-questao/arrow-back.svg" alt=""></a>
+                    </div>
+
+                </div>
+
+                <div class="imagens">
+                    <img src="./assets/img/pagina-questao/film.svg" alt="">
+                    <img src="./assets/img/pagina-questao/anotacao.svg" alt="">
+                    <img src="./assets/img/pagina-questao/grafico.svg" alt="">
+                </div>
+
+                <div class="next">
+                    <div class="img-next">
+                        <a href=""><img src="assets/img/pagina-questao/arrow-next.svg" alt=""></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="./assets/js/modal.js"></script>
 </body>
 
 </html>

@@ -316,6 +316,10 @@ html {
       justify-content: space-around;
 }
 
+#footer .centro .imagens img {
+  cursor: pointer;
+}
+
 #footer .centro select {
   margin: 0 3%;
   padding: 0 3%;

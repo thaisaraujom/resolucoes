@@ -1,0 +1,94 @@
+/*=====================MODAL========================*/
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.4s;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+
+  z-index: 999;
+
+  transition: 0.4s;
+}
+
+.modal {
+  background: #e6e1dd;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px 5px 5px 5px;
+ 
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+
+  z-index: 1;
+}
+
+.modal .anotacoes {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: Montserrat;
+  font-style: normal;
+  padding: 2rem;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000000;
+
+  margin-bottom: 20px;
+}
+
+.modal .img {
+  display: flex;
+
+  align-items: flex-start;
+}
+
+.modal .img img {
+  cursor: pointer;
+}
+
+.modal .img img:hover {
+  opacity: 0.9;
+}
+
+.modal .anotacoes p {
+  width: 90%;
+}
+
+.rodape-modal {
+  border-top: 2px solid rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rodape-modal .imagens {
+  width: 30%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.rodape-modal img {
+  cursor: pointer;
+}
