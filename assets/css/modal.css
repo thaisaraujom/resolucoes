@@ -136,6 +136,9 @@
   .modal .anotacoes {
     flex-direction: column;
   }
+  .modal .anotacoes textarea {
+    padding: 1rem;
+  }
   .modal .img {
     display: flex;
     justify-content: flex-end;
@@ -156,6 +159,6 @@
     margin-right: 0;
   }
   .modal .anotacoes textarea {
-    width: 90%;
+    width: 100%;
   }
 }
