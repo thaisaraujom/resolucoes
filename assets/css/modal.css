@@ -15,7 +15,6 @@
   opacity: 0;
   visibility: hidden;
 
-  transition: 0.4s;
 }
 
 .modal-overlay.active {
@@ -24,7 +23,7 @@
 
   z-index: 999;
 
-  transition-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .modal {
