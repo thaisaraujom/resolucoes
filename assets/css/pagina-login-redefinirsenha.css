@@ -127,6 +127,19 @@ html {
   height: 100%;
 }
 
+#redefinir .conteudo .active {
+  border: 2px solid #fa4954;
+}
+
+#redefinir .conteudo .desativar {
+  display: none;
+}
+
+#redefinir .conteudo .active-mobile {
+  border: 1px solid #fa4954;
+  display: initial;
+}
+
 #redefinir .conteudo button {
   margin-top: 40px;
   width: 40%;
@@ -148,14 +161,6 @@ html {
   opacity: 0.95;
 }
 
-#redefinir .conteudo .active {
-  border: 2px solid #fa4954;
-}
-
-#redefinir .conteudo .active-mobile {
-  border: 1px solid #fa4954;
-}
-
 #redefinir .conteudo .imagem1 {
   width: 35%;
   display: -webkit-box;
@@ -174,7 +179,7 @@ html {
   height: 287px;
 }
 
-#redefinir .conteudo #invalidfeedback {
+#redefinir .conteudo .invalidfeedback {
   margin-top: 5px;
   font-family: Roboto;
   font-style: normal;
@@ -247,7 +252,7 @@ html {
     padding: 0;
     margin: 0;
   }
-  #redefinir .conteudo #invalidfeedback1 {
+  #redefinir .conteudo .invalidfeedback1 {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;

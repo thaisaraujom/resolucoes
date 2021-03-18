@@ -90,6 +90,23 @@ html {
         form {
             width: 100%;
             height: 100%;
+
+            
+        }
+
+        .active {
+            border: 2px solid #fa4954;
+            
+        }
+
+        .desativar {
+            display: none;
+           
+        }
+        
+        .active-mobile {
+            border: 1px solid #fa4954;
+            display: initial;
         }
 
         button {
@@ -116,14 +133,6 @@ html {
             opacity: 0.95;
         }
 
-        .active {
-            border: 2px solid #fa4954;
-        }
-
-        .active-mobile {
-            border: 1px solid #fa4954;
-        }
-
         .imagem1 {
             width: 35%;
             display: flex;
@@ -136,7 +145,7 @@ html {
             }
         }
 
-        #invalidfeedback {
+        .invalidfeedback {
             margin-top: 5px;
             font-family: Roboto;
             font-style: normal;
@@ -204,7 +213,7 @@ html {
         }
         .conteudo {
             height: 100%;
-            #invalidfeedback1 {
+            .invalidfeedback1 {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: normal;

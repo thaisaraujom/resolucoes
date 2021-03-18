@@ -67,8 +67,8 @@
 
                         <div class="formulario desktop">
                             <form class="needs-validation" novalidate>
-                                <input type="email" name="email" id="Nemail" placeholder="Digite seu email">
-                                <div id="invalidfeedback"></div>
+                                <input type="email" name="email" class="Nemail" placeholder="Digite seu email">
+                                <div class="invalidfeedback desativar">* Campo necessário para localizarmos seu email</div>
                             </form>
 
 
@@ -76,20 +76,20 @@
 
                         <div class="formulario1 mobile">
                             <form class="needs-validation" novalidate>
-                                <input type="email" name="email" id="Nemail1" placeholder="Digite seu email">
-                                <div id="invalidfeedback1"></div>
+                                <input type="email" name="email" class="Nemail1 active-mobile" placeholder="Digite seu email">
+                                <div class="invalidfeedback1 desativar">* Campo necessário para localizarmos seu email</div>
                             </form>
                         </div>
 
                         <div class="botao-enviar desktop">
                             <form action="">
-                                <button type="submit" id="enviar1" onclick="validar()">Enviar</button>
+                                <button type="submit" class="botao-enviar-d">Enviar</button>
                             </form>
                         </div>
 
                         <div class="botao-enviar mobile">
                             <form action="">
-                                <button type="submit" id="enviar1" onclick="validar1()">Enviar</button>
+                                <button type="submit" class="botao-enviar-m">Enviar</button>
                             </form>
                         </div>
                     </div>
@@ -119,34 +119,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-        document.getElementById("enviar").addEventListener("click", validar, false);
 
-        function validar() {
-            var $invalidfeedback = document.getElementById('invalidfeedback');
-            var $Nemail = document.getElementById('Nemail');
-
-            if ($Nemail.value.length == 0) {
-                $invalidfeedback.innerHTML = '* Campo necessário para localizarmos seu email'; // formatação do texto adicionado ao id invalidfeedback
-                $('#Nemail').addClass('active'); // classe .active... é onde está a mudança na cor da borda
-            } else if ($Nemail.value.length != 0) {
-                $invalidfeedback.innerHTML = '';
-            }
-        }
-
-        document.getElementById("enviar1").addEventListener("click", validar1, false);
-
-        function validar1() {
-            var $invalidfeedback1 = document.getElementById('invalidfeedback1');
-            var $Nemail1 = document.getElementById('Nemail1');
-
-            if ($Nemail1.value.length == 0) {
-                $invalidfeedback1.innerHTML = '* Campo necessário para localizarmos seu email'; // formatação do texto adicionado ao id invalidfeedback
-                $('#Nemail1').addClass('active-mobile'); // classe .active... é onde está a mudança na cor da borda
+        var botao_enviar_desktop = document.querySelector('.botao-enviar-d')
+        var botao_enviar_mobile = document.querySelector('.botao-enviar-m')
+        var invalidfeedback = document.querySelector('.invalidfeedback')
+        var invalidfeedback1 = document.querySelector('.invalidfeedback1')
+        var Nemail = document.querySelector('.Nemail');
+        var Nemail1 = document.querySelector('.Nemail');
+        
+        botao_enviar_desktop.addEventListener('click', function(){
+            if (Nemail.value.length == 0) {
+                Nemail.classList.add('active')
+                invalidfeedback.classList.remove('desativar')
             } else {
-                $invalidfeedback1.innerHTML = '';
+                Nemail.classList.remove('active')
+                invalidfeedback.classList.add('desativar')
             }
-        }
+        })
+
+        botao_enviar_mobile.addEventListener('click', function(){
+            if (Nemail1.value.length == 0) {
+                Nemail1.classList.add('active-mobile')
+                invalidfeedback1.classList.remove('desativar')
+            } else {
+                Nemail1.classList.remove('active-mobile')
+                invalidfeedback1.classList.add('desativar')
+            }
+        })
+
     </script>
+
 </body>
 
 </html>
