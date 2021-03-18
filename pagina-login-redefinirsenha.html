@@ -8,7 +8,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/index.css">
@@ -67,25 +68,29 @@
                         <div class="formulario desktop">
                             <form class="needs-validation" novalidate>
                                 <input type="email" name="email" id="Nemail" placeholder="Digite seu email">
-                                <div id="invalidfeedback" ></div>
+                                <div id="invalidfeedback"></div>
                             </form>
 
-                            
+
                         </div>
 
                         <div class="formulario1 mobile">
                             <form class="needs-validation" novalidate>
                                 <input type="email" name="email" id="Nemail1" placeholder="Digite seu email">
-                                <div id="invalidfeedback1" ></div>
+                                <div id="invalidfeedback1"></div>
                             </form>
                         </div>
 
                         <div class="botao-enviar desktop">
-                            <button type="submit" id="enviar1" onclick="validar()">Enviar</button>
+                            <form action="">
+                                <button type="submit" id="enviar1" onclick="validar()">Enviar</button>
+                            </form>
                         </div>
 
                         <div class="botao-enviar mobile">
-                            <button type="submit" id="enviar1" onclick="validar1()">Enviar</button>
+                            <form action="">
+                                <button type="submit" id="enviar1" onclick="validar1()">Enviar</button>
+                            </form>
                         </div>
                     </div>
 
@@ -94,15 +99,17 @@
                     </div>
 
                     <div class="imagem2 desktop">
-                        <a href="pagina-login.html"><img src="assets/img/pagina-login-redefinirsenha/icon-sair.png" alt=""></a>
+                        <a href="pagina-login.html"><img src="assets/img/pagina-login-redefinirsenha/icon-sair.png"
+                                alt=""></a>
                     </div>
 
                     <div class="imagem3 mobile">
-                        <a href="pagina-login.html"><img src="assets/img/pagina-login-redefinirsenha/arrow.png" alt=""></a>
+                        <a href="pagina-login.html"><img src="assets/img/pagina-login-redefinirsenha/arrow.png"
+                                alt=""></a>
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
     </section>
@@ -118,10 +125,10 @@
             var $invalidfeedback = document.getElementById('invalidfeedback');
             var $Nemail = document.getElementById('Nemail');
 
-            if ($Nemail.value.length == 0){
+            if ($Nemail.value.length == 0) {
                 $invalidfeedback.innerHTML = '* Campo necessário para localizarmos seu email'; // formatação do texto adicionado ao id invalidfeedback
                 $('#Nemail').addClass('active'); // classe .active... é onde está a mudança na cor da borda
-            }else {
+            } else if ($Nemail.value.length != 0) {
                 $invalidfeedback.innerHTML = '';
             }
         }
@@ -132,10 +139,10 @@
             var $invalidfeedback1 = document.getElementById('invalidfeedback1');
             var $Nemail1 = document.getElementById('Nemail1');
 
-            if ($Nemail1.value.length == 0){
+            if ($Nemail1.value.length == 0) {
                 $invalidfeedback1.innerHTML = '* Campo necessário para localizarmos seu email'; // formatação do texto adicionado ao id invalidfeedback
                 $('#Nemail1').addClass('active-mobile'); // classe .active... é onde está a mudança na cor da borda
-            }else {
+            } else {
                 $invalidfeedback1.innerHTML = '';
             }
         }

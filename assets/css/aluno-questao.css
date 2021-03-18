@@ -245,6 +245,10 @@ html {
   width: 100%;
 }
 
+#navbar form .fa {
+  cursor: pointer;
+}
+
 #navbar .direita {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,6 +544,10 @@ html {
 
 #footer .qtd-quest {
   margin-right: 15px;
+}
+
+#footer .imagens img {
+  cursor: pointer;
 }
 
 #footer .back,

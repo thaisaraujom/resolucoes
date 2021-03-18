@@ -1,4 +1,13 @@
 /*=====================MODAL========================*/
+.deactivate {
+  display: none;
+
+}
+
+.ativar {
+  display: initial;
+}
+
 .modal-overlay {
     width: 100%;
     height: 100%;
@@ -18,6 +27,7 @@
     transition: 0.5s;
   
   }
+
   
   .modal-overlay.active {
     opacity: 1;
@@ -162,11 +172,6 @@
         order: 2 !important;
     }
   
-    .modal .anotacao img {
-      margin-right: 0;
-  
-      margin: auto;
-    }
     
     .modal .anotacoes textarea {
       width: 100%;

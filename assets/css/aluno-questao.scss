@@ -140,6 +140,8 @@ html {
         }
         
     }
+
+
     .drop {
         display: none;
     }
@@ -202,6 +204,10 @@ html {
 
         .campo-busca input {
             width: 100%;
+        }
+
+        .fa {
+            cursor: pointer;
         }
     }
     .direita {
@@ -451,6 +457,11 @@ html {
     align-items: center;
     .qtd-quest {
         margin-right: 15px;
+    }
+    .imagens {
+        img { 
+            cursor: pointer;
+        }
     }
     .back,
     .next {
