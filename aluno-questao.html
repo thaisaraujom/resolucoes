@@ -300,7 +300,7 @@
                 <div class="anotacoes">
                     
                 
-                    <div class="editar desktop">
+                    <div class="editar desativar desktop">
                         <div class="conteudo">
                             <div class="titulo">
                                 <div class="texto">
@@ -316,12 +316,14 @@
                             </div>
     
                             <form action="">
-                                <textarea placeholder="Digite aqui" name="" rows="20" id=""></textarea>
+                                <textarea class="area-texto" placeholder="Digite aqui" name="" rows="20" disabled='true'></textarea>
+
+                                <button class="botao-enviar" type="submit">SALVAR</button>
                             </form>
     
                             <div class="final">
-                                <p>27/06/20 às 15h34</p>
-                                <img src="./assets/img/aluno-questao/editar-modal.svg" alt="">
+                                <p class="data-hora">27/06/20 às 15h34</p>
+                                <img class="editar-habilitado" src="./assets/img/aluno-questao/editar-modal.svg" alt="">
     
                                 <div class="direita">
                                     <img class="icon-seta-retornar" src="./assets/img/aluno-questao/seta-retornar.svg" alt="">
@@ -353,6 +355,11 @@
                         <img class="video-dentro" src="./assets/img/pagina-questao/film.svg" alt="">
                         <img class="anotacao-dentro-video" src="./assets/img/pagina-questao/anotacao.svg" alt="">
                         <img src="./assets/img/aluno-questao/whatsapp.svg" alt="">
+                    </div>
+
+                    <div class="ir-anotacoes">
+                        <a href=""><img class="'icon-minhasanotacoes" src="./assets/img/aluno-questao/icon-minhasanotacoes.svg" alt=""></a>
+                        <a href=""><p>Ir para minhas anotações</p></a>
                     </div>
                 </div>
     
@@ -462,6 +469,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/menu.js"></script>
     <script src="./assets/js/modal-aluno.js"></script>
+    <script src="./assets/js/modal-anotacao.js"></script>
+    <script src="./assets/js/modal-habilitar-edit.js"></script>
+
+    <script>
+       
+    </script>
 </body>
 
 </html>
