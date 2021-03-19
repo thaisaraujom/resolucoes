@@ -114,6 +114,10 @@
 .resolucao {
   display: flex;
   justify-content: center;
+  padding: 20px;
+
+  height: 55vh;
+  overflow: auto; 
 }
 
 .resolucao form {
