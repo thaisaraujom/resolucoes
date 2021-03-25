@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/pagina-questao.css">
     <link rel="stylesheet" href="assets/css/pagina-questao-errada.css">
+    <link rel="stylesheet" href="./assets/css/modal-pagina-questao.css">
+    <link rel="stylesheet" href="./assets/css/modal-pagina-questao-video.css">
 
     <link rel="stylesheet" href="assets/css/carousel.css" />
     <link rel="stylesheet" href="assets/css/owl-carousel.css" />
@@ -190,11 +192,11 @@
 
             <div class="imagens">
                 <div class="imagem1">
-                    <a class="link-img" href=""><img src="assets/img/pagina-questao/film.svg" alt=""></a>
+                    <a class="link-img video-fora"><img src="assets/img/pagina-questao/film.svg" alt=""></a>
                 </div>
 
                 <div class="imagem2">
-                    <a class="link-img" href=""><img src="assets/img/pagina-questao/anotacao.svg" alt=""></a>
+                    <a class="link-img anotacaopostada"><img src="assets/img/pagina-questao/anotacao.svg" alt=""></a>
                 </div>
 
                 <div class="imagem3">
@@ -218,9 +220,134 @@
 
     </footer>
 
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="anotacoes">
+                <div class="resolucao">
+                    <p>Primeiro, vamos ordenar os números.
+
+                        <br>
+                        10, 12, 15, 17, 20, 30
+                        <br>
+                        Agora, temos que pegar o elemento central. Mas, temos que reparar em um detalhe. Diferentemente
+                        do exemplo anterior, não temos apenas um elemento central. Nesse caso nós temos dois elementos
+                        centrais, o 15 e o 17.
+                        Quando temos dois elementos centrais, a mediana é a m édia aritmética desses dois números.
+                        <br>
+                        (15 + 17) / 2
+                        <br>
+                        = 32 / 2
+                        <br>
+                        = 16
+                        <br>
+                        Primeiro, vamos ordenar os números.
+                        <br>
+                        10, 12, 15, 17, 20, 30
+                        <br>
+                        Agora, temos que pegar o elemento central. Mas, temos que reparar em um detalhe. Diferentemente
+                        do exemplo anterior, não temos apenas um elemento
+                        <br>
+                        Primeiro, vamos ordenar os números.
+                        <br>
+                        10, 12, 15, 17, 20, 30
+                        <br>
+                        Agora, temos que pegar o elemento central. Mas, temos que reparar em um detalhe. Diferentemente
+                        do exemplo anterior, não temos apenas um elemento
+                        <br>
+
+                    </p>
+                </div>
+
+                <div class="img">
+                    <img class="sair" src="./assets/img/pagina-questao/sair.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="rodape-modal desktop">
+                <div class="back">
+
+                    <div class="img-back">
+                        <a href=""><img src="assets/img/pagina-questao/arrow-back.svg" alt=""></a>
+                    </div>
+
+                    <div class="texto-back desktop">
+                        <p>Anterior</p>
+                    </div>
+
+                </div>
+
+                <div class="imagens">
+                    <img class="video-anotacao" src="./assets/img/pagina-questao/film.svg" alt="">
+                    <img class="anotacaopostada-dentro" src="./assets/img/pagina-questao/anotacao.svg" alt="">
+                    <img src="./assets/img/pagina-questao/grafico.svg" alt="">
+                </div>
+
+                <div class="next">
+                    <div class="texto-next desktop">
+                        <p>Próxima</p>
+                    </div>
+                    <div class="img-next">
+                        <a href=""><img src="assets/img/pagina-questao/arrow-next.svg" alt=""></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Modal 2-->
+        <div class="modal1">
+            <div class="anotacoes">
+                <div class="video1">
+                    <iframe src="https://www.youtube.com/embed/aOUb814Efcs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="img-sair">
+                    <img class="sair1" src="./assets/img/pagina-questao/sair.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="rodape-modal desktop">
+                <div class="back">
+
+                    <div class="img-back">
+                        <a href=""><img src="assets/img/pagina-questao/arrow-back.svg" alt=""></a>
+                    </div>
+
+                    <div class="texto-back desktop">
+                        <p>Anterior</p>
+                    </div>
+
+                </div>
+
+                <div class="imagens">
+                    <img class="video-dentro" src="./assets/img/pagina-questao/film.svg" alt="">
+                    <img class="anotacaopostadavideo" src="./assets/img/pagina-questao/anotacao.svg" alt="">
+                    <img src="./assets/img/pagina-questao/grafico.svg" alt="">
+                </div>
+
+                <div class="next">
+                    <div class="texto-next desktop">
+                        <p>Próxima</p>
+                    </div>
+                    <div class="img-next">
+                        <a href=""><img src="assets/img/pagina-questao/arrow-next.svg" alt=""></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./assets/js/modal.js"></script>
 </body>
 
 </html>

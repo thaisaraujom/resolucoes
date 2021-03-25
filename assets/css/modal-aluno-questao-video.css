@@ -81,6 +81,10 @@
   align-items: center;
 }
 
+.icon-zoom, .icon-lixeira {
+  cursor: pointer;
+}
+
 .notacao-full {
   width: 100% !important;
 }
