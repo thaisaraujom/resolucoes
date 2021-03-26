@@ -278,7 +278,7 @@ html {
         }
         .enunciado {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             margin-top: 10px;
             .texto {
                 margin-bottom: 30px;
@@ -289,12 +289,7 @@ html {
                 font-weight: inherit;
             }
         }
-        .imagem-enunciado {
-            img {
-                width: 100%;
-            }
-        }
-
+    
         .questionamento {
             margin: 20px 0;
         }

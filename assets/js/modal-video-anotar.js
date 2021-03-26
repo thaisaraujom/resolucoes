@@ -10,6 +10,7 @@ editar_anotacao.addEventListener('click', function(){
     abrir_editar.classList.remove('desativar')
     editar_anotacao.classList.add('desativar')
     video.style.width = '60%'
+
     minhas_anotacoes.style.display = 'flex'
 })
 

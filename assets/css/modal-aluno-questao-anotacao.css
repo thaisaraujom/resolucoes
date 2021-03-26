@@ -42,12 +42,12 @@
   opacity: 0.75;
 }
 
-.modal3 .editar {
+.modal3 .editar1 {
   position: absolute;
   top: 0;
   right: 0;
   margin-top: 30px;
-  height: 350px;
+  height: 361px;
   width: 40%;
   z-index: 2;
 
@@ -61,63 +61,144 @@
   align-items: center;
 }
 
-.modal3 .editar .conteudo {
+.icon-zoom1, .icon-lixeira1 {
+  cursor: pointer;
+}
+
+.notacao-full {
+  width: 100% !important;
+}
+
+.modal3 .editar1 .conteudo {
   width: 100%;
   height: 100%;
 
   margin-bottom: 10px;
 }
 
-.modal3 .editar .titulo {
+.editar1.desativar1 {
+  position: static;
+  display: none;
+}
+
+.editar-habilitado1 {
+  cursor: pointer;
+}
+
+.editar-icone1.desativar1,
+.img2.desativar1 {
+  display: none;
+  position: static;
+}
+
+.modal3 .editar1 .titulo {
   display: flex;
   justify-content: center;
 
   width: 100%;
 }
 
-.modal3 .editar .titulo img {
+.modal3 .editar1 .titulo img {
   position: absolute;
 
   right: 0;
 }
 
-.modal3 .editar .titulo .icon-lixeira {
+.modal3 .editar1 .titulo .icon-lixeira1 {
   top: 0;
   margin: 10px 40px;
 }
 
-.modal3 .editar .titulo .icon-zoom {
+.modal3 .editar1 .titulo .icon-zoom1 {
   top: 0;
   margin: 10px 10px;
 }
 
-.modal3 .editar .titulo p {
+.modal3 .editar1 .titulo p {
   font-size: 18px;
   margin-top: 70px;
   line-height: 22px;
 }
 
-.modal3 .editar .final {
+.modal3 .editar1 .final {
   margin-top: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  font-size: 10px;
 }
 
-.modal3 .editar .final .direita {
+.modal3 .editar1 .final .direita {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 41px;
+  height: 17px;
+
+  padding: 5px;
+
+  border-radius: 6px 0px 0px 0px;
+
   display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  background: #e6e1dd;
 }
 
-.modal3 .editar .final .direita .icon-editar {
+.modal3 .editar1 form {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.modal3 .editar1 .botao-enviar1 {
+  background: #f58e08;
+  border-radius: 17px;
+  border: none;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #ffffff;
+
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.modal3 .editar1 .botao-enviar1:focus {
+  border: 0 none;
+  outline: 0;
+}
+
+
+.modal3 .editar1 .final .direita .icon-editar1 {
   margin-left: 10px;
+}
+
+.modal3 .anotacoes form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 65%;
 }
 
 .resolucao {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  width: 100%;
 
-  height: 55vh;
+  height: 361px;
   overflow: auto; 
+}
+
+.resolucao p {
+  padding: 20px;
 }
 
 .resolucao form {
@@ -156,8 +237,6 @@ textarea:focus {
   border: none;
 }
 
-
-
 .modal3 .anotacoes textarea:focus {
   border: none;
   outline: 0;
@@ -192,10 +271,12 @@ textarea:focus {
   flex-direction: column;
 }
 
-.modal3 .editar-icone {
+.modal3 .editar-icone1 {
   position: absolute;
   right: 0;
   bottom: 50px;
+
+  cursor: pointer;
   z-index: 1;
   background: #e6e1dd;
   border-radius: 6px 0px 0px 0px;
@@ -212,12 +293,21 @@ textarea:focus {
   padding: 2px;
 }
 
-.modal3 .editar-icone img {
+.modal3 .editar-icone1.desativar1 {
+  display: none;
+}
+
+.modal3 .editar-icone1 img {
   z-index: 2;
 }
 
-.modal3 .editar-icone .img2 {
+.modal3 .editar-icone1 .img2 {
   margin-left: 7px;
+  cursor: pointer;
+}
+
+.modal3 .editar-icone1 .img2:hover {
+  opacity: 0.9;
 }
 
 .modal3 .img-sair img {
@@ -253,7 +343,8 @@ textarea:focus {
   order: 1 !important;
 }
 
- .rodape-modal {
+
+ .rodape-modal1 {
   border-top: 2px solid rgba(0, 0, 0, 0.25);
   padding: 10px 20px;
 
@@ -262,14 +353,14 @@ textarea:focus {
   align-items: center;
 }
 
-.rodape-modal .imagens {
+.rodape-modal1 .imagens {
   width: 30%;
 
   display: flex;
   justify-content: space-around;
 }
 
-.rodape-modal img {
+.rodape-modal1 img {
   cursor: pointer;
 }
 
@@ -367,13 +458,69 @@ textarea:focus {
   margin-left: 7px;
 }
 
+a:visited,
+a:hover,
+a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.rodape-modal1 .ir-anotacoes1 {
+  display: none;
+}
+
+.rodape-modal1 .ir-anotacoes1 p {
+  margin-left: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+
+  font-size: 10px;
+}
+
+.rodape-modal1 .ir-anotacoes1 a {
+  text-decoration: none;
+}
+
+@media (max-width: 645px) {
+  .modal3 .editar1 .titulo p {
+    font-size: 12px;
+  }
+
+  .modal3 .editar1 .final {
+    margin-left: 5px;
+    justify-content: start !important;
+  }
+
+  .modal3 .editar1 .final {
+    margin-top: 17px;
+    justify-content: start !important;
+  }
+
+  .modal3 .editar1 .final .editar-habilitado1 {
+    margin-left: 2px;
+    width: 17px;
+  }
+
+
+  .rodape-modal1 .ir-anotacoes1 {
+    font-size: 10px;
+  }
+
+  .rodape-modal1 .ir-anotacoes1 img {
+    width: 10px !important;
+  }
+}
+
 
 
 @media (max-width: 450px) {
   .desktop {
     display: none;
   }
-  .rodape-modal .imagens {
+  .rodape-modal1 .imagens {
     width: 50% !important;
   }
 
@@ -384,7 +531,7 @@ textarea:focus {
     width: 15px;
   }
 
-  .modal2 .img-sair {
+  .modal3 .img-sair {
     height: 21px;
   }
 }

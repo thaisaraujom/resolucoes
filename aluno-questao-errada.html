@@ -380,9 +380,7 @@
         <div class="modal3">
             <div class="anotacoes">
 
-
-                <!--
-                <div class="editar desktop">
+                <div class="editar1 desativar1 desktop">
                     <div class="conteudo">
                         <div class="titulo">
                             <div class="texto">
@@ -390,33 +388,36 @@
                             </div>
 
                             <div class="icones">
-                                <img class="icon-lixeira" src="./assets/img/aluno-questao/lixeira.svg" alt="" class="lixo">
+                                <img class="icon-lixeira1" src="./assets/img/aluno-questao/lixeira.svg" alt=""
+                                    class="lixo">
 
-                                <img class="icon-zoom" src="./assets/img/aluno-questao/zoom.svg" alt="">
+                                <img class="icon-zoom1" src="./assets/img/aluno-questao/zoom.svg" alt="">
                             </div>
 
                         </div>
 
                         <form action="">
-                            <textarea placeholder="Digite aqui" name="" rows="20" id=""></textarea>
+                            <textarea class="area-texto1" placeholder="Digite aqui" name="" rows="20"
+                                disabled='true'></textarea>
+
+                            <button class="botao-enviar1" type="submit">SALVAR</button>
                         </form>
 
                         <div class="final">
-                            <p>27/06/20 às 15h34</p>
-                            <img src="./assets/img/aluno-questao/editar-modal.svg" alt="">
+                            <p class="data-hora1">27/06/20 às 15h34</p>
+                            <img class="editar-habilitado1" src="./assets/img/aluno-questao/editar-modal.svg" alt="">
 
                             <div class="direita">
-                                <img class="icon-seta-retornar" src="./assets/img/aluno-questao/seta-retornar.svg" alt="">
-                                <img class="icon-editar" src="./assets/img/aluno-questao/editar-icon.svg" alt="">
+                                <img class="icon-seta-retornar1" src="./assets/img/aluno-questao/seta-retornar.svg"
+                                    alt="">
+                                <img class="icon-editar1" src="./assets/img/aluno-questao/editar-icon.svg" alt="">
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
-            -->
 
-
-                <div class="editar-icone desktop">
+                <div class="editar-icone1 desktop">
                     <img class="img1" src="./assets/img/aluno-questao/seta.svg" alt="">
                     <img class="img2" src="./assets/img/aluno-questao/editar-icon.svg" alt="">
                 </div>
@@ -462,14 +463,23 @@
                 </p>
             </div>
 
-            <div class="rodape-modal desktop">
+            <div class="rodape-modal1 desktop">
 
                 <div class="imagens">
                     <img class="video-dentro-anot" src="./assets/img/pagina-questao/film.svg" alt="">
                     <img class="anotacao-dentro" src="./assets/img/pagina-questao/anotacao.svg" alt="">
                     <img src="./assets/img/aluno-questao/whatsapp.svg" alt="">
                 </div>
+
+                <div class="ir-anotacoes1">
+                    <a href=""><img class="'icon-minhasanotacoes"
+                            src="./assets/img/aluno-questao/icon-minhasanotacoes.svg" alt=""></a>
+                    <a href="">
+                        <p>Ir para minhas anotações</p>
+                    </a>
+                </div>
             </div>
+
 
             <div class="questao-duvida desktop">
                 <form action="">
@@ -488,6 +498,8 @@
         </div>
 
 
+
+
     </div>
 
     <div class="tela hide"></div>
@@ -498,7 +510,8 @@
     <script type="text/javascript" src="assets/js/menu.js"></script>
 
     <script src="./assets/js/modal-aluno.js"></script>
-    <script src="./assets/js/modal-anotacao.js"></script>
+    <script src="./assets/js/modal-video-anotar.js"></script>
+    <script src="./assets/js/modal-anotacao-anotar.js"></script>
     <script src="./assets/js/modal-habilitar-edit.js"></script>
 </body>
 
