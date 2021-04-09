@@ -1,0 +1,327 @@
+.expans-full{
+    display: flex !important;
+}
+
+#navbar nav {
+    width: initial !important;
+    padding: 0 !important;
+}
+
+.titulo-aluno {
+    padding: 0 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #e4e0e0;
+}
+
+#questao {
+    height: 100%;
+    background: #282c35;
+    .overlay {
+        padding-top: 90px;
+        margin: 0 10%;
+    }
+    .apostila-questoes {
+        display: flex;
+        flex-wrap: wrap;
+
+        padding-bottom: 30px;
+    }
+    .notificacoes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .titulo-direita {
+        padding: 0 30px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: bold;
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+
+        color: rgba(255, 255, 255, 0.69);
+    }
+
+    .titulo-posterior {
+        color: rgba(228, 224, 224, 0.26) !important;
+    }
+
+    .questao-apostila {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .titulo-aluno {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .caixas {
+        padding: 20px 0;
+    }
+    .assunto p,
+    .assunto {
+        width: 230px;
+    }
+    .apostilas {
+        display: flex;
+        justify-content: center;
+
+        margin: 0 20px;
+        width: 100%;
+        p {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+
+            text-align: center;
+
+            width: 100%;
+
+            color: #e4e0e0;
+        }
+    }
+    .ap-questao {
+        margin: 15px 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+
+        width: 30%;
+    }
+
+    .img-apostila {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .ultimas-resolvidas {
+        padding: 0;
+    }
+}
+
+footer {
+    padding-left: 245px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+    background: #282c35;
+
+    border-top: 2px solid #fff;
+    .texto-rodape {
+        display: flex;
+        font-family: Montserrat;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .logo-rodape {
+        display: flex;
+        align-items: center;
+        margin-left: 7px;
+        transition: transform 0.5s;
+    }
+    .p-logo {
+        margin-left: 3px;
+        font-weight: 600;
+    }
+
+    .logo-rodape:hover {
+        transform: scale(1.05);
+    }
+}
+
+a:visited,
+a:hover,
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.autoplay1 {
+    padding: 20px;
+
+    p {
+        padding: 10px;
+        background: #e4e0e0;
+        border-radius: 5px;
+        margin: 10px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #000000;
+    }
+}
+
+.caixa {
+    margin: 2px 27px 0;
+}
+
+.barra-total {
+    width: 100%;
+}
+
+.barra-completa {
+    background: #e6e1dd;
+    height: 2px;
+    display: flex;
+    background-color: #009b55;
+}
+
+.barra-concluidas {
+    visibility: hidden;
+}
+
+
+
+.bar_full {
+    margin: 10px 0;
+    height: 20px;
+    width: 100%;
+    display: none;
+}
+
+.bar_full1, .bar_full2, .bar_full3, .bar_full4, .bar_full5 {
+    display: none;
+}
+
+.bar_complete {
+    height: 20px;
+    background-color: #53d63a;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    color: #2c313b;
+}
+
+.bar_duvidas {
+    height: 20px;
+    text-align: center;
+
+    font-style: italic;
+
+    background: #f58e08;
+}
+
+.bar_erros {
+    height: 20px;
+    background: #fa4954;
+    text-align: center;
+    font-style: italic;
+    border-radius: 0 10px 10px 0;
+}
+
+.progresso {
+    background: #e4e0e0 !important;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 0px 0px;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 10px 0;
+}
+
+.informacoes {
+    width: 230px;
+}
+
+.paragrafo1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+
+    background: none;
+    color: #2c313b;
+}
+
+.paragrafo2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    background: none;
+
+    color: #787982;
+}
+
+.paragrafo3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    background: none;
+
+    color: #787982;
+}
+
+.imagem {
+    display: flex;
+    margin: 0 5px;
+    .paragrafo3 {
+        margin: 0 10px;
+    }
+}
+
+.imagem img {
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    filter: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    footer {
+        padding-left: 0 !important;
+    }
+}
+
+/*Carrossel*/
+
+.slick-dots li button:before {
+    font-size: 30px !important;
+    color: #e4e0e0 !important;
+}
