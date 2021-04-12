@@ -60,46 +60,23 @@ bar_cheia.forEach((barra) => {
 
 })
 
-var expandir_barra1 = document.querySelector('.expandir-barra1')
-var expandir_barra2 = document.querySelector('.expandir-barra2')
-var expandir_barra3 = document.querySelector('.expandir-barra3')
-var expandir_barra4 = document.querySelector('.expandir-barra4')
-var expandir_barra5 = document.querySelector('.expandir-barra5')
+/* -------------------- MOSTRAR ------------------------------ */
+const showItem = (localClick, aparecer, fazer_aparecer ) => {
+    const toggle = document.querySelector(localClick)
+    const show = document.querySelector(aparecer)
 
-var barra_full5 = document.querySelector('.bar_full5')
-var barra_full4 = document.querySelector('.bar_full4')
-var barra_full3 = document.querySelector('.bar_full3')
-var barra_full2 = document.querySelector('.bar_full2')
-var barra_full1 = document.querySelector('.bar_full1')
+    toggle.addEventListener('click', () => show.classList.toggle(fazer_aparecer))
+}
 
+const progressoBarra = () => {
+    showItem('.expandir-barra1', '.bar_full1', 'expans-full')
+    showItem('.expandir-barra2', '.bar_full2', 'expans-full')
+    showItem('.expandir-barra3', '.bar_full3', 'expans-full')
+    showItem('.expandir-barra4', '.bar_full4', 'expans-full')
+    showItem('.expandir-barra5', '.bar_full5', 'expans-full')
+}
 
-expandir_barra1.addEventListener('click', function(){
-    barra_full1.classList.toggle('expans-full')
-})
-
-expandir_barra2.addEventListener('click', function(){
-    barra_full2.classList.toggle('expans-full')
-})
-
-expandir_barra3.addEventListener('click', function(){
-    barra_full3.classList.toggle('expans-full')
-})
-
-expandir_barra4.addEventListener('click', function(){
-    barra_full4.classList.toggle('expans-full')
-})
-
-expandir_barra5.addEventListener('click', function(){
-    barra_full5.classList.toggle('expans-full')
-})
-
-// const expandir = {
-//     toggle () {
-//         const teste = document.querySelector('.bar_full')
-//         classList.toggle('expans-full')
-//     }
-// }
-
+progressoBarra()
 /* ----------FIM BARRA QUE EXPANDE----------- */
 
 
@@ -107,13 +84,9 @@ expandir_barra5.addEventListener('click', function(){
 let barra_total = document.querySelectorAll('.barra-total');
 barra_total.forEach((barra_pequena)=>{
     let total_questoes_barrinha = barra_pequena.dataset.questions
-
     let barra_verde_p = barra_pequena.querySelector('.barra-completa')
-
     let questoes_feitas = Number(barra_pequena.querySelector('.barra-concluidas').innerHTML)
-
     const tamanho_verde_p = (100 * questoes_feitas) /total_questoes_barrinha
-
     barra_verde_p.style.width = `${tamanho_verde_p}%`
 
 })

@@ -1,5 +1,9 @@
-.expans-full{
+.expans-full {
     display: flex !important;
+}
+
+.mobile {
+    display: none;
 }
 
 #navbar nav {
@@ -25,15 +29,20 @@
 #questao {
     height: 100%;
     background: #282c35;
+    .arrow-down, .arrow-up, .paragrafo-dentro {
+        visibility: hidden;
+    }
     .overlay {
         padding-top: 90px;
         margin: 0 10%;
     }
     .apostila-questoes {
-        display: flex;
+     
         flex-wrap: wrap;
 
         padding-bottom: 30px;
+
+        display: none !important; //tirar
     }
     .notificacoes {
         display: flex;
@@ -54,6 +63,7 @@
         color: rgba(255, 255, 255, 0.69);
     }
 
+
     .titulo-posterior {
         color: rgba(228, 224, 224, 0.26) !important;
     }
@@ -72,6 +82,7 @@
     }
     .caixas {
         padding: 20px 0;
+        width: 100%;
     }
     .assunto p,
     .assunto {
@@ -113,12 +124,13 @@
         justify-content: center;
 
         img {
-            width: 100%;
+            min-width: 100%;
             height: auto;
         }
     }
-    .ultimas-resolvidas {
-        padding: 0;
+
+    .mobile {
+        display: none;
     }
 }
 
@@ -202,8 +214,6 @@ a:link {
     visibility: hidden;
 }
 
-
-
 .bar_full {
     margin: 10px 0;
     height: 20px;
@@ -211,8 +221,18 @@ a:link {
     display: none;
 }
 
-.bar_full1, .bar_full2, .bar_full3, .bar_full4, .bar_full5 {
+.bar_full1,
+.bar_full2,
+.bar_full3,
+.bar_full4,
+.bar_full5 {
     display: none;
+}
+
+.bar_erros, .bar_complete, .bar_duvidas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bar_complete {
@@ -263,7 +283,10 @@ a:link {
 }
 
 .informacoes {
-    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+    width: 100%;
 }
 
 .paragrafo1 {
@@ -272,7 +295,7 @@ a:link {
     font-weight: 300;
     font-size: 12px;
     line-height: 15px;
-
+  
     background: none;
     color: #2c313b;
 }
@@ -313,15 +336,205 @@ a:link {
     cursor: pointer;
 }
 
+/*Carrossel*/
+
+.slick-dots li button:before {
+    font-size: 30px !important;
+    color: #e4e0e0 !important;
+}
+
 @media (max-width: 1024px) {
     footer {
         padding-left: 0 !important;
     }
 }
 
-/*Carrossel*/
+@media (max-width: 910px) {
+    #questao {
+        .overlay {
+            margin: 0 5%;
+        }
+    }
+}
 
-.slick-dots li button:before {
-    font-size: 30px !important;
-    color: #e4e0e0 !important;
+@media (max-width: 770px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+    .desativar {
+        display: none;
+    }
+    .overlay {
+        background: #282c35;
+    }
+    #questao {
+        background-color: #d7d5d4;
+        padding: 0;
+        .mobile {
+            display: flex;
+        }
+        .desativar {
+            display: none;
+        }
+        .overlay {
+            margin: 0;
+            padding-top: 60px !important;
+        }
+        .autoplay2.mobile {
+            display: flex !important; 
+        }
+        .arrow-down, .arrow-up {
+            cursor: pointer;
+            border-radius: 100%;
+            position: absolute;
+            background: #4D4F56;
+            padding: 1%;
+            left: 50%;
+            top: 95%;
+
+            visibility: visible;
+        }
+
+        .arrow-up {
+            top: 96%;
+        }
+
+        .ultimas-resolvidas {
+            background-color: #d7d5d4;
+        }
+        .paragrafo-ultimas {
+            color: #282C35 !important;
+            border-bottom: 2px solid #282C35 !important;
+        }
+        .notificacoes {
+            background: #4d4f56;
+            position: relative;
+        }
+
+        .reveal, .collapse {
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        .collapse {
+            display: none;
+        }
+        .reveal:hover, .collapse:hover {
+            color: #44F;
+        }
+
+        .notificacoes {
+            padding: 30px !important;
+        }
+        .notificacoes, .ultimas-resolvidas, .apostila-questoes {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .paragrafo {
+            padding: 20px 0 0 0;
+            margin-bottom: 0;
+            font-size: 12px;
+
+            color: #d7d5d4;
+        }
+        .paragrafo3 {
+            color: #AAABB3;
+        }
+        .caixa {
+            align-items: center;
+            margin: 0;
+        }
+        .informacoes,.imagem {
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 35px;
+        }
+        .imagem {
+            align-items: center;
+            flex-direction: row;
+        }
+        .titulo-aluno-ultimasR {
+            margin: 0 30px !important;
+        }
+        .paragrafo-dentro {
+            padding-top: 0 !important;
+        }
+
+        .desktop {
+            display: none;
+        }
+        .progresso {
+            border-radius: 0;
+        }
+        .titulo-aluno {
+            padding: 0;
+            font-size: 17px !important;
+            color: #d7d5d4 !important;
+            border-bottom: 2px solid #d7d5d4;
+            width: auto;
+        }
+
+        .img-apostila {
+            img {
+                width: 100px !important;
+            }
+        }
+        
+        .paragrafo-dentro {
+            visibility: visible;
+        }
+    }
+
+    footer {
+        border-top: 1px solid #C0C0C0;
+        background-color: #d7d5d4;
+
+        .texto-rodape {
+            color: #28292F;
+        }
+
+        .p-logo {
+            font-weight: 600;
+            color: #28292F;
+
+        }
+    }
+    .conteudo-carousel2 {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
+
+@media (max-width: 450px) {
+    #questao {
+        .informacoes {
+            margin: 0 5px;
+        }
+        .paragrafo1 {
+            font-size: 10px;
+        }
+        .paragrafo2 {
+            font-size: 13px;
+        }
+        .paragrafo3 {
+            font-size: 13px;
+        }
+        .imagem {
+            margin: 0 5px;
+        }
+        .bar_complete, .bar_duvidas, .bar_erros {
+            font-size: 13px;
+        }
+    }
+
+    footer {
+        .texto-rodape {
+            font-size: 12px;
+        }
+    }
 }
