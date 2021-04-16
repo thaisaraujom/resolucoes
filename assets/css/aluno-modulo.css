@@ -1,0 +1,342 @@
+body {
+  background-color: #282c35;
+}
+
+#questao .overlay {
+  margin: 0 10%;
+}
+
+#questao .icones a {
+  color: #e4e0e0;
+}
+
+#questao .modulos {
+  padding: 20px 0;
+  width: 100%;
+}
+
+#questao .modulo {
+  margin: 2px 80px 0 80px;
+}
+
+#questao .progresso {
+  background: #e4e0e0 !important;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px 5px 0px 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+}
+
+#questao .informacoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 5px;
+  width: 100%;
+}
+
+#questao .modulo-completo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+}
+
+#questao .concluido1,
+#questao .concluido2,
+#questao .concluido3,
+#questao .concluido4 {
+  visibility: hidden;
+}
+
+#questao .paragrafo1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #595b5f;
+  font-size: 15px;
+  margin: 0 0 0 10px;
+}
+
+#questao .paragrafo3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  background: none;
+  color: #787982;
+}
+
+#questao .imagem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .imagem .paragrafo3 {
+  margin: 0 10px;
+}
+
+#questao .imagem img {
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-filter: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          filter: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+#questao .barra-totalM {
+  width: 100%;
+}
+
+#questao .barra-completaM {
+  background: #e6e1dd;
+  height: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #009b55;
+}
+
+#questao .barra-concluidasM {
+  visibility: hidden;
+}
+
+footer {
+  padding-left: 245px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  background: #282c35;
+  border-top: 2px solid #fff;
+}
+
+footer .texto-rodape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+footer .logo-rodape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 7px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+footer .p-logo {
+  margin-left: 3px;
+  font-weight: 600;
+}
+
+footer .logo-rodape:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+a:visited,
+a:hover,
+a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  #questao .overlay {
+    padding: 0 !important;
+  }
+  footer {
+    padding-left: 0 !important;
+  }
+}
+
+@media (max-width: 910px) {
+  #questao .overlay {
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 770px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body {
+    background: #d7d5d4;
+  }
+  #questao {
+    padding: 0;
+  }
+  #questao .overlay {
+    margin: 0 !important;
+    padding-top: 60px !important;
+    position: relative;
+  }
+  #questao .progresso {
+    border-radius: 0;
+  }
+  #questao .modulo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  #questao .voltar {
+    padding: 40px 20px 0;
+  }
+  #questao .paragrafo3 {
+    color: #aaabb3;
+    font-size: 13px !important;
+  }
+  #questao .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #questao .seta-voltar {
+    cursor: pointer;
+  }
+  #questao .materias-drop {
+    padding: 20px 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #questao .materia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 35% !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  #questao .materia1 {
+    border-bottom: 2px solid #282c35;
+  }
+  #questao .materia-mostrar {
+    width: 35%;
+    background-color: #d7d5d4;
+  }
+  #questao .materia-mostrar:hover {
+    opacity: 0.6;
+  }
+  #questao .p-materia {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 5px;
+    color: #282c35;
+  }
+  footer {
+    border-top: 1px solid #c0c0c0;
+    background-color: #d7d5d4;
+  }
+  footer .texto-rodape {
+    color: #28292f;
+  }
+  footer .p-logo {
+    font-weight: 600;
+    color: #28292f;
+  }
+}
+
+@media (max-width: 450px) {
+  #questao .informacoes {
+    margin: 0 5px;
+  }
+  #questao .paragrafo1 {
+    font-size: 10px;
+  }
+  #questao .paragrafo3 {
+    font-size: 11px !important;
+  }
+  #questao .imagem {
+    margin: 0 5px;
+  }
+  #questao .bar_complete,
+  #questao .bar_duvidas,
+  #questao .bar_erros {
+    font-size: 13px;
+  }
+  #questao .voltar {
+    padding-top: 20px;
+  }
+  footer .texto-rodape {
+    font-size: 12px;
+  }
+}
+
+/*----------------------Dropdown----------------------*/
+.dropdown-content {
+  display: none;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/*# sourceMappingURL=aluno-modulo.css.map */
