@@ -43,10 +43,7 @@ body {
         align-items: center;
         margin: 0 10px;
     }
-    .concluido1,
-    .concluido2,
-    .concluido3,
-    .concluido4 {
+    .concluido {
         visibility: hidden;
     }
     .paragrafo1 {
@@ -97,6 +94,75 @@ body {
     .barra-concluidasM {
         visibility: hidden;
     }
+}
+
+.barra-total {
+    width: 100%;
+}
+
+.barra-completa {
+    background: #e6e1dd;
+    height: 2px;
+    display: flex;
+    background-color: #009b55;
+}
+
+.barra-concluidas {
+    visibility: hidden;
+}
+
+.bar_full {
+    margin: 10px 0;
+    height: 20px;
+    width: 100%;
+    
+    display: none;
+    align-items: center;
+}
+
+.active {
+    display: flex;
+}
+.bar_complete {
+    height: 20px;
+    background-color: #53d63a;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    color: #2c313b;
+}
+
+.bar_duvidas {
+    height: 20px;
+    text-align: center;
+
+    font-style: italic;
+
+    background: #f58e08;
+}
+
+.bar_erros {
+    height: 20px;
+    background: #fa4954;
+    text-align: center;
+    font-style: italic;
+    border-radius: 0;
+}
+
+.bar_branco {
+    height: 20px;
+    background: #D7D5D4;
+    border: 1px solid #000000;
+    text-align: center;
+    font-style: italic;
+
+    border-radius: 0 10px 10px 0;
 }
 
 footer {
@@ -242,6 +308,14 @@ a:link {
         .p-logo {
             font-weight: 600;
             color: #28292f;
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    #questao {
+        .voltar {
+            padding: 0;
         }
     }
 }

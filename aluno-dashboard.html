@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="assets/css/aluno-questao.css">
     <link rel="stylesheet" href="assets/css/aluno-dashboard.css">
 
+    <link rel="stylesheet" href="./assets/css/glider.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/slick-dashboard.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/slick-dashboard-theme.css">
 
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <title>Dashboard | Resoluções.com</title>
 </head>
@@ -156,39 +157,60 @@
                         <p class="paragrafo-titulo">Questões da Apostila</p>
                     </div>
 
-                    <div class="autoplay2 mobile">
-                        <div class="conteudo-carousel2">
-                            <div class="img-apostila">
-                                <img src="./assets/img/aluno-dashboard/apostila-exemplo.svg" alt="">
+                    <section class="container-swiper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="">
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Calandreli</p>
+                                        </div>
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Lorem ipsum</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Calandreli</p>
+                                        </div>
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Lorem ipsum</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="">
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Calandreli</p>
+                                        </div>
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Lorem ipsum</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Calandreli</p>
+                                        </div>
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Lorem ipsum</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p>Matemática - Calandreli</p>
-                        </div>
-                        <div class="conteudo-carousel2">
-                            <div class="img-apostila">
-                                <img src="./assets/img/aluno-dashboard/apostila-exemplo.svg" alt="">
-                            </div>
-                            <p>Matemática - Calandreli</p>
-                        </div>
-                        <div class="conteudo-carousel2">
-                            <div class="img-apostila">
-                                <img src="./assets/img/aluno-dashboard/apostila-exemplo.svg" alt="">
-                            </div>
-                            <p>Matemática - Calandreli</p>
-                        </div>
-                        <div class="conteudo-carousel2">
-                            <div class="img-apostila">
-                                <img src="./assets/img/aluno-dashboard/apostila-exemplo.svg" alt="">
-                            </div>
-                            <p>Matemática - Calandreli</p>
-                        </div>
-                        <div class="conteudo-carousel2">
-                            <div class="img-apostila">
-                                <img src="./assets/img/aluno-dashboard/apostila-exemplo.svg" alt="">
-                            </div>
-                            <p>Matemática - Calandreli</p>
                         </div>
 
-                    </div>
+                        <div class="button-next"></div>
+                        <div class="button-prev"></div>
+                    </section>
+                   
 
                     <div class="apostilas desktop">
                         <div class="questao-apostila">
@@ -433,7 +455,25 @@
     <script type="text/javascript" src="assets/js/barras-progresso.js"></script>
     <script type="text/javascript" src="assets/js/expandir-texto.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        let swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev'
+            }
+        }, {})
+    </script>
 
     <script type="text/javascript">
         $('.autoplay1').slick({
@@ -444,17 +484,7 @@
             arrows: true,
             dots: true
         });
-
-
-        $('.autoplay2').slick({
-            dots: false,
-            infinite: true,
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            slidePerRows: 4,
-            rows: 2,
-            arrows: true,
-        });
+        
 
     </script>
 </body>

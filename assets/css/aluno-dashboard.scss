@@ -11,6 +11,11 @@
     padding: 0 !important;
 }
 
+.container-swiper {
+    opacity: 0;
+    display: none;
+}
+
 .titulo-aluno {
     padding: 0 30px;
     font-family: Montserrat;
@@ -29,7 +34,9 @@
 #questao {
     height: 100%;
     background: #282c35;
-    .arrow-down, .arrow-up, .paragrafo-dentro {
+    .arrow-down,
+    .arrow-up,
+    .paragrafo-dentro {
         visibility: hidden;
     }
     .overlay {
@@ -37,12 +44,11 @@
         margin: 0 10%;
     }
     .apostila-questoes {
-     
         flex-wrap: wrap;
 
         padding-bottom: 30px;
 
-        display: none !important; //tirar
+        display: flex;
     }
     .notificacoes {
         display: flex;
@@ -62,7 +68,6 @@
 
         color: rgba(255, 255, 255, 0.69);
     }
-
 
     .titulo-posterior {
         color: rgba(228, 224, 224, 0.26) !important;
@@ -221,15 +226,9 @@ a:link {
     display: none;
 }
 
-.bar_full1,
-.bar_full2,
-.bar_full3,
-.bar_full4,
-.bar_full5 {
-    display: none;
-}
-
-.bar_erros, .bar_complete, .bar_duvidas {
+.bar_erros,
+.bar_complete,
+.bar_duvidas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,7 +294,7 @@ a:link {
     font-weight: 300;
     font-size: 12px;
     line-height: 15px;
-  
+
     background: none;
     color: #2c313b;
 }
@@ -370,6 +369,78 @@ a:link {
     .overlay {
         background: #282c35;
     }
+
+    .container-swiper {
+        margin: 0 auto;
+        opacity: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        border: 2px solid #fff;
+        max-width: 700px;
+    }
+    .swiper-container {
+  
+        height: 100%;
+        max-width: 600px;
+    }
+    .swiper-slide {
+        padding: 20px 0;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-slide > div > div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 20px;
+        margin-right: 9px;
+        text-align: center;     
+    }
+    .swiper-slide > div > div > p {
+        margin: 10px;
+        color: #fff;
+           
+
+        line-height: 16px;
+        font-size: 12px;
+    }
+
+    .button-next {
+        position: absolute;
+        top: 45%;
+        right: 0;
+        width: 36px;
+        height: 36px;
+
+        cursor: pointer;
+        background-image: url("/assets/img/aluno-dashboard/mobile-next.svg");
+        transform: translate3d(30px, 0, 0);
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 1px solid #fff;
+    }
+    .button-prev {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        width: 36px;
+        height: 36px;
+
+        cursor: pointer;
+        background-image: url("/assets/img/aluno-dashboard/mobile-next.svg");
+        transform: rotate(180deg) translate3d(30px, 0, 0);
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 1px solid #fff;
+    }
     #questao {
         background-color: #d7d5d4;
         padding: 0;
@@ -384,13 +455,14 @@ a:link {
             padding-top: 60px !important;
         }
         .autoplay2.mobile {
-            display: flex !important; 
+            display: flex !important;
         }
-        .arrow-down, .arrow-up {
+        .arrow-down,
+        .arrow-up {
             cursor: pointer;
             border-radius: 100%;
             position: absolute;
-            background: #4D4F56;
+            background: #4d4f56;
             padding: 1%;
             left: 50%;
             top: 95%;
@@ -406,32 +478,41 @@ a:link {
             background-color: #d7d5d4;
         }
         .paragrafo-ultimas {
-            color: #282C35 !important;
-            border-bottom: 2px solid #282C35 !important;
+            color: #282c35 !important;
+            border-bottom: 2px solid #282c35 !important;
+            margin: 20px 0 0 0;
         }
         .notificacoes {
             background: #4d4f56;
             position: relative;
         }
 
-        .reveal, .collapse {
+        .reveal,
+        .collapse {
             cursor: pointer;
             margin: 5px 0;
         }
         .collapse {
             display: none;
         }
-        .reveal:hover, .collapse:hover {
-            color: #44F;
+        .reveal:hover,
+        .collapse:hover {
+            color: #44f;
         }
 
         .notificacoes {
             padding: 30px !important;
         }
-        .notificacoes, .ultimas-resolvidas, .apostila-questoes {
+        .notificacoes,
+        .ultimas-resolvidas,
+        .apostila-questoes {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+        }
+
+        .apostila-questoes .titulo-aluno {
+            margin: 30px !important;
         }
 
         .paragrafo {
@@ -442,13 +523,14 @@ a:link {
             color: #d7d5d4;
         }
         .paragrafo3 {
-            color: #AAABB3;
+            color: #aaabb3;
         }
         .caixa {
             align-items: center;
             margin: 0;
         }
-        .informacoes,.imagem {
+        .informacoes,
+        .imagem {
             flex-direction: column;
             justify-content: center;
             margin: 0 35px;
@@ -483,7 +565,7 @@ a:link {
                 width: 100px !important;
             }
         }
-        
+
         .paragrafo-dentro {
             visibility: visible;
         }
@@ -495,23 +577,34 @@ a:link {
     }
 
     footer {
-        border-top: 1px solid #C0C0C0;
+        border-top: 1px solid #c0c0c0;
         background-color: #d7d5d4;
 
         .texto-rodape {
-            color: #28292F;
+            color: #28292f;
         }
 
         .p-logo {
             font-weight: 600;
-            color: #28292F;
-
+            color: #28292f;
         }
     }
     .conteudo-carousel2 {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
+    }
+}
+
+@media ( max-width: 700px) {
+    .container-swiper {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-swiper {
+        max-width: 300px;
     }
 }
 
@@ -532,7 +625,9 @@ a:link {
         .imagem {
             margin: 0 5px;
         }
-        .bar_complete, .bar_duvidas, .bar_erros {
+        .bar_complete,
+        .bar_duvidas,
+        .bar_erros {
             font-size: 13px;
         }
     }
@@ -541,5 +636,11 @@ a:link {
         .texto-rodape {
             font-size: 12px;
         }
+    }
+}
+
+@media (max-width: 321px) {
+    .container-swiper {
+        max-width: 285px !important;
     }
 }

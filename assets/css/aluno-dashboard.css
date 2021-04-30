@@ -13,6 +13,11 @@
   padding: 0 !important;
 }
 
+.container-swiper {
+  opacity: 0;
+  display: none;
+}
+
 .titulo-aluno {
   padding: 0 30px;
   font-family: Montserrat;
@@ -35,7 +40,9 @@
   background: #282c35;
 }
 
-#questao .arrow-down, #questao .arrow-up, #questao .paragrafo-dentro {
+#questao .arrow-down,
+#questao .arrow-up,
+#questao .paragrafo-dentro {
   visibility: hidden;
 }
 
@@ -48,7 +55,9 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 30px;
-  display: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #questao .notificacoes {
@@ -277,15 +286,9 @@ a:link {
   display: none;
 }
 
-.bar_full1,
-.bar_full2,
-.bar_full3,
-.bar_full4,
-.bar_full5 {
-  display: none;
-}
-
-.bar_erros, .bar_complete, .bar_duvidas {
+.bar_erros,
+.bar_complete,
+.bar_duvidas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,6 +438,90 @@ a:link {
   .overlay {
     background: #282c35;
   }
+  .container-swiper {
+    margin: 0 auto;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    border: 2px solid #fff;
+    max-width: 700px;
+  }
+  .swiper-container {
+    height: 100%;
+    max-width: 600px;
+  }
+  .swiper-slide {
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .swiper-slide > div > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    margin-right: 9px;
+    text-align: center;
+  }
+  .swiper-slide > div > div > p {
+    margin: 10px;
+    color: #fff;
+    line-height: 16px;
+    font-size: 12px;
+  }
+  .button-next {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background-image: url("/assets/img/aluno-dashboard/mobile-next.svg");
+    -webkit-transform: translate3d(30px, 0, 0);
+            transform: translate3d(30px, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #fff;
+  }
+  .button-prev {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background-image: url("/assets/img/aluno-dashboard/mobile-next.svg");
+    -webkit-transform: rotate(180deg) translate3d(30px, 0, 0);
+            transform: rotate(180deg) translate3d(30px, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #fff;
+  }
   #questao {
     background-color: #d7d5d4;
     padding: 0;
@@ -456,11 +543,12 @@ a:link {
     display: -ms-flexbox !important;
     display: flex !important;
   }
-  #questao .arrow-down, #questao .arrow-up {
+  #questao .arrow-down,
+  #questao .arrow-up {
     cursor: pointer;
     border-radius: 100%;
     position: absolute;
-    background: #4D4F56;
+    background: #4d4f56;
     padding: 1%;
     left: 50%;
     top: 95%;
@@ -473,27 +561,32 @@ a:link {
     background-color: #d7d5d4;
   }
   #questao .paragrafo-ultimas {
-    color: #282C35 !important;
-    border-bottom: 2px solid #282C35 !important;
+    color: #282c35 !important;
+    border-bottom: 2px solid #282c35 !important;
+    margin: 20px 0 0 0;
   }
   #questao .notificacoes {
     background: #4d4f56;
     position: relative;
   }
-  #questao .reveal, #questao .collapse {
+  #questao .reveal,
+  #questao .collapse {
     cursor: pointer;
     margin: 5px 0;
   }
   #questao .collapse {
     display: none;
   }
-  #questao .reveal:hover, #questao .collapse:hover {
-    color: #44F;
+  #questao .reveal:hover,
+  #questao .collapse:hover {
+    color: #44f;
   }
   #questao .notificacoes {
     padding: 30px !important;
   }
-  #questao .notificacoes, #questao .ultimas-resolvidas, #questao .apostila-questoes {
+  #questao .notificacoes,
+  #questao .ultimas-resolvidas,
+  #questao .apostila-questoes {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -505,6 +598,9 @@ a:link {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  #questao .apostila-questoes .titulo-aluno {
+    margin: 30px !important;
+  }
   #questao .paragrafo {
     padding: 20px 0 0 0;
     margin-bottom: 0;
@@ -512,7 +608,7 @@ a:link {
     color: #d7d5d4;
   }
   #questao .paragrafo3 {
-    color: #AAABB3;
+    color: #aaabb3;
   }
   #questao .caixa {
     -webkit-box-align: center;
@@ -520,7 +616,8 @@ a:link {
             align-items: center;
     margin: 0;
   }
-  #questao .informacoes, #questao .imagem {
+  #questao .informacoes,
+  #questao .imagem {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -569,15 +666,15 @@ a:link {
     margin: 10px;
   }
   footer {
-    border-top: 1px solid #C0C0C0;
+    border-top: 1px solid #c0c0c0;
     background-color: #d7d5d4;
   }
   footer .texto-rodape {
-    color: #28292F;
+    color: #28292f;
   }
   footer .p-logo {
     font-weight: 600;
-    color: #28292F;
+    color: #28292f;
   }
   .conteudo-carousel2 {
     display: -webkit-box !important;
@@ -590,6 +687,18 @@ a:link {
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-swiper {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-swiper {
+    max-width: 300px;
   }
 }
 
@@ -609,11 +718,19 @@ a:link {
   #questao .imagem {
     margin: 0 5px;
   }
-  #questao .bar_complete, #questao .bar_duvidas, #questao .bar_erros {
+  #questao .bar_complete,
+  #questao .bar_duvidas,
+  #questao .bar_erros {
     font-size: 13px;
   }
   footer .texto-rodape {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 321px) {
+  .container-swiper {
+    max-width: 285px !important;
   }
 }
 /*# sourceMappingURL=aluno-dashboard.css.map */
