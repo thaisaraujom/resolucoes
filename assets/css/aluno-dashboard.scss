@@ -378,8 +378,6 @@ a:link {
         justify-content: center;
         align-items: center;
         position: relative;
-
-        border: 2px solid #fff;
         max-width: 700px;
     }
     .swiper-container {
@@ -421,11 +419,10 @@ a:link {
         height: 36px;
 
         cursor: pointer;
-        background-image: url("/assets/img/aluno-dashboard/mobile-next.svg");
+        background-image: url("assets/img/aluno-dashboard/mobile-next.svg");
         transform: translate3d(30px, 0, 0);
         background-repeat: no-repeat;
         background-position: center center;
-        border: 1px solid #fff;
     }
     .button-prev {
         position: absolute;
@@ -435,11 +432,10 @@ a:link {
         height: 36px;
 
         cursor: pointer;
-        background-image: url("/assets/img/aluno-dashboard/mobile-next.svg");
+        background-image: url("assets/img/aluno-dashboard/mobile-next.svg");
         transform: rotate(180deg) translate3d(30px, 0, 0);
         background-repeat: no-repeat;
         background-position: center center;
-        border: 1px solid #fff;
     }
     #questao {
         background-color: #d7d5d4;
