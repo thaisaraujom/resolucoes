@@ -1,84 +1,3 @@
-
-// var bar_cheiaM = document.querySelectorAll('.bar_full');
-//  bar_cheiaM.forEach((barraM) => {
-//      var total_questoesM = barraM.dataset.questions
-//      console.log(total_questoesM); 
-//      let barra_verdeM = barraM.querySelector('.bar_complete')
-//      let barra_vermelhaM = barraM.querySelector('.bar_erros')
-//      let barra_duvidasM = barraM.querySelector('.bar_duvidas')
-//      var barra_brancoM = barraM.querySelector('.bar_branco')
-
-
-//      let questoes_completasM = barraM.querySelector('.complete_questions').innerHTML
-//      let questoes_erradasM = barraM.querySelector('.erros_questions').innerHTML
-//      let questoes_duvidasM = barraM.querySelector('.duvidas_questions').innerHTML
-//      let questoes_brancoM = barraM.querySelector('.white_questions').innerHTML
-
-
-//      const tamanho_vermelhoM = (100 * questoes_erradasM) / total_questoesM;
-//      const tamanho_verdeM = (100 * questoes_completasM) / total_questoesM;
-//      const tamanho_duvidasM = (100 * questoes_duvidasM) / total_questoesM;
-//      const tamanho_brancasM = (100 * questoes_brancoM) / total_questoesM;
-
-//      barra_duvidas.style.width = `${tamanho_duvidasM}%`
-//      barra_vermelha.style.width = `${tamanho_vermelhoM}%`
-//      barra_verde.style.width = `${tamanho_verdeM}%`
-//      barra_branco.style.width = `${tamanho_brancasM}%`
-
-
-//     /* ------- ARREDONDANDO SE SÓ ESTIVEREM ELAS -----*/
-
-//     if (barra_duvidas.style.width == `${100}%`) {
-//         barra_duvidas.style.borderRadius = '10px 10px 10px 10px'
-//         barra_vermelha.style.display = 'none'
-//         barra_verde.style.display = 'none'
-//         barra_branco.style.display = 'none'
-
-//     }
-
-//     if (barra_vermelha.style.width == `${100}%`) {
-//         barra_vermelha.style.borderRadius = '10px 10px 10px 10px'
-//         barra_duvidas.style.display = 'none'
-//         barra_verde.style.display = 'none'
-//         barra_branco.style.display = 'none'
-//     }
-
-//     if (barra_verde.style.width == `${100}%`) {
-//         barra_verde.style.borderRadius = '10px 10px 10px 10px'
-//         barra_duvidas.style.display = 'none'
-//         barra_vermelha.style.display = 'none'
-//         barra_branco.style.display = 'none'
-//     }
-
-//     if (barra_branco.style.width == `${100}%`) {
-//         barra_branco.style.borderRadius = '10px 10px 10px 10px'
-//         barra_duvidas.style.display = 'none'
-//         barra_vermelha.style.display = 'none'
-//         barra_verde.style.display = 'none'
-//     }
-
-//     /* ------- ARREDONDANDO BARRA LARANJA DE CADA LADO ( L + VERM OU VER + L) -----*/
-
-//     if (barra_vermelha.style.width == `${0}%` && (barra_verde.style.width !=`${100}%` && barra_verde.style.width != `${0}%`) && (barra_duvidas.style.width != `${100}%` && barra_duvidas.style.width != `${0}%`)) {
-//         barra_duvidas.style.borderRadius = '0 10px 10px 0'
-//         barra_vermelha.style.display = 'none'
-//     }
-
-//     if (barra_verde.style.width == `${0}%` && (barra_vermelha.style.width !=`${100}%` && barra_vermelha.style.width != `${0}%`) && (barra_duvidas.style.width != `${100}%` && barra_duvidas.style.width != `${0}%`)) {
-//         barra_duvidas.style.borderRadius = '10px 0 0 10px'
-//         barra_verde.style.display = 'none'
-//     }
-
-//     /* ------- DESAPARECER BARRA LARANJA SE ELA FOR 0 -----*/
-//     if (barra_duvidas.style.width == `${0}%`) {
-//         barra_duvidas.style.display = 'none'
-//     }
-
-// })
-
-
-
-
 /* -------------------- BARRA PEQUENA ------------------------------ */
 const moduloCompleto = (barraTotal, barraCompleta, barraConcluida) => {
     let barra_total = document.querySelectorAll(barraTotal)
@@ -101,15 +20,29 @@ progresso()
 
 /* -------------------- FIM BARRA PEQUENA ------------------------------ */
 
-/* --------------------------- APARECER CHECK E BARRA GRANDE ------------------------------ */
+/* --------------------------- APARECER CHECK E BARRA GRANDE - MÓDULO ------------------------------ */
 const modulo = document.querySelectorAll('.modulo')
+var contador = 0
 
 modulo.forEach((modulo_single) => {
     //expandir barra
     var botao = modulo_single.querySelector('.expandir-barraM')
+    var botao1 = modulo_single.querySelector('.expandir-barraMd')
     var barraG = modulo_single.querySelector('.bar_full')
+    var cap = modulo_single.querySelector('.capitulos')
+
     botao.addEventListener('click', function () {
-        barraG.classList.toggle('active')
+        barraG.classList.add('active')
+        cap.classList.add('ativar')
+        botao.style.display = 'none'
+        botao1.style.display = 'flex'
+        
+    })
+    botao1.addEventListener('click', function () {
+        barraG.classList.remove('active')
+        cap.classList.remove('ativar')
+        botao1.style.display = 'none'
+        botao.style.display = 'flex'
     })
 
     //ajustar o check
@@ -149,35 +82,265 @@ modulo.forEach((modulo_single) => {
     barra_verdeG.style.width = `${tamanho_verdeG}%`
     barra_brancoG.style.width = `${tamanho_brancasG}%`
 
-    //     /* ------- ARREDONDANDO SE SÓ ESTIVEREM ELAS -----*/
+    /* ------- ARREDONDANDO SE SÓ ESTIVEREM ELAS -----*/
 
-    // if (barra_duvidasG.style.width == `${100}%`) {
-    //     barra_duvidasG.style.borderRadius = '10px 10px 10px 10px'
-    //     barra_vermelhaG.style.display = 'none'
-    //     barra_verdeG.style.display = 'none'
-    //     barra_brancoG.style.display = 'none'
+    if (barra_duvidasG.style.width == `${100}%`) {
+        barra_duvidasG.style.borderRadius = '10px 10px 10px 10px'
+        barra_vermelhaG.style.display = 'none'
+        barra_verdeG.style.display = 'none'
+        barra_brancoG.style.display = 'none'
 
-    // }
+    }
 
-    // if (barra_vermelhaG.style.width == `${100}%`) {
-    //     barra_vermelhaG.style.borderRadius = '10px 10px 10px 10px'
-    //     barra_duvidasG.style.display = 'none'
-    //     barra_verdeG.style.display = 'none'
-    //     barra_brancoG.style.display = 'none'
-    // }
+    if (barra_vermelhaG.style.width == `${100}%`) {
+        barra_vermelhaG.style.borderRadius = '10px 10px 10px 10px'
+        barra_duvidasG.style.display = 'none'
+        barra_verdeG.style.display = 'none'
+        barra_brancoG.style.display = 'none'
+    }
 
-    // if (barra_verdeG.style.width == `${100}%`) {
-    //     barra_verdeG.style.borderRadius = '10px 10px 10px 10px'
-    //     barra_duvidasG.style.display = 'none'
-    //     barra_vermelhaG.style.display = 'none'
-    //     barra_brancoG.style.display = 'none'
-    // }
+    if (barra_verdeG.style.width == `${100}%`) {
+        barra_verdeG.style.borderRadius = '10px 10px 10px 10px'
+        barra_duvidasG.style.display = 'none'
+        barra_vermelhaG.style.display = 'none'
+        barra_brancoG.style.display = 'none'
+    }
 
-    // if (barra_brancoG.style.width == `${100}%`) {
-    //     barra_brancoG.style.borderRadius = '10px 10px 10px 10px'
-    //     barra_duvidasG.style.display = 'none'
-    //     barra_vermelhaG.style.display = 'none'
-    //     barra_verdeG.style.display = 'none'
-    // }
+    if (barra_brancoG.style.width == `${100}%`) {
+        barra_brancoG.style.borderRadius = '10px 10px 10px 10px'
+        barra_duvidasG.style.display = 'none'
+        barra_vermelhaG.style.display = 'none'
+        barra_verdeG.style.display = 'none'
+    }
+
+    /* ------- 3 BARRAS -----*/
+
+    /* ------------------- VERDE + LARANJA + VERMELHA ---------------------- */
+    if (barra_brancoG.style.width == `${0}%`) {
+        barra_vermelhaG.style.borderRadius = '0px 10px 10px 0px'
+        barra_brancoG.style.display = 'none'
+    }
+
+    /* ------------------- LARANJA + VERMELHA + BRANCO ---------------------- */
+    if (barra_verdeG.style.width == `${0}%`) {
+        barra_duvidasG.style.borderRadius = '10px 0px 0px 10px'
+        barra_verdeG.style.display = 'none'
+    }
+
+    /* ------- 2 BARRAS -----*/
+
+    /* -------------------  VERDE + LARANJA + VERMELHA + BRANCA ---------------------- */
+
+    /* VERDE + LARANJA */
+    if (barra_vermelhaG.style.width == `${0}%` && barra_brancoG.style.width == `${0}%`) {
+        barra_duvidasG.style.borderRadius = '0px 10px 10px 0px'
+        barra_vermelhaG.style.display = 'none'
+        barra_brancoG.style.display = 'none'
+    }
+
+
+    /* VERDE + VERMELHA */
+    if (barra_duvidasG.style.width == `${0}%` && barra_brancoG.style.width == `${0}%`) {
+        barra_vermelhaG.style.borderRadius = '0px 10px 10px 0px'
+        barra_duvidasG.style.display = 'none'
+        barra_brancoG.style.display = 'none'
+    }
+
+
+    /* VERDE + BRANCA */
+    if (barra_duvidasG.style.width == `${0}%` && barra_vermelhaG.style.width == `${0}%`) {
+        barra_brancoG.style.borderRadius = '0px 10px 10px 0px'
+        barra_duvidasG.style.display = 'none'
+        barra_vermelhaG.style.display = 'none'
+    }
+
+
+
+    /* LARANJA + VERMELHA */
+
+    if (barra_brancoG.style.width == `${0}%` && barra_verdeG.style.width == `${0}%`) {
+        barra_vermelhaG.style.borderRadius = '0px 10px 10px 0px'
+        barra_verdeG.style.display = 'none'
+        barra_brancoG.style.display = 'none'
+    }
+
+    /* LARANJA + BRANCA */
+
+    if (barra_vermelhaG.style.width == `${0}%` && barra_verdeG.style.width == `${0}%`) {
+        barra_brancoG.style.borderRadius = '0px 10px 10px 0px'
+        barra_verdeG.style.display = 'none'
+        barra_vermelhaG.style.display = 'none'
+    }
+
+
+    /* VERMELHA + BRANCA */
+
+    if (barra_duvidasG.style.width == `${0}%` && barra_verdeG.style.width == `${0}%`) {
+        barra_brancoG.style.borderRadius = '0px 10px 10px 0px'
+        barra_duvidasG.style.display = 'none'
+        barra_verdeG.style.display = 'none'
+    }
 
 })
+
+/* --------------------------- APARECER CHECK E BARRA GRANDE - CAPÍTULO ------------------------------ */
+const capitulo = document.querySelectorAll('.capitulo')
+
+capitulo.forEach((capitulo_single) => {
+    //expandir barra
+
+    var botaoSeta = capitulo_single.querySelector('.expandir-barraC')
+    var botaoSeta1 = capitulo_single.querySelector('.expandir-barraCd')
+    var barraGrande = capitulo_single.querySelector('.bar_full')
+
+    botaoSeta.addEventListener('click', function () {
+        barraGrande.classList.toggle('active')
+        botaoSeta.style.display = 'none'
+        botaoSeta1.style.display = 'flex'
+    })
+
+    botaoSeta1.addEventListener('click', function () {
+        barraGrande.classList.toggle('active')
+        botaoSeta.style.display = 'flex'
+        botaoSeta1.style.display = 'none'
+    })
+
+    //ajustar o check
+    var barra_todaC = capitulo_single.querySelector('.barra-totalM')
+    
+    var aparecerC = capitulo_single.querySelector('.concluidoC')
+
+    var total_questoes_barrinhaC = barra_todaC.dataset.questions
+    var questoesFeitasC = Number(capitulo_single.querySelector('.barra-concluidasM').innerHTML)
+    const tamanho_barrinhaC = (100 * questoesFeitasC) / total_questoes_barrinhaC
+
+    if (tamanho_barrinhaC == 100) {
+        aparecerC.style.visibility = 'visible'
+    }
+
+    //barra grande
+
+    var barra_todaGC = capitulo_single.querySelector('.bar_full')
+    var barra_verdeGC = capitulo_single.querySelector('.bar_complete')
+    var barra_vermelhaGC = capitulo_single.querySelector('.bar_erros')
+    var barra_duvidasGC = capitulo_single.querySelector('.bar_duvidas')
+    var barra_brancoGC = capitulo_single.querySelector('.bar_branco')
+
+    var total_questoesGC = barra_todaGC.dataset.questions
+
+    var questoes_completasGC = barra_todaGC.querySelector('.complete_questions').innerHTML
+    var questoes_erradasGC = barra_todaGC.querySelector('.erros_questions').innerHTML
+    var questoes_duvidasGC = barra_todaGC.querySelector('.duvidas_questions').innerHTML
+    var questoes_brancoGC = barra_todaGC.querySelector('.white_questions').innerHTML
+
+    const tamanho_vermelhoGC = (100 * questoes_erradasGC) / total_questoesGC;
+    const tamanho_verdeGC = (100 * questoes_completasGC) / total_questoesGC;
+    const tamanho_duvidasGC = (100 * questoes_duvidasGC) / total_questoesGC;
+    const tamanho_brancasGC = (100 * questoes_brancoGC) / total_questoesGC;
+
+    barra_duvidasGC.style.width = `${tamanho_duvidasGC}%`
+    barra_vermelhaGC.style.width = `${tamanho_vermelhoGC}%`
+    barra_verdeGC.style.width = `${tamanho_verdeGC}%`
+    barra_brancoGC.style.width = `${tamanho_brancasGC}%`
+
+    /* ------- ARREDONDANDO SE SÓ ESTIVEREM ELAS -----*/
+
+    if (barra_duvidasGC.style.width == `${100}%`) {
+        barra_duvidasGC.style.borderRadius = '10px 10px 10px 10px'
+        barra_vermelhaGC.style.display = 'none'
+        barra_verdeGC.style.display = 'none'
+        barra_brancoGC.style.display = 'none'
+
+    }
+
+    if (barra_vermelhaGC.style.width == `${100}%`) {
+        barra_vermelhaGC.style.borderRadius = '10px 10px 10px 10px'
+        barra_duvidasGC.style.display = 'none'
+        barra_verdeGC.style.display = 'none'
+        barra_brancoGC.style.display = 'none'
+    }
+
+    if (barra_verdeGC.style.width == `${100}%`) {
+        barra_verdeGC.style.borderRadius = '10px 10px 10px 10px'
+        barra_duvidasGC.style.display = 'none'
+        barra_vermelhaGC.style.display = 'none'
+        barra_brancoGC.style.display = 'none'
+    }
+
+    if (barra_brancoGC.style.width == `${100}%`) {
+        barra_brancoGC.style.borderRadius = '10px 10px 10px 10px'
+        barra_duvidasGC.style.display = 'none'
+        barra_vermelhaGC.style.display = 'none'
+        barra_verdeGC.style.display = 'none'
+    }
+
+    /* ------- 3 BARRAS -----*/
+
+    /* ------------------- VERDE + LARANJA + VERMELHA ---------------------- */
+    if (barra_brancoGC.style.width == `${0}%`) {
+        barra_vermelhaGC.style.borderRadius = '0px 10px 10px 0px'
+        barra_brancoGC.style.display = 'none'
+    }
+
+    /* ------------------- LARANJA + VERMELHA + BRANCO ---------------------- */
+    if (barra_verdeGC.style.width == `${0}%`) {
+        barra_duvidasGC.style.borderRadius = '10px 0px 0px 10px'
+        barra_verdeGC.style.display = 'none'
+    }
+
+    /* ------- 2 BARRAS -----*/
+
+    /* -------------------  VERDE + LARANJA + VERMELHA + BRANCA ---------------------- */
+
+    /* VERDE + LARANJA */
+    if (barra_vermelhaGC.style.width == `${0}%` && barra_brancoGC.style.width == `${0}%`) {
+        barra_duvidasGC.style.borderRadius = '0px 10px 10px 0px'
+        barra_vermelhaGC.style.display = 'none'
+        barra_brancoGC.style.display = 'none'
+    }
+
+
+    /* VERDE + VERMELHA */
+    if (barra_duvidasGC.style.width == `${0}%` && barra_brancoGC.style.width == `${0}%`) {
+        barra_vermelhaGC.style.borderRadius = '0px 10px 10px 0px'
+        barra_duvidasGC.style.display = 'none'
+        barra_brancoGC.style.display = 'none'
+    }
+
+
+    /* VERDE + BRANCA */
+    if (barra_duvidasGC.style.width == `${0}%` && barra_vermelhaGC.style.width == `${0}%`) {
+        barra_brancoGC.style.borderRadius = '0px 10px 10px 0px'
+        barra_duvidasGC.style.display = 'none'
+        barra_vermelhaGC.style.display = 'none'
+    }
+
+
+
+    /* LARANJA + VERMELHA */
+
+    if (barra_brancoGC.style.width == `${0}%` && barra_verdeGC.style.width == `${0}%`) {
+        barra_vermelhaGC.style.borderRadius = '0px 10px 10px 0px'
+        barra_verdeGC.style.display = 'none'
+        barra_brancoGC.style.display = 'none'
+    }
+
+    /* LARANJA + BRANCA */
+
+    if (barra_vermelhaGC.style.width == `${0}%` && barra_verdeGC.style.width == `${0}%`) {
+        barra_brancoGC.style.borderRadius = '0px 10px 10px 0px'
+        barra_verdeGC.style.display = 'none'
+        barra_vermelhaGC.style.display = 'none'
+    }
+
+
+    /* VERMELHA + BRANCA */
+
+    if (barra_duvidasGC.style.width == `${0}%` && barra_verdeG.style.width == `${0}%`) {
+        barra_brancoGC.style.borderRadius = '0px 10px 10px 0px'
+        barra_duvidasGC.style.display = 'none'
+        barra_verdeGC.style.display = 'none'
+    }
+
+})
+

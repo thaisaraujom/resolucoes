@@ -19,6 +19,13 @@ body {
   margin: 2px 80px 0 80px;
 }
 
+#questao .borda {
+  border-bottom: 3px solid #f58e08;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
 #questao .progresso {
   background: #e4e0e0 !important;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -34,6 +41,104 @@ body {
   padding: 10px 0;
 }
 
+#questao .progressoC {
+  background: #e4e0e0;
+}
+
+#questao .capitulos {
+  display: none;
+}
+
+#questao .capitulos.ativar {
+  display: block;
+}
+
+#questao .capitulo-esquerda img {
+  width: 14px;
+  height: 13px;
+}
+
+#questao .expandir-barraCd, #questao .expandir-barraMd {
+  display: none;
+}
+
+#questao .capitulo-direita img {
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+
+#questao .capitulo-esquerda,
+#questao .capitulo-direita {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .dentro-capitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+  padding: 7px 0;
+}
+
+#questao .num-capitulo {
+  margin: 0 10px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: center;
+  color: #2c313b;
+}
+
+#questao .titulo-capitulo {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: center;
+  color: #000000;
+  margin: 0 10px;
+}
+
+#questao .qtd-capitulo {
+  margin: 0 5px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: center;
+  color: #787982;
+}
+
 #questao .informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,6 +148,54 @@ body {
           justify-content: space-between;
   margin: 0 5px;
   width: 100%;
+}
+
+#questao .carousel {
+  margin: 20px 40px !important;
+  background: #e4e0e0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #92949a;
+}
+
+#questao .materia {
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+#questao .materia-selecionada {
+  color: #41454e;
+}
+
+#questao .paragrafo-materia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#questao .paragrafo-materia::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background: #0095db;
+  top: 90%;
+  left: 20px;
+  width: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  margin-top: 2px;
 }
 
 #questao .modulo-completo {
@@ -55,7 +208,7 @@ body {
   margin: 0 10px;
 }
 
-#questao .concluido {
+#questao .concluido, #questao .concluidoC {
   visibility: hidden;
 }
 
@@ -76,6 +229,10 @@ body {
   line-height: 18px;
   background: none;
   color: #787982;
+}
+
+#questao .nao-selecionada {
+  display: none;
 }
 
 #questao .imagem {
@@ -139,9 +296,6 @@ body {
   height: 20px;
   width: 100%;
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .active {
@@ -181,10 +335,9 @@ body {
 }
 
 .bar_branco {
-  height: 20px;
-  background: #D7D5D4;
-  border: 1px solid #000000;
+  border: 1px solid #d7d5d4;
   text-align: center;
+  color: #e4e0e0;
   font-style: italic;
   border-radius: 0 10px 10px 0;
 }
@@ -275,6 +428,10 @@ a:link {
   body {
     background: #d7d5d4;
   }
+  .bar_branco {
+    color: #2c313b;
+    border-color: #2c313b;
+  }
   #questao {
     padding: 0;
   }
@@ -303,6 +460,9 @@ a:link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  #questao .desktop {
+    display: none;
   }
   #questao .seta-voltar {
     cursor: pointer;
@@ -348,6 +508,10 @@ a:link {
     line-height: 18px;
     margin: 5px;
     color: #282c35;
+  }
+  #questao .bar_full {
+    width: 95%;
+    margin: 10px;
   }
   footer {
     border-top: 1px solid #c0c0c0;
