@@ -7,7 +7,7 @@ body {
 }
 
 #questao .modulos {
-  padding: 20px 0;
+  padding: 10px 0;
   width: 100%;
 }
 
@@ -315,6 +315,15 @@ body {
   color: #ffffff;
   font-weight: 400;
   color: #2c313b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bar_duvidas {
@@ -322,6 +331,15 @@ body {
   text-align: center;
   font-style: italic;
   background: #f58e08;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bar_erros {
@@ -330,14 +348,33 @@ body {
   text-align: center;
   font-style: italic;
   border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bar_branco {
+  height: 18px;
   border: 1px solid #d7d5d4;
   text-align: center;
   color: #e4e0e0;
   font-style: italic;
   border-radius: 0 10px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer {
@@ -438,6 +475,11 @@ a:link {
     padding-top: 60px !important;
     position: relative;
   }
+  #questao .num-capitulo, #questao .titulo-capitulo {
+    color: #000000;
+    font-size: 9px;
+    text-align: left;
+  }
   #questao .progresso {
     border-radius: 0;
   }
@@ -475,6 +517,9 @@ a:link {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #questao .qtd-capitulo {
+    color: #aaabb3;
+  }
   #questao .materia {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -511,6 +556,12 @@ a:link {
     width: 95%;
     margin: 10px;
   }
+  #questao .bar_duvidas, #questao .bar_erros, #questao .bar_complete, #questao .bar_branco {
+    height: 15px;
+  }
+  #questao .bar_branco {
+    height: 13px;
+  }
   footer {
     border-top: 1px solid #c0c0c0;
     background-color: #d7d5d4;
@@ -545,8 +596,8 @@ a:link {
   }
   #questao .bar_complete,
   #questao .bar_duvidas,
-  #questao .bar_erros {
-    font-size: 13px;
+  #questao .bar_erros, #questao .bar_branco {
+    font-size: 12px;
   }
   #questao .voltar {
     padding-top: 20px;

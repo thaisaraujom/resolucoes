@@ -36,7 +36,7 @@ modulo.forEach((modulo_single) => {
         cap.classList.add('ativar')
         botao.style.display = 'none'
         botao1.style.display = 'flex'
-        
+
     })
     botao1.addEventListener('click', function () {
         barraG.classList.remove('active')
@@ -116,13 +116,13 @@ modulo.forEach((modulo_single) => {
     /* ------- 3 BARRAS -----*/
 
     /* ------------------- VERDE + LARANJA + VERMELHA ---------------------- */
-    if (barra_brancoG.style.width == `${0}%`) {
+    if (barra_brancoG.style.width == `${0}%` && barra_vermelhaG.style.width != `${100}%`) {
         barra_vermelhaG.style.borderRadius = '0px 10px 10px 0px'
         barra_brancoG.style.display = 'none'
     }
 
     /* ------------------- LARANJA + VERMELHA + BRANCO ---------------------- */
-    if (barra_verdeG.style.width == `${0}%`) {
+    if (barra_verdeG.style.width == `${0}%` &&  barra_duvidasG.style.width != `${100}%`) {
         barra_duvidasG.style.borderRadius = '10px 0px 0px 10px'
         barra_verdeG.style.display = 'none'
     }
@@ -132,7 +132,7 @@ modulo.forEach((modulo_single) => {
     /* -------------------  VERDE + LARANJA + VERMELHA + BRANCA ---------------------- */
 
     /* VERDE + LARANJA */
-    if (barra_vermelhaG.style.width == `${0}%` && barra_brancoG.style.width == `${0}%`) {
+    if (barra_vermelhaG.style.width == `${0}%` && barra_brancoG.style.width == `${0}%` &&  barra_duvidasG.style.width != `${100}%`) {
         barra_duvidasG.style.borderRadius = '0px 10px 10px 0px'
         barra_vermelhaG.style.display = 'none'
         barra_brancoG.style.display = 'none'
@@ -140,7 +140,7 @@ modulo.forEach((modulo_single) => {
 
 
     /* VERDE + VERMELHA */
-    if (barra_duvidasG.style.width == `${0}%` && barra_brancoG.style.width == `${0}%`) {
+    if (barra_duvidasG.style.width == `${0}%` && barra_brancoG.style.width == `${0}%` && barra_vermelhaG.style.width != `${100}%`) {
         barra_vermelhaG.style.borderRadius = '0px 10px 10px 0px'
         barra_duvidasG.style.display = 'none'
         barra_brancoG.style.display = 'none'
@@ -148,7 +148,7 @@ modulo.forEach((modulo_single) => {
 
 
     /* VERDE + BRANCA */
-    if (barra_duvidasG.style.width == `${0}%` && barra_vermelhaG.style.width == `${0}%`) {
+    if (barra_duvidasG.style.width == `${0}%` && barra_vermelhaG.style.width == `${0}%` &&  barra_brancoG.style.width != `${100}%`) {
         barra_brancoG.style.borderRadius = '0px 10px 10px 0px'
         barra_duvidasG.style.display = 'none'
         barra_vermelhaG.style.display = 'none'
@@ -158,7 +158,7 @@ modulo.forEach((modulo_single) => {
 
     /* LARANJA + VERMELHA */
 
-    if (barra_brancoG.style.width == `${0}%` && barra_verdeG.style.width == `${0}%`) {
+    if (barra_brancoG.style.width == `${0}%` && barra_verdeG.style.width == `${0}%` && barra_vermelhaG.style.width != `${100}%`) {
         barra_vermelhaG.style.borderRadius = '0px 10px 10px 0px'
         barra_verdeG.style.display = 'none'
         barra_brancoG.style.display = 'none'
@@ -166,7 +166,7 @@ modulo.forEach((modulo_single) => {
 
     /* LARANJA + BRANCA */
 
-    if (barra_vermelhaG.style.width == `${0}%` && barra_verdeG.style.width == `${0}%`) {
+    if (barra_vermelhaG.style.width == `${0}%` && barra_verdeG.style.width == `${0}%` &&  barra_brancoG.style.width != `${100}%`) {
         barra_brancoG.style.borderRadius = '0px 10px 10px 0px'
         barra_verdeG.style.display = 'none'
         barra_vermelhaG.style.display = 'none'
@@ -175,7 +175,7 @@ modulo.forEach((modulo_single) => {
 
     /* VERMELHA + BRANCA */
 
-    if (barra_duvidasG.style.width == `${0}%` && barra_verdeG.style.width == `${0}%`) {
+    if (barra_duvidasG.style.width == `${0}%` && barra_verdeG.style.width == `${0}%` &&  barra_brancoG.style.width != `${100}%`) {
         barra_brancoG.style.borderRadius = '0px 10px 10px 0px'
         barra_duvidasG.style.display = 'none'
         barra_verdeG.style.display = 'none'
@@ -207,7 +207,7 @@ capitulo.forEach((capitulo_single) => {
 
     //ajustar o check
     var barra_todaC = capitulo_single.querySelector('.barra-totalM')
-    
+
     var aparecerC = capitulo_single.querySelector('.concluidoC')
 
     var total_questoes_barrinhaC = barra_todaC.dataset.questions
@@ -277,13 +277,13 @@ capitulo.forEach((capitulo_single) => {
     /* ------- 3 BARRAS -----*/
 
     /* ------------------- VERDE + LARANJA + VERMELHA ---------------------- */
-    if (barra_brancoGC.style.width == `${0}%`) {
+    if (barra_brancoGC.style.width == `${0}%` && barra_vermelhaGC.style.width != `${100}%`) {
         barra_vermelhaGC.style.borderRadius = '0px 10px 10px 0px'
         barra_brancoGC.style.display = 'none'
     }
 
     /* ------------------- LARANJA + VERMELHA + BRANCO ---------------------- */
-    if (barra_verdeGC.style.width == `${0}%`) {
+    if (barra_verdeGC.style.width == `${0}%` && barra_duvidasGC.style.width != `${100}%`) {
         barra_duvidasGC.style.borderRadius = '10px 0px 0px 10px'
         barra_verdeGC.style.display = 'none'
     }
@@ -293,7 +293,7 @@ capitulo.forEach((capitulo_single) => {
     /* -------------------  VERDE + LARANJA + VERMELHA + BRANCA ---------------------- */
 
     /* VERDE + LARANJA */
-    if (barra_vermelhaGC.style.width == `${0}%` && barra_brancoGC.style.width == `${0}%`) {
+    if (barra_vermelhaGC.style.width == `${0}%` && barra_brancoGC.style.width == `${0}%` && barra_duvidasGC.style.width != `${100}%`) {
         barra_duvidasGC.style.borderRadius = '0px 10px 10px 0px'
         barra_vermelhaGC.style.display = 'none'
         barra_brancoGC.style.display = 'none'
@@ -301,7 +301,7 @@ capitulo.forEach((capitulo_single) => {
 
 
     /* VERDE + VERMELHA */
-    if (barra_duvidasGC.style.width == `${0}%` && barra_brancoGC.style.width == `${0}%`) {
+    if (barra_duvidasGC.style.width == `${0}%` && barra_brancoGC.style.width == `${0}%` && barra_vermelhaGC.style.width != `${100}%`) {
         barra_vermelhaGC.style.borderRadius = '0px 10px 10px 0px'
         barra_duvidasGC.style.display = 'none'
         barra_brancoGC.style.display = 'none'
@@ -309,7 +309,7 @@ capitulo.forEach((capitulo_single) => {
 
 
     /* VERDE + BRANCA */
-    if (barra_duvidasGC.style.width == `${0}%` && barra_vermelhaGC.style.width == `${0}%`) {
+    if (barra_duvidasGC.style.width == `${0}%` && barra_vermelhaGC.style.width == `${0}%` && barra_brancoGC.style.width != `${100}%`) {
         barra_brancoGC.style.borderRadius = '0px 10px 10px 0px'
         barra_duvidasGC.style.display = 'none'
         barra_vermelhaGC.style.display = 'none'
@@ -319,7 +319,7 @@ capitulo.forEach((capitulo_single) => {
 
     /* LARANJA + VERMELHA */
 
-    if (barra_brancoGC.style.width == `${0}%` && barra_verdeGC.style.width == `${0}%`) {
+    if (barra_brancoGC.style.width == `${0}%` && barra_verdeGC.style.width == `${0}%` && barra_vermelhaGC.style.width != `${100}%`) {
         barra_vermelhaGC.style.borderRadius = '0px 10px 10px 0px'
         barra_verdeGC.style.display = 'none'
         barra_brancoGC.style.display = 'none'
@@ -327,7 +327,7 @@ capitulo.forEach((capitulo_single) => {
 
     /* LARANJA + BRANCA */
 
-    if (barra_vermelhaGC.style.width == `${0}%` && barra_verdeGC.style.width == `${0}%`) {
+    if (barra_vermelhaGC.style.width == `${0}%` && barra_verdeGC.style.width == `${0}%` && barra_brancoGC.style.width != `${100}%`) {
         barra_brancoGC.style.borderRadius = '0px 10px 10px 0px'
         barra_verdeGC.style.display = 'none'
         barra_vermelhaGC.style.display = 'none'
@@ -336,7 +336,7 @@ capitulo.forEach((capitulo_single) => {
 
     /* VERMELHA + BRANCA */
 
-    if (barra_duvidasGC.style.width == `${0}%` && barra_verdeG.style.width == `${0}%`) {
+    if (barra_duvidasGC.style.width == `${0}%` && barra_verdeGC.style.width == `${0}%` && barra_brancoGC.style.width != `${100}%`) {
         barra_brancoGC.style.borderRadius = '0px 10px 10px 0px'
         barra_duvidasGC.style.display = 'none'
         barra_verdeGC.style.display = 'none'

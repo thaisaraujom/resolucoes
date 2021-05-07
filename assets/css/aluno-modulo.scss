@@ -9,7 +9,7 @@ body {
         }
     }
     .modulos {
-        padding: 20px 0;
+        padding: 10px 0;
         width: 100%;
     }
     .modulo {
@@ -252,6 +252,10 @@ body {
     color: #ffffff;
     font-weight: 400;
     color: #2c313b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bar_duvidas {
@@ -261,6 +265,10 @@ body {
     font-style: italic;
 
     background: #f58e08;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bar_erros {
@@ -269,15 +277,24 @@ body {
     text-align: center;
     font-style: italic;
     border-radius: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bar_branco {
+    height: 18px;
     border: 1px solid #d7d5d4;
     text-align: center;
     color: #e4e0e0;
     font-style: italic;
 
     border-radius: 0 10px 10px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -362,6 +379,11 @@ a:link {
             padding-top: 60px !important;
             position: relative;
         }
+        .num-capitulo, .titulo-capitulo {
+            color: #000000;
+            font-size: 9px;
+            text-align: left;
+        }
         .progresso {
             border-radius: 0;
         }
@@ -389,6 +411,9 @@ a:link {
             padding: 20px 20px 0;
             display: flex;
             flex-direction: column;
+        }
+        .qtd-capitulo {
+            color: #aaabb3;
         }
         .materia {
             display: flex;
@@ -421,6 +446,12 @@ a:link {
         .bar_full {
             width: 95%;
             margin: 10px;
+        }
+        .bar_duvidas, .bar_erros, .bar_complete, .bar_branco {
+            height: 15px;
+        }
+        .bar_branco {
+            height: 13px;
         }
     }
     footer {
@@ -462,8 +493,8 @@ a:link {
         }
         .bar_complete,
         .bar_duvidas,
-        .bar_erros {
-            font-size: 13px;
+        .bar_erros, .bar_branco {
+            font-size: 12px;
         }
         .voltar {
             padding-top: 20px;
