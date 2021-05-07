@@ -121,6 +121,11 @@ modulo.forEach((modulo_single) => {
         barra_brancoG.style.display = 'none'
     }
 
+    /* ------------------- VERDE + BRANCA + VERMELHA ---------------------- */
+    if (barra_duvidasG.style.width == `${0}%` && barra_vermelhaG.style.width != `${100}%` && barra_brancoG.style.width != `${100}%` && barra_verdeG.style.width != `${100}%` ) {
+        barra_duvidasG.style.display = 'none'
+    }
+
     /* ------------------- LARANJA + VERMELHA + BRANCO ---------------------- */
     if (barra_verdeG.style.width == `${0}%` &&  barra_duvidasG.style.width != `${100}%`) {
         barra_duvidasG.style.borderRadius = '10px 0px 0px 10px'
@@ -280,6 +285,11 @@ capitulo.forEach((capitulo_single) => {
     if (barra_brancoGC.style.width == `${0}%` && barra_vermelhaGC.style.width != `${100}%`) {
         barra_vermelhaGC.style.borderRadius = '0px 10px 10px 0px'
         barra_brancoGC.style.display = 'none'
+    }
+
+       /* ------------------- VERDE + BRANCA + VERMELHA ---------------------- */
+       if (barra_duvidasGC.style.width == `${0}%` && barra_vermelhaGC.style.width != `${100}%` && barra_brancoGC.style.width != `${100}%` && barra_verdeGC.style.width != `${100}%` ) {
+        barra_duvidasGC.style.display = 'none'
     }
 
     /* ------------------- LARANJA + VERMELHA + BRANCO ---------------------- */

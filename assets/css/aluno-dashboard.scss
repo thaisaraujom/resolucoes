@@ -630,7 +630,15 @@ a:link {
 
     footer {
         .texto-rodape {
-            font-size: 12px;
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    footer {
+        .p-logo {
+            font-size: 15px;
         }
     }
 }
