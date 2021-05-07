@@ -557,12 +557,6 @@ a:link {
     width: 95%;
     margin: 10px;
   }
-  #questao .bar_duvidas, #questao .bar_erros, #questao .bar_complete, #questao .bar_branco {
-    height: 15px;
-  }
-  #questao .bar_branco {
-    height: 13px;
-  }
   footer {
     border-top: 1px solid #c0c0c0;
     background-color: #d7d5d4;
