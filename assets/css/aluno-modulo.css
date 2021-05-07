@@ -2,10 +2,6 @@ body {
   background-color: #282c35;
 }
 
-#questao .overlay {
-  margin: 0 10%;
-}
-
 #questao .icones a {
   color: #e4e0e0;
 }
@@ -16,7 +12,7 @@ body {
 }
 
 #questao .modulo {
-  margin: 2px 80px 0 80px;
+  margin: 2px 150px 0 150px;
 }
 
 #questao .borda {
@@ -43,6 +39,8 @@ body {
 
 #questao .progressoC {
   background: #e4e0e0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #questao .capitulos {
@@ -151,7 +149,7 @@ body {
 }
 
 #questao .carousel {
-  margin: 20px 40px !important;
+  margin: 30px 60px !important;
   background: #e4e0e0;
   border-radius: 5px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
