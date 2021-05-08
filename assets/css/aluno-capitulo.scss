@@ -69,6 +69,15 @@ body {
 
         height: 600px;
     }
+    .questoes-todas::-webkit-scrollbar {
+        width: 5px;
+        background-color: #F0F0F0;
+    }
+    .questoes-todas::-webkit-scrollbar-thumb {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+        border-radius: 20px;
+        background-color: #f0f0f05e;
+    }
     .questoes-capitulo {
         margin: 40px 0 0 0;
         display: flex;

@@ -81,6 +81,18 @@ body {
   height: 600px;
 }
 
+#questao .questoes-todas::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F0F0F0;
+}
+
+#questao .questoes-todas::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  background-color: #f0f0f05e;
+}
+
 #questao .questoes-capitulo {
   margin: 40px 0 0 0;
   display: -webkit-box;
