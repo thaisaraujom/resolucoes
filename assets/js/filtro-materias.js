@@ -15,7 +15,7 @@ $(document).ready(function() {
           $(".modulos-todos .modulos").hide()
         } else {
           $(".modulos-todos .modulos").not("." + value).hide()
-          $(".modulos-todos .modulos").filter("." + value).show("150")
+          $(".modulos-todos .modulos").filter("." + value).show()
 
         }
 
