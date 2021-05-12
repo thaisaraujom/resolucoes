@@ -132,15 +132,15 @@
 
                 <div class="conteudo-capitulo">
                     <div class="caixas">
-                        <div class="caixa-acertos">
+                        <div class="box caixa-acertos" data-filter="acerto"> <!-- o data-filter se refere à classe de cada "questoes-single"-->
                             <p class="status">ACERTOS</p>
                             <p class="quantidade">28</p>
                         </div>
-                        <div class="caixa-duvidas">
+                        <div class="box caixa-duvidas" data-filter="duvida">
                             <p class="status">DÚVIDAS</p>
                             <p class="quantidade">06</p>
                         </div>
-                        <div class="caixa-erros">
+                        <div class="box caixa-erros" data-filter="erro">
                             <p class="status">ERROS</p>
                             <p class="quantidade">04</p>
                         </div>
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                     <div class="questoes-todas">
-                        <div class="questoes-single">
+                        <div class="questoes-single erro">
                             <div class="questao-numero questao-numero-erro">
                                 <p>1</p>
                             </div>
@@ -162,7 +162,7 @@
                                 (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
                             </div>
                         </div>
-                        <div class="questoes-single">
+                        <div class="questoes-single acerto duvida">
                             <div class="questao-numero questao-numero-acerto questao-numero-duvida">
                                 <p>2</p>
                             </div>
@@ -170,7 +170,7 @@
                                 (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
                             </div>
                         </div>
-                        <div class="questoes-single">
+                        <div class="questoes-single acerto">
                             <div class="questao-numero questao-numero-acerto">
                                 <p>3</p>
                             </div>
@@ -178,7 +178,7 @@
                                 (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
                             </div>
                         </div>
-                        <div class="questoes-single">
+                        <div class="questoes-single erro">
                             <div class="questao-numero questao-numero-erro">
                                 <p>4</p>
                             </div>
@@ -186,7 +186,7 @@
                                 (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
                             </div>
                         </div>
-                        <div class="questoes-single">
+                        <div class="questoes-single erro duvida">
                             <div class="questao-numero questao-numero-erro questao-numero-duvida">
                                 <p>5</p>
                             </div>
@@ -194,7 +194,7 @@
                                 (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
                             </div>
                         </div>
-                        <div class="questoes-single">
+                        <div class="questoes-single acerto duvida">
                             <div class="questao-numero questao-numero-acerto questao-numero-duvida">
                                 <p>6</p>
                             </div>
@@ -202,7 +202,7 @@
                                 (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
                             </div>
                         </div>
-                        <div class="questoes-single">
+                        <div class="questoes-single acerto">
                             <div class="questao-numero questao-numero-acerto">
                                 <p>7</p>
                             </div>
@@ -210,7 +210,7 @@
                                 (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
                             </div>
                         </div>
-                        <div class="questoes-single">
+                        <div class="questoes-single acerto">
                             <div class="questao-numero questao-numero-acerto">
                                 <p>8</p>
                             </div>
@@ -218,7 +218,7 @@
                                 (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
                             </div>
                         </div>
-                        <div class="questoes-single">
+                        <div class="questoes-single acerto">
                             <div class="questao-numero questao-numero-acerto">
                                 <p>9</p>
                             </div>
@@ -256,5 +256,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script src="assets/js/filtro-ADE.js"></script>
 
 </body>

@@ -57,6 +57,11 @@ body {
   line-height: 30px;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
+}
+
+#questao .activeBox {
+  opacity: 0.9;
 }
 
 #questao .caixa-acertos {
@@ -78,7 +83,7 @@ body {
 
 #questao .questoes-todas {
   overflow-y: scroll;
-  height: 600px;
+  max-height: 600px;
 }
 
 #questao .questoes-todas::-webkit-scrollbar {
@@ -315,7 +320,7 @@ a:link {
     margin: 0 10%;
   }
   #questao .questoes-todas {
-    height: 400px;
+    max-height: 400px;
   }
   #questao .caixa-acertos,
   #questao .caixa-erros,
