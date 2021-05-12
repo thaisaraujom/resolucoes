@@ -230,7 +230,7 @@ body {
 }
 
 #questao .nao-selecionada {
-  display: none;
+  border: none;
 }
 
 #questao .imagem {
