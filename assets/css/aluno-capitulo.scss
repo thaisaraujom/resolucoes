@@ -300,8 +300,13 @@ a:link {
 
             font-size: 13px;
         }
-        .status-questoes {
-            font-size: 11px;
+        .titulo-questoes-c {
+            justify-content: start;
+            margin: 0 15px;
+        }
+        .status-questoes.acertos, .status-questoes.erros, .status-questoes.duvidas {
+            display: none !important;
+            visibility: hidden;
         }
         .questao-numero {
             min-width: 30px;

@@ -347,8 +347,15 @@ a:link {
     border-radius: 5px 5px 0px 0px;
     font-size: 13px;
   }
-  #questao .status-questoes {
-    font-size: 11px;
+  #questao .titulo-questoes-c {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 0 15px;
+  }
+  #questao .status-questoes.acertos, #questao .status-questoes.erros, #questao .status-questoes.duvidas {
+    display: none !important;
+    visibility: hidden;
   }
   #questao .questao-numero {
     min-width: 30px;
