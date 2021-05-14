@@ -47,10 +47,6 @@ body {
   cursor: pointer;
 }
 
-#questao .setinha-up {
-  visibility: hidden;
-}
-
 #questao .setinha-down {
   visibility: hidden;
 }
