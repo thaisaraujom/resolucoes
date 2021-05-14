@@ -72,14 +72,14 @@
 
             <div class="menu">
                 <ul class="itens-menu">
-                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/home.svg" alt=""></a><a
-                            class="item-link" href="">Home</a></li>
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg" alt=""></a><a
+                            class="item-link" href="aluno-dashboard.html">Home</a></li>
 
                     <li class="nav-item item-apostila"><a href=""><img src="assets/img/aluno-questao/apostilas.svg"
                                 alt=""></a><a class="item-link" href="">Apostilas</a></li>
 
-                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/materias.svg" alt=""></a><a
-                            class="item-link" href="">Matérias</a></li>
+                    <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg" alt=""></a><a
+                            class="item-link" href="aluno-modulo.html">Matérias</a></li>
 
                     <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
                             href="" class="item-link">Monitores</a></li>
@@ -131,15 +131,15 @@
 
                 <div class="conteudo-capitulo">
                     <div class="caixas">
-                        <div class="box caixa-acertos" data-filter="acerto"> <!-- o data-filter se refere à classe de cada "questoes-single"-->
+                        <div class="box caixa-acertos" data-filter="acerto" data-filterStatus="acertos"> <!-- o data-filter se refere à classe de cada "questoes-single"-->
                             <p class="status">ACERTOS</p>
                             <p class="quantidade">28</p>
                         </div>
-                        <div class="box caixa-duvidas" data-filter="duvida">
+                        <div class="box caixa-duvidas" data-filter="duvida" data-filterStatus="duvidas">
                             <p class="status">DÚVIDAS</p>
                             <p class="quantidade">06</p>
                         </div>
-                        <div class="box caixa-erros" data-filter="erro">
+                        <div class="box caixa-erros" data-filter="erro" data-filterStatus="erros">
                             <p class="status">ERROS</p>
                             <p class="quantidade">04</p>
                         </div>
@@ -149,7 +149,12 @@
                 <div class="caixa-questoes">
                     <div class="questoes-capitulo">
                         <div class="titulo-questoes-c">
+                            <p class="status-questoes acertos">Acertos</p>
+                            <p class="status-questoes duvidas">Dúvidas</p>
+                            <p class="status-questoes erros">Erros</p>
                             <p>Questões do capítulo 1: Funções de 1° e 2° grau</p>
+                            <img class="setinha-up" src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
+                            <img class="setinha-down" src="./assets/img/aluno-modulo/seta-down.svg" alt="">
                         </div>
                     </div>
                     <div class="questoes-todas">
@@ -256,5 +261,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript" src="assets/js/menu.js"></script>
     <script src="assets/js/filtro-ADE.js"></script>
+    <script src="assets/js/expandir-questoes.js"></script>
 
 </body>

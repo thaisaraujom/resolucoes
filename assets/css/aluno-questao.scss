@@ -233,6 +233,7 @@ html {
     .voltar {
         padding-top: 90px;
     }
+   
     .icones {
         display: flex;
         font: 400 13px "Montserrat";
@@ -282,6 +283,10 @@ html {
             margin-top: 10px;
             .texto {
                 margin-bottom: 30px;
+            }
+            .imagem-enunciado img {
+                width: 100%;
+                max-width: 500px;
             }
             h2 {
                 display: inline;

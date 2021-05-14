@@ -354,6 +354,11 @@ html {
   margin-bottom: 30px;
 }
 
+#questao .conteudo .enunciado .imagem-enunciado img {
+  width: 100%;
+  max-width: 500px;
+}
+
 #questao .conteudo .enunciado h2 {
   display: inline;
   color: #2c313b;

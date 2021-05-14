@@ -8,6 +8,12 @@ body {
             color: #e4e0e0;
         }
     }
+    // .modulos {
+    //     display: none;
+    // }
+    // .modulos.matematica {
+    //     display: block;
+    // }
     .modulos {
         padding: 10px 0;
         width: 100%;
@@ -82,7 +88,7 @@ body {
         color: #2c313b;
     }
     .titulo-capitulo {
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -120,7 +126,7 @@ body {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         padding: 0 10px;
 
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 17px;
@@ -132,6 +138,12 @@ body {
         cursor: pointer;
 
         position: relative;
+    }
+    .materias .materia.active {
+        color: #41454e;
+    }
+    .modulos.hide {
+        display: none;
     }
     .materia-selecionada {
         color: #41454e;
@@ -162,7 +174,7 @@ body {
         visibility: hidden;
     }
     .paragrafo1 {
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: bold;
         color: #595b5f;
@@ -171,7 +183,7 @@ body {
         margin: 0 0 0 10px;
     }
     .paragrafo3 {
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 15px;
@@ -236,7 +248,7 @@ body {
     display: none;
 }
 
-.active {
+.bar_full.active {
     display: flex;
 }
 .bar_complete {
@@ -244,7 +256,7 @@ body {
     background-color: #53d63a;
     border-radius: 10px 0 0 10px;
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 16px;
@@ -311,7 +323,7 @@ footer {
     border-top: 2px solid #fff;
     .texto-rodape {
         display: flex;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-size: 14px;
         line-height: 17px;
@@ -426,18 +438,18 @@ a:link {
 
             cursor: pointer;
         }
-        .materia1 {
-            border-bottom: 2px solid #282c35;
-        }
         .materia-mostrar {
             width: 35%;
             background-color: #d7d5d4;
         }
-        .materia-mostrar:hover {
-            opacity: 0.6;
+        .materia-selecionada-drop {
+            opacity: 0.8;
+        }
+        .materia-selecionada-drop.borda-drop {
+            border-bottom: 2px solid #282c35;
         }
         .p-materia {
-            font-family: Montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 15px;
