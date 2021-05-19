@@ -309,26 +309,21 @@ html {
 #questao .titulo {
   margin-top: 20px;
   color: #282c35;
-  font: 700 20px "Montserrat";
+  font: 700 12px "Montserrat";
+  padding-left: 15px;
 }
 
 #questao .conteudo {
-  padding: 25px 0 0 15px;
+  padding: 10px 0 0 15px;
 }
 
 #questao .conteudo .numero-questao {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: start;
   color: #4e5057;
-}
-
-#questao .conteudo .numero-questao .mobile {
-  display: none;
 }
 
 #questao .conteudo .numero-questao p {
@@ -402,6 +397,10 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 2px;
+}
+
+#questao .titulo.mobile {
+  display: none;
 }
 
 #questao .submissao {
@@ -812,11 +811,21 @@ html {
   #questao .check p {
     font-size: 10px !important;
   }
+  #questao .titulo.desktop {
+    display: none;
+  }
+  #questao .titulo.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   #questao .titulo {
     font-size: 15px;
     border-bottom: 1px solid #323641;
+    padding-left: 0;
   }
   #questao .conteudo {
+    padding-top: 20px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -835,6 +844,11 @@ html {
     -webkit-box-shadow: none;
             box-shadow: none;
     text-shadow: none;
+  }
+  #questao .conteudo .numero-questao {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #questao .conteudo .numero-questao p {
     font-family: Montserrat;
@@ -875,6 +889,9 @@ html {
   .questao-duvida {
     margin-left: 20px !important;
   }
+  #questao .icones {
+    display: none;
+  }
 }
 
 @media (max-width: 499px) {
@@ -885,6 +902,9 @@ html {
   #questao {
     padding-left: 0;
     padding-right: 0;
+  }
+  #questao .titulo {
+    font-size: 12px !important;
   }
   #questao .conteudo {
     padding-bottom: 0;

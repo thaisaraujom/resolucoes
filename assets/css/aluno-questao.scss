@@ -257,16 +257,16 @@ html {
     .titulo {
         margin-top: 20px;
         color: #282c35;
-        font: 700 20px "Montserrat";
+        font: 700 12px "Montserrat";
+
+        padding-left: 15px;
     }
     .conteudo {
-        padding: 25px 0 0 15px;
+        padding: 10px 0 0 15px;
 
         .numero-questao {
-            display: flex;
-            .mobile {
-                display: none;
-            }
+            display: none;
+    
             justify-content: space-between;
             text-align: start;
             color: #4e5057;
@@ -331,6 +331,9 @@ html {
                 padding: 2px;
             }
         }
+    }
+    .titulo.mobile {
+        display: none;
     }
     .submissao {
         display: flex;
@@ -687,12 +690,20 @@ html {
                 font-size: 10px !important;
             }
         }
+        .titulo.desktop {
+            display: none;
+        }
+        .titulo.mobile {
+            display: flex;
+        }
         padding: 0 5%;
         .titulo {
             font-size: 15px;
             border-bottom: 1px solid rgb(50, 54, 65);
+            padding-left: 0;
         }
         .conteudo {
+            padding-top: 20px ;
             padding-right: 0;
             padding-left: 0;
         }
@@ -713,6 +724,7 @@ html {
 
         .conteudo {
             .numero-questao {
+                display: flex;
                 p {
                     font-family: Montserrat;
                     font-style: normal;
@@ -762,6 +774,11 @@ html {
     .questao-duvida {
         margin-left: 20px !important;
     }
+    #questao {
+        .icones {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 499px) {
@@ -772,7 +789,9 @@ html {
     #questao {
         padding-left: 0;
         padding-right: 0;
-
+        .titulo {
+            font-size: 12px !important;
+        }
         .conteudo {
             padding-bottom: 0;
             .enunciado {
