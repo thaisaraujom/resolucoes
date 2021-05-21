@@ -92,6 +92,21 @@
     right: auto;
     left: -25px;
 }
+
+.slick-prev::before {
+    content: url(../img/aluno-modulo/seta-materia.svg);
+    display: inline-block;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.slick-prev {
+    left: -25px;
+    top: 60%;
+}
+
 .slick-next:before
 {
     content: url('../img/aluno-modulo/seta-materia.svg');

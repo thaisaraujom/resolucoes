@@ -182,7 +182,7 @@ footer {
 
     color: #282c35;
 
-    border-top: 1px solid #282c35;
+    border-top: 2px solid #282c35;
     .texto-rodape {
         display: flex;
         font: normal 14px "Montserrat", sans-serif;
@@ -212,6 +212,12 @@ footer {
     }
     footer {
         padding-left: 0 !important;
+    }
+}
+
+@media (max-width: 770px) {
+    footer {
+        border-top: 1px solid #282c35;
     }
 }
 
