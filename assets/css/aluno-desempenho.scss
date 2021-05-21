@@ -209,6 +209,9 @@ footer {
         .overlay {
             padding: 0 !important;
         }
+        .icones {
+            display: none;
+        }
     }
     footer {
         padding-left: 0 !important;
@@ -235,6 +238,7 @@ footer {
             }
         }
     }
+
 }
 
 @media (max-width: 500px) {

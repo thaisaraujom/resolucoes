@@ -889,9 +889,6 @@ html {
   .questao-duvida {
     margin-left: 20px !important;
   }
-  #questao .icones {
-    display: none;
-  }
 }
 
 @media (max-width: 499px) {
