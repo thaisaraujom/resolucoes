@@ -11,6 +11,10 @@ body {
   width: 100%;
 }
 
+#questao .esconder-modulo {
+  display: none;
+}
+
 #questao .modulo {
   margin: 2px 150px 0 150px;
 }
@@ -89,17 +93,7 @@ body {
   margin: 0 10px;
   padding: 7px 0;
 }
-.active-arrow{
-  transform: rotate(180deg);
-}
-.slick-prev{
-  left: -25px;
-  transform: rotate(180deg) !important;
-  top: 35% !important;
-}
-.slick-prev:before {
-  content: url(../img/aluno-modulo/seta-materia.svg);
-}
+
 #questao .num-capitulo {
   margin: 0 10px;
   font-weight: 300;
@@ -560,7 +554,7 @@ a:link {
   #questao .materia-selecionada-drop {
     opacity: 0.8;
   }
-  #questao .materia-selecionada-drop.borda-drop {
+  #questao .borda-drop {
     border-bottom: 2px solid #282c35;
   }
   #questao .p-materia {
