@@ -811,6 +811,9 @@ html {
   #questao .check p {
     font-size: 10px !important;
   }
+  #questao .icones {
+    display: none;
+  }
   #questao .titulo.desktop {
     display: none;
   }
