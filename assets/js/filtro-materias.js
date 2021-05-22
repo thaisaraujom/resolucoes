@@ -81,34 +81,48 @@ materia.forEach((materia_single) => {
 
 })
 
-let materias_drop = document.querySelectorAll('.materias-drop .materia')
+// let materias_drop = document.querySelectorAll('.materias-drop .materia')
 
-materias_drop.forEach((materiaD_single) => {
-    materiaD_single.addEventListener('click', function () {
-        materias_drop.forEach((materiaD_single1) => {
-            materiaD_single1.classList.toggle('active')
-            materiaD_single1.classList.remove('borda-drop')
-            materiaD_single1.classList.remove('materia-selecionada-drop')
-        })
+// materias_drop.forEach((materiaD_single) => {
+//     materiaD_single.addEventListener('click', function () {
+//         materias_drop.forEach((materiaD_single1) => {
+//             materiaD_single1.classList.toggle('active')
+//             materiaD_single1.classList.remove('borda-drop')
+//             materiaD_single1.classList.remove('materia-selecionada-drop')
+//         })
 
-        this.classList.add('active')
-        this.classList.add('materia-selecionada-drop')
-        this.classList.add('borda-drop')
+//         this.classList.add('active')
+//         this.classList.add('materia-selecionada-drop')
+//         this.classList.add('borda-drop')
 
-        let dataFilter = this.getAttribute('data-filter')
+//         let dataFilter = this.getAttribute('data-filter')
 
-        modulos.forEach((modulos_single) => {
-            modulos_single.classList.remove('active')
-            modulos_single.classList.add('hide')
-            modulos_single.classList.add('esconder-modulo')
+//         modulos.forEach((modulos_single) => {
+//             modulos_single.classList.remove('active')
+//             modulos_single.classList.add('hide')
+//             modulos_single.classList.add('esconder-modulo')
 
-            if (modulos_single.getAttribute('data-item') == dataFilter) {
-                modulos_single.classList.remove('hide')
-                modulos_single.classList.add('active')
-                modulos_single.classList.remove('esconder-modulo')
-            }
-        })
+//             if (modulos_single.getAttribute('data-item') == dataFilter) {
+//                 modulos_single.classList.remove('hide')
+//                 modulos_single.classList.add('active')
+//                 modulos_single.classList.remove('esconder-modulo')
+//             }
+//         })
+        
 
-    })
+//     })
 
+// })
+
+const sel = document.getElementById('materias-selector');
+const modulosMaterias =  Array.from(document.querySelectorAll('.modulos'));
+
+sel.addEventListener('change', function(){
+    for(let i=0; i < modulosMaterias.length; i++){
+        if(modulosMaterias[i].dataset.item != sel.value){
+            modulosMaterias[i].classList.add('esconder-modulo');
+        }else{
+            modulosMaterias[i].classList.remove('esconder-modulo');
+        }
+    }   
 })

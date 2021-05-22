@@ -11,10 +11,10 @@ $('.collapse').click(function () {
 
 /* DROPDOWN */
 
-var drop = document.querySelector('.seta-mostrar')
-var conteudo_mostrar = document.querySelector('.dropdown-content')
+// var drop = document.querySelector('.seta-mostrar')
+// var conteudo_mostrar = document.querySelector('.dropdown-content')
 
 
-drop.addEventListener('click', function(){
-    conteudo_mostrar.classList.toggle('show')
-})
+// drop.addEventListener('click', function(){
+//     conteudo_mostrar.classList.toggle('show')
+// })

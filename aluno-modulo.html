@@ -131,28 +131,17 @@
 
                 <!-- DISCIPLINAS MOBILE -->
                 <div class="materias-drop mobile">
-                    <div class="materia mobile materia-selecionada-drop borda-drop" data-filter="matematica">
-                        <p class="p-materia">Matemática</p>
-                        <img class="seta-mostrar" src="./assets/img/aluno-modulo/seta-drop.svg" alt="">
-                    </div>
 
-                    <div class="dropdown-content">
-                        <div class="materia materia-mostrar" data-filter="quimica">
-                            <p class="p-materia">Química</p>
-                        </div>
-                        <div class="materia materia-mostrar" data-filter="geografia">
-                            <p class="p-materia">Geografia</p>
-                        </div>
-                        <div class="materia materia-mostrar" data-filter="historia">
-                            <p class="p-materia">História</p>
-                        </div>
-                        <div class="materia materia-mostrar" data-filter="fisica">
-                            <p class="p-materia">Física</p>
-                        </div>
-                        <div class="materia materia-mostrar" data-filter="biologia">
-                            <p class="p-materia">Biologia</p>
-                        </div>
-                    </div>
+                    <select id="materias-selector" name="select-materias">
+                        <option value="matematica" selected value>Matemática </option>
+                        <option value="fisica">Física</option>
+                        <option value="quimica" >Química</option>
+                        <option value="biologia">Biologia</option>
+                        <option value="historia">História</option>
+                        <option value="geografia">Geografia</option>                      
+                        <option value="literatura">Literatura</option>                      
+                        <option value="ingles">Inglês</option>                      
+                    </select>                   
 
                 </div>
                 <!-- FIM DISCIPLINAS MOBILE -->
@@ -184,12 +173,11 @@
                         <p class="paragrafo-materia">Inglês</p>
                     </div>
                 </div>
-
                 <!-- FIM CARROSSEL -->
 
                 <!-- MÓDULOS DE CADA DISCIPLINA -->
                 <div class="modulos-todos">
-                    <div class="modulos" data-item='matematica'>
+                    <div class="modulos " data-item='matematica'>
                         <!-- MÓDULO I -->
                         <div class="modulo">
                             <div class="progresso">
@@ -906,7 +894,7 @@
     
                     </div>
     
-                    <div class="modulos esconder-modulo" data-item="fisica">
+                    <div class="modulos " data-item="fisica">
                         <!-- MÓDULO I -->
                         <div class="modulo">
                             <div class="progresso">
@@ -1448,724 +1436,7 @@
     
                     </div>
     
-                    <div class="modulos esconder-modulo" data-item="quimica">
-                        <!-- MÓDULO I -->
-                        <div class="modulo">
-                            <div class="progresso">
-                                <div class="informacoes">
-                                    <div class="modulo-completo">
-                                        <img id="concluido" class="concluido"
-                                            src="./assets/img/aluno-modulo/modulo-completo.svg" alt="">
-                                        <p class="paragrafo1"> Módulo I</p>
-                                    </div>
-    
-                                    <div class="imagem">
-                                        <p class="paragrafo3">32/32</p>
-                                        <img class="expandir-barraM" src="./assets/img/aluno-dashboard/seta-baixo.svg"
-                                            alt="">
-                                        <img class="expandir-barraMd" src="./assets/img/aluno-modulo/seta-down.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-    
-    
-                            <div class="barra-totalM" data-questions="32">
-                                <div class="barra-completaM">
-                                    <span class="barra-concluidasM">32</span> <!-- questões feitas -->
-                                </div>
-                            </div>
-    
-                            <div class="bar_full bar_full2" data-questions="32">
-                                <div class="bar_complete"> <!-- questões certas -->
-                                    <span class="complete_questions">16</span>
-                                </div>
-                                <div class="bar_duvidas"> <!-- questões em dúvida -->
-                                    <span class="duvidas_questions">7</span>
-                                </div>
-                                <div class="bar_erros"> <!-- questões erradas -->
-                                    <span class="erros_questions">16</span>
-                                </div>
-                                <div class="bar_branco"> <!-- questões não feitas -->
-                                    <span class="white_questions">0</span>
-                                </div>
-                            </div>
-    
-                            <div class="capitulos">
-                                <!-- CAP I -->
-                                <div class="capitulo">
-                                    <div class="progressoC">
-                                        <div class="dentro-capitulo">
-                                            <div class="capitulo-esquerda">
-                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
-                                                    alt="">
-                                                <p class="num-capitulo">Capítulo 1</p>
-                                                <p class="titulo-capitulo">Funções de 1° e 2° graus</p>
-                                            </div>
-    
-                                            <div class="capitulo-direita">
-                                                <p class="qtd-capitulo">15/15</p>
-                                                <img class="expandir-barraC"
-                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
-                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="barra-totalM" data-questions="15">
-                                        <div class="barra-completaM">
-                                            <span class="barra-concluidasM">15</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="bar_full" data-questions="15">
-                                        <div class="bar_complete">
-                                            <span class="complete_questions">10</span>
-                                        </div>
-                                        <div class="bar_duvidas">
-                                            <span class="duvidas_questions">7</span>
-                                        </div>
-                                        <div class="bar_erros">
-                                            <span class="erros_questions">5</span>
-                                        </div>
-                                        <div class="bar_branco">
-                                            <span class="white_questions">0</span>
-                                        </div>
-                                    </div>
-    
-                                </div>
-    
-                                <!-- CAP II -->
-                                <div class="capitulo">
-                                    <div class="progressoC">
-                                        <div class="dentro-capitulo">
-                                            <div class="capitulo-esquerda">
-                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
-                                                    alt="">
-                                                <p class="num-capitulo">Capítulo 2</p>
-                                                <p class="titulo-capitulo">Progressão aritmética e geométrica</p>
-                                            </div>
-    
-                                            <div class="capitulo-direita">
-                                                <p class="qtd-capitulo">10/10</p>
-                                                <img class="expandir-barraC"
-                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
-                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-    
-                                    <div class="barra-totalM" data-questions="10">
-                                        <div class="barra-completaM">
-                                            <span class="barra-concluidasM">10</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="bar_full bar_full2" data-questions="10">
-                                        <div class="bar_complete">
-                                            <span class="complete_questions">10</span>
-                                        </div>
-                                        <div class="bar_duvidas">
-                                            <span class="duvidas_questions">0</span>
-                                        </div>
-                                        <div class="bar_erros">
-                                            <span class="erros_questions">0</span>
-                                        </div>
-                                        <div class="bar_branco">
-                                            <span class="white_questions">0</span>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- CAP III -->
-                                <div class="capitulo">
-                                    <div class="progressoC">
-                                        <div class="dentro-capitulo">
-                                            <div class="capitulo-esquerda">
-                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
-                                                    alt="">
-                                                <p class="num-capitulo">Capítulo 3</p>
-                                                <p class="titulo-capitulo">Estatística</p>
-                                            </div>
-    
-                                            <div class="capitulo-direita">
-                                                <p class="qtd-capitulo">7/7</p>
-                                                <img class="expandir-barraC"
-                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
-                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="barra-totalM" data-questions="7">
-                                        <div class="barra-completaM">
-                                            <span class="barra-concluidasM">7</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="bar_full bar_full2" data-questions="7">
-                                        <div class="bar_complete">
-                                            <span class="complete_questions">7</span>
-                                        </div>
-                                        <div class="bar_duvidas">
-                                            <span class="duvidas_questions">0</span>
-                                        </div>
-                                        <div class="bar_erros">
-                                            <span class="erros_questions">0</span>
-                                        </div>
-                                        <div class="bar_branco">
-                                            <span class="white_questions">0</span>
-                                        </div>
-                                    </div>
-    
-    
-    
-                                </div>
-                            </div>
-                        </div>
-    
-    
-                        <!-- MÓDULO II -->
-                        <div class="modulo">
-                            <div class="progresso">
-                                <div class="informacoes">
-                                    <div class="modulo-completo">
-                                        <img class="concluido" src="./assets/img/aluno-modulo/modulo-completo.svg" alt="">
-                                        <p class="paragrafo1"> Módulo II</p>
-                                    </div>
-    
-    
-                                    <div class="imagem">
-                                        <p class="paragrafo3">12/22</p>
-                                        <img class="expandir-barraM" src="./assets/img/aluno-dashboard/seta-baixo.svg"
-                                            alt="">
-                                        <img class="expandir-barraMd" src="./assets/img/aluno-modulo/seta-down.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-    
-    
-                            <div class="barra-totalM" data-questions="22">
-                                <div class="barra-completaM">
-                                    <span class="barra-concluidasM">12</span>
-                                </div>
-                            </div>
-    
-                            <div class="bar_full bar_full2" data-questions="22">
-                                <div class="bar_complete">
-                                    <span class="complete_questions">10</span>
-                                </div>
-                                <div class="bar_duvidas">
-                                    <span class="duvidas_questions">10</span>
-                                </div>
-                                <div class="bar_erros">
-                                    <span class="erros_questions">2</span>
-                                </div>
-                                <div class="bar_branco">
-                                    <span class="white_questions">0</span>
-                                </div>
-                            </div>
-    
-                            <div class="capitulos">
-                                <!-- CAP I -->
-                                <div class="capitulo">
-                                    <div class="progressoC">
-                                        <div class="dentro-capitulo">
-                                            <div class="capitulo-esquerda">
-                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
-                                                    alt="">
-                                                <p class="num-capitulo">Capítulo 1</p>
-                                                <p class="titulo-capitulo">Funções de 1° e 2° graus</p>
-                                            </div>
-    
-                                            <div class="capitulo-direita">
-                                                <p class="qtd-capitulo">5/10</p>
-                                                <img class="expandir-barraC"
-                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
-                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="barra-totalM" data-questions="10">
-                                        <div class="barra-completaM">
-                                            <span class="barra-concluidasM">5</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="bar_full" data-questions="10">
-                                        <div class="bar_complete">
-                                            <span class="complete_questions">3</span>
-                                        </div>
-                                        <div class="bar_duvidas">
-                                            <span class="duvidas_questions">0</span>
-                                        </div>
-                                        <div class="bar_erros">
-                                            <span class="erros_questions">2</span>
-                                        </div>
-                                        <div class="bar_branco">
-                                            <span class="white_questions">5</span>
-                                        </div>
-                                    </div>
-    
-                                </div>
-    
-                                <!-- CAP II -->
-                                <div class="capitulo">
-                                    <div class="progressoC">
-                                        <div class="dentro-capitulo">
-                                            <div class="capitulo-esquerda">
-                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
-                                                    alt="">
-                                                <p class="num-capitulo">Capítulo 2</p>
-                                                <p class="titulo-capitulo">Progressão aritmética e geométrica</p>
-                                            </div>
-    
-                                            <div class="capitulo-direita">
-                                                <p class="qtd-capitulo">5/8</p>
-                                                <img class="expandir-barraC"
-                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
-                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-    
-                                    <div class="barra-totalM" data-questions="8">
-                                        <div class="barra-completaM">
-                                            <span class="barra-concluidasM">5</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="bar_full bar_full2" data-questions="8">
-                                        <div class="bar_complete">
-                                            <span class="complete_questions">5</span>
-                                        </div>
-                                        <div class="bar_duvidas">
-                                            <span class="duvidas_questions">0</span>
-                                        </div>
-                                        <div class="bar_erros">
-                                            <span class="erros_questions">3</span>
-                                        </div>
-                                        <div class="bar_branco">
-                                            <span class="white_questions">0</span>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- CAP III -->
-                                <div class="capitulo">
-                                    <div class="progressoC">
-                                        <div class="dentro-capitulo">
-                                            <div class="capitulo-esquerda">
-                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
-                                                    alt="">
-                                                <p class="num-capitulo">Capítulo 3</p>
-                                                <p class="titulo-capitulo">Estatística</p>
-                                            </div>
-    
-                                            <div class="capitulo-direita">
-                                                <p class="qtd-capitulo">0/4</p>
-                                                <img class="expandir-barraC"
-                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
-                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="barra-totalM" data-questions="4">
-                                        <div class="barra-completaM">
-                                            <span class="barra-concluidasM">0</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="bar_full bar_full2" data-questions="4">
-                                        <div class="bar_complete">
-                                            <span class="complete_questions">0</span>
-                                        </div>
-                                        <div class="bar_duvidas">
-                                            <span class="duvidas_questions">0</span>
-                                        </div>
-                                        <div class="bar_erros">
-                                            <span class="erros_questions">0</span>
-                                        </div>
-                                        <div class="bar_branco">
-                                            <span class="white_questions">4</span>
-                                        </div>
-                                    </div>
-    
-    
-    
-                                </div>
-                            </div>
-    
-    
-    
-                        </div>
-    
-                        <!-- MÓDULO III -->
-                        <div class="modulo">
-                            <div class="progresso">
-                                <div class="informacoes">
-                                    <div class="modulo-completo">
-                                        <img class="concluido" src="./assets/img/aluno-modulo/modulo-completo.svg" alt="">
-                                        <p class="paragrafo1"> Módulo III</p>
-                                    </div>
-    
-    
-                                    <div class="imagem">
-                                        <p class="paragrafo3">16/32</p>
-                                        <img class="expandir-barraM" src="./assets/img/aluno-dashboard/seta-baixo.svg"
-                                            alt="">
-                                        <img class="expandir-barraMd" src="./assets/img/aluno-modulo/seta-down.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-    
-    
-                            <div class="barra-totalM" data-questions="32">
-                                <div class="barra-completaM">
-                                    <span class="barra-concluidasM">16</span>
-                                </div>
-                            </div>
-    
-                            <div class="bar_full bar_full2" data-questions="32">
-                                <div class="bar_complete">
-                                    <span class="complete_questions">2</span>
-                                </div>
-                                <div class="bar_duvidas">
-                                    <span class="duvidas_questions">10</span>
-                                </div>
-                                <div class="bar_erros">
-                                    <span class="erros_questions">10</span>
-                                </div>
-                                <div class="bar_branco">
-                                    <span class="white_questions">10</span>
-                                </div>
-                            </div>
-    
-                            <div class="capitulos">
-                                <!-- CAP I -->
-                                <div class="capitulo">
-                                    <div class="progressoC">
-                                        <div class="dentro-capitulo">
-                                            <div class="capitulo-esquerda">
-                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
-                                                    alt="">
-                                                <p class="num-capitulo">Capítulo 1</p>
-                                                <p class="titulo-capitulo">Funções de 1° e 2° graus</p>
-                                            </div>
-    
-                                            <div class="capitulo-direita">
-                                                <p class="qtd-capitulo">32/32</p>
-                                                <img class="expandir-barraC"
-                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
-                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="barra-totalM" data-questions="32">
-                                        <div class="barra-completaM">
-                                            <span class="barra-concluidasM">5</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="bar_full" data-questions="32">
-                                        <div class="bar_complete">
-                                            <span class="complete_questions">0</span>
-                                        </div>
-                                        <div class="bar_duvidas">
-                                            <span class="duvidas_questions">10</span>
-                                        </div>
-                                        <div class="bar_erros">
-                                            <span class="erros_questions">0</span>
-                                        </div>
-                                        <div class="bar_branco">
-                                            <span class="white_questions">22</span>
-                                        </div>
-                                    </div>
-    
-                                </div>
-    
-                                <!-- CAP II -->
-                                <div class="capitulo">
-                                    <div class="progressoC">
-                                        <div class="dentro-capitulo">
-                                            <div class="capitulo-esquerda">
-                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
-                                                    alt="">
-                                                <p class="num-capitulo">Capítulo 2</p>
-                                                <p class="titulo-capitulo">Progressão aritmética e geométrica</p>
-                                            </div>
-    
-                                            <div class="capitulo-direita">
-                                                <p class="qtd-capitulo">32/32</p>
-                                                <img class="expandir-barraC"
-                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
-                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-    
-                                    <div class="barra-totalM" data-questions="32">
-                                        <div class="barra-completaM">
-                                            <span class="barra-concluidasM">5</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="bar_full bar_full2" data-questions="32">
-                                        <div class="bar_complete">
-                                            <span class="complete_questions">0</span>
-                                        </div>
-                                        <div class="bar_duvidas">
-                                            <span class="duvidas_questions">10</span>
-                                        </div>
-                                        <div class="bar_erros">
-                                            <span class="erros_questions">0</span>
-                                        </div>
-                                        <div class="bar_branco">
-                                            <span class="white_questions">22</span>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- CAP III -->
-                                <div class="capitulo">
-                                    <div class="progressoC">
-                                        <div class="dentro-capitulo">
-                                            <div class="capitulo-esquerda">
-                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
-                                                    alt="">
-                                                <p class="num-capitulo">Capítulo 3</p>
-                                                <p class="titulo-capitulo">Estatística</p>
-                                            </div>
-    
-                                            <div class="capitulo-direita">
-                                                <p class="qtd-capitulo">32/32</p>
-                                                <img class="expandir-barraC"
-                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
-                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="barra-totalM" data-questions="32">
-                                        <div class="barra-completaM">
-                                            <span class="barra-concluidasM">5</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="bar_full bar_full2" data-questions="32">
-                                        <div class="bar_complete">
-                                            <span class="complete_questions">0</span>
-                                        </div>
-                                        <div class="bar_duvidas">
-                                            <span class="duvidas_questions">10</span>
-                                        </div>
-                                        <div class="bar_erros">
-                                            <span class="erros_questions">0</span>
-                                        </div>
-                                        <div class="bar_branco">
-                                            <span class="white_questions">22</span>
-                                        </div>
-                                    </div>
-    
-    
-    
-                                </div>
-                            </div>
-    
-                        </div>
-    
-                        <!-- MÓDULO IV -->
-                        <div class="modulo">
-                            <div class="progresso">
-                                <div class="informacoes">
-                                    <div class="modulo-completo">
-                                        <img class="concluido" src="./assets/img/aluno-modulo/modulo-completo.svg" alt="">
-                                        <p class="paragrafo1"> Módulo IV</p>
-                                    </div>
-    
-    
-                                    <div class="imagem">
-                                        <p class="paragrafo3">32/32</p>
-                                        <img class="expandir-barraM" src="./assets/img/aluno-dashboard/seta-baixo.svg"
-                                            alt="">
-                                        <img class="expandir-barraMd" src="./assets/img/aluno-modulo/seta-down.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-    
-    
-                            <div class="barra-totalM" data-questions="32">
-                                <div class="barra-completaM">
-                                    <span class="barra-concluidasM">32</span>
-                                </div>
-                            </div>
-    
-                            <div class="bar_full bar_full2" data-questions="32">
-                                <div class="bar_complete">
-                                    <span class="complete_questions">2</span>
-                                </div>
-                                <div class="bar_duvidas">
-                                    <span class="duvidas_questions">10</span>
-                                </div>
-                                <div class="bar_erros">
-                                    <span class="erros_questions">20</span>
-                                </div>
-                                <div class="bar_branco">
-                                    <span class="white_questions">0</span>
-                                </div>
-                            </div>
-    
-                            <div class="capitulos">
-                                <!-- CAP I -->
-                                <div class="capitulo">
-                                    <div class="progressoC">
-                                        <div class="dentro-capitulo">
-                                            <div class="capitulo-esquerda">
-                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
-                                                    alt="">
-                                                <p class="num-capitulo">Capítulo 1</p>
-                                                <p class="titulo-capitulo">Funções de 1° e 2° graus</p>
-                                            </div>
-    
-                                            <div class="capitulo-direita">
-                                                <p class="qtd-capitulo">32/32</p>
-                                                <img class="expandir-barraC"
-                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
-                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="barra-totalM" data-questions="32">
-                                        <div class="barra-completaM">
-                                            <span class="barra-concluidasM">5</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="bar_full" data-questions="32">
-                                        <div class="bar_complete">
-                                            <span class="complete_questions">0</span>
-                                        </div>
-                                        <div class="bar_duvidas">
-                                            <span class="duvidas_questions">10</span>
-                                        </div>
-                                        <div class="bar_erros">
-                                            <span class="erros_questions">0</span>
-                                        </div>
-                                        <div class="bar_branco">
-                                            <span class="white_questions">22</span>
-                                        </div>
-                                    </div>
-    
-                                </div>
-    
-                                <!-- CAP II -->
-                                <div class="capitulo">
-                                    <div class="progressoC">
-                                        <div class="dentro-capitulo">
-                                            <div class="capitulo-esquerda">
-                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
-                                                    alt="">
-                                                <p class="num-capitulo">Capítulo 2</p>
-                                                <p class="titulo-capitulo">Progressão aritmética e geométrica</p>
-                                            </div>
-    
-                                            <div class="capitulo-direita">
-                                                <p class="qtd-capitulo">32/32</p>
-                                                <img class="expandir-barraC"
-                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
-                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-    
-                                    <div class="barra-totalM" data-questions="32">
-                                        <div class="barra-completaM">
-                                            <span class="barra-concluidasM">5</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="bar_full bar_full2" data-questions="32">
-                                        <div class="bar_complete">
-                                            <span class="complete_questions">0</span>
-                                        </div>
-                                        <div class="bar_duvidas">
-                                            <span class="duvidas_questions">10</span>
-                                        </div>
-                                        <div class="bar_erros">
-                                            <span class="erros_questions">0</span>
-                                        </div>
-                                        <div class="bar_branco">
-                                            <span class="white_questions">22</span>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- CAP III -->
-                                <div class="capitulo">
-                                    <div class="progressoC">
-                                        <div class="dentro-capitulo">
-                                            <div class="capitulo-esquerda">
-                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
-                                                    alt="">
-                                                <p class="num-capitulo">Capítulo 3</p>
-                                                <p class="titulo-capitulo">Estatística</p>
-                                            </div>
-    
-                                            <div class="capitulo-direita">
-                                                <p class="qtd-capitulo">32/32</p>
-                                                <img class="expandir-barraC"
-                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
-                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="barra-totalM" data-questions="32">
-                                        <div class="barra-completaM">
-                                            <span class="barra-concluidasM">32</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="bar_full bar_full2" data-questions="32">
-                                        <div class="bar_complete">
-                                            <span class="complete_questions">0</span>
-                                        </div>
-                                        <div class="bar_duvidas">
-                                            <span class="duvidas_questions">10</span>
-                                        </div>
-                                        <div class="bar_erros">
-                                            <span class="erros_questions">0</span>
-                                        </div>
-                                        <div class="bar_branco">
-                                            <span class="white_questions">22</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                    </div>
-
-                    <div class="modulos esconder-modulo" data-item="biologia">
+                    <div class="modulos " data-item="quimica">
                         <!-- MÓDULO I -->
                         <div class="modulo">
                             <div class="progresso">
@@ -2882,7 +2153,372 @@
     
                     </div>
 
-                    <div class="modulos esconder-modulo" data-item="historia">
+                    <div class="modulos " data-item="biologia">
+                        <!-- MÓDULO I -->
+                        <div class="modulo">
+                            <div class="progresso">
+                                <div class="informacoes">
+                                    <div class="modulo-completo">
+                                        <img id="concluido" class="concluido"
+                                            src="./assets/img/aluno-modulo/modulo-completo.svg" alt="">
+                                        <p class="paragrafo1"> Módulo I</p>
+                                    </div>
+    
+                                    <div class="imagem">
+                                        <p class="paragrafo3">32/32</p>
+                                        <img class="expandir-barraM" src="./assets/img/aluno-dashboard/seta-baixo.svg"
+                                            alt="">
+                                        <img class="expandir-barraMd" src="./assets/img/aluno-modulo/seta-down.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+                            <div class="barra-totalM" data-questions="32">
+                                <div class="barra-completaM">
+                                    <span class="barra-concluidasM">32</span> <!-- questões feitas -->
+                                </div>
+                            </div>
+    
+                            <div class="bar_full bar_full2" data-questions="32">
+                                <div class="bar_complete"> <!-- questões certas -->
+                                    <span class="complete_questions">16</span>
+                                </div>
+                                <div class="bar_duvidas"> <!-- questões em dúvida -->
+                                    <span class="duvidas_questions">7</span>
+                                </div>
+                                <div class="bar_erros"> <!-- questões erradas -->
+                                    <span class="erros_questions">16</span>
+                                </div>
+                                <div class="bar_branco"> <!-- questões não feitas -->
+                                    <span class="white_questions">0</span>
+                                </div>
+                            </div>
+    
+                            <div class="capitulos">
+                                <!-- CAP I -->
+                                <div class="capitulo">
+                                    <div class="progressoC">
+                                        <div class="dentro-capitulo">
+                                            <div class="capitulo-esquerda">
+                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
+                                                    alt="">
+                                                <p class="num-capitulo">Capítulo 1</p>
+                                                <p class="titulo-capitulo">Funções de 1° e 2° graus</p>
+                                            </div>
+    
+                                            <div class="capitulo-direita">
+                                                <p class="qtd-capitulo">15/15</p>
+                                                <img class="expandir-barraC"
+                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
+                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="barra-totalM" data-questions="15">
+                                        <div class="barra-completaM">
+                                            <span class="barra-concluidasM">15</span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bar_full" data-questions="15">
+                                        <div class="bar_complete">
+                                            <span class="complete_questions">10</span>
+                                        </div>
+                                        <div class="bar_duvidas">
+                                            <span class="duvidas_questions">7</span>
+                                        </div>
+                                        <div class="bar_erros">
+                                            <span class="erros_questions">5</span>
+                                        </div>
+                                        <div class="bar_branco">
+                                            <span class="white_questions">0</span>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- CAP II -->
+                                <div class="capitulo">
+                                    <div class="progressoC">
+                                        <div class="dentro-capitulo">
+                                            <div class="capitulo-esquerda">
+                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
+                                                    alt="">
+                                                <p class="num-capitulo">Capítulo 2</p>
+                                                <p class="titulo-capitulo">Progressão aritmética e geométrica</p>
+                                            </div>
+    
+                                            <div class="capitulo-direita">
+                                                <p class="qtd-capitulo">10/10</p>
+                                                <img class="expandir-barraC"
+                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
+                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+    
+    
+                                    <div class="barra-totalM" data-questions="10">
+                                        <div class="barra-completaM">
+                                            <span class="barra-concluidasM">10</span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bar_full bar_full2" data-questions="10">
+                                        <div class="bar_complete">
+                                            <span class="complete_questions">10</span>
+                                        </div>
+                                        <div class="bar_duvidas">
+                                            <span class="duvidas_questions">0</span>
+                                        </div>
+                                        <div class="bar_erros">
+                                            <span class="erros_questions">0</span>
+                                        </div>
+                                        <div class="bar_branco">
+                                            <span class="white_questions">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- CAP III -->
+                                <div class="capitulo">
+                                    <div class="progressoC">
+                                        <div class="dentro-capitulo">
+                                            <div class="capitulo-esquerda">
+                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
+                                                    alt="">
+                                                <p class="num-capitulo">Capítulo 3</p>
+                                                <p class="titulo-capitulo">Estatística</p>
+                                            </div>
+    
+                                            <div class="capitulo-direita">
+                                                <p class="qtd-capitulo">7/7</p>
+                                                <img class="expandir-barraC"
+                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
+                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="barra-totalM" data-questions="7">
+                                        <div class="barra-completaM">
+                                            <span class="barra-concluidasM">7</span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bar_full bar_full2" data-questions="7">
+                                        <div class="bar_complete">
+                                            <span class="complete_questions">7</span>
+                                        </div>
+                                        <div class="bar_duvidas">
+                                            <span class="duvidas_questions">0</span>
+                                        </div>
+                                        <div class="bar_erros">
+                                            <span class="erros_questions">0</span>
+                                        </div>
+                                        <div class="bar_branco">
+                                            <span class="white_questions">0</span>
+                                        </div>
+                                    </div>
+    
+    
+    
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <!-- MÓDULO II -->
+                        <div class="modulo">
+                            <div class="progresso">
+                                <div class="informacoes">
+                                    <div class="modulo-completo">
+                                        <img class="concluido" src="./assets/img/aluno-modulo/modulo-completo.svg" alt="">
+                                        <p class="paragrafo1"> Módulo II</p>
+                                    </div>
+    
+    
+                                    <div class="imagem">
+                                        <p class="paragrafo3">12/22</p>
+                                        <img class="expandir-barraM" src="./assets/img/aluno-dashboard/seta-baixo.svg"
+                                            alt="">
+                                        <img class="expandir-barraMd" src="./assets/img/aluno-modulo/seta-down.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+                            <div class="barra-totalM" data-questions="22">
+                                <div class="barra-completaM">
+                                    <span class="barra-concluidasM">12</span>
+                                </div>
+                            </div>
+    
+                            <div class="bar_full bar_full2" data-questions="22">
+                                <div class="bar_complete">
+                                    <span class="complete_questions">10</span>
+                                </div>
+                                <div class="bar_duvidas">
+                                    <span class="duvidas_questions">10</span>
+                                </div>
+                                <div class="bar_erros">
+                                    <span class="erros_questions">2</span>
+                                </div>
+                                <div class="bar_branco">
+                                    <span class="white_questions">0</span>
+                                </div>
+                            </div>
+    
+                            <div class="capitulos">
+                                <!-- CAP I -->
+                                <div class="capitulo">
+                                    <div class="progressoC">
+                                        <div class="dentro-capitulo">
+                                            <div class="capitulo-esquerda">
+                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
+                                                    alt="">
+                                                <p class="num-capitulo">Capítulo 1</p>
+                                                <p class="titulo-capitulo">Funções de 1° e 2° graus</p>
+                                            </div>
+    
+                                            <div class="capitulo-direita">
+                                                <p class="qtd-capitulo">5/10</p>
+                                                <img class="expandir-barraC"
+                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
+                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="barra-totalM" data-questions="10">
+                                        <div class="barra-completaM">
+                                            <span class="barra-concluidasM">5</span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bar_full" data-questions="10">
+                                        <div class="bar_complete">
+                                            <span class="complete_questions">3</span>
+                                        </div>
+                                        <div class="bar_duvidas">
+                                            <span class="duvidas_questions">0</span>
+                                        </div>
+                                        <div class="bar_erros">
+                                            <span class="erros_questions">2</span>
+                                        </div>
+                                        <div class="bar_branco">
+                                            <span class="white_questions">5</span>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <!-- CAP II -->
+                                <div class="capitulo">
+                                    <div class="progressoC">
+                                        <div class="dentro-capitulo">
+                                            <div class="capitulo-esquerda">
+                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
+                                                    alt="">
+                                                <p class="num-capitulo">Capítulo 2</p>
+                                                <p class="titulo-capitulo">Progressão aritmética e geométrica</p>
+                                            </div>
+    
+                                            <div class="capitulo-direita">
+                                                <p class="qtd-capitulo">5/8</p>
+                                                <img class="expandir-barraC"
+                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
+                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+    
+    
+                                    <div class="barra-totalM" data-questions="8">
+                                        <div class="barra-completaM">
+                                            <span class="barra-concluidasM">5</span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bar_full bar_full2" data-questions="8">
+                                        <div class="bar_complete">
+                                            <span class="complete_questions">5</span>
+                                        </div>
+                                        <div class="bar_duvidas">
+                                            <span class="duvidas_questions">0</span>
+                                        </div>
+                                        <div class="bar_erros">
+                                            <span class="erros_questions">3</span>
+                                        </div>
+                                        <div class="bar_branco">
+                                            <span class="white_questions">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- CAP III -->
+                                <div class="capitulo">
+                                    <div class="progressoC">
+                                        <div class="dentro-capitulo">
+                                            <div class="capitulo-esquerda">
+                                                <img class="concluidoC" src="./assets/img/aluno-modulo/modulo-completo.svg"
+                                                    alt="">
+                                                <p class="num-capitulo">Capítulo 3</p>
+                                                <p class="titulo-capitulo">Estatística</p>
+                                            </div>
+    
+                                            <div class="capitulo-direita">
+                                                <p class="qtd-capitulo">0/4</p>
+                                                <img class="expandir-barraC"
+                                                    src="./assets/img/aluno-dashboard/seta-baixo.svg" alt="">
+                                                <img class="expandir-barraCd" src="./assets/img/aluno-modulo/seta-down.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="barra-totalM" data-questions="4">
+                                        <div class="barra-completaM">
+                                            <span class="barra-concluidasM">0</span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bar_full bar_full2" data-questions="4">
+                                        <div class="bar_complete">
+                                            <span class="complete_questions">0</span>
+                                        </div>
+                                        <div class="bar_duvidas">
+                                            <span class="duvidas_questions">0</span>
+                                        </div>
+                                        <div class="bar_erros">
+                                            <span class="erros_questions">0</span>
+                                        </div>
+                                        <div class="bar_branco">
+                                            <span class="white_questions">4</span>
+                                        </div>
+                                    </div>
+    
+    
+    
+                                </div>
+                            </div>
+    
+    
+    
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="modulos " data-item="historia">
                         <!-- MÓDULO I -->
                         <div class="modulo">
                             <div class="progresso">
@@ -3599,7 +3235,7 @@
     
                     </div>
 
-                    <div class="modulos esconder-modulo" data-item="geografia">
+                    <div class="modulos " data-item="geografia">
                         <!-- MÓDULO I -->
                         <div class="modulo">
                             <div class="progresso">
@@ -4316,7 +3952,7 @@
     
                     </div>
 
-                    <div class="modulos esconder-modulo" data-item="literatura">
+                    <div class="modulos " data-item="literatura">
                         <!-- MÓDULO I -->
                         <div class="modulo">
                             <div class="progresso">
@@ -5033,7 +4669,7 @@
     
                     </div>
 
-                    <div class="modulos esconder-modulo" data-item="ingles">
+                    <div class="modulos " data-item="ingles">
                         <!-- MÓDULO I -->
                         <div class="modulo">
                             <div class="progresso">

@@ -29,14 +29,13 @@ function toggleAccordion(arrAccordion){
     for(let j = 0; j < arrAccordion.length; j++){
         arrAccordion[j].querySelector('.bar_full').classList.remove('active');
         arrAccordion[j].querySelector('.capitulos').classList.remove('ativar');                   
-        arrAccordion[j].querySelector('.expandir-barraM').classList.remove('active-arrow');                  
+        arrAccordion[j].querySelector('.expandir-barraM').classList.remove('active-arrow');                        
     };    
 };
 
 
 
 modulo.forEach((modulo_single) => {
-
     //expandir barra
     var botao = modulo_single.querySelector('.expandir-barraM')
     var botao1 = modulo_single.querySelector('.expandir-barraMd')
@@ -44,15 +43,24 @@ modulo.forEach((modulo_single) => {
     var cap = modulo_single.querySelector('.capitulos')
 
     botao.addEventListener('click', function () {
-    //Antes de expandir, remover de todos os "modulos", a classe active das barras
-    toggleAccordion( Array.from(document.querySelectorAll('.modulo')));
+        //Antes de expandir, remover de todos os "modulos", a classe active das barras
+        if(this.classList.contains('active-arrow')){
+            toggleAccordion( document.querySelectorAll('.modulo'));  
+        }else{
+            toggleAccordion( document.querySelectorAll('.modulo')); 
+            barraG.classList.add('active');
+            cap.classList.add('ativar');
+            this.classList.add('active-arrow');
+        }
+                  
+   
+    console.log(this)
+              
+                    
 
-        barraG.classList.add('active')
-        cap.classList.add('ativar')
-        // botao.style.display = 'none'
-        // botao1.style.display = 'flex'
-        this.classList.add('active-arrow');
     })
+        
+    
     // botao1.addEventListener('click', function () {
     //     barraG.classList.remove('active')
     //     cap.classList.remove('ativar')
@@ -368,4 +376,5 @@ capitulo.forEach((capitulo_single) => {
     }
 
 })
+
 
