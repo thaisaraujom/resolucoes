@@ -121,7 +121,11 @@ sel.addEventListener('change', function(){
     for(let i=0; i < modulosMaterias.length; i++){
         if(modulosMaterias[i].dataset.item != sel.value){
             modulosMaterias[i].classList.add('esconder-modulo');
+            modulosMaterias[i].classList.remove('hide');
+            modulosMaterias[i].classList.remove('active');
         }else{
+            modulosMaterias[i].classList.remove('hide');
+            modulosMaterias[i].classList.remove('active');
             modulosMaterias[i].classList.remove('esconder-modulo');
         }
     }   
