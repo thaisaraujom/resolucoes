@@ -1,5 +1,5 @@
 /* ----------BARRA QUE EXPANDE----------- */
-let bar_cheia = document.querySelectorAll('.bar_full');
+let bar_cheia = document.querySelectorAll('.bar_full');.
 bar_cheia.forEach((barra) => {
     let total_questoes = barra.dataset.questions
     

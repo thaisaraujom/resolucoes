@@ -166,10 +166,7 @@ body {
   line-height: 24px;
   color: #92949a;
 }
-.active-arrow{
-  transform: rotate(180deg);
-  transition: 3ms ease-in-out;
-}
+
 #questao .materia {
   padding: 10px 0;
   cursor: pointer;
@@ -184,7 +181,7 @@ body {
   display: none;
 }
 
-#questao .materia-selecionada, #materias-selector {
+#questao .materia-selecionada {
   color: #41454e;
 }
 
@@ -555,34 +552,17 @@ a:link {
             align-items: center;
     cursor: pointer;
   }
-  #questao .materia-mostrar,  #materias-selector {
+  #questao .materia-mostrar {
     width: 35%;
     background-color: #d7d5d4;
   }
   #questao .materia-selecionada-drop {
     opacity: 0.8;
   }
-  #materias-selector, #materias-selector option{
-    width: 38%;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 18px;
-    color: #282c35;
-    opacity: 0.8;
-    padding: 10px 0;    
-    outline: none;
-  }
-  #materias-selector option{
-    outline: none;
-  }
-
-  #questao .borda-drop, #materias-selector {
-    border: none;
+  #questao .borda-drop {
     border-bottom: 2px solid #282c35;
   }
-  #questao .p-materia, #materias-selector{
+  #questao .p-materia {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;

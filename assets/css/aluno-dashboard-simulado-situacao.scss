@@ -1,0 +1,43 @@
+#questao {
+    .simulados {
+        border-radius: 5px 5px 0 0;
+    }
+    .continuar-simulado {
+        display: flex;
+        p {
+            margin-left: 20px;
+        }
+    }
+    .p-sem {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #595959;
+    }
+    .p-questoes-simulado {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+
+        color: #595959;
+        text-shadow: none;
+        margin-bottom: 15px;
+
+        cursor: default !important;
+    }
+    .finalizar-simulado {
+        display: flex;
+        flex-direction: column;
+    }
+    .situacao {
+        flex-wrap: wrap;
+    }
+    .situacao-agendado {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,177 @@
+a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mobile {
+    display: none;
+}
+.desktop {
+    display: flex;
+}
+
+#questao {
+    .titulo-capa {
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+
+        margin-top: 30px;
+        color: #4e5057;
+    }
+    .tempo-simulado {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+
+        text-align: center;
+        margin: 10px 0;
+        color: #595959;
+    }
+    .titulo-link-questoes {
+        font-weight: 500;
+        font-size: 17px;
+        color: #282c35;
+
+        margin-top: 51px;
+        text-align: center;
+    }
+    .link-questoes {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+
+        color: #453939;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        margin-top: 30px;
+
+        padding: 0 17%;
+    }
+    .numero-questao-link {
+        width: 27px;
+        height: 30px;
+
+        padding: 10px;
+    }
+    .tempo-restante-simulado {
+        padding: 0 17%;
+
+        margin: 50px 30px;
+    }
+    .tempo-restante,
+    .questoes-simulado-feitas {
+        font-weight: 500;
+        font-size: 17px;
+
+        color: #4e5057;
+    }
+    .bar_tempo {
+        margin-top: 7px;
+        margin-bottom: 14px;
+        height: 10px;
+        border: 1px solid #8d9ab6;
+        border-radius: 10px;
+
+        box-sizing: border-box;
+    }
+    .bar_tempo_progresso {
+        height: 100%;
+
+        background: #f58e08;
+
+        border-radius: 10px;
+
+        width: 100%;
+    }
+    .progresso_tempo {
+        visibility: hidden;
+    }
+    .final-conteudo {
+        margin: 40px 0 20px 0;
+
+        display: flex;
+        justify-content: space-between;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+
+        color: #4e5057;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .questao-proxima {
+        display: flex;
+        align-items: center;
+    }
+    .questao-proxima img {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #questao {
+        .icones {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    #questao {
+        .titulo-capa,
+        .tempo-simulado {
+            text-align: start;
+            margin-left: 5%;
+        }
+        .titulo-capa {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .titulo-link-questoes {
+            font-weight: 500;
+            font-size: 10px;
+
+            margin-top: 30px;
+        }
+        .link-questoes {
+            padding: 0;
+
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+        }
+        .tempo-simulado {
+            font-weight: normal;
+            font-size: 10px;
+
+            margin-top: 0;
+        }
+        .tempo-restante-simulado {
+            margin: 0;
+            margin-top: 30px;
+            padding: 0 5%;
+        }
+        .tempo-restante,
+        .questoes-simulado-feitas {
+            font-weight: 500;
+            font-size: 10px;
+        }
+        .final-conteudo {
+            font-size: 12px;
+        }
+        .questao-proxima img {
+            width: 18px;
+        }
+    }
+}

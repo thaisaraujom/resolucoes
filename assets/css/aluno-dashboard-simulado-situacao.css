@@ -1,0 +1,56 @@
+#questao .simulados {
+  border-radius: 5px 5px 0 0;
+}
+
+#questao .continuar-simulado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#questao .continuar-simulado p {
+  margin-left: 20px;
+}
+
+#questao .p-sem {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  color: #595959;
+}
+
+#questao .p-questoes-simulado {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #595959;
+  text-shadow: none;
+  margin-bottom: 15px;
+  cursor: default !important;
+}
+
+#questao .finalizar-simulado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#questao .situacao {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#questao .situacao-agendado {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=aluno-dashboard-simulado-situacao.css.map */
