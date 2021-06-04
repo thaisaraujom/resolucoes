@@ -54,7 +54,8 @@ body {
   height: 13px;
 }
 
-#questao .expandir-barraCd, #questao .expandir-barraMd {
+#questao .expandir-barraCd,
+#questao .expandir-barraMd {
   display: none;
 }
 
@@ -89,7 +90,7 @@ body {
 }
 
 #questao .titulo-capitulo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -125,7 +126,7 @@ body {
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 0 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -175,12 +176,13 @@ body {
   margin: 0 10px;
 }
 
-#questao .concluido, #questao .concluidoC {
+#questao .concluido,
+#questao .concluidoC {
   visibility: hidden;
 }
 
 #questao .paragrafo1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   color: #595b5f;
@@ -189,7 +191,7 @@ body {
 }
 
 #questao .paragrafo3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
@@ -264,7 +266,7 @@ body {
   background-color: #53d63a;
   border-radius: 10px 0 0 10px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 16px;
@@ -324,7 +326,7 @@ footer {
 
 footer .texto-rodape {
   display: flex;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 17px;
@@ -393,7 +395,8 @@ a:link {
     padding-top: 60px !important;
     position: relative;
   }
-  #questao .num-capitulo, #questao .titulo-capitulo {
+  #questao .num-capitulo,
+  #questao .titulo-capitulo {
     color: #000000;
     font-size: 9px;
     text-align: left;
@@ -449,7 +452,11 @@ a:link {
     border-bottom: 2px solid #282c35;
   }
   #questao .p-materia {
+<<<<<<< HEAD
     font-family: 'Montserrat', sans-serif;
+=======
+    font-family: "Montserrat", sans-serif;
+>>>>>>> c3cc24875ec4fc9c21cefb692461051b76c30ab7
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
@@ -494,7 +501,8 @@ a:link {
   }
   #questao .bar_complete,
   #questao .bar_duvidas,
-  #questao .bar_erros, #questao .bar_branco {
+  #questao .bar_erros,
+  #questao .bar_branco {
     font-size: 12px;
   }
   #questao .voltar {
@@ -524,7 +532,68 @@ a:link {
 
 .show {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
+=======
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* ---------------- Selector ----------------------- */
+#questao .materia-selecionada,
+#materias-selector {
+  color: #41454e;
+}
+
+#questao .materia-mostrar,
+#materias-selector {
+  width: 35%;
+  background-color: #d7d5d4;
+}
+
+#materias-selector,
+#materias-selector option {
+  width: 38%;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #282c35;
+  opacity: 0.8;
+  padding: 10px 0;
+  outline: none;
+}
+
+#materias-selector option {
+  outline: none;
+}
+
+#questao .borda-drop,
+#materias-selector {
+  border: none;
+  border-bottom: 2px solid #282c35;
+}
+
+#questao .p-materia,
+#materias-selector {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #282c35;
+}
+/*# sourceMappingURL=aluno-modulo.css.map */
+>>>>>>> c3cc24875ec4fc9c21cefb692461051b76c30ab7

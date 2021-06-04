@@ -69,7 +69,7 @@ html {
             margin-left: 10px;
         }
 
-        .item-apostila {
+        .item-apostila, .item-materia, .item-simulado, .item-monitor, .item-home, .item-perfil, .item-seguir-questao, .item-anotacao, .item-simulado {
             a {
                 color: #F58E08;
             }
@@ -131,6 +131,7 @@ html {
     padding: 20px 0;
     width: 100%;
     position: absolute;
+    z-index: 666;
 
     nav {
         width: 100%;
@@ -668,6 +669,7 @@ html {
         }
         .drop {
             display: flex;
+            z-index: 800;
         }
         form {
             .campo-busca {

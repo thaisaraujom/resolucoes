@@ -263,4 +263,7 @@ footer .logo-rodape:hover {
   #questao .titulo h1 {
     font-size: 15px;
   }
+  footer .texto-rodape, footer .logo-rodape {
+    font-size: 10px !important;
+  }
 }
