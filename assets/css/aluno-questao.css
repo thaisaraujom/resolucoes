@@ -161,6 +161,7 @@ html {
   padding: 20px 0;
   width: 100%;
   position: absolute;
+  z-index: 666;
 }
 
 #navbar nav {

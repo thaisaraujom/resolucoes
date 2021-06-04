@@ -11,7 +11,7 @@ body {
 }
 
 #navbar-lateral ul .item-simulado a {
-    color: #F58E08;
+    color: #f58e08;
 }
 
 #questao {
@@ -150,11 +150,11 @@ body {
         font-weight: 500;
         font-size: 11px;
         line-height: 15px;
-        
-        color: #F2F2F2;
+
+        color: #f2f2f2;
 
         margin-top: 10px;
-        
+
         display: flex;
         justify-content: flex-end;
 
@@ -236,6 +236,29 @@ footer {
             padding-top: 60px !important;
             position: relative;
         }
+        .situacao {
+            background: #2c313b;
+            box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
+            flex-direction: column;
+
+            margin-top: 40px;
+
+            padding: 20px 20px 20px !important;
+
+            >div {
+                padding: 0;
+            }
+        }
+        .meus-graficos {
+            display: none;
+        }
+        .titulo-simulado-situacao {
+            font-size: 12px;
+            color: #9F9F9F;
+        } 
+        .p-simulado-situacao {
+            color: #777575;
+        }
         .voltar {
             padding: 40px 20px 0;
         }
@@ -245,10 +268,24 @@ footer {
         .simulados-select.mobile {
             display: flex;
         }
-        .conteudo-simulados {
+        .simulados-select.mobile {
             padding: 10px 20px 0 !important;
             margin: 0 !important;
             padding: 0 5%;
+        }
+        .conteudo-simulados {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .comecar-simulado {
+            color: #D7D5D4;
+            align-self: flex-start;
+
+            margin-top: 12px;
+            font-size: 12px;
+        }
+        .barras-simulado {
+            margin: 35px 5%;
         }
         #simulados-situacao {
             color: #d7d5d4;

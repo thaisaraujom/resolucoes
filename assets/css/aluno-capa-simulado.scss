@@ -13,6 +13,7 @@ a:active {
     display: flex;
 }
 
+
 #questao {
     .titulo-capa {
         font-weight: bold;
@@ -22,6 +23,7 @@ a:active {
         margin-top: 30px;
         color: #4e5057;
     }
+    
     .tempo-simulado {
         font-weight: normal;
         font-size: 15px;
@@ -73,7 +75,7 @@ a:active {
 
         color: #4e5057;
     }
-    .bar_tempo {
+    .bar_tempo, .bar_feitas {
         margin-top: 7px;
         margin-bottom: 14px;
         height: 10px;
@@ -81,6 +83,15 @@ a:active {
         border-radius: 10px;
 
         box-sizing: border-box;
+    }
+    .bar_feitas_progresso {
+        height: 100%;
+
+        background: #f58e08;
+
+        border-radius: 10px;
+
+        width: 100%;
     }
     .bar_tempo_progresso {
         height: 100%;
@@ -90,8 +101,30 @@ a:active {
         border-radius: 10px;
 
         width: 100%;
+
+        animation: progressbar-countdown;
+        /* Placeholder, this will be updated using javascript */
+    
+        /* We stop in the end */
+        animation-iteration-count: 1;
+        /* Stay on pause when the animation is finished finished */
+        animation-fill-mode: forwards;
+        /* We start paused, we start the animation using javascript */
+        animation-play-state: paused;
+        /* We want a linear animation, ease-out is standard */
+        animation-timing-function: linear;
     }
-    .progresso_tempo {
+    @keyframes progressbar-countdown {
+        0% {
+          width: 100%;
+          background: #f58e08;
+        }
+        100% {
+          width: 0%;
+          background: #f58e08;
+        }
+    }
+    .progresso_tempo, .progresso_feitas {
         visibility: hidden;
     }
     .final-conteudo {
@@ -105,8 +138,8 @@ a:active {
         font-size: 17px;
 
         color: #4e5057;
-
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
     }
     .questao-proxima {
         display: flex;
@@ -133,7 +166,7 @@ a:active {
             text-align: start;
             margin-left: 5%;
         }
-        .titulo-capa {
+        .titulo-capa h1{
             font-style: normal;
             font-weight: bold;
             font-size: 20px;
@@ -146,6 +179,7 @@ a:active {
         }
         .link-questoes {
             padding: 0;
+            margin-top: 20px;
 
             font-weight: 600;
             font-size: 15px;
@@ -167,8 +201,12 @@ a:active {
             font-weight: 500;
             font-size: 10px;
         }
+        .finalizar-simulado {
+            display: none;
+        }
         .final-conteudo {
             font-size: 12px;
+            margin-bottom: 30px !important;
         }
         .questao-proxima img {
             width: 18px;

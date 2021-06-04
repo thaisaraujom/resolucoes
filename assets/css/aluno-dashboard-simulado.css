@@ -11,7 +11,7 @@ body {
 }
 
 #navbar-lateral ul .item-simulado a {
-  color: #F58E08;
+  color: #f58e08;
 }
 
 #questao .icones a {
@@ -166,7 +166,7 @@ body {
   font-weight: 500;
   font-size: 11px;
   line-height: 15px;
-  color: #F2F2F2;
+  color: #f2f2f2;
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,6 +270,30 @@ footer .logo-rodape:hover {
     padding-top: 60px !important;
     position: relative;
   }
+  #questao .situacao {
+    background: #2c313b;
+    -webkit-box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+    padding: 20px 20px 20px !important;
+  }
+  #questao .situacao > div {
+    padding: 0;
+  }
+  #questao .meus-graficos {
+    display: none;
+  }
+  #questao .titulo-simulado-situacao {
+    font-size: 12px;
+    color: #9F9F9F;
+  }
+  #questao .p-simulado-situacao {
+    color: #777575;
+  }
   #questao .voltar {
     padding: 40px 20px 0;
   }
@@ -281,10 +305,24 @@ footer .logo-rodape:hover {
     display: -ms-flexbox;
     display: flex;
   }
-  #questao .conteudo-simulados {
+  #questao .simulados-select.mobile {
     padding: 10px 20px 0 !important;
     margin: 0 !important;
     padding: 0 5%;
+  }
+  #questao .conteudo-simulados {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #questao .comecar-simulado {
+    color: #D7D5D4;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 12px;
+    font-size: 12px;
+  }
+  #questao .barras-simulado {
+    margin: 35px 5%;
   }
   #questao #simulados-situacao {
     color: #d7d5d4;

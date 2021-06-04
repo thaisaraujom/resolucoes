@@ -77,7 +77,7 @@ a:active {
   color: #4e5057;
 }
 
-#questao .bar_tempo {
+#questao .bar_tempo, #questao .bar_feitas {
   margin-top: 7px;
   margin-bottom: 14px;
   height: 10px;
@@ -87,14 +87,58 @@ a:active {
           box-sizing: border-box;
 }
 
-#questao .bar_tempo_progresso {
+#questao .bar_feitas_progresso {
   height: 100%;
   background: #f58e08;
   border-radius: 10px;
   width: 100%;
 }
 
-#questao .progresso_tempo {
+#questao .bar_tempo_progresso {
+  height: 100%;
+  background: #f58e08;
+  border-radius: 10px;
+  width: 100%;
+  -webkit-animation: progressbar-countdown;
+          animation: progressbar-countdown;
+  /* Placeholder, this will be updated using javascript */
+  /* We stop in the end */
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  /* Stay on pause when the animation is finished finished */
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  /* We start paused, we start the animation using javascript */
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  /* We want a linear animation, ease-out is standard */
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes progressbar-countdown {
+  0% {
+    width: 100%;
+    background: #f58e08;
+  }
+  100% {
+    width: 0%;
+    background: #f58e08;
+  }
+}
+
+@keyframes progressbar-countdown {
+  0% {
+    width: 100%;
+    background: #f58e08;
+  }
+  100% {
+    width: 0%;
+    background: #f58e08;
+  }
+}
+
+#questao .progresso_tempo, #questao .progresso_feitas {
   visibility: hidden;
 }
 
@@ -142,7 +186,7 @@ a:active {
     text-align: start;
     margin-left: 5%;
   }
-  #questao .titulo-capa {
+  #questao .titulo-capa h1 {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -154,6 +198,7 @@ a:active {
   }
   #questao .link-questoes {
     padding: 0;
+    margin-top: 20px;
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
@@ -173,8 +218,12 @@ a:active {
     font-weight: 500;
     font-size: 10px;
   }
+  #questao .finalizar-simulado {
+    display: none;
+  }
   #questao .final-conteudo {
     font-size: 12px;
+    margin-bottom: 30px !important;
   }
   #questao .questao-proxima img {
     width: 18px;
