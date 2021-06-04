@@ -35,12 +35,8 @@ html {
 }
 
 #navbar .itens {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
+  align-items: center !important;
 }
 
 #navbar nav {
@@ -80,27 +76,17 @@ html {
 }
 
 #navbar .link-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #navbar .inicio-navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #navbar .inicio-navbar .navbar-itens {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -120,9 +106,7 @@ html {
 
 #navbar .botao-entrar {
   cursor: pointer;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100px;
   height: 34px;
   background: #f58e08;
@@ -140,23 +124,15 @@ html {
 }
 
 #inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #282c35;
   height: 100%;
 }
 
 #inicio .inicio-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #282c35;
   padding: 0 10%;
 }
@@ -174,12 +150,8 @@ html {
 }
 
 #quem-somos .overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #quem-somos .title {
@@ -196,55 +168,37 @@ html {
 }
 
 #quem-somos .quem-somos-texto {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  order: 1;
 }
 
 #quem-somos .quem-somos-img {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  order: 2;
 }
 
 #quem-somos .missao {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  order: 3;
 }
 
 #quem-somos .visao {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+  order: 4;
 }
 
 #quem-somos .valores {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
+  order: 5;
 }
 
 #quem-somos .cultura {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   margin-top: 7%;
 }
 
 #quem-somos .cultura .check {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 15%;
 }
 
 #quem-somos .cultura .check-val {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -255,12 +209,8 @@ html {
 }
 
 #quem-somos .valores-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 5px;
   list-style: none;
   margin-left: 15%;
@@ -278,15 +228,9 @@ html {
 }
 
 #simulacao .overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 4%;
 }
 
@@ -309,29 +253,19 @@ html {
 }
 
 #simulacao .area {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-left: 2%;
 }
 
 #simulacao .area-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 170px;
   height: 120px;
   border-radius: 20px;
   background: #e6e1dd;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #simulacao .area-img img {
@@ -340,14 +274,11 @@ html {
 }
 
 #simulacao .area-img:hover {
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0.9;
 }
 
 #simulacao .area-conhecimento {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 65%;
 }
@@ -395,12 +326,8 @@ html {
 }
 
 #contato .overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #contato .title {
@@ -436,8 +363,7 @@ html {
   margin-bottom: 5%;
   border: 2px solid #d7d5d4;
   background-color: #282c35;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 20px;
   color: #fff;
   font: 300 16px "Montserrat", sans-serif;
@@ -476,22 +402,14 @@ html {
 }
 
 #contato .redes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: absolute;
   right: 10%;
-  -webkit-transform: translate(0, 95%);
-          transform: translate(0, 95%);
+  transform: translate(0, 95%);
 }
 
 #contato .redes-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -505,12 +423,8 @@ html {
 
 #rodape {
   padding: 5% 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   background: #e6e1dd;
 }
 
@@ -543,13 +457,10 @@ html {
 
 @media (max-width: 1200px) {
   .area-conhecimento {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 5%;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -576,13 +487,8 @@ html {
     min-height: 80vh;
   }
   .itens {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .nav-item {
     margin-left: 0 !important;
@@ -593,10 +499,7 @@ html {
     margin-bottom: 20px;
   }
   .inicio-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -621,10 +524,7 @@ html {
     height: auto;
   }
   .inicio-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    flex-flow: column wrap;
   }
   .inicio-wrap .inicio-texto h1 {
     font-size: 30px;
@@ -635,8 +535,7 @@ html {
     width: 50%;
     margin-right: 3%;
     padding: 0;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
+    align-content: flex-end;
   }
   .inicio-wrap img {
     width: 225px;
@@ -655,37 +554,26 @@ html {
     line-height: 18px;
   }
   #quem-somos .overlay {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   #quem-somos .quem-somos-img {
     width: 100%;
     text-align: center;
   }
   #quem-somos .quem-somos-texto {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   #quem-somos .quem-somos-img {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   #quem-somos .missao {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
   #quem-somos .visao {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    order: 4;
   }
   #quem-somos .valores {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
+    order: 5;
   }
   #quem-somos img {
     text-align: center;
@@ -694,8 +582,7 @@ html {
   }
   #quem-somos .cultura {
     font: bold 10px "Montserrat";
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-left: 0;
   }
   #quem-somos .cultura .visao {
@@ -717,19 +604,13 @@ html {
     margin: 0;
   }
   .navbar-itens {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #simulacao {
     padding-top: 55px !important;
   }
   #simulacao .overlay {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #simulacao .paragrafo {
     font: 400 12px "Montserrat";
@@ -745,13 +626,10 @@ html {
     width: 100%;
   }
   #simulacao .area-conhecimento {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 5%;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #simulacao img .title {
     font: bold 18px "Montserrat";
@@ -796,13 +674,8 @@ html {
     height: 15vh !important;
   }
   #contato .redes {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    align-items: center;
+    flex-direction: row-reverse;
   }
   #contato .redes-img-meio {
     margin: 20vh 10%;
@@ -854,4 +727,3 @@ html {
     height: auto;
   }
 }
-/*# sourceMappingURL=index.css.map */

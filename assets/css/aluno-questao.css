@@ -22,8 +22,6 @@ html {
 
 #navbar-lateral {
   background: #282c35;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   z-index: 1000000;
   position: fixed;
@@ -32,29 +30,16 @@ html {
 }
 
 #navbar-lateral nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
 #navbar-lateral nav .logo-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #navbar-lateral nav .fa-ellipsis-v {
@@ -92,13 +77,8 @@ html {
 }
 
 #navbar-lateral li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 0.15s;
+  align-items: center;
   transition: 0.15s;
 }
 
@@ -131,28 +111,15 @@ html {
 
 #navbar-lateral .menu {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #navbar-lateral .itens-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   height: 50%;
 }
 
@@ -177,22 +144,14 @@ html {
 
 #navbar .conteudo {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 #navbar .conteudo-interno {
   width: 100% !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 #navbar .conteudo-interno p {
@@ -202,12 +161,8 @@ html {
 #navbar .conteudo-interno2 {
   width: 100%;
   margin-left: 240px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #navbar form {
@@ -250,12 +205,8 @@ html {
 }
 
 #navbar .direita {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #navbar .direita a {
@@ -280,8 +231,6 @@ html {
 }
 
 #questao .icones {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font: 400 13px "Montserrat";
   line-height: 12px;
@@ -319,9 +268,7 @@ html {
 
 #questao .conteudo .numero-questao {
   display: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   text-align: start;
   color: #4e5057;
 }
@@ -335,13 +282,8 @@ html {
 }
 
 #questao .conteudo .enunciado {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 10px;
 }
 
@@ -394,8 +336,7 @@ html {
   width: 16px;
   height: 16px;
   background: #f58e08;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 2px;
 }
 
@@ -404,12 +345,8 @@ html {
 }
 
 #questao .submissao {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 50%;
   margin-left: 15px !important;
 }
@@ -430,8 +367,7 @@ html {
   margin: 5% 2px 15px;
   font: 500 16px "Roboto";
   cursor: pointer;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -448,9 +384,6 @@ html {
   margin-bottom: 12px !important;
   cursor: pointer;
   font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   width: 15%;
 }
@@ -477,8 +410,7 @@ html {
   height: 13px;
   width: 13px;
   background-color: #d4d3d3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #questao .check:hover input ~ .checkmark {
@@ -517,8 +449,6 @@ html {
 .progress-bar-line {
   background: #e6e1dd;
   height: 2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 230px;
 }
@@ -533,15 +463,9 @@ html {
   background: #e6e1dd;
   padding: 2%;
   padding-left: 260px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #footer .qtd-quest {
@@ -565,8 +489,6 @@ html {
 #footer .back,
 #footer .next,
 #footer .centro {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 40px;
 }
@@ -584,12 +506,8 @@ html {
 #footer .img-next,
 #footer .texto-back,
 #footer .texto-next {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #4e5057;
   white-space: nowrap;
 }
@@ -600,8 +518,7 @@ html {
 
 #footer .img-back img,
 #footer .img-next img {
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
 #footer select {
@@ -613,24 +530,16 @@ html {
 #footer .centro {
   width: 50%;
   height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   color: #4e5057;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #footer .centro .qtd-quest {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 40%;
 }
@@ -644,17 +553,13 @@ html {
 #footer .centro .imagem3 img,
 #footer .centro .imagem2 img,
 #footer .centro .imagem1 img {
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #footer .centro .imagens {
   width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 #footer .centro select {
@@ -707,24 +612,13 @@ html {
   }
   .drop1 {
     margin-left: -1000px;
-    -webkit-transition: 3s;
     transition: 3s;
   }
   .nav-out {
-    -webkit-animation: vai 0.5s;
-            animation: vai 0.5s;
+    animation: vai 0.5s;
   }
   .nav-in {
-    -webkit-animation: vem 0.5s;
-            animation: vem 0.5s;
-  }
-  @-webkit-keyframes vem {
-    from {
-      margin-left: -250px;
-    }
-    to {
-      margin-left: 0;
-    }
+    animation: vem 0.5s;
   }
   @keyframes vem {
     from {
@@ -732,14 +626,6 @@ html {
     }
     to {
       margin-left: 0;
-    }
-  }
-  @-webkit-keyframes vai {
-    from {
-      margin-left: 0;
-    }
-    to {
-      margin-left: -250px;
     }
   }
   @keyframes vai {
@@ -753,33 +639,23 @@ html {
   .centro {
     padding-top: 10px !important;
     margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    justify-content: space-between !important;
   }
   .centro .desktop {
     display: none;
   }
   .centro .qtd-quest {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    justify-content: space-between !important;
     width: 40px !important;
     margin-right: 0 !important;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .centro .qtd-quest h4 {
     font-size: 10px;
   }
   .centro .imagens {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .centro .imagem1,
   .centro .imagem2,
@@ -790,8 +666,6 @@ html {
     margin-left: 20px;
   }
   #navbar .drop {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #navbar form .campo-busca {
@@ -818,8 +692,6 @@ html {
     display: none;
   }
   #questao .titulo.mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #questao .titulo {
@@ -838,19 +710,14 @@ html {
     margin: 0;
     height: 100%;
     margin: 0 !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #questao .submissao .button {
     font-size: 12px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     text-shadow: none;
   }
   #questao .conteudo .numero-questao {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #questao .conteudo .numero-questao p {
@@ -859,8 +726,6 @@ html {
     font-size: 16px;
   }
   #questao .conteudo .numero-questao .mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #footer {
@@ -939,23 +804,15 @@ html {
     margin-right: 5%;
   }
   #questao .submissao {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    justify-content: space-between !important;
   }
   #questao .submissao .ou {
     margin: 0 !important;
   }
   #questao .submissao .button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     border-radius: 0;
     margin-bottom: 0;
     margin-top: 0;
@@ -980,12 +837,8 @@ html {
   }
   #questao .submissao .enviar,
   #questao .submissao .conferir {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end !important;
-        -ms-flex-align: end !important;
-            align-items: flex-end !important;
+    align-items: flex-end !important;
   }
   #questao .submissao .ou {
     width: 100% !important;
@@ -998,28 +851,19 @@ html {
   #footer .img-next img {
     padding-left: 10px;
     padding-right: 15px;
-    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   #footer .desktop {
     display: none;
   }
   #footer .centro {
     width: 100%;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    justify-content: center !important;
   }
   #footer .selecionar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    align-items: center !important;
     margin-left: 55px;
   }
 }
@@ -1033,9 +877,7 @@ html {
     right: -40px;
   }
   #navbar form .conteudo-interno2 {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    justify-content: space-between !important;
   }
 }
 
@@ -1044,4 +886,3 @@ html {
     font-size: 20px;
   }
 }
-/*# sourceMappingURL=aluno-questao.css.map */
