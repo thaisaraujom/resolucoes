@@ -1,0 +1,122 @@
+#questao .caixa {
+  font-size: 20px;
+}
+
+#questao .caixa.branca {
+  background-color: #c9c8c7;
+}
+
+#questao .caixa.erros {
+  margin: 0 10px;
+}
+
+#questao .titulo-desempenho-simulado {
+  font-weight: bold;
+  font-size: 25px;
+  color: #4e5057 !important;
+  padding: 0 !important;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#questao .parte-cima-simulado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#questao .tempo-feito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 14%;
+  margin-top: 15px;
+}
+
+#questao .tempo-feito .tempo-minutos {
+  color: #4e5057;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 0;
+}
+
+#questao .tempo-feito .media-tempo {
+  color: #4e5057;
+}
+
+#questao .info-tempo {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #787982;
+  margin-left: 10px;
+}
+
+#questao .tempo-feito.mobile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  #questao .tempo-feito.desktop {
+    display: none;
+  }
+  #questao .tempo-feito.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #questao .icones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #questao .info-tempo {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    color: #787982;
+  }
+  #questao .tempo-feito {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 0;
+  }
+  #questao .tempo-feito img {
+    height: 24px;
+    width: auto;
+  }
+  #questao .tempo-feito .tempo-minutos {
+    font-size: 10px;
+  }
+  #questao .conteudo-desempenho {
+    margin-bottom: 0;
+  }
+  #questao .cards-todos {
+    padding: 0;
+  }
+  #questao .caixa {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 700px) {
+  #questao .caixa .texto-branca {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+/*# sourceMappingURL=aluno-desempenho-simulado.css.map */

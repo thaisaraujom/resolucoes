@@ -1,0 +1,116 @@
+#questao {
+    .caixa {
+        font-size: 20px;
+    }
+    .caixa.branca {
+        background-color: #c9c8c7;
+    }
+    .caixa.erros {
+        margin: 0 10px;
+    }
+    .titulo-desempenho-simulado {
+        font-weight: bold;
+        font-size: 25px;
+
+        color: #4e5057 !important;
+
+        padding: 0 !important;
+        margin-top: 40px;
+
+        text-align: center;
+    }
+    .parte-cima-simulado {
+        display: flex;
+        flex-direction: column;
+    }
+    .tempo-feito {
+        display: flex;
+
+        align-self: flex-end;
+        justify-content: center;
+
+        margin-right: 14%;
+
+        margin-top: 15px;
+
+        .tempo-minutos {
+            color: #4e5057;
+            font-weight: 500;
+            font-size: 20px;
+
+            line-height: 0;
+        }
+        .media-tempo {
+            color: #4e5057;
+        }
+    }
+    .info-tempo {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+
+        color: #787982;
+
+        margin-left: 10px;
+    }
+    .tempo-feito.mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    #questao {
+        .tempo-feito.desktop {
+            display: none;
+        }
+        .tempo-feito.mobile {
+            display: flex;
+        }
+        .icones {
+            display: flex;
+        }
+        .info-tempo {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+
+            color: #787982;
+        }
+        .tempo-feito {
+            align-self: flex-start;
+            justify-content: start;
+
+            margin: 0;
+
+            img {
+                height: 24px;
+                width: auto;
+            }
+            .tempo-minutos {
+                font-size: 10px;
+            }
+        }
+        .conteudo-desempenho {
+            margin-bottom: 0;
+        }
+        .cards-todos {
+            padding: 0;
+        }
+        .caixa {
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #questao {
+        .caixa {
+            .texto-branca {
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+    }
+}
