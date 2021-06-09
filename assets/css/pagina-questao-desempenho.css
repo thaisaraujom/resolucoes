@@ -10,8 +10,6 @@
 
 #questao-erro .icones {
   margin-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font: 400 13px "Montserrat";
   line-height: 12px;
@@ -43,31 +41,17 @@
 }
 
 #questao-erro .corpo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 7% 0%;
   width: 100%;
 }
 
 #questao-erro .erros-acertos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
   margin-bottom: 30px;
   margin-right: 27%;
 }
@@ -91,19 +75,10 @@
 #questao-erro .mobile .erros,
 #questao-erro .mobile .acertos,
 #questao-erro .mobile .nao-respondidas {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-          flex-direction: column !important;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
   width: 85px !important;
   height: 70px !important;
   text-align: center;
@@ -129,15 +104,9 @@
 #questao-erro .acertos,
 #questao-erro .nao-respondidas {
   color: #e6e1dd;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -149,12 +118,8 @@
 }
 
 #questao-erro .quadrado-quest {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -164,22 +129,12 @@
 }
 
 #questao-erro .quadrado-quest .questao-numero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background: #e3e1e0;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 47px;
   height: 50px;
   margin-right: 1%;
@@ -198,12 +153,8 @@
 }
 
 #fazerparte .overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #fazerparte .title {
@@ -220,22 +171,16 @@
 }
 
 #fazerparte .fazerparte-texto {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  order: 1;
 }
 
 #fazerparte .fazerparte-img {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  order: 2;
 }
 
 #fazerparte .botao-fale {
   cursor: pointer;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 150px;
   height: 34px;
   background: #f58e08;
@@ -264,8 +209,7 @@
 
 #simulacao .area-img {
   background: #e6e1dd;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #simulacao .title-area {
@@ -274,21 +218,13 @@
 }
 
 #simulacao .area-conhecimento {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 #rodape-erro {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: #d7d5d4;
   border-top: 2px solid #282c35;
   padding: 1% 0;
@@ -296,11 +232,7 @@
 }
 
 #rodape-erro .rodape-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
 }
 
@@ -320,9 +252,7 @@
 
 @media (max-width: 1200px) {
   .area-conhecimento {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    justify-content: center !important;
   }
 }
 
@@ -336,13 +266,10 @@
   #questao-erro .erros-acertos {
     padding: auto 0;
     margin-right: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #questao-erro .quadrado-quest {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-right: 20px !important;
     margin-left: 20px !important;
   }
@@ -353,8 +280,6 @@
     display: none;
   }
   #questao-erro .mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #questao-erro .mobile .titulo {
@@ -379,12 +304,8 @@
     min-height: 40vh;
   }
   #fazerparte .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   #fazerparte .title {
     font-size: 15px;
@@ -451,4 +372,3 @@
     width: 160px;
   }
 }
-/*# sourceMappingURL=pagina-questao-desempenho.css.map */

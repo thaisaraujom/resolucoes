@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .progressbar {
+            width: 80%;
+            margin: 25px auto;
+            border: solid 1px #000;
+            }
+            .progressbar .inner {
+                height: 15px;
+                animation: progressbar-countdown;            
+                animation-duration: 60s;
+                animation-iteration-count: 1;            
+                animation-fill-mode: forwards;               
+                animation-play-state: paused;          
+                animation-timing-function: linear;
+            }
+            @keyframes progressbar-countdown {
+            0% {
+                width: 100%;
+                background: #0F0;
+            }
+            100% {
+                width: 0%;
+                background: #F00;
+            }
+        }
+    </style>
+    <title>Barar de Progresso</title>
+</head>
+<body>
+    <div id='progressbar1'></div>
+
+    <script>
+ 
+        function createProgressbar(id, duration, callback) {
+        // Selecionado a DIV que vai ser a barra de progresso
+        var progressbar = document.getElementById(id);
+        progressbar.className = 'progressbar';
+
+        // Creando a DIV que vai mudar de tamanho de acordo com o progresso
+        var progressbarinner = document.createElement('div');
+        progressbarinner.className = 'inner';
+
+        // Colocando os paramentros da animação da barra
+        progressbarinner.style.animationDuration = duration;
+        
+        if (typeof(callback) === 'function') {
+            progressbarinner.addEventListener('animationend', callback);
+        }
+
+        // Colocando a barra de progresso dentro da DIV
+        progressbar.appendChild(progressbarinner);
+
+        // Colocando animação na barra de progresso
+        progressbarinner.style.animationPlayState = 'running';
+        }
+
+        addEventListener('load', function() {
+            createProgressbar('progressbar1', '60s', function() {
+                alert('O tempo de 1 minuto para responder a questão, terminou !')});
+  
+        });
+    </script>
+</body>
+</html>

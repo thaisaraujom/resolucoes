@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/caderno-de-anotacoes.css">
+    <link rel="stylesheet" href="assets/css/footer-eject.css">
+    <link rel="stylesheet" href="assets/css/anotacao.css">
+
+    
+    
+
+    <title>Caderno de Anotações | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/home.svg" alt=""></a><a
+                            class="item-link" href="">Home</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/apostilas - white.svg"
+                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/materias.svg" alt=""></a><a
+                            class="item-link" href="">Matérias</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
+                            href="" class="item-link">Monitores</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
+                            class="item-link">Perfil</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
+                            href="" class="item-link">Seguir Questão</a></li>
+
+                    <li class="nav-item active"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
+                            href="" class="item-link item-apostila">Anotações</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/simulado.svg" alt=""></a><a
+                            href="" class="item-link">Simulado</a></li>
+                </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones">
+                        <a href="index.html"><img class="home" src="assets/img/pagina-questao/icon-home-white.svg" alt=""></a>
+                        <img class="seta" src="assets/img/pagina-questao/icon-home-seta-white.svg" alt="">
+                        <a href="index.html">
+                            <p>Voltar</p>
+                        </a>
+                    </div>                   
+                </div>
+            </div>
+
+            <!-- INICIO Caderno de Anotações -->
+            <main class="caderno">
+                <!-- Cabeçalho do Caderno -->
+                <header class="caderno__header">
+                    <h1 class="caderno__title">Minhas anotações</h1>
+                </header>
+                <!-- Corpo do Caderno -->
+                <section class="caderno__body">
+                    <!-- Menu lateral do caderno -->
+                    <aside class="col-a3">
+                        <nav class="caderno__nav nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active show caderno__nav-item " id="v-pills-matematica-tab" data-toggle="pill" href="#v-pills-matematica" role="tab" aria-controls="v-pills-matematica" aria-selected="true">Matemática</a>
+                            <a class="nav-link caderno__nav-item" id="v-pills-portugues-tab" data-toggle="pill" href="#v-pills-portugues" role="tab" aria-controls="v-pills-portugues caderno__nav-item" aria-selected="false">Português</a>
+                            <a class="nav-link caderno__nav-item" id="v-pills-historia-tab" data-toggle="pill" href="#v-pills-historia" role="tab" aria-controls="v-pills-historia caderno__nav-item" aria-selected="false">História</a>
+                            <a class="nav-link caderno__nav-item" id="v-pills-geografia-tab" data-toggle="pill" href="#v-pills-geografia" role="tab" aria-controls="v-pills-geografia caderno__nav-item" aria-selected="false">Geografia</a>
+                            <a class="nav-link caderno__nav-item" id="v-pills-biologia-tab" data-toggle="pill" href="#v-pills-biologia" role="tab" aria-controls="v-pills-biologia caderno__nav-item" aria-selected="false">Biologia</a>
+                            <a class="nav-link caderno__nav-item" id="v-pills-fisica-tab" data-toggle="pill" href="#v-pills-fisica" role="tab" aria-controls="v-pills-fisica caderno__nav-item" aria-selected="false">Física</a>
+                        </nav>
+                    </aside>
+                    <!-- Anotações dos Cadernos -->                    
+                    <section class="caderno__anotacoes tab-content col-a9" id="v-pills-tabContent">
+                        <!-- MATEMÁTICA -->
+                        <div class="tab-pane fade active show" id="v-pills-matematica" role="tabpanel" aria-labelledby="v-pills-matematica-tab">
+                            <article class="anotacao matematica">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Conjuntos</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>N={0,1,2,3,4,5,...}Números Naturais</p>
+                                    <p>Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros</p>
+                                    <p>Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis )Números racionais (são números ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                    <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao matematica">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Axioma da soma e da multiplicação de números reais 
+
+                                    </h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>1. Fechamento ¥ a, b € R temos um único a+b R¥ a, b € R temos um único ab R</p>
+                                    <p>2. Comutatividade Dados a,b € r temos A+b=b+a ab=ba</p>
+                                    <p>3. Associatividade(a+b)+c = a+(b+c)(a.b)c = a.(b.c)  ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao matematica">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Conjuntos</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>N={0,1,2,3,4,5,...}Números Naturais</p>
+                                    <p>Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros</p>
+                                    <p>Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis )Números racionais (são números ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao matematica">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Axioma da soma e da multiplicação de números reais 
+
+                                    </h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>1. Fechamento ¥ a, b € R temos um único a+b R¥ a, b € R temos um único ab R</p>
+                                    <p>2. Comutatividade Dados a,b € r temos A+b=b+a ab=ba</p>
+                                    <p>3. Associatividade(a+b)+c = a+(b+c)(a.b)c = a.(b.c)  ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao matematica">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Conjuntos</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>N={0,1,2,3,4,5,...}Números Naturais</p>
+                                    <p>Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros</p>
+                                    <p>Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis )Números racionais (são números ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao matematica">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Axioma da soma e da multiplicação de números reais 
+
+                                    </h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>1. Fechamento ¥ a, b € R temos um único a+b R¥ a, b € R temos um único ab R</p>
+                                    <p>2. Comutatividade Dados a,b € r temos A+b=b+a ab=ba</p>
+                                    <p>3. Associatividade(a+b)+c = a+(b+c)(a.b)c = a.(b.c)  ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <footer class="caderno__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i>
+                                                <img src="./assets/img/pagina-questao/icon-previous.svg" alt="">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i><img src="./assets/img/pagina-questao/icon-next.svg" alt=""></i></a></li>
+                                </ul>                   
+                            </footer>
+                        </div>
+                        <!-- PORTUGUÊS -->
+                        <div class="tab-pane fade" id="v-pills-portugues" role="tabpanel" aria-labelledby="v-pills-portugues-tab">
+                            <article class="anotacao portugues">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Análise sintática</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>N={0,1,2,3,4,5,...}Números Naturais</p>
+                                    <p>Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros</p>
+                                    <p>Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis )Números racionais (são números ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao portugues">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Morfologia
+
+                                    </h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>1. Fechamento ¥ a, b € R temos um único a+b R¥ a, b € R temos um único ab R</p>
+                                    <p>2. Comutatividade Dados a,b € r temos A+b=b+a ab=ba</p>
+                                    <p>3. Associatividade(a+b)+c = a+(b+c)(a.b)c = a.(b.c)  ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao portugues">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Análise sintática</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>N={0,1,2,3,4,5,...}Números Naturais</p>
+                                    <p>Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros</p>
+                                    <p>Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis )Números racionais (são números ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <footer class="caderno__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i>
+                                                <img src="./assets/img/pagina-questao/icon-previous.svg" alt="">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i><img src="./assets/img/pagina-questao/icon-next.svg" alt=""></i></a></li>
+                                </ul>                   
+                            </footer>
+                        </div>
+                        <!-- HISTÓRIA -->
+                        <div class="tab-pane fade" id="v-pills-historia" role="tabpanel" aria-labelledby="v-pills-historia-tab">
+                            <article class="anotacao historia">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">História Moderna
+                                    </h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>N={0,1,2,3,4,5,...}Números Naturais</p>
+                                    <p>Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros</p>
+                                    <p>Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis )Números racionais (são números ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao historia">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Segunda Guerra Mundial
+
+                                    </h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>1. Fechamento ¥ a, b € R temos um único a+b R¥ a, b € R temos um único ab R</p>
+                                    <p>2. Comutatividade Dados a,b € r temos A+b=b+a ab=ba</p>
+                                    <p>3. Associatividade(a+b)+c = a+(b+c)(a.b)c = a.(b.c)  ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>                    
+                            <footer class="caderno__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i>
+                                                <img src="./assets/img/pagina-questao/icon-previous.svg" alt="">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i><img src="./assets/img/pagina-questao/icon-next.svg" alt=""></i></a></li>
+                                </ul>                   
+                            </footer>
+                        </div>
+                        <!-- GEOGRAFIA -->
+                        <div class="tab-pane fade" id="v-pills-geografia" role="tabpanel" aria-labelledby="v-pills-geografia-tab">
+                            <article class="anotacao geografia">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Geopolítica</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>1. Fechamento ¥ a, b € R temos um único a+b R¥ a, b € R temos um único ab R</p>
+                                    <p>2. Comutatividade Dados a,b € r temos A+b=b+a ab=ba</p>
+                                    <p>3. Associatividade(a+b)+c = a+(b+c)(a.b)c = a.(b.c)  ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao geografia">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Clima</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>N={0,1,2,3,4,5,...}Números Naturais</p>
+                                    <p>Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros</p>
+                                    <p>Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis )Números racionais (são números ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <footer class="caderno__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i>
+                                                <img src="./assets/img/pagina-questao/icon-previous.svg" alt="">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i><img src="./assets/img/pagina-questao/icon-next.svg" alt=""></i></a></li>
+                                </ul>                   
+                            </footer>
+                        </div>
+                        <!-- BIOLOGIA -->
+                        <div class="tab-pane fade" id="v-pills-biologia" role="tabpanel" aria-labelledby="v-pills-biologia-tab">
+                            <article class="anotacao biologia">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Fisiologia Animal</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>N={0,1,2,3,4,5,...}Números Naturais</p>
+                                    <p>Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros</p>
+                                    <p>Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis )Números racionais (são números ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao biologia">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Citologia</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>1. Fechamento ¥ a, b € R temos um único a+b R¥ a, b € R temos um único ab R</p>
+                                    <p>2. Comutatividade Dados a,b € r temos A+b=b+a ab=ba</p>
+                                    <p>3. Associatividade(a+b)+c = a+(b+c)(a.b)c = a.(b.c)  ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao biologia">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Genética</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>N={0,1,2,3,4,5,...}Números Naturais</p>
+                                    <p>Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros</p>
+                                    <p>Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis )Números racionais (são números ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <footer class="caderno__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i>
+                                                <img src="./assets/img/pagina-questao/icon-previous.svg" alt="">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i><img src="./assets/img/pagina-questao/icon-next.svg" alt=""></i></a></li>
+                                </ul>                   
+                            </footer>
+                        </div>
+                        <!-- FISICA -->
+                        <div class="tab-pane fade" id="v-pills-fisica" role="tabpanel" aria-labelledby="v-pills-fisica-tab">
+                            <article class="anotacao fisica">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Cinemática</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>N={0,1,2,3,4,5,...}Números Naturais</p>
+                                    <p>Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros</p>
+                                    <p>Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis )Números racionais (são números ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao fisica">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Empuxo</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>1. Fechamento ¥ a, b € R temos um único a+b R¥ a, b € R temos um único ab R</p>
+                                    <p>2. Comutatividade Dados a,b € r temos A+b=b+a ab=ba</p>
+                                    <p>3. Associatividade(a+b)+c = a+(b+c)(a.b)c = a.(b.c)  ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao fisica">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Leis de Newton</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>N={0,1,2,3,4,5,...}Números Naturais</p>
+                                    <p>Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros</p>
+                                    <p>Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis )Números racionais (são números ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+                            <article class="anotacao fisica">
+                                <header class="anotacao__header">
+                                    <h3 class="anotacao__title">Lançamento Oblíquo</h3>                             
+                                    <div class="anotacao__date-time">                             
+                                        <p><span class="anotacao__date">23/06/20</span>&nbsp;ás&nbsp;<span class="anotacao__time">15:34</span></p>
+                                    </div>
+                                </header>
+                                <main class="anotacao__body">
+                                    <p>N={0,1,2,3,4,5,...}Números Naturais</p>
+                                    <p>Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros</p>
+                                    <p>Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis )Números racionais (são números ( ... )</p>
+                                </main>
+                                <footer class="anotacao__footer">
+                                <i><img src="./assets/img/pagina-questao/icon-trash.svg" alt="" data-toggle="modal" data-target="#modal-excluir-anotacao"></i>
+                                </footer>
+                            </article>
+
+                            <footer class="caderno__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i>
+                                                <img src="./assets/img/pagina-questao/icon-previous.svg" alt="">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i><img src="./assets/img/pagina-questao/icon-next.svg" alt=""></i></a></li>
+                                </ul>                   
+                            </footer>
+                        </div>
+                        
+                       
+                    </section>
+                    <!-- Modal Confirmar Exclusão de Anotação -->
+                    <div class="modal fade" id="modal-excluir-anotacao" tabindex="-1" role="dialog" aria-labelledby="modal-excluir-anotacaoLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">                             
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">X</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3>Deseja apagar essa anotação?</h3>
+                                <div>
+                                    <button type="button" class="btn " data-dismiss="modal">Sim</button>
+                                    <button type="button" class="btn active">Não</button>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                        </div>
+                </section>
+              
+            </main>
+            <footer class="eject__footer">
+                <div class="texto-rodape">
+                    <p>Resoluções.com © 2020 | Desenvolvido pela &nbsp; </p>
+                </div>
+        
+                <div class="logo-rodape">
+                    <a class="desktop" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg"
+                            alt="">&nbsp;</a>
+                    <a class="mobile" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/mobile-eject.svg"
+                            alt=""></a>
+                    <a href="http://www.ejectufrn.com.br/">
+                        <p class="p-logo">&nbsp;EJECT</p>
+                    </a>
+                </div>
+        
+            </footer>
+
+        </div>    
+
+    
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+</body>
+
+</html>
