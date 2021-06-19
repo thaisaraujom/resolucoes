@@ -282,6 +282,7 @@ html {
             display: flex;
             flex-direction: column;
             margin-top: 10px;
+            padding-right: 70px;
             .texto {
                 margin-bottom: 30px;
             }
@@ -711,6 +712,9 @@ html {
             padding-top: 20px ;
             padding-right: 0;
             padding-left: 0;
+            .enunciado {
+                padding-right: 0 !important;
+            }
         }
         .submissao {
             width: 100%;

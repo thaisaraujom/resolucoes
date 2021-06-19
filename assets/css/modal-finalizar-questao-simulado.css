@@ -21,7 +21,22 @@ a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  visibility: visible;
+  visibility: hidden;
+  z-index: 9999999;
+}
+
+.modal-finalizar-overlay button {
+  border-radius: 17px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 25px;
+  color: #ffffff;
+  background: #f58e08;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
 }
 
 .modal-finalizar-overlay.active {
@@ -190,20 +205,6 @@ a:active {
   cursor: pointer;
 }
 
-button {
-  border-radius: 17px;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  font-weight: bold;
-  padding: 5px 25px;
-  color: #ffffff;
-  background: #f58e08;
-  border: none;
-  cursor: pointer;
-  margin-left: 20px;
-}
-
 @media (max-width: 770px) {
   .voltar-simulado.desktop {
     display: none;
@@ -264,7 +265,7 @@ button {
   .bar_tempo {
     margin-bottom: 30px;
   }
-  button {
+  .modal-finalizar-overlay button {
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;

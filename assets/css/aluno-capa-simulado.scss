@@ -160,6 +160,9 @@ a:active {
 }
 
 @media (max-width: 770px) {
+    body, html {
+        background: #D7D5D4;
+    }
     #questao {
         .titulo-capa,
         .tempo-simulado {

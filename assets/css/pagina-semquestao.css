@@ -10,6 +10,8 @@
 
 #aviso-questao .icones {
   margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font: 400 13px "Montserrat";
   line-height: 12px;
@@ -35,10 +37,19 @@
 }
 
 #aviso-questao .conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #aviso-questao .imagem {
@@ -79,17 +90,29 @@
 }
 
 #outras-opcoes .area-conhecimento {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #outras-opcoes .area-conhecimento .area {
   width: 184.88px;
   height: 128px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   margin-bottom: 3%;
   margin-right: 2%;
@@ -105,8 +128,12 @@
 }
 
 #outras-opcoes .area-conhecimento .area-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 170px;
   height: 120px;
   border-radius: 20px;
@@ -154,10 +181,13 @@
 
 @media (max-width: 1200px) {
   .area-conhecimento {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 5%;
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -216,3 +246,4 @@
     margin: 0;
   }
 }
+/*# sourceMappingURL=pagina-semquestao.css.map */

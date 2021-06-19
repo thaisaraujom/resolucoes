@@ -1,12 +1,45 @@
 #questao {
+    .mobile {
+        display: none;
+    }
     .caixa {
         font-size: 20px;
+    }
+    .p-graficos {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+
+        cursor: pointer;
+
+        text-align: end;
+
+        width: 100%;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .p-graficos p::after {
+        content: url('../../assets/img/aluno-desempenho-simulado/seta-grafico.svg');
+
+        margin-left: 5px;
     }
     .caixa.branca {
         background-color: #c9c8c7;
     }
     .caixa.erros {
         margin: 0 10px;
+    }
+    .cards {
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        max-width: 100%;
+
+        position: relative;
     }
     .titulo-desempenho-simulado {
         font-weight: bold;
@@ -57,6 +90,68 @@
     .tempo-feito.mobile {
         display: none;
     }
+    .cabecalho-questao-selecionada {
+        height: 40px;
+        background: #e6e1dd;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 25px;
+    }
+    .icones-cabecalho-questao-selecionada {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-left: 15px;
+
+            cursor: pointer;
+        }
+        .icone {
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+    .p-cabecalho-questao-selecionada {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: #4e5057;
+    }
+    .questao-selecionada {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: #F2F2F2;
+    }
+    .conteudo-questao-selecionada {
+        margin: 0 10%;
+        .enunciado {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+
+            .imagem-enunciado {
+                text-align: center;
+            }
+            .imagem-enunciado img {
+                max-width: 470px;
+            }
+        }
+        .alternativas {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .questionamento {
+            display: block;
+            max-width: 470px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .icone-sair.mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -104,6 +199,33 @@
     }
 }
 
+@media (max-width: 770px) {
+    body, html {
+        background: #D7D5D4;
+    }
+    #questao {
+        .cards-todos {
+            background: none;
+        }
+        .questao-selecionada {
+            border-radius: 10px;
+        }
+        .cabecalho-questao-selecionada {
+            background: #CECECE;
+            border-radius: 10px 10px 0 0;
+        }
+        .icone-sair.mobile {
+            display: flex;
+        }
+        .icone.desktop {
+            display: none;
+        }
+        .p-graficos {
+            display: none;
+        }
+    }
+}
+
 @media (max-width: 700px) {
     #questao {
         .caixa {
@@ -111,6 +233,18 @@
                 font-size: 10px;
                 line-height: 12px;
             }
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    #questao {
+        .icon-correta.mobile {
+            display: block;
+            left: 25px;
+        }
+        .conteudo-questao-selecionada {
+            margin: 0 5%;
         }
     }
 }

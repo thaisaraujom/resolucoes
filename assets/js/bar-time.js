@@ -1,23 +1,23 @@
 function createProgressbar(id) {
-  // We select the div that we want to turn into a progressbar
-  var progressbar = document.getElementById(id);
+	// We select the div that we want to turn into a progressbar
+	var progressbar = document.getElementById(id);
 
-  // We create the div that changes width to show progress
-  var progressbarinner = document.querySelector('.bar_tempo_progresso')
+	// We create the div that changes width to show progress
+	var progressbarinner = document.querySelector('.bar_tempo_progresso')
 
-  // Now we set the animation parameters
-  var duration = document.querySelector('.progresso_tempo').innerHTML;
-  progressbarinner.style.animationDuration = duration +'s';
+	// Now we set the animation parameters
+	var duration = document.querySelector('.progresso_tempo').innerHTML;
+	progressbarinner.style.animationDuration = duration + 's';
 
-  // var durationMinutes = (duration/60);
-  relogio(Number(duration))
-  // formatTempo(duration)
+	// var durationMinutes = (duration/60);
+	relogio(Number(duration))
+	// formatTempo(duration)
 
-  // Append the progressbar to the main progressbardiv
-  progressbar.appendChild(progressbarinner);
+	// Append the progressbar to the main progressbardiv
+	progressbar.appendChild(progressbarinner);
 
-  // When everything is set up we start the animation
-  progressbarinner.style.animationPlayState = 'running';
+	// When everything is set up we start the animation
+	progressbarinner.style.animationPlayState = 'running';
 }
 
 // function formatTempo(time) {
@@ -47,35 +47,35 @@ function createProgressbar(id) {
 var time_digitado = document.querySelector('.progresso_tempo').textContent;
 var format = Number(time_digitado)
 
-var min, seg;		
+var min, seg;
 
-min = Math.floor(format / 60);		
-seg = Math.floor(format%60)+1
+min = Math.floor(format / 60);
+seg = Math.floor(format % 60) + 1
 
-	function relogio(time){		
-    var qtd_minutos = document.querySelector('.qtd-minutos')
-		if((min > 0) || (seg > 0)){				
-			if(seg == 0){					
-				seg = 59				
-				min = min - 1	
-			}				
-			else{					
-				seg = seg - 1				
-			}				
-			if(min.toString().length == 1){					
-				min = "0" + min			
-			}				
-			if(seg.toString().length == 1){					
-				seg = "0" + seg				
-			}				
-			qtd_minutos.innerHTML = min + ":" + seg				
-      setTimeout('relogio()', 1000)
-		} else {			
-			qtd_minutos.innerHTML = "00:00";			
-		}		
-	}	
-  // setTimeout(createProgressbar, 1000);	
-  
+function relogio(time) {
+	var qtd_minutos = document.querySelector('.qtd-minutos')
+	if ((min > 0) || (seg > 0)) {
+		if (seg == 0) {
+			seg = 59
+			min = min - 1
+		}
+		else {
+			seg = seg - 1
+		}
+		if (min.toString().length == 1) {
+			min = "0" + min
+		}
+		if (seg.toString().length == 1) {
+			seg = "0" + seg
+		}
+		qtd_minutos.innerHTML = min + ":" + seg
+		setTimeout('relogio()', 1000)
+	} else {
+		qtd_minutos.innerHTML = "00:00";
+	}
+}
+// setTimeout(createProgressbar, 1000);	
+
 
 // setInterval(() => console.log(formatTempo()), 1000)
 
@@ -85,6 +85,6 @@ seg = Math.floor(format%60)+1
 // // testando(60)
 // console.log(setInterval(testando, 1000))
 
-addEventListener('load', function() {
-  createProgressbar('bar-time');
+addEventListener('load', function () {
+	createProgressbar('bar-time');
 });

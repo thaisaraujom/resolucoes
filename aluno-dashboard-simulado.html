@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
 
     <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/aluno-questao.css">
     <link rel="stylesheet" href="assets/css/aluno-dashboard-simulado.css">
     <link rel="stylesheet" href="assets/css/aluno-dashboard-simulado-situacao.css">
+    <link rel="stylesheet" href="assets/css/modal-finalizar-questao-simulado.css">
 
     <title>Dashboard - Simulado | Resoluções.com</title>
 </head>
@@ -130,7 +130,7 @@
 
                     <!-- DESKTOP -->
                     <div class="simulados desktop" id="simulados_situacao">
-                        <div class="situacao-simulado desktop" data-status="aberto" data-tab-target='#aberto'>
+                        <div class="situacao-simulado desktop" data-status="aberto-continuar" data-tab-target='#aberto'>
                             <p class="p-situacao">Em Aberto <span>(1)</span></p>
                         </div>
                         <div class="situacao-simulado desktop" data-status="agendado" data-tab-target='#agendado'>
@@ -172,7 +172,7 @@
 
                                 <div class="comecar-simulado continuar-simulado">
                                     <p>Continuar Simulado</p>
-                                    <p>Finalizar Simulado</p>
+                                    <p class="p-finalizar-simulado1">Finalizar Simulado</p>
                                 </div>
                             </div>
 
@@ -341,6 +341,59 @@
         </div>
     </section>
 
+    <div class="modal-finalizar-overlay">
+        <div class="modal-finalizar">
+            <div class="modal-sair">
+                <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <div class="modal-finalizar-conteudo">
+                <p class="p-titulo-modal-finalizar">Deseja finalizar esse simulado?</p>
+                <p class="p-descricao-modal-finalizar">Você não poderá mudar as repostas se optar por finalizar esse simulado.</p>
+
+                <div class="modal-tempo-restante-simulado">
+                    <div id="tempo" class="tempo-restante">
+                        <p>Tempo restante: <span class="qtd-minutos"></span></p>
+                    </div>
+    
+                    <div id="bar-time" class="bar_tempo">
+                        <div class="bar_tempo_progresso">
+                            <span class="progresso_tempo">30</span>
+                        </div>
+                    </div>
+
+                    <div class="questoes-simulado-feitas">
+                        <p>Já feita: <span class="ja_feita"></span></p>
+                    </div>
+
+                    <div class="bar_feitas" data-questions="90">
+                        <div class="bar_feitas_progresso">
+                            <span class="progresso_feitas">5</span>
+                        </div>
+                    </div>
+
+                    <div class="final-conteudo">
+                        <form action="">
+                            <div class="voltar-simulado desktop">
+                                <p>Desejo voltar para o simulado</p>
+                            </div>
+                            <div class="voltar-simulado mobile">
+                                <p>Voltar para o simulado</p>
+                            </div>
+                        </form>
+
+                        <form action="">
+                            <button><div class="finalizar">
+                                <p>Finalizar</p>
+                            </div></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <footer>
         <div class="texto-rodape">
             <p>Resoluções.com © 2020 | Desenvolvido pela </p>
@@ -360,6 +413,9 @@
     <script type="text/javascript" src="assets/js/menu.js"></script>
     <script type="text/javascript" src="assets/js/simulado.js"></script>
     <script type="text/javascript" src="assets/js/barra-dashboard-simulado.js"></script>
+    <script type="text/javascript" src="assets/js/modal-finalizar-simulado-dashboard.js"></script>
+    <script type="text/javascript" src="assets/js/bar-time.js"></script>
+    <script type="text/javascript" src="assets/js/bar-feitas.js"></script>
 
 </body>
 
