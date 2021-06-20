@@ -1,6 +1,4 @@
 .expans-full {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
 }
 
@@ -25,12 +23,8 @@
   font-weight: 600;
   font-size: 25px;
   line-height: 37px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   color: #e4e0e0;
 }
@@ -52,24 +46,15 @@
 }
 
 #questao .apostila-questoes {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #questao .notificacoes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #questao .titulo-direita {
@@ -79,12 +64,8 @@
   font-size: 15px;
   line-height: 18px;
   font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   text-align: right;
   color: rgba(255, 255, 255, 0.69);
 }
@@ -94,18 +75,10 @@
 }
 
 #questao .questao-apostila {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #questao .titulo-aluno {
@@ -124,23 +97,15 @@
 }
 
 #questao .apostilas {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0 20px;
   width: 100%;
 }
 
 #questao .apostilas p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 10px;
   font-family: Montserrat;
   font-style: normal;
@@ -154,23 +119,14 @@
 
 #questao .ap-questao {
   margin: 15px 10px 0 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 30%;
 }
 
 #questao .img-apostila {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #questao .img-apostila img {
@@ -186,23 +142,15 @@ footer {
   padding-left: 245px;
   padding-top: 10px;
   padding-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   background: #282c35;
   border-top: 2px solid #fff;
 }
 
 footer .texto-rodape {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: Montserrat;
   font-style: normal;
@@ -211,17 +159,10 @@ footer .texto-rodape {
 }
 
 footer .logo-rodape {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-left: 7px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 footer .p-logo {
@@ -230,8 +171,7 @@ footer .p-logo {
 }
 
 footer .logo-rodape:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 a:visited,
@@ -269,8 +209,6 @@ a:link {
 .barra-completa {
   background: #e6e1dd;
   height: 2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #009b55;
 }
@@ -289,15 +227,9 @@ a:link {
 .bar_erros,
 .bar_complete,
 .bar_duvidas {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .bar_complete {
@@ -332,26 +264,17 @@ a:link {
 
 .progresso {
   background: #e4e0e0 !important;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px 5px 0px 0px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 10px 0;
 }
 
 .informacoes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 0 5px;
   width: 100%;
 }
@@ -387,8 +310,6 @@ a:link {
 }
 
 .imagem {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 5px;
 }
@@ -398,10 +319,8 @@ a:link {
 }
 
 .imagem img {
-  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  -webkit-filter: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          filter: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
@@ -428,8 +347,6 @@ a:link {
     display: none;
   }
   .mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .desativar {
@@ -441,15 +358,9 @@ a:link {
   .container-swiper {
     margin: 0 auto;
     opacity: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     position: relative;
     max-width: 700px;
   }
@@ -459,30 +370,15 @@ a:link {
   }
   .swiper-slide {
     padding: 20px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .swiper-slide > div > div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
     margin-right: 9px;
     text-align: center;
@@ -501,8 +397,7 @@ a:link {
     height: 36px;
     cursor: pointer;
     background-image: url("../../assets/img/aluno-dashboard/mobile-next.svg");
-    -webkit-transform: translate3d(30px, 0, 0);
-            transform: translate3d(30px, 0, 0);
+    transform: translate3d(30px, 0, 0);
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -514,8 +409,7 @@ a:link {
     height: 36px;
     cursor: pointer;
     background-image: url("../../assets/img/aluno-dashboard/mobile-next.svg");
-    -webkit-transform: rotate(180deg) translate3d(30px, 0, 0);
-            transform: rotate(180deg) translate3d(30px, 0, 0);
+    transform: rotate(180deg) translate3d(30px, 0, 0);
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -524,8 +418,6 @@ a:link {
     padding: 0;
   }
   #questao .mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #questao .desativar {
@@ -536,8 +428,6 @@ a:link {
     padding-top: 60px !important;
   }
   #questao .autoplay2.mobile {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
   }
   #questao .arrow-down,
@@ -584,16 +474,9 @@ a:link {
   #questao .notificacoes,
   #questao .ultimas-resolvidas,
   #questao .apostila-questoes {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
   #questao .apostila-questoes .titulo-aluno {
     margin: 30px !important;
@@ -608,30 +491,18 @@ a:link {
     color: #aaabb3;
   }
   #questao .caixa {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     margin: 0;
   }
   #questao .informacoes,
   #questao .imagem {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 35px;
   }
   #questao .imagem {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    align-items: center;
+    flex-direction: row;
   }
   #questao .titulo-aluno-ultimasR {
     margin: 0 30px !important;
@@ -674,16 +545,9 @@ a:link {
     color: #28292f;
   }
   .conteudo-carousel2 {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
 }
 
@@ -736,4 +600,3 @@ a:link {
     max-width: 285px !important;
   }
 }
-/*# sourceMappingURL=aluno-dashboard.css.map */

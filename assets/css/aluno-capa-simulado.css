@@ -11,8 +11,6 @@ a:active {
 }
 
 .desktop {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -47,14 +45,9 @@ a:active {
   line-height: 30px;
   color: #453939;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 30px;
   padding: 0 17%;
 }
@@ -83,8 +76,7 @@ a:active {
   height: 10px;
   border: 1px solid #8d9ab6;
   border-radius: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #questao .bar_feitas_progresso {
@@ -99,32 +91,16 @@ a:active {
   background: #f58e08;
   border-radius: 10px;
   width: 100%;
-  -webkit-animation: progressbar-countdown;
-          animation: progressbar-countdown;
+  animation: progressbar-countdown;
   /* Placeholder, this will be updated using javascript */
   /* We stop in the end */
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-iteration-count: 1;
   /* Stay on pause when the animation is finished finished */
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   /* We start paused, we start the animation using javascript */
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
   /* We want a linear animation, ease-out is standard */
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes progressbar-countdown {
-  0% {
-    width: 100%;
-    background: #f58e08;
-  }
-  100% {
-    width: 0%;
-    background: #f58e08;
-  }
+  animation-timing-function: linear;
 }
 
 @keyframes progressbar-countdown {
@@ -144,12 +120,8 @@ a:active {
 
 #questao .final-conteudo {
   margin: 40px 0 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -158,24 +130,17 @@ a:active {
 }
 
 #questao .questao-proxima {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #questao .questao-proxima img {
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin-left: 10px;
 }
 
 @media (max-width: 1024px) {
   #questao .icones {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -232,4 +197,3 @@ a:active {
     width: 18px;
   }
 }
-/*# sourceMappingURL=aluno-capa-simulado.css.map */

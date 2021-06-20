@@ -25,29 +25,18 @@ body {
 
 #questao .simulados {
   background: #f2f2f2;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
 
 #questao .situacao-simulado {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -68,12 +57,8 @@ body {
 #questao .situacao {
   background: rgba(228, 224, 224, 0.8);
   border-radius: 0px 0px 5px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 10px;
 }
 
@@ -95,8 +80,7 @@ body {
 }
 
 #questao .comecar-simulado {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   font-weight: bold;
   font-size: 13px;
   line-height: 18px;
@@ -139,12 +123,8 @@ body {
   height: 18px;
   background: #53d63a;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #questao .nivel {
@@ -168,12 +148,8 @@ body {
   line-height: 15px;
   color: #f2f2f2;
   margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 #questao .meus-graficos p {
@@ -185,39 +161,24 @@ footer {
   padding-left: 245px;
   padding-top: 10px;
   padding-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #f2f2f2;
   border-top: 2px solid #f2f2f2;
 }
 
 footer .texto-rodape {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font: normal 14px "Montserrat", sans-serif;
   line-height: 17px;
 }
 
 footer .logo-rodape {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-left: 7px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 footer .p-logo {
@@ -226,8 +187,7 @@ footer .p-logo {
 }
 
 footer .logo-rodape:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @media (max-width: 1024px) {
@@ -235,8 +195,6 @@ footer .logo-rodape:hover {
     padding: 0;
   }
   #questao .icones {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #questao .simulados-select.mobile {
@@ -258,8 +216,6 @@ footer .logo-rodape:hover {
     display: none;
   }
   .mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #questao {
@@ -272,12 +228,8 @@ footer .logo-rodape:hover {
   }
   #questao .situacao {
     background: #2c313b;
-    -webkit-box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
     margin-top: 40px;
     padding: 20px 20px 20px !important;
   }
@@ -301,8 +253,6 @@ footer .logo-rodape:hover {
     display: none;
   }
   #questao .simulados-select.mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #questao .simulados-select.mobile {
@@ -316,8 +266,7 @@ footer .logo-rodape:hover {
   }
   #questao .comecar-simulado {
     color: #D7D5D4;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
     margin-top: 12px;
     font-size: 12px;
   }
@@ -399,4 +348,3 @@ footer .logo-rodape:hover {
     width: 50%;
   }
 }
-/*# sourceMappingURL=aluno-dashboard-simulado.css.map */

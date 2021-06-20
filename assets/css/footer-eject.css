@@ -1,14 +1,8 @@
 .eject__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #EBE7E4;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-top: solid 2.6px #EBE7E4;
   position: absolute;
   right: 0;
@@ -18,8 +12,6 @@
 }
 
 .logo-rodape {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -27,4 +19,3 @@
   font-weight: bold;
   color: #EBE7E4;
 }
-/*# sourceMappingURL=footer-eject.css.map */

@@ -18,15 +18,9 @@ html {
 #redefinir .overlay {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #redefinir .conteudo {
@@ -35,8 +29,6 @@ html {
   border-radius: 30px;
   width: 64%;
   height: 64.1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #e6e1dd;
 }
@@ -46,13 +38,8 @@ html {
 }
 
 #redefinir .conteudo .coluna1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 70px;
   padding-left: 70px;
   padding-right: 70px;
@@ -80,38 +67,13 @@ html {
 #redefinir .conteudo input {
   background: #e6e1dd;
   border: 2px solid #000000;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 30px;
   padding: 2%;
   margin-top: 15px;
   width: 97%;
   height: 45px;
   font-size: 20px;
-}
-
-#redefinir .conteudo input::-webkit-input-placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  color: rgba(44, 49, 59, 0.4);
-}
-
-#redefinir .conteudo input:-ms-input-placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  color: rgba(44, 49, 59, 0.4);
-}
-
-#redefinir .conteudo input::-ms-input-placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  color: rgba(44, 49, 59, 0.4);
 }
 
 #redefinir .conteudo input::placeholder {
@@ -163,15 +125,9 @@ html {
 
 #redefinir .conteudo .imagem1 {
   width: 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 #redefinir .conteudo .imagem1 img {
@@ -212,15 +168,6 @@ html {
   #redefinir .conteudo .paragrafo {
     font-size: 14px;
   }
-  #redefinir .conteudo input::-webkit-input-placeholder {
-    font-size: 19px;
-  }
-  #redefinir .conteudo input:-ms-input-placeholder {
-    font-size: 19px;
-  }
-  #redefinir .conteudo input::-ms-input-placeholder {
-    font-size: 19px;
-  }
   #redefinir .conteudo input::placeholder {
     font-size: 19px;
   }
@@ -240,8 +187,6 @@ html {
     display: none;
   }
   #redefinir .mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #redefinir .conteudo {
@@ -262,13 +207,9 @@ html {
     text-align: end;
   }
   #redefinir .conteudo .mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #redefinir .conteudo .titulo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 130px !important;
   }
@@ -307,30 +248,6 @@ html {
     margin-bottom: 20px;
     font-size: 12px !important;
   }
-  #redefinir .conteudo input::-webkit-input-placeholder {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px !important;
-    line-height: 15px;
-    color: #282c35;
-  }
-  #redefinir .conteudo input:-ms-input-placeholder {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px !important;
-    line-height: 15px;
-    color: #282c35;
-  }
-  #redefinir .conteudo input::-ms-input-placeholder {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px !important;
-    line-height: 15px;
-    color: #282c35;
-  }
   #redefinir .conteudo input::placeholder {
     font-family: Montserrat;
     font-style: normal;
@@ -356,9 +273,7 @@ html {
   }
   #redefinir .coluna1 {
     width: 80%;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    justify-content: center !important;
     margin: 0 auto !important;
     padding: 0 !important;
   }
@@ -437,4 +352,3 @@ html {
     height: 148px !important;
   }
 }
-/*# sourceMappingURL=pagina-login-redefinirsenha.css.map */

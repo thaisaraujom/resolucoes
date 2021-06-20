@@ -1,7 +1,6 @@
 #questao .alternativas {
   background: #dceedc;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 
@@ -17,8 +16,7 @@
   background: #a6dba5;
   padding-top: 0.5%;
   padding-bottom: 0.2%;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #questao .alternativas .custom-radio input:checked + label:before {
@@ -26,8 +24,6 @@
 }
 
 #questao .gabarito {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-top: 2px solid #d7d5d4;
   width: 100%;
@@ -55,14 +51,11 @@
     padding: 0px 21px 21px;
   }
   #questao .mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #questao .alternativas {
     background: none !important;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
   #questao .enunciado .icon-correta {
     position: absolute;
@@ -70,8 +63,7 @@
   }
   #questao .correta {
     background: none !important;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
   .alternativas form {
     padding: 0 !important;
@@ -86,8 +78,6 @@
 
 @media (max-width: 540px) and (min-width: 520px) {
   #questao .mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #questao .enunciado .icon-correta {
@@ -99,10 +89,7 @@
 
 @media (max-width: 768px) and (min-width: 700px) {
   #footer .texto-next p {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     text-align: end !important;
   }
 }
-/*# sourceMappingURL=pagina-questao-certa.css.map */
