@@ -45,12 +45,18 @@
 }
 
 .monitores__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px 30px 20px 35px;
 }
 
 .monitores__card-perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 25px;
 }
@@ -110,6 +116,9 @@
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -129,7 +138,8 @@
   width: 20px;
   background-color: #282C35;
   border: 1px solid #C4C4C4;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 5px;
 }
 
@@ -153,6 +163,7 @@
   width: 5px;
   height: 10px;
   border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -181,5 +192,7 @@ input[type=time]:focus::-webkit-datetime-edit {
   position: absolute;
   bottom: 0;
   left: 60%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
+/*# sourceMappingURL=monitores.css.map */
