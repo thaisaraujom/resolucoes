@@ -48,15 +48,11 @@ footer {
     }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 770px) {
     footer {
-        border-top: 1px solid #c0c0c0;
-        background-color: #d7d5d4;
-
         .texto-rodape {
             color: #28292f;
         }
-
         .p-logo {
             font-weight: 600;
             color: #28292f;
@@ -67,6 +63,18 @@ footer {
         .desktop {
             display: none;
         }
+    }
+}
+
+@media (max-width: 710px) {
+    footer {
+        border-top: 1px solid #c0c0c0;
+        background-color: #d7d5d4;
+
+        .texto-rodape {
+            color: #28292f;
+        }
+
     }
 }
 

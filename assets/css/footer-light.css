@@ -66,11 +66,7 @@ footer .logo-rodape:hover {
   }
 }
 
-@media (max-width: 710px) {
-  footer {
-    border-top: 1px solid #c0c0c0;
-    background-color: #d7d5d4;
-  }
+@media (max-width: 770px) {
   footer .texto-rodape {
     color: #28292f;
   }
@@ -85,6 +81,16 @@ footer .logo-rodape:hover {
   }
   footer .desktop {
     display: none;
+  }
+}
+
+@media (max-width: 710px) {
+  footer {
+    border-top: 1px solid #c0c0c0;
+    background-color: #d7d5d4;
+  }
+  footer .texto-rodape {
+    color: #28292f;
   }
 }
 
