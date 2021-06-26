@@ -1,0 +1,42 @@
+.modal-finalizar {
+  background: #d7d5d4;
+}
+
+.modal-finalizar-conteudo {
+  padding: 0 20px;
+}
+
+.modal-sair img {
+  margin: 10px 20px;
+}
+
+.p-titulo-modal-finalizar {
+  margin-top: 20px;
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 23px;
+  color: #282c35;
+}
+
+.p-descricao-modal-finalizar {
+  font-style: italic;
+  font-weight: bold;
+  color: #808185;
+}
+
+@media (max-width: 500px) {
+  .modal-sair img {
+    margin: 5px 20px;
+  }
+  .p-titulo-modal-finalizar {
+    font-size: 15px;
+    text-transform: initial;
+    font-style: normal;
+    color: #4E5057;
+  }
+  .p-descricao-modal-finalizar {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=modal-senha-salva.css.map */

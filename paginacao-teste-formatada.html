@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+        :root {
+            --black: #bbbbbb;
+            --primary: hsl(32, 98%, 56%);
+            --white: #f0f0f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *,
+        button,
+        input {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+
+            background-color: hsl(32, 89%, 8%);
+
+            /*         box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2); */
+            padding: 16px;
+        }
+
+        #paginate {
+            width: 100%;
+
+            margin: 32px auto;
+        }
+
+        #paginate .item {
+            border-bottom: 1px solid hsl(32, 98%, 12%);
+            padding: 16px 32px;
+        }
+
+        #paginate .item:hover {
+            background-color: rgba(255, 255, 255, 0.04);
+        }
+
+        #paginate .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 8px;
+        }
+
+        #paginate .pagination div {
+            cursor: pointer;
+
+            /* border: 1px solid #eee; */
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            color: #2c313b;
+            padding: 1px 5px 2px;
+            text-decoration: none;
+        }
+
+        #paginate .pagination div:not(.numbers),
+        #paginate .pagination div.numbers div {
+            width: 20px;
+            height: 20px;
+        }
+
+        #paginate .pagination div.numbers div:hover:not(.active) {
+            background-color: rgba(255, 255, 255, 0.603);
+            border-radius: 100%;
+        }
+
+        #paginate .pagination div.numbers div.active {
+            background: #f58e08;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Paginate</h1>
+    </header>
+
+    <div id="paginate">
+        <div class="list">
+            <div class="item"> item 1</div>
+            <div class="item"> item 2</div>
+            <div class="item"> item 3</div>
+        </div>
+        <div class="pagination">
+            <div class="first">&#171;</div>
+            <div class="prev"><img src="./assets/img/aluno-questao/paginacao-left.svg" alt=""></div>
+                    <div class="numbers">
+                        <div></div>
+                    </div>
+                    <div class="next"><img src="./assets/img/aluno-questao/paginacao.svg" alt=""></div>
+                    <div class="last"><img src="./assets/img/aluno-desempenho-simulado/" alt="">&#187;</div>
+            </div>
+        </div>
+
+        <script src="./assets/js/paginacao.js"></script>
+</body>
+
+</html>
