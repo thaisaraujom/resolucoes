@@ -2,6 +2,10 @@
     text-transform: uppercase;
 }
 
+.modal-finalizar-overlay {
+    visibility: visible;
+}
+
 @media (max-width: 500px) {
     .p-titulo-modal-finalizar {
         font-size: 15px;
