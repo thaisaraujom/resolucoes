@@ -64,7 +64,23 @@ footer .logo-rodape:hover {
 
 @media (max-width: 770px) {
   footer {
-    border-top: 1px solid #282c35;
+    border-top: 1px solid #D7D5D4;
+    background-color: #282c35 !important;
+  }
+  footer .texto-rodape {
+    color: #D7D5D4;
+  }
+  footer .p-logo {
+    font-weight: 600;
+    color: #D7D5D4;
+  }
+  footer .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .desktop {
+    display: none;
   }
 }
 

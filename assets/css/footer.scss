@@ -47,7 +47,21 @@ footer {
 
 @media (max-width: 770px) {
     footer {
-        border-top: 1px solid #282c35;
+        border-top: 1px solid #D7D5D4;
+        background-color: #282c35 !important;
+        .texto-rodape {
+            color: #D7D5D4;
+        }
+        .p-logo {
+            font-weight: 600;
+            color: #D7D5D4;
+        }
+        .mobile {
+            display: flex;
+        }
+        .desktop {
+            display: none;
+        }
     }
 }
 
