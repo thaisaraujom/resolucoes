@@ -183,3 +183,7 @@ input[type=time]:focus::-webkit-datetime-edit {
   left: 60%;
   transform: translateY(-50%);
 }
+
+#questao {
+  padding-left: 0;
+}
