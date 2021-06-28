@@ -19,6 +19,8 @@ li {
 }
 
 .caderno__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -62,6 +64,8 @@ li {
 
 .caderno__nav {
   border-right: solid #B4B1AE;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding-right: 47px;
 }
@@ -72,15 +76,20 @@ li {
 }
 
 .caderno__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .anotacao {
   padding: 10px 15px 5px;
   position: relative;
   background: #EBE7E4;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   width: 100%;
   margin-bottom: 1.563rem;
@@ -101,8 +110,12 @@ li {
 }
 
 .anotacao__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .anotacao__footer i {
@@ -113,6 +126,8 @@ li {
 }
 
 .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -135,9 +150,15 @@ li {
 
 .pagination li a.active {
   background-color: #F58E08;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
 }
 
@@ -151,11 +172,14 @@ li {
 }
 
 #questao > div > div > div > div {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu .nav-item.active img {
-  filter: invert(55%) sepia(97%) saturate(1900%) hue-rotate(2deg) brightness(103%) contrast(94%);
+  -webkit-filter: invert(55%) sepia(97%) saturate(1900%) hue-rotate(2deg) brightness(103%) contrast(94%);
+          filter: invert(55%) sepia(97%) saturate(1900%) hue-rotate(2deg) brightness(103%) contrast(94%);
 }
 
 .menu .nav-item.active a {
@@ -165,3 +189,4 @@ li {
 .menu .nav-item img {
   fill: #000 !important;
 }
+/*# sourceMappingURL=caderno-de-anotacoes.css.map */

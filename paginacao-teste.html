@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+        :root {
+            --black: #130f0d;
+            --primary: hsl(32, 98%, 56%);
+            --white: #f0f0f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *,
+        button,
+        input {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+
+            background-color: hsl(32, 89%, 8%);
+
+            /*         box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2); */
+            padding: 16px;
+        }
+
+        #paginate {
+            width: 100%;
+
+            margin: 32px auto;
+        }
+
+        #paginate .item {
+            border-bottom: 1px solid hsl(32, 98%, 12%);
+            padding: 16px 32px;
+        }
+
+        #paginate .item:hover {
+            background-color: rgba(255, 255, 255, 0.04);
+        }
+
+        #paginate .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 8px;
+        }
+
+        #paginate .pagination div {
+            cursor: pointer;
+
+            /* border: 1px solid #eee; */
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 14;
+        }
+
+        #paginate .pagination div:not(.numbers),
+        #paginate .pagination div.numbers div {
+            width: 40px;
+            height: 40px;
+        }
+
+        #paginate .pagination div.numbers div:hover,
+        #paginate .pagination div.numbers div.active {
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Paginate</h1>
+    </header>
+
+    <div id="paginate">
+        <div class="list">
+            <div class="item"> item 1</div>
+            <div class="item"> item 2</div>
+            <div class="item"> item 3</div>
+        </div>
+        <div class="pagination">
+            <div class="first">&#171;</div>
+            <div class="prev"><</div>
+                    <div class="numbers">
+                        <div>1</div>
+                    </div>
+                    <div class="next">&gt;</div>
+                    <div class="last">&#187;</div>
+            </div>
+        </div>
+
+        <script>
+
+            const data = Array.from({ length: 10 }).map((_, i) => `Item ${(i + 1)}`)
+
+            
+            // =======================================================
+
+            let perPage = 1 //item por página
+            const state = {
+                page: 1,
+                perPage,
+                totalPage: Math.ceil(data.length / perPage),
+                maxVisibleButtons: 5
+            }
+
+            const html = {
+                get(element) {
+                    return document.querySelector(element)
+                }
+            }
+
+            const controls = {
+                next() {
+                    state.page++
+
+                    const lastPage = state.page > state.totalPage
+                    if (lastPage) {
+                        state.page--
+                    }
+                },
+                prev() {
+                    state.page--
+
+                    if (state.page < 1) {
+                        state.page++
+                    }
+                },
+                goTo(page) {
+                    if (page < 1) {
+                        page = 1
+                    }
+                    state.page = +page
+
+                    if (page > state.totalPage) {
+                        state.page = state.totalPage
+                    }
+                },
+                createListerners() {
+                    html.get('.first').addEventListener('click', () => {
+                        controls.goTo(1)
+                        update()
+                    })
+                    html.get('.last').addEventListener('click', () => {
+                        controls.goTo(state.totalPage)
+                        update()
+                    })
+                    html.get('.next').addEventListener('click', () => {
+                        controls.next()
+                        update()
+                    })
+                    html.get('.prev').addEventListener('click', () => {
+                        controls.prev()
+                        update()
+                    })
+                }
+            }
+
+            const list = {
+                create(item) { 
+                    const div = document.createElement('div')
+                    div.classList.add('item')
+                    div.innerHTML = item
+
+                    html.get('.list').appendChild(div)
+                },
+                update() {
+                    html.get('.list').innerHTML = ''
+
+                    let page = state.page - 1
+                    let start = page*state.perPage
+                    let end = start + state.perPage
+                    const paginatedItems = data.slice(start, end)
+                    
+                    paginatedItems.forEach(list.create)
+                    
+                 }
+
+            }
+
+            const buttons = {
+                element: html.get('.pagination .numbers'),
+                create(number){
+                    const button = document.createElement('div')
+
+                    button.innerHTML = number
+
+                    if(state.page == number) {
+                        button.classList.add('active') //ativar laranja
+                    }
+
+                    button.addEventListener('click', (event) => {
+                        const page = event.target.innerText
+
+                        controls.goTo(page)
+                        update()
+                    })
+
+                    buttons.element.appendChild(button)
+                },
+                update() {
+                    buttons.element.innerHTML = ''
+                    const {maxLeft, maxRight} = buttons.calculateMaxVisible()
+
+                    for (let page = maxLeft; page <= maxRight; page ++) {
+                        buttons.create(page)
+                    }
+                },
+                calculateMaxVisible() {
+                    const { maxVisibleButtons} = state
+                    let maxLeft = (state.page - Math.floor(maxVisibleButtons/2))
+                    let maxRight = (state.page + Math.floor(maxVisibleButtons/2))
+
+                    if (maxLeft < 1) {
+                        maxLeft = 1
+                        maxRight = maxVisibleButtons
+                    }
+
+                    if (maxRight > state.totalPage) {
+                        maxLeft = state.totalPage - ( maxVisibleButtons - 1)
+                        maxRight = state.totalPage
+
+                        if(maxLeft < 1) {
+                            maxLeft = 1
+                        } 
+                    }
+
+                    return {maxLeft, maxRight}
+                }
+            }
+
+            function update() {
+                list.update()
+                buttons.update()
+            }
+
+            function init() {
+                update()
+                controls.createListerners()
+            }
+
+            init()
+
+        </script>
+</body>
+
+</html>

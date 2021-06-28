@@ -1,0 +1,355 @@
+body,
+html {
+    background: #282c35;
+}
+
+.mobile {
+    display: none;
+}
+
+#questao {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        box-shadow: 0 0 0px 1000px #282c35 inset;
+        -webkit-text-fill-color: #e4e0e0;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+    input:-moz-autofill,
+    input:-moz-autofill:hover,
+    input:-moz-autofill:focus,
+    textarea:-moz-autofill,
+    textarea:-moz-autofill:hover,
+    textarea:-moz-autofill:focus,
+    select:-moz-autofill,
+    select:-moz-autofill:hover,
+    select:-moz-autofill:focus {
+        box-shadow: 0 0 0px 1000px #282c35 inset;
+        -moz-text-fill-color: #e4e0e0;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+    input:-ms-autofill,
+    input:-ms-autofill:hover,
+    input:-ms-autofill:focus,
+    textarea:-ms-autofill,
+    textarea:-ms-autofill:hover,
+    textarea:-ms-autofill:focus,
+    select:-ms-autofill,
+    select:-ms-autofill:hover,
+    select:-ms-autofill:focus {
+        box-shadow: 0 0 0px 1000px #282c35 inset;
+        -ms-text-fill-color: #e4e0e0;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+    .icones a {
+        color: #e4e0e0;
+    }
+    .titulo.desktop {
+        padding-left: 0;
+    }
+    .titulo.desktop h1 {
+        color: #e4e0e0;
+        font: 600 35px "Montserrat", sans-serif;
+    }
+    .conteudo-perfil {
+        margin: 45px 80px 20px 80px;
+    }
+    .campos-preenchimento {
+        margin: 50px 0;
+    }
+    .campo {
+        margin: 40px 0;
+        display: flex;
+        position: relative;
+    }
+    .campo input {
+        border: none;
+        background-color: #282c35;
+        border-bottom: 1px solid #e4e0e0;
+        -webkit-border-bottom: 1px solid #e4e0e0;
+        -moz-border-bottom: 1px solid #e4e0e0;
+        -ms-border-bottom: 1px solid #e4e0e0;
+
+        color: #e4e0e0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+
+        margin: 0 5px;
+    }
+    .habilitar-edicao {
+        position: absolute;
+        left: 300px;
+
+        cursor: pointer;
+    }
+    ::-webkit-input-placeholder {
+        color: #d7d5d4;
+    }
+
+    :-moz-placeholder {
+        color: #d7d5d4;
+    }
+
+    ::-moz-placeholder {
+        color: #d7d5d4;
+    }
+
+    :-ms-input-placeholder {
+        color: #d7d5d4;
+    }
+    .campo-meu-perfil {
+        display: flex;
+        flex-direction: column;
+
+        color: #e4e0e0;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .campo label:not(.radio) {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #e4e0e0;
+
+        margin-right: 5px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+        display: none; /* Esconde os inputs */
+    }
+    label {
+        cursor: pointer;
+    }
+    input[type="radio"] + label:before {
+        border: 1px solid #d7d5d4;
+        content: "\00a0";
+        display: inline-block;
+        font: 16px/1em sans-serif;
+        height: 16px;
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        vertical-align: top;
+        width: 16px;
+        border-radius: 5px;
+    }
+    input[type="radio"]:checked + label:before {
+        background: #d7d5d4;
+    }
+    .radio-meu-perfil {
+        margin-top: 5px;
+    }
+    .alternativas-radio {
+        margin: 12px 0;
+    }
+    .radio {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+
+        color: #d7d5d4;
+    }
+    input[type="password"] {
+        font-family: Verdana, sans-serif;
+        height: 15px;
+        font-size: 15px;
+        padding: 2px;
+        letter-spacing: 2px;
+    }
+    textarea:focus,
+    input:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
+
+    .button_salvar {
+        border: none;
+        background: #f58e08;
+        border-radius: 17px;
+
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #ffffff;
+
+        padding: 5px 30px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        display: none;
+    }
+    .button_sair {
+        border: none;
+        background: none;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+
+        cursor: pointer;
+        /* identical to box height */
+
+        color: #d7d5d4;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (max-width: 1024px) {
+    #questao {
+        padding: 0 5%;
+        .titulo.desktop {
+            border: none;
+            display: flex;
+        }
+        .titulo.mobile {
+            display: none;
+        }
+        .icones {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    body,
+    html {
+        background: #ebe7e4;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+
+    #questao {
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus,
+        select:-webkit-autofill,
+        select:-webkit-autofill:hover,
+        select:-webkit-autofill:focus {
+            box-shadow: 0 0 0px 1000px #ebe7e4 inset;
+            -webkit-text-fill-color: #282c35;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+        input:-moz-autofill,
+        input:-moz-autofill:hover,
+        input:-moz-autofill:focus,
+        textarea:-moz-autofill,
+        textarea:-moz-autofill:hover,
+        textarea:-moz-autofill:focus,
+        select:-moz-autofill,
+        select:-moz-autofill:hover,
+        select:-moz-autofill:focus {
+            box-shadow: 0 0 0px 1000px #ebe7e4 inset;
+            -moz-text-fill-color: #282c35;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+        input:-ms-autofill,
+        input:-ms-autofill:hover,
+        input:-ms-autofill:focus,
+        textarea:-ms-autofill,
+        textarea:-ms-autofill:hover,
+        textarea:-ms-autofill:focus,
+        select:-ms-autofill,
+        select:-ms-autofill:hover,
+        select:-ms-autofill:focus {
+            box-shadow: 0 0 0px 1000px #ebe7e4 inset;
+            -ms-text-fill-color: #282c35;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+        .titulo.mobile {
+            border-bottom: 1px solid #323641;
+            -webkit-border-bottom: 1px solid #323641;
+            -moz-border-bottom: 1px solid #323641;
+            -ms-border-bottom: 1px solid #323641;
+            display: flex;
+        }
+        .titulo.desktop {
+            display: none;
+        }
+        .conteudo-perfil {
+            margin: 0;
+        }
+        .campo label:not(.radio),
+        .radio {
+            font-size: 14px;
+            color: #282c35;
+        }
+        input[type="radio"] + label:before {
+            border: 1px solid #282c35;
+        }
+        input[type="radio"]:checked + label:before {
+            background: #282c35;
+        }
+        .button_sair {
+            color: #282c35;
+            text-shadow: none;
+            font-size: 14px;
+        }
+        .button_salvar {
+            font-size: 14px;
+        }
+        .campo input {
+            border: none;
+            background-color: #ebe7e4;
+            border-bottom: 1px solid #282c35;
+            color: #282c35;
+            font-size: 14px;
+            width: 100%;
+        }
+        .habilitar-edicaoM {
+            cursor: pointer;
+        }
+        ::-webkit-input-placeholder {
+            color: #282c35;
+        }
+
+        :-moz-placeholder {
+            color: #282c35;
+        }
+
+        ::-moz-placeholder {
+            color: #282c35;
+        }
+
+        :-ms-input-placeholder {
+            color: #282c35;
+        }
+        .mobile.seta-voltar {
+            display: none;
+        }
+    }
+    footer {
+        background-color: #ebe7e4;
+    }
+}
+
+@media (max-width: 450px) {
+    #questao {
+        .titulo {
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+        }
+        .conteudo-perfil {
+            margin: 0;
+        }
+    }
+}
