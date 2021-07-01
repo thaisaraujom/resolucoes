@@ -180,6 +180,87 @@
     position: absolute; 
     bottom: 0;
     left: 60%;
-    transform: translateY(-50%);
-  
+    transform: translateY(-50%);  
 }
+#questao{
+    padding-left: 0;
+}
+
+
+
+
+// @media only screen and (max-width: 769px){
+//     .container{
+//         width: auto;
+//         background-color: #EBE7E4;
+//         margin: 0;
+//         padding: 0;
+//     }
+//     .caderno{
+//         &__nav{
+//             display: none;
+//         }
+//         &__monitores{
+//             padding: 0;
+//         }
+//         &__anotacoes{
+//             padding-left: 0;
+//         }
+//         &__title{
+//             display: none;
+//         }
+
+//     }
+
+//     #navbar-lateral{
+//         display: none;
+//     }
+//     #navbar {
+//         background-color: #EBE7E4;
+//         nav{
+//             display: none;
+//         }
+//     }
+//     .eject__footer{
+//         display: none;
+//     }
+//     #questao{
+//         padding-left: 0;
+//     }
+//    .monitores{
+//        &__card{
+//         box-shadow: none;
+//         padding: 15px 30px;
+//         justify-content:start ;
+//         &-perfil{
+//             gap: 15px;
+//         }
+//         &-perfil-dados{
+//             h3{
+//                 font-size: 12px;
+//                 margin-bottom: 5px;
+//             }
+//             p{
+//                 font-style: normal;
+//                 font-weight: normal;
+//                 font-size: 10px;
+//                 padding-bottom: 0;
+//                 margin-bottom: 6px !important;
+//                 display: flex;
+
+//             }
+//             img{
+//                 width: 14px;
+//                 height: 14px;
+//             }
+//         }
+//      }
+//     }
+//    .monitores__card-agenda th:not(:last-child){
+//     padding-right: 10px;
+//    }
+//    .monitores__card-perfil-photo{
+//        width: 60px;
+//        height: 60px;
+//    }
+// }

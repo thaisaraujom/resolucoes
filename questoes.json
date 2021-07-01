@@ -1,0 +1,111 @@
+[
+    {
+        "enunciadoPre":  "Lonside which HTML element do we put the JavaScript??",
+        "enunciadoPos": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia rem sit tempore? Quibusdam architecto tempore nostrum eius odio impedit.",
+        "imagem": "",
+        "alternativa1": "Circulo",
+        "alternativa2": "Esfera",
+        "alternativa3": "Cilindro",
+        "alternativa4": "Quadrado",
+        "alternativa5": "Trapézio",
+        "resposta": "c"
+    },
+    {
+        "enunciadoPre": "What is the correct syntax for referring to an external script called xyz.js?",
+        "enunciadoPos": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quae dolor autem reiciendis odit! Optio quo consequuntur suscipit, iste, nostrum libero fugit nemo voluptatibus, sint eos aperiam cumque pariatur sunt",
+        "imagem": "https://i1.wp.com/gestaodesegurancaprivada.com.br/wp-content/uploads/frequencia-relativa.jpg?resize=323%2C265&ssl=1",
+        "alternativa1": "1443",
+        "alternativa2": "3534",
+        "alternativa3": "1982",
+        "alternativa4": "4000",
+        "alternativa5": "nda",
+        "resposta": "b"
+    },
+    {
+        "enunciadoPre": "How do you write Hello World in an alert box?",
+        "enunciadoPos": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum reprehenderit quam voluptatem eveniet assumenda odio soluta eius voluptates molestiae. Cum ea voluptate aperiam inventore. Nisi repellendus recusandae accusantium asperiores praesentium saepe sunt tempore dolor nesciunt, minus aut sed architecto iste quibusdam sequi qui laboriosam excepturi beatae voluptates eveniet corrupti. Harum deleniti quas a, vero veritatis corrupti dolore dolor ad autem esse in aperiam non commodi facere rem iste culpa eaque quasi nisi nostrum eius! Nostrum nobis laborum quos assumenda consequuntur ex nulla sed, atque, dignissimos praesentium quisquam at porro autem, deleniti non possimus aperiam optio. Illum ea nesciunt autem beatae!",
+        "imagem": "http://biologiaresolvida.com.br/wp-content/uploads/2021/03/Questao-vacina-Enem-2020-Digital.png",
+        "alternativa1": "Azul",
+        "alternativa2": "Amarelo",
+        "alternativa3": "Verde",
+        "alternativa4": "Branco",
+        "alternativa5": "Cinza",
+        "resposta": "e"
+    },
+    {
+        "enunciadoPre": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iste, dolor adipisci sequi eum commodi obcaecati nesciunt aliquid odit vero. Minima et reprehenderit nesciunt saepe magni deserunt a exercitationem cum.",
+        "enunciadoPos": "Harum deleniti quas a, vero veritatis corrupti dolore dolor ad autem esse in aperiam non commodi facere rem iste culpa eaque quasi nisi nostrum eius! Nostrum nobis laborum quos assumenda consequuntur ex nulla sed, atque, dignissimos praesentium quisquam at porro autem, deleniti non possimus aperiam optio. Illum ea nesciunt autem beatae!",
+        "imagem": "https://s2.static.brasilescola.uol.com.br/img/2018/01/grafico.jpg",
+        "alternativa1": "A B C D E",
+        "alternativa2": "E D A",
+        "alternativa3": "A",
+        "alternativa4": "C D",
+        "alternativa5": "A D E",
+        "resposta": "d"
+    },
+    {
+        "enunciadoPre": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ducimus perferendis quasi autem ut laborum reprehenderit, distinctio illum non unde.",
+        "enunciadoPos": "",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUOYUm4hR666HooBBNwXC9ZR5A3aAiyioXdUbk3wGvVjp8L7Li89YEwOcnH22lgeOu-1k&usqp=CAU",
+        "alternativa1": "Banana",
+        "alternativa2": "Maça",
+        "alternativa3": "Abacate",
+        "alternativa4": "Melancia",
+        "alternativa5": "Caqui",
+        "resposta": "a"
+    }, {
+        "enunciadoPre": "2 Lonside which HTML element do we put the JavaScript??",
+        "enunciadoPos": "2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia rem sit tempore? Quibusdam architecto tempore nostrum eius odio impedit.",
+        "imagem": "https://www.blogdovestibular.com/wp-content/uploads/2020/10/Questao-reinos-Univag-2014.png",
+        "alternativa1": "Circulo",
+        "alternativa2": "Esfera",
+        "alternativa3": "Cilindro",
+        "alternativa4": "Quadrado",
+        "alternativa5": "Trapézio",
+        "resposta": "c"
+    },
+    {
+        "enunciadoPre": "2 What is the correct syntax for referring to an external script called xyz.js?",
+        "enunciadoPos": "2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quae dolor autem reiciendis odit! Optio quo consequuntur suscipit, iste, nostrum libero fugit nemo voluptatibus, sint eos aperiam cumque pariatur sunt",
+        "imagem": "https://i1.wp.com/gestaodesegurancaprivada.com.br/wp-content/uploads/frequencia-relativa.jpg?resize=323%2C265&ssl=1",
+        "alternativa1": "1443",
+        "alternativa2": "3534",
+        "alternativa3": "1982",
+        "alternativa4": "4000",
+        "alternativa5": "nda",
+        "resposta": "b"
+    },
+    {
+        "enunciadoPre": "2 How do you write Hello World in an alert box?",
+        "enunciadoPos": "2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum reprehenderit quam voluptatem eveniet assumenda odio soluta eius voluptates molestiae. Cum ea voluptate aperiam inventore. Nisi repellendus recusandae accusantium asperiores praesentium saepe sunt tempore dolor nesciunt, minus aut sed architecto iste quibusdam sequi qui laboriosam excepturi beatae voluptates eveniet corrupti. Harum deleniti quas a, vero veritatis corrupti dolore dolor ad autem esse in aperiam non commodi facere rem iste culpa eaque quasi nisi nostrum eius! Nostrum nobis laborum quos assumenda consequuntur ex nulla sed, atque, dignissimos praesentium quisquam at porro autem, deleniti non possimus aperiam optio. Illum ea nesciunt autem beatae!",
+        "imagem": "https://img.passeidireto.com/question/7cb68ad5-7fc5-46e0-98f0-1830461f711a.png",
+        "alternativa1": "Azul",
+        "alternativa2": "Amarelo",
+        "alternativa3": "Verde",
+        "alternativa4": "Branco",
+        "alternativa5": "Cinza",
+        "resposta": "e"
+    },
+    {
+        "enunciadoPre": "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iste, dolor adipisci sequi eum commodi obcaecati nesciunt aliquid odit vero. Minima et reprehenderit nesciunt saepe magni deserunt a exercitationem cum.",
+        "enunciadoPos": "2 Harum deleniti quas a, vero veritatis corrupti dolore dolor ad autem esse in aperiam non commodi facere rem iste culpa eaque quasi nisi nostrum eius! Nostrum nobis laborum quos assumenda consequuntur ex nulla sed, atque, dignissimos praesentium quisquam at porro autem, deleniti non possimus aperiam optio. Illum ea nesciunt autem beatae!",
+        "imagem": "https://static.todamateria.com.br/upload/lo/gi/logica22.jpg",
+        "alternativa1": "A B C D E",
+        "alternativa2": "E D A",
+        "alternativa3": "A",
+        "alternativa4": "C D",
+        "alternativa5": "A D E",
+        "resposta": "d"
+    },
+    {
+        "enunciadoPre": "2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ducimus perferendis quasi autem ut laborum reprehenderit, distinctio illum non unde.",
+        "enunciadoPos": "2 ",
+        "imagem": "https://www.blogdovestibular.com/wp-content/uploads/2018/11/Tabela-peri%C3%B3dica-Fuvest-2013.png",
+        "alternativa1": "Banana",
+        "alternativa2": "Maça",
+        "alternativa3": "Abacate",
+        "alternativa4": "Melancia",
+        "alternativa5": "Caqui",
+        "resposta": "a"
+    }
+]
