@@ -364,6 +364,7 @@ html {
 
 #questao .conteudo .questionamento {
   margin: 20px 0;
+  padding-right: 70px;
 }
 
 #questao .conteudo .alternativas ul {
@@ -377,6 +378,10 @@ html {
 
 #questao .conteudo .alternativas .custom-radio {
   margin-bottom: 20px;
+}
+
+#questao .conteudo .alternativas .custom-radio label {
+  cursor: pointer;
 }
 
 #questao .conteudo .alternativas .custom-radio input + label:before {
@@ -837,6 +842,9 @@ html {
   }
   #questao .conteudo .enunciado {
     padding-right: 0 !important;
+  }
+  #questao .conteudo .questionamento {
+    padding-right: 0;
   }
   #questao .submissao {
     width: 100%;

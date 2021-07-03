@@ -1,3 +1,33 @@
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-barra {
+  width: calc(100% - 230px);
+  position: absolute;
+  left: 230px;
+}
+
+.barra-total {
+  width: 100%;
+  position: relative;
+}
+
+.barra-completa {
+  background: #e6e1dd;
+  height: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f58e08;
+}
+
+.barra-concluidas {
+  visibility: hidden;
+}
+
 #questao .titulo.desktop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,6 +196,10 @@ footer .tempo-valor.active-time {
 }
 
 @media (max-width: 1024px) {
+  .container-barra {
+    width: 100%;
+    left: 0;
+  }
   #questao .titulo.desktop {
     display: none;
     margin-right: 0;
@@ -183,6 +217,12 @@ footer .tempo-valor.active-time {
     font-weight: bold;
     cursor: pointer;
   }
+  .progress-bar {
+    background-color: #f58e08;
+    width: 100%;
+    margin-left: 0;
+    height: 2px;
+  }
 }
 
 @media (max-width: 840px) {
@@ -191,9 +231,29 @@ footer .tempo-valor.active-time {
     display: -ms-flexbox !important;
     display: flex !important;
     cursor: pointer !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer .finalizar-simulado-mobile img {
     width: 20px !important;
+  }
+  footer .finalizar-simulado-mobile .tempo-valor-restante {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .finalizar-simulado-mobile .tempo-clique {
+    display: none;
+  }
+}
+
+@media (max-width: 610px) {
+  .container-barra {
+    display: none;
   }
 }
 

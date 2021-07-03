@@ -1,3 +1,32 @@
+.active {
+    display: flex;
+}
+
+.container-barra {
+    width: calc(100% - 230px);
+    
+    position: absolute;
+
+    left: 230px;
+}
+
+.barra-total {
+    width: 100%;
+    position: relative;
+}
+
+.barra-completa {
+    background: #e6e1dd;
+    height: 2px;
+    display: flex;
+    background-color: #f58e08;
+
+}
+
+.barra-concluidas {
+    visibility: hidden;
+}
+
 #questao {
     .titulo.desktop {
         display: flex;
@@ -142,6 +171,10 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    .container-barra {
+        width: 100%;
+        left: 0;
+    }
     #questao {
         .titulo.desktop {
             display: none;
@@ -160,6 +193,14 @@ footer {
                 cursor: pointer;
             }
         }
+
+
+    }
+    .progress-bar {
+        background-color: #f58e08;
+        width: 100%;
+        margin-left: 0;
+        height: 2px;
     }
 
 }
@@ -170,10 +211,25 @@ footer {
             display: flex !important;
             cursor: pointer !important;
 
+            align-items: center;
+
             img {
                 width: 20px !important;
             }
+            .tempo-valor-restante {
+                display: flex;
+                align-items: center;
+            }
+            .tempo-clique {
+                display: none;
+            }
         }
+    }
+}
+
+@media (max-width: 610px){
+    .container-barra {
+        display: none;
     }
 }
 

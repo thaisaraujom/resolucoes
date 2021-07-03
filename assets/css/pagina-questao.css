@@ -125,6 +125,10 @@ html {
   margin-bottom: 20px;
 }
 
+#questao .conteudo .alternativas .custom-radio label {
+  cursor: pointer;
+}
+
 #questao .conteudo .alternativas .custom-radio input + label:before {
   content: "";
   width: 10px;

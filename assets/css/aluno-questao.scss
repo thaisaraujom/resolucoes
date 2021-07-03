@@ -299,6 +299,7 @@ html {
     
         .questionamento {
             margin: 20px 0;
+            padding-right: 70px;
         }
 
         .alternativas {
@@ -311,6 +312,9 @@ html {
             }
             .custom-radio {
                 margin-bottom: 20px;
+                label {
+                    cursor: pointer;
+                }
             }
             .custom-radio input + label:before {
                 content: "";
@@ -715,6 +719,9 @@ html {
             .enunciado {
                 padding-right: 0 !important;
             }
+        }
+        .conteudo .questionamento {
+            padding-right: 0;
         }
         .submissao {
             width: 100%;

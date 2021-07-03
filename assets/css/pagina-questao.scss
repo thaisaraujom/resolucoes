@@ -97,6 +97,9 @@ html {
             }
             .custom-radio {
                 margin-bottom: 20px;
+                label {
+                    cursor: pointer;
+                }
             }
             .custom-radio input + label:before {
                 content: "";

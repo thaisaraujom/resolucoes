@@ -1,0 +1,62 @@
+#questao {
+    .subtitulo h2 {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 23px;
+        line-height: 30px;
+
+        color: #d7d5d4;
+
+        margin: 50px 0 10px 0;
+    }
+
+    .habilitar-edicao {
+        left: 370px;
+    }
+    .campos-preenchimento {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 770px) {
+    #questao {
+        .overlay {
+            margin: 0 !important;
+            padding-top: 60px !important;
+        }
+        .subtitulo h2 {
+            font-weight: bold;
+            font-size: 14px;
+            color: #282c35;
+        }
+        .icones {
+            display: flex;
+        }
+        .voltar {
+            padding: 40px 0 0;
+        }
+        .mobile.seta-voltar {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    #questao {
+        .voltar {
+            padding: 0;
+        }
+        .icones {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #questao {
+        .voltar {
+            padding-top: 20px;
+        }
+    }
+}

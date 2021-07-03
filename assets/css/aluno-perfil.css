@@ -137,6 +137,7 @@ html {
   font-size: 16px;
   color: #e4e0e0;
   margin-right: 5px;
+  white-space: nowrap;
 }
 
 #questao input[type="radio"],
