@@ -9,7 +9,6 @@ campo.forEach((campo_single) => {
     var editar_habM = campo_single.querySelector('.habilitar-edicaoM')
     
     var input = campo_single.querySelector('.area-edit')
-    console.log(campo_single);
 
     editar_hab.addEventListener('click', function () {
         input.removeAttribute("disabled") //o atributo é falso

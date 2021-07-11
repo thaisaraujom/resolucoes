@@ -11,11 +11,11 @@
 
 let bar_dificuldade = document.querySelectorAll('.bar_dificuldade')
 
-console.log(bar_dificuldade);
+
 
 bar_dificuldade.forEach((barra) => {
     let total_questoes = barra.dataset.questions
-    
+    console.log(total_questoes);
     let bar_concluidas = barra.querySelector('.bar_concluidas')
 
     let questoes_concluidas = barra.querySelector('.nivel').innerHTML

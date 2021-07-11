@@ -63,7 +63,7 @@ html {
     .campos-preenchimento {
         margin: 50px 0;
     }
-    .campo {
+    .campo, .campo-select {
         margin: 40px 0;
         display: flex;
         position: relative;
@@ -79,14 +79,60 @@ html {
         color: #e4e0e0;
         font-family: "Montserrat", sans-serif;
         font-size: 16px;
-
+        width: 300px;
+        
         margin: 0 5px;
+    }
+    .campo-select {
+        display: flex;
+        align-items: center;
+
+        position: relative;
+    }
+    .campo-select select {
+        background: #d7d5d4;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+
+        font-family: 'Montserrat', sans-serif;
+
+        color: #282c35;
+        padding: 2px 5px;
+        
+        margin-left: 20px;
+
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    .campo-select option {
+        width: 38%;
+        
+        outline: none;
+        font-size: 16px;
+        font-weight: bold;
+
+        color: #282c35;
+    }
+    .campo-select select:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
     }
     .habilitar-edicao {
         position: absolute;
-        left: 300px;
+        left: 400px;
 
         cursor: pointer;
+    }
+    .exclamacao, .check-desktop {
+        position: absolute;
+        left: 400px;
+    }
+    .check-desktop {
+        display: none;
+    }
+    .check-mobile {
+        display: none;
     }
     ::-webkit-input-placeholder {
         color: #d7d5d4;
@@ -111,7 +157,7 @@ html {
         font-weight: 600;
         font-size: 16px;
     }
-    .campo label:not(.radio) {
+    .campo label:not(.radio), .campo-select label:not(.radio) {
         font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-weight: 600;
@@ -290,7 +336,7 @@ html {
             margin: 0;
         }
         .campo label:not(.radio),
-        .radio {
+        .radio,  .campo-select label:not(.radio) {
             font-size: 14px;
             color: #282c35;
         }
@@ -319,6 +365,17 @@ html {
         .habilitar-edicaoM {
             cursor: pointer;
         }
+        .check-desktop {
+            display: none;
+        }
+        .exclamacao, .check-mobile {
+            position: absolute;
+            left: initial;
+            right: 2%;
+        }
+        .check-mobile {
+            display: none;
+        }
         ::-webkit-input-placeholder {
             color: #282c35;
         }
@@ -340,6 +397,24 @@ html {
     }
     footer {
         background-color: #ebe7e4;
+    }
+}
+
+@media (max-width: 499px) {
+    #questao {
+        .campo-select {
+            align-items: flex-start;
+
+        }
+        .campo-select select {
+            padding: 0;
+            margin-left: 2px;
+            font-size: 14px;
+        }
+        .campo-select label:not(.radio){
+            width: 50%;
+            white-space: initial;
+        }
     }
 }
 

@@ -9,15 +9,16 @@ let simbolo_tempo = document.querySelector('.relogio-simulado')
 
 let voltar_simulado = document.querySelectorAll('.voltar-simulado')
 
-finalizar.addEventListener('click', function () {
+finalizar.addEventListener('click', function (e) {
+    modal_finalizar.style.visibility = 'visible'
+	e.preventDefault()
+})
+
+finalizar_mobile.addEventListener('click', function (e) {
     modal_finalizar.style.visibility = 'visible'
 })
 
-finalizar_mobile.addEventListener('click', function () {
-    modal_finalizar.style.visibility = 'visible'
-})
-
-simbolo_sair.addEventListener('click', function () {
+simbolo_sair.addEventListener('click', function (e) {
     modal_finalizar.style.visibility = 'hidden'
 })
 

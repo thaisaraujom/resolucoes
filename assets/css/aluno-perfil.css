@@ -74,7 +74,7 @@ html {
   margin: 50px 0;
 }
 
-#questao .campo {
+#questao .campo, #questao .campo-select {
   margin: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,13 +92,64 @@ html {
   color: #e4e0e0;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  width: 300px;
   margin: 0 5px;
+}
+
+#questao .campo-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#questao .campo-select select {
+  background: #d7d5d4;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #282c35;
+  padding: 2px 5px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#questao .campo-select option {
+  width: 38%;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #282c35;
+}
+
+#questao .campo-select select:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
 }
 
 #questao .habilitar-edicao {
   position: absolute;
-  left: 300px;
+  left: 400px;
   cursor: pointer;
+}
+
+#questao .exclamacao, #questao .check-desktop {
+  position: absolute;
+  left: 400px;
+}
+
+#questao .check-desktop {
+  display: none;
+}
+
+#questao .check-mobile {
+  display: none;
 }
 
 #questao ::-webkit-input-placeholder {
@@ -130,7 +181,7 @@ html {
   font-size: 16px;
 }
 
-#questao .campo label:not(.radio) {
+#questao .campo label:not(.radio), #questao .campo-select label:not(.radio) {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -320,7 +371,7 @@ html {
     margin: 0;
   }
   #questao .campo label:not(.radio),
-  #questao .radio {
+  #questao .radio, #questao .campo-select label:not(.radio) {
     font-size: 14px;
     color: #282c35;
   }
@@ -349,6 +400,17 @@ html {
   #questao .habilitar-edicaoM {
     cursor: pointer;
   }
+  #questao .check-desktop {
+    display: none;
+  }
+  #questao .exclamacao, #questao .check-mobile {
+    position: absolute;
+    left: initial;
+    right: 2%;
+  }
+  #questao .check-mobile {
+    display: none;
+  }
   #questao ::-webkit-input-placeholder {
     color: #282c35;
   }
@@ -366,6 +428,23 @@ html {
   }
   footer {
     background-color: #ebe7e4;
+  }
+}
+
+@media (max-width: 499px) {
+  #questao .campo-select {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #questao .campo-select select {
+    padding: 0;
+    margin-left: 2px;
+    font-size: 14px;
+  }
+  #questao .campo-select label:not(.radio) {
+    width: 50%;
+    white-space: initial;
   }
 }
 
