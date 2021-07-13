@@ -5,6 +5,9 @@ const alternativas = Array.from(document.getElementsByClassName('alternativa-tex
 const numeroQuestao = document.getElementById('num-question');
 const numeroDeQuestoes = document.getElementById('numero-de-questoes');
 
+
+
+
 let questaoAtual = {};
 let questaoCont = 0;
 let questoesDisponiveis = [];
@@ -25,9 +28,6 @@ fetch("questoes.json"
     console.error(err);
 });
 
-
-// Numero de questoes do questionario
-const MAX_QUESTOES = 5;
 // Criando array das respostas do aluno
 const respostasAluno = [];
 
@@ -36,6 +36,7 @@ startQuestionario = () => {
     questaoCont = 0;  
     // Seprando cada questão para poder manipula-las como em uma array - spread
     questoesDisponiveis = [...questoes];
+    
     getNovaQuestao();
 }
 
@@ -47,9 +48,36 @@ alternativas.forEach((alternativa) => {
     });
 });
 
-// Pega uma nova questão do "repositorio"
+// Pega uma nova questão do "banco de questões"
 getNovaQuestao = () => {
-    if(questoesDisponiveis.length === 0 || questaoCont >= MAX_QUESTOES){
+    // Desabilitando/Habilitando botão Questão anterior quando necessário
+    if(questaoCont == 0){
+        document.querySelector("#footer > div.back").setAttribute('style', `
+            opacity : 0.5;
+            pointer-events: none;
+        `)
+    }else{
+        document.querySelector("#footer > div.back").setAttribute('style', `
+        opacity : 1;
+        pointer-events: auto;
+        cursor: pointer;`
+        )    
+    }
+    // Desabilitando/Habilitando botão Proxima questão quando necessário
+    if(questaoCont === (questoesDisponiveis.length) -1){
+        document.querySelector("#footer > div.next").setAttribute('style', `
+        opacity : 0.5;
+        // pointer-events: none;`
+        )
+    }else{
+        document.querySelector("#footer > div.next").setAttribute('style', `
+        opacity : 1;
+        pointer-events: auto;
+        cursor: pointer;`
+        )
+    }
+
+    if(questaoCont == questoesDisponiveis.length){
         window.alert("Questionario Finalizado");
         return window.location.assign("pagina-questao-desempenho.html");
     }
@@ -63,21 +91,14 @@ getNovaQuestao = () => {
             radio.checked = false;
             respondido = true;
         }
-    });
-    // if (respondido == false){
-    //     respostasAluno.push("")
-    //     localStorage.setItem("Respostas do Aluno", JSON.stringify(respostasAluno));
-    // }
-  
+    });  
 
-    questaoCont++;
-    // Gerando umnumero aleatorio para pegar uma questao aleatoriamente no repositorio
-    const questaoIndex = Math.floor(Math.random() * questoesDisponiveis.length);
-    // Pegando uma questao aleatoriamente no repositorio
-    questaoAtual = questoesDisponiveis[questaoIndex];
+    questaoCont++; 
+    // Pegando uma questao no repositorio
+    questaoAtual = questoesDisponiveis[questaoCont];
     // Jogando dados na questão no DOM
     numeroQuestao.innerText = questaoCont;
-    numeroDeQuestoes.innerText = MAX_QUESTOES;
+    numeroDeQuestoes.innerText = questoesDisponiveis.length;
     questaoEnunciadoPre.innerText = questaoAtual.enunciadoPre;
     questaoEnunciadoPos.innerText = questaoAtual.enunciadoPos;
     questaoImagem.src = questaoAtual.imagem;
@@ -85,11 +106,25 @@ getNovaQuestao = () => {
         const numeroAlternativa = alternativa.dataset["numero"];
         alternativa.innerText = questaoAtual["alternativa" + numeroAlternativa];
     });
-    // Removendo a questão atual da lista de proximas questoes - evitar repetição
-    questoesDisponiveis.splice(questaoIndex, 1);
-
 };
 
+retornaQuestao = () => {
+    if(questaoCont != 0){
+        questaoCont--; 
+        // Pegando uma questao no repositorio
+        questaoAtual = questoesDisponiveis[questaoCont];
+        // Jogando dados na questão no DOM
+        numeroQuestao.innerText = questaoCont;
+        numeroDeQuestoes.innerText = questoesDisponiveis.length;
+        questaoEnunciadoPre.innerText = questaoAtual.enunciadoPre;
+        questaoEnunciadoPos.innerText = questaoAtual.enunciadoPos;
+        questaoImagem.src = questaoAtual.imagem;
+        alternativas.forEach( alternativa => {
+            const numeroAlternativa = alternativa.dataset["numero"];
+            alternativa.innerText = questaoAtual["alternativa" + numeroAlternativa];
+        });
+    }
+}
 
 
 
