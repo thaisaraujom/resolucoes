@@ -64,34 +64,32 @@
                         <div class="paragrafo">
                             <p>Digite seu email cadastrado para que possamos enviar o link de redefinição de senha</p>
                         </div>
+                        <form class="needs-validation" novalidate>
+                            <div class="formulario desktop">
+                                
+                                    <input type="email" name="email" class="Nemail" placeholder="Digite seu email">
+                                    <div class="invalidfeedback desativar">* Campo necessário para localizarmos seu email
+                                    </div>
+                            </div>
 
-                        <div class="formulario desktop">
-                            <form class="needs-validation" novalidate>
-                                <input type="email" name="email" class="Nemail" placeholder="Digite seu email">
-                                <div class="invalidfeedback desativar">* Campo necessário para localizarmos seu email</div>
-                            </form>
+                            <div class="formulario1 mobile">
+                                    <input type="email" name="email" class="Nemail1" placeholder="Digite seu email">
+                                    <div class="invalidfeedback1 desativar">* Campo necessário para localizarmos seu email
+                                    </div>
+                            </div>
 
+                            <div class="botao-enviar desktop">
 
-                        </div>
-
-                        <div class="formulario1 mobile">
-                            <form class="needs-validation" novalidate>
-                                <input type="email" name="email" class="Nemail1" placeholder="Digite seu email">
-                                <div class="invalidfeedback1 desativar">* Campo necessário para localizarmos seu email</div>
-                            </form>
-                        </div>
-
-                        <div class="botao-enviar desktop">
-                            <form action="">
                                 <button type="submit" class="botao-enviar-d">Enviar</button>
-                            </form>
-                        </div>
 
-                        <div class="botao-enviar mobile">
-                            <form action="">
-                                <button type="submit" class="botao-enviar-m">Enviar</button>
-                            </form>
-                        </div>
+                            </div>
+
+                            <div class="botao-enviar mobile">
+
+                                <button  class="botao-enviar-m">Enviar</button>
+
+                            </div>
+                        </form>
                     </div>
 
                     <div class="imagem1">
@@ -126,8 +124,8 @@
         var invalidfeedback1 = document.querySelector('.invalidfeedback1')
         var Nemail = document.querySelector('.Nemail');
         var Nemail1 = document.querySelector('.Nemail1');
-        
-        botao_enviar_desktop.addEventListener('click', function(){
+
+        botao_enviar_desktop.addEventListener('click', function () {
             if (Nemail.value.length == 0) {
                 Nemail.classList.add('active')
                 invalidfeedback.classList.remove('desativar')
@@ -137,7 +135,7 @@
             }
         })
 
-        botao_enviar_mobile.addEventListener('click', function(){
+        botao_enviar_mobile.addEventListener('click', function () {
             if (Nemail1.value.length == 0) {
                 Nemail1.classList.add('active-mobile')
                 invalidfeedback1.classList.remove('desativar')

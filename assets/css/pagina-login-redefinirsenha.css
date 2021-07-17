@@ -142,8 +142,7 @@ html {
 
 #redefinir .conteudo button {
   margin-top: 40px;
-  width: 40%;
-  height: 65%;
+  padding: 2% 12%;
   cursor: pointer;
   border: none;
   background: #f58e08;
@@ -225,8 +224,6 @@ html {
     font-size: 19px;
   }
   #redefinir .conteudo button {
-    width: 35%;
-    height: 60%;
     font-size: 18px;
   }
 }
@@ -251,6 +248,9 @@ html {
     background: none;
     padding: 0;
     margin: 0;
+  }
+  #redefinir .conteudo input {
+    width: 100%;
   }
   #redefinir .conteudo .invalidfeedback1 {
     font-family: Roboto;
@@ -300,7 +300,6 @@ html {
     display: block;
     border: none;
     border-radius: 0 !important;
-    width: 600px;
     height: 29px;
     background: none;
     border: 1px solid #8e95a5;
@@ -341,8 +340,7 @@ html {
   }
   #redefinir .conteudo button {
     margin-top: 25px;
-    width: 111px;
-    height: 25.16px;
+    padding: 1% 5%;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -353,6 +351,13 @@ html {
   }
   #redefinir .formulario1 {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #redefinir .coluna1 {
     width: 80%;
@@ -379,21 +384,9 @@ html {
   }
 }
 
-@media (max-width: 940px) {
-  #redefinir .formulario1 input {
-    width: 550px;
-  }
-}
-
-@media (max-width: 800px) {
-  #redefinir .formulario1 input {
-    width: 500px;
-  }
-}
-
 @media (max-width: 730px) {
   #redefinir .formulario1 input {
-    width: 450px;
+    width: 100%;
   }
   #redefinir .conteudo .titulo p {
     width: 80% !important;
@@ -417,11 +410,17 @@ html {
   #redefinir .formulario1 input {
     width: 350px;
   }
+  #redefinir .conteudo button {
+    padding: 2% 7%;
+  }
 }
 
 @media (max-width: 500px) {
   #redefinir .formulario1 input {
     width: 270px;
+  }
+  #redefinir .conteudo button {
+    padding: 1.5% 10%;
   }
 }
 
