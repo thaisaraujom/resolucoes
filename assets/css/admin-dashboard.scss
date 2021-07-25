@@ -83,10 +83,11 @@ body {
             margin-bottom: 10px;
         }
 
-        p {
+        p,a {
             margin: 7px 0;
             color: #595959;
             font-size: 15px;
+            text-decoration: none;
         }
     }
     select {

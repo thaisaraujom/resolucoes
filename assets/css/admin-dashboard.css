@@ -110,10 +110,11 @@ body {
   margin-bottom: 10px;
 }
 
-#questao .info-cursinho p {
+#questao .info-cursinho p, #questao .info-cursinho a {
   margin: 7px 0;
   color: #595959;
   font-size: 15px;
+  text-decoration: none;
 }
 
 #questao select {
