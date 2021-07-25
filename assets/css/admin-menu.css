@@ -1,0 +1,54 @@
+#navbar {
+  background: #2c313b;
+}
+
+#navbar-lateral .itens-menu {
+  height: 80%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#navbar-lateral .nav-item {
+  margin-top: 15px;
+}
+
+#navbar-lateral .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbar-lateral .home p {
+  margin-right: 55px;
+}
+
+#navbar-lateral .home-desativada {
+  display: none;
+}
+
+#navbar-lateral .item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbar-lateral .item-link-ativado {
+  color: #f58e08;
+  font-weight: 600;
+}
+
+#navbar-lateral .home-down {
+  margin: 10px 0 0 20px;
+}
+
+#navbar-lateral .home-down p {
+  margin-top: 5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #d7d5d4;
+}
+/*# sourceMappingURL=admin-menu.css.map */
