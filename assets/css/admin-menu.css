@@ -23,6 +23,10 @@
   margin-right: 55px;
 }
 
+#navbar-lateral .icon-down {
+  cursor: pointer;
+}
+
 #navbar-lateral .home-desativada {
   display: none;
 }
@@ -47,7 +51,7 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 300;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 12px;
   color: #d7d5d4;
 }
