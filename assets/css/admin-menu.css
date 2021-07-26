@@ -42,11 +42,13 @@
   font-weight: 600;
 }
 
-#navbar-lateral .home-down {
+#navbar-lateral .home-down,
+#navbar-lateral .sobre-down {
   margin: 10px 0 0 10px;
 }
 
-#navbar-lateral .home-down p {
+#navbar-lateral .home-down p,
+#navbar-lateral .sobre-down p {
   margin-top: 5px;
   font-family: Montserrat;
   font-style: normal;
@@ -54,5 +56,26 @@
   font-size: 12px;
   line-height: 12px;
   color: #d7d5d4;
+}
+
+#navbar-lateral .sobre-down {
+  overflow-y: scroll;
+  height: 100px;
+}
+
+#navbar-lateral .sobre-down::-webkit-scrollbar {
+  width: 3px;
+  background-color: #f0f0f0;
+}
+
+#navbar-lateral .sobre-down::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  background-color: #f0f0f05e;
+}
+
+#navbar-lateral .mais-cursinho {
+  cursor: pointer;
 }
 /*# sourceMappingURL=admin-menu.css.map */

@@ -29,7 +29,8 @@
         color: #f58e08;
         font-weight: 600;
     }
-    .home-down {
+    .home-down,
+    .sobre-down {
         margin: 10px 0 0 10px;
         p {
             margin-top: 5px;
@@ -41,5 +42,22 @@
 
             color: #d7d5d4;
         }
+    }
+    .sobre-down {
+        overflow-y: scroll;
+        height: 100px;
+    }
+    .sobre-down::-webkit-scrollbar {
+        width: 3px;
+        background-color: #f0f0f0;
+    }
+    .sobre-down::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+        border-radius: 20px;
+        background-color: #f0f0f05e;
+    }
+    .mais-cursinho {
+        cursor: pointer;
     }
 }
