@@ -1,0 +1,233 @@
+#questao .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#questao .titulo-admin {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #00062b;
+}
+
+#questao .secao-inicial {
+  margin: 25px auto 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10%;
+  width: 80%;
+}
+
+#questao .textarea-editavel {
+  resize: none;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  width: 96%;
+  min-width: 250px;
+  height: 30px;
+  color: #f2f2f2;
+  padding: 2%;
+  font-family: " Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282c35;
+  cursor: pointer;
+}
+
+#questao .textarea-editavel::-webkit-scrollbar {
+  width: 2px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+#questao .textarea-editavel:-webkit-scrollbar-thumb {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  background-color: #f0f0f05e;
+}
+
+#questao .secao-inicial-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#questao .editar-secao-inicial {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#questao .button-salvar {
+  background: #f58e08;
+  -webkit-box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
+          box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
+  border-radius: 0px 0px 5px 5px;
+  border: none;
+  width: 100%;
+  padding: 1% 0;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+#questao .line-quem-somos {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#questao h3 {
+  font-size: 20px;
+  color: #282c35;
+}
+
+#questao .textarea-editavel-maior {
+  height: 120px;
+}
+
+#questao .line-esquerda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .value_mais {
+  position: absolute;
+  left: -35px;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#questao .caixas_valor_mais {
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#questao .caixa_valor_mais:not(:last-child) {
+  border-bottom: 1px solid #757575;
+}
+
+#questao .caixa_individual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1% 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .caixa_individual p {
+  margin-left: 10px;
+}
+
+@media (max-width: 1024px) {
+  #questao .icones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 500px) {
+  #questao .secao-inicial {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  #questao .titulo-admin {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  #questao .textarea-editavel {
+    height: 54px;
+    font-size: 16px;
+  }
+  #questao h3 {
+    font-size: 15px;
+  }
+  #questao .line-quem-somos {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  #questao form {
+    margin-bottom: 20px;
+  }
+  #questao .value_mais {
+    position: static;
+    width: 25px;
+    height: auto;
+  }
+  #questao .caixas_valor_mais img {
+    width: 15px;
+    height: auto;
+  }
+}
+
+@media (max-width: 499px) {
+  #questao .secao-inicial {
+    margin: 0;
+    padding: 0 5%;
+    width: 90%;
+  }
+  #questao .titulo-admin {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  #questao .textarea-editavel {
+    height: 54px;
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=admin-secao-inicial.css.map */

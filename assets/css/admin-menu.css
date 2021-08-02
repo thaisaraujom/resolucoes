@@ -2,6 +2,10 @@
   background: #2c313b;
 }
 
+#navbar-lateral {
+  background: #2C313B;
+}
+
 #navbar-lateral .itens-menu {
   height: 80%;
   -webkit-box-pack: start;
@@ -77,5 +81,9 @@
 
 #navbar-lateral .mais-cursinho {
   cursor: pointer;
+}
+
+#navbar {
+  background: #282c35;
 }
 /*# sourceMappingURL=admin-menu.css.map */

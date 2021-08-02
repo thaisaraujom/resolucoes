@@ -3,6 +3,7 @@
 }
 
 #navbar-lateral {
+    background: #2C313B;
     .itens-menu {
         height: 80%;
         justify-content: flex-start;
@@ -60,4 +61,8 @@
     .mais-cursinho {
         cursor: pointer;
     }
+}
+
+#navbar {
+    background: #282c35;
 }
