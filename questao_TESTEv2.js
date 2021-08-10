@@ -109,7 +109,7 @@ getNovaQuestao = () => {
 };
 
 retornaQuestao = () => {
-    if(questaoCont != 0){
+    if(questaoCont > 1){
         questaoCont--; 
         // Pegando uma questao no repositorio
         questaoAtual = questoesDisponiveis[questaoCont];
@@ -123,6 +123,8 @@ retornaQuestao = () => {
             const numeroAlternativa = alternativa.dataset["numero"];
             alternativa.innerText = questaoAtual["alternativa" + numeroAlternativa];
         });
+    }else{
+        
     }
 }
 

@@ -141,8 +141,8 @@
 
                         <div class="numero-questao">
                             <div class="numero-questao-n">
-                                <p><strong>Questão 3 </strong></p>
-                                <p class="segundaparte">de 10</p>
+                                <p><strong>Questão <span id="num-question"></span></strong></p>
+                                <p class="segundaparte">de <span id="numero-de-questoes"></p>
                                 <p class="porcentagem-final">25%</p>
                             </div>
 
@@ -152,7 +152,7 @@
                         </div>
 
                         <div class="enunciado">
-                            <div class="texto">
+                            <div class="texto" id="questao-enunciado-pre">
                                 <p>
                                 <h2>(ENEM 2019 PPL)</h2> O quadro apresenta a relação dos jogadores que fizeram parte da
                                 seleção brasileira de voleibol masculino nas Olimpíadas de 2012, em Londres, e suas
@@ -160,40 +160,39 @@
                             </div>
 
                             <div class="imagem-enunciado">
-                                <img src="assets/img/pagina-questao/enunciado.png" alt="">
+                                <img id="questao-imagem" src="assets/img/pagina-questao/enunciado.png" alt="">
                             </div>
                         </div>
 
                         <div class="questionamento">
-                            <p>A mediana das alturas, em metro, desses jogadores é: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit debitis ducimus numquam a vel, et est minima perferendis vero tempora sed nulla quod similique deserunt eum beatae aperiam quam omnis?</p>
+                            <p id="questao-enunciado-pos">A mediana das alturas, em metro, desses jogadores é: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit debitis ducimus numquam a vel, et est minima perferendis vero tempora sed nulla quod similique deserunt eum beatae aperiam quam omnis?</p>
                         </div>
 
                         <div class="alternativas">
                             <form>
                                 <div class="custom-radio">
                                     <input type="radio" id="alt1" name="gender" value="a">
-                                    <label for="alt1"><strong>a) </strong>1,90</label><br>
+                                    <label for="alt1" class="alternativa-text" data-numero="1"><strong>a) </strong>1,90</label><br>
                                 </div>
 
                                 <div class="custom-radio">
                                     <input type="radio" id="alt2" name="gender" value="b">
-                                    <label for="alt2"><strong>b) </strong>1,91</label><br>
+                                    <label for="alt2" class="alternativa-text" data-numero="2"><strong>b) </strong>1,91</label><br>
                                 </div>
 
                                 <div class="custom-radio">
                                     <input type="radio" id="alt3" name="gender" value="c">
-                                    <label for="alt3"><strong>c) </strong>1,96</label><br>
+                                    <label for="alt3" class="alternativa-text" data-numero="3"><strong>c) </strong>1,96</label><br>
                                 </div>
 
                                 <div class="custom-radio">
                                     <input type="radio" id="alt4" name="gender" value="d">
-                                    <label for="alt4"><strong>d) </strong>1,97</label>
-
+                                    <label for="alt4" class="alternativa-text" data-numero="4"><strong>d) </strong>1,97</label>
                                 </div>
 
                                 <div class="custom-radio">
                                     <input type="radio" id="alt5" name="gender" value="e">
-                                    <label for="alt5"><strong>e) </strong>1,98</label>
+                                    <label for="alt5" class="alternativa-text" data-numero="5"><strong>e) </strong>1,98</label>
                                 </div>
 
                             </form>
@@ -214,7 +213,7 @@
     
 
     <footer id="footer">
-        <div class="back">
+        <div class="back" onclick=retornaQuestao()>
 
             <div class="img-back">
                 <a href=""><img src="assets/img/pagina-questao/arrow-back.svg" alt=""></a>
@@ -277,7 +276,7 @@
 
         </div>
 
-        <div class="next">
+        <div class="next" class="next" onclick=getNovaQuestao()>
 
             <div class="texto-next desktop">
                 <p>Próxima</p>
@@ -353,5 +352,6 @@
     <script type="text/javascript" src="assets/js/relogio-tempo-mobile.js"></script>
     <script type="text/javascript" src="assets/js/bar-progress-questao-simulado.js"></script>
     <script type="text/javascript" src="assets/js/modal-finalizar-simulado.js"></script>
+    <script type="text/javascript" src="questao_TESTEv2.js"></script>
 
 </body>
