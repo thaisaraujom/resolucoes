@@ -149,15 +149,100 @@
     .caixa_valor_mais:not(:last-child) {
         border-bottom: 1px solid #757575;
     }
+    .action {
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: center;
+
+        button {
+            border: none;
+
+            background: none;
+        }
+        .button_opcao-admin {
+            display: none;
+        }
+        .salvar, .remover {
+            text-decoration: none;
+            color: #282C35;
+            font-size: 14px;
+        }
+        .salvar {
+            background: #f58e08;
+            border-radius: 5px;
+            padding: 0.5% 5px;
+
+            color: #f4f4f4;
+        }
+        .remover {
+            margin-left: 5px;
+        }
+    }
     .caixa_individual {
         display: flex;
         padding: 1% 2%;
+
+        justify-content: space-between;
 
         align-items: center;
 
         p {
             margin-left: 10px;
         }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 100%;
+        }
+    }
+    .caixa_content {
+        display: flex;
+        align-items: center;
+        
+   
+
+        input {
+            margin-left: 10px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+
+            border: none;
+        }
+    }
+    .h3-titulo-admin-ativado {
+        background: rgb(255, 255, 255);
+        border-radius: 10px 10px 0 0;
+        padding: 10px;
+        width: 100%;
+
+        border-bottom: 1px solid #757575;
+
+        margin-bottom: 0;
+    }
+    .h3-titulo-admin-values-ativado {
+        background: rgb(255, 255, 255);
+        border-radius: 10px 10px 0 0;
+        padding: 10px;
+        width: 100%;
+
+        border-bottom: 1px solid #757575;
+
+        margin-bottom: 0;
+    }
+    .line-esquerda {
+        width: 100%;
+
+    }
+    .line-quem-somos-ativado {
+        margin-bottom: 0;
+    }
+    .line-quem-somos-values-ativado {
+        margin-bottom: 0;
     }
 }
 
@@ -191,12 +276,13 @@
         }
         .line-quem-somos {
             margin-top: 0;
-            margin-bottom: 10px;
         }
         form {
             margin-bottom: 20px;
         }
-
+        .form_box {
+            margin-bottom: 0;
+        }
         .value_mais {
             position: static;
 
@@ -232,6 +318,20 @@
         }
         .voltar {
             padding-top: 80px;
+        }
+
+        .caixa_content input {
+            margin: 0 2px;
+
+            font-size: 14px;
+        }
+        .action {
+            .salvar, .remover {
+                font-size: 12px;
+            }
+        }
+        .textarea-editavel {
+            font-size: 14px;
         }
     }
 }

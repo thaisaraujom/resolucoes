@@ -163,11 +163,54 @@
   border-bottom: 1px solid #757575;
 }
 
+#questao .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#questao .action button {
+  border: none;
+  background: none;
+}
+
+#questao .action .button_opcao-admin {
+  display: none;
+}
+
+#questao .action .salvar, #questao .action .remover {
+  text-decoration: none;
+  color: #282C35;
+  font-size: 14px;
+}
+
+#questao .action .salvar {
+  background: #f58e08;
+  border-radius: 5px;
+  padding: 0.5% 5px;
+  color: #f4f4f4;
+}
+
+#questao .action .remover {
+  margin-left: 5px;
+}
+
 #questao .caixa_individual {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1% 2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -175,6 +218,65 @@
 
 #questao .caixa_individual p {
   margin-left: 10px;
+}
+
+#questao .caixa_individual form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#questao .caixa_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .caixa_content input {
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+}
+
+#questao .h3-titulo-admin-ativado {
+  background: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid #757575;
+  margin-bottom: 0;
+}
+
+#questao .h3-titulo-admin-values-ativado {
+  background: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid #757575;
+  margin-bottom: 0;
+}
+
+#questao .line-esquerda {
+  width: 100%;
+}
+
+#questao .line-quem-somos-ativado {
+  margin-bottom: 0;
+}
+
+#questao .line-quem-somos-values-ativado {
+  margin-bottom: 0;
 }
 
 @media (max-width: 1024px) {
@@ -204,10 +306,12 @@
   }
   #questao .line-quem-somos {
     margin-top: 0;
-    margin-bottom: 10px;
   }
   #questao form {
     margin-bottom: 20px;
+  }
+  #questao .form_box {
+    margin-bottom: 0;
   }
   #questao .value_mais {
     position: static;
@@ -235,6 +339,16 @@
   }
   #questao .voltar {
     padding-top: 80px;
+  }
+  #questao .caixa_content input {
+    margin: 0 2px;
+    font-size: 14px;
+  }
+  #questao .action .salvar, #questao .action .remover {
+    font-size: 12px;
+  }
+  #questao .textarea-editavel {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=admin-secao-inicial.css.map */
