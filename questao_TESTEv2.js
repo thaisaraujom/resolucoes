@@ -5,9 +5,6 @@ const alternativas = Array.from(document.getElementsByClassName('alternativa-tex
 const numeroQuestao = document.getElementById('num-question');
 const numeroDeQuestoes = document.getElementById('numero-de-questoes');
 
-
-
-
 let questaoAtual = {};
 let questaoCont = 0;
 let questoesDisponiveis = [];
@@ -18,33 +15,31 @@ let questoes = []
 fetch("questoes.json"
     ).then( res => {
         return res.json();
-})
-.then(questoesCarregadas => {
-    questoes = questoesCarregadas; 
-    // inicializando o questionario
-    startQuestionario()
-})
-.catch(err =>{
-    console.error(err);
-});
+    })
+    .then(questoesCarregadas => {
+        questoes = questoesCarregadas; 
+        // inicializando o questionario
+        startQuestionario()
+    })
+    .catch(err =>{
+        console.error(err);
+    });
 
 // Criando array das respostas do aluno
 const respostasAluno = [];
 
 // Função que inicia um questionário
 startQuestionario = () => {
-    questaoCont = 0;  
+    questaoCont =-1;  
     // Seprando cada questão para poder manipula-las como em uma array - spread
-    questoesDisponiveis = [...questoes];
-    
+    questoesDisponiveis = [...questoes];    
     getNovaQuestao();
 }
 
 // Coloca evento em cada alternativa que pega qual foi selecionada
 alternativas.forEach((alternativa) => {
     alternativa.addEventListener('click', (e) => {
-          const numeroDaAlernativa = e.target.dataset["numero"];
-                 
+        const numeroDaAlernativa = e.target.dataset["numero"];                 
     });
 });
 
@@ -66,8 +61,7 @@ getNovaQuestao = () => {
     // Desabilitando/Habilitando botão Proxima questão quando necessário
     if(questaoCont === (questoesDisponiveis.length) -1){
         document.querySelector("#footer > div.next").setAttribute('style', `
-        opacity : 0.5;
-        // pointer-events: none;`
+        opacity : 0.5;` 
         )
     }else{
         document.querySelector("#footer > div.next").setAttribute('style', `
@@ -83,7 +77,6 @@ getNovaQuestao = () => {
     }
     // Jogando a resposta da questão atual para uma array de respostas do aluno no localStorage, antes de carregar uma nova questão
     const radioAlternativas = Array.from(document.getElementsByName('gender'));
-    let respondido = false;
     radioAlternativas.forEach( radio => {
         if(radio.checked) {
             respostasAluno.push(radio.value)
@@ -97,14 +90,14 @@ getNovaQuestao = () => {
     // Pegando uma questao no repositorio
     questaoAtual = questoesDisponiveis[questaoCont];
     // Jogando dados na questão no DOM
-    numeroQuestao.innerText = questaoCont;
+    numeroQuestao.innerText = questaoCont+1;
     numeroDeQuestoes.innerText = questoesDisponiveis.length;
     questaoEnunciadoPre.innerText = questaoAtual.enunciadoPre;
     questaoEnunciadoPos.innerText = questaoAtual.enunciadoPos;
     questaoImagem.src = questaoAtual.imagem;
     alternativas.forEach( alternativa => {
-        const numeroAlternativa = alternativa.dataset["numero"];
-        alternativa.innerText = questaoAtual["alternativa" + numeroAlternativa];
+        const numeroAlternativa = alternativa.dataset["numero"];        
+        alternativa.innerText = questaoAtual["quest"][numeroAlternativa]["texto"];
     });
 };
 
@@ -121,7 +114,7 @@ retornaQuestao = () => {
         questaoImagem.src = questaoAtual.imagem;
         alternativas.forEach( alternativa => {
             const numeroAlternativa = alternativa.dataset["numero"];
-            alternativa.innerText = questaoAtual["alternativa" + numeroAlternativa];
+            alternativa.innerText = questaoAtual["quest"][numeroAlternativa]["texto"];
         });
     }else{
         
