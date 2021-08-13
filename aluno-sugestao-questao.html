@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/footer-light.css">
+    <link rel="stylesheet" href="assets/css/aluno-sugestao-questao.css">
+
+    <title>Sugerir uma questão | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg"
+                                alt=""></a><a class="item-link" href="aluno-dashboard.html">Home</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/apostilas-branco.svg"
+                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg"
+                                alt=""></a><a class="item-link" href="aluno-modulo.html">Matérias</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
+                            href="" class="item-link">Monitores</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
+                            class="item-link">Perfil</a></li>
+
+                    <li class="nav-item item-sugerir-questao"><a href=""><img src="assets/img/aluno-questao/sugerir-laranja.svg" alt=""></a><a
+                            href="" class="item-link">Sugerir Questão</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
+                            href="" class="item-link">Anotações</a></li>
+
+                    <li class="nav-item"><a href=""><img
+                                src="assets/img/aluno-questao/simulado.svg" alt=""></a><a href=""
+                            class="item-link">Simulado</a></li>
+                </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones">
+                        <a href="aluno-dashboard.html" class="desktop"><img class="home desktop"
+                                src="assets/img/aluno-modulo/icon.svg" alt=""></a>
+                        <img class="seta desktop" src="assets/img/aluno-modulo/seta.svg" alt="">
+                        <a href="aluno-dashboard.html" class="desktop">
+                            <p>Voltar</p>
+                        </a>
+                        <a href="aluno-dashboard.html"><img class="mobile seta-voltar"
+                                src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="conteudo-sugerir-questao">
+                    <div class="titulo desktop">
+                        <h1>Sugira uma questão</h1>
+                    </div>
+
+                    <div class="campos-preenchimento">
+                        <form action="">
+                            <div class="campo">
+                                <label for="text">Matéria:</label>
+                                <input type="text" name="text" id="text">
+                            </div>
+                            <div class="campo">
+                                <label for="text1">Assunto:</label>
+                                <input type="text" name="text" id="text1">
+                            </div>
+                            <div class="campo campo_file">
+                                <label class="file_label" for="files">Carregar imagem:</label>
+                                <input class="file_input" type="file" id="files" name="file" />
+                            </div>
+                            <div class="campo campo_area">
+                                <label for="text2">Cópia da questão:</label>
+                                <textarea name="text" id="text2" cols="30" rows="10">Indique a alternativa que explica de forma correta a diferença entre as fontes de luz fluorecentes e fosforescentes.
+
+                                    a) As fluorecentes emitem luz a partir da excitação do flúor em seu interior, e as fosforescentes funcionam pela excitação do fósforo.
+                                    
+                                    b) As fluorecentes emitem luz durante a ação de um agente excitador, e as fosforescentes emitem radiações ultravioleta.
+                                    
+                                    c) As fluorecentes emitem luz durante a ação de um agente excitador, e as fosforescente emitem luz mesmo após o fim da ação do excitador.
+                                    
+                                    d) Lâmpadas fluorecentes funcionam a partir da excitação de gases como o argônio, e materiais fosforescentes funcionam por meio da excitação do fósforo.
+                                    
+                                    e) Os termos fluorecentes e fosforescentes são sinônimos.</textarea>
+                            </div>
+
+                            <button class="button_enviar" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="desktop" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg"
+                    alt=""></a>
+            <a class="mobile" href="http://www.ejectufrn.com.br/"><img class="img-logo"
+                    src="./assets/img/aluno-dashboard/mobile-eject.svg" alt=""></a>
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="tela hide"></div>
+
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+
+    <script>
+        function handleFileSelect(evt) {
+          var files = evt.target.files; // FileList object
+      
+          // files is a FileList of File objects. List some properties.
+          var output = [];
+          document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+        }
+      
+        document.getElementById('files').addEventListener('change', handleFileSelect, false);
+      </script>
+</body>
+
+</html>

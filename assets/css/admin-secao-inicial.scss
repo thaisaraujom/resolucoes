@@ -3,7 +3,7 @@
         display: flex;
         flex-direction: column;
     }
- 
+
     .titulo-admin {
         font-family: "Montserrat", sans-serif;
         font-style: normal;
@@ -55,7 +55,7 @@
 
         cursor: pointer;
 
-        -webkit-appearance:none
+        -webkit-appearance: none;
     }
 
     .textarea-editavel::-webkit-scrollbar {
@@ -143,8 +143,7 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
 
-        font-family: 'Montserrat', sans-serif;
-
+        font-family: "Montserrat", sans-serif;
     }
     .caixa_valor_mais:not(:last-child) {
         border-bottom: 1px solid #757575;
@@ -161,23 +160,32 @@
 
             background: none;
         }
+
         .button_opcao-admin {
             display: none;
         }
-        .salvar, .remover {
+        .salvar:focus,
+        .remover:focus {
+            box-shadow: 0 0 0 2px #282c35;
+        }
+        .salvar,
+        .remover {
             text-decoration: none;
-            color: #282C35;
+            color: #282c35;
             font-size: 14px;
+
+            border-radius: 5px;
+            padding: 4px 10px;
         }
         .salvar {
             background: #f58e08;
-            border-radius: 5px;
-            padding: 0.5% 5px;
 
+            display: flex;
+            align-items: center;
             color: #f4f4f4;
         }
         .remover {
-            margin-left: 5px;
+            margin-left: 7px;
         }
     }
     .caixa_individual {
@@ -203,13 +211,11 @@
     .caixa_content {
         display: flex;
         align-items: center;
-        
-   
 
         input {
             margin-left: 10px;
             font-size: 16px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: "Montserrat", sans-serif;
 
             border: none;
         }
@@ -236,7 +242,6 @@
     }
     .line-esquerda {
         width: 100%;
-
     }
     .line-quem-somos-ativado {
         margin-bottom: 0;
@@ -244,12 +249,133 @@
     .line-quem-somos-values-ativado {
         margin-bottom: 0;
     }
+
+    input[type="file"]::-webkit-file-upload-button {
+        background: #f58e08 !important;
+        border-radius: 9px 0 0 9px;
+        border: none;
+        padding: 5px 0;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #f2f2f2;
+        padding: 5px 10px;
+
+        cursor: pointer;
+    }
+
+    input#files {
+        background: #e6e4e4;
+        border-radius: 10px;
+
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    input#files:focus {
+        box-shadow: 0 0 0 2px #282c35;
+    }
+
+    .file_input {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        width: 45%;
+        height: 100%;
+
+        align-items: center;
+    }
+
+    .file_label {
+        color: #676c78;
+        font-weight: bold;
+    }
+
+    .campo.campo_file {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .caixa_content_parceiros {
+        width: 100%;
+    }
+
+    .caixa_content input {
+        color: #282c35;
+    }
+
+    /* ------------------------------------- fale conosco*/
+    input#instagram,
+    input#linkedin,
+    input#twitter {
+        background: #e6e4e4;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 4px 10px;
+
+        max-width: 600px;
+        min-width: 90px;
+        width: 70%;
+
+        margin-right: 5%;
+        color: #000;
+        font-size: 15px;
+    }
+    .campo_redes .nome_parceiro_single {
+        width: 100%;
+    }
+
+    .redes_fale {
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+    }
+
+    .caixas_fale-conosco {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-salvar-fale {
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .button-salvar-fale-conosco {
+        border-radius: 0 0 5px 5px;
+        border: none;
+
+        padding: 7px 5%;
+
+        background: #f58e08;
+        box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
+
+        color: #f2f2f2;
+        font-size: 16px;
+        font-weight: bold;
+
+        cursor: pointer;
+        width: 100%;
+    }
+    .button-salvar-fale-conosco:focus {
+        box-shadow: 0 0 0 2px #282c35;
+    }
 }
 
 @media (max-width: 1024px) {
     #questao {
         .icones {
             display: flex;
+        }
+
+        input#instagram, input#linkedin, input#twitter {
+            width: 50%;
         }
     }
 }
@@ -289,12 +415,22 @@
             width: 25px;
             height: auto;
         }
-
         .caixas_valor_mais {
             img {
                 width: 15px;
                 height: auto;
             }
+        }
+        .caixa_individual_fale {
+            font-size: 12px;
+        }
+
+        input#instagram, input#linkedin, input#twitter {
+            font-size: 12px;
+        }
+
+        .button-salvar-fale-conosco {
+            font-size: 12px;
         }
     }
 }
@@ -302,7 +438,6 @@
 @media (max-width: 499px) {
     #questao {
         .secao-inicial {
-
             padding: 0 5%;
 
             width: 90%;
@@ -326,12 +461,15 @@
             font-size: 14px;
         }
         .action {
-            .salvar, .remover {
+            .salvar,
+            .remover {
                 font-size: 12px;
+                padding: 3px 6px;
             }
         }
         .textarea-editavel {
             font-size: 14px;
         }
+
     }
 }

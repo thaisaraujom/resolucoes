@@ -1,4 +1,4 @@
-let finalizar = document.querySelector('.button_salvar')
+let finalizar = document.querySelector('.p-finalizar-simulado1')
 
 let modal_finalizar = document.querySelector('.modal-finalizar-overlay')
 let simbolo_sair = document.querySelector('.x-sair')

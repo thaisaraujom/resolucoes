@@ -18,8 +18,8 @@ function carregarCampo() {
             
             
                                                 <div class="action">
-                                                <button class='button_salvar'><a href="#admin_valores" class="salvar">salvar</a></button>
-                                                <button class='button_apagar'><a href="#admin_valores" class="remover">apagar</a></button>
+                                                <button class='button_salvar'><a href="#admin_valores" class="salvar">Salvar</a></button>
+                                                <button class='button_apagar'><a href="#admin_valores" class="remover">Apagar</a></button>
                                                 </div>
                                             </form>
                                         </div>

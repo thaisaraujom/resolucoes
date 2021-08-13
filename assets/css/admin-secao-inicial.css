@@ -1,3 +1,7 @@
+#questao {
+  /* ------------------------------------- fale conosco*/
+}
+
 #questao .overlay {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,7 +160,7 @@
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #questao .caixa_valor_mais:not(:last-child) {
@@ -186,21 +190,34 @@
   display: none;
 }
 
-#questao .action .salvar, #questao .action .remover {
+#questao .action .salvar:focus,
+#questao .action .remover:focus {
+  -webkit-box-shadow: 0 0 0 2px #282c35;
+          box-shadow: 0 0 0 2px #282c35;
+}
+
+#questao .action .salvar,
+#questao .action .remover {
   text-decoration: none;
-  color: #282C35;
+  color: #282c35;
   font-size: 14px;
+  border-radius: 5px;
+  padding: 4px 10px;
 }
 
 #questao .action .salvar {
   background: #f58e08;
-  border-radius: 5px;
-  padding: 0.5% 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #f4f4f4;
 }
 
 #questao .action .remover {
-  margin-left: 5px;
+  margin-left: 7px;
 }
 
 #questao .caixa_individual {
@@ -245,7 +262,7 @@
 #questao .caixa_content input {
   margin-left: 10px;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
 }
 
@@ -279,11 +296,143 @@
   margin-bottom: 0;
 }
 
+#questao input[type="file"]::-webkit-file-upload-button {
+  background: #f58e08 !important;
+  border-radius: 9px 0 0 9px;
+  border: none;
+  padding: 5px 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #f2f2f2;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#questao input#files {
+  background: #e6e4e4;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#questao input#files:focus {
+  -webkit-box-shadow: 0 0 0 2px #282c35;
+          box-shadow: 0 0 0 2px #282c35;
+}
+
+#questao .file_input {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 45%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .file_label {
+  color: #676c78;
+  font-weight: bold;
+}
+
+#questao .campo.campo_file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#questao .caixa_content_parceiros {
+  width: 100%;
+}
+
+#questao .caixa_content input {
+  color: #282c35;
+}
+
+#questao input#instagram,
+#questao input#linkedin,
+#questao input#twitter {
+  background: #e6e4e4;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 4px 10px;
+  max-width: 600px;
+  min-width: 90px;
+  width: 70%;
+  margin-right: 5%;
+  color: #000;
+  font-size: 15px;
+}
+
+#questao .campo_redes .nome_parceiro_single {
+  width: 100%;
+}
+
+#questao .redes_fale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .caixas_fale-conosco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#questao .button-salvar-fale {
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+#questao .button-salvar-fale-conosco {
+  border-radius: 0 0 5px 5px;
+  border: none;
+  padding: 7px 5%;
+  background: #f58e08;
+  -webkit-box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
+          box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
+  color: #f2f2f2;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+#questao .button-salvar-fale-conosco:focus {
+  -webkit-box-shadow: 0 0 0 2px #282c35;
+          box-shadow: 0 0 0 2px #282c35;
+}
+
 @media (max-width: 1024px) {
   #questao .icones {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  #questao input#instagram, #questao input#linkedin, #questao input#twitter {
+    width: 50%;
   }
 }
 
@@ -322,6 +471,15 @@
     width: 15px;
     height: auto;
   }
+  #questao .caixa_individual_fale {
+    font-size: 12px;
+  }
+  #questao input#instagram, #questao input#linkedin, #questao input#twitter {
+    font-size: 12px;
+  }
+  #questao .button-salvar-fale-conosco {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 499px) {
@@ -344,8 +502,10 @@
     margin: 0 2px;
     font-size: 14px;
   }
-  #questao .action .salvar, #questao .action .remover {
+  #questao .action .salvar,
+  #questao .action .remover {
     font-size: 12px;
+    padding: 3px 6px;
   }
   #questao .textarea-editavel {
     font-size: 14px;

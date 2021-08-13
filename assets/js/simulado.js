@@ -68,7 +68,6 @@ situacao_simulado.forEach((sit_single) => {
                 situacoes.forEach((situacoes_single) => {
                     situacoes_single.classList.remove('ativar_status')
                     situacoes_single.classList.add('hide_status')
-                    console.log(situacoes_single);
 
                     if (situacoes_single.getAttribute('data-item') == dataStatus) {
                         situacoes_single.classList.add('ativar_status')
