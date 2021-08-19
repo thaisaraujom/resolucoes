@@ -99,7 +99,6 @@
         font-size: 16px;
 
         cursor: pointer;
-
         display: none;
     }
 
@@ -307,8 +306,17 @@
     .caixa_content input {
         color: #282c35;
     }
-
+    .input_cadastradas {
+        border: none;
+        font: 16px 'Montserrat', sans-serif;
+    }
+    input:disabled {
+        background: none;
+    }
     /* ------------------------------------- fale conosco*/
+    .admin-fale-conosco, .admin-parceiros {
+        margin-top: 10px;
+    }
     input#instagram,
     input#linkedin,
     input#twitter {
@@ -363,9 +371,8 @@
         cursor: pointer;
         width: 100%;
     }
-    .button-salvar-fale-conosco:focus {
-        box-shadow: 0 0 0 2px #282c35;
-    }
+
+ 
 }
 
 @media (max-width: 1024px) {
@@ -376,6 +383,14 @@
 
         input#instagram, input#linkedin, input#twitter {
             width: 50%;
+        }
+    }
+}
+
+@media (max-width: 830px) {
+    #questao {
+        .caixa_content input.nome_parceiro {
+           width: 50%;
         }
     }
 }
@@ -392,10 +407,13 @@
             font-size: 16px;
             margin-bottom: 0;
         }
-        .textarea-editavel {
+        .textarea-editavel{
             height: 54px;
 
-            font-size: 16px;
+            font-size: 15px;
+        }
+        input.input_cadastradas {
+            font-size: 15px;
         }
         h3 {
             font-size: 15px;
@@ -406,6 +424,13 @@
         form {
             margin-bottom: 20px;
         }
+        .file_label {
+            font-size: 12px;
+        }
+        .file_input {
+            font-size: 12px;
+            width: 90%;
+        }
         .form_box {
             margin-bottom: 0;
         }
@@ -414,6 +439,10 @@
 
             width: 25px;
             height: auto;
+        }
+        input[type="file"]::-webkit-file-upload-button {
+            padding: 2px 5px;
+            font-size: 10px;
         }
         .caixas_valor_mais {
             img {
@@ -424,13 +453,21 @@
         .caixa_individual_fale {
             font-size: 12px;
         }
+        .caixa_content input.nome_parceiro {
+            font-size: 12px;
+         }
 
         input#instagram, input#linkedin, input#twitter {
             font-size: 12px;
         }
 
         .button-salvar-fale-conosco {
-            font-size: 12px;
+            font-size: 15px;
+            padding: 1% 0;
+        }
+
+        .button-salvar {
+            font-size: 15px;
         }
     }
 }
