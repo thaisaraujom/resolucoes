@@ -9,8 +9,18 @@ function handleFileSelect(evt) {
 document.getElementById('files').addEventListener('change', handleFileSelect, false);
 
 /* --------------------------------------------------------------------------- */
+const adicionar_mais = document.querySelector('.value_mais parceiros_mais')
 const adicionar = document.getElementById("parceiros_mais");
 const caixa_parceiro = document.querySelector(".caixas_parceiro_mais");
+
+
+adicionar_mais.addEventListener('click', ()=> {
+  createDiv()
+})
+
+function createDiv() {
+  
+}
 
 adicionar.addEventListener("click", function (event) {
   let div_caixa_parceiro = document.createElement("div");

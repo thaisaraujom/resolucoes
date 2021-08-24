@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,KAAK,EAAE,KAAK;CACf;;AAED,MAAM,EAAE,SAAS,EAAE,KAAK;EACpB,AAAA,4BAA4B,CAAC;IACzB,WAAW,EAAE,IAAI;GACpB",
+    "sources": [
+        "modal-desvincular-questao.scss"
+    ],
+    "names": [],
+    "file": "modal-desvincular-questao.css"
+}
