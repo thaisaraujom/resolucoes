@@ -15,7 +15,7 @@
           flex-direction: column;
 }
 
-input[type="file"] {
+.modal-finalizar-overlay input[type="file"] {
   display: none;
 }
 

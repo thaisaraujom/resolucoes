@@ -1,9 +1,40 @@
 body {
-  background: #282C35;
+  background: #282c35;
 }
 
 #navbar {
   background: #282c35;
+}
+
+.esquerda-paginacao {
+  margin-right: 10px;
+}
+
+.direita-paginacao {
+  margin-left: 10px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination .esquerda-paginacao,
+.pagination .direita-paginacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #questao .overlay {
@@ -114,14 +145,17 @@ body {
   margin-bottom: 10px;
 }
 
-#questao .info-cursinho p, #questao .info-cursinho a {
+#questao .info-cursinho p,
+#questao .info-cursinho a {
   margin: 7px 0;
   color: #595959;
   font-size: 15px;
   text-decoration: none;
 }
 
-#questao .info-cursinho a:active, #questao .info-cursinho a:visited, #questao .info-cursinho a:link {
+#questao .info-cursinho a:active,
+#questao .info-cursinho a:visited,
+#questao .info-cursinho a:link {
   text-decoration: none;
   color: #595959;
 }
@@ -359,31 +393,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
-}
-
-#questao .pagination::after {
-  content: url("../img/aluno-questao/paginacao.svg");
-  cursor: pointer;
-  display: inline-block;
-  top: 1px;
-  left: 60%;
-  position: absolute;
-}
-
-#questao .pagination::before {
-  content: url("../img/aluno-questao/paginacao.svg");
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  display: inline-block;
-  cursor: pointer;
-  top: 2px;
-  right: 60%;
-  position: absolute;
+  margin-top: 25px;
 }
 
 #questao ul.pagination {
-  display: inline-block;
   padding: 0;
   margin: 0;
 }
@@ -440,6 +453,14 @@ body {
 }
 
 @media (max-width: 500px) {
+  .pagination .esquerda-paginacao,
+  .pagination .direita-paginacao {
+    height: 40px !important;
+  }
+  .pagination .esquerda-paginacao img,
+  .pagination .direita-paginacao img {
+    height: 10px !important;
+  }
   #questao .overlay {
     padding: 0 2%;
   }
@@ -533,7 +554,8 @@ body {
             box-shadow: none;
   }
   #questao .paginacao {
-    padding-bottom: 5%;
+    margin-top: 0;
+    padding-bottom: 2%;
   }
 }
 

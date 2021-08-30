@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="assets/css/admin-menu.css">
     <link rel="stylesheet" href="assets/css/admin-secao-inicial.css">
 
+    <link rel="stylesheet" href="assets/css/modal-apagar-parceiro.css">
+    <link rel="stylesheet" href="assets/css/modal-adicionar-parceiro.css">
+
+
     <title>Institucional - Seção Parceiros | Resoluções.com</title>
 </head>
 
@@ -155,43 +159,215 @@
                 <section class="secao-inicial">
                     <h2 class="titulo-admin">Seção Parceiros</h2>
 
-                    <section class="admin-valores admin-editavel admin-parceiros" id="admin_valores">
-                        <div class="secao-inicial-line line-quem-somos line-values">
-                            <div class="line-esquerda">
-                                <img class="value_mais parceiros_mais" id="btnAdicionar"
-                                    src="./assets/img/admin-secao-inicial/value_mais.svg" alt="">
-                                <h3 class="h3-titulo-admin h3-values">Nossos parceiros</h3>
+                    <form action="">
+                        <section class="admin-valores admin-editavel admin-parceiros" id="admin_valores">
+                            <div class="secao-inicial-line line-quem-somos line-values">
+                                <div class="line-esquerda line-nossos-parceiros">
+                                    <img class="value_mais parceiros_mais" id="btnAdicionar"
+                                        src="./assets/img/admin-secao-inicial/value_mais.svg" alt="">
+                                    <div class="input-a-ativar">
+                                        <input class="h3-titulo-admin h3-values input-titulo" value="Nossos parceiros"
+                                            disabled>
+
+                                    </div>
+                                    <button type="submit" class="button-salvar button-salvar-margin">Salvar</button>
+
+                                </div>
+
+                                <p class="editar-secao-inicial habilitar-mais-valores">Editar</p>
                             </div>
 
-                            <p class="editar-secao-inicial habilitar-mais-valores">Editar</p>
-                        </div>
+                            <div class="caixas_valor_mais">
+                                <div class="form_box" action="" id="box_input">
+                                    <!-- INÍCIO -->
+                                    <div class="caixa_valor_mais caixa_parceiro_mais">
+                                        <a href="admin-secao-parceiros-p2.html">
+                                            <div class="caixa_individual">
 
-                        <div class="caixas_valor_mais">
-                            <form class="form_box" action="">
-                                <!-- INÍCIO -->
-                                <div class="caixa_valor_mais caixa_parceiro_mais">
-                                    <div class="caixa_individual">
+                                                <div class="caixa_content caixa_content_parceiros">
+                                                    <div class="campo campo_file">
 
-                                        <div class="caixa_content caixa_content_parceiros">
-                                            <div class="campo campo_file">
+                                                        <div class="nome_parceiro_single">
+                                                            <label class="file_label">Nome 1:</label>
 
-                                                <div class="nome_parceiro_single">
-                                                    <label class="file_label" for="parceiro">Nome 1:</label>
+                                                            <input class="nome_parceiro" placeholder="Sed ante leo"
+                                                                type="text" name="" disabled>
+                                                        </div>
 
-                                                    <input class="nome_parceiro" placeholder="Sed ante leo" type="text" name="" id="parceiro" disabled>
+                                                        <input disabled class="file_input" type="file" id="files"
+                                                            name="file" accept="image/*" disabled />
+                                                    </div>
                                                 </div>
-
-                                                <input class="file_input" type="file" id="files" name="file" disabled/>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
+                                    <!-- FIM -->
+                                    <!-- INÍCIO -->
+                                    <div class="caixa_valor_mais caixa_parceiro_mais">
+                                        <a href="admin-secao-parceiros-p2.html">
+                                            <div class="caixa_individual">
+
+                                                <div class="caixa_content caixa_content_parceiros">
+                                                    <div class="campo campo_file">
+
+                                                        <div class="nome_parceiro_single">
+                                                            <label class="file_label">Nome 2:</label>
+
+                                                            <input class="nome_parceiro" placeholder="Sed ante leo"
+                                                                type="text" name="" disabled>
+                                                        </div>
+
+                                                        <input disabled class="file_input" type="file" id="files"
+                                                            name="file" accept="image/*" disabled />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- FIM -->
+                                    <!-- INÍCIO -->
+                                    <div class="caixa_valor_mais caixa_parceiro_mais">
+                                        <a href="admin-secao-parceiros-p2.html">
+                                            <div class="caixa_individual">
+
+                                                <div class="caixa_content caixa_content_parceiros">
+                                                    <div class="campo campo_file">
+
+                                                        <div class="nome_parceiro_single">
+                                                            <label class="file_label">Nome 3:</label>
+
+                                                            <input class="nome_parceiro" placeholder="Sed ante leo"
+                                                                type="text" name="" disabled>
+                                                        </div>
+
+                                                        <input disabled class="file_input" type="file" id="files"
+                                                            name="file" accept="image/*" disabled />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- FIM -->
+                                    <!-- INÍCIO -->
+                                    <div class="caixa_valor_mais caixa_parceiro_mais">
+                                        <a href="admin-secao-parceiros-p2.html">
+                                            <div class="caixa_individual">
+
+                                                <div class="caixa_content caixa_content_parceiros">
+                                                    <div class="campo campo_file">
+
+                                                        <div class="nome_parceiro_single">
+                                                            <label class="file_label">Nome 4:</label>
+
+                                                            <input class="nome_parceiro" placeholder="Sed ante leo"
+                                                                type="text" name="" disabled>
+                                                        </div>
+
+                                                        <input disabled class="file_input" type="file" id="files"
+                                                            name="file" accept="image/*" disabled />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- FIM -->
+                                    <!-- INÍCIO -->
+                                    <div class="caixa_valor_mais caixa_parceiro_mais">
+                                        <a href="admin-secao-parceiros-p2.html">
+                                            <div class="caixa_individual">
+
+                                                <div class="caixa_content caixa_content_parceiros">
+                                                    <div class="campo campo_file">
+
+                                                        <div class="nome_parceiro_single">
+                                                            <label class="file_label">Nome 5:</label>
+
+                                                            <input class="nome_parceiro" placeholder="Sed ante leo"
+                                                                type="text" name="" disabled>
+                                                        </div>
+
+                                                        <input disabled class="file_input" type="file" id="files"
+                                                            name="file" accept="image/*" disabled />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- FIM -->
+                                    <!-- INÍCIO -->
+                                    <div class="caixa_valor_mais caixa_parceiro_mais">
+                                        <a href="admin-secao-parceiros-p2.html">
+                                            <div class="caixa_individual">
+
+                                                <div class="caixa_content caixa_content_parceiros">
+                                                    <div class="campo campo_file">
+
+                                                        <div class="nome_parceiro_single">
+                                                            <label class="file_label">Nome 6:</label>
+
+                                                            <input class="nome_parceiro" placeholder="Sed ante leo"
+                                                                type="text" name="" disabled>
+                                                        </div>
+
+                                                        <input disabled class="file_input" type="file" id="files"
+                                                            name="file" accept="image/*" disabled />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- FIM -->
+                                    <!-- INÍCIO -->
+                                    <div class="caixa_valor_mais caixa_parceiro_mais">
+                                        <a href="admin-secao-parceiros-p2.html">
+                                            <div class="caixa_individual">
+
+                                                <div class="caixa_content caixa_content_parceiros">
+                                                    <div class="campo campo_file">
+
+                                                        <div class="nome_parceiro_single">
+                                                            <label class="file_label">Nome 7:</label>
+
+                                                            <input class="nome_parceiro" placeholder="Sed ante leo"
+                                                                type="text" name="" disabled>
+                                                        </div>
+
+                                                        <input disabled class="file_input" type="file" id="files"
+                                                            name="file" accept="image/*" disabled />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- FIM -->
+                                    <!-- INÍCIO -->
+                                    <div class="caixa_valor_mais caixa_parceiro_mais">
+                                        <a href="admin-secao-parceiros-p2.html">
+                                            <div class="caixa_individual">
+
+                                                <div class="caixa_content caixa_content_parceiros">
+                                                    <div class="campo campo_file">
+
+                                                        <div class="nome_parceiro_single">
+                                                            <label class="file_label">Nome 8:</label>
+
+                                                            <input class="nome_parceiro" placeholder="Sed ante leo"
+                                                                type="text" name="" disabled>
+                                                        </div>
+
+                                                        <input disabled class="file_input" type="file" id="files"
+                                                            name="file" accept="image/*" disabled />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- FIM -->
                                 </div>
-                                <!-- FIM -->
-                            </form>
-                        </div>
+                            </div>
 
-                    </section>
-
+                        </section>
+                    </form>
                 </section>
 
 
@@ -199,6 +375,47 @@
             </div>
         </div>
     </section>
+
+    <div class="modal-finalizar-overlay">
+        <div class="modal-finalizar">
+            <div class="modal-sair">
+                <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <div class="modal-finalizar-conteudo">
+                <p class="p-titulo-modal-finalizar">Adicionar novo parceiro:</p>
+
+                <form action="" class="decisao-botoes-modal">
+
+                    <div class="add-img-admin">
+                        <div class="img-caixa-admin">
+                            <div id="new">
+                            </div>
+                            <img class="img-preview" src="./assets/img/admin-dashboard/img-file-add.png" alt="">
+                            <div class="adicionar-img">
+                                <label for="file-img-admin">
+                                    <img class="image-mais-admin" src="./assets/img/admin-dashboard/add-file-img.svg">
+                                </label>
+                                <input id="file-img-admin" type='file' accept="image/*" onchange="loaderFile(event)">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="parceiro-admin">
+                        <label for="input-parceiro-admin">Nome do parceiro:</label>
+                        <input id="input-parceiro-admin" class="input-parceiro" type="text"
+                            placeholder="Nome do parceiro">
+                    </div>
+
+                    <button class="button-laranja-modal button-laranja-salvar-modal">Salvar</button>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
 
 
     <footer>
@@ -221,9 +438,9 @@
     <script type="text/javascript" src="assets/js/menu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-    <script src="assets/js/tabela-link.js"></script>
     <script src="assets/js/admin-menu-down.js"></script>
     <script src="assets/js/admin-secao-parceiros.js"></script>
+    <script type="text/javascript" src="assets/js/modal-adicionar-parceiro.js"></script>
 
 </body>
 
