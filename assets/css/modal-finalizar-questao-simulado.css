@@ -12,15 +12,9 @@ a:active {
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   visibility: hidden;
   z-index: 9999999;
 }
@@ -43,7 +37,6 @@ a:active {
   opacity: 1;
   visibility: visible;
   z-index: 9999999;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -83,12 +76,8 @@ a:active {
   width: 100%;
   background: #282c35;
   border-radius: 15px 15px 0px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .modal-sair img {
@@ -121,8 +110,7 @@ a:active {
   height: 10px;
   border: 1px solid #8d9ab6;
   border-radius: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .bar_feitas_progresso {
@@ -137,32 +125,16 @@ a:active {
   background: #f58e08;
   border-radius: 10px;
   width: 100%;
-  -webkit-animation: progressbar-countdown;
-          animation: progressbar-countdown;
+  animation: progressbar-countdown;
   /* Placeholder, this will be updated using javascript */
   /* We stop in the end */
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-iteration-count: 1;
   /* Stay on pause when the animation is finished finished */
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   /* We start paused, we start the animation using javascript */
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
   /* We want a linear animation, ease-out is standard */
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes progressbar-countdown {
-  0% {
-    width: 100%;
-    background: #f58e08;
-  }
-  100% {
-    width: 0%;
-    background: #f58e08;
-  }
+  animation-timing-function: linear;
 }
 
 @keyframes progressbar-countdown {
@@ -183,15 +155,9 @@ a:active {
 
 .final-conteudo {
   margin: 40px 0 30px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .voltar-simulado {
@@ -210,8 +176,6 @@ a:active {
     display: none;
   }
   .voltar-simulado.mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .voltar-simulado {
@@ -278,4 +242,3 @@ a:active {
     margin-bottom: 25px;
   }
 }
-/*# sourceMappingURL=modal-finalizar-questao-simulado.css.map */

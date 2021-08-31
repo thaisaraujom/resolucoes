@@ -3,8 +3,6 @@
 }
 
 #questao .continuar-simulado {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -37,25 +35,16 @@
 }
 
 #questao .finalizar-simulado {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #questao .situacao {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #questao .situacao-agendado {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 @media (max-width: 1160px) {
@@ -80,15 +69,10 @@
     display: none;
   }
   #questao .p-questoes-simulado.mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #questao .situacao-finalizado {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   #questao .finalizar-simulado {
     margin-top: 0;
@@ -111,8 +95,6 @@
 }
 
 .ativar_status {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
 }
 
@@ -123,4 +105,3 @@
 .ativar_graficos {
   display: block !important;
 }
-/*# sourceMappingURL=aluno-dashboard-simulado-situacao.css.map */

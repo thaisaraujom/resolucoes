@@ -8,9 +8,7 @@
 
 #navbar-lateral .itens-menu {
   height: 80%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 #navbar-lateral .nav-item {
@@ -18,8 +16,6 @@
 }
 
 #navbar-lateral .home {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -36,8 +32,6 @@
 }
 
 #navbar-lateral .item-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -73,7 +67,6 @@
 }
 
 #navbar-lateral .sobre-down::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
   border-radius: 20px;
   background-color: #f0f0f05e;
@@ -86,4 +79,3 @@
 #navbar {
   background: #282c35;
 }
-/*# sourceMappingURL=admin-menu.css.map */

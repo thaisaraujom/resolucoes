@@ -145,8 +145,20 @@
                             <a class="nav-link caderno__nav-item" id="v-pills-fisica-tab" data-toggle="pill" href="#v-pills-fisica" role="tab" aria-controls="v-pills-fisica caderno__nav-item" aria-selected="false">Física</a>
                         </nav>
                     </aside>
-                    <!-- Anotações dos Cadernos -->                    
+                    <!-- Anotações dos Cadernos -->       
+          
                     <section class="caderno__anotacoes tab-content col-a9" id="v-pills-tabContent">
+                        <div class="custom-select" style="width:200px;">
+                            <select id="select-disciplina">
+                              <option value="matematica" selected>Matemática</option>
+                              <option value="matematica">Matemática </option>
+                              <option value="portugues">Português</option>
+                              <option value="historia">História</option>
+                              <option value="geografia">Geografia</option>
+                              <option value="biologia">Biologia</option>
+                              <option value="fisica">Física</option>
+                            </select>
+                          </div>
                         <!-- MATEMÁTICA -->
                         <div class="tab-pane fade active show" id="v-pills-matematica" role="tabpanel" aria-labelledby="v-pills-matematica-tab">
                             <article class="anotacao matematica">
@@ -651,6 +663,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/caderno-de-anotacoes.js"></script>
 </body>
 
 </html>

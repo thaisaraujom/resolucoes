@@ -3,13 +3,8 @@
 }
 
 #questao .overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #questao .titulo-admin {
@@ -18,24 +13,15 @@
   font-weight: bold;
   font-size: 32px;
   line-height: 51px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #00062b;
 }
 
 #questao .secao-inicial {
   margin: 25px auto 20px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 0 10%;
   width: 80%;
 }
@@ -43,8 +29,7 @@
 #questao .textarea-editavel {
   resize: none;
   background: #ffffff;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   border: none;
   position: relative;
@@ -54,15 +39,9 @@
   color: #f2f2f2;
   padding: 2%;
   font-family: " Montserrat", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -79,22 +58,15 @@
 }
 
 #questao .textarea-editavel:-webkit-scrollbar-thumb {
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
   background-color: #f0f0f05e;
 }
 
 #questao .secao-inicial-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -105,8 +77,7 @@
 
 #questao .button-salvar {
   background: #f58e08;
-  -webkit-box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
-          box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
+  box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
   border-radius: 0px 0px 5px 5px;
   border: none;
   width: 100%;
@@ -134,12 +105,8 @@
 }
 
 #questao .line-esquerda {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #questao .value_mais {
@@ -157,8 +124,7 @@
 
 #questao .caixas_valor_mais {
   background: #fff;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   font-family: "Montserrat", sans-serif;
 }
@@ -168,17 +134,10 @@
 }
 
 #questao .action {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #questao .action button {
@@ -192,8 +151,7 @@
 
 #questao .action .salvar:focus,
 #questao .action .remover:focus {
-  -webkit-box-shadow: 0 0 0 2px #282c35;
-          box-shadow: 0 0 0 2px #282c35;
+  box-shadow: 0 0 0 2px #282c35;
 }
 
 #questao .action .salvar,
@@ -207,12 +165,8 @@
 
 #questao .action .salvar {
   background: #f58e08;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #f4f4f4;
 }
 
@@ -221,16 +175,10 @@
 }
 
 #questao .caixa_individual {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 1% 2%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #questao .caixa_individual p {
@@ -238,25 +186,15 @@
 }
 
 #questao .caixa_individual form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
 #questao .caixa_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #questao .caixa_content input {
@@ -318,18 +256,14 @@
 }
 
 #questao input#files:focus {
-  -webkit-box-shadow: 0 0 0 2px #282c35;
-          box-shadow: 0 0 0 2px #282c35;
+  box-shadow: 0 0 0 2px #282c35;
 }
 
 #questao .file_input {
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 45%;
   height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #questao .file_label {
@@ -338,15 +272,9 @@
 }
 
 #questao .campo.campo_file {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -375,8 +303,7 @@
 #questao input#linkedin,
 #questao input#twitter {
   background: #e6e4e4;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 4px 10px;
   max-width: 600px;
@@ -392,25 +319,14 @@
 }
 
 #questao .redes_fale {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #questao .caixas_fale-conosco {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #questao .button-salvar-fale {
@@ -424,8 +340,7 @@
   border: none;
   padding: 7px 5%;
   background: #f58e08;
-  -webkit-box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
-          box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
+  box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
   color: #f2f2f2;
   font-size: 16px;
   font-weight: bold;
@@ -435,8 +350,6 @@
 
 @media (max-width: 1024px) {
   #questao .icones {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #questao input#instagram, #questao input#linkedin, #questao input#twitter {
@@ -546,4 +459,3 @@
     font-size: 14px;
   }
 }
-/*# sourceMappingURL=admin-secao-inicial.css.map */

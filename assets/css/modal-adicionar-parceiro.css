@@ -6,13 +6,8 @@
 }
 
 .decisao-botoes-modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 input[type="file"] {
@@ -21,12 +16,8 @@ input[type="file"] {
 
 .img-caixa-admin {
   margin: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 110px;
   height: 110px;
   position: relative;
@@ -63,13 +54,8 @@ input[type="file"] {
 }
 
 .parceiro-admin {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .parceiro-admin label {
@@ -93,12 +79,8 @@ input[type="file"] {
 }
 
 .add-img-admin {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .input-parceiro {
@@ -109,18 +91,6 @@ input[type="file"] {
   padding: 5px;
   font-size: 13px;
   font-family: 'Montserrat', sans-serif;
-}
-
-.input-parceiro::-webkit-input-placeholder {
-  color: #B4B4B4;
-}
-
-.input-parceiro:-ms-input-placeholder {
-  color: #B4B4B4;
-}
-
-.input-parceiro::-ms-input-placeholder {
-  color: #B4B4B4;
 }
 
 .input-parceiro::placeholder {
@@ -147,4 +117,3 @@ input[type="file"] {
     width: 20px;
   }
 }
-/*# sourceMappingURL=modal-adicionar-parceiro.css.map */

@@ -4,12 +4,8 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 112%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   text-align: right;
   min-width: 90px;
   color: #E4E0E0;
@@ -28,22 +24,13 @@
 }
 
 .sugira__questao-textarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .sugira__filed-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
   margin-bottom: 40px;
 }
 
@@ -71,8 +58,7 @@
   color: #FFFFFF;
   padding: 0.438rem 2.688rem;
   outline: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   border: none;
 }
 
@@ -80,16 +66,13 @@
   border-bottom: solid 1px #E4E0E0;
   margin-left: 10px;
   width: 27rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #copia-questao {
   background: #E6E4E4;
   border: 1px solid #2C313B;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 10px;
   padding: 0.938rem;
 }
@@ -104,12 +87,8 @@
   font-size: 12px;
   line-height: 15px;
   border-radius: 9px 0px 0px 9px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background: #E6E4E4;
   border: 1px solid #282C35;
   border-radius: 10px;
@@ -143,4 +122,3 @@
 #file-name {
   padding-left: 10px;
 }
-/*# sourceMappingURL=sugira-questao-aluno.css.map */

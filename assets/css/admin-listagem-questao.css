@@ -26,33 +26,22 @@ input[type="radio"]:checked + label:before {
 }
 
 #questao .titulo_disciplina_admin {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
 #questao .filtro_disciplina {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #questao .img_filtro {
   width: auto;
   height: 11px;
   margin-left: 10px;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #questao .buscar {
@@ -64,21 +53,6 @@ input[type="radio"]:checked + label:before {
   border: none;
   padding: 2% 5% 2% 5%;
   margin-right: 10px;
-}
-
-#questao .buscar::-webkit-input-placeholder {
-  color: #2c313b;
-  font-family: "Montserrat", sans-serif;
-}
-
-#questao .buscar:-ms-input-placeholder {
-  color: #2c313b;
-  font-family: "Montserrat", sans-serif;
-}
-
-#questao .buscar::-ms-input-placeholder {
-  color: #2c313b;
-  font-family: "Montserrat", sans-serif;
 }
 
 #questao .buscar::placeholder {
@@ -100,20 +74,12 @@ input[type="radio"]:checked + label:before {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #282c35;
   display: flex;
   align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  justify-content: center;
   appearance: none;
   width: 150px;
   background: #e9e9e900 url("../img/admin-dashboard/sdrop.svg") 95.5% 50% no-repeat;
@@ -121,16 +87,13 @@ input[type="radio"]:checked + label:before {
 
 #questao .section-conteudo-admin {
   background: #f2f2f2;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 1% 0;
   position: relative;
 }
 
 #questao .input-listagem {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -138,13 +101,8 @@ input[type="radio"]:checked + label:before {
 #questao .content-admin {
   margin: 0 2%;
   font-family: "Montserrat", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   color: #a6a6a6;
   font-size: 14px;
   position: relative;
@@ -156,8 +114,6 @@ input[type="radio"]:checked + label:before {
 }
 
 #questao .content-admin .parte-cima {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin-bottom: 20px;
@@ -167,12 +123,8 @@ input[type="radio"]:checked + label:before {
   background: #eaeaea;
   border-radius: 10px;
   padding: 0 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 24px;
   white-space: nowrap;
 }
@@ -194,22 +146,15 @@ input[type="radio"]:checked + label:before {
   margin: 5px 0;
   padding: 1% 2%;
   font-size: 15px;
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 
 #questao .paginacao {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
 }
 
@@ -224,8 +169,7 @@ input[type="radio"]:checked + label:before {
 
 #questao .pagination::before {
   content: url("../img/aluno-questao/paginacao.svg");
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
   display: inline-block;
   cursor: pointer;
   top: 2px;
@@ -278,17 +222,11 @@ input[type="radio"]:checked + label:before {
 @media (max-width: 700px) {
   #questao .qtd-questoes-admin {
     font-size: 12px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #questao .content-admin .parte-cima {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     margin-bottom: 0;
   }
   #questao .buscar {
@@ -315,15 +253,6 @@ input[type="radio"]:checked + label:before {
   #questao .questao_admin {
     font-size: 12px;
   }
-  #questao .buscar::-webkit-input-placeholder {
-    font-size: 12px;
-  }
-  #questao .buscar:-ms-input-placeholder {
-    font-size: 12px;
-  }
-  #questao .buscar::-ms-input-placeholder {
-    font-size: 12px;
-  }
   #questao .buscar::placeholder {
     font-size: 12px;
   }
@@ -342,15 +271,6 @@ input[type="radio"]:checked + label:before {
   #questao .lupa-search {
     left: 130px;
   }
-  #questao .buscar::-webkit-input-placeholder {
-    font-size: 10px;
-  }
-  #questao .buscar:-ms-input-placeholder {
-    font-size: 10px;
-  }
-  #questao .buscar::-ms-input-placeholder {
-    font-size: 10px;
-  }
   #questao .buscar::placeholder {
     font-size: 10px;
   }
@@ -364,4 +284,3 @@ input[type="radio"]:checked + label:before {
     left: 100px;
   }
 }
-/*# sourceMappingURL=admin-listagem-questao.css.map */

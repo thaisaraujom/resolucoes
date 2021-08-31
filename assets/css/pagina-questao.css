@@ -23,8 +23,6 @@ html {
 
 #questao .icones {
   margin-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font: 400 13px "Montserrat";
   line-height: 12px;
@@ -60,12 +58,8 @@ html {
 }
 
 #questao .conteudo .numero-questao {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   text-align: start;
   color: #4e5057;
 }
@@ -83,14 +77,9 @@ html {
 }
 
 #questao .conteudo .enunciado {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 25px;
 }
 
@@ -146,21 +135,14 @@ html {
   width: 16px;
   height: 16px;
   background: #f58e08;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 2px;
 }
 
 #questao .submissao {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -180,8 +162,7 @@ html {
   margin: 5% 2px 15px;
   font: 500 16px "Roboto";
   cursor: pointer;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -189,8 +170,6 @@ html {
 .progress-bar-line {
   background: #e6e1dd;
   height: 2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -203,15 +182,9 @@ html {
 #footer {
   background: #e6e1dd;
   padding: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #footer .qtd-quest {
@@ -232,8 +205,6 @@ html {
 #footer .back,
 #footer .next,
 #footer .centro {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 40px;
 }
@@ -251,18 +222,13 @@ html {
 #footer .img-next,
 #footer .texto-back,
 #footer .texto-next {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #footer .img-back img,
 #footer .img-next img {
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
 #footer select {
@@ -275,24 +241,16 @@ html {
 #footer .centro {
   width: 50%;
   height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   color: #4e5057;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #footer .centro .qtd-quest {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 40%;
 }
@@ -309,18 +267,14 @@ html {
 #footer .centro .imagem3 img,
 #footer .centro .imagem2 img,
 #footer .centro .imagem1 img {
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
   cursor: pointer;
 }
 
 #footer .centro .imagens {
   width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 #footer .centro .imagens img {
@@ -339,31 +293,21 @@ html {
   .centro {
     padding-top: 10px !important;
     margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    justify-content: space-between !important;
   }
   .centro .desktop {
     display: none;
   }
   .centro .qtd-quest {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    justify-content: space-between !important;
     width: 40px !important;
     height: 40px !important;
     margin-right: 0 !important;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .centro .imagens {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .centro .imagem1,
   .centro .imagem2 {
@@ -384,13 +328,10 @@ html {
   }
   #questao .submissao .button {
     font-size: 12px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     text-shadow: none;
   }
   #questao .conteudo .numero-questao .mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -439,23 +380,15 @@ html {
     margin-right: 5%;
   }
   #questao .submissao {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    justify-content: space-between !important;
   }
   #questao .submissao .ou {
     margin: 0 !important;
   }
   #questao .submissao .button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     border-radius: 0;
     margin-bottom: 0;
     margin-top: 0;
@@ -480,12 +413,8 @@ html {
   }
   #questao .submissao .enviar,
   #questao .submissao .conferir {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end !important;
-        -ms-flex-align: end !important;
-            align-items: flex-end !important;
+    align-items: flex-end !important;
   }
   #questao .submissao .ou {
     width: 100% !important;
@@ -495,27 +424,19 @@ html {
   #footer .img-next img {
     padding-left: 10px;
     padding-right: 15px;
-    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   #footer .desktop {
     display: none;
   }
   #footer .centro {
     width: 100%;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
+    justify-content: space-around !important;
   }
   #footer .centro .qtd-quest {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
 
@@ -524,4 +445,3 @@ html {
     font-size: 20px;
   }
 }
-/*# sourceMappingURL=pagina-questao.css.map */

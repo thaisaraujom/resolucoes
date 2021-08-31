@@ -1,6 +1,4 @@
 .active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -18,8 +16,6 @@
 .barra-completa {
   background: #e6e1dd;
   height: 2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #f58e08;
 }
@@ -29,20 +25,14 @@
 }
 
 #questao .titulo.desktop {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   border: none;
 }
 
 #questao .titulo.desktop div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-right: 70px;
   cursor: pointer;
 }
@@ -62,8 +52,6 @@
 }
 
 #questao .relogio-simulado:hover + .tempo-valor {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -96,8 +84,7 @@ footer .pagination::after {
 
 footer .pagination::before {
   content: url("../img/aluno-questao/paginacao.svg");
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
   display: inline-block;
   cursor: pointer;
   top: 2px;
@@ -154,31 +141,18 @@ footer .centro-simulado-rodape {
   font-size: 13px;
   line-height: 112%;
   /* identical to box height, or 15px */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 70%;
   color: #4e5057;
 }
 
 footer .qtd-quest {
   margin-left: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 footer .qtd-quest h4 {
@@ -190,8 +164,6 @@ footer .finalizar-simulado-mobile {
 }
 
 footer .tempo-valor.active-time {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -208,9 +180,7 @@ footer .tempo-valor.active-time {
     margin-left: 10px;
   }
   #questao .numero-questao {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   #questao .numero-questao .mobile {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -227,24 +197,16 @@ footer .tempo-valor.active-time {
 
 @media (max-width: 840px) {
   footer .finalizar-simulado-mobile {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
     cursor: pointer !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   footer .finalizar-simulado-mobile img {
     width: 20px !important;
   }
   footer .finalizar-simulado-mobile .tempo-valor-restante {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   footer .finalizar-simulado-mobile .tempo-clique {
     display: none;
@@ -271,4 +233,3 @@ footer .tempo-valor.active-time {
     display: none;
   }
 }
-/*# sourceMappingURL=aluno-questao-simulado.css.map */

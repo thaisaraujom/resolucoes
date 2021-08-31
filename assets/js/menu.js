@@ -17,6 +17,3 @@ tela1.addEventListener('click', function(){
 })
 
 
-
-
-

@@ -62,8 +62,7 @@ input[type="file"]::-webkit-file-upload-button {
 #questao .campo_file input {
   background: #e6e4e4;
   border: 1px solid #282c35;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 10px;
   font-size: 12px;
   color: #000000;
@@ -76,20 +75,14 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 #questao .campo.campo_area {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #questao .campo textarea {
   background: #e6e4e4;
   border: 1px solid #2c313b;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 10px;
   margin-top: 30px;
   padding: 20px 10px;
@@ -110,8 +103,7 @@ input[type="file"]::-webkit-file-upload-button {
 
 #questao textarea:focus,
 #questao input:focus {
-  -webkit-box-shadow: 0 0 0 0;
-          box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
   outline: 0;
 }
 
@@ -122,7 +114,6 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 #questao textarea::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
   border-radius: 20px;
   background-color: #f0f0f05e;
@@ -149,4 +140,3 @@ input[type="file"]::-webkit-file-upload-button {
     background: #282c35;
   }
 }
-/*# sourceMappingURL=aluno-sugestao-questao.css.map */
