@@ -109,7 +109,8 @@
         position: relative;
     }
 
-    h3 {
+    h3,
+    .input-titulo {
         font-size: 20px;
         color: #282c35;
     }
@@ -308,13 +309,14 @@
     }
     .input_cadastradas {
         border: none;
-        font: 16px 'Montserrat', sans-serif;
+        font: 16px "Montserrat", sans-serif;
     }
     input:disabled {
         background: none;
     }
     /* ------------------------------------- fale conosco*/
-    .admin-fale-conosco, .admin-parceiros {
+    .admin-fale-conosco,
+    .admin-parceiros {
         margin-top: 10px;
     }
     input#instagram,
@@ -372,7 +374,126 @@
         width: 100%;
     }
 
- 
+    /* -------------------------------------------------------------------- */
+    .input-titulo {
+        border: none;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+    }
+    .input-a-ativar {
+        width: 100%;
+    }
+    .input-ativado {
+        background: rgb(255, 255, 255);
+        border-radius: 10px 10px 0 0;
+        padding: 2%;
+        width: 96%;
+
+        margin-bottom: 0;
+    }
+    .line-nossos-parceiros {
+        display: flex;
+    }
+    .line-nossos-parceiros-column {
+        flex-direction: column !important;
+    }
+    .button-salvar-margin {
+        margin-bottom: 20px;
+    }
+    .parceiros_mais {
+        top: -2px;
+    }
+    #box_input {
+        cursor: pointer;
+        label, input {
+            cursor: pointer;
+        }
+        input#file-upload-button {
+            cursor: pointer;
+        }
+    }
+    /*---------------------------------------------------------*/
+    .campo2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+
+        width: 100%;
+    }
+    .label_parceiros2 {
+        color: #282c35;
+    }
+    .nome_parceiro2::placeholder {
+        color: #282c35 !important;
+
+        display: flex;
+    }
+    .file_input2 {
+        margin-left: 20px !important;
+
+        background: #e6e4e4 !important;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        font-size: 14px !important;
+
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .nome_parceiro_single2 {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+    }
+    .column-prc {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        margin-top: 30px;
+    }
+    .img-add-prc {
+        width: 100%;
+
+        display: flex;
+
+        margin-top: 20px;
+        color: #282c35 !important;
+    }
+    .file_label_img {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .label_prc2 {
+        margin-right: 10px;
+    }
+    .button-div {
+        width: 100%;
+
+        text-align: center;  
+        margin-top: 40px; 
+    }
+    .button-laranja2 {
+        border-radius: 17px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+
+        border: none;
+        cursor: pointer;
+
+        background: #f58e08;
+        border-radius: 17px;
+
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        padding: .2% 3%;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        color: #ffffff;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -381,7 +502,9 @@
             display: flex;
         }
 
-        input#instagram, input#linkedin, input#twitter {
+        input#instagram,
+        input#linkedin,
+        input#twitter {
             width: 50%;
         }
     }
@@ -390,7 +513,7 @@
 @media (max-width: 830px) {
     #questao {
         .caixa_content input.nome_parceiro {
-           width: 50%;
+            width: 50%;
         }
     }
 }
@@ -407,7 +530,7 @@
             font-size: 16px;
             margin-bottom: 0;
         }
-        .textarea-editavel{
+        .textarea-editavel {
             height: 54px;
 
             font-size: 15px;
@@ -415,7 +538,8 @@
         input.input_cadastradas {
             font-size: 15px;
         }
-        h3 {
+        h3,
+        .input-titulo {
             font-size: 15px;
         }
         .line-quem-somos {
@@ -455,9 +579,11 @@
         }
         .caixa_content input.nome_parceiro {
             font-size: 12px;
-         }
+        }
 
-        input#instagram, input#linkedin, input#twitter {
+        input#instagram,
+        input#linkedin,
+        input#twitter {
             font-size: 12px;
         }
 
@@ -468,6 +594,17 @@
 
         .button-salvar {
             font-size: 15px;
+        }
+        .file_label_img {
+            font-size: 12px;
+            white-space: nowrap !important;
+        }
+        .file_input2 {
+            font-size: 12px !important;
+        }
+        .button-laranja2 {
+            font-size: 10px;
+            padding: .5% 5%;
         }
     }
 }
@@ -507,6 +644,5 @@
         .textarea-editavel {
             font-size: 14px;
         }
-
     }
 }

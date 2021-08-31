@@ -257,10 +257,6 @@ a:active {
   margin: 10px 20px;
 }
 
-.modal-finalizar-overlay {
-  visibility: visible;
-}
-
 .p-titulo-modal-finalizar {
   margin-top: 20px;
   font-family: Montserrat;

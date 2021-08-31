@@ -12,9 +12,12 @@
     flex-direction: column;
 }
 
-input[type="file"] {
-    display: none;
+.modal-finalizar-overlay {
+    input[type="file"] {
+        display: none;
+    }
 }
+
 
 .img-caixa-admin {
     margin: 20px 0;
