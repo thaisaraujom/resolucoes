@@ -12,17 +12,6 @@ body {
 .direita-paginacao {
     margin-left: 10px;
 }
-.pagination {
-    display: flex;
-    align-items: center;
-
-    .esquerda-paginacao,
-    .direita-paginacao {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-}
 
 #questao {
     .overlay {
@@ -339,28 +328,6 @@ body {
         margin-top: 25px;
     }
 
-    ul.pagination {
-        padding: 0;
-        margin: 0;
-    }
-
-    ul.pagination li {
-        display: inline;
-    }
-
-    ul.pagination li a {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 16px;
-        /* identical to box height */
-
-        color: #2c313b;
-
-        padding: 1px 5px 2px;
-        text-decoration: none;
-    }
     .p-paginacao {
         display: inline;
         font-family: "Montserrat", sans-serif;
@@ -370,15 +337,6 @@ body {
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
         margin-right: 10px;
-    }
-    ul.pagination li a.active-paginacao {
-        background: #f58e08;
-        border-radius: 100%;
-    }
-
-    ul.pagination li a:hover:not(.active-paginacao) {
-        background-color: #fff;
-        border-radius: 100%;
     }
 }
 
@@ -390,29 +348,7 @@ body {
     }
 }
 
-@media (max-width: 635px) {
-    #questao {
-        .pagination::after {
-            left: 70%;
-        }
-
-        .pagination::before {
-            right: 70%;
-        }
-    }
-}
-
 @media (max-width: 500px) {
-    .pagination {
-        .esquerda-paginacao,
-        .direita-paginacao {
-            height: 40px !important;
-            img {
-                height: 10px !important;
-            }
-
-        }
-    }
     #questao {
         .overlay {
             padding: 0 2%;
@@ -518,9 +454,6 @@ body {
             top: 15px;
         }
     }
-    #questao ul.pagination li a {
-        font-size: 11px;
-    }
 }
 
 @media (max-width: 400px) {
@@ -538,4 +471,44 @@ body {
             min-height: 60px;
         }
     }
+}
+
+#questao .paginacao-admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type:none;
+}
+
+#questao .paginacao-admin .circle{
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  color: #2c313b;
+  cursor: pointer;
+}
+
+#questao .paginacao-admin .circle-active{
+  background-color: #f58e08;
+}
+
+#questao .paginacao-admin li {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 3px;
+  /* identical to box height */
+  color: #2c313b;
+  text-decoration: none;
+}
+
+#questao .paginacao-admin .passar-pagina {
+  width: auto;
+  height: 15px;
+  position: relative;
+  transform: translate(0%,30%);
 }

@@ -14,29 +14,6 @@ body {
   margin-left: 10px;
 }
 
-.pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pagination .esquerda-paginacao,
-.pagination .direita-paginacao {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 #questao .overlay {
   display: flex;
   flex-direction: column;
@@ -331,53 +308,6 @@ body {
   margin-top: 20px;
 }
 
-#questao .pagination::after {
-  content: url("../img/aluno-questao/paginacao.svg");
-  cursor: pointer;
-  display: inline-block;
-  top: 1px;
-  left: 60%;
-  position: absolute;
-}
-
-#questao .pagination::before {
-  content: url("../img/aluno-questao/paginacao.svg");
-  transform: rotate(180deg);
-  display: inline-block;
-  cursor: pointer;
-  top: 2px;
-  right: 60%;
-  position: absolute;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 25px;
-}
-
-#questao ul.pagination {
-  padding: 0;
-  margin: 0;
-}
-
-#questao ul.pagination li {
-  display: inline;
-}
-
-#questao ul.pagination li a {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 16px;
-  /* identical to box height */
-  color: #2c313b;
-  padding: 1px 5px 2px;
-  text-decoration: none;
-}
-
 #questao .p-paginacao {
   display: inline;
   font-family: "Montserrat", sans-serif;
@@ -388,40 +318,13 @@ body {
   margin-right: 10px;
 }
 
-#questao ul.pagination li a.active-paginacao {
-  background: #f58e08;
-  border-radius: 100%;
-}
-
-#questao ul.pagination li a:hover:not(.active-paginacao) {
-  background-color: #fff;
-  border-radius: 100%;
-}
-
 @media (max-width: 900px) {
   #questao .overlay {
     padding: 0;
   }
 }
 
-@media (max-width: 635px) {
-  #questao .pagination::after {
-    left: 70%;
-  }
-  #questao .pagination::before {
-    right: 70%;
-  }
-}
-
 @media (max-width: 500px) {
-  .pagination .esquerda-paginacao,
-  .pagination .direita-paginacao {
-    height: 40px !important;
-  }
-  .pagination .esquerda-paginacao img,
-  .pagination .direita-paginacao img {
-    height: 10px !important;
-  }
   #questao .overlay {
     padding: 0 2%;
   }
@@ -519,9 +422,6 @@ body {
     left: 175px;
     top: 15px;
   }
-  #questao ul.pagination li a {
-    font-size: 11px;
-  }
 }
 
 @media (max-width: 400px) {
@@ -535,4 +435,44 @@ body {
     margin: 0 10px;
     min-height: 60px;
   }
+}
+
+#questao .paginacao-admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type:none;
+}
+
+#questao .paginacao-admin .circle{
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  color: #2c313b;
+  cursor: pointer;
+}
+
+#questao .paginacao-admin .circle-active{
+  background-color: #f58e08;
+}
+
+#questao .paginacao-admin li {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 3px;
+  /* identical to box height */
+  color: #2c313b;
+  text-decoration: none;
+}
+
+#questao .paginacao-admin .passar-pagina {
+  width: auto;
+  height: 15px;
+  position: relative;
+  transform: translate(0%,30%);
 }
