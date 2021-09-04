@@ -4,7 +4,7 @@
         "enunciadoPre":"1Lonside which HTML element do we put the JavaScript??",
         "imagem": null,
         "enunciadoPos":"1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia rem sit tempore? Quibusdam architecto tempore nostrum eius odio impedit.",
-        "quest":[
+        "questao":[
             {
                 "correto": true,
                 "texto": "alternativa A"

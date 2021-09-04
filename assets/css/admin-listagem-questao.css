@@ -34,26 +34,15 @@ input[type="radio"]:checked + label:before {
 }
 
 .pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .pagination .esquerda-paginacao,
 .pagination .direita-paginacao {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   padding: 0 !important;
 }
 
@@ -188,25 +177,6 @@ input[type="radio"]:checked + label:before {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-}
-
-#questao .pagination::after {
-  content: url("../img/aluno-questao/paginacao.svg");
-  cursor: pointer;
-  display: inline-block;
-  top: 1px;
-  left: 60%;
-  position: absolute;
-}
-
-#questao .pagination::before {
-  content: url("../img/aluno-questao/paginacao.svg");
-  transform: rotate(180deg);
-  display: inline-block;
-  cursor: pointer;
-  top: 2px;
-  right: 60%;
-  position: absolute;
 }
 
 #questao ul.pagination {

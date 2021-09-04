@@ -371,16 +371,11 @@
 }
 
 #questao .line-nossos-parceiros {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #questao .line-nossos-parceiros-column {
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-          flex-direction: column !important;
+  flex-direction: column !important;
 }
 
 #questao .button-salvar-margin {
@@ -404,16 +399,9 @@
 }
 
 #questao .campo2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start !important;
-      -ms-flex-align: start !important;
-          align-items: flex-start !important;
+  flex-direction: column;
+  align-items: flex-start !important;
   width: 100%;
 }
 
@@ -421,69 +409,36 @@
   color: #282c35;
 }
 
-#questao .nome_parceiro2::-webkit-input-placeholder {
-  color: #282c35 !important;
-  display: -webkit-box;
-  display: flex;
-}
-
-#questao .nome_parceiro2:-ms-input-placeholder {
-  color: #282c35 !important;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#questao .nome_parceiro2::-ms-input-placeholder {
-  color: #282c35 !important;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 #questao .nome_parceiro2::placeholder {
   color: #282c35 !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #questao .file_input2 {
   margin-left: 20px !important;
   background: #e6e4e4 !important;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 14px !important;
   border-radius: 10px;
   cursor: pointer;
 }
 
 #questao .nome_parceiro_single2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
 }
 
 #questao .column-prc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   margin-top: 30px;
 }
 
 #questao .img-add-prc {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
   color: #282c35 !important;

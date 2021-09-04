@@ -209,10 +209,6 @@ html {
   display: flex;
   align-items: center;
 }
-#navbar .direita p{
-margin-bottom: 0;
-}
-
 
 #navbar .direita a {
   text-decoration: none;

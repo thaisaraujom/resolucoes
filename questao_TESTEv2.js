@@ -12,7 +12,7 @@ let questoesDisponiveis = [];
 // Criand array para as questões
 let questoes = []
 // Pegando questoes via fetch api
-fetch("questoes.json"
+fetch("https://hudsoneject.pythonanywhere.com/simulacao/api/matematica"
     ).then( res => {
         return res.json();
     })
@@ -92,12 +92,12 @@ getNovaQuestao = () => {
     // Jogando dados na questão no DOM
     numeroQuestao.innerText = questaoCont+1;
     numeroDeQuestoes.innerText = questoesDisponiveis.length;
-    questaoEnunciadoPre.innerText = questaoAtual.enunciadoPre;
-    questaoEnunciadoPos.innerText = questaoAtual.enunciadoPos;
+    questaoEnunciadoPre.innerText = questaoAtual["enunciado_pre"];
+    questaoEnunciadoPos.innerText = questaoAtual["enunciado_pos"];
     questaoImagem.src = questaoAtual.imagem;
     alternativas.forEach( alternativa => {
         const numeroAlternativa = alternativa.dataset["numero"];        
-        alternativa.innerText = questaoAtual["quest"][numeroAlternativa]["texto"];
+        alternativa.innerText = questaoAtual["questao"][numeroAlternativa]["texto"];
     });
 };
 
@@ -109,12 +109,12 @@ retornaQuestao = () => {
         // Jogando dados na questão no DOM
         numeroQuestao.innerText = questaoCont;
         numeroDeQuestoes.innerText = questoesDisponiveis.length;
-        questaoEnunciadoPre.innerText = questaoAtual.enunciadoPre;
-        questaoEnunciadoPos.innerText = questaoAtual.enunciadoPos;
+        questaoEnunciadoPre.innerText = questaoAtual["enunciado_pre"];
+        questaoEnunciadoPos.innerText = questaoAtual["enunciado_pos"];
         questaoImagem.src = questaoAtual.imagem;
         alternativas.forEach( alternativa => {
             const numeroAlternativa = alternativa.dataset["numero"];
-            alternativa.innerText = questaoAtual["quest"][numeroAlternativa]["texto"];
+            alternativa.innerText = questaoAtual["questao"][numeroAlternativa]["texto"];
         });
     }else{
         

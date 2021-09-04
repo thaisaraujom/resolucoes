@@ -305,7 +305,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 #questao .p-paginacao {
@@ -438,13 +438,11 @@ body {
 }
 
 #questao .paginacao-admin {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  list-style-type:none;
+  list-style-type: none;
 }
 
-#questao .paginacao-admin .circle{
+#questao .paginacao-admin .circle {
   width: 25px;
   height: 25px;
   line-height: 25px;
@@ -454,7 +452,7 @@ body {
   cursor: pointer;
 }
 
-#questao .paginacao-admin .circle-active{
+#questao .paginacao-admin .circle-active {
   background-color: #f58e08;
 }
 
@@ -474,5 +472,5 @@ body {
   width: auto;
   height: 15px;
   position: relative;
-  transform: translate(0%,30%);
+  transform: translate(0%, 30%);
 }
