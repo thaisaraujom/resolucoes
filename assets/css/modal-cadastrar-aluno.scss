@@ -1,0 +1,168 @@
+.modal-finalizar-conteudo {
+    padding: 10px 0 0 0;
+}
+
+.p-titulo-modal-finalizar {
+    text-align: left;
+    margin-left: 10px;
+
+    font-size: 22px;
+}
+
+.modal-finalizar-conteudo-cadastro {
+    padding: 10px 10px;
+}
+
+.materias-label {
+    color: #000;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.modal-finalizar-overlay .button-cadastro {
+    margin-bottom: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+
+    padding: 10px 0;
+}
+
+.columns {
+    display: flex;
+}
+
+.check-columns {
+    display: flex;
+}
+
+.label-modal div {
+    font-family: "Montserrat", sans-serif;
+    color: #282c35;
+    font-weight: 600;
+    font-size: 16px;
+
+    margin: 10px 0;
+}
+
+.input-modal {
+    border: 1px solid #a29e9e;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 3px 2px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.campo-meu-perfil {
+    margin-right: 40px;
+}
+
+.left-column,
+.right-column {
+    margin: 10px;
+}
+
+.check-meu-perfil,.radio-meu-perfil {
+    margin: 5px 0;
+    margin-right: 20px;
+}
+
+input[type="checkbox"] {
+    display: none; /* Esconde os inputs */
+}
+label {
+    cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+    border: 1px solid #00062B;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 13px;
+    margin: 1px 0.25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 13px;
+    border-radius: 5px;
+}
+input[type="checkbox"]:checked + label:before {
+    background: #00062B;
+}
+
+.check {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #00062B;
+    padding-left: 0;
+}
+
+.alternativas-check {
+    margin-bottom: 5px;
+
+    margin-right: 20px;
+}
+
+.campo label:not(.radio), .campo-select label:not(.radio) {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #00062B;
+
+    margin-right: 5px;
+
+    white-space: nowrap;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    display: none; /* Esconde os inputs */
+}
+label {
+    cursor: pointer;
+}
+input[type="radio"] + label:before {
+    border: 1px solid #00062B;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 13px;
+    margin: 0 0.25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 13px;
+    border-radius: 5px;
+}
+input[type="radio"]:checked + label:before {
+    background: #00062B;
+}
+.radio-meu-perfil {
+    margin-top: 5px;
+}
+.alternativas-radio {
+    margin: 0 0 5.5px 0;
+}
+.radio {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #00062B;
+}
+
+@media (max-width: 770px) {
+    .modal-finalizar-overlay .button-cadastro {
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    .check-columns {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

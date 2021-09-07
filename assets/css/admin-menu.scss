@@ -11,7 +11,7 @@
     .nav-item {
         margin-top: 15px;
     }
-    .home {
+    .home, .book {
         display: flex;
         p {
             margin-right: 55px;
@@ -20,7 +20,7 @@
     .icon-down {
         cursor: pointer;
     }
-    .home-desativada {
+    .home-desativada, .book-desativada {
         display: none;
     }
     .item-link {
@@ -31,7 +31,7 @@
         font-weight: 600;
     }
     .home-down,
-    .sobre-down {
+    .sobre-down , .book-down{
         margin: 10px 0 0 10px;
         p {
             margin-top: 5px;

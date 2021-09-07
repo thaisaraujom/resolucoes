@@ -69,7 +69,7 @@ html {
             margin-left: 10px;
         }
 
-        .item-apostila, .item-materia, .item-simulado, .item-monitor, .item-home, .item-perfil, .item-sugerir-questao, .item-anotacao, .item-simulado {
+        .item-apostila, .item-materia, .item-simulado, .item-monitor, .item-home, .item-perfil, .item-sugerir-questao, .item-anotacao, .item-simulado, .item-book {
             a {
                 color: #F58E08;
             }
@@ -239,7 +239,7 @@ html {
         display: flex;
         font: 400 13px "Montserrat";
         line-height: 12px;
-        .home {
+        .home, .book {
             margin-right: 10px;
         }
         .seta {

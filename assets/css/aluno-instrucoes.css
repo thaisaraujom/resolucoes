@@ -5,15 +5,29 @@ body, html {
 
 #questao .instrucoes-simulado {
   height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #questao .conteudo-instrucoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #questao .titulo-instrucoes h1 {
@@ -27,8 +41,13 @@ body, html {
   text-align: center;
   color: #f2f2f2;
   margin: 15px 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #questao p {
@@ -47,13 +66,22 @@ body, html {
   color: #e6e1dd;
   font-weight: normal;
   margin: 0 15% 40px 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #questao .button-simulado {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #questao .button-simulado button {
@@ -78,6 +106,8 @@ body, html {
     padding: 0;
   }
   #questao .icones {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   footer {
@@ -99,6 +129,8 @@ body, html {
     display: none;
   }
   .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   #questao {
@@ -134,7 +166,10 @@ body, html {
     margin: 20px 0;
   }
   #questao .conteudo-instrucoes {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   #questao .informacoes-instrucoes {
     margin: 10px 0;
@@ -158,3 +193,4 @@ body, html {
     padding-top: 20px !important;
   }
 }
+/*# sourceMappingURL=aluno-instrucoes.css.map */

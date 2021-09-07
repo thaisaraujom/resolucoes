@@ -1,0 +1,154 @@
+#navbar-lateral {
+    background: #282C35;
+    box-shadow: 4px 0px 4px rgba(2, 6, 54, 0.25);
+    .book-down {
+        margin-left: 25px;
+        p {
+            margin: 0 0 7px 0;
+        }
+    }
+}
+
+#navbar .conteudo-interno2 {
+    margin-left: 210px;
+}
+
+#questao {
+    padding-left: 260px;
+
+    .b-lixeira {
+        border: none;
+        background: none;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .button-sl {
+        display: flex;
+        align-items: center;
+    }
+    .alternativas-check {
+        margin: 12px 0;
+    }
+    .check {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+
+        color: #d7d5d4;
+    }
+
+    input[type="checkbox"] {
+        display: none; /* Esconde os inputs */
+    }
+    label {
+        cursor: pointer;
+    }
+    input[type="checkbox"] + label:before {
+        border: 1px solid #d7d5d4;
+        content: "\00a0";
+        display: inline-block;
+        font: 16px/1em sans-serif;
+        height: 16px;
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        vertical-align: top;
+        width: 16px;
+        border-radius: 5px;
+    }
+    input[type="checkbox"]:checked + label:before {
+        background: #d7d5d4;
+    }
+    .check-meu-perfil {
+        margin-top: 5px;
+    }
+    .alternativas-check {
+        margin: 12px 0;
+    }
+    .check {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+
+        color: #d7d5d4;
+        padding-left: 0;
+        margin: 0;
+    }
+    .div-check {
+        display: flex;
+    }
+    .check-margin-right {
+        margin-right: 50px;
+    }
+    .check-meu-perfil {
+        margin-bottom: 20px;
+    }
+    .habilitar-edicao {
+        left: 420px;
+    }
+    .area-edit {
+        width: 100% !important;
+
+        padding: 2px;
+    }
+    input::placeholder {
+        color: #D7D5D4 !important;
+        font-weight: 300;
+    }
+    .form-cursinho {
+        width: 100%;
+    }
+    .campos-preenchimento {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #navbar .conteudo-interno2 {
+        margin-left: 20px;
+    }
+    #questao {
+        padding-left: 4%;
+    }
+}
+
+@media (max-width: 770px) {
+    #questao {
+        .materias-titulo {
+            color: #282C35;
+            font-size: 14px;
+        }
+        input::placeholder {
+            color: #282C35 !important;
+        }
+        .check {
+            color: #282C35;
+            font-size: 14px;
+        }
+        input[type="checkbox"] + label:before {
+            border: 1px solid #282C35;
+            width: 13px;
+            height: 13px;
+        }
+        input[type="checkbox"]:checked + label:before {
+            background: #282C35;
+        }
+    }
+}
+
+@media (max-width: 548px) {
+    #questao {
+        .form-cursinho {
+            width: 100%;
+        }
+        .campos-preenchimento {
+            width: 100%;
+        }
+        .titulo {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+

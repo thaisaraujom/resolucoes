@@ -1,6 +1,10 @@
 #questao .form-questao-cadastrada {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   margin-bottom: 0;
@@ -68,7 +72,8 @@
 #questao .questao-footer-admin {
   border: none;
   background: #efe2d1;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
   padding: 2% 10%;
   position: relative;
@@ -79,15 +84,21 @@
 }
 
 #questao .pagina-oficial-questao {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 12px;
   cursor: pointer;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   right: 10px;
 }
 
 #questao .pagina-oficial-questao a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -111,8 +122,12 @@
 #questao .video-admin {
   color: #282c35;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
 }
 
@@ -121,13 +136,18 @@
 }
 
 #questao .anotacao-admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-top: 20px;
 }
 
 #questao .anotacao-admin p {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 2%;
   border-radius: 10px;
 }
@@ -138,7 +158,8 @@
   min-width: 250px;
   background: #f2f2f2;
   border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -155,6 +176,7 @@
 }
 
 #questao #textarea-anot:-webkit-scrollbar-thumb {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
   background-color: #f0f0f05e;
@@ -174,9 +196,13 @@
     display: none;
   }
   #questao .pagina-oficial-questao-admin.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   #questao .pagina-oficial-questao-admin.mobile .pagina-of-questao {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     right: 0;
@@ -206,7 +232,8 @@
     height: 10px;
   }
   #questao .questao-admin {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px 10px 0 0;
     font-size: 14px;
   }
@@ -226,3 +253,4 @@
     overflow-x: scroll;
   }
 }
+/*# sourceMappingURL=admin-visualizar-questao.css.map */

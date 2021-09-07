@@ -1,0 +1,218 @@
+#navbar-lateral {
+    background: #282C35;
+    box-shadow: 4px 0px 4px rgba(2, 6, 54, 0.25);
+    .book-down {
+        margin-left: 25px;
+        p {
+            margin: 0 0 7px 0;
+        }
+    }
+}
+
+#questao {
+    .button-instrucao {
+        padding: 2px 5px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin: 0 5px;
+        }
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: 1px solid #f58e08;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .simulado {
+        padding-bottom: 1%;
+        padding-top: 0;
+    }
+    .simulado-disponivel {
+        color: #c97d1a !important;
+        font-weight: bold;
+        font-size: 12px !important;
+
+        margin-bottom: 7px !important;
+    }
+    .info-simulado p {
+        margin: 3px 0;
+    }
+    .mensagens {
+        cursor: default;
+    }
+    .passar-pagina {
+        cursor: pointer;
+    }
+    .alternativas-check {
+        position: relative;
+        width: 100%;
+
+        padding: 2px;
+
+        display: flex;
+    }
+    input[type="checkbox"] + label:before {
+        border: 1px solid #282c35;
+        content: "\00a0";
+        display: inline-block;
+        font: 15px/1em sans-serif;
+        height: 16px;
+        margin: 3px 0.35em 0 0;
+        padding: 0;
+        vertical-align: top;
+        width: 16px;
+        border-radius: 5px;
+
+        color: #292323 !important;
+    }
+    input[type="checkbox"]:checked + label:before {
+        background: #282c35;
+        color: #292323;
+    }
+    input[type="checkbox"]:not(checked) {
+        color: #292323;
+    }
+    .checkbox {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        color: #292323;
+        line-height: 25px;
+
+        cursor: pointer;
+
+        display: flex;
+
+        div {
+            width: calc(100% - 16px);
+        }
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    .checkbox {
+        a,
+        a:link,
+        a:visited,
+        a:active {
+            color: #292323;
+        }
+    }
+    .txtarea-mensagem {
+        background: #eaeaea;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+
+        resize: none;
+
+        font-size: 16px;
+
+        padding: 2%;
+
+        width: calc(100% - 4%);
+
+        font-family: "Montserrat", sans-serif;
+    }
+    .txtarea-mensagem::placeholder {
+        color: rgba(41, 35, 35, 0.5);
+    }
+
+    .button-laranja {
+        border-radius: 17px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+
+        border: none;
+        cursor: pointer;
+
+        background: #f58e08;
+        border-radius: 17px;
+
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        padding: 0.5% 4%;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        color: #ffffff;
+
+        margin-top: 15px;
+    }
+    .admin-numeros {
+        margin-top: 30px;
+        padding-top: 0;
+    }
+    .border-bottom-sem {
+        border-bottom: none;
+    }
+    .endereco-cursinho {
+        display: flex;
+        flex-direction: column;
+    }
+    .perfil-completo-cursinho {
+        width: 100%;
+        background: #f58e08;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        border-radius: 0 0 10px 10px;
+
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+
+        padding: 5px 0;
+
+        font-weight: bold;
+
+        color: #eaeaea;
+    }
+    .caixa-cursinho {
+        margin-bottom: 0;
+        border-radius: 10px 10px 0 0;
+    }
+    .nome-cursinho {
+        font-size: 25px;
+        color: #282c35;
+
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    #questao {
+        .mensagens {
+            border-radius: 10px;
+        }
+        .button-laranja {
+            font-size: 10px;
+            padding: 0.5% 5%;
+        }
+        .txtarea-mensagem {
+            font-size: 12px;
+        }
+        .checkbox {
+            font-size: 12px;
+        }
+        .nome-cursinho {
+            font-size: 15px;
+        }
+        .perfil-completo-cursinho {
+            font-size: 12px;
+        }
+        .input-cursinhos-wrap {
+            flex-wrap: wrap !important;
+            .button-instrucao {
+                margin-left: 0;
+            }
+        }
+        input[type="checkbox"] + label:before {
+            height: 12px;
+            width: 12px;
+
+            margin-top: 5px;
+        }
+    }
+}

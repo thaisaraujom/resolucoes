@@ -9,9 +9,15 @@
 
 #login .container {
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #login .container .imagem {
@@ -130,9 +136,16 @@
 @media (max-width: 1024px) and (min-width: 1024px) {
   #login .container .itens {
     height: 75vh;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -149,6 +162,8 @@
     display: none;
   }
   #login .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   #login .container {
@@ -169,6 +184,30 @@
     background: none;
     border: 1px solid #8e95a5;
     margin-bottom: 20px;
+  }
+  #login .container .formulario1 input::-webkit-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #282c35;
+  }
+  #login .container .formulario1 input:-ms-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #282c35;
+  }
+  #login .container .formulario1 input::-ms-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #282c35;
   }
   #login .container .formulario1 input::placeholder {
     font-family: Montserrat;
@@ -225,9 +264,15 @@
   #login .container .imagem1 {
     text-align: end;
     width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   #login .container .imagem1 img {
     position: absolute;
@@ -243,6 +288,8 @@
     background: none;
   }
   #login .itens {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100% !important;
   }
@@ -250,9 +297,16 @@
     width: 50%;
   }
   #login .conteudo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0;
     height: 100% !important;
   }
@@ -294,3 +348,4 @@
     width: 250px;
   }
 }
+/*# sourceMappingURL=pagina-login.css.map */

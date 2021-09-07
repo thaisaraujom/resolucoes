@@ -38,6 +38,8 @@ body {
 
 @media (max-width: 1024px) {
   #questao .icones {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -76,3 +78,4 @@ body {
     font-size: 12px;
   }
 }
+/*# sourceMappingURL=aluno-barra-de-pesquisa.css.map */

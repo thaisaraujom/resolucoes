@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/footer-light.css">
+    <link rel="stylesheet" href="assets/css/aluno-barra-de-pesquisa.css">
+    <link rel="stylesheet" href="assets/css/admin-dashboard.css">
+    <link rel="stylesheet" href="assets/css/admin-menu.css">
+    <link rel="stylesheet" href="assets/css/cursinho-dashboard.css">
+
+    <link rel="stylesheet" href="assets/css/modal-apagar-parceiro.css">
+    <link rel="stylesheet" href="assets/css/modal-adicionar-parceiro.css">
+    <link rel="stylesheet" href="assets/css/modal-adicionar-disciplina.css">
+
+    <title>Dashboard - Cursinho | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item">
+
+                        <div>
+                            <div class="home">
+                                <a href="#"><img class="icon_home" src="assets/img/aluno-questao/home.svg" alt=""></a>
+                                <a class="item-link item-home" href="#">
+                                    <p>Home</p>
+                                </a>
+                            </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href=""><img class="icon_perfil" src="assets/img/aluno-questao/perfil.svg" alt=""></a>
+                        <a href="" class="item-link item-perfil">Perfil</a>
+                    </li>
+
+                    <div>
+                        <li class="nav-item">
+                            <img class="mais-cursinho" src="assets/img/aluno-questao/sugerir.svg" alt="">
+                            <a href="" class="item-link item-sobre">Sobre o cursinho</a>
+                        </li>
+                    </div>
+                    <div class="sobre-down home-desativada">
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                    </div>
+
+                    <li class="nav-item">
+
+                        <div>
+                            <div class="book">
+                                <a href="#"><img class="icon_book" src="assets/img/admin-menu/books.svg" alt=""></a>
+                                <a class="item-link item-book item-link-ativado" href="#">
+                                    <p>Lorem Ipsum</p>
+                                </a>
+                            </div>
+                            <div class="book-down">
+                                <a href="#c-enviar">
+                                    <p>Enviar Mensagem</p>
+                                </a>
+                                <a href="#c-mensagem">
+                                    <p>Últimas Mensagens</p>
+                                </a>
+                                <a href="#c-alunoC">
+                                    <p>Cadastro de Alunos</p>
+                                </a>
+                                <a href="#c-disciplinas">
+                                    <p>Cadastro de Disciplina</p>
+                                </a>
+                                <a href="#c-simulado">
+                                    <p>Cadastro de Simulado</p>
+                                </a>
+                            </div>
+                            <div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+
+                <!-- CURSINHO -->
+                <section class="conteudo-admin endereco-cursinho">
+                    <div class="cursinho caixa-cursinho">
+                        <div class="border-bottom border-bottom-sem">
+                            <img src="./assets/img/admin-dashboard/cursinho1.png" alt="">
+                            <div class="info-cursinho">
+                                <h1 class="nome-cursinho">Ciências Aplicadas</h1>
+                                <p><strong>Endereço:</strong> R. Nossa Sra. de Lourdes, 59 - Tirol, Natal - RN,
+                                    59015-260</p>
+                                <p><strong>Contato:</strong> (84) 3611-1736</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="perfil-completo-cursinho" href="">Perfil Completo</a>
+                </section>
+                <!-- FIM CURSINHO -->
+
+                <section class="conteudo-admin admin-numeros">
+                    <div class="caixa-admin">
+                        <p class="caixa-titulo-admin">Alunos</p>
+                        <p class="numero-admin">20</p>
+                    </div>
+                    <div class="caixa-admin meio">
+                        <p class="caixa-titulo-admin">Disciplinas</p>
+                        <p class="numero-admin">18</p>
+                    </div>
+                    <div class="caixa-admin">
+                        <p class="caixa-titulo-admin">Simulados</p>
+                        <p class="numero-admin">04</p>
+                    </div>
+                </section>
+
+                <!-- ENVIAR MENSAGEM -->
+                <section class="section-admin cursinho-admin" id="c-enviar">
+                    <h2 class="titulo-admin">Enviar mensagem para alunos</h2>
+
+                    <div class="conteudo-section-admin">
+                        <form action="">
+                            <textarea class="txtarea-mensagem"
+                                placeholder="Escreva uma nova mensagem para todos os alunos que estudam no Ciências Aplicadas e em seguida envie"
+                                name="" id="" cols="30" rows="5"></textarea>
+
+                            <button class="button-laranja">Enviar</button>
+                        </form>
+                    </div>
+                </section>
+                <!-- FIM ENVIAR MENSAGEM -->
+
+                <!-- ÚLTIMAS MENSAGENS -->
+                <section class="section-admin cursinho-admin" id="c-mensagem">
+                    <h2 class="titulo-admin">Últimas Mensagens</h2>
+
+                    <div class="conteudo-section-admin">
+
+                        <form action="">
+                            <div class="cursinhos-admin">
+                                <div class="cursinho mensagens">
+                                    <div class="border-bottom">
+                                        <div class="alternativas-check">
+                                            <input checked type="checkbox" value="0" name="campo-check"
+                                                id="campo-check1" />
+                                            <label class="checkbox" for="campo-check1"> <div class="div-antes">Lorem Ipsum is simply
+                                                dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                                been the industry's standard dummy text ever since the 1500sLorem
+                                                Ipsum has been the industry's stan the industry's .... </div> </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cursinho mensagens">
+                                    <div class="border-bottom">
+                                        <div class="alternativas-check">
+                                            <input checked type="checkbox" value="1" name="campo-check"
+                                                id="campo-check2" />
+                                            <label class="checkbox" for="campo-check2"> <div class="div-antes">Lorem Ipsum is simply
+                                                dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                                been the industry's standard dummy text ever since the 1500sLorem
+                                                Ipsum has been the industry's stan the industry's .... </div> </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cursinho mensagens">
+                                    <div class="border-bottom">
+                                        <div class="alternativas-check">
+                                            <input type="checkbox" value="2" name="campo-check"
+                                                id="campo-check3" />
+                                            <label class="checkbox" for="campo-check3"> <div class="div-antes"> Lorem Ipsum is simply
+                                                dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                                been the industry's standard dummy text ever since the 1500sLorem
+                                                Ipsum has been the industry's stan the industry's .... </div> </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cursinho mensagens">
+                                    <div class="border-bottom">
+                                        <div class="alternativas-check">
+                                            <input checked type="checkbox" value="3" name="campo-check"
+                                                id="campo-check4" />
+                                            <label class="checkbox" for="campo-check4"> <div class="div-antes">Lorem Ipsum is simply
+                                                dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                                been the industry's standard dummy text ever since the 1500sLorem
+                                                Ipsum has been the industry's stan the industry's .... </div> </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form action="">
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><img class="passar-pagina"
+                                                    src="./assets/img/admin-dashboard/esquerda-paginacao.svg" alt="">
+                                            </li>
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                            <li><img class="passar-pagina"
+                                                    src="./assets/img/admin-dashboard/direita-paginacao.svg" alt="">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <!-- FIM ÚLTIMAS MENSAGENS -->
+
+
+                <!-- CADASTRAR ALUNO -->
+                <section class="section-admin cursinho-admin" id="c-alunoC">
+                    <h2 class="titulo-admin">Cadastro de Alunos (18)</h2>
+
+                    <div class="conteudo-section-admin">
+                        <div class="cursinho-info-admin">
+                            <p class="info-form-admin">Para cadastrar um novo aluno, clique no botão.</p>
+                            <button class="button-cadastrar">Cadastrar Aluno</button>
+                        </div>
+
+                        <div class="cursinhos-admin">
+                            <form action="">
+                                <div class="input-cursinhos">
+                                    <input type="search" class="buscar buscar-monitores" placeholder="Buscar">
+                                    <button class="lupa-search lupa-search-monitores"><img
+                                            src="./assets/img/admin-dashboard/lupa-search.svg" alt=""></button>
+                                    <select name="select">
+                                        <option value="valor1" selected>Matéria</option>
+                                        <option value="valor2">Valor 2</option>
+                                        <option value="valor3">Valor 3</option>
+                                    </select>
+                                    <button class="ordem-alf"><img src="./assets/img/admin-menu/ordem-alfabetica.svg"
+                                            alt=""></button>
+                                </div>
+                            </form>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <div class="info-cursinho">
+                                        <p><strong>Nome:</strong> Anne Shirley</p>
+                                        <p><strong>Celular:</strong> (00) 0 0000-0000</p>
+                                        <p><strong>Email:</strong> exemplo@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <div class="info-cursinho">
+                                        <p><strong>Nome:</strong> Gilbert Blythe</p>
+                                        <p><strong>Celular:</strong> (00) 0 0000-0000</p>
+                                        <p><strong>Email:</strong> exemplo@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <div class="info-cursinho">
+                                        <p><strong>Nome:</strong> Hermione Granger</p>
+                                        <p><strong>Celular:</strong> (00) 0 0000-0000</p>
+                                        <p><strong>Email:</strong> exemplo@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <div class="info-cursinho">
+                                        <p><strong>Nome:</strong> Tony Stark</p>
+                                        <p><strong>Celular:</strong> (00) 0 0000-0000</p>
+                                        <p><strong>Email:</strong> exemplo@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="">
+                                <div class="paginacao">
+                                    <ul class="paginacao-admin">
+                                        <li><img class="passar-pagina"
+                                                src="./assets/img/admin-dashboard/esquerda-paginacao.svg" alt=""></li>
+                                        <li><a>
+                                                <div class="circle">1</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle circle-active">2</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">3</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">4</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">5</div>
+                                            </a></li>
+                                        <li><img class="passar-pagina"
+                                                src="./assets/img/admin-dashboard/direita-paginacao.svg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- FIM CADASTRAR ALUNO -->
+
+                <!-- CADASTRAR DISCIPLINA -->
+                <section class="section-admin cursinho-admin" id="c-disciplinas">
+                    <h2 class="titulo-admin">Cadastro de Disciplina (18)</h2>
+
+                    <div class="conteudo-section-admin">
+                        <div class="cursinho-info-admin">
+                            <p class="info-form-admin">Para cadastrar uma nova disciplina, clique no botão.</p>
+                            <button class="button-cadastrar button-disciplina-c">Cadastrar Disciplina</button>
+                        </div>
+
+                        <div class="cursinhos-admin">
+                            <form action="">
+                                <div class="input-cursinhos">
+                                    <input type="search" class="buscar buscar-monitores" placeholder="Buscar">
+                                    <button class="lupa-search lupa-search-monitores"><img
+                                            src="./assets/img/admin-dashboard/lupa-search.svg" alt=""></button>
+                                </div>
+                            </form>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/admin-dashboard/monitor0.jpg" alt="">
+                                    <div class="info-cursinho">
+                                        <p><strong>Disciplina:</strong> Matemática</p>
+                                        <p><strong>Professor:</strong> Anne</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/admin-dashboard/monitor1.jpg" alt="">
+                                    <div class="info-cursinho">
+                                        <p><strong>Disciplina:</strong> Biologia</p>
+                                        <p><strong>Professor:</strong> Gilbert</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/admin-dashboard/monitor2.jpg" alt="">
+                                    <div class="info-cursinho">
+                                        <p><strong>Disciplina:</strong> Literatura</p>
+                                        <p><strong>Professor:</strong> Hermione Granger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/admin-dashboard/monitor3.jpg" alt="">
+                                    <div class="info-cursinho">
+                                        <p><strong>Disciplina:</strong> Química</p>
+                                        <p><strong>Professor:</strong> Tony Stark</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="">
+                                <div class="paginacao">
+                                    <ul class="paginacao-admin">
+                                        <li><img class="passar-pagina"
+                                                src="./assets/img/admin-dashboard/esquerda-paginacao.svg" alt=""></li>
+                                        <li><a>
+                                                <div class="circle">1</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle circle-active">2</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">3</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">4</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">5</div>
+                                            </a></li>
+                                        <li><img class="passar-pagina"
+                                                src="./assets/img/admin-dashboard/direita-paginacao.svg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- FIM CADASTRAR DISCIPLINA -->
+
+                <!-- CADASTRAR SIMULADO -->
+                <section class="section-admin cursinho-admin" id="c-simulado">
+                    <h2 class="titulo-admin">Cadastro de Simulado (18)</h2>
+
+                    <div class="conteudo-section-admin">
+                        <div class="cursinho-info-admin">
+                            <p class="info-form-admin">Para cadastrar um novo simulado, clique no botão.</p>
+                            <button class="button-cadastrar">Cadastrar Simulado</button>
+                        </div>
+
+                        <div class="cursinhos-admin">
+                            <form action="">
+                                <div class="input-cursinhos input-cursinhos-wrap">
+                                    <input type="search" class="buscar buscar-monitores" placeholder="Buscar">
+                                    <button class="lupa-search lupa-search-monitores"><img
+                                            src="./assets/img/admin-dashboard/lupa-search.svg" alt=""></button>
+                                    <a href=""><button class="button-instrucao">Instrução padrão do simulado <img
+                                                src="./assets/img/admin-dashboard/direita-paginacao.svg"
+                                                alt=""></button></a>
+                                </div>
+                            </form>
+                            <div class="cursinho simulado">
+                                <div class="border-bottom">
+                                    <div class="info-cursinho info-simulado">
+                                        <p class="simulado-disponivel">Simulado disponível</p>
+                                        <p><strong>II SIMULADO DE MATEMÁTICA (45)</strong></p>
+                                        <p>data de início: 00/00/0000 </p>
+                                        <p>data de entrega: 00/00/0000</p>
+                                        <p>data de entrega: 00/00/0000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho simulado">
+                                <div class="border-bottom">
+                                    <div class="info-cursinho info-simulado">
+                                        <p class="simulado-disponivel">Simulado disponível</p>
+                                        <p><strong>II SIMULADO DE MATEMÁTICA (45)</strong></p>
+                                        <p>data de início: 00/00/0000 </p>
+                                        <p>data de entrega: 00/00/0000</p>
+                                        <p>data de entrega: 00/00/0000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho simulado">
+                                <div class="border-bottom">
+                                    <div class="info-cursinho info-simulado">
+                                        <p class="simulado-disponivel">Simulado disponível</p>
+                                        <p><strong>II SIMULADO DE MATEMÁTICA (45)</strong></p>
+                                        <p>data de início: 00/00/0000 </p>
+                                        <p>data de entrega: 00/00/0000</p>
+                                        <p>data de entrega: 00/00/0000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho simulado">
+                                <div class="border-bottom">
+                                    <div class="info-cursinho info-simulado">
+                                        <p class="simulado-disponivel">Simulado disponível</p>
+                                        <p><strong>II SIMULADO DE MATEMÁTICA (45)</strong></p>
+                                        <p>data de início: 00/00/0000 </p>
+                                        <p>data de entrega: 00/00/0000</p>
+                                        <p>data de entrega: 00/00/0000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="">
+                                <div class="paginacao">
+                                    <ul class="paginacao-admin">
+                                        <li><img class="passar-pagina"
+                                                src="./assets/img/admin-dashboard/esquerda-paginacao.svg" alt=""></li>
+                                        <li><a>
+                                                <div class="circle">1</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle circle-active">2</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">3</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">4</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">5</div>
+                                            </a></li>
+                                        <li><img class="passar-pagina"
+                                                src="./assets/img/admin-dashboard/direita-paginacao.svg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- FIM CADASTRAR SIMULADO -->
+
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-finalizar-overlay modal1">
+        <div class="modal-finalizar">
+            <div class="modal-sair">
+                <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <div class="modal-finalizar-conteudo">
+                <form action="" class="decisao-botoes-modal">
+                    <div class="padding-modal">
+                        <p class="p-titulo-modal-finalizar">Cadastre uma nova disciplina:</p>
+
+                        <div class="add-img-admin">
+                            <div class="img-caixa-admin">
+                                <div id="new">
+                                </div>
+                                <img class="img-preview" src="./assets/img/admin-dashboard/img-file-add.png" alt="">
+                                <div class="adicionar-img">
+                                    <label for="file-img-admin">
+                                        <img  class="image-mais-admin" src="./assets/img/admin-dashboard/add-file-img.svg" >
+                                    </label>
+                                    <input id="file-img-admin" type='file' accept="image/*" onchange="loaderFile(event)">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="parceiro-admin">
+                            <label for="input-parceiro-admin">Nome da disciplina:</label>
+                            <input id="input-parceiro-admin" class="input-parceiro" type="text" placeholder="Nome da disciplina">
+                        </div>
+                    </div>
+
+
+
+                    <button class="button-laranja-modal button-laranja-salvar-modal button-salvar-disciplina">Salvar</button>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg" alt=""></a>
+
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="tela hide"></div>
+
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="./assets/js/cursinho-modais.js"></script>
+
+</body>
+
+</html>

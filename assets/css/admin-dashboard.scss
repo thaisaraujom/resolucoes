@@ -512,3 +512,11 @@ body {
   position: relative;
   transform: translate(0%,30%);
 }
+
+@media (max-width: 500px) {
+    #questao {
+        .circle {
+            font-size: 12px;
+        }
+    }
+}

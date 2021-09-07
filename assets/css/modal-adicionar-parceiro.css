@@ -6,8 +6,13 @@
 }
 
 .decisao-botoes-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .modal-finalizar-overlay input[type="file"] {
@@ -16,8 +21,12 @@
 
 .img-caixa-admin {
   margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 110px;
   height: 110px;
   position: relative;
@@ -54,8 +63,13 @@
 }
 
 .parceiro-admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .parceiro-admin label {
@@ -79,8 +93,12 @@
 }
 
 .add-img-admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .input-parceiro {
@@ -91,6 +109,18 @@
   padding: 5px;
   font-size: 13px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.input-parceiro::-webkit-input-placeholder {
+  color: #B4B4B4;
+}
+
+.input-parceiro:-ms-input-placeholder {
+  color: #B4B4B4;
+}
+
+.input-parceiro::-ms-input-placeholder {
+  color: #B4B4B4;
 }
 
 .input-parceiro::placeholder {
@@ -117,3 +147,4 @@
     width: 20px;
   }
 }
+/*# sourceMappingURL=modal-adicionar-parceiro.css.map */
