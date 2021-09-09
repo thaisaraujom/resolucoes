@@ -23,21 +23,22 @@
 
 <body>
 
-    <div class="modal-finalizar-overlay" style="visibility:visible">
-        <div class="modal-finalizar">
+    <div class="modal-finalizar-overlay modal-scroll" style="visibility:visible">
+        <div class="modal-finalizar ">
             <div class="modal-sair">
                 <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
             </div>
 
             <form action="" class="">
             <div class="modal-finalizar-conteudo modal-finalizar-conteudo-cadastro">
-                <p class="p-titulo-modal-finalizar">Cadastre um novo aluno:</p>
+                <p class="p-titulo-modal-finalizar p-titulo-modal-finalizar-cadastro">Cadastre um novo aluno:</p>
 
                 <div class="columns">
                     <div class="left-column">
                         <div>
                             <label class="label-modal" for="cpf"><div>CPF:</div></label>
-                            <input class="input-modal" type="text" id="cpf">
+                            <input class="input-modal input-cpf input-borda-red" type="text" id="cpf">
+                            <p class="cpf-cadastrado">Esse CPF já tem cadastro <img src="./assets/img/admin-dashboard/direita-paginacao.svg" alt=""> <a href="">Acesse esse perfil</a></p>
                             <label class="label-modal" for="nome"><div>Nome:</div></label>
                             <input class="input-modal" type="text" id="nome">
     
@@ -108,7 +109,7 @@
                             <input class="input-modal" type="text" id="contato">
                         </div>
                         <div class="campo-meu-perfil">
-                            <label for="text2" class="materias-label">Perfil do Aluno</label>
+                            <label for="text2" class="materias-label perfil-label">Perfil do Aluno</label>
     
                             <div class="radio-meu-perfil">
                                 <div class="alternativas-radio">
@@ -141,6 +142,8 @@
 
         </div>
     </div>
+
+    <script src="./assets/js/modal-botao-cadastro"></script>
 
 </body>
 

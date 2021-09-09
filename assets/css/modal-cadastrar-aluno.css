@@ -8,6 +8,10 @@
   font-size: 22px;
 }
 
+.modal-scroll {
+  overflow-y: scroll;
+}
+
 .modal-finalizar-conteudo-cadastro {
   padding: 10px 10px;
 }
@@ -163,6 +167,46 @@ input[type="radio"]:checked + label:before {
   color: #00062B;
 }
 
+.left-column div {
+  position: relative;
+}
+
+.input-modal {
+  margin-bottom: 0;
+}
+
+.input-borda-red {
+  border: 1px solid #FF0000;
+}
+
+.cpf-cadastrado {
+  position: absolute;
+  width: 100%;
+  font-size: 10px;
+  text-align: right;
+  color: #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.cpf-cadastrado a {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.cpf-cadastrado img {
+  margin: 0 3px;
+  width: 7px;
+  height: 7px;
+}
+
 @media (max-width: 770px) {
   .modal-finalizar-overlay .button-cadastro {
     border-radius: 0 0 5px 5px;
@@ -176,6 +220,52 @@ input[type="radio"]:checked + label:before {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .check, .radio {
+    font-size: 13px;
+  }
+  .check-meu-perfil:first-child {
+    margin-bottom: 0;
+  }
+  .check-meu-perfil:last-child {
+    margin-top: 0;
+  }
+  .modal-finalizar-overlay .button-cadastro {
+    padding: 5px 0;
+  }
+  .cpf-cadastrado {
+    font-size: 8px;
+  }
+  .cpf-cadastrado a {
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .cpf-cadastrado img {
+    margin: 0 1px;
+    width: 5px;
+    height: 5px;
+  }
+}
+
+@media (max-width: 499px) {
+  .materias-label {
+    font-size: 13px;
+  }
+  .check, .radio {
+    font-size: 11px;
+  }
+  .p-titulo-modal-finalizar-cadastro {
+    font-size: 15px;
+  }
+  .label-modal div {
+    font-size: 15px;
+  }
+  .perfil-label {
+    font-size: 0;
+  }
+  .perfil-label::after {
+    font-size: 13px;
+    content: 'Perfil';
   }
 }
 /*# sourceMappingURL=modal-cadastrar-aluno.css.map */
