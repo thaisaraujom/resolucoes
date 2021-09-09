@@ -243,12 +243,17 @@ input[type="radio"]:checked + label:before {
     }
     .p-titulo-modal-finalizar-cadastro {
         font-size: 15px;
+        margin-left: 0;
     }
     .label-modal div {
         font-size: 15px;
+        margin-top: 15px;
     }
     .perfil-label {
         font-size: 0;
+    }
+    .cpf-cadastrado a {
+        text-align: left;
     }
     .perfil-label::after {
         font-size: 13px;

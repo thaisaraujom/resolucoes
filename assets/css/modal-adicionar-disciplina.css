@@ -27,4 +27,11 @@
     padding: 3px 0;
   }
 }
+
+@media (max-width: 499px) {
+  .p-titulo-modal-finalizar {
+    font-size: 15px !important;
+    margin-left: 0 !important;
+  }
+}
 /*# sourceMappingURL=modal-adicionar-disciplina.css.map */
