@@ -20,6 +20,14 @@
     <link rel="stylesheet" href="assets/css/admin-dashboard.css">
     <link rel="stylesheet" href="assets/css/admin-menu.css">
 
+    
+    <link rel="stylesheet" href="assets/css/modal-apagar-parceiro.css">
+   
+    
+    <link rel="stylesheet" href="assets/css/modal-cadastrar-aluno.css">
+    <link rel="stylesheet" href="assets/css/modal-cadastrar-cursinho.css">
+
+
     <title>Dashboard - Admin | Resoluções.com</title>
 </head>
 
@@ -190,7 +198,7 @@
                         <div class="cursinho-info-admin">
                             <p class="info-form-admin">Para acessar o formulário de cadastro de um novo cursinho, clique
                                 no botão.</p>
-                            <button class="button-cadastrar">Cadastrar Cursinho</button>
+                            <button class="button-cadastrar button-cadastrarCursinho">Cadastrar Cursinho</button>
                         </div>
 
                         <div class="cursinhos-admin">
@@ -273,7 +281,7 @@
                     <div class="conteudo-section-admin">
                         <div class="cursinho-info-admin">
                             <p class="info-form-admin">Para cadastrar um novo monitor, clique no botão.</p>
-                            <button class="button-cadastrar">Cadastrar Monitor</button>
+                            <button class="button-cadastrar button-cadastrar-monitor">Cadastrar Monitor</button>
                         </div>
 
                         <div class="cursinhos-admin">
@@ -357,7 +365,7 @@
                     <div class="conteudo-section-admin">
                         <div class="cursinho-info-admin">
                             <p class="info-form-admin">Para cadastrar um novo staff, clique no botão.</p>
-                            <button class="button-cadastrar">Cadastrar Staff</button>
+                            <button class="button-cadastrar button-cadastrar-staff">Cadastrar Staff</button>
                         </div>
 
                         <div class="cursinhos-admin">
@@ -435,6 +443,226 @@
         </div>
     </section>
 
+    <div class="modal-finalizar-overlay modal-scroll" id="modal-cursinho">
+        <div class="modal-finalizar">
+            <div class="modal-sair">
+                <img class="x-sair x-sairCursinho" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <form action="" class="">
+            <div class="modal-finalizar-conteudo modal-finalizar-conteudo-cadastro">
+                <p class="p-titulo-modal-finalizar p-titulo-modal-finalizar-cadastro">Cadastre um novo cursinho:</p>
+
+                <div class="add-img-admin1">
+                    <div class="img-caixa-admin1">
+                        <div id="new1">
+                        </div>
+                        <img class="img-preview1" src="./assets/img/admin-dashboard/img-file-add1.png" alt="">
+                        <div class="adicionar-img1">
+                            <label for="file-img-admin1">
+                                <img  class="image-mais-admin1" src="./assets/img/admin-dashboard/add-file-img.svg" >
+                            </label>
+                            <input id="file-img-admin1" type='file' accept="image/*" onchange="loaderFile(event)">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="columns">
+                    <div class="left-column  left-columnCursinho">
+                        <div>
+                            <label class="label-modal" for="nomeC"><div>Nome do contratante:</div></label>
+                            <input class="input-modal input-cpf" type="text" id="nomeC">
+                            <label class="label-modal" for="contatoC"><div>Contato do contratante:</div></label>
+                            <input class="input-modal" type="text" id="contatoC" placeholder="(xx) x xxxx-xxxx">
+                            <label class="label-modal" for="contatocC"><div>Contato do cursinho:</div></label>
+                            <input class="input-modal" type="text" id="contatocC" placeholder="(xx) x xxxx-xxxx">
+                            <label class="label-modal" for="cepC"><div>CEP:</div></label>
+                            <input class="input-modal" type="text" id="cepC">
+                            <label class="label-modal" for="logC"><div>Logradouro:</div></label>
+                            <input class="input-modal" type="text" id="logC">
+                            <label class="label-modal" for="cidadeC"><div>Cidade:</div></label>
+                            <input class="input-modal" type="text" id="cidadeC">
+    
+                        </div>
+                        <div class="check-column materias-check">
+                            <label for="text2" class="materias-label"><div>Matérias</div></label>
+
+                            <div class="check-columns">
+                                <div class="check-meu-perfil check-margin-right">
+                                    <div class="alternativas-check">
+                                        <input checked type="checkbox" value="0" name="campo-check" id="campo-check1" />
+                                        <label class="check" for="campo-check1">Matemática </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="1" name="campo-check" id="campo-check2" />
+                                        <label class="check" for="campo-check2">História</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="2" name="campo-check" id="campo-check3" />
+                                        <label class="check" for="campo-check3">Geografia</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="3" name="campo-check" id="campo-check4" />
+                                        <label class="check" for="campo-check4">Sociologia</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="4" name="campo-check" id="campo-check5" />
+                                        <label class="check" for="campo-check5">Filosofia</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="5" name="campo-check" id="campo-check6" />
+                                        <label class="check" for="campo-check6">Português</label>
+                                    </div>
+                                </div>
+                                <div class="check-meu-perfil">
+                                    <div class="alternativas-check">
+                                        <input checked type="checkbox" value="6" name="campo-check" id="campo-check7" />
+                                        <label class="check" for="campo-check7">Literatura</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="7" name="campo-check" id="campo-check8" />
+                                        <label class="check" for="campo-check8">Redação</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="8" name="campo-check" id="campo-check9" />
+                                        <label class="check" for="campo-check9">Química</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="9" name="campo-check" id="campo-check10" />
+                                        <label class="check" for="campo-check10">Física</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="10" name="campo-check" id="campo-check11" />
+                                        <label class="check" for="campo-check11">Biologia</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="right-column right-columnCursinho">
+                        <div>
+                            <label class="label-modal" for="emailC"><div>Email:</div></label>
+                            <input class="input-modal" type="email" id="emailC">
+    
+                            <label class="label-modal" for="contato"><div>Nome do cursinho:</div></label>
+                            <input class="input-modal" type="text" id="contato">
+
+                            <label class="label-modal" for="dataC"><div>Data de cadastro:</div></label>
+                            <input class="input-modal" type="date" id="dataC">
+
+                            <label class="label-modal" for="bairroC"><div>Bairro:</div></label>
+                            <input class="input-modal" type="text" id="bairroC">
+
+                            <label class="label-modal" for="numeroC"><div>Número:</div></label>
+                            <input class="input-modal" type="text" id="numeroC">
+
+                            <label class="label-modal" for="complementoC"><div>Complemento:</div></label>
+                            <input class="input-modal" type="text" id="complementoC">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+                <button class="button-laranja-modal button-cadastro">Cadastrar cursinho</button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal-finalizar-overlay modal-scroll" id="modal-staff">
+        <div class="modal-finalizar ">
+            <div class="modal-sair">
+                <img class="x-sair x-sairStaff" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <form action="" class="">
+            <div class="modal-finalizar-conteudo modal-finalizar-conteudo-cadastro">
+                <p class="p-titulo-modal-finalizar p-titulo-modal-finalizar-cadastro">Cadastre um Staff</p>
+
+                <div class="columns">
+                    <div class="left-column">
+                        <div>
+                            <label class="label-modal" for="nomeS"><div>Nome staff:</div></label>
+                            <input class="input-modal" type="text" id="nomeS">
+                            <label class="label-modal" for="contatoS"><div>Contato:</div></label>
+                            <input class="input-modal" type="text" id="contatoS" placeholder="(xx) x xxxx-xxxx">
+                            <label class="label-modal" for="emailS"><div>Email:</div></label>
+                            <input class="input-modal" type="email" id="emailS">
+    
+                        </div>
+                        
+                    </div>
+    
+                    <div class="right-column">
+                        <div class="campo-meu-perfil campo-meu-perfilStaff">
+                            <label for="text2" class="materias-label">Cursinhos com Permissão</label>
+    
+                            <div class="check-columns check-columnsS">
+                                <div class="check-meu-perfil check-margin-right check-meu-perfilStaff">
+                                    <div class="alternativas-check">
+                                        <input checked type="checkbox" value="0" name="campo-check" id="campo-check1" />
+                                        <label class="check" for="campo-checkS1">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="1" name="campo-checkS" id="campo-checkS2" />
+                                        <label class="check" for="campo-checkS2">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="2" name="campo-checkS" id="campo-checkS3" />
+                                        <label class="check" for="campo-checkS3">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="3" name="campo-checkS" id="campo-checkS4" />
+                                        <label class="check" for="campo-checkS4">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="4" name="campo-checkS" id="campo-checkS5" />
+                                        <label class="check" for="campo-checkS5">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="5" name="campo-checkS" id="campo-checkS6" />
+                                        <label class="check" for="campo-checkS6">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="6" name="campo-checkS" id="campo-checkS7" />
+                                        <label class="check" for="campo-checkS7">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="7" name="campo-checkS" id="campo-checkS8" />
+                                        <label class="check" for="campo-checkS8">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="8" name="campo-checkS" id="campo-checkS9" />
+                                        <label class="check" for="campo-checkS9">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="9" name="campo-checkS" id="campo-checkS10" />
+                                        <label class="check" for="campo-checkS10">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="10" name="campo-checkS" id="campo-checkS11" />
+                                        <label class="check" for="campo-checkS11">Lorem Ipsum </label>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+                <button class="button-laranja-modal button-cadastro">Cadastrar staff</button>
+            </form>
+
+        </div>
+    </div>
 
     <footer>
         <div class="texto-rodape">
@@ -458,6 +686,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="assets/js/tabela-link.js"></script>
     <script src="assets/js/admin-menu-down.js"></script>
+    <script type="text/javascript" src="assets/js/modal-cadastrar-cursinho.js"></script>
 
 </body>
 

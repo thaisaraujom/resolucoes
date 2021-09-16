@@ -69,7 +69,8 @@
   margin: 10px;
 }
 
-.check-meu-perfil, .radio-meu-perfil {
+.check-meu-perfil,
+.radio-meu-perfil {
   margin: 5px 0;
   margin-right: 20px;
 }
@@ -84,7 +85,7 @@ label {
 }
 
 input[type="checkbox"] + label:before {
-  border: 1px solid #00062B;
+  border: 1px solid #00062b;
   content: "\00a0";
   display: inline-block;
   font: 16px/1em sans-serif;
@@ -97,7 +98,7 @@ input[type="checkbox"] + label:before {
 }
 
 input[type="checkbox"]:checked + label:before {
-  background: #00062B;
+  background: #00062b;
 }
 
 .check {
@@ -105,7 +106,7 @@ input[type="checkbox"]:checked + label:before {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  color: #00062B;
+  color: #00062b;
   padding-left: 0;
 }
 
@@ -114,12 +115,13 @@ input[type="checkbox"]:checked + label:before {
   margin-right: 20px;
 }
 
-.campo label:not(.radio), .campo-select label:not(.radio) {
+.campo label:not(.radio),
+.campo-select label:not(.radio) {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  color: #00062B;
+  color: #00062b;
   margin-right: 5px;
   white-space: nowrap;
 }
@@ -135,7 +137,7 @@ label {
 }
 
 input[type="radio"] + label:before {
-  border: 1px solid #00062B;
+  border: 1px solid #00062b;
   content: "\00a0";
   display: inline-block;
   font: 16px/1em sans-serif;
@@ -148,7 +150,7 @@ input[type="radio"] + label:before {
 }
 
 input[type="radio"]:checked + label:before {
-  background: #00062B;
+  background: #00062b;
 }
 
 .radio-meu-perfil {
@@ -164,7 +166,7 @@ input[type="radio"]:checked + label:before {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  color: #00062B;
+  color: #00062b;
 }
 
 .left-column div {
@@ -176,7 +178,7 @@ input[type="radio"]:checked + label:before {
 }
 
 .input-borda-red {
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
 }
 
 .cpf-cadastrado {
@@ -221,7 +223,8 @@ input[type="radio"]:checked + label:before {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .check, .radio {
+  .check,
+  .radio {
     font-size: 13px;
   }
   .check-meu-perfil:first-child {
@@ -251,7 +254,8 @@ input[type="radio"]:checked + label:before {
   .materias-label {
     font-size: 13px;
   }
-  .check, .radio {
+  .check,
+  .radio {
     font-size: 11px;
   }
   .p-titulo-modal-finalizar-cadastro {
@@ -270,7 +274,28 @@ input[type="radio"]:checked + label:before {
   }
   .perfil-label::after {
     font-size: 13px;
-    content: 'Perfil';
+    content: "Perfil";
   }
+}
+
+.campo-meu-perfilStaff {
+  margin-top: 8px;
+}
+
+.check-meu-perfilStaff {
+  overflow-y: scroll;
+  max-height: 200px;
+}
+
+.check-meu-perfilStaff::-webkit-scrollbar {
+  width: 3px;
+  background-color: #2c313baf;
+}
+
+.check-meu-perfilStaff::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  background-color: #2C313B;
 }
 /*# sourceMappingURL=modal-cadastrar-aluno.css.map */

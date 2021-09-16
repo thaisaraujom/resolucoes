@@ -351,4 +351,7 @@ a:active {
     font-size: 10px;
   }
 }
+.modal-finalizarDisciplina {
+  max-width: 500px;
+}
 /*# sourceMappingURL=modal-apagar-parceiro.css.map */

@@ -1,0 +1,15 @@
+#questao {
+     .campo-meu-perfil {
+         margin-bottom: 20px;
+     }
+     .materias-titulo {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 1px;
+     }
+     input[type="checkbox"]:checked + label:before, input[type="radio"]:checked + label:before {
+        background: #F58E08;
+     }
+     
+}
