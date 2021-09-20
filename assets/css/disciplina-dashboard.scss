@@ -7,3 +7,156 @@
 .book-down-desativado {
     display: none;
 }
+
+#questao {
+    .modulosDisciplina {
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+        margin-bottom: 2px;
+        background: #eaeaea;
+
+        align-items: center;
+    }
+    .modulosDisciplina {
+        border-radius: 0;
+    }
+    .modulosDisciplina {
+        border-radius: 5px 5px 0px 0px;
+    }
+    .modulosDisciplina:last-child {
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .conteudo-moduloD {
+        background: #e3e0e0;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 1% 4%;
+
+        margin-bottom: 1px;
+    }
+    .left-text {
+        display: flex;
+        align-items: center;
+    }
+    .titulo-moduloD {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .p-disciplina {
+            font-size: 18px;
+            color: #282c35;
+            font-weight: bold;
+        }
+        padding: 0 2%;
+        .drop-disciplina,
+        .down-disciplina {
+            height: 15px;
+            width: auto;
+            filter: drop-shadow((0px 2px 4px rgba(0, 0, 0, 0.25)));
+        }
+        .drop-disciplina {
+            display: none;
+        }
+    }
+    .capitulo-moduloD {
+        font-size: 13px;
+        font-weight: 300;
+
+        margin-right: 20px;
+
+        width: 56px;
+
+        white-space: nowrap;
+    }
+    .assunto-moduloD {
+        font-size: 15px;
+        color: #000000;
+        font-weight: normal;
+
+        margin-left: 10px;
+    }
+    .numero-moduloD {
+        font-size: 13px;
+        font-weight: 400;
+        color: #282c35;
+    }
+    .conteudosD {
+        display: none;
+    }
+    .active,
+    .conteudosD.ativar {
+        display: block !important;
+        animation-duration: 0.3s;
+        animation-name: efeito;
+    }
+    .cadastroM {
+        // position: absolute;
+        // bottom: 7px;
+        // right: 10px;
+        font-size: 10px !important;
+        text-align: end;
+        width: 100%;
+    }
+    .info-material {
+        width: 100%;
+    }
+}
+
+@keyframes efeito {
+    from {
+        margin-top: -0.5%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+@media (max-width: 592px) {
+    #questao {
+        .cadastroM {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #questao {
+        .titulo-moduloD {
+            .p-disciplina {
+                font-size: 15px;
+            }
+            .drop-disciplina,
+            .down-disciplina {
+                height: 13px;
+                width: auto;
+            }
+        }
+        .cursinhos-admin.modulosD {
+            padding: 3% 0 !important;
+        }
+        .capitulo-moduloD {
+            font-size: 11px;
+
+        }
+        .assunto-moduloD {
+            font-size: 13px;
+
+        }
+        .numero-moduloD {
+            font-size: 11px;
+
+        }
+        .modulosDisciplina {
+            border-radius: 0;
+            box-shadow: none;
+        }
+        .conteudo-moduloD {
+            box-shadow: none;
+        }
+    }
+}

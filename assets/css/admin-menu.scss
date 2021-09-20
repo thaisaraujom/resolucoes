@@ -13,6 +13,7 @@
     }
     .home, .book {
         display: flex;
+        align-items: center;
         p {
             margin-right: 55px;
         }

@@ -5,4 +5,183 @@
 .book-down-desativado {
   display: none;
 }
+
+#questao .modulosDisciplina {
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2px;
+  background: #eaeaea;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .modulosDisciplina {
+  border-radius: 0;
+}
+
+#questao .modulosDisciplina {
+  border-radius: 5px 5px 0px 0px;
+}
+
+#questao .modulosDisciplina:last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+
+#questao .conteudo-moduloD {
+  background: #e3e0e0;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1% 4%;
+  margin-bottom: 1px;
+}
+
+#questao .left-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .titulo-moduloD {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2%;
+}
+
+#questao .titulo-moduloD .p-disciplina {
+  font-size: 18px;
+  color: #282c35;
+  font-weight: bold;
+}
+
+#questao .titulo-moduloD .drop-disciplina,
+#questao .titulo-moduloD .down-disciplina {
+  height: 15px;
+  width: auto;
+  -webkit-filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+#questao .titulo-moduloD .drop-disciplina {
+  display: none;
+}
+
+#questao .capitulo-moduloD {
+  font-size: 13px;
+  font-weight: 300;
+  margin-right: 20px;
+  width: 56px;
+  white-space: nowrap;
+}
+
+#questao .assunto-moduloD {
+  font-size: 15px;
+  color: #000000;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+#questao .numero-moduloD {
+  font-size: 13px;
+  font-weight: 400;
+  color: #282c35;
+}
+
+#questao .conteudosD {
+  display: none;
+}
+
+#questao .active,
+#questao .conteudosD.ativar {
+  display: block !important;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-name: efeito;
+          animation-name: efeito;
+}
+
+#questao .cadastroM {
+  font-size: 10px !important;
+  text-align: end;
+  width: 100%;
+}
+
+#questao .info-material {
+  width: 100%;
+}
+
+@-webkit-keyframes efeito {
+  from {
+    margin-top: -0.5%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
+@keyframes efeito {
+  from {
+    margin-top: -0.5%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
+@media (max-width: 592px) {
+  #questao .cadastroM {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  #questao .titulo-moduloD .p-disciplina {
+    font-size: 15px;
+  }
+  #questao .titulo-moduloD .drop-disciplina,
+  #questao .titulo-moduloD .down-disciplina {
+    height: 13px;
+    width: auto;
+  }
+  #questao .cursinhos-admin.modulosD {
+    padding: 3% 0 !important;
+  }
+  #questao .capitulo-moduloD {
+    font-size: 11px;
+  }
+  #questao .assunto-moduloD {
+    font-size: 13px;
+  }
+  #questao .numero-moduloD {
+    font-size: 11px;
+  }
+  #questao .modulosDisciplina {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #questao .conteudo-moduloD {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
 /*# sourceMappingURL=disciplina-dashboard.css.map */
