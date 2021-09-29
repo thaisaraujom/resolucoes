@@ -230,7 +230,7 @@
                     <div class="conteudo-section-admin">
                         <div class="cursinho-info-admin">
                             <p class="info-form-admin">Para cadastrar um novo módulo, clique no botão.</p>
-                            <button class="button-cadastrar button-cadastrar-monitor">Cadastrar Módulo</button>
+                            <button class="button-cadastrar button-cadastrar-monitor button-modulo">Cadastrar Módulo</button>
                         </div>
 
                         <div class="cursinhos-admin modulosD">
@@ -238,7 +238,7 @@
                             <div class="modulosDM">
                                 <div class="cursinho modulosDisciplina">
                                     <div class="titulo-moduloD">
-                                        <p class="p-disciplina">Módulo I</p>
+                                        <a href=""><p class="p-disciplina">Módulo I</p></a>
                                         <img class="drop-disciplina"
                                             src="./assets/img/cursinho-perfil/down_disciplina.svg" alt="">
                                         <img class="down-disciplina"
@@ -304,7 +304,7 @@
                             <div class="modulosDM">
                                 <div class="cursinho modulosDisciplina">
                                     <div class="titulo-moduloD">
-                                        <p class="p-disciplina">Módulo II</p>
+                                        <a href=""><p class="p-disciplina">Módulo II</p></a>
                                         <img class="drop-disciplina"
                                             src="./assets/img/cursinho-perfil/down_disciplina.svg" alt="">
                                         <img class="down-disciplina"
@@ -339,7 +339,7 @@
                             <div class="modulosDM">
                                 <div class="cursinho modulosDisciplina">
                                     <div class="titulo-moduloD">
-                                        <p class="p-disciplina">Módulo III</p>
+                                        <a href=""><p class="p-disciplina">Módulo III</p></a>
                                         <img class="drop-disciplina"
                                             src="./assets/img/cursinho-perfil/down_disciplina.svg" alt="">
                                         <img class="down-disciplina"
@@ -712,7 +712,7 @@
                             <input class="input-modal input-cpf input-borda-red" type="text" id="cpf">
                             <p class="cpf-cadastrado">Esse CPF já tem cadastro <img src="./assets/img/admin-dashboard/direita-paginacao.svg" alt=""> <a href="">Acesse esse perfil</a></p>
                             <label class="label-modal" for="nome"><div>Nome:</div></label>
-                            <input class="input-modal" type="text" id="nome">
+                            <input class="input-modal input_bottom" type="text" id="nome">
     
                         </div>
                         <div class="check-column">
@@ -778,7 +778,7 @@
                             <input class="input-modal" type="email" id="email">
     
                             <label class="label-modal" for="contato"><div>Contato:</div></label>
-                            <input class="input-modal" type="text" id="contato">
+                            <input class="input-modal input_bottom" type="text" id="contato">
                         </div>
                         <div class="campo-meu-perfil">
                             <label for="text2" class="materias-label perfil-label">Perfil do Aluno</label>
@@ -811,6 +811,34 @@
             
                 <button class="button-laranja-modal button-cadastro">Cadastrar aluno</button>
             </form>
+
+        </div>
+    </div>
+
+    
+    <div class="modal-finalizar-overlay modal1">
+        <div class="modal-finalizar">
+            <div class="modal-sair">
+                <img class="x-sair x-sair2" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <div class="modal-finalizar-conteudo">
+                <form action="" class="decisao-botoes-modal">
+                    <div class="padding-modal">
+                        <p class="p-titulo-modal-finalizar p-titulo-modal-modulo">Cadastre um novo módulo:</p>
+                        
+                        <div class="parceiro-admin">
+                            <input id="input-parceiro-admin" class="input-parceiro input-modal-modulo" type="text" placeholder="Nome do módulo">
+                        </div>
+                    </div>
+
+
+
+                    <button class="button-laranja-modal button-laranja-salvar-modal button-salvar-disciplina">Salvar</button>
+
+
+                </form>
+            </div>
 
         </div>
     </div>

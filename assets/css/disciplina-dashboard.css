@@ -16,6 +16,12 @@
           align-items: center;
 }
 
+#questao .campo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #questao .modulosDisciplina {
   border-radius: 0;
 }
@@ -129,6 +135,30 @@
   width: 100%;
 }
 
+#questao .button-lixeira {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  left: 450px;
+}
+
+#questao .button_apagar_disciplina {
+  margin-top: 90px;
+}
+
+.edicao-disciplina-none {
+  visibility: hidden;
+}
+
+.modal-finalizar-conteudo.modal-finalizar-conteudo-cursinho.modal-finalizar-conteudo-disciplina {
+  padding: 0 50px !important;
+}
+
+.modal-finalizar-conteudo.modal-finalizar-conteudo-cursinho.modal-finalizar-conteudo-disciplina1 {
+  padding: 0 50px !important;
+}
+
 @-webkit-keyframes efeito {
   from {
     margin-top: -0.5%;
@@ -144,6 +174,16 @@
   }
   to {
     margin-top: 0%;
+  }
+}
+
+@media (max-width: 770px) {
+  #questao .button-lixeira {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: initial;
+    margin-left: 10px;
   }
 }
 

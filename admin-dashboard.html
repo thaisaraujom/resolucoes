@@ -457,12 +457,13 @@
                     <div class="img-caixa-admin1">
                         <div id="new1">
                         </div>
-                        <img class="img-preview1" src="./assets/img/admin-dashboard/img-file-add1.png" alt="">
+                        <img class="img-preview2 img-preview-monitor-desktop" src="./assets/img/admin-dashboard/img-file-add1.png" alt="">
+                        <img class="img-preview img-preview-monitor-mobile" src="./assets/img/admin-dashboard/img-file-add.png" alt="">
                         <div class="adicionar-img1">
-                            <label for="file-img-admin1">
+                            <label for="file-img-admin3">
                                 <img  class="image-mais-admin1" src="./assets/img/admin-dashboard/add-file-img.svg" >
                             </label>
-                            <input id="file-img-admin1" type='file' accept="image/*" onchange="loaderFile(event)">
+                            <input id="file-img-admin3" type='file' accept="image/*" onchange="loaderFile(event)">
                         </div>
                     </div>
                     
@@ -590,7 +591,7 @@
                             <label class="label-modal" for="nomeS"><div>Nome staff:</div></label>
                             <input class="input-modal" type="text" id="nomeS">
                             <label class="label-modal" for="contatoS"><div>Contato:</div></label>
-                            <input class="input-modal" type="text" id="contatoS" placeholder="(xx) x xxxx-xxxx">
+                            <input class="input-modal phone-staff" type="text" id="contatoS" placeholder="(xx) x xxxx-xxxx">
                             <label class="label-modal" for="emailS"><div>Email:</div></label>
                             <input class="input-modal" type="email" id="emailS">
     
@@ -664,6 +665,182 @@
         </div>
     </div>
 
+    
+    <div class="modal-finalizar-overlay modal-scroll modal-finalizar-cursinho" id="modal-monitor">
+        <div class="modal-finalizar modal-finalizar-cursinho2 modal-monitor">
+            <div class="modal-sair">
+                <img class="x-sair x-sairMonitor" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+          
+            <div class="modal-finalizar-conteudo modal-finalizar-conteudo-cadastro">
+                <p class="p-titulo-modal-finalizar p-titulo-modal-finalizar-cadastro">Cadastre um novo monitor:</p>
+
+                <div class="add-img-admin1">
+                    <div class="img-caixa-admin1">
+                        <div id="new3">
+                        </div>
+                        <div id="new2">
+                        </div>
+                        <img class="img-preview2 img-preview-monitor-desktop" src="./assets/img/admin-dashboard/img-file-add1.png" alt="">
+                        <img class="img-preview img-preview-monitor-mobile" src="./assets/img/admin-dashboard/img-file-add.png" alt="">
+               
+                        <div class="adicionar-img1">
+                            <label for="file-img-admin4">
+                                <img  class="image-mais-admin1" src="./assets/img/admin-dashboard/add-file-img.svg" >
+                            </label>
+                            <input id="file-img-admin4" type='file' accept="image/*" onchange="loaderFile(event)">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="columns columns-bottom columns-padding">
+                    <div class="left-column  left-columnCursinho left-column-monitor">
+                        <div>
+                            <div>
+                                <label class="label-modal" for="nome-monitor"><div>Nome do monitor:</div></label>
+                                <input placeholder="Nome do monitor" class="input-monitor input-modal" type="text" id="nome-monitor">
+    
+                                <label class="label-modal" for="whatsapp"><div>Whatsapp:</div></label>
+                                <input placeholder="(xx) x xxxx-xxxx" class="input-monitor input-modal phone" type="text" id="whatsapp">
+    
+                                <label class="label-modal" for="emailMonitor"><div>Email:</div></label>
+                                <input placeholder="Email do monitor" class="input-monitor input-modal" type="email" id="emailMonitor">
+        
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+    
+                    <div class="right-column right-columnCursinho">
+                        <div class="check-column materias-check materias-monitor">
+                            <label for="text2" class="materias-label"><div>Matérias</div></label>
+
+                            <div class="check-columns">
+                                <div class="check-meu-perfil check-margin-right">
+                                    <div class="alternativas-check">
+                                        <input checked type="checkbox" value="0" name="campo-check" id="campo-check21" />
+                                        <label class="check" for="campo-check21">Matemática </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="1" name="campo-check" id="campo-check22" />
+                                        <label class="check" for="campo-check22">História</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="2" name="campo-check" id="campo-check23" />
+                                        <label class="check" for="campo-check23">Geografia</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="3" name="campo-check" id="campo-check24" />
+                                        <label class="check" for="campo-check24">Sociologia</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="4" name="campo-check" id="campo-check25" />
+                                        <label class="check" for="campo-check25">Filosofia</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="5" name="campo-check" id="campo-check26" />
+                                        <label class="check" for="campo-check26">Português</label>
+                                    </div>
+                                </div>
+                                <div class="check-meu-perfil">
+                                    <div class="alternativas-check">
+                                        <input checked type="checkbox" value="6" name="campo-check" id="campo-check27" />
+                                        <label class="check" for="campo-check27">Literatura</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="7" name="campo-check" id="campo-check28" />
+                                        <label class="check" for="campo-check28">Redação</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="8" name="campo-check" id="campo-check29" />
+                                        <label class="check" for="campo-check29">Química</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="9" name="campo-check" id="campo-check30" />
+                                        <label class="check" for="campo-check30">Física</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="10" name="campo-check" id="campo-check31" />
+                                        <label class="check" for="campo-check31">Biologia</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns columns-padding">
+                    <div class="left-column  left-columnCursinho left-monitor">
+                        <div>
+                            <div>
+                                <label class="label-modal" for=""><div>Dia da semana:</div></label>
+                                <div class="check-columns">
+                                    <div class="check-meu-perfil check-margin-right">
+                                        <div class="check-bottom alternativas-check">
+                                            <input checked type="checkbox" value="0" name="campo-check1" id="campo-check18" />
+                                            <label class="check" for="campo-check18">Segunda </label>
+                                        </div>
+                                        <div class="check-bottom alternativas-check">
+                                            <input type="checkbox" value="1" name="campo-check1" id="campo-check12" />
+                                            <label class="check" for="campo-check12">Terça</label>
+                                        </div>
+                                        <div class="check-bottom alternativas-check">
+                                            <input type="checkbox" value="2" name="campo-check1" id="campo-check13" />
+                                            <label class="check" for="campo-check13">Quarta</label>
+                                        </div>
+                                        <div class="check-bottom alternativas-check">
+                                            <input type="checkbox" value="3" name="campo-check1" id="campo-check14" />
+                                            <label class="check" for="campo-check14">Quinta</label>
+                                        </div>
+                                        <div class="check-bottom alternativas-check">
+                                            <input type="checkbox" value="4" name="campo-check1" id="campo-check15" />
+                                            <label class="check" for="campo-check15">Sexta</label>
+                                        </div>
+                                        <div class="check-bottom alternativas-check">
+                                            <input type="checkbox" value="5" name="campo-check1" id="campo-check16" />
+                                            <label class="check" for="campo-check16">Sábado</label>
+                                        </div>
+                                        <div class="check-bottom alternativas-check">
+                                            <input type="checkbox" value="5" name="campo-check1" id="campo-check17" />
+                                            <label class="check" for="campo-check17">Domingo</label>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+    
+                    <div class="right-column right-columnCursinho">
+                        <div class="check-column monitor-check">
+                            <label class="label-modal" for=""><div>Horários</div></label>
+
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+                <button class="button-laranja-modal button-cadastro">Cadastrar monitor</button>
+       
+
+        </div>
+    </div>
+
     <footer>
         <div class="texto-rodape">
             <p>Resoluções.com © 2020 | Desenvolvido pela </p>
@@ -687,6 +864,10 @@
     <script src="assets/js/tabela-link.js"></script>
     <script src="assets/js/admin-menu-down.js"></script>
     <script type="text/javascript" src="assets/js/modal-cadastrar-cursinho.js"></script>
+    <script src="./assets/js/telefone-mask-modal.js"></script>
+
+    <script src="assets/js/telefone-mask-modal.js"></script>
+    <script type="text/javascript" src="assets/js/modal-adicionar-monitor.js"></script>
 
 </body>
 

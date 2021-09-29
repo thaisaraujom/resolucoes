@@ -38,3 +38,18 @@ simbolo_sair2.addEventListener('click', function () {
     event.preventDefault()
     modalStaff.style.visibility = 'hidden'
 })
+
+/* --------------------------------------- MODAL 3 -----------------------------------*/
+let cadastrarMonitor = document.querySelector('.button-cadastrar.button-cadastrar-monitor')
+let modalMonitor = document.querySelector('#modal-monitor')
+let simbolo_sair3 = document.querySelector('.x-sair.x-sairMonitor')
+
+cadastrarMonitor.addEventListener('click', function () {
+    event.preventDefault()
+    modalMonitor.style.visibility = 'visible'
+})
+
+simbolo_sair3.addEventListener('click', function () {
+    event.preventDefault()
+    modalMonitor.style.visibility = 'hidden'
+})

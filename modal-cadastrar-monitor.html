@@ -27,20 +27,24 @@
 <body >
 
     <div class="modal-finalizar-overlay modal-scroll modal-finalizar-cursinho" id="modal-cursinho" style="visibility: visible;">
-        <div class="modal-finalizar modal-finalizar-cursinho2">
+        <div class="modal-finalizar modal-finalizar-cursinho2 modal-monitor">
             <div class="modal-sair">
                 <img class="x-sair x-sairCursinho" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
             </div>
 
           
             <div class="modal-finalizar-conteudo modal-finalizar-conteudo-cadastro">
-                <p class="p-titulo-modal-finalizar p-titulo-modal-finalizar-cadastro">Cadastre um novo cursinho:</p>
+                <p class="p-titulo-modal-finalizar p-titulo-modal-finalizar-cadastro">Cadastre um novo monitor:</p>
 
                 <div class="add-img-admin1">
                     <div class="img-caixa-admin1">
                         <div id="new1">
                         </div>
-                        <img class="img-preview1" src="./assets/img/admin-dashboard/img-file-add1.png" alt="">
+                        <div id="new2">
+                        </div>
+                        <img class="img-preview1 img-preview-monitor-desktop" src="./assets/img/admin-dashboard/img-file-add1.png" alt="">
+                        <img class="img-preview img-preview-monitor-mobile" src="./assets/img/admin-dashboard/img-file-add.png" alt="">
+               
                         <div class="adicionar-img1">
                             <label for="file-img-admin1">
                                 <img  class="image-mais-admin1" src="./assets/img/admin-dashboard/add-file-img.svg" >
@@ -51,24 +55,27 @@
                     
                 </div>
 
-                <div class="columns">
-                    <div class="left-column  left-columnCursinho">
+                <div class="columns columns-bottom columns-padding">
+                    <div class="left-column  left-columnCursinho left-column-monitor">
                         <div>
-                            <label class="label-modal" for="nomeC"><div>Nome do contratante:</div></label>
-                            <input class="input-modal input-cpf" type="text" id="nomeC">
-                            <label class="label-modal" for="contatoC"><div>Contato do contratante:</div></label>
-                            <input class="input-modal" type="text" id="contatoC" placeholder="(xx) x xxxx-xxxx">
-                            <label class="label-modal" for="contatocC"><div>Contato do cursinho:</div></label>
-                            <input class="input-modal" type="text" id="contatocC" placeholder="(xx) x xxxx-xxxx">
-                            <label class="label-modal" for="cepC"><div>CEP:</div></label>
-                            <input class="input-modal" type="text" id="cepC">
-                            <label class="label-modal" for="logC"><div>Logradouro:</div></label>
-                            <input class="input-modal" type="text" id="logC">
-                            <label class="label-modal" for="cidadeC"><div>Cidade:</div></label>
-                            <input class="input-modal" type="text" id="cidadeC">
+                            <div>
+                                <label class="label-modal" for="nome-monitor"><div>Nome do monitor:</div></label>
+                                <input placeholder="Nome do monitor" class="input-monitor input-modal" type="text" id="nome-monitor">
+    
+                                <label class="label-modal" for="whatsapp"><div>Whatsapp:</div></label>
+                                <input placeholder="(xx) x xxxx-xxxx" class="input-monitor input-modal phone" type="text" id="whatsapp">
+    
+                                <label class="label-modal" for="emailC"><div>Email:</div></label>
+                                <input placeholder="Email do monitor" class="input-monitor input-modal" type="email" id="emailC">
+        
+                            </div>
     
                         </div>
-                        <div class="check-column materias-check">
+                        
+                    </div>
+    
+                    <div class="right-column right-columnCursinho">
+                        <div class="check-column materias-check materias-monitor">
                             <label for="text2" class="materias-label"><div>Matérias</div></label>
 
                             <div class="check-columns">
@@ -122,28 +129,65 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="columns columns-padding">
+                    <div class="left-column  left-columnCursinho left-monitor">
+                        <div>
+                            <div>
+                                <label class="label-modal" for="nome-monitor"><div>Dia da semana:</div></label>
+                                <div class="check-columns">
+                                    <div class="check-meu-perfil check-margin-right">
+                                        <div class="alternativas-check">
+                                            <input checked type="checkbox" value="0" name="campo-check1" id="campo-check18" />
+                                            <label class="check" for="campo-check18">Segunda </label>
+                                        </div>
+                                        <div class="alternativas-check">
+                                            <input type="checkbox" value="1" name="campo-check1" id="campo-check12" />
+                                            <label class="check" for="campo-check12">Terça</label>
+                                        </div>
+                                        <div class="alternativas-check">
+                                            <input type="checkbox" value="2" name="campo-check1" id="campo-check13" />
+                                            <label class="check" for="campo-check13">Quarta</label>
+                                        </div>
+                                        <div class="alternativas-check">
+                                            <input type="checkbox" value="3" name="campo-check1" id="campo-check14" />
+                                            <label class="check" for="campo-check14">Quinta</label>
+                                        </div>
+                                        <div class="alternativas-check">
+                                            <input type="checkbox" value="4" name="campo-check1" id="campo-check15" />
+                                            <label class="check" for="campo-check15">Sexta</label>
+                                        </div>
+                                        <div class="alternativas-check">
+                                            <input type="checkbox" value="5" name="campo-check1" id="campo-check16" />
+                                            <label class="check" for="campo-check16">Sábado</label>
+                                        </div>
+                                        <div class="alternativas-check">
+                                            <input type="checkbox" value="5" name="campo-check1" id="campo-check17" />
+                                            <label class="check" for="campo-check17">Domingo</label>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+    
+                        </div>
                         
                     </div>
     
                     <div class="right-column right-columnCursinho">
-                        <div>
-                            <label class="label-modal" for="emailC"><div>Email:</div></label>
-                            <input class="input-modal" type="email" id="emailC">
-    
-                            <label class="label-modal" for="contato"><div>Nome do cursinho:</div></label>
-                            <input class="input-modal" type="text" id="contato">
+                        <div class="check-column monitor-check">
+                            <label class="label-modal" for="nome-monitor"><div>Horários</div></label>
 
-                            <label class="label-modal" for="dataC"><div>Data de cadastro:</div></label>
-                            <input class="input-modal" type="date" id="dataC">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
 
-                            <label class="label-modal" for="bairroC"><div>Bairro:</div></label>
-                            <input class="input-modal" type="text" id="bairroC">
-
-                            <label class="label-modal" for="numeroC"><div>Número:</div></label>
-                            <input class="input-modal" type="text" id="numeroC">
-
-                            <label class="label-modal" for="complementoC"><div>Complemento:</div></label>
-                            <input class="input-modal" type="text" id="complementoC">
                         </div>
                     </div>
                 </div>
@@ -151,14 +195,17 @@
             </div>
 
             
-                <button class="button-laranja-modal button-cadastro">Cadastrar cursinho</button>
+                <button class="button-laranja-modal button-cadastro">Cadastrar monitor</button>
        
 
         </div>
     </div>
 
-    <script src="./assets/js/modal-botao-cadastro"></script>
-    <script type="text/javascript" src="assets/js/modal-cadastrar-cursinho.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="assets/js/telefone-mask-modal.js"></script>
+    <script type="text/javascript" src="assets/js/modal-adicionar-monitor.js"></script>
+
 
 </body>
 
