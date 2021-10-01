@@ -1,0 +1,194 @@
+#questao .secao-inicial {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  position: relative;
+}
+
+#questao select option {
+  background: #2c313b;
+}
+
+#questao .adicionar-questao {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f58e08;
+  border: none;
+  color: #f2f2f2;
+  border-radius: 0px 5px 0 5px;
+  padding: 1.5% 3%;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#questao .conteudo-disciplina-modulo {
+  padding: 0 15%;
+}
+
+#questao .titulo_modulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .titulo_modulo-input {
+  background: none;
+  color: #f2f2f2;
+  border: none;
+  margin-left: 10px;
+}
+
+#questao .voltar-modulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#questao .filtro_modulo select {
+  color: #f2f2f2;
+}
+
+#questao .button-modulo {
+  content: "";
+  width: 100%;
+  max-width: 200px;
+  min-width: 85px;
+  height: 45px;
+  margin-left: 20px;
+  background: #f58e08;
+  -webkit-box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
+          box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f2f2f2;
+  width: 100%;
+}
+
+#questao .editar-modulo {
+  cursor: pointer;
+  border: none;
+  background: #2c313b;
+}
+
+#questao .editar-nome-capitulo,
+#questao .editar-nome-modulo {
+  height: 13px;
+  width: auto;
+  cursor: pointer;
+}
+
+#questao .capitulo-questoes {
+  margin-top: 40px;
+}
+
+#questao .capitulo-modulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#questao .capitulo-modulo-disciplina {
+  color: #eaeaea;
+  margin-right: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+#questao .capitulo-modulo-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#questao .nome-capitulo-modulo {
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: #eaeaea;
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#navbar {
+  background: none;
+}
+
+@media (max-width: 930px) {
+  #questao .conteudo-disciplina-modulo {
+    padding: 0 3%;
+  }
+  #questao .titulo-admin {
+    width: 50%;
+  }
+}
+
+@media (max-width: 770px) {
+  #questao .conteudo-disciplina-modulo {
+    padding: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  #questao .adicionar-questao {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  #questao .nome-capitulo-modulo {
+    font-size: 16px;
+  }
+  #questao .button-modulo {
+    height: 30px;
+    font-size: 15px;
+  }
+  #questao .filtro_modulo {
+    display: none;
+  }
+  #questao .voltar-modulo {
+    padding-left: 0;
+  }
+  #questao .capitulo-modulo {
+    margin-bottom: 20px;
+  }
+  #questao .capitulo-questoes {
+    margin: 20px 0;
+  }
+  #questao .capitulo-modulo-disciplina {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=disciplina-modulo.css.map */
