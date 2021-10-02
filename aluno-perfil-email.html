@@ -145,27 +145,24 @@
                     <div class="campos-preenchimento">
                         <form action="" class="form-email">
 
-                            <div class="campo">
-                                <label for="email">Novo Email:</label>
-                                <input class="area-edit" disabled="true" type="email"
+                            <div class="campo campo-alt">
+                                <label for="email">Email Atual:</label>
+                                <input class="area-edit" placeholder="/" type="email"
                                     name="email" id="email">
-                                <img class="h-senha desktop habilitar-edicao"
-                                    src="./assets/img/aluno-perfil/habilitaredit.svg" alt="">
-                                <img class="h-senha mobile habilitar-edicaoM"
-                                    src="./assets/img/aluno-perfil/habilitaredit-escuro.svg" alt="">
                             </div>
-                            <div class="campo">
+                            <div class="campo campo-alt">
+                                <label for="email">Novo Email:</label>
+                                <input class="area-edit" placeholder="/" type="email"
+                                    name="email" id="email">
+                            </div>
+                            <div class="campo campo-alt">
                                 <label for="email1">Confirmar Email:</label>
-                                <input class="area-edit" disabled="true" type="email"
+                                <input class="area-edit" placeholder="/" type="email"
                                     name="email" id="email1">
-                                <img class="h-senha desktop habilitar-edicao"
-                                    src="./assets/img/aluno-perfil/habilitaredit.svg" alt="">
-                                <img class="h-senha mobile habilitar-edicaoM"
-                                    src="./assets/img/aluno-perfil/habilitaredit-escuro.svg" alt="">
                             </div>
 
 
-                            <button class="button_salvar" type="submit">Salvar</button>
+                            <button class="button_salvar disparar-modal" type="submit">Salvar</button>
                         </form>
                     </div>
                 </div>
@@ -209,6 +206,7 @@
 
     <div class="tela hide"></div>
 
+    <script type="text/javascript" src="assets/js/disparar-modal.js"></script>
     <script type="text/javascript" src="assets/js/menu.js"></script>
     <script type="text/javascript" src="assets/js/modal-finalizar-simulado-dashboard.js"></script>
     <script src="assets/js/perfil-habilitaredit.js"></script>

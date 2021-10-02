@@ -13,9 +13,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
 
     <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/modal-finalizar-questao-simulado.css">
+    <link rel="stylesheet" href="assets/css/modal-senha-salva.css">
+    <link rel="stylesheet" href="assets/css/modais.css">
     <link rel="stylesheet" href="assets/css/aluno-questao.css">
     <link rel="stylesheet" href="assets/css/footer-light.css">
     <link rel="stylesheet" href="assets/css/aluno-perfil.css">
+    
 
     <title>Perfil - Aluno | Resoluções.com</title>
 </head>
@@ -132,39 +136,47 @@
                     <div class="titulo desktop">
                         <h1>Meu Perfil</h1>
                     </div>
-
+                    <div class="image-box">
+                        <img class="imagem-do-perfil" src="./assets/img/aluno-perfil/foto-perfil.svg">
+                        <div class="file-image">
+                            <label for="file-img">
+                                <img src="./assets/img/aluno-perfil/+img.svg" alt="Ícone Mais" class="image-mais">
+                            </label>
+                            <input class="input-img-mais" id="file-img" type="file" name="file" required="required" accept="image/*">
+                        </div>
+                    </div>
 
                     <div class="campos-preenchimento">
                         <form action="">
                             <div class="campo">
-                                <label for="text">Nome:</label>
+                                <label class="campo-label" for="text">Nome:</label>
                                 <input class="area-edit" disabled="true" placeholder="Alisson Bastos Medeiros"
                                     type="text" name="text" id="text">
-                                <img class="h-nome desktop habilitar-edicao"
-                                    src="./assets/img/aluno-perfil/habilitaredit.svg" alt="">
-                                <img class="h-nome mobile habilitar-edicaoM"
-                                    src="./assets/img/aluno-perfil/habilitaredit-escuro.svg" alt="">
+                                <img class="h-celular desktop habilitar-edicao"
+                                    src="" alt="">
+                                <img class="h-celular mobile habilitar-edicaoM"
+                                    src="" alt="">
                             </div>
                             <div class="campo">
-                                <label for="text1">CPF:</label>
+                                <label class="campo-label" for="text1">CPF:</label>
                                 <input class="area-edit" disabled="true" placeholder="000.000.000 - 00" type="text"
                                     name="text" id="text1">
-                                <img class="h-cpf desktop habilitar-edicao"
-                                    src="./assets/img/aluno-perfil/habilitaredit.svg" alt="">
-                                <img class="h-cpf mobile habilitar-edicaoM"
-                                    src="./assets/img/aluno-perfil/habilitaredit-escuro.svg" alt="">
+                                <img class="h-celular desktop habilitar-edicao"
+                                    src="" alt="">
+                                <img class="h-celular mobile habilitar-edicaoM"
+                                    src="" alt="">
                             </div>
                             <div class="campo">
-                                <label for="email">Email:</label>
+                                <label class="campo-label" for="email">Email:</label>
                                 <input class="area-edit" disabled="true" placeholder="exemplo@email.com" type="email"
                                     name="email" id="email">
-                                <img class="h-email desktop habilitar-edicao"
-                                    src="./assets/img/aluno-perfil/habilitaredit.svg" alt="">
-                                <img class="h-email mobile habilitar-edicaoM"
-                                    src="./assets/img/aluno-perfil/habilitaredit-escuro.svg" alt="">
+                                    <img class="h-celular desktop habilitar-edicao"
+                                    src="" alt="">
+                                <img class="h-celular mobile habilitar-edicaoM"
+                                    src="" alt="">
                             </div>
                             <div class="campo">
-                                <label for="text2">Celular:</label>
+                                <label class="campo-label" for="text2">Celular:</label>
                                 <input class="area-edit phone" disabled="true" placeholder="(00) 0 0000 - 0000"
                                     type="text" name="text" id="text2">
                                 <img class="h-celular desktop habilitar-edicao"
@@ -173,13 +185,37 @@
                                     src="./assets/img/aluno-perfil/habilitaredit-escuro.svg" alt="">
                             </div>
                             <div class="campo-select select">
-                                <label>Qual sua opção de curso?</label>
-                                <select class="personalizar-select" id='select-curso' onchange="myFunction()">
-                                    <option value="0" class="opcao">Escolher</option>
-                                    <option value="1" class="opcao">Mustard</option>
-                                    <option value="2" class="opcao">Ketchup</option>
-                                    <option value="3" class="opcao">Relish</option>
+                                <div class="select-option">
+                                    <label class="option-text">Qual sua opção de curso?</label>
+                                <select class="personalizar-select select-edite" id='select-curso' onchange="myFunction()">
+                                    <option value="0" class="opcao opcao-edite">Escolher</option>
+                                    <option value="1" class="opcao opcao-edite">assistente administrativo</option>
+                                    <option value="2" class="opcao opcao-edite">Engenharia de computação</option>
+                                    <option value="3" class="opcao opcao-edite">Engenharia de computação</option>
+                                    <option value="4" class="opcao opcao-edite">Relish</option>
+                                    <option value="5" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
+                                    <option value="6" class="opcao opcao-edite">Relish</option>
                                 </select>
+                                </div>
                                 <img class="h-celular exclamacao"
                                     src="./assets/img/aluno-perfil/exclamation-triangle.svg" alt="">
                                 <img class="h-celular check-desktop"
@@ -188,41 +224,25 @@
                                     src="./assets/img/aluno-perfil/check-escuro.svg" alt="">
                             </div>
                             <div class="campo-meu-perfil">
-                                <label for="text2" class="desktop">Meu Perfil</label>
-
+                                <div class="label-lapis">
+                                    <label for="text2" class="mp-mobile">Meu Perfil</label>
+                                    <button class="meu-perfil-lapis desktop disparar-modal"><img src="./assets/img/aluno-perfil/habilitaredit.svg" alt=""></button>
+                                    <button class="meu-perfil-lapis mobile disparar-modal"><img src="./assets/img/aluno-perfil/habilitaredit-escuro.svg" alt=""></button>
+                                </div>
                                 <div class="radio-meu-perfil">
                                     <div class="alternativas-radio">
-                                        <input checked type="radio" value="0" name="campo-radio" id="campo-radio1" />
+                                        <input checked type="radio" disabled="true" value="0" name="campo-radio" id="campo-radio1" />
                                         <label class="radio" for="campo-radio1">Ensino Médio Incompleto </label>
-                                    </div>
-                                    <div class="alternativas-radio">
-                                        <input type="radio" value="1" name="campo-radio" id="campo-radio2" />
-                                        <label class="radio" for="campo-radio2">1 a 2 anos de cursinho</label>
-                                    </div>
-                                    <div class="alternativas-radio">
-                                        <input type="radio" value="2" name="campo-radio" id="campo-radio3" />
-                                        <label class="radio" for="campo-radio3">3 a 4 anos de cursinho</label>
-                                    </div>
-                                    <div class="alternativas-radio">
-                                        <input type="radio" value="3" name="campo-radio" id="campo-radio4" />
-                                        <label class="radio" for="campo-radio4">5 ou mais anos de cursinho</label>
                                     </div>
                                 </div>
 
                             </div>
-
-                            <div class="campo">
-                                <label for="senha">Senha:</label>
-                                <input class="area-edit" disabled="true" placeholder="•••••••••••••" type="password"
-                                    name="password" id="password">
-                                <img class="h-senha desktop habilitar-edicao"
-                                    src="./assets/img/aluno-perfil/habilitaredit.svg" alt="">
-                                <img class="h-senha mobile habilitar-edicaoM"
-                                    src="./assets/img/aluno-perfil/habilitaredit-escuro.svg" alt="">
+                            <div class="botoes">
+                                <button class="btn-padrao">SAIR</button>
+                                <a href="aluno-perfil-senha.html" class="btn-padrao btn-senha">ALTERAR SENHA</a>
+                                <button class="button_salvar" type="submit">Salvar</button> 
                             </div>
-
-                            <button class="button_sair">Sair dessa conta</button>
-                            <button class="button_salvar" type="submit">Salvar</button>
+                            
                         </form>
                     </div>
                 </div>
@@ -250,10 +270,44 @@
 
     </footer>
 
+    <div class="modal-finalizar-overlay" id="alt-radio-checked">
+        <form class="modal-finalizar alt-modal">
+            <div class="modal-sair">
+                <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <div class="modal-finalizar-conteudo alt-conteudo">
+                <p class="p-titulo-modal-finalizar">Altere seu perfil</p>
+                <div class="radio-meu-perfil alt-radio-mp">
+                    <div class="alternativas-radio">
+                        <input checked type="radio" value="0" name="campo-radio-alt" id="campo-radio-alt1" />
+                        <label class="radio" for="campo-radio-alt1">Ensino Médio Incompleto </label>
+                    </div>
+                    <div class="alternativas-radio">
+                        <input type="radio" value="1" name="campo-radio-alt" id="campo-radio-alt2" />
+                        <label class="radio" for="campo-radio-alt2">1 a 2 anos de cursinho</label>
+                    </div>
+                    <div class="alternativas-radio">
+                        <input type="radio" value="2" name="campo-radio-alt" id="campo-radio-alt3" />
+                        <label class="radio" for="campo-radio-alt3">3 a 4 anos de cursinho</label>
+                    </div>
+                    <div class="alternativas-radio">
+                        <input type="radio" value="3" name="campo-radio-alt" id="campo-radio-alt4" />
+                        <label class="radio" for="campo-radio-alt4">5 ou mais anos de cursinho</label>
+                    </div>
+                </div>
+                <div class="div-btn-modal">
+                    <button type="submit" class="btn-padrao">Salvar</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
     <div class="tela hide"></div>
 
     <script type="text/javascript" src="assets/js/menu.js"></script>
-
+    <script type="text/javascript" src="assets/js/disparar-modal.js"></script>
     <script src="assets/js/perfil-habilitaredit.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>

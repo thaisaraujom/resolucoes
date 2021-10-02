@@ -1,0 +1,26 @@
+.alt-modal {
+  width: 30%;
+}
+
+.alt-radio-mp {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.div-btn-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .alt-modal {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=modais.css.map */

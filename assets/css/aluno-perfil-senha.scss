@@ -17,8 +17,30 @@
     .campos-preenchimento {
         margin: 20px 0;
     }
-
+    //alteração murilo
+    input[type="password"]{
+        width: 100%;
+        padding-left: 15px;
+        padding-bottom: 6px;
+    }
+    .button_salvar {
+        display: block;
+    }
+    .campo input{
+        width: 100%;
+        padding-left: 15px;
+        padding-bottom: 6px;
+    }
 }
+
+//alterações murilo
+
+.campo-alt {
+    width: 50%;
+}
+
+
+
 
 @media (max-width: 770px) {
     #questao {
@@ -39,6 +61,14 @@
         }
         .mobile.seta-voltar {
             display: flex;
+        }
+        .campo-alt {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+        }
+        .campo input{
+            margin-top: 10px;
         }
     }
 }

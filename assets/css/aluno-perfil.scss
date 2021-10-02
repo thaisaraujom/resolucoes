@@ -61,7 +61,7 @@ html {
         margin: 45px 80px 20px 80px;
     }
     .campos-preenchimento {
-        margin: 50px 0;
+        margin: 0 0;
     }
     .campo, .campo-select {
         margin: 40px 0;
@@ -80,8 +80,9 @@ html {
         font-family: "Montserrat", sans-serif;
         font-size: 16px;
         width: 300px;
-        
+        font-weight: 300;
         margin: 0 5px;
+        padding: 0 0 6px 10px;
     }
     .campo-select {
         display: flex;
@@ -100,7 +101,7 @@ html {
         color: #282c35;
         padding: 2px 5px;
         
-        margin-left: 20px;
+        margin-top: 10px;
 
         cursor: pointer;
         border-radius: 3px;
@@ -218,19 +219,22 @@ html {
     }
 
     .button_salvar {
-        border: none;
-        background: #f58e08;
-        border-radius: 17px;
-
-        font-family: "Montserrat", sans-serif;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 20px;
-
-        color: #ffffff;
-
-        padding: 5px 30px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 150px;
+        height: 34px;
+        background: #F58E08;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 17px;
+        border: 1px solid #F58E08;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-transform: uppercase;
         cursor: pointer;
 
@@ -251,6 +255,136 @@ html {
         color: #d7d5d4;
 
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+//alterações murilo
+.image-box {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-top: 15px;
+}
+
+.imagem-do-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#file-img {
+    display: none;
+    cursor: pointer;
+}
+.file-image {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+}
+.campo-label {
+    width: 62px;
+}
+.select-numero {
+    overflow-y: auto;
+}
+.select-option {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.option-text {
+    width: 30%;
+    height: auto;
+}
+.opcao-edite {
+    width: 70%;
+}
+.botoes {
+    display: flex;
+    margin-top: 50px;
+}
+.btn-padrao {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 150px;
+    height: 34px;
+    background: #F58E08;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    border: 1px solid #F58E08;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-senha {
+    background: none;
+    width: 182px;
+}
+.label-lapis {
+    width: 44.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.label-lapis button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#alt-radio-checked {
+    .campo label:not(.radio), .campo-select label:not(.radio) {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #282c35;
+
+        margin-right: 5px;
+
+        white-space: nowrap;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+        display: none; /* Esconde os inputs */
+    }
+    label {
+        cursor: pointer;
+    }
+    input[type="radio"] + label:before {
+        border: 1px solid #282c35;
+        content: "\00a0";
+        display: inline-block;
+        font: 16px/1em sans-serif;
+        height: 16px;
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        vertical-align: top;
+        width: 16px;
+        border-radius: 5px;
+    }
+    input[type="radio"]:checked + label:before {
+        background: #282c35;
+    }
+    .radio-meu-perfil {
+        margin-top: 5px;
+    }
+    .alternativas-radio {
+        margin: 12px 0;
+    }
+    .radio {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+
+        color: #282c35;
     }
 }
 
@@ -394,11 +528,22 @@ html {
         .mobile.seta-voltar {
             display: none;
         }
+        //alterações murilo
+        .btn-senha {
+            color: #282C35;
+        }
     }
     footer {
         background-color: #ebe7e4;
     }
+    //alterações murilo
+    .mp-mobile {
+        color: #282C35;
+    }
+    
 }
+
+
 
 @media (max-width: 499px) {
     #questao {
@@ -415,7 +560,9 @@ html {
             width: 50%;
             white-space: initial;
         }
+        
     }
+    
 }
 
 @media (max-width: 450px) {

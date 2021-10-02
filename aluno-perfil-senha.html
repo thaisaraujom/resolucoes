@@ -144,27 +144,24 @@
                     <div class="campos-preenchimento">
                         <form action="" class="formulario-senha">
 
-                            <div class="campo">
-                                <label for="senha1">Nova Senha:</label>
-                                <input class="area-edit" disabled="true" placeholder="•••••••••••••" type="password"
+                            <div class="campo campo-alt">
+                                <label for="senha1">Senha atual:</label>
+                                <input class="area-edit area-alt" placeholder="/" type="password"
                                     name="password" id="senha1">
-                                <img class="h-senha desktop habilitar-edicao"
-                                    src="./assets/img/aluno-perfil/habilitaredit.svg" alt="">
-                                <img class="h-senha mobile habilitar-edicaoM"
-                                    src="./assets/img/aluno-perfil/habilitaredit-escuro.svg" alt="">
                             </div>
 
-                            <div class="campo">
-                                <label for="senha2">Confirmar Senha:</label>
-                                <input class="area-edit" disabled="true" placeholder="•••••••••••••" type="password"
+                            <div class="campo campo-alt">
+                                <label for="senha2">Nova senha:</label>
+                                <input class="area-edit area-alt" placeholder="/" type="password"
                                     name="password1" id="senha2">
-                                <img class="h-senha desktop habilitar-edicao"
-                                    src="./assets/img/aluno-perfil/habilitaredit.svg" alt="">
-                                <img class="h-senha mobile habilitar-edicaoM"
-                                    src="./assets/img/aluno-perfil/habilitaredit-escuro.svg" alt="">
+                            </div>
+                            <div class="campo campo-alt">
+                                <label for="senha2">Confirmar senha:</label>
+                                <input class="area-edit area-alt" placeholder="/" type="password"
+                                    name="password1" id="senha2">
                             </div>
 
-                            <button class="button_salvar" type="submit">Salvar</button>
+                            <button class="button_salvar disparar-modal" type="submit">Salvar</button>
                         </form>
                     </div>
                 </div>
@@ -209,6 +206,7 @@
 
     <div class="tela hide"></div>
 
+    <script type="text/javascript" src="assets/js/disparar-modal.js"></script>
     <script type="text/javascript" src="assets/js/menu.js"></script>
     <script type="text/javascript" src="assets/js/modal-finalizar-simulado-dashboard.js"></script>
     <script src="assets/js/perfil-habilitaredit.js"></script>
