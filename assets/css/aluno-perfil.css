@@ -75,7 +75,8 @@ html {
 }
 
 #questao .campo, #questao .campo-select {
-  margin: 40px 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,6 +279,27 @@ html {
   text-transform: uppercase;
   cursor: pointer;
   display: none;
+}
+
+#questao .button_salvar_cursinho_perfil {
+  border: none;
+  background: #f58e08;
+  border-radius: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+}
+
+.cursinho-perfil-aluno-error {
+  color: red;
+  margin: 0px;
 }
 
 #questao .button_sair {
@@ -563,6 +585,9 @@ html {
     font-size: 14px;
   }
   #questao .button_salvar {
+    font-size: 14px;
+  }
+  #questao .button_salvar_cursinho_perfil {
     font-size: 14px;
   }
   #questao .campo input {

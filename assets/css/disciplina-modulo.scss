@@ -1,0 +1,184 @@
+#questao {
+    .secao-inicial {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+
+        position: relative;
+    }
+    select option {
+        background: #2c313b;
+    }
+    .adicionar-questao {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        background: #f58e08;
+        border: none;
+        color: #f2f2f2;
+
+        border-radius: 0px 5px 0 5px;
+
+        padding: 1.5% 3%;
+
+        font-weight: bold;
+        font-size: 13px;
+
+        cursor: pointer;
+        z-index: 1;
+    }
+    .conteudo-disciplina-modulo {
+        padding: 0 15%;
+    }
+    .titulo_modulo {
+        display: flex;
+        align-items: center;
+    }
+    .titulo_modulo-input {
+        background: none;
+        color: #f2f2f2;
+        border: none;
+        margin-left: 10px;
+    }
+    .voltar-modulo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .filtro_modulo select {
+        color: #f2f2f2;
+    }
+    .button-modulo {
+        content: "";
+        width: 100%;
+        max-width: 200px;
+        min-width: 85px;
+        height: 45px;
+        margin-left: 20px;
+        background: #f58e08;
+        box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
+        border-radius: 5px;
+
+        border: none;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        color: #f2f2f2;
+
+        width: 100%;
+    }
+    .editar-modulo {
+        cursor: pointer;
+        border: none;
+        background: #2c313b;
+    }
+    .editar-nome-capitulo,
+    .editar-nome-modulo {
+        height: 13px;
+        width: auto;
+
+        cursor: pointer;
+    }
+    .capitulo-questoes {
+        margin-top: 40px;
+    }
+    .capitulo-modulo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .capitulo-modulo-disciplina {
+        color: #eaeaea;
+        margin-right: 20px;
+
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+
+        white-space: nowrap;
+    }
+    .capitulo-modulo-left {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+    }
+    .nome-capitulo-modulo {
+        background: none;
+        border: none;
+
+        font-size: 25px;
+        color: #eaeaea;
+
+       
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+    }
+}
+
+#navbar {
+    background: none;
+}
+
+@media (max-width: 930px) {
+    #questao {
+        .conteudo-disciplina-modulo {
+            padding: 0 3%;
+        }
+        .titulo-admin {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    #questao {
+        .conteudo-disciplina-modulo {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #questao {
+        .adicionar-questao {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #questao {
+        .nome-capitulo-modulo {
+            font-size: 16px;
+        }
+        .button-modulo {
+            height: 30px;
+            font-size: 15px;
+        }
+        .filtro_modulo {
+            display: none;
+        }
+        .voltar-modulo {
+            padding-left: 0;
+        }
+        .capitulo-modulo {
+            margin-bottom: 20px;
+        }
+        .capitulo-questoes {
+            margin: 20px 0;
+        }
+        .capitulo-modulo-disciplina {
+            font-size: 15px;
+        }
+    }
+
+}
