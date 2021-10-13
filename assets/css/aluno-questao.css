@@ -447,6 +447,30 @@ html {
   margin: 20px 0 30px 0;
 }
 
+#questao .questao-duvida-botao {
+  margin: 20px 0 30px 0;
+}
+
+#questao .questao-duvida-botao label {
+  cursor: pointer;
+}
+
+#questao .questao-duvida-botao button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #f2f2f2;
+  border: 6px #c4c4c4 solid;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#questao .questao-duvida-botao .btn-checked {
+  background-color: #efaa51;
+}
+
 #questao .check {
   margin-left: 15px;
   display: block;
@@ -467,6 +491,10 @@ html {
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
+  margin-left: 10px;
+  position: relative;
+  -webkit-transform: translate(0%, 30%);
+          transform: translate(0%, 30%);
 }
 
 #questao .check input {
@@ -483,17 +511,18 @@ html {
   left: 0;
   height: 13px;
   width: 13px;
-  background-color: #d4d3d3;
+  background-color: #f2f2f2;
+  border: 6px #c4c4c4 solid;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #questao .check:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: #f2f2f2;
 }
 
 #questao .check input:checked ~ .checkmark {
-  background-color: #28f321;
+  background-color: #efaa51;
 }
 
 #questao .checkmark:after {
