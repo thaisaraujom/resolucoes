@@ -1,0 +1,139 @@
+#questao {
+    background: #F2F2F2;
+}
+body {
+    background: #F2F2F2;
+}
+
+footer {
+    background-color: #282c35;
+}
+
+#questao {
+    .icones a {
+        color: #282c35;
+    }
+    .titulo.desktop h1{
+        color: #282c35;
+    }
+    .alt-link {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .conteudo-questao {
+        width: 95%;
+        height: auto;
+        background: #F2F2F2;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding-top: 15px;
+        margin-bottom: 50px;
+    }
+    .questao-pergunta p{
+        margin: 0 3%;
+    }
+    .questao-img {
+        margin: 30px 3%;
+    }
+    .questao-img img{
+        max-height: 500px;
+        max-width: 100%;
+    }
+    .questao-alternativa {
+        margin: 30px 3%;
+    }
+    .questao-alternativa p{
+        margin: 20px 0;
+    }
+    .questao-correta {
+        color: #F58E08;
+        font-weight: bold;
+    }
+    .button_apagar_disciplina {
+        margin: 15px 3%;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .button_sair {
+        color: #282c35;
+        text-shadow: none;
+    }
+    .questao-paginacao {
+        width: 100%;
+        height: auto;
+        background: #EFE2D1;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+    }
+    .questao-paginacao img{
+        width: 6px;
+        height: auto;
+    }
+    .questao-paginacao a{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 19px;
+        padding: 0 7px;
+    }
+    .paginacao-ativa {
+        background: #F58E08;
+        border-radius: 50%;
+    }
+    .link-video {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .link-video a{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .link-video img {
+        margin-top: 7px;
+        margin-right: 3%;
+    }
+    .mensagem-questao {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+    .mensagem-questao img{
+        height: 48px;
+        margin-right: 3%;
+    }
+    .campo-mensagem {
+        background: #F2F2F2;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 15px;
+        width: 85%;
+    }
+    .wpp-monitor {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+    .wpp-monitor img {
+        margin-right: 4%;
+    }
+}
+
+@media (max-width: 770px) {
+    footer {
+        background: #F2F2F2;
+    }
+    #questao {
+        .conteudo-questao {
+            width: 100%; 
+        }
+    }
+}
