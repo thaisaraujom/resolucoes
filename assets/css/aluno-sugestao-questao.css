@@ -14,6 +14,7 @@ input[type="file"]::-webkit-file-upload-button {
   font-size: 12px;
   color: #f2f2f2;
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 #questao .icones a {
@@ -49,6 +50,7 @@ input[type="file"]::-webkit-file-upload-button {
   color: #e4e0e0;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  padding: 0 !important;
 }
 
 #questao .campo label {
@@ -60,15 +62,16 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 #questao .campo_file input {
-  background: #e6e4e4;
-  border: 1px solid #282c35;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 10px;
-  font-size: 12px;
-  color: #000000;
+  background: #e6e4e4 !important;
+  border: 1px solid #282c35 !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  border-radius: 10px !important;
+  font-size: 12px !important;
+  color: #000000 !important;
   padding-right: 10px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 #questao .campo_file input {
@@ -143,10 +146,34 @@ input[type="file"]::-webkit-file-upload-button {
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  #questao .titulo h1 {
+    font-size: 22.5px;
+    color: #282c35;
+  }
+  #questao .campo textarea {
+    border: none;
+    background: #EBE7E4;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+  }
+}
+
 @media (max-width: 770px) {
   body,
   html {
-    background: #282c35;
+    background: #ebe7e4 !important;
+  }
+  #questao .conteudo-sugerir-questao {
+    margin: 0;
+  }
+  #questao .campo_file {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #questao .campo_file .file_input {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=aluno-sugestao-questao.css.map */
