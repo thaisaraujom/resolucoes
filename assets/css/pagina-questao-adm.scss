@@ -125,6 +125,12 @@ footer {
     .wpp-monitor img {
         margin-right: 4%;
     }
+    //pagina de alteração 
+    .conteudo-questoes {
+        width: 95%;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 @media (max-width: 770px) {

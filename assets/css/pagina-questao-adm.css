@@ -181,6 +181,16 @@ footer {
   margin-right: 4%;
 }
 
+#questao .conteudo-questoes {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 @media (max-width: 770px) {
   footer {
     background: #F2F2F2;
