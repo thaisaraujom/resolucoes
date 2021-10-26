@@ -1,4 +1,7 @@
 #questao {
+    .segunda:hover {
+        content: 'Segunda';
+    }
     .nav-materia {
         border-right: 2px solid #B4B1AE;
 
@@ -32,6 +35,11 @@
         width: 100%;
 
 
+    }
+
+    .menu-materia {
+        display: flex;
+        flex-direction: column;
     }
 
     .paginacao {

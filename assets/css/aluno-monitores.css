@@ -1,3 +1,7 @@
+#questao .segunda:hover {
+  content: 'Segunda';
+}
+
 #questao .nav-materia {
   border-right: 2px solid #B4B1AE;
   padding-right: 50px;
@@ -29,6 +33,16 @@
 
 #questao .cards-monitores {
   width: 100%;
+}
+
+#questao .menu-materia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #questao .paginacao {
