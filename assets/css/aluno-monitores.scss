@@ -245,6 +245,17 @@
         }
     }
 
+    .form_materia {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-materia {
+        input[type="radio"] + label:before {
+            display: none;
+        }
+    }
+
 }
 
 .btn-laranja {
