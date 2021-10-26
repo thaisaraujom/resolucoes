@@ -1,0 +1,499 @@
+#questao .nav-materia {
+  border-right: 2px solid #B4B1AE;
+  padding-right: 50px;
+}
+
+#questao .conteudo_monitor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 95px;
+  width: 100%;
+}
+
+#questao .nav-right {
+  width: 100%;
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#questao .cards-monitores {
+  width: 100%;
+}
+
+#questao .paginacao {
+  margin-bottom: -100px;
+}
+
+#questao .nav-materia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+#questao .filtro-horario-dia {
+  margin-top: 100px;
+}
+
+#questao .materia {
+  color: #EBE7E4;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#questao .menu-materia {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#questao .materia:hover {
+  color: #F58E08;
+}
+
+#questao .materia.active {
+  color: #F58E08;
+}
+
+#questao .monitores_title-date {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #EAEAEA;
+  font-weight: 500;
+}
+
+#questao .monitores_filter-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#questao .alternativas-check {
+  margin-bottom: 15px;
+}
+
+#questao .check-meu-perfil {
+  margin-bottom: 0;
+}
+
+#questao .monitores_title-horario {
+  margin-bottom: 15px;
+}
+
+#questao .cardM {
+  background: #EBE7E4;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+#questao .cardM-dentro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100% !important;
+  word-wrap: break-word;
+  margin: 3% 2%;
+}
+
+#questao .card-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .card-right {
+  width: 60%;
+}
+
+#questao .img_monitor {
+  width: auto;
+  height: 95px;
+  margin-right: 5%;
+}
+
+#questao .dados_monitor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 2%;
+}
+
+#questao .txt_monitor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  word-wrap: break-word;
+}
+
+#questao .title_monitor {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #595B5F;
+}
+
+#questao .email_monitor,
+#questao .cel_monitor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .img-cel,
+#questao .img-email {
+  margin-right: 5px;
+}
+
+#questao .p-email_monitor,
+#questao .p-cel_monitor {
+  color: #595B5F;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+
+#questao .monitores_card-agenda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3%;
+  margin-right: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+}
+
+#questao .monitores_card-agenda table {
+  width: 100%;
+}
+
+#questao .monitores_card-agenda thead {
+  width: 100%;
+}
+
+#questao .monitores_card-agenda tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#questao .monitores_card-agenda th {
+  margin: 0 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 112%;
+  /* identical to box height, or 17px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #BEBEBE;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#questao .monitores_card-agenda th.active {
+  color: #595B5F;
+}
+
+.btn-laranja {
+  border-radius: 17px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background: #f58e08;
+  border-radius: 17 px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  width: 80%;
+  font-weight: bold;
+  color: #ffffff;
+  height: 30px;
+}
+
+.button-buscar {
+  margin-top: 20px;
+}
+
+#monitores_filter-horario {
+  background: #4F4F4F;
+  border-radius: 2px;
+  border: none;
+  padding: 7%;
+  width: calc(80% - 14%) !important;
+  height: 10px;
+  font-size: 16px;
+  font-weight: 500px;
+  color: #C4C4C4 !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input[type=time]:focus::-webkit-datetime-edit {
+  color: #C4C4C4 !important;
+}
+
+.esquerda-paginacao {
+  margin-right: 10px;
+}
+
+.direita-paginacao {
+  margin-left: 10px;
+}
+
+#questao .paginacao {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+}
+
+#questao .p-paginacao {
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #4e5057;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 10px;
+}
+
+#questao .paginacao-admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+#questao .paginacao-admin .circle {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  color: #EBE7E4;
+  cursor: pointer;
+}
+
+#questao .paginacao-admin .circle-active {
+  background-color: #f58e08;
+}
+
+#questao .paginacao-admin li {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 3px;
+  /* identical to box height */
+  color: #EBE7E4;
+  text-decoration: none;
+}
+
+#questao .paginacao-admin .passar-pagina {
+  width: auto;
+  height: 15px;
+  position: relative;
+  -webkit-transform: translate(0%, 30%);
+          transform: translate(0%, 30%);
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  #questao .conteudo-perfil {
+    margin: 45px 20px 20px 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  #questao .conteudo-perfil {
+    margin: 20px 0 20px 0px;
+  }
+}
+
+@media (max-width: 770px) {
+  #questao {
+    padding: 0;
+  }
+  #questao .conteudo_monitor {
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+  #questao .titulo.mobile {
+    padding: 0;
+    margin: 0 5%;
+  }
+  #questao .nav-materia {
+    display: none;
+  }
+  #questao .nav-right {
+    margin-left: 0;
+  }
+  #questao .cardM-dentro {
+    margin-left: 5%;
+  }
+  #questao .cardM {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    margin: 1px;
+  }
+  #questao .icones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 5%;
+  }
+  #questao .mobile.seta-voltar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #questao .paginacao-admin .circle {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    color: #2c313b;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 500px) {
+  #questao .circle {
+    font-size: 12px;
+  }
+  #questao .paginacao {
+    margin-top: 20px;
+    padding-bottom: 2%;
+  }
+  #questao .title_monitor {
+    font-size: 16px;
+  }
+  #questao .p-cel_monitor,
+  #questao .p-email_monitor {
+    font-size: 14px;
+  }
+  #questao .img_monitor {
+    width: auto;
+  }
+}
+
+@media (max-width: 499px) {
+  #questao .title_monitor {
+    font-size: 13px;
+  }
+  #questao .cel_monitor, #questao .email_monitor {
+    margin-top: 5px;
+  }
+  #questao .p-cel_monitor,
+  #questao .p-email_monitor {
+    font-size: 11px;
+  }
+  #questao .img-cel, #questao .img-email {
+    height: 10px;
+    width: auto;
+  }
+  #questao .monitores_card-agenda th {
+    font-size: 10px;
+  }
+  #questao .img_monitor {
+    height: 60px;
+  }
+}
+
+@media (max-width: 350px) {
+  #questao .title_monitor {
+    font-size: 11px;
+  }
+  #questao .p-cel_monitor,
+  #questao .p-email_monitor {
+    font-size: 9px;
+  }
+  #questao .img-cel, #questao .img-email {
+    height: 7px;
+    width: auto;
+  }
+  #questao .monitores_card-agenda th {
+    font-size: 9px;
+  }
+  #questao .img_monitor {
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=aluno-monitores.css.map */

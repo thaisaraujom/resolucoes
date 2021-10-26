@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/modal-finalizar-questao-simulado.css">
+    <link rel="stylesheet" href="assets/css/modal-senha-salva.css">
+    <link rel="stylesheet" href="assets/css/modais.css">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/footer-light.css">
+    <link rel="stylesheet" href="assets/css/aluno-perfil.css">
+
+    <link rel="stylesheet" href="assets/css/cursinho-perfil.css">
+
+
+    <link rel="stylesheet" href="assets/css/aluno-monitores.css">
+
+
+    <title>Monitores - Aluno | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg"
+                                alt=""></a><a class="item-link" href="aluno-dashboard.html">Home</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/apostilas-branco.svg"
+                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg"
+                                alt=""></a><a class="item-link" href="aluno-modulo.html">Matérias</a></li>
+
+                    <li class="nav-item item-monitor"><a href=""><img
+                                src="assets/img/aluno-questao/monitores-laranja.svg" alt=""></a><a href=""
+                            class="item-link">Monitores</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
+                            class="item-link">Perfil</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
+                            href="" class="item-link">Sugerir Questão</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
+                            href="" class="item-link">Anotações</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/simulado.svg" alt=""></a><a
+                            href="" class="item-link">Simulado</a></li>
+                </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones">
+                        <a href="aluno-dashboard.html" class="desktop"><img class="home desktop"
+                                src="assets/img/aluno-modulo/icon.svg" alt=""></a>
+                        <img class="seta desktop" src="assets/img/aluno-modulo/seta.svg" alt="">
+                        <a href="aluno-dashboard.html" class="desktop">
+                            <p>Voltar</p>
+                        </a>
+                        <a href="aluno-dashboard.html"><img class="mobile seta-voltar"
+                                src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="conteudo-perfil">
+                    <div class="titulo mobile">
+                        <h1>Monitores</h1>
+                    </div>
+
+                    <div class="titulo desktop">
+                        <h1>Monitores</h1>
+                    </div>
+
+                    <div class="conteudo_monitor">
+                        <nav class="nav-materia">
+                            <div class="menu-materia">
+                                <p class="materia" data-filter="matematica" data-filterStatus="matematicaF">Matemática</p>
+                                <p class="materia" data-filter="portugues" data-filterStatus="portuguesF">Português</p>
+                                <p class="materia" data-filter="historia" data-filterStatus="historiaF">História</p>
+                                <p class="materia" data-filter="geografia" data-filterStatus="geografiaF">Geografia</p>
+                                <p class="materia" data-filter="biologia" data-filterStatus="biologiaF">Biologia</p>
+                                <p class="materia" data-filter="fisica" data-filterStatus="fisicaF">Física</p>
+                                <p class="materia" data-filter="literatura" data-filterStatus="literaturaF">Literatura</p>
+                                <p class="materia" data-filter="ingles" data-filterStatus="inglesF">Inglês</p>
+                                <p class="materia" data-filter="quimica" data-filterStatus="quimicaF">Química</p>
+                            </div>
+
+                            <div class="filtro-horario-dia">
+                                <form class="monitores_filter-date" action="">
+                                    <h3 class="monitores_title-date">Filtrar</h3>
+                                    <div class="div-check">
+                                        <div class="check-meu-perfil check-margin-right">
+                                            <div class="alternativas-check">
+                                                <input checked type="checkbox" value="0" name="campo-check"
+                                                    id="campo-check1" />
+                                                <label class="check" for="campo-check1">Segunda</label>
+                                            </div>
+                                            <div class="alternativas-check">
+                                                <input type="checkbox" value="1" name="campo-check" id="campo-check2" />
+                                                <label class="check" for="campo-check2">Terça</label>
+                                            </div>
+                                            <div class="alternativas-check">
+                                                <input checked type="checkbox" value="2" name="campo-check"
+                                                    id="campo-check3" />
+                                                <label class="check" for="campo-check3">Quarta</label>
+                                            </div>
+                                            <div class="alternativas-check">
+                                                <input type="checkbox" value="3" name="campo-check" id="campo-check4" />
+                                                <label class="check" for="campo-check4">Quinta</label>
+                                            </div>
+                                            <div class="alternativas-check">
+                                                <input checked type="checkbox" value="4" name="campo-check"
+                                                    id="campo-check5" />
+                                                <label class="check" for="campo-check5">Sexta</label>
+                                            </div>
+                                            <div class="alternativas-check">
+                                                <input type="checkbox" value="5" name="campo-check" id="campo-check6" />
+                                                <label class="check" for="campo-check6">Sábado</label>
+                                            </div>
+                                            <div class="alternativas-check">
+                                                <input type="checkbox" value="6" name="campo-check" id="campo-check7" />
+                                                <label class="check" for="campo-check7">Domingo</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="monitores_title-date monitores_title-horario">Horário</h3>
+                                    <input type="time" id="monitores_filter-horario" name="horario" min="09:00"
+                                        max="18:00" required>
+                                    <div class="button-buscar">
+                                        <button class="btn-laranja">Buscar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+
+                        <div class="nav-right">
+                            <div class="cards-monitores">
+                                <div class="cardM matematica">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor0.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM geografia">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor0.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM historia">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor0.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM matematica">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor0.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM matematica">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor3.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM fisica">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor1.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM portugues">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor0.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM portugues">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor0.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM quimica">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor0.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM quimica">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor0.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM biologia">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor0.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM biologia">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor0.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM literatura">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor0.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cardM biologia">
+                                    <div class="cardM-dentro">
+                                        <div class="card-left">
+                                            <img class="img_monitor" src="./assets/img/admin-dashboard/monitor0.jpg"
+                                                alt="">
+
+                                            <div class="dados_monitor">
+                                                <h1 class="title_monitor">Maria Helena</h1>
+
+                                                <div class="txt_monitor">
+
+                                                    <div class="cel_monitor">
+                                                        <img class="img-cel"
+                                                            src="./assets/img/monitores/whatsappSVG.svg" alt="">
+                                                        <p class="p-cel_monitor">
+                                                            (84) 9 9999-9999
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="email_monitor">
+                                                        <img class="img-email" src="./assets/img/monitores/mailSVG.svg"
+                                                            alt="">
+                                                        <p class="p-email_monitor">
+                                                            mariahelena@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="monitores_card-agenda">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>D</th>
+                                                    <th class="active">S</th>
+                                                    <th>T</th>
+                                                    <th class="active">Q</th>
+                                                    <th>Q</th>
+                                                    <th class="active">S</th>
+                                                    <th>S</th>
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="" class="form_pag desktop">
+                                <div class="paginacao">
+                                    <ul class="paginacao-admin">
+                                        <li><img class="passar-pagina desktop" src="./assets/img/aluno-perfil/voltar_seta.svg"
+                                                alt=""></li>
+                                        <li><a>
+                                                <div class="circle">1</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle circle-active">2</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">3</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">4</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">5</div>
+                                            </a></li>
+                                        <li><img class="passar-pagina desktop" src="./assets/img/aluno-perfil/passar_seta.svg"
+                                                alt=""></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="desktop" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg"
+                    alt=""></a>
+            <a class="mobile" href="http://www.ejectufrn.com.br/"><img class="img-logo"
+                    src="./assets/img/aluno-dashboard/mobile-eject.svg" alt=""></a>
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="tela hide"></div>
+
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+ 
+    <script src="./assets/js/filtro-disciplina.js"></script>
+    <script src="./assets/js/filtro-disciplina.js"></script>
+
+</body>
+
+</html>
