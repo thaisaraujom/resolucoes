@@ -244,12 +244,10 @@
             color: #595B5F;
         }
     }
-
     .form_materia {
         display: flex;
         flex-direction: column;
     }
-
     .menu-materia {
         input[type="radio"] + label:before {
             display: none;
