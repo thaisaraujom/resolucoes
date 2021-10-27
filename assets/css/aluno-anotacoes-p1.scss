@@ -27,6 +27,10 @@
   position: relative;
 }
 
+.anotacao--page__footer {
+  margin-top: 40px;
+}
+
 .anotacao_footer i {
   position: absolute;
   bottom: 2px;
@@ -205,7 +209,57 @@
   .cardM.active {
     display: flex;
   }
+
   .qtd-anotacoes {
     color: aqua;
   }
+}
+
+/***************** Anotações ******************/
+
+
+.anotacao--page__body {
+  width: calc(100% - 30px) !important;
+  height: 45vh;
+  padding: 0 15px;
+
+  resize: none
+}
+
+.anotacao--page__salvar-alteracoes-btn {
+  color: #FFFFFF !important;
+  ;
+}
+
+.anotacao__date-time {
+  margin: 10px 0;
+}
+
+.anotacao--page__next-prev {
+  display: flex;
+  align-items: center;
+
+}
+
+.anotacao--page__next-prev img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+@media (max-width: 770px) {
+
+  .anotacao--page {
+    width: 100%;
+    border-bottom: none;
+  }
+  .anotacao--page__body {
+    margin: 0;
+    padding: 0 15px;
+ 
+  }
+  .anotacao--page__body:focus {
+    box-shadow: 10px 5px 5px 5px;
+    outline: 0;
+  }
+
 }

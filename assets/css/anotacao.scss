@@ -1,5 +1,5 @@
 .anotacao--page{
-    margin-left: 60px;
+
     padding: 0;
 
     select{
@@ -20,9 +20,7 @@
         padding: 15px;
     }
     &__footer{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+        margin-top: 100px;
     }
     &__controls-date-time{
         display: flex;

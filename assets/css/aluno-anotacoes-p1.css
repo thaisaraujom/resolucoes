@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .anotacao_title,
 .anotacao_body p,
 .anotacao_date-time p {
@@ -31,6 +32,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+}
+
+.anotacao--page__footer {
+  margin-top: 40px;
 }
 
 .anotacao_footer i {
@@ -205,6 +210,52 @@
   }
   .qtd-anotacoes {
     color: aqua;
+  }
+}
+
+/***************** Anotações ******************/
+.anotacao--page__body {
+  width: calc(100% - 30px) !important;
+  height: 45vh;
+  padding: 0 15px;
+  resize: none;
+}
+
+.anotacao--page__salvar-alteracoes-btn {
+  color: #FFFFFF !important;
+}
+
+.anotacao__date-time {
+  margin: 10px 0;
+}
+
+.anotacao--page__next-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.anotacao--page__next-prev img {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media (max-width: 770px) {
+  .anotacao--page {
+    width: 100%;
+    border-bottom: none;
+  }
+  .anotacao--page__body {
+    margin: 0;
+    padding: 0 15px;
+  }
+  .anotacao--page__body:focus {
+    -webkit-box-shadow: 10px 5px 5px 5px;
+            box-shadow: 10px 5px 5px 5px;
+    outline: 0;
   }
 }
 /*# sourceMappingURL=aluno-anotacoes-p1.css.map */
