@@ -90,7 +90,6 @@ const button_salvar = document.querySelector('.anotacao--page__salvar-alteracoes
 const button_salvar_mobile = document.querySelector('.btn-salvar')
 
 edit_pencil.addEventListener('click', ()=> {
-    alert('teste')
     anotacao_page.removeAttribute('disabled')
     edit_pencil.style.display = 'none'
     button_salvar_mobile.style.display = 'flex';
