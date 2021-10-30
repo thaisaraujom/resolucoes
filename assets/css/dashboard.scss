@@ -296,7 +296,17 @@
     }
 }
 @media (max-width: 600px) {
-    .cards-carrocel {
-        padding: 0 1%;
+    .cards-materias button{
+        margin: 0 10px;
+    }
+    .card-materia p{
+        font-size: 14px;
+    }
+    .um-card {
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    .tempo-estudos {
+        padding: 12px 0;
     }
 }
