@@ -46,8 +46,15 @@
                             </form>
 
                         </div>
+                        <div class="filtro">
+                            <button><img src="./assets/img/dashboard/Filtro.svg" alt=""></button>
+                            <button class="filtro-botao-2"><img src="./assets/img/dashboard/Removedor-de-filtro.svg" alt=""></button>
+                        </div>
+                        
                     </div>
+                    
 
+                    
 
                     <div class="direita">
                         <div class="sino-not">
@@ -69,7 +76,7 @@
         </nav>
     </header>
 
-
+    
 
     <header id="navbar-lateral" class="drop1 ">
         <nav>
@@ -120,7 +127,44 @@
 
         </nav>
     </header>
-
+    <form class="filtro-popup hide" id="popup-dos-filtros">
+        <h3>Filtar Por</h3>
+        <div class="label-select">
+            <label for="">Diciplina</label>
+            <select name="Matematica" id="">
+                <option value="matematica">Matematica</option>
+                <option value="valor2" selected>geografia</option>
+                <option value="valor3">fisica</option>
+            </select>
+        </div>
+        <div class="label-select">
+            <label for="">Tipo</label>
+            <select name="Matematica" id="">
+                <option value="valor1">Matematica</option>
+                <option value="valor2" selected>geografia</option>
+                <option value="valor3">fisica</option>
+            </select>
+        </div>
+        <div class="label-select">
+            <label for="">Status</label>
+            <select name="Matematica" id="">
+                <option value="valor1">Matematica</option>
+                <option value="valor2" selected>geografia</option>
+                <option value="valor3">fisica</option>
+            </select>
+        </div>
+        <div class="label-select">
+            <label for="">Assunto</label>
+            <select name="Matematica" id="">
+                <option value="valor1">Matematica</option>
+                <option value="valor2" selected>geografia</option>
+                <option value="valor3">fisica</option>
+            </select>
+        </div>
+        <button class="botao-filtrar" type="submit">
+            Filtrar
+        </button>
+    </form>
     <section id="questao">
         <div class="container">
             <div class="overlay">
@@ -247,45 +291,43 @@
                             <h4>PLANO DE ESTUDOS</h4>
                             <div class="plano-checkbox">
                                 <div class="plano-input-label">
-                                    <input type="checkbox">
-                                    <label for="">lorem ipsum</label>
+                                    <input id="input1" type="checkbox">
+                                    <label for="input1">lorem ipsum</label>
                                 </div>
                                 <div class="plano-input-label">
-                                    <input type="checkbox">
-                                    <label for="">lorem ipsum</label>
+                                    <input id="input2" type="checkbox">
+                                    <label for="input2">lorem ipsum</label>
                                 </div>
                                 <div class="plano-input-label">
-                                    <input type="checkbox">
-                                    <label for="">lorem ipsum</label>
+                                    <input type="checkbox" id="input3">
+                                    <label for="input3">lorem ipsum</label>
                                 </div>
                                 <div class="plano-input-label">
-                                    <input type="checkbox">
-                                    <label for="">lorem ipsum</label>
+                                    <input type="checkbox" id="input4">
+                                    <label for="input4">lorem ipsum</label>
                                 </div>
                                 <div class="plano-input-label">
-                                    <input type="checkbox">
-                                    <label for="">lorem ipsum</label>
+                                    <input type="checkbox" id="input5">
+                                    <label for="input5">lorem ipsum</label>
                                 </div>
                                 <div class="plano-input-label">
-                                    <input type="checkbox">
-                                    <label for="">lorem ipsum</label>
+                                    <input type="checkbox" id="input6">
+                                    <label for="input6">lorem ipsum</label>
                                 </div>
                                 <div class="plano-input-label">
-                                    <input type="checkbox">
-                                    <label for="">lorem ipsum</label>
+                                    <input type="checkbox" id="input7">
+                                    <label for="input7">lorem ipsum</label>
                                 </div>
                                 <div class="plano-input-label">
-                                    <input type="checkbox">
-                                    <label for="">lorem ipsum</label>
+                                    <input type="checkbox" id="input8">
+                                    <label for="input8">lorem ipsum</label>
                                 </div>
                                 <div class="plano-input-label">
-                                    <input type="checkbox">
-                                    <label for="">lorem ipsum</label>
+                                    <input type="checkbox" id="input9">
+                                    <label for="input9">lorem ipsum</label>
                                 </div>
-                                <div class="plano-input-label">
-                                    <input type="checkbox">
-                                    <label for="">lorem ipsum</label>
-                                </div>
+                                
+                                
                             </div>
                         </div>
                         <div class="quatro-cards">
@@ -390,6 +432,9 @@
 
         </form>
     </div>
+
+
+    
 
     <div class="tela hide"></div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

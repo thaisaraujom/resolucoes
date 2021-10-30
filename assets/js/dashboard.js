@@ -33,3 +33,9 @@ $('.cards-materias').slick({
     // instead of a settings object
   ]
 });
+
+var hide = document.querySelector(".filtro")
+hide.addEventListener("click", function(){
+    var navbar__wrap = document.querySelector("#popup-dos-filtros");
+    navbar__wrap.classList.toggle("hide")
+})
