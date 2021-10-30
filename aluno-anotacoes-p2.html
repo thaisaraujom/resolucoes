@@ -142,21 +142,35 @@
 
                 <div class="conteudo-perfil">
                     <!-- DISCIPLINAS MOBILE -->
-                    <div class="materias-drop mobile">
+                    <form action="">
+                        <div class="materias-drop mobile">
 
-                        <select id="materias-selector" name="select-materias">
-                            <option value="matematica" selected value>Matemática </option>
-                            <option value="fisica">Física</option>
-                            <option value="quimica">Química</option>
-                            <option value="biologia">Biologia</option>
-                            <option value="historia">História</option>
-                            <option value="geografia">Geografia</option>
-                            <option value="literatura">Literatura</option>
-                            <option value="ingles">Inglês</option>
-                        </select>
+                            <select id="materias-selector" name="select-materias">
+                                <option value="matematica" selected value>Matemática </option>
+                                <option value="fisica">Física</option>
+                                <option value="quimica">Química</option>
+                                <option value="biologia">Biologia</option>
+                                <option value="historia">História</option>
+                                <option value="geografia">Geografia</option>
+                                <option value="literatura">Literatura</option>
+                                <option value="ingles">Inglês</option>
+                            </select>
+
+                        </div>
+                    </form>
+                    <!-- FIM DISCIPLINAS MOBILE -->
+
+                    <div class="line-icon mobile">
+                        <a href="">
+                            <p>Ir para a questão</p>
+                        </a>
+
+                        <div class="button-right">
+                            <button class="edit-pencil"><img src="./assets/img/anotacao/pencil.svg" alt=""></button>
+                            <button><img src="./assets/img/anotacao/trash.svg" alt=""></button>
+                        </div>
 
                     </div>
-                    <!-- FIM DISCIPLINAS MOBILE -->
 
                     <div class="titulo desktop">
                         <h1>Minhas anotações</h1>
@@ -211,72 +225,78 @@
                         <div class="nav-right">
 
                             <!-- ANOTAÇAO -->
-                            <section class="anotacao anotacao--page">
-                                <header class="anotacao--page__header">
-                                    <select name="questao" id="" class="anotacao--page__select">
-                                        <optgroup>
-                                            <option disabled selected value>Questão</option>
-                                            <option value="1">Questão 1</option>
-                                            <option value="2">Questão 2</option>
-                                            <option value="3">Questão 3</option>
-                                            <option value="4">Questão 4</option>
-                                        </optgroup>
-                                    </select>
-                                </header>
-                                <form>
-                                    <textarea class="anotacao--page__body" disabled>
-            Conjuntos
-            N={0,1,2,3,4,5,...}Números Naturais
-            Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros
+                            <form action="">
+                                <section class="anotacao anotacao--page">
+                                    <header class="anotacao--page__header">
+                                        <select name="questao" id="" class="anotacao--page__select">
+                                            <optgroup>
+                                                <option disabled selected value>Questão</option>
+                                                <option value="1">Questão 1</option>
+                                                <option value="2">Questão 2</option>
+                                                <option value="3">Questão 3</option>
+                                                <option value="4">Questão 4</option>
+                                            </optgroup>
+                                        </select>
+                                    </header>
+
+                                    <textarea class="anotacao--page__body" disabled>Conjuntos
+N={0,1,2,3,4,5,...}Números Naturais
+Z={..., -4, -3, -2,-1,0,1,2,3}Números Inteiros
             
-              Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis
-              )Números racionais (são números que podem ser transformados em
-              fração)
+Q ={A/B; (a sobre b ) a,b,€ Z e b≠0} (frações irredutíveis
+)Números racionais (são números que podem ser transformados em fração)
+
+I={x/x não é racional}Números Irracionais
+R= Q U I (racionais unem a irracionais ) Números reais
             
-            I={x/x não é racional}Números Irracionais
-            R= Q U I (racionais unem a irracionais ) Números reais
+-__________________________________0_________________________________________+
             
-              -__________________________________0_________________________________________+
-            
-            R*=R-{0}
-            R+=reais não negativos
-            R_= reais não positivos
+R*=R-{0}
+R+=reais não negativos
+R_= reais não positivos
           </textarea>
-                                </form>
-                                <div class="anotacao--page__footer">
-                                    <div class="anotacao--page__controls-date-time">
-                                        <a href="#" class="anotacao--page__salvar-alteracoes-btn">Salvar</a>
-                                        <div class="anotacao__date-time">
-                                            <p>
-                                                <span class="anotacao__date">23/06/20</span>&nbsp;às&nbsp;<span
-                                                    class="anotacao__time">15:34</span>
-                                            </p>
-                                        </div>
+                                    <div class="btn-salvar-mobile mobile">
+                                        <button href="#" class="btn-salvar">Salvar</button>
+                                    </div>
+
+                                    <div class="anotacao--page__footer">
+
+                                        <div class="anotacao--page__controls-date-time">
+                                            <button href="#"
+                                                class="anotacao--page__salvar-alteracoes-btn">Salvar</button>
+
+                                            <div class="anotacao__date-time">
+                                                <p>
+                                                    <span class="anotacao__date">23/06/20</span>&nbsp;às&nbsp;<span
+                                                        class="anotacao__time">15:34</span>
+                                                </p>
+                                            </div>
 
 
-                                    </div>
-                                    <div class="anotacao--controls">
-                                        <img id="anotacao--controls__edit" src="assets/img/anotacao/pencil.svg"
-                                            alt="" />
-                                        <img id="anotacao--controls__remove" src="assets/img/anotacao/trash.svg" alt=""
-                                            data-toggle="modal" data-target="#modal-excluir-anotacao" />
+                                        </div>
+                                        <div class="anotacao--controls">
+                                            <img id="anotacao--controls__edit" src="assets/img/anotacao/pencil.svg"
+                                                alt="" />
+                                            <img id="anotacao--controls__remove" src="assets/img/anotacao/trash.svg"
+                                                alt="" data-toggle="modal" data-target="#modal-excluir-anotacao" />
 
-                                    </div>
-                                    <div class="anotacao--page__next-prev">
-                                        <div class="anotacao--page__prev">
-                                            <a href=""><img src="assets/img/anotacao/Prev.svg" alt="" />
-                                                <h3>Anterior</h3>
-                                            </a>
                                         </div>
-                                        <div class="anotacao--page__next">
-                                            <a href="">
-                                                <h3>Próxima</h3>
-                                                <img src="assets/img/anotacao/Next.svg" alt="" />
-                                            </a>
+                                        <div class="anotacao--page__next-prev">
+                                            <div class="anotacao--page__prev">
+                                                <a href=""><img src="assets/img/anotacao/Prev.svg" alt="" />
+                                                    <h3>Anterior</h3>
+                                                </a>
+                                            </div>
+                                            <div class="anotacao--page__next">
+                                                <a href="">
+                                                    <h3>Próxima</h3>
+                                                    <img src="assets/img/anotacao/Next.svg" alt="" />
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </section>
+                                </section>
+                            </form>
                             <!-- <div class="cardM esconder-card geografia" data-item='geografia'>
                                     <div class="cardM-dentro card_anotacoes">
                                        
@@ -471,7 +491,7 @@
 
 
 
-    <footer>
+    <footer class="desktop">
         <div class="texto-rodape">
             <p>Resoluções.com © 2020 | Desenvolvido pela </p>
         </div>
@@ -485,6 +505,28 @@
                 <p class="p-logo">EJECT</p>
             </a>
         </div>
+
+    </footer>
+
+    <footer class="mobile">
+        <form action="">
+
+            <div class="footer_content">
+
+                <div class="footer_left">
+                    <button><img src="./assets/img/anotacao/Prev.svg" alt=""></button>
+                </div>
+
+                <div class="footer_center">
+                    <p>23/06/20</span>&nbsp;às&nbsp;<span class="anotacao__time">15:34</span></p>
+                </div>
+
+                <div class="footer_right">
+                    <button><img src="./assets/img/anotacao/Next.svg" alt=""></button>
+                </div>
+            </div>
+
+        </form>
 
     </footer>
 

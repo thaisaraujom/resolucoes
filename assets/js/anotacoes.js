@@ -48,10 +48,16 @@ cardsM.forEach((card_single)=> {
     })
 })
 
-
-
-
-
-
 /* FIM ABRIR/FECHAR MODAL --------------------------------------------------------------------------- */
 
+const anotacao_page = document.querySelector('.anotacao--page__body')
+const edit_pencil = document.querySelector('.edit-pencil')
+const button_salvar = document.querySelector('.anotacao--page__salvar-alteracoes-btn')
+const button_salvar_mobile = document.querySelector('.btn-salvar')
+
+edit_pencil.addEventListener('click', ()=> {
+    alert('teste')
+    anotacao_page.removeAttribute('disabled')
+    edit_pencil.style.display = 'none'
+    button_salvar_mobile.style.display = 'flex';
+})
