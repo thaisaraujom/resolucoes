@@ -30,6 +30,10 @@ const modal_apagar_parceiro = document.querySelector('.modal-finalizar-overlay')
 const x_sair = document.querySelector('.x-sair')
 const button_cancelar_modal = document.querySelector('.button-nao')
 
+/* LIXEIRA ANOTAÇOES PARTE 2 */
+const lixeira_abrir = document.querySelector('.lixeira-modal')
+const lixeira_abrir1 = document.querySelector('.btn-lixeira')
+
 cardsM.forEach((card_single)=> {
     console.log(card_single)
     const apagar_parceiro = card_single.querySelector ('.anotacao_footer > i')
@@ -46,6 +50,36 @@ cardsM.forEach((card_single)=> {
         event.preventDefault()
         modal_apagar_parceiro.style.visibility = 'hidden'
     })
+})
+
+/* DESKTOP PT2 */
+lixeira_abrir.addEventListener('click', ()=> {
+    modal_apagar_parceiro.style.visibility = 'visible'
+})
+
+x_sair.addEventListener('click', () => {
+    event.preventDefault()
+    modal_apagar_parceiro.style.visibility = 'hidden'
+})
+
+button_cancelar_modal.addEventListener('click', () => {
+    event.preventDefault()
+    modal_apagar_parceiro.style.visibility = 'hidden'
+})
+
+/* MOBILE PT2 */
+lixeira_abrir1.addEventListener('click', ()=> {
+    modal_apagar_parceiro.style.visibility = 'visible'
+})
+
+x_sair.addEventListener('click', () => {
+    event.preventDefault()
+    modal_apagar_parceiro.style.visibility = 'hidden'
+})
+
+button_cancelar_modal.addEventListener('click', () => {
+    event.preventDefault()
+    modal_apagar_parceiro.style.visibility = 'hidden'
 })
 
 /* FIM ABRIR/FECHAR MODAL --------------------------------------------------------------------------- */
