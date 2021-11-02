@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/modal-finalizar-questao-simulado.css">
+    <link rel="stylesheet" href="assets/css/modal-senha-salva.css">
+    <link rel="stylesheet" href="assets/css/modais.css">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/footer-light.css">
+    <link rel="stylesheet" href="assets/css/aluno-perfil.css">
+    
+
+    <title>Perfil - Aluno | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg"
+                                alt=""></a><a class="item-link" href="aluno-dashboard.html">Home</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/apostilas-branco.svg"
+                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg"
+                                alt=""></a><a class="item-link" href="aluno-modulo.html">Matérias</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
+                            href="" class="item-link">Monitores</a></li>
+
+                    <li class="nav-item item-perfil"><a href=""><img src="assets/img/aluno-questao/perfil-laranja.svg"
+                                alt=""></a><a href="" class="item-link">Perfil</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
+                            href="" class="item-link">Sugerir Questão</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
+                            href="" class="item-link">Anotações</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/simulado.svg" alt=""></a><a
+                            href="" class="item-link">Simulado</a></li>
+                </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones">
+                        <a href="aluno-dashboard.html" class="desktop"><img class="home desktop"
+                                src="assets/img/aluno-modulo/icon.svg" alt=""></a>
+                        <img class="seta desktop" src="assets/img/aluno-modulo/seta.svg" alt="">
+                        <a href="aluno-dashboard.html" class="desktop">
+                            <p>Voltar</p>
+                        </a>
+                        <a href="aluno-dashboard.html"><img class="mobile seta-voltar"
+                                src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="conteudo-perfil">
+                    <div class="titulo mobile">
+                        <h1>Meu Perfil</h1>
+                    </div>
+
+                    <div class="titulo desktop">
+                        <h1>Meu Perfil</h1>
+                    </div>
+                    <div class="image-box">
+                        <img class="imagem-do-perfil" src="./assets/img/aluno-perfil/foto-perfil.svg">
+                    </div>
+
+                    <div class="campos-preenchimento">
+                        <form action="">
+                            <div class="campo">
+                                <label class="campo-label" for="text">Nome:</label>
+                                <input class="area-edit" disabled="true" placeholder="Alisson Bastos Medeiros"
+                                    type="text" name="text" id="text">
+                                <img class="h-celular desktop habilitar-edicao"
+                                    src="" alt="">
+                                <img class="h-celular mobile habilitar-edicaoM"
+                                    src="" alt="">
+                            </div>
+                            <div class="campo">
+                                <label class="campo-label" for="text1">CPF:</label>
+                                <input class="area-edit" disabled="true" placeholder="000.000.000 - 00" type="text"
+                                    name="text" id="text1">
+                                <img class="h-celular desktop habilitar-edicao"
+                                    src="" alt="">
+                                <img class="h-celular mobile habilitar-edicaoM"
+                                    src="" alt="">
+                            </div>
+                            <div class="campo">
+                                <label class="campo-label" for="email">Email:</label>
+                                <input class="area-edit" disabled="true" placeholder="exemplo@email.com" type="email"
+                                    name="email" id="email">
+                                    <img class="h-celular desktop habilitar-edicao"
+                                    src="" alt="">
+                                <img class="h-celular mobile habilitar-edicaoM"
+                                    src="" alt="">
+                            </div>
+                            <div class="campo">
+                                <label class="campo-label" for="text2">Celular:</label>
+                                <input class="area-edit phone" disabled="true" placeholder="(00) 0 0000 - 0000"
+                                    type="text" name="text" id="text2">
+                            </div>
+                            <div class="campo-select select">
+                                <div class="opcao-curso">
+                                    <p class="letra-branca-bold">Qual a sua opção de curso?</p>
+                                    <div class="opcao-selecionada"><p>Ciências e tecnologia</p></div>
+                                </div>
+                            </div>
+                            <div class="campo-meu-perfil">
+                                <div class="label-lapis">
+                                    <label for="text2" class="mp-mobile">Tempo de Cursinho</label>
+                                </div>
+                                <div class="radio-meu-perfil">
+                                    <div class="alternativas-radio">
+                                        <input checked type="radio" disabled="true" value="0" name="campo-radio" id="campo-radio1" />
+                                        <label class="radio" for="campo-radio1">1 a 2 anos de cursinho</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="campo alt-campo">
+                                <p class="letra-branca-bold">Seu cursinho:</p>
+                                <p class="letra-branca-normal">Ciências aplicadas</p>
+                            </div>
+                            <div class="campo alt-campo">
+                                <p class="letra-branca-bold">Plano:</p>
+                                <p class="letra-branca-normal">A</p>
+                            </div>
+                            <div class="botoes">
+                                <a href="aluno-perfil.html" class="btn-padrao btn-senha">Editar</a>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="desktop" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg"
+                    alt=""></a>
+            <a class="mobile" href="http://www.ejectufrn.com.br/"><img class="img-logo"
+                    src="./assets/img/aluno-dashboard/mobile-eject.svg" alt=""></a>
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="modal-finalizar-overlay" id="alt-radio-checked">
+        <form class="modal-finalizar alt-modal">
+            <div class="modal-sair">
+                <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <div class="modal-finalizar-conteudo alt-conteudo">
+                <p class="p-titulo-modal-finalizar">Altere seu perfil</p>
+                <div class="radio-meu-perfil alt-radio-mp">
+                    <div class="alternativas-radio">
+                        <input checked type="radio" value="0" name="campo-radio-alt" id="campo-radio-alt1" />
+                        <label class="radio" for="campo-radio-alt1">Ensino Médio Incompleto </label>
+                    </div>
+                    <div class="alternativas-radio">
+                        <input type="radio" value="1" name="campo-radio-alt" id="campo-radio-alt2" />
+                        <label class="radio" for="campo-radio-alt2">1 a 2 anos de cursinho</label>
+                    </div>
+                    <div class="alternativas-radio">
+                        <input type="radio" value="2" name="campo-radio-alt" id="campo-radio-alt3" />
+                        <label class="radio" for="campo-radio-alt3">3 a 4 anos de cursinho</label>
+                    </div>
+                    <div class="alternativas-radio">
+                        <input type="radio" value="3" name="campo-radio-alt" id="campo-radio-alt4" />
+                        <label class="radio" for="campo-radio-alt4">5 ou mais anos de cursinho</label>
+                    </div>
+                </div>
+                <div class="div-btn-modal">
+                    <button type="submit" class="btn-padrao">Salvar</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="tela hide"></div>
+
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/disparar-modal.js"></script>
+    <script src="assets/js/perfil-habilitaredit.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="assets/js/telefone-mask.js"></script>
+    <script src="./assets/js/perfil-select.js"></script>
+
+</body>
+
+</html>
