@@ -961,6 +961,12 @@ a:link {
   #questao .exercicios, #questao .conteudos {
     padding: 2% 1%;
   }
+  #questao .nome-assunto .seta-baixa {
+    padding: 0;
+  }
+  #questao .nome-assunto .seta-cima {
+    padding: 1.2% 3%;
+  }
 }
 
 @media (max-width: 450px) {
