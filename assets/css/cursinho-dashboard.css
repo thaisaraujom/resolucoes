@@ -12,6 +12,56 @@
   margin: 0 0 7px 0;
 }
 
+#questao .cursinho-admin {
+  position: relative;
+}
+
+#questao .ver-todas,
+#questao .editar-instrucao {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+#questao .b-editar {
+  background: #F58E08;
+  -webkit-box-shadow: 0px 2px 2px rgba(32, 32, 32, 0.25);
+          box-shadow: 0px 2px 2px rgba(32, 32, 32, 0.25);
+  border-radius: 0px 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: .5% 2%;
+}
+
+#questao .a-editar {
+  color: #292323;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#questao .view-r {
+  position: relative;
+}
+
+#questao .visualizar-rank {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+#questao .visualizar-rank a {
+  font-size: 12px;
+}
+
+#questao .b-cadastrar-simulado {
+  margin-left: 0;
+}
+
 #questao .button-instrucao {
   padding: 2px 5px;
   margin-left: 10px;
@@ -35,6 +85,7 @@
 #questao .simulado {
   padding-bottom: 1%;
   padding-top: 0;
+  position: relative;
 }
 
 #questao .simulado-disponivel {
@@ -206,7 +257,28 @@
   margin-bottom: 15px;
 }
 
+@media (max-width: 1120px) {
+  #questao .editar-instrucao {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .editar-instrucao {
+    display: none;
+  }
+  .editar-instrucao a {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
+  #questao .ver-todas {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
   #questao .mensagens {
     border-radius: 10px;
   }
@@ -233,10 +305,32 @@
   #questao .input-cursinhos-wrap .button-instrucao {
     margin-left: 0;
   }
+  #questao .a-editar {
+    font-size: 12px;
+  }
+  #questao .a-editar-rank {
+    font-size: 8px;
+  }
   #questao input[type="checkbox"] + label:before {
     height: 12px;
     width: 12px;
     margin-top: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  #questao .ver-todas {
+    right: 0;
+  }
+  #questao .p-ver-todas {
+    font-size: 9.5px;
+  }
+}
+
+@media (max-width: 370px) {
+  #questao .visualizar-rank {
+    right: 0;
+    bottom: -5px;
   }
 }
 /*# sourceMappingURL=cursinho-dashboard.css.map */
