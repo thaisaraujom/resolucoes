@@ -34,6 +34,33 @@
   border-bottom: 1px solid #282c35;
 }
 
+#questao .mensagem {
+  width: calc(100% - 20%);
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 139% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  padding: 10%;
+  resize: none;
+  color: #292323;
+  overflow: hidden;
+}
+
+#questao .mensagem::-webkit-scrollbar {
+  width: 2px;
+  background-color: #E4E0E0;
+}
+
 #questao .mensagens {
   cursor: default;
 }
@@ -49,6 +76,26 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#questao .enviada-por {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 10%;
+  padding: 5% 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+#questao .border-mensagem {
+  border-bottom: 1px solid #282C35;
 }
 
 #questao input[type="checkbox"] + label:before {
@@ -163,7 +210,8 @@
   background: #F2F2F2 url("../img/admin-dashboard/sdrop.svg") 95.5% 50% no-repeat;
 }
 
-#questao .filtrar-por, #questao .ordenar-por {
+#questao .filtrar-por,
+#questao .ordenar-por {
   margin-top: 10px;
 }
 
@@ -171,7 +219,8 @@
   color: #FFFFFF;
 }
 
-#questao select#filtrar1, #questao select#filtrar2 {
+#questao select#filtrar1,
+#questao select#filtrar2 {
   background: #F2F2F2;
   border-radius: 10px;
   border: none;
@@ -184,7 +233,8 @@
   margin-bottom: 10px;
 }
 
-#questao select#filtrar1, #questao select#filtrar2 {
+#questao select#filtrar1,
+#questao select#filtrar2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -221,7 +271,7 @@
 }
 
 #questao .paginacao-admin li {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -251,7 +301,8 @@
     display: -ms-flexbox;
     display: flex;
   }
-  #questao select#filtrar1, #questao select#filtrar2 {
+  #questao select#filtrar1,
+  #questao select#filtrar2 {
     color: #282C35;
     width: 120px;
     background: #ebe7e4 url("../img/admin-dashboard/sdrop.svg") 100% 50% no-repeat;

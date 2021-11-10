@@ -32,6 +32,34 @@
         border-bottom: 1px solid #282c35;
     }
 
+    .mensagem {
+        width: calc(100% - 20%);
+        border: none;
+
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 139% */
+
+        display: flex;
+        align-items: center;
+        text-align: justify;
+
+        padding: 10%;
+        resize: none;
+        color: #292323;
+
+        overflow: hidden;
+    }
+
+    .mensagem::-webkit-scrollbar {
+        width: 2px;
+        background-color: #E4E0E0;
+    }
+
+
     .mensagens {
         cursor: default;
     }
@@ -47,6 +75,19 @@
         padding: 2px;
 
         display: flex;
+    }
+
+    .enviada-por {
+        display: flex;
+        align-items: flex-end;
+        margin: 10%;
+        padding: 5% 0;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .border-mensagem {
+        border-bottom: 1px solid #282C35;
     }
 
     input[type="checkbox"]+label:before {
@@ -163,14 +204,17 @@
         background: #F2F2F2 url("../img/admin-dashboard/sdrop.svg") 95.5% 50% no-repeat;
     }
 
-    .filtrar-por, .ordenar-por {
+    .filtrar-por,
+    .ordenar-por {
         margin-top: 10px;
     }
 
-    .filtrar-por > label {
+    .filtrar-por>label {
         color: #FFFFFF;
     }
-    select#filtrar1, select#filtrar2 {
+
+    select#filtrar1,
+    select#filtrar2 {
         background: #F2F2F2;
         border-radius: 10px;
         border: none;
@@ -186,7 +230,8 @@
 
     }
 
-    select#filtrar1,  select#filtrar2 {
+    select#filtrar1,
+    select#filtrar2 {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -225,7 +270,7 @@
 }
 
 #questao .paginacao-admin li {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 13px;
@@ -248,19 +293,23 @@
         .icones {
             display: flex;
         }
+
         .mobile.seta-voltar {
             display: flex;
         }
-        
-        select#filtrar1, select#filtrar2 {
+
+        select#filtrar1,
+        select#filtrar2 {
             color: #282C35;
             width: 120px;
             background: #ebe7e4 url("../img/admin-dashboard/sdrop.svg") 100% 50% no-repeat;
             margin-right: 10px;
         }
-        .filtrar-por > label {
+
+        .filtrar-por>label {
             color: #282C35;
         }
+
         select#ordenar {
             width: 100px;
         }

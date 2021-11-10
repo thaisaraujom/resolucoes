@@ -25,6 +25,10 @@ body {
         padding: 2%;
     }
 
+    .aba-exercicio, .aba-conteudos {
+        flex-direction: column;
+    }
+
     .imagem-video {
         margin: 0 10px;
         margin-bottom: 15px;
@@ -293,6 +297,10 @@ body {
 
         .seta-baixa {
             padding: 2% 3%;
+        }
+
+        .seta-baixa.selecionado {
+            transform: rotate(180deg);
         }
 
         .seta-cima {
@@ -1021,15 +1029,15 @@ a:link {
 }
 
 #questao .exercicios-assunto::-webkit-scrollbar {
-    width: 2px;
+    width: 4px;
     background-color: #E4E0E0;
 }
 
 #questao .exercicios-assunto::-webkit-scrollbar-thumb {
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 4px 4px rgba(219, 219, 219, 0.35);
     border-radius: 25px;
-    background-color: #000000;
+    background-color: #d7d5d4;
 }
 
 #questao .paginacao {
