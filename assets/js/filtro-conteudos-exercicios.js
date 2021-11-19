@@ -62,21 +62,13 @@ conteudos_exerccios.forEach((contentTudo_single)=> {
 var card_assunto = document.querySelectorAll('.card-assunto')
 
 card_assunto.forEach((card_single=>{
-    const seta_cima = card_single.querySelector('.seta-cima')
     const seta_baixo = card_single.querySelector('.seta-baixa')
     const nome_assunto = card_single.querySelector('.nome-assunto')
-
-    seta_baixo.addEventListener('click', ()=> {
-        card_single.classList.add('selecionado')
-        seta_baixo.style.display = 'none'
-
-        seta_cima.style.display = 'flex'
+    
+    nome_assunto.addEventListener('click', ()=> {
+        card_single.classList.toggle('selecionado')
+        seta_baixo.classList.toggle('selecionado')
     })
-    seta_cima.addEventListener('click', ()=> {
-        card_single.classList.remove('selecionado')
-        seta_baixo.style.display = 'flex'
 
-        seta_cima.style.display = 'none'
-    })
 })) 
 
