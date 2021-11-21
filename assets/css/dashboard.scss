@@ -16,9 +16,13 @@
 }
 .cards-materias {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 90%;
     margin-bottom: 25px;
+}
+.add-carrocel {
+    display: flex;
+    justify-content: space-around;
 }
 .card-materia {
     background: #282C35;
@@ -309,6 +313,19 @@ input[type="checkbox"] {
 .filtro-popup h3 {
     margin-top: 10px;
 }
+.not-popup {
+    position: absolute;
+    top: 50px; right: 2%;
+    height: auto;
+    width: 254px;
+    z-index: 1000;
+    background: #F0F0F0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
 .label-select {
     display: flex;
     flex-direction: column;
@@ -334,6 +351,9 @@ input[type="checkbox"] {
     margin-bottom: 5px;
 }
 .hide {
+    display: none;
+}
+.hide2 {
     display: none;
 }
 .botao-filtrar {

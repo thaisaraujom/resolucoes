@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/dashboard.css">
     
 
-    <title>Perfil - Aluno | Resoluções.com</title>
+    <title>Dashboard | Resoluções.com</title>
 </head>
 
 <body>
@@ -165,6 +165,44 @@
             Filtrar
         </button>
     </form>
+    <form class="not-popup hide2" id="popup-das-notificacoes">
+        <h3>Filtrar Por</h3>
+        <div class="label-select">
+            <label for="">Diciplina</label>
+            <select name="Matematica" id="">
+                <option value="matematica">Matematica</option>
+                <option value="valor2" selected>geografia</option>
+                <option value="valor3">fisica</option>
+            </select>
+        </div>
+        <div class="label-select">
+            <label for="">Tipo</label>
+            <select name="Matematica" id="">
+                <option value="valor1">Matematica</option>
+                <option value="valor2" selected>geografia</option>
+                <option value="valor3">fisica</option>
+            </select>
+        </div>
+        <div class="label-select">
+            <label for="">Status</label>
+            <select name="Matematica" id="">
+                <option value="valor1">Matematica</option>
+                <option value="valor2" selected>geografia</option>
+                <option value="valor3">fisica</option>
+            </select>
+        </div>
+        <div class="label-select">
+            <label for="">Assunto</label>
+            <select name="Matematica" id="">
+                <option value="valor1">Matematica</option>
+                <option value="valor2" selected>geografia</option>
+                <option value="valor3">fisica</option>
+            </select>
+        </div>
+        <button class="botao-filtrar" type="submit">
+            Filtrar
+        </button>
+    </form>
     <section id="questao">
         <div class="container">
             <div class="overlay">
@@ -175,7 +213,7 @@
                 <div class="conteudo-dashboard">
                     <div class="cards-carrocel">
                             <h1>PROGRESSO</h1>
-                        <div class="cards-materias">
+                        <div class="cards-materias add-carrocel">
                             <div class="card-materia">
                                 <img src="./assets/img/dashboard/book1.svg" alt="">
                                 <div class="card-materia-content">
@@ -399,39 +437,6 @@
 
     </footer>
 
-    <div class="modal-finalizar-overlay" id="alt-radio-checked">
-        <form class="modal-finalizar alt-modal">
-            <div class="modal-sair">
-                <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
-            </div>
-
-            <div class="modal-finalizar-conteudo alt-conteudo">
-                <p class="p-titulo-modal-finalizar">Altere seu perfil</p>
-                <div class="radio-meu-perfil alt-radio-mp">
-                    <div class="alternativas-radio">
-                        <input checked type="radio" value="0" name="campo-radio-alt" id="campo-radio-alt1" />
-                        <label class="radio" for="campo-radio-alt1">Ensino Médio Incompleto </label>
-                    </div>
-                    <div class="alternativas-radio">
-                        <input type="radio" value="1" name="campo-radio-alt" id="campo-radio-alt2" />
-                        <label class="radio" for="campo-radio-alt2">1 a 2 anos de cursinho</label>
-                    </div>
-                    <div class="alternativas-radio">
-                        <input type="radio" value="2" name="campo-radio-alt" id="campo-radio-alt3" />
-                        <label class="radio" for="campo-radio-alt3">3 a 4 anos de cursinho</label>
-                    </div>
-                    <div class="alternativas-radio">
-                        <input type="radio" value="3" name="campo-radio-alt" id="campo-radio-alt4" />
-                        <label class="radio" for="campo-radio-alt4">5 ou mais anos de cursinho</label>
-                    </div>
-                </div>
-                <div class="div-btn-modal">
-                    <button type="submit" class="btn-padrao">Salvar</button>
-                </div>
-            </div>
-
-        </form>
-    </div>
 
 
     
