@@ -1,5 +1,5 @@
-/* --------------------------------------- MODAL ALUNO -----------------------------------*/
-let cadastrar_a = document.querySelector('.button-cadastrar.baluno')
+/* --------------------------------------- MODAL VÍDEO AULA -----------------------------------*/
+let cadastrar_a = document.querySelector('.button-cadastrar.button-cadastrar-monitor.button-video')
 let modal_finalizar2 = document.querySelector('.modal-finalizar-overlay.modal2')
 let simbolo_sair2 = document.querySelector('.x-sair.x-sair1')
 
