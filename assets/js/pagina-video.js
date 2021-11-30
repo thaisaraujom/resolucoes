@@ -12,10 +12,16 @@ simbolo_sair.addEventListener('click', function () {
 })
 
 
-var esconderedit = document.querySelector(".botao-edit-anote")
-esconderedit.addEventListener("click", function(){
-    var navbar__wrap = document.querySelector("#esconderedit");
-    navbar__wrap.classList.toggle("esconderedit")
+var hide = document.querySelector(".botao-edit-anote")
+hide.addEventListener("click", function(){
+    var navbar__wrap = document.querySelector("#botao-anotacoes");
+    navbar__wrap.classList.toggle("hide-botao")
+})
+
+var hide = document.querySelector(".mobile-botao-editar")
+hide.addEventListener("click", function(){
+    var navbar__wrap = document.querySelector("#alt-anotacoes");
+    navbar__wrap.classList.toggle("hide-anotacoes")
 })
 
 function toggle(enable) {

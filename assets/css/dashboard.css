@@ -457,7 +457,7 @@ input[type="checkbox"] {
   position: absolute;
   top: 50px;
   right: 2%;
-  height: auto;
+  max-height: 90vh;
   width: 254px;
   z-index: 1000;
   background: #F0F0F0;
@@ -472,7 +472,17 @@ input[type="checkbox"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 15px;
+  overflow-y: auto;
+}
+
+.notificacao {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-bottom: 1px solid #282c35;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .label-select {

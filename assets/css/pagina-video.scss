@@ -3,6 +3,7 @@
 }
 .nav-logo-logo {
     margin-right: 5%;
+    height: 50px;
 }
 
 #questao {
@@ -284,18 +285,43 @@ input[type="checkbox"] {
 .botao-edit-anote {
     cursor: pointer;
 }
+.hide-botao{
+    display: none;
+}
+.voltar-editar {
+    display: none;
+}
  
 @media (max-width: 1024px) {
     
 }
+@media (max-width: 770px){
+    .voltar-editar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .voltar-editar button{
+        border: none;
+        background: none;
+    }
+    .alt-anotacoes {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+    .hide-anotacoes {
+        display: none;  
+    }
 
-@media (max-width: 600px) {
+}
+@media (max-width: 770px) {
     .nav-logo-logo {
         display: none;
     }
     .video-anotacoes {
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin-top: 0;
+        margin-bottom: 0;
     }
     .video-video {
         width: 100%;
@@ -322,9 +348,5 @@ input[type="checkbox"] {
     .link-botao1 {
         margin-right: 0;
     }
-    .alt-anotacoes {
-        display: none;
-        width: 100%;
-        margin-top: 30px;
-    }
+    
 }

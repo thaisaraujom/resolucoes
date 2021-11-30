@@ -1,11 +1,42 @@
-var div = document.getElementsByClassName("nome-arquivo")[0];
-var input = document.getElementById("imagem-da-questao");
-
-div.addEventListener("click", function(){
-input.click();
+$(function () {
+    $('#imagem-da-questao').change(function() {
+         $('.nome-arquivo').html($(this).val());
+    });
 });
-input.addEventListener("change", function(){
-var nome = "Não há arquivo selecionado. Selecionar arquivo...";
-if(input.files.length > 0) nome = input.files[0].name;
-div.innerHTML = nome;
+
+
+$(function () {
+    $('#imagem-da-questao2').change(function() {
+         $('.nome-arquivo2').html($(this).val());
+    });
+});
+
+$(function () {
+    $('#imagem-da-questao3').change(function() {
+         $('.nome-arquivo3').html($(this).val());
+    });
+});
+
+$(function () {
+    $('#imagem-da-questao3').change(function() {
+         $('.nome-arquivo3').html($(this).val());
+    });
+});
+
+$(function () {
+    $('#imagem-da-questao4').change(function() {
+         $('.nome-arquivo4').html($(this).val());
+    });
+});
+
+$(function () {
+    $('#imagem-da-questao5').change(function() {
+         $('.nome-arquivo5').html($(this).val());
+    });
+});
+
+$(function () {
+    $('#imagem-da-questao6').change(function() {
+         $('.nome-arquivo6').html($(this).val());
+    });
 });

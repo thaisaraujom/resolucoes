@@ -41,7 +41,7 @@
             <div class="conteudo">
                 <div class="conteudo-interno">
                     <div class="conteudo-interno2 alt-conteudo-interno2">
-                        <img class="nav-logo-logo" src="./assets/img/pagina-video/Logologo.png" alt="">
+                        <img class="nav-logo-logo" src="./assets/img/index_imagens/logo.svg" alt="">
                         <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
                         <div class="formulario">
 
@@ -140,10 +140,19 @@
                     </div>
                 </div>
 
+                <div class="voltar-editar">
+                    <div class="mobile-voltar">
+                        <button><img src="./assets/img/pagina-video/seta-voltar.svg" alt=""></button>
+                    </div>
+                    <div class="mobile-editar">
+                        <button class="mobile-botao-editar"><img src="./assets/img/pagina-video/lapis-laranja.svg" alt=""></button>
+                    </div>
+                </div>
+
                 <div class="pagina-video-conteudo">
                     <div class="video-anotacoes">
                         <iframe class="video-video" src="https://player.vimeo.com/video/640129932?h=e7db3c99eb" width="70%" height="546px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                        <div class="alt-anotacoes">
+                        <div id="alt-anotacoes" class="alt-anotacoes hide-anotacoes">
                             <div class="anote-header">
                                 <button><img src="./assets/img/pagina-video/icon-trash.svg" alt=""></button>
                                 <button class="expandir"><img src="./assets/img/pagina-video/zoom.svg" alt=""></button>
@@ -154,7 +163,7 @@
                             <div class="anote-conteudo">                  
                                 <textarea name="" id="anotacoes-video" cols="30" rows="10" disabled placeholder="Anote aqui!"></textarea>
                                 <div class="div-btn-modal">
-                                    <button type="submit" class="btn-padrao">Salvar</button>
+                                    <button type="submit" class="btn-padrao hide-botao" id="botao-anotacoes">Salvar</button>
                                 </div> 
                             </div>
                             
