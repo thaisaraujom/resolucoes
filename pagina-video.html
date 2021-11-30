@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/modal-finalizar-questao-simulado.css">
+    <link rel="stylesheet" href="assets/css/modal-senha-salva.css">
+    <link rel="stylesheet" href="assets/css/modais.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/modal-aluno-questao-anotacao.css">
+    <link rel="stylesheet" href="assets/css/modal-aluno-questao-video.css">
+    
+    <link rel="stylesheet" href="assets/css/footer-light.css">
+    <link rel="stylesheet" href="assets/css/aluno-perfil.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/pagina-video.css">
+    <link rel="stylesheet" href="assets/css/style-anotacao.css">
+    
+
+    <title>Video | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2 alt-conteudo-interno2">
+                        <img class="nav-logo-logo" src="./assets/img/index_imagens/logo.svg" alt="">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="filtro">
+                            <button><img src="./assets/img/dashboard/Filtro.svg" alt=""></button>
+                            <button class="filtro-botao-2"><img src="./assets/img/dashboard/Removedor-de-filtro.svg" alt=""></button>
+                        </div>
+                        
+                    </div>
+                    
+
+                    
+
+                    <div class="direita">
+                        <div class="sino-not">
+                            <img src="./assets/img/dashboard/sino.svg" alt="">
+                            <img src="" alt="">
+                        </div>
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <form class="filtro-popup hide" id="popup-dos-filtros">
+        <h3>Filtrar Por</h3>
+        <div class="label-select">
+            <label for="">Diciplina</label>
+            <select name="Matematica" id="">
+                <option value="matematica">Matematica</option>
+                <option value="valor2" selected>geografia</option>
+                <option value="valor3">fisica</option>
+            </select>
+        </div>
+        <div class="label-select">
+            <label for="">Tipo</label>
+            <select name="Matematica" id="">
+                <option value="valor1">Matematica</option>
+                <option value="valor2" selected>geografia</option>
+                <option value="valor3">fisica</option>
+            </select>
+        </div>
+        <div class="label-select">
+            <label for="">Status</label>
+            <select name="Matematica" id="">
+                <option value="valor1">Matematica</option>
+                <option value="valor2" selected>geografia</option>
+                <option value="valor3">fisica</option>
+            </select>
+        </div>
+        <div class="label-select">
+            <label for="">Assunto</label>
+            <select name="Matematica" id="">
+                <option value="valor1">Matematica</option>
+                <option value="valor2" selected>geografia</option>
+                <option value="valor3">fisica</option>
+            </select>
+        </div>
+        <button class="botao-filtrar" type="submit">
+            Filtrar
+        </button>
+    </form>
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones alt-icones">
+                        <a href="aluno-dashboard.html" class="desktop"><img class="home desktop"
+                                src="assets/img/aluno-modulo/icon.svg" alt=""></a>
+                        <img class="seta desktop" src="assets/img/aluno-modulo/seta.svg" alt="">
+                        <a href="aluno-dashboard.html" class="desktop">
+                            <p>Voltar</p>
+                        </a>
+                        <a href="aluno-dashboard.html"><img class="mobile seta-voltar"
+                                src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="voltar-editar">
+                    <div class="mobile-voltar">
+                        <button><img src="./assets/img/pagina-video/seta-voltar.svg" alt=""></button>
+                    </div>
+                    <div class="mobile-editar">
+                        <button class="mobile-botao-editar"><img src="./assets/img/pagina-video/lapis-laranja.svg" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="pagina-video-conteudo">
+                    <div class="video-anotacoes">
+                        <iframe class="video-video" src="https://player.vimeo.com/video/640129932?h=e7db3c99eb" width="70%" height="546px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <div id="alt-anotacoes" class="alt-anotacoes hide-anotacoes">
+                            <div class="anote-header">
+                                <button><img src="./assets/img/pagina-video/icon-trash.svg" alt=""></button>
+                                <button class="expandir"><img src="./assets/img/pagina-video/zoom.svg" alt=""></button>
+                            </div>
+                            <div class="anote-titulo">
+                                <h5>Minhas Anotações</h5>
+                            </div>
+                            <div class="anote-conteudo">                  
+                                <textarea name="" id="anotacoes-video" cols="30" rows="10" disabled placeholder="Anote aqui!"></textarea>
+                                <div class="div-btn-modal">
+                                    <button type="submit" class="btn-padrao hide-botao" id="botao-anotacoes">Salvar</button>
+                                </div> 
+                            </div>
+                            
+                            <div class="anote-footer">
+                                <p>09/11/2021</p>
+                                <button id='btn_habilitar' onclick="toggle(false)" class="botao-edit-anote"><img src="./assets/img/pagina-video/lapis.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagina-video-botoes">
+                        <div class="link-botoes">
+                            <div class="link-botao link-botao1">
+                                <a href="">EXERCICIOS</a>
+                            </div>
+                            <div class="link-botao">
+                                <a href="">CONTEUDO ESCRITO</a>
+                            </div>
+                        </div>
+                        <div class="proximo-video">
+                            <a href="">Próxima aula<img class="img-proximo-video" src="./assets/img/pagina-video/play.svg" alt=""></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="aula-concluida">
+                    <input type="checkbox" id="concluido" name="concluido">
+                    <label for="concluido">Aula concluída</label>
+                </div>
+        
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="desktop" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg"
+                    alt=""></a>
+            <a class="mobile" href="http://www.ejectufrn.com.br/"><img class="img-logo"
+                    src="./assets/img/aluno-dashboard/mobile-eject.svg" alt=""></a>
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+
+    <div class="modal-finalizar-overlay" id="alt-radio-checked">
+        <form class="modal-finalizar alt-modal">
+            <div class="modal-sair">
+                <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <form class="modal-finalizar-conteudo alt-conteudo">
+                <p class="p-titulo-modal-finalizar">Gostariamos que nos deixasse um feedback</p>
+                <div class="radio-meu-perfil alt-radio-mp">
+                    <div class="estrelas">
+                        <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                    </div>
+                    <div class="text-feedback">
+                        <textarea name="" id="" cols="10" rows="10" placeholder="Escreva seu feedback."></textarea>
+                    </div>
+                </div>
+                <div class="div-btn-modal">
+                    <button type="submit" class="btn-padrao">Salvar</button>
+                </div>
+            </form>
+
+        </form>
+    </div>
+    
+
+    <div class="tela hide"></div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/dashboard.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/pagina-video.js"></script>
+    <script type="text/javascript" src="assets/js/disparar-modal.js"></script>
+    <script type="text/javascript" src="assets/js/campo-anotacao-video.js"></script>
+    
+    
+
+</body>
+
+</html>

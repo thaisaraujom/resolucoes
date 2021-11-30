@@ -359,6 +359,45 @@ html {
     background: none;
     cursor: pointer;
 }
+.opcao-curso {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.letra-branca-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #D7D5D4;
+    margin-right: 10px;
+}
+.opcao-selecionada {
+    background: #D7D5D4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;;
+    padding: 5px;
+}
+.opcao-selecionada p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #282C35;
+}
+.letra-branca-normal {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+.alt-campo {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #alt-radio-checked {
     .campo label:not(.radio), .campo-select label:not(.radio) {
@@ -552,6 +591,12 @@ html {
         }
         //alterações murilo
         .btn-senha {
+            color: #282C35;
+        }
+        .letra-branca-bold {
+            color: #282C35;
+        }
+        .letra-branca-normal {
             color: #282C35;
         }
     }
