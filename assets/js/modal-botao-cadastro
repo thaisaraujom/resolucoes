@@ -1,0 +1,14 @@
+var botao_cad = document.querySelector('.button-cadastro')
+
+var invalidCPF = document.querySelector('.input-cpf')
+var inputCPF = document.querySelector('.cpf-cadastrado');
+var bordaInputCPF = document.querySelector('.input-borda-red')
+
+botao_cad.addEventListener('click', function () {
+    
+    event.preventDefault()
+    if (invalidCPF.value.length == 0) {
+        invalidCPF.classList.add('input-borda-red')
+        inputCPF.style.visibility = 'visible'
+    }
+})

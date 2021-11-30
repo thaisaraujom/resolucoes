@@ -1,0 +1,658 @@
+#questao {
+    .overlay {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo-admin {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 51px;
+        display: flex;
+        align-items: center;
+
+        color: #00062b;
+    }
+    .secao-inicial {
+        margin: 25px auto 20px auto;
+        display: flex;
+        flex-direction: column;
+
+        padding: 0 10%;
+
+        width: 80%;
+    }
+    .textarea-editavel {
+        resize: none;
+        background: #ffffff;
+
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        border: none;
+
+        position: relative;
+
+        width: 96%;
+        min-width: 250px;
+        height: 30px;
+        color: #f2f2f2;
+
+        padding: 2%;
+
+        font-family: " Montserrat", sans-serif;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+
+        color: #282c35;
+
+        cursor: auto;
+
+        -webkit-appearance: none;
+    }
+
+    .textarea-editavel::-webkit-scrollbar {
+        width: 2px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+    }
+
+    .textarea-editavel:-webkit-scrollbar-thumb {
+        -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+        border-radius: 10px;
+        background-color: #f0f0f05e;
+    }
+
+    .secao-inicial-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+    }
+
+    .editar-secao-inicial {
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .button-salvar {
+        background: #f58e08;
+        box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
+        border-radius: 0px 0px 5px 5px;
+
+        border: none;
+        width: 100%;
+
+        padding: 1% 0;
+
+        color: #f2f2f2;
+        font-weight: bold;
+        font-size: 16px;
+
+        cursor: pointer;
+        display: none;
+    }
+
+    .line-quem-somos {
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        position: relative;
+    }
+
+    h3,
+    .input-titulo {
+        font-size: 20px;
+        color: #282c35;
+    }
+
+    .textarea-editavel-maior {
+        height: 120px;
+    }
+
+    .line-esquerda {
+        display: flex;
+        align-items: center;
+    }
+
+    .value_mais {
+        position: absolute;
+        left: -35px;
+
+        width: 30px;
+        height: auto;
+
+        cursor: pointer;
+
+        opacity: 0.9;
+    }
+    .admin-quem-somos {
+        margin: 10px 0;
+    }
+    .botoes-acao {
+        button {
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        img {
+            width: 17px;
+            height: auto;
+        }
+    }
+    .caixas_valor_mais {
+        background: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+
+        font-family: "Montserrat", sans-serif;
+    }
+    .caixa_valor_mais:not(:last-child) {
+        border-bottom: 1px solid #757575;
+    }
+    .action {
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: center;
+
+        button {
+            border: none;
+
+            background: none;
+        }
+
+        .button_opcao-admin {
+            display: none;
+        }
+        .salvar:focus,
+        .remover:focus {
+            box-shadow: 0 0 0 2px #282c35;
+        }
+        .salvar,
+        .remover {
+            text-decoration: none;
+            color: #282c35;
+            font-size: 14px;
+
+            border-radius: 5px;
+            padding: 4px 10px;
+        }
+        .salvar {
+            background: #f58e08;
+
+            display: flex;
+            align-items: center;
+            color: #f4f4f4;
+        }
+        .remover {
+            margin-left: 7px;
+        }
+    }
+    .caixa_individual {
+        display: flex;
+        padding: 1% 2%;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        p {
+            margin-left: 10px;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 100%;
+        }
+    }
+    .caixa_content {
+        display: flex;
+        align-items: center;
+
+        input {
+            margin-left: 10px;
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
+
+            border: none;
+        }
+    }
+    .h3-titulo-admin-ativado {
+        background: rgb(255, 255, 255);
+        border-radius: 10px 10px 0 0;
+        padding: 10px;
+        width: 100%;
+
+        border-bottom: 1px solid #757575;
+
+        margin-bottom: 0;
+    }
+    .h3-titulo-admin-values-ativado {
+        background: rgb(255, 255, 255);
+        border-radius: 10px 10px 0 0;
+        padding: 10px;
+        width: 100%;
+
+        border-bottom: 1px solid #757575;
+
+        margin-bottom: 0;
+    }
+    .line-esquerda {
+        width: 100%;
+    }
+    .line-quem-somos-ativado {
+        margin-bottom: 0;
+    }
+    .line-quem-somos-values-ativado {
+        margin-bottom: 0;
+    }
+
+    input[type="file"]::-webkit-file-upload-button {
+        background: #f58e08 !important;
+        border-radius: 9px 0 0 9px;
+        border: none;
+        padding: 5px 0;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #f2f2f2;
+        padding: 5px 10px;
+
+        cursor: pointer;
+    }
+
+    input#files {
+        background: #e6e4e4;
+        border-radius: 10px;
+
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    input#files:focus {
+        box-shadow: 0 0 0 2px #282c35;
+    }
+
+    .file_input {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        width: 45%;
+        height: 100%;
+
+        align-items: center;
+    }
+
+    .file_label {
+        color: #676c78;
+        font-weight: bold;
+    }
+
+    .campo.campo_file {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .caixa_content_parceiros {
+        width: 100%;
+    }
+
+    .caixa_content input {
+        color: #282c35;
+    }
+    .input_cadastradas {
+        border: none;
+        font: 16px "Montserrat", sans-serif;
+    }
+    input:disabled {
+        background: none;
+    }
+    /* ------------------------------------- fale conosco*/
+    .admin-fale-conosco,
+    .admin-parceiros {
+        margin-top: 10px;
+    }
+    input#instagram,
+    input#linkedin,
+    input#twitter {
+        background: #e6e4e4;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 4px 10px;
+
+        max-width: 600px;
+        min-width: 90px;
+        width: 70%;
+
+        margin-right: 5%;
+        color: #000;
+        font-size: 15px;
+    }
+    .campo_redes .nome_parceiro_single {
+        width: 100%;
+    }
+
+    .redes_fale {
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+    }
+
+    .caixas_fale-conosco {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-salvar-fale {
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .button-salvar-fale-conosco {
+        border-radius: 0 0 5px 5px;
+        border: none;
+
+        padding: 7px 5%;
+
+        background: #f58e08;
+        box-shadow: 0px 4px 4px rgba(32, 32, 32, 0.25);
+
+        color: #f2f2f2;
+        font-size: 16px;
+        font-weight: bold;
+
+        cursor: pointer;
+        width: 100%;
+    }
+
+    /* -------------------------------------------------------------------- */
+    .input-titulo {
+        border: none;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+    }
+    .input-a-ativar {
+        width: 100%;
+    }
+    .input-ativado {
+        background: rgb(255, 255, 255);
+        border-radius: 10px 10px 0 0;
+        padding: 2%;
+        width: 96%;
+
+        margin-bottom: 0;
+    }
+    .line-nossos-parceiros {
+        display: flex;
+    }
+    .line-nossos-parceiros-column {
+        flex-direction: column !important;
+    }
+    .button-salvar-margin {
+        margin-bottom: 20px;
+    }
+    .parceiros_mais {
+        top: -2px;
+    }
+    #box_input {
+        cursor: pointer;
+        label, input {
+            cursor: pointer;
+        }
+        input#file-upload-button {
+            cursor: pointer;
+        }
+    }
+    /*---------------------------------------------------------*/
+    .campo2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+
+        width: 100%;
+    }
+    .label_parceiros2 {
+        color: #282c35;
+    }
+    .nome_parceiro2::placeholder {
+        color: #282c35 !important;
+
+        display: flex;
+    }
+    .file_input2 {
+        margin-left: 20px !important;
+
+        background: #e6e4e4 !important;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        font-size: 14px !important;
+
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .nome_parceiro_single2 {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+    }
+    .column-prc {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        margin-top: 30px;
+    }
+    .img-add-prc {
+        width: 100%;
+
+        display: flex;
+
+        margin-top: 20px;
+        color: #282c35 !important;
+    }
+    .file_label_img {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .label_prc2 {
+        margin-right: 10px;
+    }
+    .button-div {
+        width: 100%;
+
+        text-align: center;  
+        margin-top: 40px; 
+    }
+    .button-laranja2 {
+        border-radius: 17px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+
+        border: none;
+        cursor: pointer;
+
+        background: #f58e08;
+        border-radius: 17px;
+
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        padding: .2% 3%;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 1024px) {
+    #questao {
+        .icones {
+            display: flex;
+        }
+
+        input#instagram,
+        input#linkedin,
+        input#twitter {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 830px) {
+    #questao {
+        .caixa_content input.nome_parceiro {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #questao {
+        .secao-inicial {
+            margin: 10px 0;
+            padding: 0;
+
+            width: 100%;
+        }
+        .titulo-admin {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+        .textarea-editavel {
+            height: 54px;
+
+            font-size: 15px;
+        }
+        input.input_cadastradas {
+            font-size: 15px;
+        }
+        h3,
+        .input-titulo {
+            font-size: 15px;
+        }
+        .line-quem-somos {
+            margin-top: 0;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        .file_label {
+            font-size: 12px;
+        }
+        .file_input {
+            font-size: 12px;
+            width: 90%;
+        }
+        .form_box {
+            margin-bottom: 0;
+        }
+        .value_mais {
+            position: static;
+
+            width: 25px;
+            height: auto;
+        }
+        input[type="file"]::-webkit-file-upload-button {
+            padding: 2px 5px;
+            font-size: 10px;
+        }
+        .caixas_valor_mais {
+            img {
+                width: 15px;
+                height: auto;
+            }
+        }
+        .caixa_individual_fale {
+            font-size: 12px;
+        }
+        .caixa_content input.nome_parceiro {
+            font-size: 12px;
+        }
+
+        input#instagram,
+        input#linkedin,
+        input#twitter {
+            font-size: 12px;
+        }
+
+        .button-salvar-fale-conosco {
+            font-size: 15px;
+            padding: 1% 0;
+        }
+
+        .button-salvar {
+            font-size: 15px;
+        }
+        .file_label_img {
+            font-size: 12px;
+            white-space: nowrap !important;
+        }
+        .file_input2 {
+            font-size: 12px !important;
+        }
+        .button-laranja2 {
+            font-size: 10px;
+            padding: .5% 5%;
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    #questao {
+        .secao-inicial {
+            padding: 0 5%;
+
+            width: 90%;
+        }
+        .titulo-admin {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+        .textarea-editavel {
+            height: 54px;
+
+            font-size: 16px;
+        }
+        .voltar {
+            padding-top: 80px;
+        }
+
+        .caixa_content input {
+            margin: 0 2px;
+
+            font-size: 14px;
+        }
+        .action {
+            .salvar,
+            .remover {
+                font-size: 12px;
+                padding: 3px 6px;
+            }
+        }
+        .textarea-editavel {
+            font-size: 14px;
+        }
+    }
+}

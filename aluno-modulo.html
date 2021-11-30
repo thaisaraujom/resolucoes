@@ -1,0 +1,2784 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/aluno-modulo.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick-modulo.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick-modulo-theme.css">
+
+
+
+    <title>Matérias | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg"
+                                alt=""></a><a class="item-link" href="aluno-dashboard.html">Home</a></li>
+
+                    <li class="nav-item item-apostila"><a href=""><img src="assets/img/aluno-questao/apostilas.svg"
+                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg"
+                                alt=""></a><a class="item-link" href="aluno-modulo.html">Matérias</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
+                            href="" class="item-link">Monitores</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
+                            class="item-link">Perfil</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
+                            href="" class="item-link">Sugerir Questão</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
+                            href="" class="item-link">Anotações</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/simulado.svg" alt=""></a><a
+                            href="" class="item-link">Simulado</a></li>
+                </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones">
+                        <a href="aluno-dashboard.html" class="desktop"><img class="home desktop"
+                                src="assets/img/aluno-modulo/icon.svg" alt=""></a>
+                        <img class="seta desktop" src="assets/img/aluno-modulo/seta.svg" alt="">
+                        <a href="aluno-dashboard.html" class="desktop">
+                            <p>Voltar</p>
+                        </a>
+
+                        <a href="aluno-dashboard.html"><img class="mobile seta-voltar"
+                                src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <!-- DISCIPLINAS MOBILE -->
+                <!-- <div class="materias-drop mobile">
+
+                    <select id="materias-selector" name="select-materias">
+                        <option value="matematica" selected value>Matemática </option>
+                        <option value="fisica">Física</option>
+                        <option value="quimica">Química</option>
+                        <option value="biologia">Biologia</option>
+                        <option value="historia">História</option>
+                        <option value="geografia">Geografia</option>
+                        <option value="literatura">Literatura</option>
+                        <option value="ingles">Inglês</option>
+                    </select>
+
+                </div> -->
+                <!-- FIM DISCIPLINAS MOBILE -->
+
+                <!-- CARROSSEL DISCIPLINAS -->
+                <div class="carousel materias">
+                    <div class="materia active borda" data-filter="matematica">
+                        <p class="paragrafo-materia">Matemática</p>
+                    </div>
+                    <div class="materia" data-filter="fisica">
+                        <p class="paragrafo-materia">Física</p>
+                    </div>
+                    <div class="materia" data-filter="quimica">
+                        <p class="paragrafo-materia">Química</p>
+                    </div>
+                    <div class="materia" data-filter="biologia">
+                        <p class="paragrafo-materia">Biologia</p>
+                    </div>
+                    <div class="materia" data-filter="historia">
+                        <p class="paragrafo-materia">História</p>
+                    </div>
+                    <div class="materia" data-filter="geografia">
+                        <p class="paragrafo-materia">Geografia</p>
+                    </div>
+                    <div class="materia" data-filter="literatura">
+                        <p class="paragrafo-materia">Literatura</p>
+                    </div>
+                    <div class="materia" data-filter="ingles">
+                        <p class="paragrafo-materia">Inglês</p>
+                    </div>
+                </div>
+                <!-- FIM CARROSSEL -->
+
+                <!-- MÓDULOS DE CADA DISCIPLINA -->
+                <div class="modulos-todos">
+                    <div class="modulos " data-item='matematica'>
+                        <form action="" class="form-disciplinas">
+                            <div class="conteudos-exercicios">
+
+
+                                <div class="titulos-conteudos-exercicios">
+                                    <div class="box conteudos aba-conteudos" data-filterStatus="aba-conteudos">
+                                        <h3>Conteúdos</h3>
+                                    </div>
+                                    <div class="box exercicios selecionado aba-exercicios" data-filterStatus="aba-exercicios">
+                                        <h3>Exercícios</h3>
+                                    </div>
+                                </div>
+
+
+                                <div class="selects-exercicios selecionado aba-exercicio" data-filtro='aba-exercicios'>
+                                    <div class="cards">
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria Analítica e Espacial teste</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Razões</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="selects-exercicios aba-conteudo" data-filtro='aba-conteudos'>
+                                    <div class="videos">
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Geometria espacial</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-vermelho" href="">
+                                            <div>
+                                                <p>Razões e proporções</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Estatística</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Trigonometria</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Inequações</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtro-por">
+                                <h3>Filtrar por</h3>
+                                <div class="select-filtro">
+                                    <label for="">Tipo</label>
+                                    <select name="tipo" id="">
+                                        <option value="matematica">Respondido</option>
+                                        <option value="valor2" selected>Não respondido</option>
+                                    </select>
+                                </div>
+
+                                <div class="select-filtro">
+                                    <label for="">Assunto</label>
+                                    <select name="assunto" id="">
+                                        <option value="valor1">Estatística</option>
+                                        <option value="valor2" selected>Porcentagem</option>
+                                        <option value="valor3">Geometria espacial</option>
+                                    </select>
+                                </div>
+
+                                <button class="btn-filtrar" type="submit">
+                                    Filtre
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modulos esconder-modulo" data-item="fisica">
+                        <form action="" class="form-disciplinas">
+                            <div class="conteudos-exercicios">
+
+
+                                <div class="titulos-conteudos-exercicios">
+                                    <div class="box conteudos aba-conteudos" data-filterStatus="aba-conteudos">
+                                        <h3>Conteúdos</h3>
+                                    </div>
+                                    <div class="box exercicios selecionado aba-exercicios" data-filterStatus="aba-exercicios">
+                                        <h3>Exercícios</h3>
+                                    </div>
+                                </div>
+
+
+                                <div class="selects-exercicios selecionado aba-exercicio" data-filtro='aba-exercicios'>
+                                    <div class="cards">
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Eletricidade</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria Analítica e Espacial teste</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Razões</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="selects-exercicios aba-conteudo" data-filtro='aba-conteudos'>
+                                    <div class="videos">
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Geometria espacial</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-vermelho" href="">
+                                            <div>
+                                                <p>Razões e proporções</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Estatística</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Trigonometria</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Inequações</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtro-por">
+                                <h3>Filtrar por</h3>
+                                <div class="select-filtro">
+                                    <label for="">Tipo</label>
+                                    <select name="tipo" id="">
+                                        <option value="matematica">Respondido</option>
+                                        <option value="valor2" selected>Não respondido</option>
+                                    </select>
+                                </div>
+
+                                <div class="select-filtro">
+                                    <label for="">Assunto</label>
+                                    <select name="assunto" id="">
+                                        <option value="valor1">Estatística</option>
+                                        <option value="valor2" selected>Porcentagem</option>
+                                        <option value="valor3">Geometria espacial</option>
+                                    </select>
+                                </div>
+
+                                <button class="btn-filtrar" type="submit">
+                                    Filtre
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="modulos esconder-modulo" data-item="quimica">
+                        <form action="" class="form-disciplinas">
+                            <div class="conteudos-exercicios">
+
+
+                                <div class="titulos-conteudos-exercicios">
+                                    <div class="box conteudos aba-conteudos" data-filterStatus="aba-conteudos">
+                                        <h3>Conteúdos</h3>
+                                    </div>
+                                    <div class="box exercicios selecionado aba-exercicios" data-filterStatus="aba-exercicios">
+                                        <h3>Exercícios</h3>
+                                    </div>
+                                </div>
+
+
+                                <div class="selects-exercicios selecionado aba-exercicio" data-filtro='aba-exercicios'>
+                                    <div class="cards">
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Entalpia</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="selects-exercicios aba-conteudo" data-filtro='aba-conteudos'>
+                                    <div class="videos">
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Geometria espacial</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-vermelho" href="">
+                                            <div>
+                                                <p>Razões e proporções</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Estatística</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Trigonometria</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Inequações</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtro-por">
+                                <h3>Filtrar por</h3>
+                                <div class="select-filtro">
+                                    <label for="">Tipo</label>
+                                    <select name="tipo" id="">
+                                        <option value="matematica">Respondido</option>
+                                        <option value="valor2" selected>Não respondido</option>
+                                    </select>
+                                </div>
+
+                                <div class="select-filtro">
+                                    <label for="">Assunto</label>
+                                    <select name="assunto" id="">
+                                        <option value="valor1">Estatística</option>
+                                        <option value="valor2" selected>Porcentagem</option>
+                                        <option value="valor3">Geometria espacial</option>
+                                    </select>
+                                </div>
+
+                                <button class="btn-filtrar" type="submit">
+                                    Filtre
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="modulos esconder-modulo" data-item="biologia">
+                        <form action="" class="form-disciplinas">
+                            <div class="conteudos-exercicios">
+
+
+                                <div class="titulos-conteudos-exercicios">
+                                    <div class="box conteudos aba-conteudos" data-filterStatus="aba-conteudos">
+                                        <h3>Conteúdos</h3>
+                                    </div>
+                                    <div class="box exercicios selecionado aba-exercicios" data-filterStatus="aba-exercicios">
+                                        <h3>Exercícios</h3>
+                                    </div>
+                                </div>
+
+
+                                <div class="selects-exercicios selecionado aba-exercicio" data-filtro='aba-exercicios'>
+                                    <div class="cards">
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Briófitas</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria Analítica e Espacial teste</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Razões</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="selects-exercicios aba-conteudo" data-filtro='aba-conteudos'>
+                                    <div class="videos">
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Geometria espacial</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-vermelho" href="">
+                                            <div>
+                                                <p>Razões e proporções</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Estatística</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Trigonometria</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Inequações</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtro-por">
+                                <h3>Filtrar por</h3>
+                                <div class="select-filtro">
+                                    <label for="">Tipo</label>
+                                    <select name="tipo" id="">
+                                        <option value="matematica">Respondido</option>
+                                        <option value="valor2" selected>Não respondido</option>
+                                    </select>
+                                </div>
+
+                                <div class="select-filtro">
+                                    <label for="">Assunto</label>
+                                    <select name="assunto" id="">
+                                        <option value="valor1">Estatística</option>
+                                        <option value="valor2" selected>Porcentagem</option>
+                                        <option value="valor3">Geometria espacial</option>
+                                    </select>
+                                </div>
+
+                                <button class="btn-filtrar" type="submit">
+                                    Filtre
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modulos esconder-modulo" data-item="historia">
+                        <form action="" class="form-disciplinas">
+                            <div class="conteudos-exercicios">
+
+
+                                <div class="titulos-conteudos-exercicios">
+                                    <div class="box conteudos aba-conteudos" data-filterStatus="aba-conteudos">
+                                        <h3>Conteúdos</h3>
+                                    </div>
+                                    <div class="box exercicios selecionado aba-exercicios" data-filterStatus="aba-exercicios">
+                                        <h3>Exercícios</h3>
+                                    </div>
+                                </div>
+
+
+                                <div class="selects-exercicios selecionado aba-exercicio" data-filtro='aba-exercicios'>
+                                    <div class="cards">
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>História do Brasil</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria Analítica e Espacial teste</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Razões</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="selects-exercicios aba-conteudo" data-filtro='aba-conteudos'>
+                                    <div class="videos">
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Geometria espacial</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-vermelho" href="">
+                                            <div>
+                                                <p>Razões e proporções</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Estatística</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Trigonometria</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Inequações</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtro-por">
+                                <h3>Filtrar por</h3>
+                                <div class="select-filtro">
+                                    <label for="">Tipo</label>
+                                    <select name="tipo" id="">
+                                        <option value="matematica">Respondido</option>
+                                        <option value="valor2" selected>Não respondido</option>
+                                    </select>
+                                </div>
+
+                                <div class="select-filtro">
+                                    <label for="">Assunto</label>
+                                    <select name="assunto" id="">
+                                        <option value="valor1">Estatística</option>
+                                        <option value="valor2" selected>Porcentagem</option>
+                                        <option value="valor3">Geometria espacial</option>
+                                    </select>
+                                </div>
+
+                                <button class="btn-filtrar" type="submit">
+                                    Filtre
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modulos esconder-modulo" data-item="geografia">
+                        <form action="" class="form-disciplinas">
+                            <div class="conteudos-exercicios">
+
+
+                                <div class="titulos-conteudos-exercicios">
+                                    <div class="box conteudos aba-conteudos" data-filterStatus="aba-conteudos">
+                                        <h3>Conteúdos</h3>
+                                    </div>
+                                    <div class="box exercicios selecionado aba-exercicios" data-filterStatus="aba-exercicios">
+                                        <h3>Exercícios</h3>
+                                    </div>
+                                </div>
+
+
+                                <div class="selects-exercicios selecionado aba-exercicio" data-filtro='aba-exercicios'>
+                                    <div class="cards">
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Urbanização</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria Analítica e Espacial teste</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Razões</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="selects-exercicios aba-conteudo" data-filtro='aba-conteudos'>
+                                    <div class="videos">
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Geometria espacial</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-vermelho" href="">
+                                            <div>
+                                                <p>Razões e proporções</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Estatística</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Trigonometria</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Inequações</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtro-por">
+                                <h3>Filtrar por</h3>
+                                <div class="select-filtro">
+                                    <label for="">Tipo</label>
+                                    <select name="tipo" id="">
+                                        <option value="matematica">Respondido</option>
+                                        <option value="valor2" selected>Não respondido</option>
+                                    </select>
+                                </div>
+
+                                <div class="select-filtro">
+                                    <label for="">Assunto</label>
+                                    <select name="assunto" id="">
+                                        <option value="valor1">Estatística</option>
+                                        <option value="valor2" selected>Porcentagem</option>
+                                        <option value="valor3">Geometria espacial</option>
+                                    </select>
+                                </div>
+
+                                <button class="btn-filtrar" type="submit">
+                                    Filtre
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modulos esconder-modulo" data-item="literatura">
+                        <form action="" class="form-disciplinas">
+                            <div class="conteudos-exercicios">
+
+
+                                <div class="titulos-conteudos-exercicios">
+                                    <div class="box conteudos aba-conteudos" data-filterStatus="aba-conteudos">
+                                        <h3>Conteúdos</h3>
+                                    </div>
+                                    <div class="box exercicios selecionado aba-exercicios" data-filterStatus="aba-exercicios">
+                                        <h3>Exercícios</h3>
+                                    </div>
+                                </div>
+
+
+                                <div class="selects-exercicios selecionado aba-exercicio" data-filtro='aba-exercicios'>
+                                    <div class="cards">
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>A Hora da Estrela - C.L.</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria Analítica e Espacial teste</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Razões</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="selects-exercicios aba-conteudo" data-filtro='aba-conteudos'>
+                                    <div class="videos">
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Geometria espacial</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-vermelho" href="">
+                                            <div>
+                                                <p>Razões e proporções</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Estatística</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Trigonometria</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Inequações</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtro-por">
+                                <h3>Filtrar por</h3>
+                                <div class="select-filtro">
+                                    <label for="">Tipo</label>
+                                    <select name="tipo" id="">
+                                        <option value="matematica">Respondido</option>
+                                        <option value="valor2" selected>Não respondido</option>
+                                    </select>
+                                </div>
+
+                                <div class="select-filtro">
+                                    <label for="">Assunto</label>
+                                    <select name="assunto" id="">
+                                        <option value="valor1">Estatística</option>
+                                        <option value="valor2" selected>Porcentagem</option>
+                                        <option value="valor3">Geometria espacial</option>
+                                    </select>
+                                </div>
+
+                                <button class="btn-filtrar" type="submit">
+                                    Filtre
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modulos esconder-modulo" data-item="ingles">
+                        <form action="" class="form-disciplinas">
+                            <div class="conteudos-exercicios">
+
+
+                                <div class="titulos-conteudos-exercicios">
+                                    <div class="box conteudos aba-conteudos" data-filterStatus="aba-conteudos">
+                                        <h3>Conteúdos</h3>
+                                    </div>
+                                    <div class="box exercicios selecionado aba-exercicios" data-filterStatus="aba-exercicios">
+                                        <h3>Exercícios</h3>
+                                    </div>
+                                </div>
+
+
+                                <div class="selects-exercicios selecionado aba-exercicio" data-filtro='aba-exercicios'>
+                                    <div class="cards">
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Interpretação de texto</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Estratégias de leitura</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Razões</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-assunto">
+                                            <div class="nome-assunto">
+                                                <p>Geometria espacial</p>
+                                                <img class="seta-baixa" src="./assets/img/aluno-modulo/seta-new.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="exercicios-assunto">
+                                                <ul>
+                                                    <a href="">
+                                                        <li>Posição relativa entre ponto e reta, e ponto e plano</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posição relativa entre pontos</li>
+                                                    </a>
+                                                    <a href="aluno-anotacoes-p1.html">
+                                                        <li>Posições relativas entre dois planos</li>
+                                                    </a>
+                                                    <a href="">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-barra-de-pesquisa.html">
+                                                        <li>Posições relativas</li>
+                                                    </a>
+                                                    <a href="aluno-perfil-senha.html">
+                                                        <li>Musicas mais</li>
+                                                    </a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="selects-exercicios aba-conteudo" data-filtro='aba-conteudos'>
+                                    <div class="videos">
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Geometria espacial</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-vermelho" href="">
+                                            <div>
+                                                <p>Razões e proporções</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-verde" href="">
+                                            <div>
+                                                <p>Estatística</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Trigonometria</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="imagem-video border-amarelo" href="">
+                                            <div>
+                                                <p>Inequações</p>
+                                                <div class='overlay-laranja'>
+                                                    <div class="sobreposicao">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filtro-por">
+                                <h3>Filtrar por</h3>
+                                <div class="select-filtro">
+                                    <label for="">Tipo</label>
+                                    <select name="tipo" id="">
+                                        <option value="matematica">Respondido</option>
+                                        <option value="valor2" selected>Não respondido</option>
+                                    </select>
+                                </div>
+
+                                <div class="select-filtro">
+                                    <label for="">Assunto</label>
+                                    <select name="assunto" id="">
+                                        <option value="valor1">Estatística</option>
+                                        <option value="valor2" selected>Porcentagem</option>
+                                        <option value="valor3">Geometria espacial</option>
+                                    </select>
+                                </div>
+
+                                <button class="btn-filtrar" type="submit">
+                                    Filtre
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- FIM MÓDULOS DE CADA DISCIPLINA -->
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="desktop" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg"
+                    alt=""></a>
+            <a class="mobile" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/mobile-eject.svg"
+                    alt=""></a>
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="tela hide"></div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script src="assets/js/filtro-materias.js"></script>
+    <script src="assets/js/filtro-conteudos-exercicios.js"></script>
+
+
+
+    <script type="text/javascript">
+        $('.carousel').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            arrows: true,
+            dots: true,
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                     
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                }
+            }
+            ]
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+#aviso-questao {
+  min-height: 100vh;
+  background: #d7d5d4;
+  padding: 0 5%;
+}
+
+#aviso-questao .voltar {
+  padding-top: 70px;
+}
+
+#aviso-questao .icones {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: 400 13px "Montserrat";
+  line-height: 12px;
+}
+
+#aviso-questao .icones .home {
+  margin-right: 10px;
+}
+
+#aviso-questao .icones .seta {
+  margin-right: 10px;
+}
+
+#aviso-questao .icones a {
+  color: #282c35;
+  text-decoration: none;
+}
+
+#aviso-questao .icones a:visited,
+#aviso-questao .icones a:hover,
+#aviso-questao .icones a:link {
+  text-decoration: none;
+}
+
+#aviso-questao .conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aviso-questao .imagem {
+  margin-bottom: 30px;
+}
+
+#aviso-questao .imagem img {
+  height: 100%;
+  width: auto;
+}
+
+#aviso-questao .texto {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  width: 512px;
+  height: 74px;
+}
+
+#outras-opcoes {
+  min-height: 20vh;
+  background: #282c35;
+  padding: 6% 10%;
+}
+
+#outras-opcoes h2 {
+  display: inline;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 43px;
+  color: #d7d5d4;
+  border-bottom: 2px solid;
+}
+
+#outras-opcoes .area-conhecimento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#outras-opcoes .area-conhecimento .area {
+  width: 184.88px;
+  height: 128px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 3%;
+  margin-right: 2%;
+}
+
+#outras-opcoes .area-conhecimento .title-area {
+  color: #e6e1dd;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font: 700 15px "Montserrat";
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+#outras-opcoes .area-conhecimento .area-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 170px;
+  height: 120px;
+  border-radius: 20px;
+}
+
+#outras-opcoes .area-conhecimento .natureza,
+#outras-opcoes .area-conhecimento .humanas,
+#outras-opcoes .area-conhecimento .ling {
+  margin-top: 50px;
+  width: 184.88px;
+  height: 128px;
+  background: #c4c4c4;
+  border-radius: 20px;
+}
+
+@media (max-width: 992px) {
+  .desktop {
+    display: none;
+  }
+  #aviso-questao {
+    min-height: 40vh !important;
+    padding-bottom: 10%;
+  }
+  #aviso-questao .conteudo .texto {
+    width: 350px;
+    height: 36px;
+    font-family: Montserrat;
+    font-size: 15px !important;
+    line-height: 18px;
+  }
+  #aviso-questao .conteudo .texto p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #aviso-questao .conteudo img {
+    margin-top: 80px;
+    width: 290px !important;
+    height: auto !important;
+  }
+  #outras-opcoes h2 {
+    font-size: 15px;
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .area-conhecimento {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 5%;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 802px) {
+  #outras-opcoes {
+    padding-bottom: 15%;
+  }
+  #outras-opcoes .title-area {
+    font-size: 10px !important;
+    width: 100px !important;
+    margin-top: 5% !important;
+  }
+  #outras-opcoes .area-img {
+    width: 100px !important;
+    height: 65px !important;
+    border-radius: 5px !important;
+  }
+  #outras-opcoes .area-img img {
+    width: 78px;
+    height: auto;
+  }
+  #outras-opcoes .area-conhecimento {
+    margin-right: 0;
+  }
+  #outras-opcoes .area-conhecimento h4 {
+    font-size: 10px !important;
+    line-height: 12px;
+  }
+  #outras-opcoes .area-conhecimento .natureza,
+  #outras-opcoes .area-conhecimento .humanas,
+  #outras-opcoes .area-conhecimento .ling {
+    border-radius: 5px !important;
+  }
+  #outras-opcoes .area-conhecimento .area-img img {
+    width: 78px;
+    height: auto;
+  }
+  #outras-opcoes .area-conhecimento .area {
+    width: 100px !important;
+    height: 62.31px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #outras-opcoes .ling {
+    margin-right: 20px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  #aviso-questao .conteudo .texto {
+    width: 300px;
+    height: 36px;
+  }
+  #aviso-questao .conteudo .texto p {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=pagina-semquestao.css.map */

@@ -1,0 +1,19 @@
+.p-titulo-modal-finalizar {
+    text-transform: uppercase;
+}
+
+.modal-finalizar-overlay {
+    visibility: hidden;
+}
+
+@media (max-width: 500px) {
+    .p-titulo-modal-finalizar {
+        font-size: 15px;
+        text-transform:initial;
+        font-style: normal;
+        color: #4E5057;
+    }
+    .p-descricao-modal-finalizar {
+        font-size: 10px;
+    }
+}

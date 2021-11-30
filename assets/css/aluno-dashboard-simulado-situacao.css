@@ -1,0 +1,126 @@
+#questao .simulados {
+  border-radius: 5px 5px 0 0;
+}
+
+#questao .continuar-simulado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#questao .continuar-simulado p {
+  margin-left: 20px;
+}
+
+#questao .p-sem {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  color: #595959;
+}
+
+#questao .p-questoes-simulado.mobile {
+  display: none;
+}
+
+#questao .p-questoes-simulado {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #595959;
+  text-shadow: none;
+  margin-bottom: 15px;
+  cursor: default !important;
+}
+
+#questao .finalizar-simulado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#questao .situacao {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#questao .situacao-agendado {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 1160px) {
+  #questao .situacao .continuar-simulado p {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 770px) {
+  #questao .p-sem-aberto, #questao .p-sem {
+    color: #848484 !important;
+    font-size: 10px !important;
+    text-align: start;
+  }
+  #questao .continuar-simulado p {
+    margin-left: 0;
+    margin-right: 20px;
+    font-size: 10px;
+  }
+  #questao .p-questoes-simulado.desktop {
+    display: none;
+  }
+  #questao .p-questoes-simulado.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #questao .situacao-finalizado {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #questao .finalizar-simulado {
+    margin-top: 0;
+  }
+  #questao .simulado-informativo {
+    margin-bottom: 12px;
+  }
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.ativar_situacao[data-tab-content] {
+  display: block;
+}
+
+.ativar_situacao .p-situacao {
+  color: #bbbcbf;
+}
+
+.ativar_status {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.hide_status, .hide_graficos {
+  display: none !important;
+}
+
+.ativar_graficos {
+  display: block !important;
+}
+/*# sourceMappingURL=aluno-dashboard-simulado-situacao.css.map */

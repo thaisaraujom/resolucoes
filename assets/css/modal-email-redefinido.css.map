@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,yBAAyB,CAAC;EACtB,cAAc,EAAE,SAAS;CAC5B;;AAED,AAAA,wBAAwB,CAAC;EACrB,UAAU,EAAE,MAAM;CACrB;;AAED,MAAM,EAAE,SAAS,EAAE,KAAK;EACpB,AAAA,yBAAyB,CAAC;IACtB,SAAS,EAAE,IAAI;IACf,cAAc,EAAC,OAAO;IACtB,UAAU,EAAE,MAAM;IAClB,KAAK,EAAE,OAAO;GACjB;EACD,AAAA,4BAA4B,CAAC;IACzB,SAAS,EAAE,IAAI;GAClB",
+    "sources": [
+        "modal-email-redefinido.scss"
+    ],
+    "names": [],
+    "file": "modal-email-redefinido.css"
+}

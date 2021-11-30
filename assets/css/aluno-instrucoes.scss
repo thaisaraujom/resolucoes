@@ -1,0 +1,174 @@
+body,html {
+    background: #2c313b;
+    font-family: "Montserrat", sans-serif;
+}
+
+#questao {
+    .instrucoes-simulado {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .conteudo-instrucoes {
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo-instrucoes h1 {
+        color: #e6e1dd;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+    }
+    .informacoes-instrucoes {
+        text-align: center;
+        color: #f2f2f2;
+
+        margin: 15px 0 30px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    p {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .titulo-simulado {
+        font-weight: bold;
+
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .texto-info {
+        color: #e6e1dd;
+        font-weight: normal;
+        margin: 0 15% 40px 15%;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .button-simulado {
+        display: flex;
+        justify-content: center;
+    }
+    .button-simulado button {
+        width: 150px;
+        height: 34px;
+
+        border: none;
+
+        background: #f58e08;
+        border-radius: 17px;
+        cursor: pointer;
+
+        color: #ffffff;
+
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .button-simulado button:hover {
+        opacity: 0.95;
+    }
+}
+
+@media (max-width: 1024px) {
+    #questao {
+        .overlay {
+            padding: 0;
+        }
+        .icones {
+            display: flex;
+        }
+    }
+    footer {
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width: 910px) {
+    #questao {
+        .overlay {
+            margin: 0 !important;
+        }
+        .titulo-instrucoes {
+            margin: 0 20px;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+    #questao {
+        padding: 0;
+        .overlay {
+            margin: 0 !important;
+            padding-top: 60px !important;
+            position: relative;
+        }
+        .voltar {
+            padding: 40px 20px 0;
+        }
+        
+    }
+}
+
+@media (max-width: 765px) {
+    #questao {
+        .instrucoes-simulado {
+            padding: 0 20px 0 20px;
+            height: 100%;
+      }
+        .titulo-instrucoes {
+            margin: 40px 0 0 0;
+        }
+        .titulo-instrucoes h1 {
+            font-size: 22px !important;
+            text-align: start;
+        }
+        .texto-info p, .informacoes-instrucoes p{
+            font-size: 10px;
+        }
+        .texto-info {
+            line-height: 20px;
+
+            margin: 20px 0;
+        }
+        .conteudo-instrucoes {
+            flex-direction: column-reverse;
+        }
+        .informacoes-instrucoes {
+            margin: 10px 0;
+        }
+        .button-simulado button {
+            margin: 20px 0;
+            font-size: 14px;
+
+            width: 134px;
+            height: 30px;
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    #questao {
+        .voltar {
+            padding: 0 !important;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #questao {
+        .voltar {
+            padding-top: 20px !important;
+        }
+    }
+}

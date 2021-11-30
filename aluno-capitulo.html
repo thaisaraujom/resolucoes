@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/aluno-capitulo.css">
+
+
+
+    <title>Capítulo | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg" alt=""></a><a
+                            class="item-link" href="aluno-dashboard.html">Home</a></li>
+
+                    <li class="nav-item item-apostila"><a href=""><img src="assets/img/aluno-questao/apostilas.svg"
+                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg" alt=""></a><a
+                            class="item-link" href="aluno-modulo.html">Matérias</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
+                            href="" class="item-link">Monitores</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
+                            class="item-link">Perfil</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
+                            href="" class="item-link">Sugerir Questão</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
+                            href="" class="item-link">Anotações</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/simulado.svg" alt=""></a><a
+                            href="" class="item-link">Simulado</a></li>
+                </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones">
+                        <a href="aluno-dashboard.html" class="desktop"><img class="home desktop" src="assets/img/aluno-modulo/icon.svg" alt=""></a>
+                        <img class="seta desktop" src="assets/img/aluno-modulo/seta.svg" alt="">
+                        <a href="aluno-dashboard.html" class="desktop">
+                            <p>Voltar</p>
+                        </a>
+
+                        <a href="aluno-dashboard.html"><img class="mobile seta-voltar" src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="titulo-materia-capitulo">
+                    <p>Matemática: Funções de 1° e 2° grau</p>
+                </div>
+
+                <div class="conteudo-capitulo">
+                    <div class="caixas">
+                        <div class="box caixa-acertos" data-filter="acerto" data-filterStatus="acertos"> <!-- o data-filter se refere à classe de cada "questoes-single"-->
+                            <p class="status">ACERTOS</p>
+                            <p class="quantidade">28</p>
+                        </div>
+                        <div class="box caixa-duvidas" data-filter="duvida" data-filterStatus="duvidas">
+                            <p class="status">DÚVIDAS</p>
+                            <p class="quantidade">06</p>
+                        </div>
+                        <div class="box caixa-erros" data-filter="erro" data-filterStatus="erros">
+                            <p class="status">ERROS</p>
+                            <p class="quantidade">04</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caixa-questoes">
+                    <div class="questoes-capitulo">
+                        <div class="titulo-questoes-c">
+                            <p class="status-questoes acertos">Acertos</p>
+                            <p class="status-questoes duvidas">Dúvidas</p>
+                            <p class="status-questoes erros">Erros</p>
+                            <p>Questões do capítulo 1: Funções de 1° e 2° grau</p>
+                            <img class="setinha-down" data-filter="todos" src="./assets/img/aluno-modulo/seta-down.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="questoes-todas">
+                        <div class="questoes-single erro">
+                            <div class="questao-numero questao-numero-erro">
+                                <p>1</p>
+                            </div>
+                            <div class="questao-texto">
+                                (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
+                            </div>
+                        </div>
+                        <div class="questoes-single acerto duvida">
+                            <div class="questao-numero questao-numero-acerto questao-numero-duvida">
+                                <p>2</p>
+                            </div>
+                            <div class="questao-texto">
+                                (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
+                            </div>
+                        </div>
+                        <div class="questoes-single acerto">
+                            <div class="questao-numero questao-numero-acerto">
+                                <p>3</p>
+                            </div>
+                            <div class="questao-texto">
+                                (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
+                            </div>
+                        </div>
+                        <div class="questoes-single erro">
+                            <div class="questao-numero questao-numero-erro">
+                                <p>4</p>
+                            </div>
+                            <div class="questao-texto">
+                                (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
+                            </div>
+                        </div>
+                        <div class="questoes-single erro duvida">
+                            <div class="questao-numero questao-numero-erro questao-numero-duvida">
+                                <p>5</p>
+                            </div>
+                            <div class="questao-texto">
+                                (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
+                            </div>
+                        </div>
+                        <div class="questoes-single acerto duvida">
+                            <div class="questao-numero questao-numero-acerto questao-numero-duvida">
+                                <p>6</p>
+                            </div>
+                            <div class="questao-texto">
+                                (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
+                            </div>
+                        </div>
+                        <div class="questoes-single acerto">
+                            <div class="questao-numero questao-numero-acerto">
+                                <p>7</p>
+                            </div>
+                            <div class="questao-texto">
+                                (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
+                            </div>
+                        </div>
+                        <div class="questoes-single acerto">
+                            <div class="questao-numero questao-numero-acerto">
+                                <p>8</p>
+                            </div>
+                            <div class="questao-texto">
+                                (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
+                            </div>
+                        </div>
+                        <div class="questoes-single acerto">
+                            <div class="questao-numero questao-numero-acerto">
+                                <p>9</p>
+                            </div>
+                            <div class="questao-texto">
+                                (ENEM 2019 PPL) O quadro apresenta a relação dos jogadores que fizeram parte da seleção brasileira de voleibol mascu lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro. <a href="">(...)</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="desktop" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg"
+                    alt=""></a>
+            <a class="mobile" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/mobile-eject.svg"
+                    alt=""></a>
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="tela hide"></div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script src="assets/js/filtro-ADE.js"></script>
+
+</body>

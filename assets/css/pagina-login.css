@@ -1,0 +1,351 @@
+.mobile {
+  display: none;
+}
+
+#login {
+  background-color: #282c35;
+  height: 100%;
+}
+
+#login .container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#login .container .imagem {
+  position: relative;
+  z-index: 2;
+}
+
+#login .container .imagem img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  width: 429px;
+}
+
+#login .overlay {
+  position: absolute;
+  top: 130px;
+  min-height: 60vh;
+  width: 100%;
+  background: #d7d5d4;
+}
+
+#login .conteudo {
+  padding: 5% 15%;
+}
+
+#login .conteudo .titulo {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  color: #282c35;
+}
+
+#login .conteudo .formulario {
+  margin-top: 5px;
+  width: 355.59px;
+}
+
+#login .conteudo .formulario label {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  margin-top: 25px;
+  color: #282c35;
+}
+
+#login .conteudo .formulario input {
+  padding: 0% 2% 0;
+  display: block;
+  border: none;
+  width: 350px;
+  height: 35px;
+  background: #e8e8e8;
+  border: 1px solid #f5f5f5;
+  border-radius: 10px;
+}
+
+#login .conteudo .formulario p {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#login .conteudo .formulario a,
+#login .conteudo .formulario a:visited {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #282c35;
+  text-decoration: none;
+}
+
+#login .conteudo .formulario a:hover {
+  color: #282c35c4;
+}
+
+#login .conteudo .formulario .botao-entrar {
+  text-align: center;
+}
+
+#login .conteudo .formulario button {
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #282c35;
+  font-size: 16px;
+  width: 119px;
+  height: 41px;
+  border: none;
+  background: #f58e08;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#login .conteudo .formulario button:hover {
+  opacity: 0.95;
+}
+
+#login .conteudo input:focus,
+#login .conteudo select:focus {
+  outline: 0;
+}
+
+@media (max-width: 1024px) and (min-width: 1024px) {
+  #login .container .itens {
+    height: 75vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .desktop {
+    display: none;
+  }
+  #login {
+    background: #d7d5d4 !important;
+    min-height: 100vh !important;
+    background: none;
+  }
+  #login .desktop {
+    display: none;
+  }
+  #login .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #login .container {
+    background: none;
+    height: 100% !important;
+    width: 100%;
+  }
+  #login .container .formulario1 {
+    width: 100%;
+    display: inline;
+  }
+  #login .container .formulario1 input {
+    padding: 1% !important;
+    display: block;
+    border: none;
+    width: 600px;
+    height: 29px;
+    background: none;
+    border: 1px solid #8e95a5;
+    margin-bottom: 20px;
+  }
+  #login .container .formulario1 input::-webkit-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #282c35;
+  }
+  #login .container .formulario1 input:-ms-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #282c35;
+  }
+  #login .container .formulario1 input::-ms-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #282c35;
+  }
+  #login .container .formulario1 input::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #282c35;
+  }
+  #login .container .formulario1 p {
+    width: 100%;
+    text-align: end;
+  }
+  #login .container .formulario1 a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #282c35;
+  }
+  #login .container .formulario1 a,
+  #login .container .formulario1 a:visited {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #282c35;
+    text-decoration: none;
+    margin-bottom: 20px !important;
+  }
+  #login .container .formulario1 a:hover {
+    color: #282c35c4;
+  }
+  #login .container .formulario1 button {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #ffffff;
+    width: 111px;
+    height: 25.16px;
+    border: none;
+    background: #f58e08;
+    border-radius: 17px;
+    cursor: pointer;
+  }
+  #login .container .formulario1 button:hover {
+    background: #f58e08e8;
+  }
+  #login .container .imagem1 {
+    text-align: end;
+    width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #login .container .imagem1 img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    height: 250px;
+  }
+  #login .overlay {
+    position: static;
+    min-width: 100% !important;
+    height: 100% !important;
+    background: none;
+  }
+  #login .itens {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100% !important;
+  }
+  #login .itens p {
+    width: 50%;
+  }
+  #login .conteudo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    height: 100% !important;
+  }
+  #login .conteudo .desktop {
+    display: none;
+  }
+  #login .conteudo .titulo {
+    margin-top: 100px;
+    display: inline;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 42px;
+  }
+  #login .conteudo .titulo p {
+    line-height: 30px;
+    border-bottom: 2px solid #282c35;
+  }
+}
+
+@media (max-width: 750px) {
+  #login .container .formulario1 input {
+    width: 400px;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #login .container .formulario1 input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  #login .container .imagem1 img {
+    height: 200px;
+    width: auto;
+  }
+  #login .container .formulario1 input {
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=pagina-login.css.map */

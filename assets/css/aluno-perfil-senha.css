@@ -1,0 +1,91 @@
+#questao .subtitulo h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 30px;
+  color: #d7d5d4;
+  margin: 50px 0 10px 0;
+}
+
+#questao .habilitar-edicao {
+  left: 490px;
+}
+
+#questao .campos-preenchimento {
+  margin: 20px 0;
+}
+
+#questao input[type="password"] {
+  width: 100%;
+  padding-left: 15px;
+  padding-bottom: 6px;
+}
+
+#questao .button_salvar {
+  display: block;
+}
+
+#questao .campo input {
+  width: 100%;
+  padding-left: 15px;
+  padding-bottom: 6px;
+}
+
+.campo-alt {
+  width: 50%;
+}
+
+@media (max-width: 770px) {
+  #questao .overlay {
+    margin: 0 !important;
+    padding-top: 60px !important;
+  }
+  #questao .subtitulo h2 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #282c35;
+  }
+  #questao .icones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #questao .voltar {
+    padding: 40px 0 0;
+  }
+  #questao .mobile.seta-voltar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #questao .campo-alt {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #questao .campo input {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 499px) {
+  #questao .voltar {
+    padding: 0;
+  }
+  #questao .icones {
+    margin: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  #questao .voltar {
+    padding-top: 20px;
+  }
+}
+/*# sourceMappingURL=aluno-perfil-senha.css.map */

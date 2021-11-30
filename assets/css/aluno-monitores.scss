@@ -1,0 +1,709 @@
+#questao {
+
+    .domingo, .segunda, .terca, .quarta, .quinta, .sexta, .sabado {
+        position: relative;
+        cursor: pointer;
+    }
+    .day-week {
+        position: absolute;
+        top: 25px;
+        left: -30px;
+        font-weight: 300;
+        white-space: nowrap;
+        max-width: 250px;
+        width: 100%;
+
+        font-size: 13px;
+        color: #282C35;
+
+        span {
+            color: #686B72;
+            margin-right: 5px;
+        }
+
+        display: none;
+    }
+
+    .sabado {
+        .day-week {
+            left: -190px;
+        }
+    }
+    .quinta {
+        .day-week {
+            left: -170px;
+        }
+    }
+    .quarta {
+        .day-week {
+            left: -160px;
+        }
+    }
+    .terca {
+        .day-week {
+            left: -150px;
+        }
+    }
+    .segunda {
+        .day-week {
+            left: -140px;
+        }
+    }
+    .domingo {
+        .day-week {
+            left: -130px;
+        }
+    }
+    .sexta {
+        .day-week {
+            left: -180px;
+        }
+    }
+
+
+    .segunda.active:hover > .day-week {
+        display: flex;
+    }
+    .terca.active:hover > .day-week {
+        display: flex;
+    }
+    .quarta.active:hover > .day-week {
+        display: flex;
+    }
+    .quinta.active:hover > .day-week {
+        display: flex;
+    }
+    .sexta.active:hover > .day-week {
+        display: flex;
+    }
+    .sabado.active:hover > .day-week {
+        display: flex;
+    }
+    .domingo.active:hover > .day-week {
+        display: flex;
+    }
+
+    .nav-materia {
+        border-right: 2px solid #B4B1AE;
+
+        padding-right: 50px;
+    }
+
+    .conteudo_monitor {
+        display: flex;
+
+        margin-top: 50px;
+
+        padding-bottom: 95px;
+
+        width: 100%;
+
+    }
+
+    .nav-right {
+        width: 100%;
+
+        margin-left: 50px;
+
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+    }
+
+    .cards-monitores {
+        width: 100%;
+
+
+    }
+
+    .menu-materia {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paginacao {
+        margin-bottom: -100px;
+    }
+
+    .nav-materia {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        height: 100%;
+    }
+
+    .filtro-horario-dia {
+        margin-top: 100px;
+    }
+
+
+    .materia {
+        color: #EBE7E4;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+
+        cursor: pointer;
+
+        margin-top: 30px;
+    }
+
+    .menu-materia {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .materia:hover {
+        color: #F58E08;
+    }
+
+    .materia.active {
+        color: #F58E08;
+    }
+
+    .monitores_title-date {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 1px;
+
+        color: #EAEAEA;
+
+        font-weight: 500;
+    }
+
+    .monitores_filter-date {
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .alternativas-check {
+        margin-bottom: 15px;
+    }
+
+    .check-meu-perfil {
+        margin-bottom: 0;
+    }
+
+    .monitores_title-horario {
+        margin-bottom: 15px;
+    }
+
+    .cardM {
+        background: #EBE7E4;
+        border-radius: 5px;
+
+        display: flex;
+
+        margin-bottom: 25px;
+    }
+
+    .cardM-dentro {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100% !important;
+        word-wrap: break-word;
+
+        margin: 3% 2%;
+    }
+
+    .card-left {
+        display: flex;
+
+        width: 40%;
+
+        align-items: center;
+
+    }
+
+    .card-right {
+        width: 60%;
+    }
+
+    .img_monitor {
+        width: auto;
+        height: 95px;
+
+        margin-right: 5%;
+    }
+
+    .dados_monitor {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin-left: 2%;
+    }
+
+    .txt_monitor {
+        display: flex;
+        flex-direction: column;
+
+        word-wrap: break-word;
+    }
+
+    .title_monitor {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+
+        color: #595B5F;
+    }
+
+    .email_monitor,
+    .cel_monitor {
+        display: flex;
+
+        margin-top: 10px;
+
+        align-items: center;
+    }
+
+    .img-cel,
+    .img-email {
+        margin-right: 5px;
+    }
+
+    .p-email_monitor,
+    .p-cel_monitor {
+        color: #595B5F;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        font-size: 15px;
+
+        display: flex;
+        align-items: center;
+
+        font-weight: 600;
+    }
+
+    .monitores_card-agenda {
+        display: flex;
+
+        margin-top: 3%;
+        margin-right: 20px;
+
+        justify-content: end;
+        width: 100%;
+
+        table {
+            width: 100%;
+        }
+
+        thead {
+            width: 100%;
+        }
+
+        tr {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        th {
+            margin: 0 3px;
+
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 112%;
+            /* identical to box height, or 17px */
+
+            display: flex;
+            align-items: flex-end;
+
+            color: #BEBEBE;
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        th.active {
+
+            color: #595B5F;
+        }
+    }
+    .form_materia {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-materia {
+        input[type="radio"] + label:before {
+            display: none;
+        }
+    }
+
+}
+
+.btn-laranja {
+    border-radius: 17px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background: #f58e08;
+    border-radius: 17 px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    width: 80%;
+    font-weight: bold;
+
+    color: #ffffff;
+
+    height: 30px;
+}
+
+.button-buscar {
+    margin-top: 20px;
+}
+
+#monitores_filter-horario {
+    background: #4F4F4F;
+    border-radius: 2px;
+    border: none;
+    padding: 7%;
+    width: calc(80% - 14%) !important;
+    height: 10px;
+
+    font-size: 16px;
+    font-weight: 500px;
+
+    color: #C4C4C4 !important;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=time]:focus::-webkit-datetime-edit {
+    color: #C4C4C4 !important;
+}
+
+.esquerda-paginacao {
+    margin-right: 10px;
+}
+
+.direita-paginacao {
+    margin-left: 10px;
+}
+
+#questao {
+
+    .paginacao {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 25px;
+    }
+
+    .p-paginacao {
+        display: inline;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        color: #4e5057;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        margin-right: 10px;
+    }
+}
+
+#questao .paginacao-admin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+}
+
+#questao .paginacao-admin .circle {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    text-align: center;
+
+    color: #EBE7E4;
+    cursor: pointer;
+}
+
+#questao .paginacao-admin .circle-active {
+    background-color: #f58e08;
+}
+
+#questao .paginacao-admin li {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 3px;
+    /* identical to box height */
+
+    color: #EBE7E4;
+    text-decoration: none;
+}
+
+#questao .paginacao-admin .passar-pagina {
+    width: auto;
+    height: 15px;
+    position: relative;
+    transform: translate(0%, 30%);
+
+    cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+    #questao {
+        .conteudo-perfil {
+            margin: 45px 20px 20px 40px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    #questao {
+        .conteudo-perfil {
+            margin: 20px 0 20px 0px;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    #questao {
+        padding: 0;
+
+        .conteudo_monitor {
+            margin-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .titulo.mobile {
+            padding: 0;
+            margin: 0 5%;
+        }
+        .nav-materia {
+            display: none;
+        }
+
+        .nav-right {
+            margin-left: 0;
+        }
+
+        .cardM-dentro {
+            margin-left: 5%;
+        }
+
+        .cardM {
+            border-bottom: 1px solid  rgba(0, 0, 0, 0.25);
+            border-radius: 0px;
+            margin: 1px;
+        }
+        .icones {
+            display: flex;
+            margin: 0 5%;
+        }
+        .mobile.seta-voltar {
+            display: flex;
+           
+        }
+
+        .paginacao-admin .circle {
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 50%;
+            text-align: center;
+        
+            color: #2c313b;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #questao {
+        .day-week {
+           
+            top: 23px;
+        }
+        .circle {
+            font-size: 12px;
+        }
+
+        .paginacao {
+            margin-top: 20px;
+            padding-bottom: 2%;
+        }
+
+        .title_monitor {
+            font-size: 16px;
+        }
+
+        .p-cel_monitor,
+        .p-email_monitor {
+            font-size: 14px;
+        }
+
+        .img_monitor {
+            width: auto;
+     
+        }
+    }
+
+}
+
+
+@media (max-width: 499px) {
+    #questao {
+        .title_monitor {
+            font-size: 13px;
+        }
+
+        .cel_monitor, .email_monitor {
+            
+            
+            margin-top: 5px;
+        }
+    
+        .p-cel_monitor,
+        .p-email_monitor {
+            font-size: 11px;
+        }
+        
+        .img-cel, .img-email {
+            height: 10px;
+            width: auto;
+        }
+    
+        .monitores_card-agenda th {
+            font-size: 10px;
+        }
+        .img_monitor {
+            height: 60px;
+        }
+        .day-week {
+           
+            top: 15.5px;
+            font-size: 10px;
+            color: #282C35;
+        }
+    
+        .sabado {
+            .day-week {
+                left: -150px;
+            }
+        }
+        .quinta {
+            .day-week {
+                left: -148px;
+            }
+        }
+        .quarta {
+            .day-week {
+                left: -147px;
+            }
+        }
+        .terca {
+            .day-week {
+                left: -146px;
+            }
+        }
+        .segunda {
+            .day-week {
+                left: -145px;
+            }
+        }
+        .domingo {
+            .day-week {
+                left: -144.5px;
+            }
+        }
+        .sexta {
+            .day-week {
+                left: -149px;
+            }
+        }
+    
+    }
+
+}
+
+@media (max-width: 350px) {
+    #questao {
+        .title_monitor {
+            font-size: 11px;
+        }
+    
+        .p-cel_monitor,
+        .p-email_monitor {
+            font-size: 9px;
+        }
+        
+        .img-cel, .img-email {
+            height: 7px;
+            width: auto;
+        }
+    
+        .monitores_card-agenda th {
+            font-size: 9px;
+        }
+        .img_monitor {
+            height: 50px;
+        }
+        .day-week {
+           
+            top: 15.5px;
+            font-size: 9px;
+            color: #282C35;
+        }
+    
+        .segunda {
+            .day-week {
+                left: -138px;
+            }
+        }
+        .domingo {
+            .day-week {
+                left: -130px;
+            }
+        }
+        .sabado {
+            .day-week {
+                left: -140px;
+            }
+        }
+        .quinta {
+            .day-week {
+                left: -140px;
+            }
+        }
+        .quarta {
+            .day-week {
+                left: -140px;
+            }
+        }
+        .terca {
+            .day-week {
+                left: -139px;
+            }
+        }
+        .sexta {
+            .day-week {
+                left: -140px;
+            }
+        }
+    }
+
+}

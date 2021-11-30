@@ -1,0 +1,419 @@
+.mobile {
+    display: none;
+}
+
+body,
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+#redefinir {
+    height: 100%;
+    width: 100%;
+    background: #2c313b;
+    .container,
+    .overlay {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteudo {
+        .mobile {
+            display: none;
+        }
+        position: relative;
+        margin-top: 85px;
+
+        border-radius: 30px;
+
+        width: 64%;
+        height: 64.1%;
+
+        display: flex;
+        background-color: #e6e1dd;
+
+        .coluna1 {
+            display: flex;
+            flex-direction: column;
+            margin-top: 70px;
+
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+
+        .titulo {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 56px;
+
+            color: #2c313b;
+        }
+
+        .paragrafo {
+            margin-top: 30px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        input {
+            background: #e6e1dd;
+            border: 2px solid #000000;
+            box-sizing: border-box;
+            border-radius: 30px;
+            padding: 2%;
+            margin-top: 15px;
+            width: 97%;
+            height: 45px;
+            font-size: 20px;
+        }
+
+        input::placeholder {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+
+            color: rgba(44, 49, 59, 0.4);
+        }
+
+        form {
+            width: 100%;
+            height: 100%;
+
+            
+        }
+
+        .active {
+            border: 2px solid #fa4954;
+            
+        }
+
+        .desativar {
+            display: none;
+           
+        }
+        
+        .active-mobile {
+            border: 1px solid #fa4954;
+            display: initial;
+        }
+
+        button {
+            margin-top: 40px;
+            padding: 2% 12%;
+            cursor: pointer;
+            border: none;
+
+            background: #f58e08;
+            border-radius: 30px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 28px;
+
+            color: #2c313b;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            opacity: 0.95;
+        }
+
+        .imagem1 {
+            width: 35%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            img {
+                width: 289px;
+                height: 287px;
+            }
+        }
+
+        .invalidfeedback {
+            margin-top: 5px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+
+            color: #fa4954;
+        }
+
+        .imagem2 {
+            position: absolute;
+
+            top: 25px;
+            right: 30px;
+        }
+        .imagem2:hover {
+            opacity: 0.9;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    #redefinir {
+        .conteudo {
+            .titulo {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    #redefinir {
+        .conteudo {
+            .titulo {
+                p {
+                    font-size: 30px !important;
+                }
+            }
+            .paragrafo {
+                font-size: 14px;
+            }
+            input::placeholder {
+                font-size: 19px;
+            }
+            button {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1075px) {
+    #redefinir {
+        background: #d7d5d4 !important;
+        min-height: 100vh !important;
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: flex;
+        }
+        .conteudo {
+            height: 100%;
+            input {
+                 width: 100%;
+            }
+            .invalidfeedback1 {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 9px;
+                line-height: 9px;
+
+                color: #fa4954;
+                text-align: end;
+            }
+            width: 100%;
+            .mobile {
+                display: flex;
+            }
+            display: block;
+            background: none;
+
+            padding: 0;
+            margin: 0;
+
+            .titulo {
+                display: flex;
+                margin-top: 130px !important;
+                p {
+                    font-size: 15px;
+                    width: 50% !important;
+                    margin-bottom: 30px;
+                    line-height: 40px;
+                    border-bottom: 2px solid #282c35;
+
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 15px !important;
+                    line-height: 30px;
+
+                    color: #282c35;
+                }
+            }
+
+            .paragrafo {
+                margin: 0;
+
+                p {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+
+            input {
+                padding: 1% !important;
+                display: block;
+                border: none;
+                border-radius: 0 !important;
+                height: 29px;
+                background: none;
+                border: 1px solid #8e95a5;
+                margin-bottom: 20px;
+
+                font-size: 12px !important;
+            }
+
+            input::placeholder {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px !important;
+                line-height: 15px;
+
+                color: #282c35;
+            }
+
+            button {
+                margin-top: 25px;
+ 
+                padding: 1% 5%;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                color: white;
+
+                text-transform: initial;
+            }
+        }
+
+        .formulario1 {
+            width: 100%;
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+        .coluna1 {
+            width: 80%;
+            justify-content: center !important;
+
+            margin: 0 auto !important;
+            padding: 0 !important;
+        }
+        .imagem1 {
+            img {
+                width: 240px !important;
+                height: 238px !important;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        .imagem3 {
+            img {
+                position: absolute;
+                top: 100px;
+                left: 10.5%;
+            }
+        }
+
+        .imagem3:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    #redefinir .formulario1 input {
+        width: 100%;
+    }
+    #redefinir {
+        .conteudo {
+            .titulo {
+                p {
+                    width: 80% !important;
+                }
+            }
+            .imagem1 {
+                img {
+                    width: 200px !important;
+                    height: 198px !important;
+                }
+            }
+            .paragrafo {
+                p {
+                    width: 100% !important;
+                }
+            }
+            form {
+                width: 100%;
+            }
+            .formulario1 {
+                input {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #redefinir .formulario1 input {
+        width: 350px;
+    }
+
+    #redefinir .conteudo button {
+        padding: 2% 7%;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    #redefinir .formulario1 input {
+        width: 270px;
+    }
+
+    #redefinir .conteudo button {
+        padding: 1.5% 30px;
+    }
+}
+
+@media (max-width: 350px) {
+    #redefinir .formulario1 input {
+        width: 200px;
+    }
+    #redefinir {
+        .conteudo {
+            .titulo {
+                p {
+                    width: 100% !important;
+                }
+            }
+            .imagem1 {
+                img {
+                    width: 150px !important;
+                    height: 148px !important;
+                }
+            }
+        }
+    }
+}

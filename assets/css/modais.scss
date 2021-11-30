@@ -1,0 +1,18 @@
+.alt-modal {
+    width: 30%;
+}
+.alt-radio-mp {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.div-btn-modal {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px){
+    .alt-modal {
+        width: 90%;
+    }
+}

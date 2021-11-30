@@ -1,0 +1,256 @@
+#questao .form-questao-cadastrada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+#questao .form-questao-cadastrada input[type="radio"],
+#questao .form-questao-cadastrada input[type="checkbox"] {
+  display: none;
+  /* Esconde os inputs */
+}
+
+#questao .form-questao-cadastrada label {
+  cursor: pointer;
+}
+
+#questao .form-questao-cadastrada input[type="checkbox"] + label:before {
+  border: 6px solid #d4d1d1;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 0.25em 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 13px;
+  height: 13px;
+  border-radius: 0;
+}
+
+#questao .form-questao-cadastrada input[type="checkbox"]:checked + label:before {
+  background: #f58e08;
+}
+
+#questao .secao-conteudo-questao-admin {
+  border-radius: 0;
+  padding: 1% 0 0 0;
+}
+
+#questao .questao-admin {
+  padding: 3% 5%;
+}
+
+#questao .img-enunciado-admin {
+  max-width: 469px;
+  min-width: 100px;
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+
+#questao .alternativas-enunciado {
+  margin-top: 30px;
+  position: relative;
+}
+
+#questao .alternativas-enunciado .p-alternativas-enunciado {
+  margin-bottom: 20px;
+}
+
+#questao .alternativa-selecionada-admin {
+  color: #f58e08;
+  font-weight: bold;
+}
+
+#questao .questao-footer-admin {
+  border: none;
+  background: #efe2d1;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+  padding: 2% 10%;
+  position: relative;
+}
+
+#questao .paginacao {
+  margin: 0;
+}
+
+#questao .pagina-oficial-questao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 10px;
+}
+
+#questao .pagina-oficial-questao a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#questao .pagina-oficial-questao img {
+  margin-left: 10px;
+}
+
+#questao .rodape-questao-admin {
+  width: 100%;
+}
+
+#questao .video-anotacao-admin {
+  margin: 25px auto 20px auto;
+  width: 80%;
+}
+
+#questao .video-anotacao-admin p {
+  margin-left: 30px;
+}
+
+#questao .video-admin {
+  color: #282c35;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+#questao .video-admin p {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#questao .anotacao-admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 20px;
+}
+
+#questao .anotacao-admin p {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 2%;
+  border-radius: 10px;
+}
+
+#questao #textarea-anot {
+  height: 120px;
+  resize: none;
+  min-width: 250px;
+  background: #f2f2f2;
+  border: none;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+#questao #textarea-anot:disabled {
+  color: #282c35;
+}
+
+#questao #textarea-anot::-webkit-scrollbar {
+  width: 2px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+#questao #textarea-anot:-webkit-scrollbar-thumb {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  background-color: #f0f0f05e;
+}
+
+@media (max-width: 820px) {
+  #questao .pagination::after {
+    left: 65%;
+  }
+  #questao .pagination::before {
+    right: 65%;
+  }
+}
+
+@media (max-width: 800px) {
+  #questao .pagina-oficial-questao.desktop {
+    display: none;
+  }
+  #questao .pagina-oficial-questao-admin.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #questao .pagina-oficial-questao-admin.mobile .pagina-of-questao {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 11px;
+  }
+  #questao .pagina-oficial-questao-admin.mobile .pagina-of-questao p {
+    margin-right: 10px;
+  }
+  #questao .rodape-questao-admin {
+    margin-bottom: 0;
+  }
+  #questao .questao-footer-admin {
+    padding: 2% 0;
+  }
+}
+
+@media (max-width: 670px) {
+  #questao .video-admin, #questao .anotacao-admin {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #questao .form-questao-cadastrada input[type="checkbox"] + label:before {
+    width: 10px;
+    height: 10px;
+  }
+  #questao .questao-admin {
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0 0;
+    font-size: 14px;
+  }
+  #questao .video-anotacao-admin {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 499px) {
+  #questao .video-anotacao-admin {
+    font-size: 12px;
+    padding: 3% 5%;
+  }
+  #questao .video-admin p {
+    overflow-x: scroll;
+  }
+}
+/*# sourceMappingURL=admin-visualizar-questao.css.map */

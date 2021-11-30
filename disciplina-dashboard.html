@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/footer-light.css">
+    <link rel="stylesheet" href="assets/css/aluno-barra-de-pesquisa.css">
+    <link rel="stylesheet" href="assets/css/admin-dashboard.css">
+    <link rel="stylesheet" href="assets/css/admin-menu.css">
+    <link rel="stylesheet" href="assets/css/cursinho-dashboard.css">
+    <link rel="stylesheet" href="assets/css/disciplina-dashboard.css">
+
+
+    <link rel="stylesheet" href="assets/css/modal-apagar-parceiro.css">
+    <link rel="stylesheet" href="assets/css/modal-adicionar-parceiro.css">
+    <link rel="stylesheet" href="assets/css/modal-adicionar-disciplina.css">
+
+
+
+    <title>Dashboard - Disciplina | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item">
+
+                        <div>
+                            <div class="book">
+                                <a href="#"><img class="icon_book" src="assets/img/admin-menu/books-other.svg"
+                                        alt=""></a>
+                                <a class="item-link item-book" href="#">
+                                    <p>Lorem Ipsum</p>
+                                </a>
+                            </div>
+                            <div class="book-down">
+                                <a href="">
+                                    <p>Enviar mensagem</p>
+                                </a>
+                                <a href="">
+                                    <p>Mensagens</p>
+                                </a>
+                                <a href="">
+                                    <p>Alunos</p>
+                                </a>
+                                <a href="">
+                                    <p>Disciplinas</p>
+                                </a>
+                                <a href="">
+                                    <p>Simulados</p>
+                                </a>
+                            </div>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href=""><img class="icon_perfil" src="assets/img/aluno-questao/perfil.svg" alt=""></a>
+                        <a href="" class="item-link item-perfil">Perfil</a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <div>
+                            <div class="book">
+                                <a href="#"><img class="icon_book" src="assets/img/aluno-perfil/disciplinas-laranja.svg"
+                                        alt=""></a>
+                                <a class="item-link item-book item-link-ativado" href="#">
+                                    <p>Disciplinas</p>
+                                </a>
+                            </div>
+                            <div class="book-down">
+                                <a href="">
+                                    <p>Português</p>
+                                </a>
+                                <a href="">
+                                    <p>Matemática</p>
+                                </a>
+                                <a href="">
+                                    <p>Geografia</p>
+                                </a>
+                                <a href="">
+                                    <p>História</p>
+                                </a>
+                                <a href="">
+                                    <p>Literatura</p>
+                                </a>
+                            </div>
+                            <div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href=""><img class="icon_perfil" src="assets/img/aluno-questao/indicadores.svg" alt=""></a>
+                        <a href="" class="item-link item-perfil">Indicadores</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+
+                <!-- DISCIPLINA -->
+                <section class="conteudo-admin endereco-cursinho">
+                    <div class="cursinho caixa-cursinho">
+                        <div class="border-bottom border-bottom-sem">
+                            <img src="./assets/img/cursinho-perfil/matematica.svg" alt="">
+                            <div class="info-cursinho">
+                                <h1 class="nome-cursinho">Matemática</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="perfil-completo-cursinho" href="">Editar Matéria</a>
+                </section>
+                <!-- FIM DISCIPLINA -->
+
+                <section class="conteudo-admin admin-numeros">
+                    <div class="caixa-admin caixa-admin-disciplina">
+                        <p class="caixa-titulo-admin">Alunos</p>
+                        <p class="numero-admin">20</p>
+                    </div>
+                    <div class="caixa-admin caixa-admin-disciplina">
+                        <p class="caixa-titulo-admin">Material</p>
+                        <p class="numero-admin">04</p>
+                    </div>
+                </section>
+
+                <!-- CADASTRAR ASSUNTO -->
+                <section class="section-admin cursinho-admin" id="c-modulo">
+                    <h2 class="titulo-admin">Assuntos</h2>
+
+                    <div class="conteudo-section-admin">
+                        <div class="cursinho-info-admin">
+                            <p class="info-form-admin">Para cadastrar um novo assunto, clique no botão.</p>
+                            <button class="button-cadastrar button-cadastrar-monitor button-modulo">Cadastrar
+                                Assunto</button>
+                        </div>
+
+                        <div class="cursinhos-admin modulosD">
+                            <!-- MÓDULO I-->
+                            <div class="modulosDM">
+                                <div class="cursinho modulosDisciplina">
+                                    <div class="titulo-moduloD">
+                                        <a href="">
+                                            <p class="p-disciplina">Geometria Analítica</p>
+                                        </a>
+                                        <img class="drop-disciplina"
+                                            src="./assets/img/cursinho-perfil/down_disciplina.svg" alt="">
+                                        <img class="down-disciplina"
+                                            src="./assets/img/cursinho-perfil/drop_disciplina.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="conteudosD">
+                                    <div class="conteudo-moduloD">
+                                        <div class="left-text">
+                                            <p class="capitulo-moduloD">Capítulo 1</p>
+                                            <p class="assunto-moduloD">Funções de 1° e 2° graus</p>
+                                            <p></p>
+                                        </div>
+
+                                        <p class="numero-moduloD">32</p>
+                                    </div>
+                                    <div class="conteudo-moduloD">
+                                        <div class="left-text">
+                                            <p class="capitulo-moduloD">Capítulo 2</p>
+                                            <p class="assunto-moduloD">Funções de 1° e 2° graus</p>
+                                            <p></p>
+                                        </div>
+
+                                        <p class="numero-moduloD">32</p>
+                                    </div>
+                                    <div class="conteudo-moduloD">
+                                        <div class="left-text">
+                                            <p class="capitulo-moduloD">Capítulo 3</p>
+                                            <p class="assunto-moduloD">Funções de 1° e 2° graus</p>
+                                            <p></p>
+                                        </div>
+
+                                        <p class="numero-moduloD">32</p>
+                                    </div>
+                                    <div class="conteudo-moduloD">
+                                        <div class="left-text">
+                                            <p class="capitulo-moduloD">Capítulo 4</p>
+                                            <p class="assunto-moduloD">Progressão aritmética e geométrica</p>
+                                            <p></p>
+                                        </div>
+
+                                        <p class="numero-moduloD">32</p>
+                                    </div>
+                                    <div class="conteudo-moduloD">
+                                        <div class="left-text">
+                                            <p class="capitulo-moduloD">Capítulo 5</p>
+                                            <p class="assunto-moduloD">Trigonometria (triângulo retângulo e semelhança
+                                                de
+                                                triângulos)</p>
+                                            <p></p>
+                                        </div>
+
+                                        <p class="numero-moduloD">32</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- MÓDULO II-->
+                            <div class="modulosDM">
+                                <div class="cursinho modulosDisciplina">
+                                    <div class="titulo-moduloD">
+                                        <a href="">
+                                            <p class="p-disciplina">Geometria</p>
+                                        </a>
+                                        <img class="drop-disciplina"
+                                            src="./assets/img/cursinho-perfil/down_disciplina.svg" alt="">
+                                        <img class="down-disciplina"
+                                            src="./assets/img/cursinho-perfil/drop_disciplina.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="conteudosD">
+                                    <div class="conteudo-moduloD">
+                                        <div class="left-text">
+                                            <p class="capitulo-moduloD">Capítulo 1</p>
+                                            <p class="assunto-moduloD">Funções de 1° e 2° graus</p>
+                                            <p></p>
+                                        </div>
+
+                                        <p class="numero-moduloD">32</p>
+                                    </div>
+                                    <div class="conteudo-moduloD">
+                                        <div class="left-text">
+                                            <p class="capitulo-moduloD">Capítulo 2</p>
+                                            <p class="assunto-moduloD">Funções de 1° e 2° graus</p>
+                                            <p></p>
+                                        </div>
+
+                                        <p class="numero-moduloD">32</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- MÓDULO III-->
+                            <div class="modulosDM">
+                                <div class="cursinho modulosDisciplina">
+                                    <div class="titulo-moduloD">
+                                        <a href="">
+                                            <p class="p-disciplina">Espacial Lorem ipsum dolor, sit amet</p>
+                                        </a>
+                                        <img class="drop-disciplina"
+                                            src="./assets/img/cursinho-perfil/down_disciplina.svg" alt="">
+                                        <img class="down-disciplina"
+                                            src="./assets/img/cursinho-perfil/drop_disciplina.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="conteudosD">
+                                    <div class="conteudo-moduloD">
+                                        <div class="left-text">
+                                            <p class="capitulo-moduloD">Capítulo 1</p>
+                                            <p class="assunto-moduloD">Funções de 1° e 2° graus</p>
+                                            <p></p>
+                                        </div>
+
+                                        <p class="numero-moduloD">32</p>
+                                    </div>
+                                    <div class="conteudo-moduloD">
+                                        <div class="left-text">
+                                            <p class="capitulo-moduloD">Capítulo 2</p>
+                                            <p class="assunto-moduloD">Funções de 1° e 2° graus</p>
+                                            <p></p>
+                                        </div>
+
+                                        <p class="numero-moduloD">32</p>
+                                    </div>
+                                    <div class="conteudo-moduloD">
+                                        <div class="left-text">
+                                            <p class="capitulo-moduloD">Capítulo 3</p>
+                                            <p class="assunto-moduloD">Funções de 1° e 2° graus</p>
+                                            <p></p>
+                                        </div>
+
+                                        <p class="numero-moduloD">32</p>
+                                    </div>
+                                    <div class="conteudo-moduloD">
+                                        <div class="left-text">
+                                            <p class="capitulo-moduloD">Capítulo 4</p>
+                                            <p class="assunto-moduloD">Progressão aritmética e geométrica</p>
+                                            <p></p>
+                                        </div>
+
+                                        <p class="numero-moduloD">32</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <!-- FIM CADASTRAR ASSUNTO -->
+
+                <!-- CADASTRAR MATERIAL -->
+                <section class="section-admin cursinho-admin" id="c-material">
+                    <h2 class="titulo-admin">Vídeo Aula (13)</h2>
+
+                    <div class="conteudo-section-admin">
+                        <div class="cursinho-info-admin">
+                            <p class="info-form-admin">Para cadastrar uma nova vídeo aula clique no botão.</p>
+                            <button class="button-cadastrar button-cadastrar-monitor button-video">Cadastrar Vídeo Aula</button>
+                        </div>
+
+                        <div class="cursinhos-admin">
+                            <form action="">
+                                <div class="input-cursinhos">
+                                    <input type="search" class="buscar buscar-monitores" placeholder="Buscar">
+                                    <select name="select">
+                                        <option value="valor1" selected>Assunto</option>
+                                        <option value="valor2">Valor 2</option>
+                                        <option value="valor3">Valor 3</option>
+                                    </select>
+                                    <button class="lupa-search lupa-search-monitores"><img
+                                            src="./assets/img/admin-dashboard/lupa-search.svg" alt=""></button>
+                                    <button class="ordem-alf"><img src="./assets/img/admin-menu/ordem-alfabetica.svg"
+                                            alt=""></button>
+                                </div>
+                            </form>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/cursinho-perfil/matematica.svg" alt="">
+                                    <div class="info-cursinho info-material">
+                                        <p><strong>Disciplina:</strong> Matemática</p>
+                                        <p><strong>Assunto</strong> Lorem impsum</p>
+                                        <p class="cadastroM">Cadastrado: 01/10/2021</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/cursinho-perfil/matematica.svg" alt="">
+                                    <div class="info-cursinho info-material">
+                                        <p><strong>Disciplina:</strong> Matemática</p>
+                                        <p><strong>Assunto</strong> Lorem impsum</p>
+                                        <p class="cadastroM">Cadastrado: 02/10/2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/cursinho-perfil/matematica.svg" alt="">
+                                    <div class="info-cursinho info-material">
+                                        <p><strong>Disciplina:</strong> Matemática</p>
+                                        <p><strong>Assunto</strong> Lorem impsum</p>
+                                        <p class="cadastroM">Cadastrado: 05/10/2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/cursinho-perfil/matematica.svg" alt="">
+                                    <div class="info-cursinho info-material">
+                                        <p><strong>Disciplina:</strong> Matemática</p>
+                                        <p><strong>Assunto</strong> Lorem impsum</p>
+                                        <p class="cadastroM">Cadastrado: 05/10/2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="">
+                                <div class="paginacao">
+                                    <ul class="paginacao-admin">
+                                        <li><img class="passar-pagina"
+                                                src="./assets/img/admin-dashboard/esquerda-paginacao.svg" alt=""></li>
+                                        <li><a>
+                                                <div class="circle">1</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle circle-active">2</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">3</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">4</div>
+                                            </a></li>
+                                        <li><a>
+                                                <div class="circle">5</div>
+                                            </a></li>
+                                        <li><img class="passar-pagina"
+                                                src="./assets/img/admin-dashboard/direita-paginacao.svg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- FIM CADASTRAR MATERIAL -->
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-finalizar-overlay modal2">
+        <div class="modal-finalizar">
+            <div class="modal-sair">
+                <img class="x-sair x-sair1" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <div class="modal-finalizar-conteudo">
+                <form action="" class="decisao-botoes-modal">
+                    <div class="padding-modal">
+                        <p class="p-titulo-modal-finalizar">Cadastre uma nova vídeo aula:</p>
+
+                        <div class="add-img-admin">
+                            <div class="img-caixa-admin">
+                                <div id="new">
+                                </div>
+                                <img class="img-preview" src="./assets/img/admin-dashboard/img-file-add.png" alt="">
+                                <div class="adicionar-img">
+                                    <label for="file-img-admin">
+                                        <img  class="image-mais-admin" src="./assets/img/admin-dashboard/add-file-img.svg" >
+                                    </label>
+                                    <input id="file-img-admin" type='file' accept="image/*" onchange="loaderFile(event)">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="parceiro-admin">
+                            <label for="input-parceiro-admin">Título da aula:</label>
+                            <input id="input-parceiro-admin" class="input-parceiro" type="text" placeholder="Título da aula">
+                        </div>
+                        <div class="parceiro-admin">
+                            <label for="input-parceiro-admin">Link do vídeo:</label>
+                            <input id="input-parceiro-admin" class="input-parceiro" type="text" placeholder="Link do vídeo">
+                        </div>
+                        <div class="parceiro-admin">
+                            <label for="input-parceiro-admin">Link do material:</label>
+                            <input id="input-parceiro-admin" class="input-parceiro" type="text" placeholder="Link do material">
+                        </div>
+                        <div class="parceiro-admin">
+                            <label for="input-parceiro-admin">Assunto:</label>
+                            <select name="" id="" class="select-modal">
+                                <option value="">Geometria Analítica</option>
+                                <option value="">Espacial</option>
+                                <option value="">Geometria Analítica</option>
+                                <option value="">Geometria Analítica</option>
+                                <option value="">Geometria Analítica</option>
+                            </select>
+                        </div>
+    
+                    </div>
+
+
+
+                    <button class="button-laranja-modal button-laranja-salvar-modal button-salvar-disciplina">Salvar</button>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="modal-finalizar-overlay modal1">
+        <div class="modal-finalizar">
+            <div class="modal-sair">
+                <img class="x-sair x-sair2" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <div class="modal-finalizar-conteudo">
+                <form action="" class="decisao-botoes-modal">
+                    <div class="padding-modal">
+                        <p class="p-titulo-modal-finalizar p-titulo-modal-modulo">Cadastre um novo assunto:</p>
+
+                        <div class="parceiro-admin">
+                            <input id="input-parceiro-admin" class="input-parceiro input-modal-modulo" type="text"
+                                placeholder="Nome do assunto">
+                        </div>
+                    </div>
+
+
+
+                    <button
+                        class="button-laranja-modal button-laranja-salvar-modal button-salvar-disciplina">Salvar</button>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg" alt=""></a>
+
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="tela hide"></div>
+
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/disciplinaDown.js"></script>
+    <script src="./assets/js/disciplina-modais.js"></script>
+
+</body>
+
+</html>

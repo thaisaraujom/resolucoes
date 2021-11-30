@@ -1,0 +1,180 @@
+/*=====================MODAL========================*/
+.deactivate {
+  display: none;
+
+}
+
+.ativar {
+  display: initial;
+}
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+  
+    background-color: rgba(0, 0, 0, 0.7);
+  
+    position: fixed;
+    top: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    opacity: 0;
+    visibility: hidden;
+  
+    transition: 0.5s;
+  
+  }
+
+  
+  .modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  
+    z-index: 999;
+    transition: 0.5s;
+  }
+  
+  .modal {
+    background: #e6e1dd;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 5px 5px;
+   
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+  
+    z-index: 1;
+  }
+  
+  .modal .anotacoes {
+    display: flex;
+    justify-content: space-between;
+  
+    font-family: Montserrat;
+    font-style: normal;
+  
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+  
+    color: #000000;
+    
+    margin-bottom: 20px;
+  }
+  
+  .modal .back, .next {
+    display: flex;
+  
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+  
+  .modal .img-back{
+    margin-right: 10px;
+  }
+  
+  .modal .img-next {
+    margin-left: 10px;
+  }
+  
+  .modal .img-back, .img-next img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  }
+  
+  .modal .anotacoes p {
+    width: 90%;
+    height: 90%;
+    margin-top: 5px;
+    margin-right: 35px;
+
+    margin: 10px 20px;
+    line-height: 17px;
+  }
+  
+  .modal .img {
+    display: flex;
+    padding: 1rem;
+    align-items: flex-start;
+  
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .modal .img img {
+    cursor: pointer;
+  }
+  
+  .modal .img img:hover {
+    opacity: 0.9;
+  }
+
+  .modal .anotacoes .resolucao {
+    overflow: auto; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 300px;
+  }
+  
+  .rodape-modal {
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .rodape-modal .imagens {
+    width: 30%;
+  
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .rodape-modal img {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 450px){
+    .desktop {
+      display: none;
+    }
+    .rodape-modal .imagens {
+      width: 50% !important;
+    }
+    .modal .anotacoes {
+      flex-direction: column;
+    }
+    .modal .anotacoes textarea {
+      padding: 0;
+  
+      margin-top: 10px;
+    }
+    .modal .img {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0;
+  
+      background-color: #5C5E64;
+  
+      height: 21px;
+  
+      padding-right: 6px;
+    }
+  
+    .modal .img img{
+      width: 15px;
+    }
+
+    .modal .anotacoes .resolucao {
+        order: 2 !important;
+    }
+  
+    
+    .modal .anotacoes textarea {
+      width: 100%;
+    }
+  }

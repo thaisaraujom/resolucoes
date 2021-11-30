@@ -1,0 +1,202 @@
+.monitores__materia-item {
+  margin-bottom: 1.875rem !important;
+}
+
+.monitores__filter {
+  width: auto !important;
+  padding-top: 9.125rem;
+  padding-left: 1rem;
+}
+
+.monitores__filter--title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #EAEAEA;
+  padding-left: 0 !important;
+}
+
+.monitores__filter-date label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #C4C4C4;
+}
+
+.monitores__filter-btn {
+  background: #F58E08;
+  border-radius: 17px;
+  width: 7.188rem;
+  padding: 5px 35px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+
+.monitores__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 30px 20px 35px;
+}
+
+.monitores__card-perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.monitores__card-perfil-dados h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  color: #595B5F;
+  margin-bottom: 21px;
+}
+
+.monitores__card-perfil-dados p:first-of-type {
+  margin-bottom: 11px;
+}
+
+.monitores__card-perfil-dados p {
+  margin-bottom: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 112%;
+  color: #595B5F;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.monitores__card-perfil-dados p img {
+  margin-right: 7px;
+}
+
+.monitores__card-agenda th:not(:last-child) {
+  padding-right: 30px;
+}
+
+.monitores__card-agenda th {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 112%;
+  color: #BEBEBE;
+}
+
+.monitores__card-agenda th.active {
+  color: #595B5F;
+}
+
+.monitores__filter--option {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.monitores__filter--option input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #282C35;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.monitores__filter--option input:checked ~ .custom-checkmark {
+  background-color: #C4C4C4;
+}
+
+.custom-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.monitores__filter--option input:checked ~ .custom-checkmark:after {
+  display: block;
+}
+
+.monitores__filter--option .custom-checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#monitores__filter--horario {
+  background: #4F4F4F;
+  border-radius: 2px;
+  border: none;
+  padding: 10px;
+  width: 7.188rem;
+  height: 1.875rem;
+  margin-bottom: 20px;
+  color: #C4C4C4 !important;
+}
+
+input[type=time]:focus::-webkit-datetime-edit {
+  color: #C4C4C4 !important;
+}
+
+.caderno__monitores {
+  padding-right: 0 !important;
+  position: relative;
+  padding-bottom: 97px;
+}
+
+.caderno__pagination {
+  position: absolute;
+  bottom: 0;
+  left: 60%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#questao {
+  padding-left: 0;
+}
+/*# sourceMappingURL=monitores.css.map */

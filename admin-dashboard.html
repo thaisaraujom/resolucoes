@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/footer-light.css">
+    <link rel="stylesheet" href="assets/css/aluno-barra-de-pesquisa.css">
+    <link rel="stylesheet" href="assets/css/admin-dashboard.css">
+    <link rel="stylesheet" href="assets/css/admin-menu.css">
+
+    
+    <link rel="stylesheet" href="assets/css/modal-apagar-parceiro.css">
+   
+    
+    <link rel="stylesheet" href="assets/css/modal-cadastrar-aluno.css">
+    <link rel="stylesheet" href="assets/css/modal-cadastrar-cursinho.css">
+
+
+    <title>Dashboard - Admin | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item">
+
+                        <div>
+                            <div class="home">
+                                <a href="#"><img class="icon_home" src="assets/img/admin-menu/home_orange.svg" alt=""></a>
+                                <a class="item-link item-home item-link-ativado" href="#">
+                                    <p>Home</p>
+                                </a>
+                                <img class="icon-down" src="./assets/img/admin-menu/seta_orange.svg" alt="">
+                            </div>
+                            <div class="home-down">
+                                <a href="">
+                                    <p>Site Institucional</p>
+                                </a>
+                                <a href="">
+                                    <p>Cadastro de Curso</p>
+                                </a>
+                                <a href="">
+                                    <p>Cadastro de Monitores</p>
+                                </a>
+                                <a href="">
+                                    <p>Cadastro de Staff</p>
+                                </a>
+                            </div>
+                            <div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href=""><img class="icon_perfil" src="assets/img/aluno-questao/perfil.svg" alt=""></a>
+                        <a href="" class="item-link item-perfil">Perfil</a>
+                    </li>
+
+                    <div>
+                        <li class="nav-item">
+                            <img class="mais-cursinho" src="assets/img/aluno-questao/sugerir.svg" alt="">
+                            <a href="" class="item-link item-sobre">Sobre o cursinho</a>
+                        </li>
+                    </div>
+                    <div class="sobre-down home-desativada">
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                        <a href="">
+                            <p>Lorem Ipsum</p>
+                        </a>
+                    </div>
+
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+
+                <section class="conteudo-admin">
+                    <div class="caixa-admin">
+                        <p class="caixa-titulo-admin">Cursinhos</p>
+                        <p class="numero-admin">20</p>
+                    </div>
+                    <div class="caixa-admin meio">
+                        <p class="caixa-titulo-admin">Monitores</p>
+                        <p class="numero-admin">18</p>
+                    </div>
+                    <div class="caixa-admin">
+                        <p class="caixa-titulo-admin">Alunos</p>
+                        <p class="numero-admin">04</p>
+                    </div>
+                </section>
+
+                <section class="section-admin">
+                    <h2 class="titulo-admin">Site Institucional</h2>
+                    <table class="tabela">
+                        <tr class="institucional desktop">
+                            <th data-url="admin-secao-inicial.html">Institucional</th>
+                        </tr>
+                        <tr class="institucional mobile">
+                            <td data-url="admin-secao-inicial.html">Site Institucional</td>
+                        </tr>
+                        <tr>
+                            <td data-url="admin-secao-inicial.html">Seção inicial</td>
+                        </tr>
+                        <tr>
+                            <td data-url="admin-quem-somos.html">Quem Somos</td>
+                        </tr>
+                        <tr>
+                            <td data-url="admin-simulacao.html">Faça uma Simulação</td>
+                        </tr>
+                        <tr>
+                            <td data-url="admin-parceiros.html">Parceiros</td>
+                        </tr>
+                        <tr>
+                            <td class="ultimo-td" data-url="admin-fale-conosco.html">Fale Conosco</td>
+                        </tr>
+
+                    </table>
+
+                </section>
+
+                <!-- CADASTRAR CURSINHO -->
+                <section class="section-admin cursinho-admin" id="c-cursinho">
+                    <h2 class="titulo-admin">Cadastro de Cursinho (20)</h2>
+
+                    <div class="conteudo-section-admin">
+                        <div class="cursinho-info-admin">
+                            <p class="info-form-admin">Para acessar o formulário de cadastro de um novo cursinho, clique
+                                no botão.</p>
+                            <button class="button-cadastrar button-cadastrarCursinho">Cadastrar Cursinho</button>
+                        </div>
+
+                        <div class="cursinhos-admin">
+                            <form action="">
+                                <div class="input-cursinhos">
+                                    <input type="search" name="buscar" class="buscar" placeholder="Buscar">
+                                    <button class="lupa-search"><img src="./assets/img/admin-dashboard/lupa-search.svg"
+                                            alt=""></button>
+                                    <button class="ordem-alf"><img src="./assets/img/admin-menu/ordem-alfabetica.svg"
+                                            alt=""></button>
+                                </div>
+                            </form>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/admin-dashboard/cursinho1.png" alt="">
+                                    <div class="info-cursinho">
+                                        <h3>Ciências Aplicadas</h3>
+                                        <p><strong>Endereço:</strong> R. Nossa Sra. de Lourdes, 59 - Tirol, Natal - RN,
+                                            59015-260</p>
+                                        <p><strong>Contato:</strong> (84) 3611-1736</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/admin-dashboard/cursinho2.png" alt="">
+                                    <div class="info-cursinho">
+                                        <h3>Lógico</h3>
+                                        <p><strong>Endereço:</strong> R. Nossa Sra. de Lourdes, 59 - Tirol, Natal - RN,
+                                            59015-260</p>
+                                        <p><strong>Contato:</strong> (84) 3611-1736</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/admin-dashboard/unnamed.png" alt="">
+                                    <div class="info-cursinho">
+                                        <h3>CDF</h3>
+                                        <p><strong>Endereço:</strong> Av. Sen. Salgado Filho, 2233 - Candelária, Natal -
+                                            RN, 59078-000</p>
+                                        <p><strong>Contato:</strong> (84) 3611-1736</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/admin-dashboard/cursinho3.png" alt="">
+                                    <div class="info-cursinho">
+                                        <h3>NIC</h3>
+                                        <p><strong>Endereço:</strong> Avenida Seridó, 659, 2° piso, box 29, Ciola
+                                            Shopping Centro, Caicó - RN, 59300-000</p>
+                                        <p><strong>Contato:</strong> (84) 3611-1736</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="">
+                                <div class="paginacao">
+                                    <ul class="paginacao-admin">
+                                        <li><img class="passar-pagina" src="./assets/img/admin-dashboard/esquerda-paginacao.svg" alt=""></li>
+                                        <li><a><div class="circle">1</div></a></li>
+                                        <li><a><div class="circle circle-active">2</div></a></li>
+                                        <li><a><div class="circle">3</div></a></li>
+                                        <li><a><div class="circle">4</div></a></li>
+                                        <li><a><div class="circle">5</div></a></li>
+                                        <li><img class="passar-pagina" src="./assets/img/admin-dashboard/direita-paginacao.svg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- FIM CADASTRAR CURSINHO -->
+
+                <!-- CADASTRAR MONITORES -->
+                <section class="section-admin cursinho-admin" id="c-monitores">
+                    <h2 class="titulo-admin">Cadastro de Monitores (18)</h2>
+
+                    <div class="conteudo-section-admin">
+                        <div class="cursinho-info-admin">
+                            <p class="info-form-admin">Para cadastrar um novo monitor, clique no botão.</p>
+                            <button class="button-cadastrar button-cadastrar-monitor">Cadastrar Monitor</button>
+                        </div>
+
+                        <div class="cursinhos-admin">
+                            <form action="">
+                                <div class="input-cursinhos">
+                                    <input type="search" class="buscar buscar-monitores" placeholder="Buscar">
+                                    <button class="lupa-search lupa-search-monitores"><img
+                                            src="./assets/img/admin-dashboard/lupa-search.svg" alt=""></button>
+                                    <select name="select">
+                                        <option value="valor1" selected>Matéria</option>
+                                        <option value="valor2">Valor 2</option>
+                                        <option value="valor3">Valor 3</option>
+                                    </select>
+                                    <button class="ordem-alf"><img src="./assets/img/admin-menu/ordem-alfabetica.svg"
+                                            alt=""></button>
+                                </div>
+                            </form>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/admin-dashboard/monitor0.jpg" alt="">
+                                    <div class="info-cursinho">
+                                        <p><strong>Nome:</strong> Anne Shirley</p>
+                                        <p><strong>Whatsapp:</strong> (00) 0 0000-0000</p>
+                                        <p><strong>Email:</strong> exemplo@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/admin-dashboard/monitor1.jpg" alt="">
+                                    <div class="info-cursinho">
+                                        <p><strong>Nome:</strong> Gilbert Blythe</p>
+                                        <p><strong>Whatsapp:</strong> (00) 0 0000-0000</p>
+                                        <p><strong>Email:</strong> exemplo@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/admin-dashboard/monitor2.jpg" alt="">
+                                    <div class="info-cursinho">
+                                        <p><strong>Nome:</strong> Hermione Granger</p>
+                                        <p><strong>Whatsapp:</strong> (00) 0 0000-0000</p>
+                                        <p><strong>Email:</strong> exemplo@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <img src="./assets/img/admin-dashboard/monitor3.jpg" alt="">
+                                    <div class="info-cursinho">
+                                        <p><strong>Nome:</strong> Tony Stark</p>
+                                        <p><strong>Whatsapp:</strong> (00) 0 0000-0000</p>
+                                        <p><strong>Email:</strong> exemplo@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="">
+                                <div class="paginacao">
+                                    <ul class="paginacao-admin">
+                                        <li><img class="passar-pagina" src="./assets/img/admin-dashboard/esquerda-paginacao.svg" alt=""></li>
+                                        <li><a><div class="circle">1</div></a></li>
+                                        <li><a><div class="circle circle-active">2</div></a></li>
+                                        <li><a><div class="circle">3</div></a></li>
+                                        <li><a><div class="circle">4</div></a></li>
+                                        <li><a><div class="circle">5</div></a></li>
+                                        <li><img class="passar-pagina" src="./assets/img/admin-dashboard/direita-paginacao.svg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- FIM CADASTRAR MONITORES -->
+
+                <!-- CADASTRAR STAFF -->
+                <section class="section-admin cursinho-admin" id="c-staff">
+                    <h2 class="titulo-admin">Cadastro de Staff (18)</h2>
+
+                    <div class="conteudo-section-admin">
+                        <div class="cursinho-info-admin">
+                            <p class="info-form-admin">Para cadastrar um novo staff, clique no botão.</p>
+                            <button class="button-cadastrar button-cadastrar-staff">Cadastrar Staff</button>
+                        </div>
+
+                        <div class="cursinhos-admin">
+                            <form action="">
+                                <div class="input-cursinhos">
+                                    <input type="search" class="buscar buscar-monitores" placeholder="Buscar">
+                                    <button class="lupa-search lupa-search-monitores"><img
+                                            src="./assets/img/admin-dashboard/lupa-search.svg" alt=""></button>
+                                    <select name="select">
+                                        <option value="valor1" selected>Cursinho</option>
+                                        <option value="valor2">Valor 2</option>
+                                        <option value="valor3">Valor 3</option>
+                                    </select>
+                                    <button class="ordem-alf"><img src="./assets/img/admin-menu/ordem-alfabetica.svg"
+                                            alt=""></button>
+                                </div>
+                            </form>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <div class="info-cursinho">
+                                        <p><strong>Nome:</strong> Anne Shirley</p>
+                                        <p><strong>Contato:</strong> (00) 0 0000-0000</p>
+                                        <p><strong>Email:</strong> exemplo@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <div class="info-cursinho">
+                                        <p><strong>Nome:</strong> Gilbert Blythe</p>
+                                        <p><strong>Contato:</strong> (00) 0 0000-0000</p>
+                                        <p><strong>Email:</strong> exemplo@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <div class="info-cursinho">
+                                        <p><strong>Nome:</strong> Hermione Granger</p>
+                                        <p><strong>Contato:</strong> (00) 0 0000-0000</p>
+                                        <p><strong>Email:</strong> exemplo@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursinho">
+                                <div class="border-bottom">
+                                    <div class="info-cursinho">
+                                        <p><strong>Nome:</strong> Tony Stark</p>
+                                        <p><strong>Contato:</strong> (00) 0 0000-0000</p>
+                                        <p><strong>Email:</strong> exemplo@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="">
+                                <div class="paginacao">
+                                    <ul class="paginacao-admin">
+                                        <li><img class="passar-pagina" src="./assets/img/admin-dashboard/esquerda-paginacao.svg" alt=""></li>
+                                        <li><a><div class="circle">1</div></a></li>
+                                        <li><a><div class="circle circle-active">2</div></a></li>
+                                        <li><a><div class="circle">3</div></a></li>
+                                        <li><a><div class="circle">4</div></a></li>
+                                        <li><a><div class="circle">5</div></a></li>
+                                        <li><img class="passar-pagina" src="./assets/img/admin-dashboard/direita-paginacao.svg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- FIM CADASTRAR STAFF -->
+
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-finalizar-overlay modal-scroll modal-finalizar-cursinho" id="modal-cursinho">
+        <div class="modal-finalizar modal-finalizar-cursinho2">
+            <div class="modal-sair">
+                <img class="x-sair x-sairCursinho" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+          
+            <div class="modal-finalizar-conteudo modal-finalizar-conteudo-cadastro">
+                <p class="p-titulo-modal-finalizar p-titulo-modal-finalizar-cadastro">Cadastre um novo cursinho:</p>
+
+                <div class="add-img-admin1">
+                    <div class="img-caixa-admin1">
+                        <div id="new1">
+                        </div>
+                        <img class="img-preview2 img-preview-monitor-desktop" src="./assets/img/admin-dashboard/img-file-add1.png" alt="">
+                        <img class="img-preview img-preview-monitor-mobile" src="./assets/img/admin-dashboard/img-file-add.png" alt="">
+                        <div class="adicionar-img1">
+                            <label for="file-img-admin3">
+                                <img  class="image-mais-admin1" src="./assets/img/admin-dashboard/add-file-img.svg" >
+                            </label>
+                            <input id="file-img-admin3" type='file' accept="image/*" onchange="loaderFile(event)">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="columns">
+                    <div class="left-column  left-columnCursinho">
+                        <div>
+                            <label class="label-modal" for="nomeC"><div>Nome do contratante:</div></label>
+                            <input class="input-modal input-cpf" type="text" id="nomeC">
+                            <label class="label-modal" for="contatoC"><div>Contato do contratante:</div></label>
+                            <input class="input-modal" type="text" id="contatoC" placeholder="(xx) x xxxx-xxxx">
+                            <label class="label-modal" for="contatocC"><div>Contato do cursinho:</div></label>
+                            <input class="input-modal" type="text" id="contatocC" placeholder="(xx) x xxxx-xxxx">
+                            <label class="label-modal" for="cepC"><div>CEP:</div></label>
+                            <input class="input-modal" type="text" id="cepC">
+                            <label class="label-modal" for="logC"><div>Logradouro:</div></label>
+                            <input class="input-modal" type="text" id="logC">
+                            <label class="label-modal" for="cidadeC"><div>Cidade:</div></label>
+                            <input class="input-modal" type="text" id="cidadeC">
+    
+                        </div>
+                        <div class="check-column materias-check">
+                            <label for="text2" class="materias-label"><div>Matérias</div></label>
+
+                            <div class="check-columns">
+                                <div class="check-meu-perfil check-margin-right">
+                                    <div class="alternativas-check">
+                                        <input checked type="checkbox" value="0" name="campo-check" id="campo-check1" />
+                                        <label class="check" for="campo-check1">Matemática </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="1" name="campo-check" id="campo-check2" />
+                                        <label class="check" for="campo-check2">História</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="2" name="campo-check" id="campo-check3" />
+                                        <label class="check" for="campo-check3">Geografia</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="3" name="campo-check" id="campo-check4" />
+                                        <label class="check" for="campo-check4">Sociologia</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="4" name="campo-check" id="campo-check5" />
+                                        <label class="check" for="campo-check5">Filosofia</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="5" name="campo-check" id="campo-check6" />
+                                        <label class="check" for="campo-check6">Português</label>
+                                    </div>
+                                </div>
+                                <div class="check-meu-perfil">
+                                    <div class="alternativas-check">
+                                        <input checked type="checkbox" value="6" name="campo-check" id="campo-check7" />
+                                        <label class="check" for="campo-check7">Literatura</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="7" name="campo-check" id="campo-check8" />
+                                        <label class="check" for="campo-check8">Redação</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="8" name="campo-check" id="campo-check9" />
+                                        <label class="check" for="campo-check9">Química</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="9" name="campo-check" id="campo-check10" />
+                                        <label class="check" for="campo-check10">Física</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="10" name="campo-check" id="campo-check11" />
+                                        <label class="check" for="campo-check11">Biologia</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="right-column right-columnCursinho">
+                        <div>
+                            <label class="label-modal" for="emailC"><div>Email:</div></label>
+                            <input class="input-modal" type="email" id="emailC">
+    
+                            <label class="label-modal" for="contato"><div>Nome do cursinho:</div></label>
+                            <input class="input-modal" type="text" id="contato">
+
+                            <label class="label-modal" for="dataC"><div>Data de cadastro:</div></label>
+                            <input class="input-modal" type="date" id="dataC">
+
+                            <label class="label-modal" for="bairroC"><div>Bairro:</div></label>
+                            <input class="input-modal" type="text" id="bairroC">
+
+                            <label class="label-modal" for="numeroC"><div>Número:</div></label>
+                            <input class="input-modal" type="text" id="numeroC">
+
+                            <label class="label-modal" for="complementoC"><div>Complemento:</div></label>
+                            <input class="input-modal" type="text" id="complementoC">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+                <button class="button-laranja-modal button-cadastro">Cadastrar cursinho</button>
+       
+
+        </div>
+    </div>
+
+    <div class="modal-finalizar-overlay modal-scroll" id="modal-staff">
+        <div class="modal-finalizar ">
+            <div class="modal-sair">
+                <img class="x-sair x-sairStaff" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <form action="" class="">
+            <div class="modal-finalizar-conteudo modal-finalizar-conteudo-cadastro">
+                <p class="p-titulo-modal-finalizar p-titulo-modal-finalizar-cadastro">Cadastre um Staff</p>
+
+                <div class="columns">
+                    <div class="left-column">
+                        <div>
+                            <label class="label-modal" for="nomeS"><div>Nome staff:</div></label>
+                            <input class="input-modal" type="text" id="nomeS">
+                            <label class="label-modal" for="contatoS"><div>Contato:</div></label>
+                            <input class="input-modal phone-staff" type="text" id="contatoS" placeholder="(xx) x xxxx-xxxx">
+                            <label class="label-modal" for="emailS"><div>Email:</div></label>
+                            <input class="input-modal" type="email" id="emailS">
+    
+                        </div>
+                        
+                    </div>
+    
+                    <div class="right-column">
+                        <div class="campo-meu-perfil campo-meu-perfilStaff">
+                            <label for="text2" class="materias-label">Cursinhos com Permissão</label>
+    
+                            <div class="check-columns check-columnsS">
+                                <div class="check-meu-perfil check-margin-right check-meu-perfilStaff">
+                                    <div class="alternativas-check">
+                                        <input checked type="checkbox" value="0" name="campo-check" id="campo-check1" />
+                                        <label class="check" for="campo-checkS1">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="1" name="campo-checkS" id="campo-checkS2" />
+                                        <label class="check" for="campo-checkS2">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="2" name="campo-checkS" id="campo-checkS3" />
+                                        <label class="check" for="campo-checkS3">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="3" name="campo-checkS" id="campo-checkS4" />
+                                        <label class="check" for="campo-checkS4">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="4" name="campo-checkS" id="campo-checkS5" />
+                                        <label class="check" for="campo-checkS5">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="5" name="campo-checkS" id="campo-checkS6" />
+                                        <label class="check" for="campo-checkS6">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="6" name="campo-checkS" id="campo-checkS7" />
+                                        <label class="check" for="campo-checkS7">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="7" name="campo-checkS" id="campo-checkS8" />
+                                        <label class="check" for="campo-checkS8">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="8" name="campo-checkS" id="campo-checkS9" />
+                                        <label class="check" for="campo-checkS9">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="9" name="campo-checkS" id="campo-checkS10" />
+                                        <label class="check" for="campo-checkS10">Lorem Ipsum </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="10" name="campo-checkS" id="campo-checkS11" />
+                                        <label class="check" for="campo-checkS11">Lorem Ipsum </label>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+                <button class="button-laranja-modal button-cadastro">Cadastrar staff</button>
+            </form>
+
+        </div>
+    </div>
+
+    
+    <div class="modal-finalizar-overlay modal-scroll modal-finalizar-cursinho" id="modal-monitor">
+        <div class="modal-finalizar modal-finalizar-cursinho2 modal-monitor">
+            <div class="modal-sair">
+                <img class="x-sair x-sairMonitor" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+          
+            <div class="modal-finalizar-conteudo modal-finalizar-conteudo-cadastro">
+                <p class="p-titulo-modal-finalizar p-titulo-modal-finalizar-cadastro">Cadastre um novo monitor:</p>
+
+                <div class="add-img-admin1">
+                    <div class="img-caixa-admin1">
+                        <div id="new3">
+                        </div>
+                        <div id="new2">
+                        </div>
+                        <img class="img-preview2 img-preview-monitor-desktop" src="./assets/img/admin-dashboard/img-file-add1.png" alt="">
+                        <img class="img-preview img-preview-monitor-mobile" src="./assets/img/admin-dashboard/img-file-add.png" alt="">
+               
+                        <div class="adicionar-img1">
+                            <label for="file-img-admin4">
+                                <img  class="image-mais-admin1" src="./assets/img/admin-dashboard/add-file-img.svg" >
+                            </label>
+                            <input id="file-img-admin4" type='file' accept="image/*" onchange="loaderFile(event)">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="columns columns-bottom columns-padding">
+                    <div class="left-column  left-columnCursinho left-column-monitor">
+                        <div>
+                            <div>
+                                <label class="label-modal" for="nome-monitor"><div>Nome do monitor:</div></label>
+                                <input placeholder="Nome do monitor" class="input-monitor input-modal" type="text" id="nome-monitor">
+    
+                                <label class="label-modal" for="whatsapp"><div>Whatsapp:</div></label>
+                                <input placeholder="(xx) x xxxx-xxxx" class="input-monitor input-modal phone" type="text" id="whatsapp">
+    
+                                <label class="label-modal" for="emailMonitor"><div>Email:</div></label>
+                                <input placeholder="Email do monitor" class="input-monitor input-modal" type="email" id="emailMonitor">
+        
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+    
+                    <div class="right-column right-columnCursinho">
+                        <div class="check-column materias-check materias-monitor">
+                            <label for="text2" class="materias-label"><div>Matérias</div></label>
+
+                            <div class="check-columns">
+                                <div class="check-meu-perfil check-margin-right">
+                                    <div class="alternativas-check">
+                                        <input checked type="checkbox" value="0" name="campo-check" id="campo-check21" />
+                                        <label class="check" for="campo-check21">Matemática </label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="1" name="campo-check" id="campo-check22" />
+                                        <label class="check" for="campo-check22">História</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="2" name="campo-check" id="campo-check23" />
+                                        <label class="check" for="campo-check23">Geografia</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="3" name="campo-check" id="campo-check24" />
+                                        <label class="check" for="campo-check24">Sociologia</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="4" name="campo-check" id="campo-check25" />
+                                        <label class="check" for="campo-check25">Filosofia</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="5" name="campo-check" id="campo-check26" />
+                                        <label class="check" for="campo-check26">Português</label>
+                                    </div>
+                                </div>
+                                <div class="check-meu-perfil">
+                                    <div class="alternativas-check">
+                                        <input checked type="checkbox" value="6" name="campo-check" id="campo-check27" />
+                                        <label class="check" for="campo-check27">Literatura</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="7" name="campo-check" id="campo-check28" />
+                                        <label class="check" for="campo-check28">Redação</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="8" name="campo-check" id="campo-check29" />
+                                        <label class="check" for="campo-check29">Química</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="9" name="campo-check" id="campo-check30" />
+                                        <label class="check" for="campo-check30">Física</label>
+                                    </div>
+                                    <div class="alternativas-check">
+                                        <input type="checkbox" value="10" name="campo-check" id="campo-check31" />
+                                        <label class="check" for="campo-check31">Biologia</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns columns-padding">
+                    <div class="left-column  left-columnCursinho left-monitor">
+                        <div>
+                            <div>
+                                <label class="label-modal" for=""><div>Dia da semana:</div></label>
+                                <div class="check-columns">
+                                    <div class="check-meu-perfil check-margin-right">
+                                        <div class="check-bottom alternativas-check">
+                                            <input checked type="checkbox" value="0" name="campo-check1" id="campo-check18" />
+                                            <label class="check" for="campo-check18">Segunda </label>
+                                        </div>
+                                        <div class="check-bottom alternativas-check">
+                                            <input type="checkbox" value="1" name="campo-check1" id="campo-check12" />
+                                            <label class="check" for="campo-check12">Terça</label>
+                                        </div>
+                                        <div class="check-bottom alternativas-check">
+                                            <input type="checkbox" value="2" name="campo-check1" id="campo-check13" />
+                                            <label class="check" for="campo-check13">Quarta</label>
+                                        </div>
+                                        <div class="check-bottom alternativas-check">
+                                            <input type="checkbox" value="3" name="campo-check1" id="campo-check14" />
+                                            <label class="check" for="campo-check14">Quinta</label>
+                                        </div>
+                                        <div class="check-bottom alternativas-check">
+                                            <input type="checkbox" value="4" name="campo-check1" id="campo-check15" />
+                                            <label class="check" for="campo-check15">Sexta</label>
+                                        </div>
+                                        <div class="check-bottom alternativas-check">
+                                            <input type="checkbox" value="5" name="campo-check1" id="campo-check16" />
+                                            <label class="check" for="campo-check16">Sábado</label>
+                                        </div>
+                                        <div class="check-bottom alternativas-check">
+                                            <input type="checkbox" value="5" name="campo-check1" id="campo-check17" />
+                                            <label class="check" for="campo-check17">Domingo</label>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+    
+                    <div class="right-column right-columnCursinho">
+                        <div class="check-column monitor-check">
+                            <label class="label-modal" for=""><div>Horários</div></label>
+
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+                            <input class="input-monitor input-bottom" type="text">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+                <button class="button-laranja-modal button-cadastro">Cadastrar monitor</button>
+       
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg" alt=""></a>
+
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="tela hide"></div>
+
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="assets/js/tabela-link.js"></script>
+    <script src="assets/js/admin-menu-down.js"></script>
+    <script type="text/javascript" src="assets/js/modal-cadastrar-cursinho.js"></script>
+    <script src="./assets/js/telefone-mask-modal.js"></script>
+
+    <script src="assets/js/telefone-mask-modal.js"></script>
+    <script type="text/javascript" src="assets/js/modal-adicionar-monitor.js"></script>
+
+</body>
+
+</html>

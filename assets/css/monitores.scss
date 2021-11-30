@@ -1,0 +1,266 @@
+.monitores{
+    &__materia-item{
+            margin-bottom: 1.875rem !important
+    }
+    &__filter{
+        width: auto !important;
+        padding-top: 9.125rem;
+        padding-left: 1rem;
+        
+     
+        &--title{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 1px;
+            color: #EAEAEA;
+            padding-left: 0 !important;
+        }
+        &-date label{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 30px;
+            color: #C4C4C4;
+        }
+
+        &-btn {
+            background: #F58E08;
+            border-radius: 17px;       
+            width: 7.188rem; 
+            padding: 5px 35px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center; 
+            color: #FFFFFF;
+            border: none;
+            outline:none;
+        }
+    }
+    &__card{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px 20px 35px;
+        &-perfil{
+            display: flex;
+            gap: 25px;
+            &-dados{                
+                h3{
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    color: #595B5F;
+                    margin-bottom: 21px;
+                }
+                p:first-of-type{
+                    margin-bottom: 11px;
+                }
+                p{
+                    margin-bottom: 0;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 112%;
+                    color: #595B5F;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+                    img{
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+        &-agenda{
+            th:not(:last-child){
+                padding-right: 30px;
+            }
+            th{
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 112%;
+                color: #BEBEBE;
+               &.active{
+                    color: #595B5F;
+                }           
+            }
+        }
+    }
+    
+}
+
+.monitores__filter--option {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+ .monitores__filter--option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .custom-checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #282C35;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .monitores__filter--option input:checked ~ .custom-checkmark {
+    background-color: #C4C4C4;
+  }
+
+  .custom-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .monitores__filter--option input:checked ~ .custom-checkmark:after {
+    display: block;
+  }
+
+  .monitores__filter--option .custom-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  #monitores__filter--horario{
+    background: #4F4F4F;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+    width: 7.188rem; 
+    height: 1.875rem;
+    margin-bottom: 20px;
+    color: #C4C4C4 !important;
+  }
+  input[type=time]:focus::-webkit-datetime-edit {
+    color: #C4C4C4 !important;
+}
+
+.caderno__monitores{
+    padding-right: 0 !important;
+    position: relative; 
+    padding-bottom: 97px; 
+}
+.caderno__pagination{
+    position: absolute; 
+    bottom: 0;
+    left: 60%;
+    transform: translateY(-50%);  
+}
+#questao{
+    padding-left: 0;
+}
+
+
+
+
+// @media only screen and (max-width: 769px){
+//     .container{
+//         width: auto;
+//         background-color: #EBE7E4;
+//         margin: 0;
+//         padding: 0;
+//     }
+//     .caderno{
+//         &__nav{
+//             display: none;
+//         }
+//         &__monitores{
+//             padding: 0;
+//         }
+//         &__anotacoes{
+//             padding-left: 0;
+//         }
+//         &__title{
+//             display: none;
+//         }
+
+//     }
+
+//     #navbar-lateral{
+//         display: none;
+//     }
+//     #navbar {
+//         background-color: #EBE7E4;
+//         nav{
+//             display: none;
+//         }
+//     }
+//     .eject__footer{
+//         display: none;
+//     }
+//     #questao{
+//         padding-left: 0;
+//     }
+//    .monitores{
+//        &__card{
+//         box-shadow: none;
+//         padding: 15px 30px;
+//         justify-content:start ;
+//         &-perfil{
+//             gap: 15px;
+//         }
+//         &-perfil-dados{
+//             h3{
+//                 font-size: 12px;
+//                 margin-bottom: 5px;
+//             }
+//             p{
+//                 font-style: normal;
+//                 font-weight: normal;
+//                 font-size: 10px;
+//                 padding-bottom: 0;
+//                 margin-bottom: 6px !important;
+//                 display: flex;
+
+//             }
+//             img{
+//                 width: 14px;
+//                 height: 14px;
+//             }
+//         }
+//      }
+//     }
+//    .monitores__card-agenda th:not(:last-child){
+//     padding-right: 10px;
+//    }
+//    .monitores__card-perfil-photo{
+//        width: 60px;
+//        height: 60px;
+//    }
+// }

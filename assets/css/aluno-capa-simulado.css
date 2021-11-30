@@ -1,0 +1,235 @@
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#questao .titulo-capa {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+  color: #4e5057;
+}
+
+#questao .tempo-simulado {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  margin: 10px 0;
+  color: #595959;
+}
+
+#questao .titulo-link-questoes {
+  font-weight: 500;
+  font-size: 17px;
+  color: #282c35;
+  margin-top: 51px;
+  text-align: center;
+}
+
+#questao .link-questoes {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #453939;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 0 17%;
+}
+
+#questao .numero-questao-link {
+  width: 27px;
+  height: 30px;
+  padding: 10px;
+}
+
+#questao .tempo-restante-simulado {
+  padding: 0 17%;
+  margin: 50px 30px;
+}
+
+#questao .tempo-restante,
+#questao .questoes-simulado-feitas {
+  font-weight: 500;
+  font-size: 17px;
+  color: #4e5057;
+}
+
+#questao .bar_tempo, #questao .bar_feitas {
+  margin-top: 7px;
+  margin-bottom: 14px;
+  height: 10px;
+  border: 1px solid #8d9ab6;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#questao .bar_feitas_progresso {
+  height: 100%;
+  background: #f58e08;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#questao .bar_tempo_progresso {
+  height: 100%;
+  background: #f58e08;
+  border-radius: 10px;
+  width: 100%;
+  -webkit-animation: progressbar-countdown;
+          animation: progressbar-countdown;
+  /* Placeholder, this will be updated using javascript */
+  /* We stop in the end */
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  /* Stay on pause when the animation is finished finished */
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  /* We start paused, we start the animation using javascript */
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  /* We want a linear animation, ease-out is standard */
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes progressbar-countdown {
+  0% {
+    width: 100%;
+    background: #f58e08;
+  }
+  100% {
+    width: 0%;
+    background: #f58e08;
+  }
+}
+
+@keyframes progressbar-countdown {
+  0% {
+    width: 100%;
+    background: #f58e08;
+  }
+  100% {
+    width: 0%;
+    background: #f58e08;
+  }
+}
+
+#questao .progresso_tempo, #questao .progresso_feitas {
+  visibility: hidden;
+}
+
+#questao .final-conteudo {
+  margin: 40px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  color: #4e5057;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#questao .questao-proxima {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questao .questao-proxima img {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-left: 10px;
+}
+
+@media (max-width: 1024px) {
+  #questao .icones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 770px) {
+  body, html {
+    background: #D7D5D4;
+  }
+  #questao .titulo-capa,
+  #questao .tempo-simulado {
+    text-align: start;
+    margin-left: 5%;
+  }
+  #questao .titulo-capa h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #questao .titulo-link-questoes {
+    font-weight: 500;
+    font-size: 10px;
+    margin-top: 30px;
+  }
+  #questao .link-questoes {
+    padding: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  #questao .tempo-simulado {
+    font-weight: normal;
+    font-size: 10px;
+    margin-top: 0;
+  }
+  #questao .tempo-restante-simulado {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0 5%;
+  }
+  #questao .tempo-restante,
+  #questao .questoes-simulado-feitas {
+    font-weight: 500;
+    font-size: 10px;
+  }
+  #questao .finalizar-simulado {
+    display: none;
+  }
+  #questao .final-conteudo {
+    font-size: 12px;
+    margin-bottom: 30px !important;
+  }
+  #questao .questao-proxima img {
+    width: 18px;
+  }
+}
+/*# sourceMappingURL=aluno-capa-simulado.css.map */

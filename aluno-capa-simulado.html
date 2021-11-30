@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/aluno-capa-simulado.css">
+    <link rel="stylesheet" href="assets/css/modal-finalizar-questao-simulado.css">
+
+    <title>Capa - Simulado | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg"
+                                alt=""></a><a class="item-link" href="aluno-dashboard.html">Home</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/apostilas-branco.svg"
+                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg"
+                                alt=""></a><a class="item-link" href="aluno-modulo.html">Matérias</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
+                            href="" class="item-link">Monitores</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
+                            class="item-link">Perfil</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
+                            href="" class="item-link">Sugerir Questão</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
+                            href="" class="item-link">Anotações</a></li>
+
+                    <li class="nav-item item-simulado"><a href=""><img src="assets/img/aluno-questao/simulado-laranja.svg" alt=""></a><a
+                            href="" class="item-link">Simulado</a></li>
+                </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones">
+                        <a href="index.html"><img class="home" src="assets/img/pagina-questao/icon-home.svg" alt=""></a>
+                        <img class="seta" src="assets/img/pagina-questao/icon-home-seta.svg" alt="">
+                        <a href="aluno-dashboard.html" class="desktop">
+                            <p>Voltar</p>
+                        </a>
+                        <a href="aluno-dashboard.html"><img class="mobile seta-voltar"
+                                src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="titulo-capa">
+                    <h1>Capa: I simulado de matemática</h1>
+                </div>
+
+                <div class="tempo-simulado">
+                    <p>Tempo de prova: 180 minutos</p>
+                </div>
+
+                <div class="titulo-link-questoes">
+                    <p>Link para as Questões</p>
+                </div>
+
+                <div class="link-questoes">
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">01</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">02</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="nao-respondida">
+                        <a href="">
+                            <p class="p-link">03</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">04</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">05</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="nao-respondida">
+                        <a href="">
+                            <p class="p-link">06</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" ddata-questions="nao-respondida">
+                        <a href="">
+                            <p class="p-link">07</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">08</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">09</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">10</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">11</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="nao-respondida">
+                        <a href="">
+                            <p class="p-link">12</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">13</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">14</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">15</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="nao-respondida">
+                        <a href="">
+                            <p class="p-link">16</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="nao-respondida">
+                        <a href="">
+                            <p class="p-link">17</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">18</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">19</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">20</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">21</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">22</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">23</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">24</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">25</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">26</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">27</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">28</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">29</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">30</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">31</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">32</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">33</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">34</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">35</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">36</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">37</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">38</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">39</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="respondida">
+                        <a href="">
+                            <p class="p-link">40</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="nao-respondida">
+                        <a href="">
+                            <p class="p-link">41</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="nao-respondida">
+                        <a href="">
+                            <p class="p-link">42</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="nao-respondida">
+                        <a href="">
+                            <p class="p-link">43</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="nao-respondida">
+                        <a href="">
+                            <p class="p-link">44</p>
+                        </a>
+                    </div>
+                    <div class="numero-questao-link" data-questions="nao-respondida">
+                        <a href="">
+                            <p class="p-link">45</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tempo-restante-simulado">
+                    <div id="tempo" class="tempo-restante">
+                        <p>Tempo restante: <span class="qtd-minutos"></span></p>
+                    </div>
+    
+                    <div id="bar-time" class="bar_tempo">
+                        <div class="bar_tempo_progresso">
+                            <span class="progresso_tempo">30</span>
+                        </div>
+                    </div>
+
+                    <div class="questoes-simulado-feitas questoes-simulado-feitas1">
+                        <p>Já feita: <span class="ja_feita"></span></p>
+                    </div>
+
+                    <div class="bar_feitas" data-questions="90">
+                        <div class="bar_feitas_progresso">
+                            <span class="progresso_feitas">5</span>
+                        </div>
+                    </div>
+
+                    <div class="final-conteudo">
+                        <a href=""><div class="finalizar-simulado">
+                            <p class="p-finalizar-simulado">Finalizar Simulado</p>
+                        </div></a>
+                        <a href=""><div class="questao-proxima">
+                            <p>Questões</p>
+
+                            <img src="./assets/img/aluno-capa-simulado/seta-questao.svg" alt="">
+                        </div></a>
+                    </div>
+
+                    <form action="" id="signup-form'"></form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="modal-finalizar-overlay">
+        <div class="modal-finalizar">
+            <div class="modal-sair">
+                <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <div class="modal-finalizar-conteudo">
+                <p class="p-titulo-modal-finalizar">Deseja finalizar esse simulado?</p>
+                <p class="p-descricao-modal-finalizar">Você não poderá mudar as repostas se optar por finalizar esse simulado.</p>
+
+                <div class="modal-tempo-restante-simulado">
+
+                    <div class="final-conteudo">
+                        <form action="">
+                            <div class="voltar-simulado desktop">
+                                <p>Desejo voltar para o simulado</p>
+                            </div>
+                            <div class="voltar-simulado mobile">
+                                <p>Voltar para o simulado</p>
+                            </div>
+                        </form>
+
+                        <form action="">
+                            <button><div class="finalizar">
+                                <p>Finalizar</p>
+                            </div></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="tela hide"></div>
+
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/bar-time.js"></script>
+    <script type="text/javascript" src="assets/js/bar-feitas.js"></script>
+    <script type="text/javascript" src="assets/js/modal-finalizar-simulado1.js"></script>
+</body>
+
+</html>

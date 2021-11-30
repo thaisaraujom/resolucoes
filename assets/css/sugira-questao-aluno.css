@@ -1,0 +1,146 @@
+.sugira__form fieldset label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 112%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+  min-width: 90px;
+  color: #E4E0E0;
+}
+
+.sugira__form fieldset input {
+  background-color: transparent;
+  border-radius: 0px;
+  border: solid 1px #282C35;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.sugira__form fieldset input:focus, .sugira__form fieldset textarea:focus, .sugira__form fieldset select:focus {
+  outline: none;
+}
+
+.sugira__questao-textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sugira__filed-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 40px;
+}
+
+.sugira__filed-container--file input {
+  background: #F58E08 !important;
+  border-radius: 9px !important;
+  margin-left: 11px;
+  min-width: 22.75rem;
+}
+
+.sugira__questao-textarea {
+  width: 36.25rem;
+  padding-bottom: 40px;
+}
+
+.sugira__btn-enviar {
+  background: #F58E08;
+  border-radius: 17px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0.438rem 2.688rem;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none;
+}
+
+.input-container {
+  border-bottom: solid 1px #E4E0E0;
+  margin-left: 10px;
+  width: 27rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#copia-questao {
+  background: #E6E4E4;
+  border: 1px solid #2C313B;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0.938rem;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  min-width: 32.75rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 9px 0px 0px 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E6E4E4;
+  border: 1px solid #282C35;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+  text-align: left !important;
+}
+
+.file-label {
+  background: #F58E08;
+  height: 100%;
+  padding: 5px 15px;
+  color: #F2F2F2;
+}
+
+#file-name {
+  padding-left: 10px;
+}
+/*# sourceMappingURL=sugira-questao-aluno.css.map */

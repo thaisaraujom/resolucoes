@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/aluno-dashboard-simulado.css">
+    <link rel="stylesheet" href="assets/css/aluno-dashboard-simulado-situacao.css">
+    <link rel="stylesheet" href="assets/css/modal-finalizar-questao-simulado.css">
+
+    <title>Dashboard - Simulado | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg"
+                                alt=""></a><a class="item-link" href="aluno-dashboard.html">Home</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/apostilas-branco.svg"
+                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg"
+                                alt=""></a><a class="item-link" href="aluno-modulo.html">Matérias</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
+                            href="" class="item-link">Monitores</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
+                            class="item-link">Perfil</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
+                            href="" class="item-link">Sugerir Questão</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
+                            href="" class="item-link">Anotações</a></li>
+
+                    <li class="nav-item item-simulado"><a href=""><img
+                                src="assets/img/aluno-questao/simulado-laranja.svg" alt=""></a><a href=""
+                            class="item-link">Simulado</a></li>
+                </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones">
+                        <a href="aluno-dashboard.html" class="desktop"><img class="home desktop"
+                                src="assets/img/aluno-modulo/icon.svg" alt=""></a>
+                        <img class="seta desktop" src="assets/img/aluno-modulo/seta.svg" alt="">
+                        <a href="aluno-dashboard.html" class="desktop">
+                            <p>Voltar</p>
+                        </a>
+                        <a href="aluno-dashboard.html"><img class="mobile seta-voltar"
+                                src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="conteudo-simulados">
+
+                    <!-- DESKTOP -->
+                    <div class="simulados desktop" id="simulados_situacao">
+                        <div class="situacao-simulado desktop" data-status="aberto-continuar" data-tab-target='#aberto'>
+                            <p class="p-situacao">Em Aberto <span>(1)</span></p>
+                        </div>
+                        <div class="situacao-simulado desktop" data-status="agendado" data-tab-target='#agendado'>
+                            <p class="p-situacao">Agendados <span>(2)</span></p>
+                        </div>
+                        <div class="situacao-simulado desktop" data-status="finalizado"
+                            data-tab-target='#finalizado'>
+                            <p class="p-situacao">Finalizados <span>(1)</span></p>
+                        </div>
+                    </div>
+                    <!-- FIM DESKTOP -->
+
+                    <!-- MOBILE -->
+                    <div class="simulados-select mobile">
+                        <select id="simulados-situacao" name="select-situacao">
+                            <option value='graficos'>Meus Gráficos</option>
+                            <option value='aberto-continuar' data-status="aberto-continuar">Em Aberto <span>(1)</span>
+                            </option>
+                            <option value='agendado-sem' data-status="agendado">Agendados <span>(2)</span>
+                            </option>
+                            <option value='finalizado-sem' data-status="finalizado-sem">Finalizados
+                                <span>(1)</span>
+                            </option>
+                        </select>
+                    </div>
+                    <!-- FIM MOBILE -->
+
+
+                    <div class="situacoes">
+                        <!-- ABERTO -->
+                        <div class="situacoes_single" id="aberto" data-tab-content>
+                            <div class="situacao aberto-continuar hide_status" data-item='aberto-continuar'>
+                                <div>
+                                    <p class="titulo-simulado-situacao">II SIMULADO DE MATEMÁTICA (45) </p>
+                                    <p class="p-simulado-situacao">data de início: 00/00/0000</p>
+                                    <p class="p-simulado-situacao">data de entrega: 00/00/0000</p>
+                                    <p class="p-simulado-situacao">Tempo de prova: 180 minutos</p>
+                                </div>
+
+                                <div class="comecar-simulado continuar-simulado">
+                                    <p>Continuar Simulado</p>
+                                    <p class="p-finalizar-simulado1">Finalizar Simulado</p>
+                                </div>
+                            </div>
+
+                            <div class="situacao sem-aberto hide_status" data-item='aberto-sem'>
+                                <div>
+                                    <p class="p-sem">Não há simulado em aberto.</p>
+                                </div>
+                            </div>
+
+                            <div class="situacao aberto hide_status" data-item='aberto'>
+                                <div>
+                                    <p class="titulo-simulado-situacao">II SIMULADO DE MATEMÁTICA (45) </p>
+                                    <p class="p-simulado-situacao">data de início: 00/00/0000</p>
+                                    <p class="p-simulado-situacao">data de entrega: 00/00/0000</p>
+                                    <p class="p-simulado-situacao">Tempo de prova: 180 minutos</p>
+                                </div>
+
+                                <div class="comecar-simulado">
+                                    <p>Começar Simulado</p>
+                                </div>
+                            </div>
+
+                            <div class="meus-graficos hide_graficos" data-status="graficos">
+                                <a>
+                                    <p>meus gráficos</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- FIM ABERTO -->
+
+
+                        <!-- AGENDADO -->
+                        <div class="situacoes_single" id="agendado" data-tab-content>
+                            <div class="situacao sem-agendado" data-item='agendado-sem'>
+                                <div>
+                                    <p class="p-sem">Não há simulado agendado.</p>
+                                </div>
+                            </div>
+
+                            <div class="situacao situacao-agendado agendado hide_status" data-item='agendado'>
+                                <div>
+                                    <p class="titulo-simulado-situacao">II SIMULADO DE MATEMÁTICA (45) </p>
+                                    <p class="p-simulado-situacao">data de início: 00/00/0000</p>
+                                    <p class="p-simulado-situacao">data de entrega: 00/00/0000</p>
+                                    <p class="p-simulado-situacao">Tempo de prova: 180 minutos</p>
+                                </div>
+                            </div>
+
+                            <div class="meus-graficos" data-status='graficos'>
+                                <a>
+                                    <p>meus gráficos</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- FIM AGENDADO-->
+
+
+                        <!-- FINALIZADO -->
+                        <div class="situacoes_single" id="finalizado" data-tab-content data-value='finalizado'>
+                            <div class="situacao sem-finalizado" data-item='finalizado-sem'>
+                                <div>
+                                    <p class="p-sem">Não há simulado finalizado.</p>
+                                </div>
+                            </div>
+
+                            <div class="situacao situacao-finalizado finalizado hide_status" data-item='finalizado'>
+                                
+                                <div class="simulado-informativo">
+                                    <p class="titulo-simulado-situacao">II SIMULADO DE MATEMÁTICA (45) </p>
+                                    <p class="p-simulado-situacao">data de início: 00/00/0000</p>
+                                    <p class="p-simulado-situacao">data de entrega: 00/00/0000</p>
+                                    <p class="p-simulado-situacao">Tempo de prova: 180 minutos</p>
+                                </div>
+
+
+                                <div class="comecar-simulado finalizar-simulado">
+                                    <p class="p-questoes-simulado mobile">25/45</p>
+                                </div>
+
+                                <div class="comecar-simulado finalizar-simulado">
+                                    <p class="p-questoes-simulado desktop">25 - 45</p>
+                                    <p class="p-acessar-simulado">Acessar meu simulado</p>
+                                </div>
+                            </div>
+
+                            <div class="meus-graficos" data-status='graficos'>
+                                <a>
+                                    <p>meus gráficos</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- FIM FINALIZADO -->
+
+                        <div class="barras-simulado ativar_graficos" id="graficos" data-item='graficos'
+                            data-situacao-item='graficos'>
+                            <div class="titulo-barra-simulado">
+                                <p>II SIMULADO DE MATEMÁTICA (30-45)</p>
+                            </div>
+
+                            <div class="bar_dificuldade" data-questions='45'>
+                                <div class="bar_concluidas">
+                                    <span class="nivel-barra">45</span>
+                                    <span class="nivel"></span>
+                                </div>
+                            </div>
+
+                            <div class="titulo-barra-simulado">
+                                <p>II SIMULADO DE MATEMÁTICA (90)</p>
+                            </div>
+
+                            <div class="bar_dificuldade" data-questions='90'>
+                                <div class="bar_concluidas">
+                                    <span class="nivel-barra">45</span>
+                                    <span class="nivel"></span>
+                                </div>
+                            </div>
+
+                            <div class="titulo-barra-simulado">
+                                <p>II SIMULADO DE MATEMÁTICA (45)</p>
+                            </div>
+
+                            <div class="bar_dificuldade" data-questions='45'>
+                                <div class="bar_concluidas">
+                                    <span class="nivel-barra">0</span>
+                                    <span class="nivel"></span>
+                                </div>
+                            </div>
+
+                            <div class="titulo-barra-simulado">
+                                <p>II SIMULADO DE MATEMÁTICA (45)</p>
+                            </div>
+
+                            <div class="bar_dificuldade" data-questions='40'>
+                                <div class="bar_concluidas">
+                                    <span class="nivel-barra">35</span>
+                                    <span class="nivel"></span>
+                                </div>
+                            </div>
+
+                            <div class="titulo-barra-simulado">
+                                <p>II SIMULADO DE MATEMÁTICA (90)</p>
+                            </div>
+
+                            <div class="bar_dificuldade" data-questions='90'>
+                                <div class="bar_concluidas">
+                                    <span class="nivel-barra">30</span>
+                                    <span class="nivel"></span>
+                                </div>
+                            </div>
+
+                            <div class="titulo-barra-simulado">
+                                <p>II SIMULADO DE MATEMÁTICA (45)</p>
+                            </div>
+
+                            <div class="bar_dificuldade" data-questions='40'>
+                                <div class="bar_concluidas">
+                                    <span class="nivel-barra">20</span>
+                                    <span class="nivel"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-finalizar-overlay">
+        <div class="modal-finalizar">
+            <div class="modal-sair">
+                <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <div class="modal-finalizar-conteudo">
+                <p class="p-titulo-modal-finalizar">Deseja finalizar esse simulado?</p>
+                <p class="p-descricao-modal-finalizar">Você não poderá mudar as repostas se optar por finalizar esse simulado.</p>
+
+                <div class="modal-tempo-restante-simulado">
+                    <div id="tempo" class="tempo-restante">
+                        <p>Tempo restante: <span class="qtd-minutos"></span></p>
+                    </div>
+    
+                    <div id="bar-time" class="bar_tempo">
+                        <div class="bar_tempo_progresso">
+                            <span class="progresso_tempo">30</span>
+                        </div>
+                    </div>
+
+                    <div class="questoes-simulado-feitas">
+                        <p>Já feita: <span class="ja_feita"></span></p>
+                    </div>
+
+                    <div class="bar_feitas" data-questions="90">
+                        <div class="bar_feitas_progresso">
+                            <span class="progresso_feitas">5</span>
+                        </div>
+                    </div>
+
+                    <div class="final-conteudo">
+                        <form action="">
+                            <div class="voltar-simulado desktop">
+                                <p>Desejo voltar para o simulado</p>
+                            </div>
+                            <div class="voltar-simulado mobile">
+                                <p>Voltar para o simulado</p>
+                            </div>
+                        </form>
+
+                        <form action="">
+                            <button><div class="finalizar">
+                                <p>Finalizar</p>
+                            </div></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg" alt=""></a>
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="tela hide"></div>
+
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/simulado.js"></script>
+    <script type="text/javascript" src="assets/js/barra-dashboard-simulado.js"></script>
+    <script type="text/javascript" src="assets/js/modal-finalizar-simulado-dashboard.js"></script>
+    <script type="text/javascript" src="assets/js/bar-time.js"></script>
+    <script type="text/javascript" src="assets/js/bar-feitas.js"></script>
+
+</body>
+
+</html>

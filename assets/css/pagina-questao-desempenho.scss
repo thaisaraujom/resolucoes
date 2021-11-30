@@ -1,0 +1,373 @@
+#questao-erro {
+    min-height: 70vh;
+    padding: 0 5%;
+    background: #d7d5d4;
+
+    .voltar {
+        padding-top: 70px;
+    }
+    .icones {
+        margin-top: 2%;
+        display: flex;
+        font: 400 13px "Montserrat";
+        line-height: 12px;
+        .home {
+            margin-right: 10px;
+        }
+        .seta {
+            margin-right: 10px;
+        }
+        a {
+            color: #282c35;
+            text-decoration: none;
+        }
+        a:visited,
+        a:hover,
+        a:link {
+            text-decoration: none;
+        }
+    }
+    .titulo {
+        margin-top: 19px;
+        color: #282c35;
+        font: 700 20px "Montserrat";
+    }
+
+    .corpo {
+        display: flex;
+        flex-direction: column;
+        padding: 7% 0%;
+        width: 100%;
+    }
+
+    .erros-acertos {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: row;
+        margin-bottom: 30px;
+        margin-right: 27%;
+    }
+
+    .acertos {
+        background: #53d63a;
+    }
+
+    .erros {
+        background: #fa4954;
+    }
+
+    .nao-respondidas {
+        background: #c4c4c4;
+    }
+    .mobile {
+        display: none;
+
+        .erros,
+        .acertos,
+        .nao-respondidas {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center;
+            justify-content: center;
+            width: 85px !important;
+            height: 70px !important;
+            text-align: center;
+        }
+        h5 {
+            width: 100%;
+            font-size: 8px;
+            line-height: 12px;
+        }
+        p {
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+    .erros,
+    .acertos {
+        margin-right: 1%;
+    }
+
+    .erros,
+    .acertos,
+    .nao-respondidas {
+        color: #e6e1dd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+
+        width: 62px;
+        height: 44px;
+        border-radius: 5px;
+    }
+
+    .quadrado-quest {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        color: #6e6d6d;
+
+        .questao-numero {
+            h4 {
+                margin-top: 5px;
+                margin-bottom: auto;
+                text-align: center;
+            }
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: #e3e1e0;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            width: 47px;
+            height: 50px;
+            margin-right: 1%;
+            margin-top: 10px;
+        }
+    }
+}
+
+#fazerparte {
+    padding: 6% 10%;
+    background: #282c35;
+    min-height: 30vh;
+
+    .overlay {
+        display: flex;
+        align-items: center;
+    }
+    .title {
+        font: 700 35px "Montserrat", sans-serif;
+        color: #ffffff;
+        border-bottom: 2px solid #ffffff;
+        display: inline;
+    }
+    .paragrafo {
+        font: normal 18px "Montserrat";
+        color: #ffffff;
+        margin: 10% 30% 10% 0;
+    }
+
+    .fazerparte-texto {
+        order: 1;
+    }
+
+    .fazerparte-img {
+        order: 2;
+    }
+    .botao-fale {
+        cursor: pointer;
+        align-items: center;
+        width: 150px;
+        height: 34px;
+        background: #f58e08;
+        border: 0;
+        border-radius: 17px;
+        color: #fff;
+
+        font-family: Montserrat;
+
+        line-height: 20px;
+        font: bold 16px "Montserrat";
+    }
+}
+
+#simulacao {
+    background: #d7d5d4;
+    padding: 6% 10%;
+    min-height: 30vh !important;
+
+    .title {
+        color: #282c35;
+        border-bottom: 2px solid #282c35;
+    }
+    .paragrafo {
+        color: #282c35;
+    }
+
+    .area-img {
+        background: #e6e1dd;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .title-area {
+        color: #282c35;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .area-conhecimento {
+        justify-content: flex-end;
+    }
+}
+
+#rodape-erro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d7d5d4;
+    border-top: 2px solid #282c35;
+    padding: 1% 0;
+    text-align: center;
+    .rodape-center {
+        align-items: center;
+        display: flex;
+    }
+    .icone {
+        margin: 0 5px;
+    }
+    .texto-icone {
+        font-weight: bold;
+    }
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: #28292f;
+    }
+}
+
+@media (max-width: 1200px) {
+    .area-conhecimento {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    #questao-erro {
+        min-height: 20vh;
+        .titulo {
+            font-size: 13px;
+        }
+        .erros-acertos {
+            padding: auto 0;
+            margin-right: 0;
+
+            justify-content: center;
+        }
+        .quadrado-quest {
+            flex-wrap: wrap;
+            margin-right: 20px !important;
+            margin-left: 20px !important;
+        }
+        .questao-numero {
+            margin-bottom: 15px;
+        }
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: flex;
+            .titulo {
+                margin-bottom: 2px;
+            }
+            .erros,
+            .acertos {
+                margin-right: 30px;
+            }
+            .erros,
+            .acertos,
+            .nao-respondidas {
+                border-radius: 10px;
+            }
+        }
+    }
+    #simulacao {
+        .title {
+            font-size: 15px;
+        }
+    }
+    #fazerparte {
+        min-height: 40vh;
+        .overlay {
+            min-height: 40vh;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        .title {
+            font-size: 15px;
+        }
+        .fazerparte-texto .paragrafo {
+            font-size: 12px;
+        }
+        img {
+            width: auto;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #simulacao {
+        .natureza {
+            margin-right: 0 !important;
+        }
+        .paragrafo {
+            padding-right: 0;
+        }
+    }
+    #questao-erro {
+        min-height: 20vh;
+        .titulo {
+            border-bottom: 2px solid #282c35;
+        }
+    }
+    #fazerparte {
+        .fazerparte-texto {
+            .paragrafo {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 15px;
+                margin-right: 0;
+
+                color: #d7d5d4;
+            }
+            .title {
+                width: 144px;
+                height: 18px;
+            }
+            .botao-fale {
+                width: 111px;
+                height: 25.16px;
+                font-size: 12px;
+            }
+        }
+        img {
+            width: auto;
+            height: 168px;
+        }
+    }
+    #rodape-erro {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+
+        img {
+            width: auto;
+            height: 15px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    #fazerparte {
+        img {
+            width: 160px;
+        }
+    }
+}

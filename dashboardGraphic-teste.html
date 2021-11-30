@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/aluno-dashboard.css">
+
+    <link rel="stylesheet" href="./assets/css/glider.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick-dashboard.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick-dashboard-theme.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <title>Dashboard | Resoluções.com</title>
+
+    <style>
+        canvas {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg"
+                                alt=""></a><a class="item-link" href="aluno-dashboard.html">Home</a></li>
+
+                    <li class="nav-item item-apostila"><a href=""><img src="assets/img/aluno-questao/apostilas.svg"
+                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg"
+                                alt=""></a><a class="item-link" href="aluno-modulo.html">Matérias</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
+                            href="" class="item-link">Monitores</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
+                            class="item-link">Perfil</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
+                            href="" class="item-link">Sugerir Questão</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
+                            href="" class="item-link">Anotações</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/simulado.svg" alt=""></a><a
+                            href="" class="item-link">Simulado</a></li>
+                </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+                <div class="notificacoes">
+                    <p class="titulo-aluno">Notificações</p>
+                    <p class="paragrafo mobile">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit autem
+                        nisi rem atque optio placeat quibusdam deleniti asperiores libero vel ex ipsam accusantium cum,
+                        maiores suscipit sint blanditiis quaerat? Iste. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Sapiente aliquid, optio nihil, impedit, distinctio id quia ab sunt ipsum aut
+                        quas! Vero dolores rerum obcaecati quos quasi, dicta eius natus?</p>
+
+                    <img class="arrow-down mobile reveal" src="./assets/img/aluno-dashboard/mobile-arrow-down.svg"
+                        alt="">
+                    <p class="paragrafo paragrafo-dentro mobile desativar">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Officiis ex quisquam accusamus, consequatur modi commodi, sapiente quod omnis
+                        repudiandae ipsam ad, iure delectus recusandae natus! Odit id dolorem facilis fugit?</p>
+                    <img class="arrow-up mobile collapse" src="./assets/img/aluno-dashboard/mobile-arrow-up.svg" alt="">
+                </div>
+
+                <div class="autoplay1 desktop">
+                    <div class="logo">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
+                            text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book.</p>
+                    </div>
+                    <div class="logo">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
+                            text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book.</p>
+                    </div>
+                </div>
+
+                <div class="apostila-questoes">
+                    <div class="titulo-aluno">
+                        <p class="paragrafo-titulo">Questões da Apostila</p>
+                    </div>
+
+                    <section class="container-swiper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="">
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Calandreli</p>
+                                        </div>
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Lorem ipsum</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Calandreli</p>
+                                        </div>
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Lorem ipsum</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="">
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Calandreli</p>
+                                        </div>
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Lorem ipsum</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Calandreli</p>
+                                        </div>
+                                        <div class="">
+                                            <img src="./assets/img/aluno-dashboard/apostila-exemplo-mobile.svg" alt="">
+                                            <p>Matemática - Lorem ipsum</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="button-next"></div>
+                        <div class="button-prev"></div>
+                    </section>
+
+
+                    <div class="apostilas desktop">
+                        <div class="questao-apostila">
+                            <div class="ap-questao">
+                                <div class="img-apostila">
+                                    <img src="./assets/img/aluno-dashboard/apostila-exemplo.svg" alt="">
+                                </div>
+                                <p>Matemática - Calandreli</p>
+                            </div>
+                            <div class="ap-questao">
+                                <div class="img-apostila img-meio">
+                                    <img src="./assets/img/aluno-dashboard/apostila-exemplo.svg" alt="">
+                                </div>
+                                <p>Matemática - Calandreli Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+                            <div class="ap-questao">
+                                <div class="img-apostila">
+                                    <img src="./assets/img/aluno-dashboard/apostila-exemplo.svg" alt="">
+                                </div>
+                                <p>Matemática - Calandreli</p>
+                            </div>
+
+                            <div class="ap-questao">
+                                <div class="img-apostila">
+                                    <img src="./assets/img/aluno-dashboard/apostila-exemplo.svg" alt="">
+                                </div>
+                                <p>Matemática - Calandreli</p>
+                            </div>
+
+                            <div class="ap-questao">
+                                <div class="img-apostila">
+                                    <img src="./assets/img/aluno-dashboard/apostila-exemplo.svg" alt="">
+                                </div>
+                                <p>Matemática - Calandreli</p>
+                            </div>
+
+                            <div class="ap-questao">
+                                <div class="img-apostila">
+                                    <img src="./assets/img/aluno-dashboard/apostila-exemplo.svg" alt="">
+                                </div>
+                                <p>Matemática - Calandreli</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <canvas id="primeiroGrafico"></canvas>
+                </div>
+
+                <div class="ultimas-resolvidas">
+                    <div class="titulo-aluno titulo-aluno-ultimasR">
+                        <p class="paragrafo-ultimas">Últimas Resolvidas</p>
+                    </div>
+
+                    <div class="caixas">
+                        <div class="caixa">
+                            <div class="progresso">
+                                <div class="informacoes">
+                                    <p class="paragrafo1">Matemática-Módulo I-Capítulo 4</p>
+                                    <p class="paragrafo2">Grandezas proporcionais</p>
+                                </div>
+                                <div class="imagem">
+                                    <p class="paragrafo3">1/32</p>
+                                    <img class="expandir-barra1" src="./assets/img/aluno-dashboard/seta-baixo.svg"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="barra-total" data-questions="32">
+                                <div class="barra-completa">
+                                    <span class="barra-concluidas">1</span>
+                                </div>
+                            </div>
+
+                            <div class="bar_full bar_full1" data-questions="50">
+                                <div class="bar_complete">
+                                    <span class="complete_questions">25</span>
+                                </div>
+                                <div class="bar_duvidas">
+                                    <span class="duvidas_questions">20</span>
+                                </div>
+                                <div class="bar_erros">
+                                    <span class="erros_questions">5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="caixa">
+                            <div class="progresso">
+                                <div class="informacoes">
+                                    <p class="paragrafo1">Biologia-Módulo I-Capítulo 7</p>
+                                    <p class="paragrafo2">Ecologia</p>
+                                </div>
+                                <div class="imagem">
+                                    <p class="paragrafo3">2/32</p>
+                                    <img class="expandir-barra2" src="./assets/img/aluno-dashboard/seta-baixo.svg"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="barra-total" data-questions="32">
+                                <div class="barra-completa">
+                                    <span class="barra-concluidas">2</span>
+                                </div>
+                            </div>
+
+                            <div class="bar_full bar_full2" data-questions="32">
+                                <div class="bar_complete">
+                                    <span class="complete_questions">2</span>
+                                </div>
+                                <div class="bar_duvidas">
+                                    <span class="duvidas_questions">10</span>
+                                </div>
+                                <div class="bar_erros">
+                                    <span class="erros_questions">20</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="caixa">
+                            <div class="progresso">
+                                <div class="informacoes">
+                                    <p class="paragrafo1">Matemática-Módulo I-Capítulo 3</p>
+                                    <p class="paragrafo2">Estatística</p>
+                                </div>
+                                <div class="imagem">
+                                    <p class="paragrafo3">32/32</p>
+                                    <img class="expandir-barra3" src="./assets/img/aluno-dashboard/seta-baixo.svg"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="barra-total" data-questions="32">
+                                <div class="barra-completa">
+                                    <span class="barra-concluidas">32</span>
+                                </div>
+                            </div>
+
+                            <div class="bar_full bar_full3" data-questions="32">
+                                <div class="bar_complete">
+                                    <span class="complete_questions">32</span>
+                                </div>
+                                <div class="bar_duvidas">
+                                    <span class="duvidas_questions">0</span>
+                                </div>
+                                <div class="bar_erros">
+                                    <span class="erros_questions">0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="caixa">
+                            <div class="progresso">
+                                <div class="informacoes">
+                                    <p class="paragrafo1">Física-Módulo I-Capítulo 4</p>
+                                    <p class="paragrafo2">Atrito e movimento circular</p>
+                                </div>
+                                <div class="imagem">
+                                    <p class="paragrafo3">27/54</p>
+                                    <img class="expandir-barra4" src="./assets/img/aluno-dashboard/seta-baixo.svg"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="barra-total" data-questions="54">
+                                <div class="barra-completa">
+                                    <span class="barra-concluidas">27</span>
+                                </div>
+                            </div>
+
+                            <div class="bar_full bar_full4" data-questions="54">
+                                <div class="bar_complete">
+                                    <span class="complete_questions">27</span>
+                                </div>
+                                <div class="bar_duvidas">
+                                    <span class="duvidas_questions">27</span>
+                                </div>
+                                <div class="bar_erros">
+                                    <span class="erros_questions">0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="caixa caixa-ultima">
+                            <div class="progresso">
+                                <div class="informacoes">
+                                    <p class="paragrafo1">Física-Módulo I-Capítulo 5</p>
+                                    <p class="paragrafo2">Calorimetria</p>
+                                </div>
+                                <div class="imagem">
+                                    <p class="paragrafo3">28/28</p>
+                                    <img class="expandir-barra5" src="./assets/img/aluno-dashboard/seta-baixo.svg"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="barra-total" data-questions="28">
+                                <div class="barra-completa">
+                                    <span class="barra-concluidas">28</span>
+                                </div>
+                            </div>
+
+                            <div class="bar_full bar_full5" data-questions="28">
+                                <div class="bar_complete">
+                                    <span class="complete_questions">28</span>
+                                </div>
+                                <div class="bar_duvidas">
+                                    <span class="duvidas_questions">0</span>
+                                </div>
+                                <div class="bar_erros">
+                                    <span class="erros_questions">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="desktop" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg"
+                    alt=""></a>
+            <a class="mobile" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/mobile-eject.svg"
+                    alt=""></a>
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="tela hide"></div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/barras-progresso.js"></script>
+    <script type="text/javascript" src="assets/js/expandir-texto.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        let swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev'
+            }
+        }, {})
+    </script>
+
+    <script type="text/javascript">
+        $('.autoplay1').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+            dots: true
+        });
+
+
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js" integrity="sha512-5vwN8yor2fFT9pgPS9p9R7AszYaNn0LkQElTXIsZFCL7ucT8zDCAqlQXDdaqgA1mZP47hdvztBMsIoFxq/FyyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        let primeiroGrafico = document.getElementById('primeiroGrafico').getContext('2d');
+
+        let chart = new Chart(primeiroGrafico, {
+            type: 'line',
+
+            data: {
+                labels: ['2000', '2001', '2002', '2003', '2004', '2005'],
+
+                datasets: [
+                    {
+                        label: 'Crescimento Populacional',
+                        data: [173448346, 175885229, 178276128, 173448330, 182911487, 185150806],
+                        backgroundColor: "#ffffff",
+                        borderColor: "#F58E08"
+                    }
+                ]
+            }
+        });
+
+    </script>
+</body>
+
+</html>
+
+<!-- <canvas id="primeiroGrafico"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+
+    <script>
+        let primeiroGrafico = document.getElementById('primeiroGrafico').getContext('2d');
+
+        let chart = new Chart(primeiroGrafico, {
+            type: 'line',
+
+            data: {
+                labels: ['2000', '2001', '2002', '2003', '2004', '2005'],
+
+                datasets: [
+                    {
+                        label: 'Crescimento Populacional',
+                        data: [173448346, 175885229, 178276128, 180619108, 182911487, 185150806]
+                    }
+                ]
+            }
+        });
+
+    </script> -->

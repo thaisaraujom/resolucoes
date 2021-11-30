@@ -1,0 +1,457 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    min-height: 100%;
+    min-width: 100%;
+    scroll-behavior: smooth;
+    font: normal 16px "Montserrat";
+    background: #d7d5d4;
+}
+
+#questao {
+    min-height: 100vh;
+    padding: 0 5%;
+
+    .voltar {
+        padding-top: 70px;
+    }
+    .icones {
+        margin-top: 2%;
+        display: flex;
+        font: 400 13px "Montserrat";
+        line-height: 12px;
+        .home {
+            margin-right: 10px;
+        }
+        .seta {
+            margin-right: 10px;
+        }
+        a {
+            color: #282c35;
+            text-decoration: none;
+        }
+        a:visited,
+        a:hover,
+        a:link {
+            text-decoration: none;
+        }
+    }
+    .titulo {
+        margin-top: 19px;
+        color: #282c35;
+        font: 700 20px "Montserrat";
+    }
+    .conteudo {
+        padding: 25px 25%;
+
+        .numero-questao {
+            display: flex;
+            .mobile {
+                display: none;
+            }
+            justify-content: space-between;
+            text-align: start;
+            color: #4e5057;
+            p {
+                display: inline;
+            }
+            .segundaparte {
+                color: #818284;
+            }
+        }
+        .enunciado {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 25px;
+            .texto {
+                margin-bottom: 30px;
+            }
+            h2 {
+                display: inline;
+                color: #2c313b;
+                font-weight: inherit;
+            }
+        }
+        .imagem-enunciado {
+            img {
+                width: 100%;
+            }
+        }
+
+        .questionamento {
+            margin: 20px 0;
+        }
+
+        .alternativas {
+            ul {
+                list-style: none;
+            }
+            input {
+                display: none;
+                margin-bottom: 20px;
+            }
+            .custom-radio {
+                margin-bottom: 20px;
+                label {
+                    cursor: pointer;
+                }
+            }
+            .custom-radio input + label:before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: white;
+                border: 3px solid rgb(50, 54, 65);
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 20px;
+                margin-bottom: 3px;
+            }
+
+            .custom-radio input:checked + label:before {
+                width: 16px;
+                height: 16px;
+                background: #f58e08;
+                box-sizing: border-box;
+                padding: 2px;
+            }
+        }
+    }
+    .submissao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .ou {
+            margin: 0 8px !important;
+        }
+    }
+    .button {
+        background: #efaa51;
+
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5% 2px 15px;
+        font: 500 16px "Roboto";
+        cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+}
+.progress-bar-line {
+    background: #e6e1dd;
+    height: 2px;
+    display: flex;
+}
+
+.progress-bar-line::before {
+    content: "";
+    width: 20%;
+    background-color: #f58e08;
+}
+#footer {
+    background: #e6e1dd;
+
+    padding: 2%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .qtd-quest {
+        margin-right: 15px;
+    }
+    .back,
+    .next {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 112%;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        cursor: pointer;
+    }
+    .back,
+    .next,
+    .centro {
+        display: flex;
+        height: 40px;
+        .texto-next,
+        .texto-back {
+            margin: 0 20px;
+        }
+    }
+    .img-back,
+    .img-next,
+    .texto-back,
+    .texto-next {
+        display: flex;
+        align-items: center;
+    }
+    .img-back,
+    .img-next {
+        img {
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+        }
+    }
+    select {
+        border: 1px solid rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+        cursor: pointer;
+        background: #e6e1dd;
+    }
+    .centro {
+        width: 50%;
+        height: 100%;
+        justify-content: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        color: #4e5057;
+
+        display: flex;
+        align-items: center;
+
+        .qtd-quest {
+            display: flex;
+            width: 40%;
+            h4 {
+                margin-right: 4px;
+                margin-left: 8px;
+            }
+        }
+        .link-img {
+            width: 10%;
+        }
+
+        .imagem3,
+        .imagem2,
+        .imagem1 {
+            img {
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+                cursor: pointer;
+            }
+        }
+        .imagens {
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+
+            img { 
+                cursor: pointer;
+            }
+        }
+        select {
+            margin: 0 3%;
+            padding: 0 3%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .desktop {
+        display: none;
+    }
+    .centro {
+        padding-top: 10px !important;
+        margin: 0;
+        display: flex;
+        justify-content: space-between !important;
+        .desktop {
+            display: none;
+        }
+        .qtd-quest {
+            justify-content: space-between !important;
+            width: 40px !important;
+            height: 40px !important;
+            margin-right: 0 !important;
+            order: 2;
+        }
+        .imagens {
+            order: 1;
+        }
+        .imagem1,
+        .imagem2 {
+            margin-right: 20px;
+        }
+    }
+
+    #questao {
+        .titulo {
+            font-size: 15px;
+            border-bottom: 1px solid rgb(50, 54, 65);
+        }
+        .conteudo {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .submissao {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+
+            .button {
+                font-size: 12px;
+                box-shadow: none;
+                text-shadow: none;
+            }
+        }
+        .conteudo {
+            .numero-questao {
+                .mobile {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #footer {
+        .desktop {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    #questao {
+        padding-left: 0;
+        padding-right: 0;
+
+        .conteudo {
+            padding-bottom: 0;
+            .enunciado {
+                .texto {
+                    font-size: 12px !important;
+                    h2 {
+                        font-weight: 600;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .alternativas {
+                .custom-radio input + label:before {
+                    width: 6px;
+                    height: 6px;
+                    margin-right: 10px;
+                }
+                .custom-radio input:checked + label:before {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+
+            form {
+                font-size: 12px;
+            }
+        }
+        .questionamento {
+            p {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+        .conteudo,
+        .titulo,
+        .icones {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .submissao {
+            display: flex;
+            justify-content: space-between !important;
+            .ou {
+                margin: 0 !important;
+            }
+            .button {
+                display: flex;
+                align-items: center;
+                border-radius: 0;
+                margin-bottom: 0;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+
+                height: 22px;
+                white-space: nowrap;
+            }
+
+            p {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 18px;
+
+                color: #4e5057;
+            }
+            .enviar {
+                .button {
+                    padding-right: 10px !important;
+                }
+            }
+            .conferir {
+                .button {
+                    padding-left: 10px !important;
+                }
+            }
+            .enviar,
+            .conferir {
+                display: flex;
+                align-items: flex-end !important;
+            }
+            .ou {
+                width: 100% !important;
+                text-align: center;
+            }
+        }
+    }
+
+    #footer {
+        .img-back,
+        .img-next {
+            img {
+                padding-left: 10px;
+                padding-right: 15px;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+        }
+        .desktop {
+            display: none;
+        }
+        .centro {
+            width: 100%;
+            display: flex !important;
+
+            justify-content: space-around !important;
+            .qtd-quest {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    #questao {
+        .titulo {
+            h1 {
+                font-size: 20px;
+            }
+        }
+    }
+}

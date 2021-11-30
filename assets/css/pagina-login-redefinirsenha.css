@@ -1,0 +1,439 @@
+.mobile {
+  display: none;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+#redefinir {
+  height: 100%;
+  width: 100%;
+  background: #2c313b;
+}
+
+#redefinir .container,
+#redefinir .overlay {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#redefinir .conteudo {
+  position: relative;
+  margin-top: 85px;
+  border-radius: 30px;
+  width: 64%;
+  height: 64.1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e6e1dd;
+}
+
+#redefinir .conteudo .mobile {
+  display: none;
+}
+
+#redefinir .conteudo .coluna1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+#redefinir .conteudo .titulo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  color: #2c313b;
+}
+
+#redefinir .conteudo .paragrafo {
+  margin-top: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#redefinir .conteudo input {
+  background: #e6e1dd;
+  border: 2px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  padding: 2%;
+  margin-top: 15px;
+  width: 97%;
+  height: 45px;
+  font-size: 20px;
+}
+
+#redefinir .conteudo input::-webkit-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(44, 49, 59, 0.4);
+}
+
+#redefinir .conteudo input:-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(44, 49, 59, 0.4);
+}
+
+#redefinir .conteudo input::-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(44, 49, 59, 0.4);
+}
+
+#redefinir .conteudo input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(44, 49, 59, 0.4);
+}
+
+#redefinir .conteudo form {
+  width: 100%;
+  height: 100%;
+}
+
+#redefinir .conteudo .active {
+  border: 2px solid #fa4954;
+}
+
+#redefinir .conteudo .desativar {
+  display: none;
+}
+
+#redefinir .conteudo .active-mobile {
+  border: 1px solid #fa4954;
+  display: initial;
+}
+
+#redefinir .conteudo button {
+  margin-top: 40px;
+  padding: 2% 12%;
+  cursor: pointer;
+  border: none;
+  background: #f58e08;
+  border-radius: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 28px;
+  color: #2c313b;
+  text-transform: uppercase;
+}
+
+#redefinir .conteudo button:hover {
+  opacity: 0.95;
+}
+
+#redefinir .conteudo .imagem1 {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#redefinir .conteudo .imagem1 img {
+  width: 289px;
+  height: 287px;
+}
+
+#redefinir .conteudo .invalidfeedback {
+  margin-top: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fa4954;
+}
+
+#redefinir .conteudo .imagem2 {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+#redefinir .conteudo .imagem2:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1300px) {
+  #redefinir .conteudo .titulo {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1120px) {
+  #redefinir .conteudo .titulo p {
+    font-size: 30px !important;
+  }
+  #redefinir .conteudo .paragrafo {
+    font-size: 14px;
+  }
+  #redefinir .conteudo input::-webkit-input-placeholder {
+    font-size: 19px;
+  }
+  #redefinir .conteudo input:-ms-input-placeholder {
+    font-size: 19px;
+  }
+  #redefinir .conteudo input::-ms-input-placeholder {
+    font-size: 19px;
+  }
+  #redefinir .conteudo input::placeholder {
+    font-size: 19px;
+  }
+  #redefinir .conteudo button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1075px) {
+  #redefinir {
+    background: #d7d5d4 !important;
+    min-height: 100vh !important;
+  }
+  #redefinir .desktop {
+    display: none;
+  }
+  #redefinir .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #redefinir .conteudo {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+  #redefinir .conteudo input {
+    width: 100%;
+  }
+  #redefinir .conteudo .invalidfeedback1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 9px;
+    color: #fa4954;
+    text-align: end;
+  }
+  #redefinir .conteudo .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #redefinir .conteudo .titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 130px !important;
+  }
+  #redefinir .conteudo .titulo p {
+    font-size: 15px;
+    width: 50% !important;
+    margin-bottom: 30px;
+    line-height: 40px;
+    border-bottom: 2px solid #282c35;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px !important;
+    line-height: 30px;
+    color: #282c35;
+  }
+  #redefinir .conteudo .paragrafo {
+    margin: 0;
+  }
+  #redefinir .conteudo .paragrafo p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  #redefinir .conteudo input {
+    padding: 1% !important;
+    display: block;
+    border: none;
+    border-radius: 0 !important;
+    height: 29px;
+    background: none;
+    border: 1px solid #8e95a5;
+    margin-bottom: 20px;
+    font-size: 12px !important;
+  }
+  #redefinir .conteudo input::-webkit-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px !important;
+    line-height: 15px;
+    color: #282c35;
+  }
+  #redefinir .conteudo input:-ms-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px !important;
+    line-height: 15px;
+    color: #282c35;
+  }
+  #redefinir .conteudo input::-ms-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px !important;
+    line-height: 15px;
+    color: #282c35;
+  }
+  #redefinir .conteudo input::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px !important;
+    line-height: 15px;
+    color: #282c35;
+  }
+  #redefinir .conteudo button {
+    margin-top: 25px;
+    padding: 1% 5%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    text-transform: initial;
+  }
+  #redefinir .formulario1 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #redefinir .coluna1 {
+    width: 80%;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  #redefinir .imagem1 img {
+    width: 240px !important;
+    height: 238px !important;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  #redefinir .imagem3 img {
+    position: absolute;
+    top: 100px;
+    left: 10.5%;
+  }
+  #redefinir .imagem3:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 730px) {
+  #redefinir .formulario1 input {
+    width: 100%;
+  }
+  #redefinir .conteudo .titulo p {
+    width: 80% !important;
+  }
+  #redefinir .conteudo .imagem1 img {
+    width: 200px !important;
+    height: 198px !important;
+  }
+  #redefinir .conteudo .paragrafo p {
+    width: 100% !important;
+  }
+  #redefinir .conteudo form {
+    width: 100%;
+  }
+  #redefinir .conteudo .formulario1 input {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  #redefinir .formulario1 input {
+    width: 350px;
+  }
+  #redefinir .conteudo button {
+    padding: 2% 7%;
+  }
+}
+
+@media (max-width: 500px) {
+  #redefinir .formulario1 input {
+    width: 270px;
+  }
+  #redefinir .conteudo button {
+    padding: 1.5% 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  #redefinir .formulario1 input {
+    width: 200px;
+  }
+  #redefinir .conteudo .titulo p {
+    width: 100% !important;
+  }
+  #redefinir .conteudo .imagem1 img {
+    width: 150px !important;
+    height: 148px !important;
+  }
+}
+/*# sourceMappingURL=pagina-login-redefinirsenha.css.map */

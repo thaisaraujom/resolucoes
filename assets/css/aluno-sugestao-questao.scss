@@ -1,0 +1,196 @@
+body,
+html {
+    background: #282c35;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background: #f58e08 !important;
+    border-radius: 9px 0 0 9px;
+    border: none;
+
+    padding: 5px 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+
+    color: #f2f2f2;
+
+    padding: 5px 10px;
+
+    cursor: pointer;
+}
+
+#questao {
+    .icones a {
+        color: #e4e0e0;
+    }
+
+    .titulo {
+        padding-left: 0;
+    }
+
+    .titulo h1 {
+        color: #e4e0e0;
+        font: 600 35px "Montserrat", sans-serif;
+    }
+
+    .conteudo-sugerir-questao {
+        margin: 45px 80px 20px 80px;
+    }
+
+    .campos-preenchimento {
+        margin: 50px 0;
+    }
+
+    .campo {
+        margin: 40px 0;
+        position: relative;
+    }
+
+    .campo input {
+        border: none;
+        background-color: #282c35;
+        border-bottom: 1px solid #e4e0e0;
+
+        color: #e4e0e0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        padding: 0 !important;
+    }
+
+    .campo label {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #e4e0e0;
+    }
+
+    .campo_file input {
+        background: #e6e4e4 !important;
+        border: 1px solid #282c35 !important;
+        box-sizing: border-box !important;
+        border-radius: 10px !important;
+        font-size: 12px !important;
+        color: #000000 !important;
+
+        padding-right: 10px;
+
+        margin-left: 10px;
+
+        cursor: pointer;
+    }
+
+    .campo_file input {
+        border: none !important;
+    }
+
+    .campo.campo_area {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .campo textarea {
+        background: #e6e4e4;
+        border: 1px solid #2c313b;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        margin-top: 30px;
+
+        padding: 20px 10px;
+
+        max-width: 580px;
+        width: 100%;
+        height: 370px;
+
+        resize: none;
+
+        color: #2c313b;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    textarea {
+        overflow-y: auto;
+    }
+
+    textarea:focus,
+    input:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
+
+    textarea::-webkit-scrollbar {
+        width: 5px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+    }
+
+    textarea::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+        border-radius: 20px;
+        background-color: #f0f0f05e;
+    }
+
+    .button_enviar {
+        border: none;
+        background: #f58e08;
+        border-radius: 17px;
+
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #FFFFFF;
+
+        padding: 5px 30px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1024px) {
+    #questao {
+        .titulo h1 {
+            font-size: 22.5px;
+            color: #282c35;
+        }
+
+        .campo textarea {
+            border: none;
+            background: #EBE7E4;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 0px;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+
+    body,
+    html {
+        background: #ebe7e4 !important;
+    }
+
+    #questao {
+        .conteudo-sugerir-questao {
+            margin: 0;
+        }
+
+        .campo_file {
+            flex-wrap: wrap;
+
+            .file_input {
+                margin-top: 20px;
+            }
+        }
+
+    }
+}

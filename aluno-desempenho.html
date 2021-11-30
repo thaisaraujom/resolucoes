@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/aluno-desempenho.css">
+
+
+
+    <title>Desempenho | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg"
+                                alt=""></a><a class="item-link" href="aluno-dashboard.html">Home</a></li>
+
+                    <li class="nav-item item-apostila"><a href=""><img src="assets/img/aluno-questao/apostilas.svg"
+                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg"
+                                alt=""></a><a class="item-link" href="aluno-modulo.html">Matérias</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
+                            href="" class="item-link">Monitores</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
+                            class="item-link">Perfil</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
+                            href="" class="item-link">Sugerir Questão</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
+                            href="" class="item-link">Anotações</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/simulado.svg" alt=""></a><a
+                            href="" class="item-link">Simulado</a></li>
+                </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones">
+                        <a href="aluno-dashboard.html" class="desktop"><img class="home desktop"
+                                src="assets/img/pagina-questao/icon-home.svg" alt=""></a>
+                        <img class="seta desktop" src="assets/img/pagina-questao/icon-home-seta.svg" alt="">
+                        <a href="aluno-dashboard.html" class="desktop">
+                            <p>Voltar</p>
+                        </a>
+
+                        <a href="aluno-dashboard.html"><img class="mobile seta-voltar" src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="titulo mobile">
+                    <h1>Desempenho de matemática</h1>
+                </div>
+
+                <div class="titulo desktop">
+                    <h1>Matemática: Funções de 1° e 2° graus</h1>
+                </div>
+
+                <div class="conteudo-desempenho">
+                    <div class="caixas-todas">
+                        <div class="caixa acertos" data-filter="acerto" data-filterStatus="acertos">
+                            <p class="texto-acertos">ACERTOS</p>
+                            <p class="numero-acertos">28</p>
+                        </div>
+                        <div class="caixa duvidas" data-filter="duvidaa" data-filterStatus="duvidas">
+                            <p class="texto-duvidas">DÚVIDAS</p>
+                            <p class="numero-duvidas">06</p>
+                        </div>
+                        <div class="caixa erros" data-filter="erro" data-filterStatus="erros">
+                            <p class="texto-erros">ERROS</p>
+                            <p class="numero-erros">04</p>
+                        </div>
+                        <div class="caixa branca" data-filter="branco" data-filterStatus="branca">
+                            <p class="texto-branco">SEM RESPOSTA</p>
+                            <p class="numero-branco">02</p>
+                        </div>
+                    </div>
+    
+                    <div class="cards-todos">
+                        <div class="card acerto duvidaa">
+                            <p>01</p>
+                            <div class="duvida"></div>
+                        </div>
+                        <div class="card acerto duvidaa">
+                            <p>02</p>
+                            <div class="duvida"></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>03</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>04</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto duvidaa">
+                            <p>05</p>
+                            <div class="duvida"></div>
+                        </div>
+                        <div class="card erro duvidaa">
+                            <p>06</p>
+                            <div class="duvida"></div>
+                        </div>
+                        <div class="card acerto duvidaa">
+                            <p>07</p>
+                            <div class="duvida"></div>
+                        </div>
+                        <div class="card branco">
+                            <p>08</p>
+                            <div></div>
+                        </div>
+                        <div class="card erro">
+                            <p>09</p>
+                            <div></div>
+                        </div>
+                        <div class="card erro">
+                            <p>10</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>11</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>12</p>
+                            <div></div>
+                        </div>
+                        <div class="card erro">
+                            <p>13</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>14</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>15</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>16</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>17</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>18</p>
+                            <div></div>
+                        </div>
+                        <div class="card erro">
+                            <p>19</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>20</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>21</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>22</p>
+                            <div></div>
+                        </div>
+                        <div class="card erro">
+                            <p>23</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>24</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>25</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>26</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>27</p>
+                            <div></div>
+                        </div>
+                        <div class="card erro duvidaa">
+                            <p>28</p>
+                            <div class="duvida"></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>29</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>30</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto duvidaa">
+                            <p>31</p>
+                            <div class="duvida"></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>32</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>33</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>34</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>35</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>36</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>37</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>38</p>
+                            <div></div>
+                        </div>
+                        <div class="card erro">
+                            <p>39</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>40</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>41</p>
+                            <div></div>
+                        </div>
+                        <div class="card acerto">
+                            <p>42</p>
+                            <div></div>
+                        </div>
+                        <div class="card erro">
+                            <p>43</p>
+                            <div></div>
+                        </div>
+                        <div class="card branco">
+                            <p>44</p>
+                            <div></div>
+                        </div>
+                        <div class="card erro">
+                            <p>45</p>
+                            <div></div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="nivel-dificuldade">
+                        <div class="titulo-nivel">
+                            <p>Nível de Dificuldade</p>
+                        </div>
+
+                        <div class="facil">
+                            <p>Fácil</p>
+                            <p class="quantidade-questions">(25/25)</p> 
+                        </div>
+                        <div class="bar_dificuldade" data-questions='25'>
+                            <div class="bar_concluidas">
+                                <span class="nivel">25</span>
+                            </div>
+                        </div>
+
+                        <div class="medio">
+                            <p>Médio</p> 
+                            <p class="quantidade-questions">(9/15)</p>
+                        </div>
+                        <div class="bar_dificuldade" data-questions='15'>
+                            <div class="bar_concluidas">
+                                <span class="nivel">9</span>
+                            </div>
+                        </div>
+
+                        <div class="dificil">
+                            <p>Difícil</p>
+                            <p class="quantidade-questions">(0/5)</p>
+                        </div>
+                        <div class="bar_dificuldade" data-questions='5'>
+                            <div class="bar_concluidas">
+                                <span class="nivel">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="desktop" href=""><img class="img-logo" src="./assets/img/aluno-desempenho/logo-eject.svg"
+                    alt=""></a>
+            <a class="mobile" href="http://www.ejectufrn.com.br/"><img class="img-logo" src="./assets/img/aluno-dashboard/mobile-eject.svg"
+                    alt=""></a>
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="tela hide"></div>
+
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/barra-dificuldade-desempenho.js"></script>
+    <script type="text/javascript" src="assets/js/filtro-caixas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+#navbar {
+  background: #2c313b;
+}
+
+#navbar-lateral {
+  background: #2C313B;
+}
+
+#navbar-lateral .itens-menu {
+  height: 80%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#navbar-lateral .nav-item {
+  margin-top: 15px;
+}
+
+#navbar-lateral .home, #navbar-lateral .book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar-lateral .home p, #navbar-lateral .book p {
+  margin-right: 55px;
+}
+
+#navbar-lateral .icon-down {
+  cursor: pointer;
+}
+
+#navbar-lateral .home-desativada, #navbar-lateral .book-desativada {
+  display: none;
+}
+
+#navbar-lateral .item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbar-lateral .item-link-ativado {
+  color: #f58e08;
+  font-weight: 600;
+}
+
+#navbar-lateral .home-down,
+#navbar-lateral .sobre-down, #navbar-lateral .book-down {
+  margin: 10px 0 0 10px;
+}
+
+#navbar-lateral .home-down p,
+#navbar-lateral .sobre-down p, #navbar-lateral .book-down p {
+  margin-top: 5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  color: #d7d5d4;
+}
+
+#navbar-lateral .sobre-down {
+  overflow-y: scroll;
+  height: 100px;
+}
+
+#navbar-lateral .sobre-down::-webkit-scrollbar {
+  width: 3px;
+  background-color: #f0f0f0;
+}
+
+#navbar-lateral .sobre-down::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  background-color: #f0f0f05e;
+}
+
+#navbar-lateral .mais-cursinho {
+  cursor: pointer;
+}
+
+#navbar {
+  background: #282c35;
+}
+/*# sourceMappingURL=admin-menu.css.map */

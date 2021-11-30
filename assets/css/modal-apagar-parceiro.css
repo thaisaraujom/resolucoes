@@ -1,0 +1,393 @@
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.modal-finalizar-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  visibility: hidden;
+  z-index: 9999999;
+}
+
+.modal-finalizar-overlay button {
+  border-radius: 17px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 25px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.modal-finalizar-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999999;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modal-finalizar {
+  background: #ffffff;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.modal-finalizar-conteudo {
+  padding: 0 100px;
+}
+
+.modal-finalizar-conteudo-cursinho {
+  padding: 0 20px !important;
+}
+
+.p-titulo-modal-finalizar {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #282c35;
+  margin-top: 30px;
+}
+
+.p-descricao-modal-finalizar {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-sair {
+  width: 100%;
+  background: #282c35;
+  border-radius: 15px 15px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.modal-sair img {
+  cursor: pointer;
+  margin: 15px 25px;
+  width: 35px;
+  height: auto;
+}
+
+.modal-sair img:hover {
+  opacity: 0.95;
+}
+
+.tempo-restante-simulado {
+  padding: 0 17%;
+  margin: 50px 30px;
+}
+
+.tempo-restante,
+.questoes-simulado-feitas {
+  font-weight: 500;
+  font-size: 17px;
+  color: #4e5057;
+}
+
+.bar_tempo,
+.bar_feitas {
+  margin-top: 7px;
+  margin-bottom: 14px;
+  height: 10px;
+  border: 1px solid #8d9ab6;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.bar_feitas_progresso {
+  height: 100%;
+  background: #f58e08;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.bar_tempo_progresso {
+  height: 100%;
+  background: #f58e08;
+  border-radius: 10px;
+  width: 100%;
+  -webkit-animation: progressbar-countdown;
+  animation: progressbar-countdown;
+  /* Placeholder, this will be updated using javascript */
+  /* We stop in the end */
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  /* Stay on pause when the animation is finished finished */
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  /* We start paused, we start the animation using javascript */
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  /* We want a linear animation, ease-out is standard */
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes progressbar-countdown {
+  0% {
+    width: 100%;
+    background: #f58e08;
+  }
+  100% {
+    width: 0%;
+    background: #f58e08;
+  }
+}
+
+@keyframes progressbar-countdown {
+  0% {
+    width: 100%;
+    background: #f58e08;
+  }
+  100% {
+    width: 0%;
+    background: #f58e08;
+  }
+}
+
+.progresso_tempo,
+.progresso_feitas {
+  visibility: hidden;
+}
+
+.final-conteudo {
+  margin: 40px 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.voltar-simulado {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #282c35;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {
+  .voltar-simulado.desktop {
+    display: none;
+  }
+  .voltar-simulado.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .voltar-simulado {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #282c35;
+  }
+  .modal-finalizar {
+    border-radius: 5px;
+    background: #e6e1dd;
+  }
+  .modal-finalizar-conteudo {
+    border-radius: 0px 0px 5px 5px;
+    padding: 0;
+  }
+  .p-titulo-modal-finalizar {
+    color: #4e5057;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 0 5px;
+  }
+  .p-descricao-modal-finalizar {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #4e5057;
+    padding: 0 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .modal-tempo-restante-simulado {
+    padding: 0 30px;
+  }
+  .modal-sair {
+    background: #5c5e64;
+    border-radius: 5px 5px 0 0;
+  }
+  .modal-sair img {
+    width: 20px;
+    margin: 5px 10px;
+  }
+  .tempo-restante,
+  .questoes-simulado-feitas {
+    font-size: 12px;
+  }
+  .bar_tempo {
+    margin-bottom: 30px;
+  }
+  .modal-finalizar-overlay button {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    padding: 2px 20px;
+    text-transform: uppercase;
+  }
+  .final-conteudo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+.modal-finalizar {
+  background: #ffffff;
+}
+
+.decisao-botoes-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-finalizar-conteudo {
+  padding: 0 50px;
+}
+
+.modal-sair img {
+  margin: 10px 20px;
+}
+
+.p-titulo-modal-finalizar {
+  margin-top: 20px;
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 23px;
+  color: #282c35;
+}
+
+.p-descricao-modal-finalizar {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2c313b;
+}
+
+button.button-cancelar-modal {
+  border-radius: 17px;
+  background: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 2% 3%;
+  text-transform: uppercase;
+  color: #2c313b;
+}
+
+button.button-sim {
+  border-radius: 17px;
+  background: #D7D5D4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 2% 10%;
+  color: #2c313b;
+  text-transform: uppercase;
+}
+
+button.button-laranja-modal {
+  background: #f58e08;
+  border-radius: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 2% 3%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+button.button-nao {
+  background: #f58e08;
+  border-radius: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 2% 10%;
+  margin-left: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  .modal-sair img {
+    margin: 5px 20px;
+  }
+  .p-titulo-modal-finalizar {
+    font-size: 15px;
+    text-transform: initial;
+    font-style: normal;
+    color: #4e5057;
+  }
+  .p-descricao-modal-finalizar {
+    font-size: 10px;
+  }
+  button.button-sim, button.button-nao {
+    font-size: 12px;
+  }
+}
+.modal-finalizarDisciplina {
+  max-width: 500px;
+}
+
+.modal-anotacao-apagar-conteudo {
+  margin: 20px 0 5px 0;
+}
+
+.modal-anotacao-apagar-conteudo .p-titulo-modal-finalizar {
+  margin-bottom: 30px;
+}
+
+.modal-anotacao {
+  background-color: #D7D5D4;
+}
+/*# sourceMappingURL=modal-apagar-parceiro.css.map */

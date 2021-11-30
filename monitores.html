@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/caderno-de-anotacoes.css">
+    <link rel="stylesheet" href="assets/css/footer-eject.css">
+    <link rel="stylesheet" href="assets/css/anotacao.css">
+    <link rel="stylesheet" href="assets/css/monitores.css">
+       
+
+    <title>Monitores | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/home.svg" alt=""></a><a
+                            class="item-link" href="">Home</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/apostilas - white.svg"
+                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/materias.svg" alt=""></a><a
+                            class="item-link" href="">Matérias</a></li>
+
+                    <li class="nav-item active"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
+                            href="" class="item-link">Monitores</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
+                            class="item-link">Perfil</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
+                            href="" class="item-link">Sugerir Questão</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
+                            href="" class="item-link item-apostila">Anotações</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/simulado.svg" alt=""></a><a
+                            href="" class="item-link">Simulado</a></li>
+                </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones">
+                        <a href="index.html"><img class="home" src="assets/img/pagina-questao/icon-home-white.svg" alt=""></a>
+                        <img class="seta" src="assets/img/pagina-questao/icon-home-seta-white.svg" alt="">
+                        <a href="index.html">
+                            <p>Voltar</p>
+                        </a>
+                    </div>                   
+                </div>
+            </div>
+
+            <!-- INICIO Monitores -->
+            <main class="caderno caderno__monitores">
+                <!-- Cabeçalho do Monitores -->
+                <header class="caderno__header">
+                    <h1 class="caderno__title">Monitores</h1>
+                </header>
+                <!-- Corpo Monitores -->
+                <section class="caderno__body" >
+                    <!-- Menu lateral Monitores -->
+                    <aside class="col-a3">
+                        <nav class="caderno__nav nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active show caderno__nav-item monitores__materia-item" id="v-pills-matematica-tab" data-toggle="pill" href="#v-pills-matematica" role="tab" aria-controls="v-pills-matematica" aria-selected="true">Matemática</a>
+                            <a class="nav-link caderno__nav-item monitores__materia-item" id="v-pills-portugues-tab" data-toggle="pill" href="#v-pills-portugues" role="tab" aria-controls="v-pills-portugues caderno__nav-item monitores__materia-item" aria-selected="false">Português</a>
+                            <a class="nav-link caderno__nav-item monitores__materia-item" id="v-pills-historia-tab" data-toggle="pill" href="#v-pills-historia" role="tab" aria-controls="v-pills-historia caderno__nav-item monitores__materia-item" aria-selected="false">História</a>
+                            <a class="nav-link caderno__nav-item monitores__materia-item" id="v-pills-geografia-tab" data-toggle="pill" href="#v-pills-geografia" role="tab" aria-controls="v-pills-geografia caderno__nav-item monitores__materia-item" aria-selected="false">Geografia</a>
+                            <a class="nav-link caderno__nav-item monitores__materia-item" id="v-pills-biologia-tab" data-toggle="pill" href="#v-pills-biologia" role="tab" aria-controls="v-pills-biologia caderno__nav-item monitores__materia-item" aria-selected="false">Biologia</a>
+                            <a class="nav-link caderno__nav-item monitores__materia-item" id="v-pills-fisica-tab" data-toggle="pill" href="#v-pills-fisica" role="tab" aria-controls="v-pills-fisica caderno__nav-item monitores__materia-item" aria-selected="false">Física</a>
+                        </nav>
+                        <nav class="caderno__nav nav flex-column nav-pills monitores__filter" id="v-pills-tab" role="tablist" aria-orientation="vertical">                           
+                            <form class="monitores__filter-date" action="">
+                                <h3 class="nav-link monitores__filter--title">Filtrar</h3>
+                                <label class="monitores__filter--option" for="monitores__filter--segunda">Segunda
+                                    <input type="checkbox" id="monitores__filter--segunda" name="segunda" value="segunda">
+                                    <span class="custom-checkmark"></span>
+                                </label>
+                                <label class="monitores__filter--option" for="monitores__filter--terca">Terça
+                                    <input type="checkbox" id="monitores__filter--terca" name="terca" value="terca">
+                                    <span class="custom-checkmark"></span>
+                                </label>
+                                <label class="monitores__filter--option" for="monitores__filter--quarta">Quarta
+                                    <input type="checkbox" id="monitores__filter--quarta" name="quarta" value="quarta">
+                                    <span class="custom-checkmark"></span>
+                                </label>
+                                <label class="monitores__filter--option" for="monitores__filter--quinta">Quinta
+                                    <input type="checkbox" id="monitores__filter--quinta" name="quinta" value="quinta">
+                                    <span class="custom-checkmark"></span>
+                                </label>
+                                <label class="monitores__filter--option" for="monitores__filter--sexta">Sexta
+                                    <input type="checkbox" id="monitores__filter--sexta" name="sexta" value="sexta">
+                                    <span class="custom-checkmark"></span>
+                                </label>
+                                <label class="monitores__filter--option" for="monitores__filter--sabado">Sábado
+                                    <input type="checkbox" id="monitores__filter--sabado" name="sabado" value="sabado">
+                                    <span class="custom-checkmark"></span>
+                                </label>
+                                <label class="monitores__filter--option" for="monitores__filter--domingo">Domingo
+                                    <input type="checkbox" id="monitores__filter--domingo" name="domingo" value="domingo">
+                                    <span class="custom-checkmark"></span>
+                                </label>
+                                <h3 class="nav-link monitores__filter--title">Horário</h3>
+                                <input type="time" id="monitores__filter--horario" name="horario"
+                                    min="09:00" max="18:00" required>
+                                <div class='monitores__filter-buscar'>
+                                    <button class='monitores__filter-btn'>Buscar</button>
+                                </div>                               
+                            </form>
+                        </nav>
+                    </aside>
+
+                    <!-- Monitores -->                    
+                    <section class="caderno__anotacoes tab-content col-a9" id="v-pills-tabContent" >
+                        <div class="custom-select" style="width:200px;">
+                            <select id="select-disciplina">
+                              <option value="matematica" selected>Matemática</option>
+                              <option value="matematica">Matemática </option>
+                              <option value="portugues">Português</option>
+                              <option value="historia">História</option>
+                              <option value="geografia">Geografia</option>
+                              <option value="biologia">Biologia</option>
+                              <option value="fisica">Física</option>
+                            </select>
+                        </div>
+                        <!-- MATEMÁTICA -->
+                        <div class="tab-pane fade active show" id="v-pills-matematica" role="tabpanel" aria-labelledby="v-pills-matematica-tab">
+                            <article class="anotacao monitores__card matematica">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </article>
+                            <article class="anotacao monitores__card matematica">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </article>
+                            <article class="anotacao monitores__card matematica">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </article>
+                            <article class="anotacao monitores__card matematica">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </article>
+                            <article class="anotacao monitores__card matematica">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </article>
+                            <article class="anotacao monitores__card matematica">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </article>
+                            <footer class="caderno__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i>
+                                                <img src="./assets/img/pagina-questao/icon-previous.svg" alt="">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i><img src="./assets/img/pagina-questao/icon-next.svg" alt=""></i></a></li>
+                                </ul>                   
+                            </footer>
+                        </div>
+                        <!-- PORTUGUÊS -->
+                        <div class="tab-pane fade" id="v-pills-portugues" role="tabpanel" aria-labelledby="v-pills-portugues-tab">
+                            <article class="anotacao monitores__card portugues">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </article>
+                            <article class="anotacao monitores__card portugues">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </article>
+                            <footer class="caderno__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i>
+                                                <img src="./assets/img/pagina-questao/icon-previous.svg" alt="">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i><img src="./assets/img/pagina-questao/icon-next.svg" alt=""></i></a></li>
+                                </ul>                   
+                            </footer>
+                        </div>
+                        <!-- HISTÓRIA -->
+                        <div class="tab-pane fade" id="v-pills-historia" role="tabpanel" aria-labelledby="v-pills-historia-tab">
+                            <article class="anotacao monitores__card historia">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </article>                  
+                            <footer class="caderno__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i>
+                                                <img src="./assets/img/pagina-questao/icon-previous.svg" alt="">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i><img src="./assets/img/pagina-questao/icon-next.svg" alt=""></i></a></li>
+                                </ul>                   
+                            </footer>
+                        </div>
+                        <!-- GEOGRAFIA -->
+                        <div class="tab-pane fade" id="v-pills-geografia" role="tabpanel" aria-labelledby="v-pills-geografia-tab">
+                            <article class="anotacao monitores__card geografia">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </article>                                 
+                            <article class="anotacao monitores__card geografia">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </article>                                                           
+                            <article class="anotacao monitores__card geografia">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </article>   
+                            <footer class="caderno__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i>
+                                                <img src="./assets/img/pagina-questao/icon-previous.svg" alt="">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i><img src="./assets/img/pagina-questao/icon-next.svg" alt=""></i></a></li>
+                                </ul>                   
+                            </footer>
+                        </div>
+                        <!-- BIOLOGIA -->
+                        <div class="tab-pane fade" id="v-pills-biologia" role="tabpanel" aria-labelledby="v-pills-biologia-tab">
+                            <article class="anotacao monitores__card biologia">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </article>                               
+                            <article class="anotacao monitores__card biologia">
+                                <div class="monitores__card-perfil">
+                                    <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                    <div class="monitores__card-perfil-dados">
+                                        <h3>Maria Helena</h3>
+                                        <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                        <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                    </div>
+                                </div>
+                                <div class="monitores__card-agenda">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th>D</th>
+                                            <th class="active">S</th>
+                                            <th>T</th>
+                                            <th class="active">Q</th>
+                                            <th>Q</th>
+                                            <th class="active">S</th>
+                                            <th>S</th>                            
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </article>  
+                            <footer class="caderno__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i>
+                                                <img src="./assets/img/pagina-questao/icon-previous.svg" alt="">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i><img src="./assets/img/pagina-questao/icon-next.svg" alt=""></i></a></li>
+                                </ul>                   
+                            </footer>
+                        </div>
+                        <!-- FISICA -->
+                        <div class="tab-pane fade" id="v-pills-fisica" role="tabpanel" aria-labelledby="v-pills-fisica-tab" > 
+                                <article class="anotacao monitores__card fisica">
+                                    <div class="monitores__card-perfil">
+                                        <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                        <div class="monitores__card-perfil-dados">
+                                            <h3>Maria Helena</h3>
+                                            <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                            <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                        </div>
+                                    </div>
+                                    <div class="monitores__card-agenda">
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>D</th>
+                                                <th class="active">S</th>
+                                                <th>T</th>
+                                                <th class="active">Q</th>
+                                                <th>Q</th>
+                                                <th class="active">S</th>
+                                                <th>S</th>                            
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </article>  
+                                <article class="anotacao monitores__card fisica">
+                                    <div class="monitores__card-perfil">
+                                        <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                        <div class="monitores__card-perfil-dados">
+                                            <h3>Maria Helena</h3>
+                                            <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                            <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                        </div>
+                                    </div>
+                                    <div class="monitores__card-agenda">
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>D</th>
+                                                <th class="active">S</th>
+                                                <th>T</th>
+                                                <th class="active">Q</th>
+                                                <th>Q</th>
+                                                <th class="active">S</th>
+                                                <th>S</th>                            
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </article>  
+                                <article class="anotacao monitores__card fisica">
+                                    <div class="monitores__card-perfil">
+                                        <img src="assets/img/monitores/Rectangle blank.jpg" alt="" class="monitores__card-perfil-photo">
+                                        <div class="monitores__card-perfil-dados">
+                                            <h3>Maria Helena</h3>
+                                            <p><img src="assets/img/monitores/whatsappSVG.svg" alt="">(84) 9 9999-9999</p>
+                                            <p><img src="assets/img/monitores/mailSVG.svg" alt="">mariahelena@gmail.com.br</p>                                   
+                                        </div>
+                                    </div>
+                                    <div class="monitores__card-agenda">
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>D</th>
+                                                <th class="active">S</th>
+                                                <th>T</th>
+                                                <th class="active">Q</th>
+                                                <th>Q</th>
+                                                <th class="active">S</th>
+                                                <th>S</th>                            
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </article>  
+                                <footer class="caderno__pagination">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">
+                                                <i>
+                                                    <img src="./assets/img/pagina-questao/icon-previous.svg" alt="">
+                                                </i>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#"><i><img src="./assets/img/pagina-questao/icon-next.svg" alt=""></i></a></li>
+                                    </ul>                   
+                                </footer>
+                        </div>                       
+                    </section>                 
+              
+            </main>
+            <footer class="eject__footer">
+                <div class="texto-rodape">
+                    <p>Resoluções.com © 2020 | Desenvolvido pela &nbsp; </p>
+                </div>        
+                <div class="logo-rodape">
+                    <a class="desktop" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg"
+                            alt="">&nbsp;</a>
+                    <a class="mobile" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/mobile-eject.svg"
+                            alt=""></a>
+                    <a href="http://www.ejectufrn.com.br/">
+                        <p class="p-logo">&nbsp;EJECT</p>
+                    </a>
+                </div>        
+            </footer>
+        </div>    
+
+    
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/caderno-de-anotacoes.js"></script>
+</body>
+
+</html>

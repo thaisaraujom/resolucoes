@@ -1,0 +1,284 @@
+a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.modal-finalizar-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+
+    z-index: 9999999;
+
+    button {
+        border-radius: 17px;
+    
+        font-size: 16px;
+        line-height: 20px;
+    
+        text-align: center;
+        font-weight: bold;
+    
+        padding: 5px 25px;
+    
+        color: #ffffff;
+        background: #f58e08;
+    
+        border: none;
+        cursor: pointer;
+    
+        margin-left: 20px;
+    }
+}
+
+.modal-finalizar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+
+    z-index: 9999999;
+    transition: 0.5s;
+}
+
+.modal-finalizar {
+    background: #ffffff;
+    border-radius: 20px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.modal-finalizar-conteudo {
+    padding: 0 100px;
+}
+
+.p-titulo-modal-finalizar {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+    color: #282c35;
+
+    margin-top: 30px;
+}
+
+.p-descricao-modal-finalizar {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.8);
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.modal-sair {
+    width: 100%;
+    background: #282c35;
+    border-radius: 15px 15px 0px 0px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+        cursor: pointer;
+
+        margin: 15px 25px;
+
+        width: 35px;
+        height: auto;
+    }
+
+    img:hover {
+        opacity: 0.95;
+    }
+}
+
+.tempo-restante-simulado {
+    padding: 0 17%;
+
+    margin: 50px 30px;
+}
+
+.tempo-restante,
+.questoes-simulado-feitas {
+    font-weight: 500;
+    font-size: 17px;
+
+    color: #4e5057;
+}
+.bar_tempo,
+.bar_feitas {
+    margin-top: 7px;
+    margin-bottom: 14px;
+    height: 10px;
+    border: 1px solid #8d9ab6;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+.bar_feitas_progresso {
+    height: 100%;
+
+    background: #f58e08;
+
+    border-radius: 10px;
+
+    width: 100%;
+}
+.bar_tempo_progresso {
+    height: 100%;
+
+    background: #f58e08;
+
+    border-radius: 10px;
+
+    width: 100%;
+
+    animation: progressbar-countdown;
+    /* Placeholder, this will be updated using javascript */
+
+    /* We stop in the end */
+    animation-iteration-count: 1;
+    /* Stay on pause when the animation is finished finished */
+    animation-fill-mode: forwards;
+    /* We start paused, we start the animation using javascript */
+    animation-play-state: paused;
+    /* We want a linear animation, ease-out is standard */
+    animation-timing-function: linear;
+}
+@keyframes progressbar-countdown {
+    0% {
+        width: 100%;
+        background: #f58e08;
+    }
+    100% {
+        width: 0%;
+        background: #f58e08;
+    }
+}
+.progresso_tempo,
+.progresso_feitas {
+    visibility: hidden;
+}
+
+.final-conteudo {
+    margin: 40px 0 30px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voltar-simulado {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: center;
+
+    color: #282c35;
+    cursor: pointer;
+}
+
+@media (max-width: 770px) {
+    .voltar-simulado.desktop {
+        display: none;
+    }
+    .voltar-simulado.mobile {
+        display: flex;
+    }
+    .voltar-simulado {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+
+        color: #282c35;
+    }
+    .modal-finalizar {
+        border-radius: 5px;
+        background: #e6e1dd;
+    }
+    .modal-finalizar-conteudo {
+        border-radius: 0px 0px 5px 5px;
+        padding: 0;
+    }
+    .p-titulo-modal-finalizar {
+        color: #4e5057;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+
+        padding: 0 5px;
+    }
+    .p-descricao-modal-finalizar {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+
+        color: #4e5057;
+
+        padding: 0 40px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .modal-tempo-restante-simulado {
+        padding: 0 30px;
+    }
+    .modal-sair {
+        background: #5c5e64;
+        border-radius: 5px 5px 0 0;
+
+        img {
+            width: 20px;
+
+            margin: 5px 10px;
+        }
+    }
+    .tempo-restante,
+    .questoes-simulado-feitas {
+        font-size: 12px;
+    }
+    .bar_tempo {
+        margin-bottom: 30px;
+    }
+    .modal-finalizar-overlay {
+        button {
+            font-size: 12px;
+    
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+    
+            padding: 2px 20px;
+    
+            text-transform: uppercase;
+        }
+    }
+    .final-conteudo {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}

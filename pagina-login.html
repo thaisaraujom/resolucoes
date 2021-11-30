@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/pagina-login.css">
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/carousel.css" />
+    <link rel="stylesheet" href="assets/css/owl-carousel.css" />
+    <link rel="stylesheet" href="assets/css/owl-theme.css" />
+
+    <title>Login | Resoluções.com</title>
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="inicio-navbar navbar  fixed-top navbar-fixed-top navbar-expand-lg navbar-light bg-light">
+
+            <div>
+                <h1><a class="link-logo" href="index.html"><img class="logo" src="assets/img/index_imagens/logo.png"
+                            alt=""></a>
+                </h1>
+            </div>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="menu collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="ml-auto navbar-itens main-nav itens" id="js-menu">
+                    <li class="nav-item"><a href="index.html#inicio">Home</a></li>
+                    <li class="nav-item"><a href="index.html#quem-somos">Quem Somos</a></li>
+                    <li class="nav-item"><a href="index.html#simulacao">Simulação</a></li>
+                    <li class="nav-item"><a href="index.html#parceiros">Parceiros</a></li>
+                    <li class="nav-item"><a href="index.html#contato">Contato</a></li>
+                    <a href="pagina-login.html"><button class="botao-entrar">Entrar</button></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="login">
+        <div class="container">
+            <div class="imagem desktop">
+                <img src="assets/img/pagina-login/login1.png" alt="">
+            </div>
+
+            <div class="overlay">
+                <div class="conteudo">
+                    <div class="itens">
+                        <div class="titulo">
+                            <p>Faça seu login</p>
+                        </div>
+                        <div class="formulario desktop">
+                            <form action="">
+                                <label for="email">Digite seu e-mail:</label>
+                                <input type="text" id="email" name="email">
+                                <label for="senha">Senha:</label>
+                                <input type="password" id="senha" name="senha">
+                                <p><a href="pagina-login-redefinirsenha.html">Esqueci a senha</a></p>
+                                <div class="botao-entrar">
+                                    <button type="submit" value="Submit">ENTRAR</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="formulario1 mobile">
+                            <form action="">
+                                <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
+                                <input type="password" id="senha" name="senha" placeholder="Senha">
+                                <p><a href="pagina-login-redefinirsenha.html">Esqueci a senha</a></p>
+                                <div class="botao-entrar">
+                                    <button type="submit" value="Submit">Entrar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagem1 mobile">
+                    <img src="assets/img/pagina-login/login2.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

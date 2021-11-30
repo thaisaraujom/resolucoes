@@ -1,0 +1,41 @@
+.modal-finalizar-conteudo {
+  padding: 0;
+}
+
+.padding-modal {
+  padding: 0 50px !important;
+}
+
+.p-titulo-modal-modulo, .input-modal-modulo {
+  margin-bottom: 20px;
+}
+
+.modal-finalizar-overlay .button-salvar-disciplina {
+  margin: 0;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  padding: 7px 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 770px) {
+  .modal-finalizar-overlay .button-salvar-disciplina {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .modal-finalizar-overlay .button-salvar-disciplina {
+    font-size: 13px;
+    padding: 3px 0;
+  }
+}
+
+@media (max-width: 499px) {
+  .p-titulo-modal-finalizar {
+    font-size: 15px !important;
+    margin-left: 0 !important;
+  }
+}
+/*# sourceMappingURL=modal-adicionar-disciplina.css.map */

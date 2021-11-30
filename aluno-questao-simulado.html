@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/aluno-questao-simulado.css">
+    <link rel="stylesheet" href="assets/css/modal-finalizar-questao-simulado.css">
+
+    <title>Questão - Simulado | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg"
+                                alt=""></a><a class="item-link" href="aluno-dashboard.html">Home</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/apostilas-branco.svg"
+                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
+
+                    <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg"
+                                alt=""></a><a class="item-link" href="aluno-modulo.html">Matérias</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
+                            href="" class="item-link">Monitores</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
+                            class="item-link">Perfil</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
+                            href="" class="item-link">Sugerir Questão</a></li>
+
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
+                            href="" class="item-link">Anotações</a></li>
+
+                    <li class="nav-item item-simulado"><a href=""><img
+                                src="assets/img/aluno-questao/simulado-laranja.svg" alt=""></a><a href=""
+                            class="item-link">Simulado</a></li>
+                </ul>
+
+                <div class="help">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Suporte</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Política</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones">
+                        <a href="aluno-dashboard.html"><img class="home" src="assets/img/pagina-questao/icon-home.svg" alt=""></a>
+                        <img class="seta" src="assets/img/pagina-questao/icon-home-seta.svg" alt="">
+                        <a href="aluno-capa-simulado.html">
+                            <p>Voltar</p>
+                        </a>
+                    </div>
+
+                    <div class="titulo mobile">
+                        <h1>Simulação de matemática</h1>
+                    </div>
+
+                    <div class="titulo desktop">
+                        <h1>Questão 3</h1>
+
+                        <div class="finalizar-abrir-modal">
+                            <img class="relogio-simulado" src="./assets/img/aluno-questao/relogio-finalizar.svg" alt="">
+                            <p class="p-finalizar-simulado">Finalizar Simulado</p>
+                            <p class="tempo-valor qtd-minutos-simulado"></p>
+                        </div>
+                    </div>
+
+                    <div class="conteudo">
+
+                        <div class="numero-questao">
+                            <div class="numero-questao-n">
+                                <p><strong>Questão <span id="num-question"></span></strong></p>
+                                <p class="segundaparte">de <span id="numero-de-questoes"></p>
+                                <p class="porcentagem-final">25%</p>
+                            </div>
+
+                            <div class="mobile fim-simulado-mobile">
+                                <p>Finalizar simulado</p>
+                            </div>
+                        </div>
+
+                        <div class="enunciado">
+                            <div class="texto" id="questao-enunciado-pre">
+                                <p>
+                                <h2>(ENEM 2019 PPL)</h2> O quadro apresenta a relação dos jogadores que fizeram parte da
+                                seleção brasileira de voleibol masculino nas Olimpíadas de 2012, em Londres, e suas
+                                respectivas alturas, em metro.</p>
+                            </div>
+
+                            <div class="imagem-enunciado">
+                                <img id="questao-imagem" src="assets/img/pagina-questao/enunciado.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="questionamento">
+                            <p id="questao-enunciado-pos">A mediana das alturas, em metro, desses jogadores é: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit debitis ducimus numquam a vel, et est minima perferendis vero tempora sed nulla quod similique deserunt eum beatae aperiam quam omnis?</p>
+                        </div>
+
+                        <div class="alternativas">
+                            <form id="signup-form">
+                                <div class="custom-radio">
+                                    <input type="radio" id="alt1" name="gender" value="a">
+                                    <label for="alt1" class="alternativa-text" data-numero="1"><strong>a) </strong>1,90</label><br>
+                                </div>
+
+                                <div class="custom-radio">
+                                    <input type="radio" id="alt2" name="gender" value="b">
+                                    <label for="alt2" class="alternativa-text" data-numero="2"><strong>b) </strong>1,91</label><br>
+                                </div>
+
+                                <div class="custom-radio">
+                                    <input type="radio" id="alt3" name="gender" value="c">
+                                    <label for="alt3" class="alternativa-text" data-numero="3"><strong>c) </strong>1,96</label><br>
+                                </div>
+
+                                <div class="custom-radio">
+                                    <input type="radio" id="alt4" name="gender" value="d">
+                                    <label for="alt4" class="alternativa-text" data-numero="4"><strong>d) </strong>1,97</label>
+                                </div>
+
+                                <div class="custom-radio">
+                                    <input type="radio" id="alt5" name="gender" value="e">
+                                    <label for="alt5" class="alternativa-text" data-numero="5"><strong>e) </strong>1,98</label>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-barra">
+        <div class="barra-total" data-questions="32">
+            <div class="barra-completa">
+                <span class="barra-concluidas">5</span> <!-- questões feitas -->
+            </div>
+        </div>
+    </div>
+    
+
+    <footer id="footer">
+        <div class="back" onclick=retornaQuestao()>
+
+            <div class="img-back">
+                <a href=""><img src="assets/img/pagina-questao/arrow-back.svg" alt=""></a>
+            </div>
+
+            <div class="texto-back desktop">
+                <p>Anterior</p>
+            </div>
+
+        </div>
+
+
+        <div class="centro-simulado-rodape">
+            <form action="">
+                <div class="paginacao">
+                    <ul class="pagination">
+                        <a href="aluno-capa-simulado.html"><p class="p-paginacao">capa</p></a>
+                        <li><a href="#">1</a></li>
+                        <li><a class="active-paginacao" href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>              
+                </div>
+            </form>
+            <div class="finalizar-simulado-mobile">
+                <img class="relogio-mobile" src="./assets/img/aluno-questao/relogio-finalizar.svg" alt="">
+                <div>
+                    
+                </div>
+
+                <div class="tempo-valor-restante tempo-clique">
+                    <img src="./assets/img/aluno-questao/retorno.svg" alt="">
+                   <p class="tempo-valor  qtd-minutos-simulado1 "></p>  
+                </div>
+               
+            </div>
+            
+
+            <div class="qtd-quest desktop">
+                <div class="desktop">
+                    <h4>Questão</h4>
+                </div>
+                <form action="">
+                    <div class="selecionar">
+                        <select class="control" id="select1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        
+                    </div><label for="select1"></label>
+                </form>
+                <div class="desktop">
+                    <h4>de 45</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="next" class="next" onclick=getNovaQuestao()>
+
+            <div class="texto-next desktop">
+                <p>Próxima</p>
+            </div>
+
+            <div class="img-next">
+                <a href=""><img src="assets/img/pagina-questao/arrow-next.svg" alt=""></a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="modal-finalizar-overlay">
+        <div class="modal-finalizar">
+            <div class="modal-sair">
+                <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <div class="modal-finalizar-conteudo">
+                <p class="p-titulo-modal-finalizar">Deseja finalizar esse simulado?</p>
+                <p class="p-descricao-modal-finalizar">Você não poderá mudar as repostas se optar por finalizar esse simulado.</p>
+
+                <div class="modal-tempo-restante-simulado">
+                    <div id="tempo" class="tempo-restante">
+                        <p>Tempo restante: <span class="qtd-minutos"></span></p>
+                    </div>
+    
+                    <div id="bar-time" class="bar_tempo">
+                        <div class="bar_tempo_progresso">
+                            <span class="progresso_tempo">10</span>
+                        </div>
+                    </div>
+
+                    <div class="questoes-simulado-feitas">
+                        <p>Já feita: <span class="ja_feita"></span></p>
+                    </div>
+
+                    <div class="bar_feitas" data-questions="90">
+                        <div class="bar_feitas_progresso">
+                            <span class="progresso_feitas">5</span>
+                        </div>
+                    </div>
+
+                    <div class="final-conteudo">
+                        <form action="">
+                            <div class="voltar-simulado desktop">
+                                <p>Desejo voltar para o simulado</p>
+                            </div>
+                            <div class="voltar-simulado mobile">
+                                <p>Voltar para o simulado</p>
+                            </div>
+                        </form>
+
+                        <form action="">
+                            <button><div class="finalizar">
+                                <p>Finalizar</p>
+                            </div></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="tela hide"></div>
+
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/bar-time.js"></script>
+    <script type="text/javascript" src="assets/js/bar-feitas.js"></script>
+    <script type="text/javascript" src="assets/js/relogio-tempo-mobile.js"></script>
+    <script type="text/javascript" src="assets/js/bar-progress-questao-simulado.js"></script>
+    <script type="text/javascript" src="assets/js/modal-finalizar-simulado.js"></script>
+    <script type="text/javascript" src="questao_TESTEv2.js"></script>
+
+</body>

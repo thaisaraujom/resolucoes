@@ -1,0 +1,223 @@
+#aviso-questao {
+    min-height: 100vh;
+    background: #d7d5d4;
+    padding: 0 5%;
+
+    .voltar {
+        padding-top: 70px;
+    }
+    .icones {
+        margin-top: 2%;
+        display: flex;
+        font: 400 13px "Montserrat";
+        line-height: 12px;
+        .home {
+            margin-right: 10px;
+        }
+        .seta {
+            margin-right: 10px;
+        }
+        a {
+            color: #282c35;
+            text-decoration: none;
+        }
+        a:visited,
+        a:hover,
+        a:link {
+            text-decoration: none;
+        }
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagem {
+        margin-bottom: 30px;
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+    .texto {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+
+        width: 512px;
+        height: 74px;
+    }
+}
+
+#outras-opcoes {
+    min-height: 20vh;
+    background: #282c35;
+    padding: 6% 10%;
+    h2 {
+        display: inline;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 43px;
+        color: #d7d5d4;
+        border-bottom: 2px solid;
+    }
+    .area-conhecimento {
+        display: flex;
+        justify-content: center;
+        .area {
+            width: 184.88px;
+            height: 128px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            text-align: center;
+            margin-bottom: 3%;
+            margin-right: 2%;
+        }
+        .title-area {
+            color: #e6e1dd;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+            text-align: center;
+            font: 700 15px "Montserrat";
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+        .area-img {
+            display: flex;
+            justify-content: center;
+
+            width: 170px;
+            height: 120px;
+            border-radius: 20px;
+        }
+        .natureza,
+        .humanas,
+        .ling {
+            margin-top: 50px;
+            width: 184.88px;
+            height: 128px;
+            background: #c4c4c4;
+            border-radius: 20px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .desktop {
+        display: none;
+    }
+    #aviso-questao {
+        min-height: 40vh !important;
+        padding-bottom: 10%;
+        .conteudo {
+            .texto {
+                width: 350px;
+                height: 36px;
+
+                font-family: Montserrat;
+                font-size: 15px !important;
+                line-height: 18px;
+                p {
+                    padding-left: 5%;
+                    padding-right: 5%;
+                }
+            }
+            img {
+                margin-top: 80px;
+                width: 290px !important;
+                height: auto !important;
+            }
+        }
+    }
+    #outras-opcoes {
+        h2 {
+            font-size: 15px;
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .area-conhecimento {
+        flex-wrap: wrap;
+        margin-top: 5%;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 802px) {
+    #outras-opcoes {
+        padding-bottom: 15%;
+        .title-area {
+            font-size: 10px !important;
+            width: 100px !important;
+            margin-top: 5% !important;
+        }
+        .area-img {
+            width: 100px !important;
+            height: 65px !important;
+            border-radius: 5px !important;
+            img {
+                width: 78px;
+                height: auto;
+            }
+        }
+
+        .area-conhecimento {
+            margin-right: 0;
+            h4 {
+                font-size: 10px !important;
+                line-height: 12px;
+            }
+            .natureza,
+            .humanas,
+            .ling {
+                border-radius: 5px !important;
+            }
+            .area-img {
+                img {
+                    width: 78px;
+                    height: auto;
+                }
+            }
+            .area {
+                width: 100px !important;
+                height: 62.31px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #outras-opcoes {
+        .ling {
+            margin-right: 20px !important;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    #aviso-questao {
+        .conteudo {
+            .texto {
+                width: 300px;
+                height: 36px;
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

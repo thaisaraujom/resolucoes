@@ -1,0 +1,250 @@
+#questao {
+    .mobile {
+        display: none;
+    }
+    .caixa {
+        font-size: 20px;
+    }
+    .p-graficos {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+
+        cursor: pointer;
+
+        text-align: end;
+
+        width: 100%;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .p-graficos p::after {
+        content: url('../../assets/img/aluno-desempenho-simulado/seta-grafico.svg');
+
+        margin-left: 5px;
+    }
+    .caixa.branca {
+        background-color: #c9c8c7;
+    }
+    .caixa.erros {
+        margin: 0 10px;
+    }
+    .cards {
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        max-width: 100%;
+
+        position: relative;
+    }
+    .titulo-desempenho-simulado {
+        font-weight: bold;
+        font-size: 25px;
+
+        color: #4e5057 !important;
+
+        padding: 0 !important;
+        margin-top: 40px;
+
+        text-align: center;
+    }
+    .parte-cima-simulado {
+        display: flex;
+        flex-direction: column;
+    }
+    .tempo-feito {
+        display: flex;
+
+        align-self: flex-end;
+        justify-content: center;
+
+        margin-right: 14%;
+
+        margin-top: 15px;
+
+        .tempo-minutos {
+            color: #4e5057;
+            font-weight: 500;
+            font-size: 20px;
+
+            line-height: 0;
+        }
+        .media-tempo {
+            color: #4e5057;
+        }
+    }
+    .info-tempo {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+
+        color: #787982;
+
+        margin-left: 10px;
+    }
+    .tempo-feito.mobile {
+        display: none;
+    }
+    .cabecalho-questao-selecionada {
+        height: 40px;
+        background: #e6e1dd;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 25px;
+    }
+    .icones-cabecalho-questao-selecionada {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-left: 15px;
+
+            cursor: pointer;
+        }
+        .icone {
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+    .p-cabecalho-questao-selecionada {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: #4e5057;
+    }
+    .questao-selecionada {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: #F2F2F2;
+    }
+    .conteudo-questao-selecionada {
+        margin: 0 10%;
+        .enunciado {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+
+            .imagem-enunciado {
+                text-align: center;
+            }
+            .imagem-enunciado img {
+                max-width: 470px;
+            }
+        }
+        .alternativas {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .questionamento {
+            display: block;
+            max-width: 470px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .icone-sair.mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    #questao {
+        .tempo-feito.desktop {
+            display: none;
+        }
+        .tempo-feito.mobile {
+            display: flex;
+        }
+        .icones {
+            display: flex;
+        }
+        .info-tempo {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+
+            color: #787982;
+        }
+        .tempo-feito {
+            align-self: flex-start;
+            justify-content: start;
+
+            margin: 0;
+
+            img {
+                height: 24px;
+                width: auto;
+            }
+            .tempo-minutos {
+                font-size: 10px;
+            }
+        }
+        .conteudo-desempenho {
+            margin-bottom: 0;
+        }
+        .cards-todos {
+            padding: 0;
+        }
+        .caixa {
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    body, html {
+        background: #D7D5D4;
+    }
+    #questao {
+        .cards-todos {
+            background: none;
+        }
+        .questao-selecionada {
+            border-radius: 10px;
+        }
+        .cabecalho-questao-selecionada {
+            background: #CECECE;
+            border-radius: 10px 10px 0 0;
+        }
+        .icone-sair.mobile {
+            display: flex;
+        }
+        .icone.desktop {
+            display: none;
+        }
+        .p-graficos {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #questao {
+        .caixa {
+            .texto-branca {
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    #questao {
+        .icon-correta.mobile {
+            display: block;
+            left: 25px;
+        }
+        .conteudo-questao-selecionada {
+            margin: 0 5%;
+        }
+    }
+}
