@@ -29,6 +29,18 @@
   color: #808185;
 }
 
+.margin-top-modal {
+  margin-top: 30px;
+}
+
+button.button_cancelar_alt {
+  background: none;
+}
+
+button.button_salvar_alt {
+  padding: 2% 7%;
+}
+
 @media (max-width: 500px) {
   .modal-sair img {
     margin: 5px 20px;

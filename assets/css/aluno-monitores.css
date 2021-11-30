@@ -1,5 +1,94 @@
-#questao .segunda:hover {
-  content: 'Segunda';
+#questao .domingo, #questao .segunda, #questao .terca, #questao .quarta, #questao .quinta, #questao .sexta, #questao .sabado {
+  position: relative;
+  cursor: pointer;
+}
+
+#questao .day-week {
+  position: absolute;
+  top: 25px;
+  left: -30px;
+  font-weight: 300;
+  white-space: nowrap;
+  max-width: 250px;
+  width: 100%;
+  font-size: 13px;
+  color: #282C35;
+  display: none;
+}
+
+#questao .day-week span {
+  color: #686B72;
+  margin-right: 5px;
+}
+
+#questao .sabado .day-week {
+  left: -190px;
+}
+
+#questao .quinta .day-week {
+  left: -170px;
+}
+
+#questao .quarta .day-week {
+  left: -160px;
+}
+
+#questao .terca .day-week {
+  left: -150px;
+}
+
+#questao .segunda .day-week {
+  left: -140px;
+}
+
+#questao .domingo .day-week {
+  left: -130px;
+}
+
+#questao .sexta .day-week {
+  left: -180px;
+}
+
+#questao .segunda.active:hover > .day-week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#questao .terca.active:hover > .day-week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#questao .quarta.active:hover > .day-week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#questao .quinta.active:hover > .day-week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#questao .sexta.active:hover > .day-week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#questao .sabado.active:hover > .day-week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#questao .domingo.active:hover > .day-week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #questao .nav-materia {
@@ -463,6 +552,9 @@ input[type=time]:focus::-webkit-datetime-edit {
 }
 
 @media (max-width: 500px) {
+  #questao .day-week {
+    top: 23px;
+  }
   #questao .circle {
     font-size: 12px;
   }
@@ -503,6 +595,32 @@ input[type=time]:focus::-webkit-datetime-edit {
   #questao .img_monitor {
     height: 60px;
   }
+  #questao .day-week {
+    top: 15.5px;
+    font-size: 10px;
+    color: #282C35;
+  }
+  #questao .sabado .day-week {
+    left: -150px;
+  }
+  #questao .quinta .day-week {
+    left: -148px;
+  }
+  #questao .quarta .day-week {
+    left: -147px;
+  }
+  #questao .terca .day-week {
+    left: -146px;
+  }
+  #questao .segunda .day-week {
+    left: -145px;
+  }
+  #questao .domingo .day-week {
+    left: -144.5px;
+  }
+  #questao .sexta .day-week {
+    left: -149px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -522,6 +640,32 @@ input[type=time]:focus::-webkit-datetime-edit {
   }
   #questao .img_monitor {
     height: 50px;
+  }
+  #questao .day-week {
+    top: 15.5px;
+    font-size: 9px;
+    color: #282C35;
+  }
+  #questao .segunda .day-week {
+    left: -138px;
+  }
+  #questao .domingo .day-week {
+    left: -130px;
+  }
+  #questao .sabado .day-week {
+    left: -140px;
+  }
+  #questao .quinta .day-week {
+    left: -140px;
+  }
+  #questao .quarta .day-week {
+    left: -140px;
+  }
+  #questao .terca .day-week {
+    left: -139px;
+  }
+  #questao .sexta .day-week {
+    left: -140px;
   }
 }
 /*# sourceMappingURL=aluno-monitores.css.map */

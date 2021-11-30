@@ -1,8 +1,10 @@
 #navbar-lateral {
     background: #282C35;
     box-shadow: 4px 0px 4px rgba(2, 6, 54, 0.25);
+
     .book-down {
         margin-left: 25px;
+
         p {
             margin: 0 0 7px 0;
         }
@@ -10,6 +12,62 @@
 }
 
 #questao {
+    .cursinho-admin {
+        position: relative;
+    }
+
+    .ver-todas,
+    .editar-instrucao {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+
+
+        color: #000000;
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+
+        margin-right: 5px;
+    }
+
+    .b-editar {
+        background: #F58E08;
+        box-shadow: 0px 2px 2px rgba(32, 32, 32, 0.25);
+        border-radius: 0px 5px;
+
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        padding: .5% 2%;
+    }
+
+    .a-editar {
+        color: #292323;
+        font-weight: bold;
+
+        font-size: 15px;
+    }
+
+    .view-r {
+        position: relative;
+    }
+
+    .visualizar-rank {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+
+        a {
+            font-size: 12px;
+        }
+    }
+
+    .b-cadastrar-simulado {
+        margin-left: 0;
+    }
+
     .button-instrucao {
         padding: 2px 5px;
         margin-left: 10px;
@@ -19,15 +77,20 @@
         img {
             margin: 0 5px;
         }
+
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border: 1px solid #f58e08;
         border-radius: 10px;
         cursor: pointer;
     }
+
     .simulado {
         padding-bottom: 1%;
         padding-top: 0;
+
+        position: relative;
     }
+
     .simulado-disponivel {
         color: #c97d1a !important;
         font-weight: bold;
@@ -35,15 +98,19 @@
 
         margin-bottom: 7px !important;
     }
+
     .info-simulado p {
         margin: 3px 0;
     }
+
     .mensagens {
         cursor: default;
     }
+
     .passar-pagina {
         cursor: pointer;
     }
+
     .alternativas-check {
         position: relative;
         width: 100%;
@@ -52,7 +119,8 @@
 
         display: flex;
     }
-    input[type="checkbox"] + label:before {
+
+    input[type="checkbox"]+label:before {
         border: 1px solid #282c35;
         content: "\00a0";
         display: inline-block;
@@ -66,13 +134,16 @@
 
         color: #292323 !important;
     }
-    input[type="checkbox"]:checked + label:before {
+
+    input[type="checkbox"]:checked+label:before {
         background: #282c35;
         color: #292323;
     }
+
     input[type="checkbox"]:not(checked) {
         color: #292323;
     }
+
     .checkbox {
         font-family: "Montserrat", sans-serif;
         font-style: normal;
@@ -89,10 +160,13 @@
             width: calc(100% - 16px);
         }
     }
+
     input[type="checkbox"] {
         display: none;
     }
+
     .checkbox {
+
         a,
         a:link,
         a:visited,
@@ -100,6 +174,7 @@
             color: #292323;
         }
     }
+
     .txtarea-mensagem {
         background: #eaeaea;
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
@@ -115,6 +190,7 @@
 
         font-family: "Montserrat", sans-serif;
     }
+
     .txtarea-mensagem::placeholder {
         color: rgba(41, 35, 35, 0.5);
     }
@@ -141,17 +217,21 @@
 
         margin-top: 15px;
     }
+
     .admin-numeros {
         margin-top: 30px;
         padding-top: 0;
     }
+
     .border-bottom-sem {
         border-bottom: none;
     }
+
     .endereco-cursinho {
         display: flex;
         flex-direction: column;
     }
+
     .perfil-completo-cursinho {
         width: 100%;
         background: #f58e08;
@@ -169,10 +249,12 @@
 
         color: #eaeaea;
     }
+
     .caixa-cursinho {
         margin-bottom: 0;
         border-radius: 10px 10px 0 0;
     }
+
     .nome-cursinho {
         font-size: 25px;
         color: #282c35;
@@ -181,38 +263,101 @@
     }
 }
 
+@media (max-width: 1120px) {
+    #questao {
+        .editar-instrucao {
+            bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .editar-instrucao {
+        display: none;
+
+        a {
+            display: none;
+        }
+    }
+}
+
 @media (max-width: 500px) {
     #questao {
+        .ver-todas {
+            font-size: 12px;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
         .mensagens {
             border-radius: 10px;
         }
+
         .button-laranja {
             font-size: 10px;
             padding: 0.5% 5%;
         }
+
         .txtarea-mensagem {
             font-size: 12px;
         }
+
         .checkbox {
             font-size: 12px;
         }
+
         .nome-cursinho {
             font-size: 15px;
         }
+
         .perfil-completo-cursinho {
             font-size: 12px;
         }
+
         .input-cursinhos-wrap {
             flex-wrap: wrap !important;
+
             .button-instrucao {
                 margin-left: 0;
             }
         }
-        input[type="checkbox"] + label:before {
+
+        .a-editar {
+            font-size: 12px;
+        }
+
+        .a-editar-rank {
+            font-size: 8px;
+        }
+
+
+
+        input[type="checkbox"]+label:before {
             height: 12px;
             width: 12px;
 
             margin-top: 5px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    #questao {
+        .ver-todas {
+            right: 0;
+        }
+
+        .p-ver-todas {
+            font-size: 9.5px;
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    #questao {
+        .visualizar-rank {
+            right: 0;
+            bottom: -5px;
         }
     }
 }

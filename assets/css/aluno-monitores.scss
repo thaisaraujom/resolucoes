@@ -1,7 +1,88 @@
 #questao {
-    .segunda:hover {
-        content: 'Segunda';
+
+    .domingo, .segunda, .terca, .quarta, .quinta, .sexta, .sabado {
+        position: relative;
+        cursor: pointer;
     }
+    .day-week {
+        position: absolute;
+        top: 25px;
+        left: -30px;
+        font-weight: 300;
+        white-space: nowrap;
+        max-width: 250px;
+        width: 100%;
+
+        font-size: 13px;
+        color: #282C35;
+
+        span {
+            color: #686B72;
+            margin-right: 5px;
+        }
+
+        display: none;
+    }
+
+    .sabado {
+        .day-week {
+            left: -190px;
+        }
+    }
+    .quinta {
+        .day-week {
+            left: -170px;
+        }
+    }
+    .quarta {
+        .day-week {
+            left: -160px;
+        }
+    }
+    .terca {
+        .day-week {
+            left: -150px;
+        }
+    }
+    .segunda {
+        .day-week {
+            left: -140px;
+        }
+    }
+    .domingo {
+        .day-week {
+            left: -130px;
+        }
+    }
+    .sexta {
+        .day-week {
+            left: -180px;
+        }
+    }
+
+
+    .segunda.active:hover > .day-week {
+        display: flex;
+    }
+    .terca.active:hover > .day-week {
+        display: flex;
+    }
+    .quarta.active:hover > .day-week {
+        display: flex;
+    }
+    .quinta.active:hover > .day-week {
+        display: flex;
+    }
+    .sexta.active:hover > .day-week {
+        display: flex;
+    }
+    .sabado.active:hover > .day-week {
+        display: flex;
+    }
+    .domingo.active:hover > .day-week {
+        display: flex;
+    }
+
     .nav-materia {
         border-right: 2px solid #B4B1AE;
 
@@ -453,6 +534,10 @@ input[type=time]:focus::-webkit-datetime-edit {
 
 @media (max-width: 500px) {
     #questao {
+        .day-week {
+           
+            top: 23px;
+        }
         .circle {
             font-size: 12px;
         }
@@ -508,6 +593,49 @@ input[type=time]:focus::-webkit-datetime-edit {
         .img_monitor {
             height: 60px;
         }
+        .day-week {
+           
+            top: 15.5px;
+            font-size: 10px;
+            color: #282C35;
+        }
+    
+        .sabado {
+            .day-week {
+                left: -150px;
+            }
+        }
+        .quinta {
+            .day-week {
+                left: -148px;
+            }
+        }
+        .quarta {
+            .day-week {
+                left: -147px;
+            }
+        }
+        .terca {
+            .day-week {
+                left: -146px;
+            }
+        }
+        .segunda {
+            .day-week {
+                left: -145px;
+            }
+        }
+        .domingo {
+            .day-week {
+                left: -144.5px;
+            }
+        }
+        .sexta {
+            .day-week {
+                left: -149px;
+            }
+        }
+    
     }
 
 }
@@ -533,6 +661,48 @@ input[type=time]:focus::-webkit-datetime-edit {
         }
         .img_monitor {
             height: 50px;
+        }
+        .day-week {
+           
+            top: 15.5px;
+            font-size: 9px;
+            color: #282C35;
+        }
+    
+        .segunda {
+            .day-week {
+                left: -138px;
+            }
+        }
+        .domingo {
+            .day-week {
+                left: -130px;
+            }
+        }
+        .sabado {
+            .day-week {
+                left: -140px;
+            }
+        }
+        .quinta {
+            .day-week {
+                left: -140px;
+            }
+        }
+        .quarta {
+            .day-week {
+                left: -140px;
+            }
+        }
+        .terca {
+            .day-week {
+                left: -139px;
+            }
+        }
+        .sexta {
+            .day-week {
+                left: -140px;
+            }
         }
     }
 
