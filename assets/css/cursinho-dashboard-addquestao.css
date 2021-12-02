@@ -1,0 +1,267 @@
+.voltar{
+    display: flex;
+    justify-content: space-between;
+    width: 81.5%;
+    margin-bottom: 3%;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #282C35;
+}
+::-webkit-scrollbar-thumb {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    background-color: #f0f0f05e;
+}
+#filtro button{
+    border: none;
+    background: none;
+    color: #E6E4E4;
+    font: normal 14px 'Montserrat';
+    cursor: pointer;
+}
+#simu-disp{
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #EAEAEA;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+#simu-disp p{
+    color: #C97D1A;
+    font-weight: 700;
+}
+#simu-disp li{
+    list-style: none;
+}
+#cima{
+    display: flex;
+    justify-content: space-between;
+}
+#cima button{
+    border: none;
+    font: normal 12px 'Montserrat';
+    background: none;
+    cursor: pointer;
+}
+#baixo{
+    width: 100%;
+    border-bottom: 1px solid #282C35;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#baixo button{
+    height: 2vh;
+    border: none;
+    font: normal 12px 'Montserrat';
+    background: none;
+    cursor: pointer;
+}
+#add-questao{
+    width: 62.5%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    margin-top: 3%;
+    
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+    height: 5vh;
+}
+#busca{
+    background-color: #EAEAEA;
+    padding: 2px;
+    border-radius: 40px;
+    width: 40%;
+    margin-left: 2%;
+}
+#busca form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#submit{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#buscar{
+    border: none;
+    background: none;
+    font: normal 12px 'Montserrat';
+    width: 100%;
+}
+#header p{
+    background-color: #EAEAEA;
+    color: #A6A6A6;
+    width: 28%;
+    text-align: center;
+    border-radius: 40px;
+    font-size: 12px;
+}
+#btn-add{
+    background-color: #F58E08;
+    border: none;
+    padding: 4px;
+    width: 27%;
+    border-radius: 0 5px 0 5px;
+    align-self: flex-start;
+    font: normal 14px 'Montserrat';
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    box-shadow: 1px 1px 10px #20202040;
+    cursor: pointer;
+}
+#btn-add-mobile{
+    background-color: #F58E08;
+    border: none;
+    padding: 4px;
+    width: 28%;
+    border-radius: 0 5px 0 5px;
+    align-self: flex-start;
+    font: normal 14px 'Montserrat';
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    box-shadow: 1px 1px 10px #20202040;
+    cursor: pointer;
+    display: none;
+}
+.questao{
+   background-color: #EAEAEA;
+   border-radius: 5px; 
+   margin: 3%;
+   box-shadow: 1px 1px 10px #00000040;
+   padding: 5px;
+   display: flex;
+}
+.questao button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 30%;
+    align-self: flex-end;
+}
+.questao p{
+    font-weight: 600;
+}
+.questao span{
+    font-weight: bold;
+}
+#seletor{
+    width: 100%;
+    margin-bottom: 3%;
+}
+#seletor ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 1%;
+    font-weight: 700
+}
+#seletor li{
+    width: 3%;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 2%;
+}
+.active{
+    background-color: #F58E08;
+}
+#seletor button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: normal 18px 'Montserrat';
+}
+@media (max-width:1120px){
+    #btn-add{
+        font-size: 12px;
+    }
+}
+@media (max-width:1025px){
+    #btn-add{
+        display: none;
+    }
+
+    #btn-add-mobile{
+        display: block;
+        font-size: 20px;
+        width: 20%;
+    }
+    #simu-disp{
+        background-color: #2C313B;
+        color: #9F9F9F;
+        box-shadow: 1px 1px 5px #00000040;
+        font-size: 0.8rem;
+    }
+    #simu-disp button{
+        color: #F2F2F2;
+    }
+    #header p{
+        font-size: 0.6rem;
+        width: 35%;
+    }
+    #add-questao{
+        width: 67%;
+    }
+}
+@media (max-width:700px){
+    #simu-disp{
+        font-size: 0.6rem;
+    }
+}
+@media (max-width:600px){
+    #simu-disp{
+        font-size: 0.6rem;
+    }
+    #baixo button{
+        font-size: 10px;
+    }
+}
+@media (max-width:480px){
+    #simu-disp{
+        font-size: 0.5rem;
+        width: 80%;
+    }
+    #baixo button{
+        font-size: 8px; 
+    }
+    #add-questao{
+        width: 88%;
+    }
+    .voltar{
+        display: block;
+    }
+    #filtro{
+        margin: 3% 0;
+        border-bottom: 1px solid #E6E1DD;
+        width: 43%;
+    }
+}
+@media (max-width:380px){
+    #filtro{
+        margin: 3% 0;
+        border-bottom: 1px solid #E6E1DD;
+        width: 49%;
+    }
+}
+@media (max-width:320px){
+    #filtro{
+        margin: 3% 0;
+        border-bottom: 1px solid #E6E1DD;
+        width: 55%;
+    }
+}

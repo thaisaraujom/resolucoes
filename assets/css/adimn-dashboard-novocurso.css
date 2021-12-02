@@ -1,0 +1,11 @@
+@media (max-width:500px){
+    #questao .textarea-editavel{
+        font-size: 24px;
+        line-height: 50px;
+    }
+}
+@media (max-width:380px){
+    .btn-save button{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,115 @@
+.tabela-header{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+.tabela-header button{
+    background: none;
+    border: none;
+}
+.tabela-org button{
+    background-color: #EAEAEA;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+.search-box{
+    display: flex;
+    background-color: #EAEAEA;
+    border-radius: 10px;
+    height: 2.5vh;
+    width: 30%;
+    padding: 2px 5px;
+
+}
+.search-box input{
+    background: none;
+    border: none;
+    width: 95%;
+}
+.search-box input:focus{
+    outline: none;
+}
+.curso-tabela{
+    text-align: center;
+    background-color: #EAEAEA;
+    margin: 10% 0;
+    padding: 15px;
+    width: 50%;
+    border-radius: 10px;
+    height: 14vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 2px #00000040;
+}
+.curso-tabela p{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5% 0;
+}
+.curso-tabela h3{
+    font-weight: 700;
+    font-size: 24px;
+}
+.tab{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+.linha{
+    border-bottom: 1px solid #282C35;
+    width: 100%;
+}
+.tabela-cursos{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.controler{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.pages ul{
+    display: flex;
+    list-style: none;
+    gap: 10%;
+    justify-self: center;
+}
+.btn-add-curso button{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    width: 120%;
+    font: 500 16px 'Montserrat';
+    cursor: pointer;
+
+}
+.pages li{
+    width: 1.7vw;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.active-page{
+    background-color: #F58E08;
+    border-radius: 50%;
+}
+.flex{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
