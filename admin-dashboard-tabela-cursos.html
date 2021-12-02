@@ -13,12 +13,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
 
     <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
-
+    <link rel="stylesheet" href="assets/css/admin-dashboard.css">
     <link rel="stylesheet" href="assets/css/aluno-questao.css">
     <link rel="stylesheet" href="assets/css/footer-unico.css">
     <link rel="stylesheet" href="assets/css/admin-menu.css">
     <link rel="stylesheet" href="assets/css/admin-secao-inicial.css">
     <link rel="stylesheet" href="assets/css/admin-dashboard-tabela-cursos.css">
+    
+
+    
 
     <title>Novo curso | Resoluções.com</title>
 </head>
@@ -65,12 +68,12 @@
 
                         <div>
                             <div class="home">
-                                <a href="#"><img class="icon_home" src="assets/img/admin-menu/home_orange.svg"
+                                <a href="#"><img class="icon_home" src="assets/img/aluno-questao/home.svg"
                                         alt=""></a>
-                                <a class="item-link item-home item-link-ativado" href="#">
+                                <a class="item-link item-home " href="#">
                                     <p>Home</p>
                                 </a>
-                                <img class="icon-down" src="./assets/img/admin-menu/seta_orange.svg" alt="">
+                                <img class="icon-down" src="./assets/img/admin-menu/seta.svg" alt="">
                             </div>
                             <div class="home-down">
                                 <a href="">
@@ -93,8 +96,8 @@
 
                     <div>
                         <li class="nav-item">
-                            <img class="mais-cursinho" src="assets/img/aluno-questao/sugerir.svg" alt="">
-                            <a href="" class="item-link item-sobre">Curso</a>
+                            <img class="mais-cursinho" src="assets/img/aluno-questao/sugerir-laranja.svg" alt="">
+                            <a href="" class="item-link item-sobre item-link-ativado">Curso</a>
                         </li>
                     </div>
                     <div class="sobre-down home-desativada">
@@ -135,7 +138,7 @@
         <div class="container">
             <div class="overlay">
 
-                <div class="voltar">
+                <div class="voltar" id="edit">
                     <div class="icones">
                         <a href="index.html"><img class="home" src="assets/img/pagina-questao/icon-home.svg" alt=""></a>
                         <img class="seta" src="assets/img/pagina-questao/icon-home-seta.svg" alt="">
@@ -154,11 +157,15 @@
 
                     <div class="tabela-cursos">
                         <div class="tabela-header">
+                            
                             <div class="search-box">
+                                <form action=""></form>
                                 <input type="text" placeholder="Buscar">
                                 <button type="submit"><img src="assets/img/admin-dashboard/lupa-search.svg"
                                         alt=""></button>
+                                    </form>
                             </div>
+                        
                             <div class="tabela-org">
                                 <button><img src="assets/img/admin-dashboard/filter.png" alt=""></button>
                             </div>
@@ -289,21 +296,35 @@
 
                         <div class="controler">
                             <div class="flex">
-                            <div class="pages">
-                                <ul>
-                                    <li><</li>
-                                    <li class="active-page">1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5</li>
-                                    <li>></li>
-                                </ul>
-
-                                
-                            </div>
+                                <form action="">
+                                    <div class="paginacao">
+                                        <ul class="paginacao-admin">
+                                            <li><img class="passar-pagina"
+                                                    src="./assets/img/admin-dashboard/esquerda-paginacao.svg" alt="">
+                                            </li>
+                                            <li><a>
+                                                    <div class="circle">1</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle circle-active">2</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">3</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">4</div>
+                                                </a></li>
+                                            <li><a>
+                                                    <div class="circle">5</div>
+                                                </a></li>
+                                            <li><img class="passar-pagina"
+                                                    src="./assets/img/admin-dashboard/direita-paginacao.svg" alt="">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
                             <div class="btn-add-curso">
-                            <button><img src="assets/img/admin-dashboard/add-btn.svg" alt="add-btn">Adicionar um novo curso</button>
+                             <a href="#"><button><img src="assets/img/admin-dashboard/add-btn.svg" alt="add-btn">Adicionar um novo curso</button></a>
                             </div>
                         </div>
                         </div>

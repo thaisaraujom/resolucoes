@@ -6,11 +6,13 @@
 .tabela-header button{
     background: none;
     border: none;
+    cursor: pointer;
 }
 .tabela-org button{
     background-color: #EAEAEA;
     padding: 3px 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .search-box{
     display: flex;
@@ -36,7 +38,7 @@
     padding: 15px;
     width: 50%;
     border-radius: 10px;
-    height: 14vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -112,4 +114,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#edit{
+    width: 100%;
 }

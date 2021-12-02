@@ -172,7 +172,7 @@
         <div id="simu-disp">
             <div id="cima">
                 <p>Simulado disponivel</p>
-                <button>Editar</button>
+                <a href="#"><button>Editar</button></a>
             </div>
             <div id="baixo">
                 <ul>
@@ -183,7 +183,7 @@
                     <li>Data de entrega: 00/00/0000</li>
                     <li>Tempo de prova: 180 minutos</li>
                 </ul>
-                <button>Ranking do simulado</button>
+                <a href="#"><button>Ranking do simulado</button></a>
             </div>
         </div>
         <div id="add-questao">
@@ -236,22 +236,33 @@
                     <button><img src="assets/img/dashboard/trash.svg" alt="trashIcon" onclick="AbrirModal3()"></button>
                 </div>
             </div>
-            <div id="seletor">
-                <ul>
-                    <li>
-                        <button>
-                            < </button>
-                    </li>
-                    <li class="active">1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li> <button>></button> </li>
-
-
-                </ul>
-            </div>
+            <form action="">
+                <div class="paginacao">
+                    <ul class="paginacao-admin">
+                        <li><img class="passar-pagina"
+                                src="./assets/img/admin-dashboard/esquerda-paginacao.svg" alt="">
+                        </li>
+                        <li><a>
+                                <div class="circle">1</div>
+                            </a></li>
+                        <li><a>
+                                <div class="circle circle-active">2</div>
+                            </a></li>
+                        <li><a>
+                                <div class="circle">3</div>
+                            </a></li>
+                        <li><a>
+                                <div class="circle">4</div>
+                            </a></li>
+                        <li><a>
+                                <div class="circle">5</div>
+                            </a></li>
+                        <li><img class="passar-pagina"
+                                src="./assets/img/admin-dashboard/direita-paginacao.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -346,7 +357,7 @@
                     <p class="p-titulo-modal-finalizar">VOCÊ QUER</p>
 
 
-                    <button id="cadastrar">Cadastrar nova questao</button>
+                    <a href="#"><button id="cadastrar">Cadastrar nova questao</button></a>
                     <button id="adicionar" onclick="AbrirModal1()">Adicionar uma ja existente</button>
 
                 </div>
@@ -368,7 +379,7 @@
                     <p class="p-descricao-modal-finalizar">Essa questão sera apagada de todos o sistema</p>
 
                     <form action="" class="decisao-botoes-modal">
-                        <button class="button-cancelar-modal">Cancelar</button>
+                        <button class="button-cancelar-modal" onclick="FecharModal3()">Cancelar</button>
                         <button class="button-laranja-modal">Apagar</button>
                     </form>
                 </div>
