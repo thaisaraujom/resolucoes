@@ -1,0 +1,31 @@
+#anotacoes-video {
+    background-color: #F2F2F2;
+}
+
+.full-anotacao {
+    width: 98%;
+}
+
+.diminuir-video {
+    display: none;
+}
+
+.anote-conteudo {
+    overflow-y: hidden;
+}
+
+#anotacoes-video::-webkit-scrollbar {
+    width: 5px;
+    background-color: #e4e4e4;
+}
+
+#anotacoes-video::-webkit-scrollbar-thumb {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    background-color: #c9c8c85e;
+}
+
+footer {
+    padding-left: 0;
+}
+

@@ -28,12 +28,29 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -ms-flex-pack: distribute;
       justify-content: space-around;
+=======
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
   width: 90%;
   margin-bottom: 25px;
 }
 
+<<<<<<< HEAD
+=======
+.add-carrocel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
 .card-materia {
   background: #282C35;
   border-radius: 10px;
@@ -109,6 +126,39 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
+=======
+  overflow-y: scroll;
+}
+
+.plano-checkbox {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 15px;
+}
+
+/* Works on Firefox */
+.plano-estudos {
+  scrollbar-width: thin;
+  scrollbar-color: #282C35 #E4E0E0;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.plano-estudos::-webkit-scrollbar {
+  width: 12px;
+}
+
+.plano-estudos::-webkit-scrollbar-track {
+  background: #E4E0E0;
+  border-radius: 0 15px 15px 0;
+}
+
+.plano-estudos::-webkit-scrollbar-thumb {
+  background-color: #282C35;
+  border-radius: 20px;
+  border: 3px solid #E4E0E0;
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
 }
 
 .plano-estudos h4 {
@@ -235,6 +285,7 @@
   text-align: left;
 }
 
+<<<<<<< HEAD
 #questao input[type="checkbox"] {
   display: inline;
   width: 15px;
@@ -289,6 +340,57 @@
   position: absolute;
   top: 2px;
   left: 6px;
+=======
+input[type="checkbox"] + label:before {
+  border: 1px solid #282c35;
+  content: "\00a0";
+  display: inline-block;
+  font: 15px/1em sans-serif;
+  height: 16px;
+  margin: 3px 0.35em 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+  border-radius: 5px;
+  color: #292323 !important;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background: #282c35;
+  color: #292323;
+}
+
+input[type="checkbox"]:not(checked) {
+  color: #292323;
+}
+
+.checkbox {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #292323;
+  line-height: 25px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkbox div {
+  width: calc(100% - 16px);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox a,
+.checkbox a:link,
+.checkbox a:visited,
+.checkbox a:active {
+  color: #292323;
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
 }
 
 .plano-input-label {
@@ -373,6 +475,162 @@
   margin-right: 50px;
 }
 
+<<<<<<< HEAD
+=======
+.campo-busca {
+  margin-right: 100px;
+}
+
+.filtro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.filtro button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.filtro-popup {
+  position: absolute;
+  top: 50px;
+  left: 800px;
+  height: auto;
+  width: 254px;
+  z-index: 1000;
+  background: #F0F0F0;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+}
+
+.filtro-popup h3 {
+  margin-top: 10px;
+}
+
+.not-popup {
+  position: absolute;
+  top: 50px;
+  right: 2%;
+  max-height: 90vh;
+  width: 254px;
+  z-index: 1000;
+  background: #F0F0F0;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: auto;
+}
+
+.notificacao {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-bottom: 1px solid #282c35;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.label-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+.label-select select {
+  height: 36px;
+  border: 1px solid #41454E;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+  background: #F0F0F0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #41454E;
+  margin-bottom: 5px;
+}
+
+.label-select label {
+  margin-bottom: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.hide2 {
+  display: none;
+}
+
+.botao-filtrar {
+  width: 90%;
+  height: 36px;
+  border: none;
+  background: #F58E08;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  margin-top: 10px;
+  color: #E4E0E0;
+  cursor: pointer;
+}
+
+.filtro-botao-2 {
+  display: none;
+}
+
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
 @media (max-width: 1140px) {
   .conteudo-dashboard {
     width: 100%;
@@ -418,11 +676,71 @@
   body {
     background: #282C35;
   }
+<<<<<<< HEAD
 }
 
 @media (max-width: 600px) {
   .cards-carrocel {
     padding: 0 1%;
+=======
+  .campo-busca {
+    margin-right: 90px;
+  }
+  .filtro-popup {
+    top: 50px;
+    left: 600px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .filtro-popup {
+    top: 50px;
+    left: 700px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .filtro-popup {
+    top: 50px;
+    left: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  .filtro-popup {
+    top: 50px;
+    left: 200px;
+  }
+  .campo-busca {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-materias button {
+    margin: 0 10px;
+  }
+  .card-materia p {
+    font-size: 14px;
+  }
+  .um-card {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 10px;
+  }
+  .tempo-estudos {
+    padding: 12px 0;
+  }
+  .campo-busca {
+    margin-right: 0;
+  }
+  .filtro {
+    margin-left: 22%;
+  }
+  .filtro-popup {
+    top: 50px;
+    left: 50px;
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
   }
 }
 /*# sourceMappingURL=dashboard.css.map */
