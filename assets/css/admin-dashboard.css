@@ -454,6 +454,9 @@ body {
     font-size: 12px;
     width: 150px;
   }
+  #questao .button-separado-cadastrar {
+    font-size: 12px;
+  }
   #questao .input-cursinhos {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
