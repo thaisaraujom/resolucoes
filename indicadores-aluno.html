@@ -25,8 +25,9 @@
 
     <link rel="stylesheet" href="assets/css/modal-apagar-parceiro.css">
     <link rel="stylesheet" href="assets/css/adicionar-questao.css">
+    <link rel="stylesheet" href="assets/css/indicadores.css">
 
-    <title>Perfil - Disciplina | Resoluções.com</title>
+    <title>Indicadores | Resoluções.com</title>
 </head>
 
 <body>
@@ -143,7 +144,7 @@
     </header>
 
     <section id="questao">
-        <form class="container">
+        <div class="container">
             <div class="overlay">
                 <div class="voltar">
                     <div class="icones">
@@ -159,126 +160,116 @@
                 </div>
 
                 <div class="conteudo-perfil">
-                    <div class="titulo mobile">
-                        <h1>Adicionar Questão</h1>
+                    <div class="titulo mobile alt-titulo">
+                        <h1>INDICADORES</h1>
+                        <p>Filtrar por: </p>
+                        <select onchange="mudar(this.value)">
+                            <option selected>Sem filtro</option>
+                            <option value="indicadores-geral.html">Geral</option>
+                            <option value="indicadores-aluno.html">Aluno</option> 
+                          </select>
                     </div>
 
-                    <div class="titulo desktop">
-                        <h1>Adicionar Questão</h1>
+                    <div class="titulo desktop alt-titulo">
+                        <h1>INDICADORES</h1>
+                        <p>Filtrar por: </p>
+                        <select onchange="mudar(this.value)">
+                            <option value="indicadores-geral.html">Geral</option>
+                            <option value="indicadores-aluno.html" selected>Aluno</option> 
+                          </select>
                     </div>
-                    <a href="aluno-dashboard.html" class="desktop alt-link">
-                        <div class="capitulo-questoes">
-                            <p>II SIMULADO DE MATEMÁTICA</p>
-                            <span>Cadastradas no capitulo 1 (44)</span>
-                        </div>
-                    </a>
-
-
                     
+    
                 </div>
-            
-                <textarea class="texto-questao" name="" id="" cols="30" rows="3"></textarea>
-                <div class="imagem-questão">
-                        <label class="nome-arquivo" for="imagem-da-questao">adicionar imagem</label>
-                        <input type="file" id="imagem-da-questao">
+                <div class="indicadores-do-aluno-nome">
+                    <h3>Pedro Davi Monteiro</h3>
                 </div>
-                <textarea class="texto-questao" name="" id="" cols="30" rows="3"></textarea>
-            </div>    
-                <div class="link-video alternativas primeira-alternativa">
-                    <div class="letra-check">
-                        <input type="radio" id="questão-a" value="questão-a" name="alternativa">
-                        <label for="questão-a">a)</label>
+                <div class="indicadores-cards">
+                    <div class="indicadores-um-card alt-indicadores-um-card">
+                        <div class="img-titulo">
+                            <img src="./assets/img/dashboard/simulados.svg" alt="">
+                            <h3>Atividades realizadas</h3>
+                        </div>
+                        <span>15/15</span>
+                        <h3>Esse aluno completou todas as atividades</h3>
                     </div>
-                    <div class="alternativa-text-input">
-                        <textarea class="texto-questao texto-alternativa alternativa-background" name="" id="" cols="30" rows="2"></textarea>
-                        <div class="imagem-questão imagem-alternativa alternativa-background">
-                            <label class="nome-arquivo2" for="imagem-da-questao2">adicionar imagem</label>
-                            <input type="file" id="imagem-da-questao2">
+                    <div class="indicadores-um-card alt-indicadores-um-card h3-alinhar-esquerda">
+                        <div class="img-titulo">
+                            <img src="./assets/img/dashboard/v.svg" alt="">
+                            <h3>Este aluno tem uma taxa de</h3>
+                        </div>
+                        <span>80%</span>
+                        <h3>De acertos em atividades</h3>
+                    </div>
+                    <div class="indicadores-um-card alt-titulo-card">
+                        <h3>Progresso de atividades</h3>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Quimica</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>50%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Fisica</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>100%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Biologia</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>80%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Português</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>75%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Matemática</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>60%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Historia</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>30%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Filosofia</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>10%</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="link-video alternativas">
-                    <div class="letra-check">
-                        <input type="radio" id="questão-b" value="questão-b" name="alternativa">
-                        <label for="questão-b">b)</label>
+
+                <div class="indicadores-grafico">
+                    <h3>Media de Notas dos Alunos</h3>
+                    <div id="chart">
                     </div>
-                    <div class="alternativa-text-input">
-                        <textarea class="texto-questao texto-alternativa" name="" id="" cols="30" rows="2"></textarea>
-                        <div class="imagem-questão imagem-alternativa">
-                            <label class="nome-arquivo3" for="imagem-da-questao3">adicionar imagem</label>
-                            <input type="file" id="imagem-da-questao3">
-                        </div>
-                    </div>
+                    <h3>O aluno está em 1º lugar no ranking de notas</h3>
                 </div>
-                <div class="link-video alternativas">
-                    <div class="letra-check">
-                        <input type="radio" id="questão-c" value="questão-c" name="alternativa">
-                        <label for="questão-c">c)</label>
-                    </div>
-                    <div class="alternativa-text-input">
-                        <textarea class="texto-questao texto-alternativa alternativa-background" name="" id="" cols="30" rows="2"></textarea>
-                        <div class="imagem-questão imagem-alternativa alternativa-background">
-                            <label class="nome-arquivo4" for="imagem-da-questao4">adicionar imagem</label>
-                            <input type="file" id="imagem-da-questao4">
-                        </div>
-                    </div>
-                </div>
-                <div class="link-video alternativas">
-                    <div class="letra-check">
-                        <input type="radio" id="questão-d" value="questão-d" name="alternativa">
-                        <label for="questão-d">d)</label>
-                    </div>
-                    <div class="alternativa-text-input">
-                        <textarea class="texto-questao texto-alternativa" name="" id="" cols="30" rows="2"></textarea>
-                        <div class="imagem-questão imagem-alternativa">
-                            <label class="nome-arquivo5" for="imagem-da-questao5">adicionar imagem</label>
-                            <input type="file" id="imagem-da-questao5">
-                        </div>
-                    </div>
-                </div>
-                <div class="link-video alternativas">
-                    <div class="letra-check">
-                        <input type="radio" id="questão-e" value="questão-e" name="alternativa">
-                        <label for="questão-e">e)</label>
-                    </div>
-                    <div class="alternativa-text-input">
-                        <textarea class="texto-questao texto-alternativa alternativa-background" name="" id="" cols="30" rows="2"></textarea>
-                        <div class="imagem-questão imagem-alternativa alternativa-background">
-                            <label class="nome-arquivo6" for="imagem-da-questao6">adicionar imagem</label>
-                            <input type="file" id="imagem-da-questao6">
-                        </div>
-                    </div>
-                </div>
-            <div class="dificuldade-area alt-dificuldade-area">
-                <div class="dificuldade-questao-check">
-                    <h5>Nivel de Dificuldade</h5>
-                    <div class="dificuldade-input-label">
-                        <input type="radio" id="facil" value="facil" name="dificuldade">
-                        <label for="facil">Fácil</label>
-                    </div>
-                    <div class="dificuldade-input-label">
-                        <input type="radio" id="medio" value="medio" name="dificuldade">
-                        <label for="medio">Médio</label>
-                    </div>
-                    <div class="dificuldade-input-label">
-                        <input type="radio" id="dificil" value="dificil" name="dificuldade">
-                        <label for="dificil">Dificil</label>
-                    </div>
-                </div>
-                <div class="dificuldade-questao-check select-assunto">
-                    <h5>Assunto da Questão:</h5>
-                    <select name="select">
-                        <option value="valor1">Gráficos</option>
-                        <option value="valor2">Assunto 2 sada sa das sada das</option>
-                        <option value="valor3">Assunto 3</option>
-                      </select>
-                </div>
-            </div>
-            <div class="adicionar-quest-btn">
-                <button>SALVAR ALTERAÇÕES</button>
-                <button>CANCELAR ALTERAÇÕES</button>
-            </div>
-        </form>
+        
+        </div>
     </section>
 
     
@@ -309,6 +300,13 @@
     <script src="./assets/js/perfil-select-cursinho.js"></script>
     <script type="text/javascript" src="assets/js/modal-disciplina-perfil.js"></script>
     <script type="text/javascript" src="assets/js/adicionar-questao.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script type="text/javascript" src="assets/js/indicadores2.js"></script>
+    <script>
+        function mudar(src){
+            window.location=src;
+        }
+    </script>
 
 </body>
 

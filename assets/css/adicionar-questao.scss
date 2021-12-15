@@ -84,7 +84,10 @@
     color: #4F4F4F;
 }
 #questao input[type="checkbox"]:checked + label:before {
-    background: #F58E08;;
+    background: #F58E08;
+}
+#questao input[type="radio"]:checked + label:before {
+    background: #F58E08;
 }
 .link-video-margin {
     margin-top: 54px;
@@ -156,6 +159,9 @@
     margin: 15px 0;
 }
 #questao input[type="checkbox"] + label:before{
+    border: 1px solid black;
+}
+#questao input[type="radio"] + label:before{
     border: 1px solid black;
 }
 .adicionar-quest-btn {

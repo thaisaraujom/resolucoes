@@ -405,6 +405,7 @@ input[type="checkbox"] {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 50px;
+  cursor: pointer;
 }
 
 .campo-busca {
@@ -473,6 +474,18 @@ input[type="checkbox"] {
       -ms-flex-align: center;
           align-items: center;
   overflow-y: auto;
+}
+
+.not-popup::-webkit-scrollbar {
+  width: 5px;
+  background-color: #282c35;
+  height: 100%;
+}
+
+.not-popup::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  background-color: #F58E08;
 }
 
 .notificacao {
