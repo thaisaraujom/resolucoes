@@ -36,7 +36,7 @@
     background-color: #EAEAEA;
     margin: 2% 0;
     padding: 15px;
-    width: 30%;
+    width: 15%;
     max-width: 100px;
     border-radius: 10px;
     height: auto;
@@ -58,9 +58,10 @@
 }
 .tab{
     display: flex;
-    gap: 4%;
+    gap: 3%;
     margin: 0 auto;  
     flex-wrap: wrap;
+    margin-left: 8%;
 }
 .linha{
     border-bottom: 1px solid #282C35;
@@ -142,9 +143,8 @@
         width: 30%;
     }
     .tabela-cursos{
-        margin-left: -5%;
-        gap: 0;
-        justify-content: space-between;
+        margin-left: -3%;
+
     }
     .search-box{
         width: 60%;
