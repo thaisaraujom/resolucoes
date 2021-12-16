@@ -22,11 +22,9 @@
     <link rel="stylesheet" href="assets/css/cursinho-dashboard-addquestao.css">
     <link rel="stylesheet" href="assets/css/modal-adicionarquestao.css">
     <link rel="stylesheet" href="assets/css/modal-apagar-parceiro.css">
-    <link rel="stylesheet" href="assets/css/modal-cadastrar-aluno.css">
     <link rel="stylesheet" href="assets/css/cursinho-dashboard-addquestao.css">
     <link rel="stylesheet" href="assets/css/modal-questao.css">
-    <link rel="stylesheet" href="assets/css/modal-apagar-parceiro.css">
-    <link rel="stylesheet" href="assets/css/modal-apagar-cadastro.css">
+    
 
 
     <script src="assets/js/cursinho-dashboard-modais.js" defer></script>
@@ -154,19 +152,22 @@
             <div class="icones">
                 <a href="aluno-dashboard.html" class="desktop"><img class="home desktop"
                         src="assets/img/aluno-modulo/icon.svg" alt=""></a>
-                <img class="seta desktop" src="assets/img/aluno-modulo/seta.svg" alt="">
+                <img class="seta desktop" src="assets/img/aluno-modulo/seta.svg" alt="" style="max-height: 15px;">
                 <a href="aluno-dashboard.html" class="desktop">
                     <p>Voltar</p>
                 </a>
                 <a href="aluno-dashboard.html"><img class="mobile seta-voltar"
                         src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
             </div>
-            <div id="filtro">
-                <button>
-                    Filtrar simulado
-                    <img src="assets/img/dashboard/downarrow.svg" alt="downarrow">
-                </button>
-            </div>
+            <form action="">
+                <div class="filtrar-por">
+                    <select name="filtro1" id="filtrar1">
+                        <option value="1" selected hidden>Filtrar simulado</option>
+                        <option value="2">opção 1</option>
+                        <option value="3">opção 2</option>
+                    </select>
+                </div>
+            </form>
         </div>
 
         <div id="simu-disp">
@@ -293,7 +294,7 @@
                 <h2>Questões</h2>
                 <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="" onclick="FecharModal1()">
             </div>
-            <div class="modal-finalizar-conteudo modal-finalizar-conteudo-cadastro">
+            <div class="modal-finalizar-conteudo modal-finalizar-conteudo-cadastro" id="modal-add">
                 <div class="top-questoes">
                     <div id="pesquisa-questoes">
                         <form action="">
@@ -302,46 +303,72 @@
                                     src="assets/img/dashboard-simulados/lupaWhite.svg" alt=""></button>
                         </form>
                     </div>
-                    <ul>
-                        <li>Filtrar por:</li>
-                        <li>Materia <img src="assets/img/dashboard/downarrow.svg" alt=""></li>
-                        <li>Assunto <img src="assets/img/dashboard/downarrow.svg" alt=""></li>
-                    </ul>
-                </div>
-                <div class="content">
-                    <div class="questao-modal">
-                        <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
-                            seleção brasileira de voleibol mascu
-                            lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
-                    </div>
-                    <div class="questao-modal">
-                        <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
-                            seleção brasileira
-                            de voleibol mascu
-                            lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
-                    </div>
-                    <div class="questao-modal">
-                        <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
-                            seleção brasileira
-                            de voleibol mascu
-                            lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
-                    </div>
-                    <div class="questao-modal">
-                        <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
-                            seleção brasileira
-                            de voleibol mascu
-                            lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
-                    </div>
-                    <div class="questao-modal">
-                        <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
-                            seleção brasileira
-                            de voleibol mascu
-                            lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                    <div class="filtrar-por size">
+                        <label for="">Filtrar por: </label>
+                        <select name="filtro1" id="filtrar1-modal">
+                            <option value="1" selected hidden>Materia</option>
+                            <option value="2">opção 1</option>
+                        </select>
+                        <select name="filtro2" id="filtrar2-modal">
+                            <option value="1" selected hidden>Assunto</option>
+                            <option value="2">Opção 2</option>
+                        </select>
                     </div>
                 </div>
+                <form action="">
+                    <div class="content">
+                        <div class="custom-checkbox questao-modal">
+                            <input type="checkbox" name="questao" id="questao1">
+                            <label for="questao1">                                   
+                                    <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                                        seleção brasileira de voleibol mascu
+                                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                            </label>
+                        </div>
+                        
+                        <div class="custom-checkbox questao-modal">
+                            <input type="checkbox" name="questao" id="questao2">
+                            <label for="questao2">                                   
+                                    <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                                        seleção brasileira de voleibol mascu
+                                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                            </label>
+                        </div>
+
+                            <div class="custom-checkbox questao-modal">
+                            <input type="checkbox" name="questao" id="questao3">
+                            <label for="questao3">                                   
+                                    <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                                        seleção brasileira de voleibol mascu
+                                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                            </label>
+                        </div>
+
+                            <div class="custom-checkbox questao-modal">
+                            <input type="checkbox" name="questao" id="questao4">
+                            <label for="questao4">                                   
+                                    <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                                        seleção brasileira de voleibol mascu
+                                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                            </label>
+                        </div>
+
+                            <div class="custom-checkbox questao-modal">
+                            <input type="checkbox" name="questao" id="questao5">
+                            <label for="questao5">                                   
+                                    <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                                        seleção brasileira de voleibol mascu
+                                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                            </label>
+                        </div>
+                    
+                    </div>
+                    <button id="btn-add-modal" type="submit">ADICIONAR</button>
+                </form>
+            
 
             </div>
-            <button id="btn-add-modal">ADICIONAR</button>
+        
         </div>
 
         <!-- Modal btn-add -->

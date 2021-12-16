@@ -186,6 +186,42 @@
     cursor: pointer;
     font: normal 18px 'Montserrat';
 }
+#questao .filtrar-por,
+#questao .ordenar-por {
+  margin-top: 10px;
+}
+
+#questao .filtrar-por > label {
+  color: #FFFFFF;
+}
+
+#questao select#filtrar1,
+#questao select#filtrar2 {
+  background: #F2F2F2;
+  border-radius: 10px;
+  border: none;
+  height: 24px;
+  padding: 0 2% 0 1%;
+  font-size: 16px;
+  line-height: 20px;
+  color: #202020;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#questao select#filtrar1,
+#questao select#filtrar2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 0 3% 0 .5%;
+  background: #282c35 url("../img/admin-dashboard/sdrop.svg") 95.5% 50% no-repeat;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+}
+
+
 @media (max-width:1120px){
     #btn-add{
         font-size: 12px;

@@ -34,31 +34,33 @@
 .curso-tabela{
     text-align: center;
     background-color: #EAEAEA;
-    margin: 10% 0;
+    margin: 2% 0;
     padding: 15px;
-    width: 50%;
+    width: 30%;
+    max-width: 100px;
     border-radius: 10px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 2px #00000040;
+    
 }
 .curso-tabela p{
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     margin: 5% 0;
 }
 .curso-tabela h3{
-    font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
 }
 .tab{
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    
+    gap: 4%;
+    margin: 0 auto;  
+    flex-wrap: wrap;
 }
 .linha{
     border-bottom: 1px solid #282C35;
@@ -70,34 +72,18 @@
     border-radius: 15px;
     max-width: 800px;
     margin: 0 auto;
-}
-.col{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 90%;
 }
 .controler{
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-    width: 100%;
+    width: 80%;
 }
 .pages ul{
     display: flex;
     list-style: none;
     gap: 10%;
     justify-self: center;
-}
-.btn-add-curso button{
-    background: none;
-    border: none;
-    display: flex;
-    align-items: center;
-    gap: 2%;
-    width: 120%;
-    font: 500 16px 'Montserrat';
-    cursor: pointer;
-
 }
 .pages li{
     width: 1.7vw;
@@ -109,12 +95,58 @@
     background-color: #F58E08;
     border-radius: 50%;
 }
-.flex{
-    width: 60%;
+.btn-add-curso{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin-top: -3.2%;
+}
+.btn-add-curso button{
+    background:none;
+    border: none;
+    font: 500 14px 'Montserrat';
+    display: flex;
+    align-items: center;
+}
+.btn-add-curso-mobile{
+    display: none;
+}
+.btn-add-curso-mobile button{
+    background:none;
+    border: none;
+    font: 500 16px 'Montserrat';
+    display: flex;
     align-items: center;
 }
 #edit{
     width: 100%;
+}
+@media (max-width:1390px){
+    .btn-add-curso{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0%;
+    } 
+}
+@media (max-width:1025px){
+    .btn-add-curso{
+        display: none;
+    }
+    .btn-add-curso-mobile{
+        display: flex;
+        justify-content: right;
+    }
+}
+@media (max-width:768px){
+    
+    .curso-tabela{
+        width: 30%;
+    }
+    .tabela-cursos{
+        margin-left: -5%;
+        gap: 0;
+        justify-content: space-between;
+    }
+    .search-box{
+        width: 60%;
+    }
 }
