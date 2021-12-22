@@ -233,42 +233,52 @@ html {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 7%;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #quem-somos .cultura .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15%;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#quem-somos .cultura .check ul {
+  width: 100%;
 }
 
 #quem-somos .cultura .check-val {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#quem-somos .cultura .check-val {
-  height: 20px;
-  width: auto;
-  margin-right: 5px;
-}
-
-#quem-somos .valores-item {
+  margin-bottom: 10px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5px;
-  list-style: none;
-  margin-left: 15%;
 }
 
-#quem-somos .visao {
-  margin-right: 15%;
-  margin-left: 15%;
+#quem-somos .cultura .check-val img {
+  height: 17px;
+  width: auto;
+}
+
+#quem-somos .valores-item {
+  list-style: none;
+  margin-left: 5%;
+}
+
+#quem-somos .visao,
+#quem-somos .missao,
+#quem-somos .valores {
+  width: 22.5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #simulacao {
@@ -557,9 +567,6 @@ html {
   .inicio-texto h1 {
     font-size: 40px;
   }
-}
-
-@media (max-width: 1150px) {
   .inicio-img {
     margin-top: 5%;
   }
@@ -694,19 +701,20 @@ html {
   }
   #quem-somos .cultura {
     font: bold 10px "Montserrat";
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-left: 0;
   }
-  #quem-somos .cultura .visao {
-    margin-left: 0;
+  #quem-somos .cultura .visao, #quem-somos .cultura .missao, #quem-somos .cultura .valores {
+    width: 100%;
   }
   #quem-somos .cultura .check {
     text-align: left;
   }
   #quem-somos .cultura .check .check-val {
     text-align: left;
-    margin: 10% 0;
   }
   #quem-somos .cultura .check img {
     height: 15px;
@@ -806,6 +814,9 @@ html {
   }
   #contato .redes-img-meio {
     margin: 20vh 10%;
+  }
+  #contato .redes-img img {
+    width: 30px;
   }
   #contato .btn-submit {
     font-size: 15px !important;
