@@ -12,6 +12,50 @@
 }
 
 #questao {
+    .select-rotina {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+  
+        cursor: pointer;
+  
+        .b-seta-baixa {
+           margin-left: 5px;
+           background: rgba(255, 255, 255, 0);
+           border: none;
+           cursor: pointer;
+        }
+
+        p {
+            color: #f2f2f2;
+        }
+     }
+     .seta-baixa-rotina {
+         margin-left: 10px;
+     }
+     .select-rotina-estudo {
+        max-width: 300px;
+        min-width: 250px;
+        width: 94%;
+     }
+     .check-meu-perfil.check-cursinho {
+        background: #FFFFFF;
+        padding: 2%;
+        max-width: 300px;
+        
+        width: 94%;
+        border-radius: 10px;
+        margin-right: 10px;
+     }
+     
+     .check-cursinho label {
+        color: #FA4954;
+        display: contents;
+        white-space: pre-wrap;
+        font-size: 16px;
+    }
+
     .cursinho-admin {
         position: relative;
     }
@@ -126,7 +170,7 @@
         display: inline-block;
         font: 15px/1em sans-serif;
         height: 16px;
-        margin: 3px 0.35em 0 0;
+        margin: 3px 5px 0 0;
         padding: 0;
         vertical-align: top;
         width: 16px;
@@ -263,6 +307,31 @@
     }
 }
 
+.check-cursinho {
+    display: none;
+ }
+
+.check-cursinho.ativar-down {
+    display: block;
+ }
+
+ .seta-baixa-rotina {
+    margin-left: 10px;
+ }
+ 
+ .seta-baixa-rotina.girar {
+    transform: rotate(180deg);
+    filter: invert(57%) sepia(85%) saturate(1017%) hue-rotate(353deg) brightness(95%) contrast(103%);
+ }
+
+ .check-rotina {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+
+ 
+
 @media (max-width: 1120px) {
     #questao {
         .editar-instrucao {
@@ -330,7 +399,9 @@
             font-size: 8px;
         }
 
-
+        .check-cursinho label {
+            font-size: 12px;
+        }
 
         input[type="checkbox"]+label:before {
             height: 12px;
