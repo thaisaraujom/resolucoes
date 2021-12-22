@@ -136,5 +136,10 @@
     .indicadores-grafico {
         margin: 0;
         width: 100%;
+        overflow-x: auto; 
+    }
+    #chart {
+        min-width: 600px;
+        
     }
 }

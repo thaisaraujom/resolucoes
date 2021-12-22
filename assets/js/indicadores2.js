@@ -9,7 +9,7 @@ var options = {
   },
     series: [{
     name: 'notas',
-    data: [100, 200, 300, 400, 500, 600, 1000, 400, 200, 100]
+    data: [100, 200, 300, 400, 500, 600, 1000, 400, 200, 100, 100, 100, 100, 100, 100]
   }],
     chart: {
     height: 350,
@@ -33,7 +33,7 @@ var options = {
   },
 
   xaxis: {
-    categories: ["simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1"],
+    categories: ["simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1", "simulado 1"],
     position: 'bottom',
     axisBorder: {
       show: true,
