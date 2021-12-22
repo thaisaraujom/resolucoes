@@ -1,7 +1,8 @@
+
+
+
 let data = []
 
-const response = fetch('').then(response => response.json).then(data => console.log(data));
-console.log(response)
 var options = {
   grid: {
     borderColor: "transparent",
@@ -97,4 +98,12 @@ var options = {
   };
 
   var chart = new ApexCharts(document.querySelector("#chart"), options);
-  chart.render();
+chart.render();
+
+fetch('https://api-resolucoes.herokuapp.com/media-de-notas/')
+.then(function(response){
+  return response.json();
+})
+.then(function(notas){
+  console.log(notas)
+})
