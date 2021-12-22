@@ -15,6 +15,13 @@ body {
   padding: 2%;
 }
 
+#questao .aba-exercicio, #questao .aba-conteudos {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 #questao .imagem-video {
   margin: 0 10px;
   margin-bottom: 15px;
@@ -312,6 +319,11 @@ body {
 
 #questao .nome-assunto .seta-baixa {
   padding: 2% 3%;
+}
+
+#questao .nome-assunto .seta-baixa.selecionado {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 #questao .nome-assunto .seta-cima {
@@ -961,6 +973,12 @@ a:link {
   #questao .exercicios, #questao .conteudos {
     padding: 2% 1%;
   }
+  #questao .nome-assunto .seta-baixa {
+    padding: 0;
+  }
+  #questao .nome-assunto .seta-cima {
+    padding: 1.2% 3%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1070,15 +1088,15 @@ a:link {
 }
 
 #questao .exercicios-assunto::-webkit-scrollbar {
-  width: 2px;
+  width: 4px;
   background-color: #E4E0E0;
 }
 
 #questao .exercicios-assunto::-webkit-scrollbar-thumb {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 4px rgba(219, 219, 219, 0.35);
   border-radius: 25px;
-  background-color: #000000;
+  background-color: #d7d5d4;
 }
 
 #questao .paginacao {

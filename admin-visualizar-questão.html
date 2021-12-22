@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="assets/css/admin-listagem-questao.css">
     <link rel="stylesheet" href="assets/css/admin-visualizar-questao.css">
 
+    <link rel="stylesheet" href="assets/css/modal-apagar-parceiro.css">
+    <link rel="stylesheet" href="assets/css/modal-desvincular-questao.css">
+
     <title>Institucional - Questão | Resoluções.com</title>
 </head>
 
@@ -33,6 +36,18 @@
                 <div class="conteudo-interno">
                     <div class="conteudo-interno2">
                         <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
                     </div>
 
 
@@ -67,8 +82,7 @@
 
                         <div>
                             <div class="home">
-                                <a href="#"><img class="icon_home" src="assets/img/admin-menu/home_orange.svg"
-                                        alt=""></a>
+                                <a href="#"><img class="icon_home" src="assets/img/admin-menu/home_orange.svg" alt=""></a>
                                 <a class="item-link item-home item-link-ativado" href="#">
                                     <p>Home</p>
                                 </a>
@@ -88,21 +102,13 @@
                                     <p>Cadastro de Staff</p>
                                 </a>
                             </div>
-
                             <div>
-
-                    </li>
-
-
-                    <li class="nav-item">
-                        <a href=""><img class="icon_perfil" src="assets/img/aluno-questao/perfil.svg" alt=""></a>
-                        <a href="" class="item-link item-perfil">Perfil</a>
                     </li>
 
                     <div>
                         <li class="nav-item">
                             <img class="mais-cursinho" src="assets/img/aluno-questao/sugerir.svg" alt="">
-                            <a href="" class="item-link item-sobre">Sobre o cursinho</a>
+                            <a href="" class="item-link">Curso</a>
                         </li>
                     </div>
                     <div class="sobre-down home-desativada">
@@ -161,7 +167,7 @@
                         <h2 class="titulo-admin">Matemática</h2>
 
                         <form action="" class="form-questao-cadastrada">
-                            <input checked disabled type="checkbox" value="0" name="campo-checkbox" id="campo-checkbox-questao" />
+                            <input checked type="checkbox" value="0" name="campo-checkbox" id="campo-checkbox-questao" />
                             <label for="campo-checkbox-questao" class=""></label> 
                             <p>Questão cadastrada</p>
                         </form>
@@ -245,6 +251,25 @@
         </div>
     </section>
 
+    <div class="modal-finalizar-overlay modal-desvincular">
+        <div class="modal-finalizar">
+            <div class="modal-sair">
+                <a href=""><img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt=""></a>
+            </div>
+
+            <div class="modal-finalizar-conteudo">
+                <p class="p-titulo-modal-finalizar">Deseja desvincular essa questão do institucional?</p>
+                <p class="p-descricao-modal-finalizar">Essa questão não estará mais presente na simulação do site, mas continuará  cadastrada nas apostilas. </p>
+
+                <form action="" class="decisao-botoes-modal">
+                    <button class="button-cancelar-modal">Cancelar</button>
+                    <button class="button-laranja-modal">Desvincular</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
 
     <footer>
         <div class="texto-rodape">
@@ -268,6 +293,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="assets/js/tabela-link.js"></script>
     <script src="assets/js/admin-menu-down.js"></script>
+    <script src="assets/js/modal-desvincular.js"></script>
 
 </body>
 

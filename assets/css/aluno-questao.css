@@ -16,6 +16,10 @@ html {
   display: none;
 }
 
+.book-down.desativar {
+  display: none;
+}
+
 .fa-ellipsis-v:before {
   cursor: pointer !important;
 }
@@ -88,6 +92,14 @@ html {
 }
 
 #navbar-lateral ul .item-apostila a, #navbar-lateral ul .item-materia a, #navbar-lateral ul .item-simulado a, #navbar-lateral ul .item-monitor a, #navbar-lateral ul .item-home a, #navbar-lateral ul .item-perfil a, #navbar-lateral ul .item-sugerir-questao a, #navbar-lateral ul .item-anotacao a, #navbar-lateral ul .item-simulado a, #navbar-lateral ul .item-book a {
+  color: #F58E08;
+}
+
+#navbar-lateral ul .item-apostila p, #navbar-lateral ul .item-materia p, #navbar-lateral ul .item-simulado p, #navbar-lateral ul .item-monitor p, #navbar-lateral ul .item-home p, #navbar-lateral ul .item-perfil p, #navbar-lateral ul .item-sugerir-questao p, #navbar-lateral ul .item-anotacao p, #navbar-lateral ul .item-simulado p, #navbar-lateral ul .item-book p {
+  color: #F58E08;
+}
+
+#navbar-lateral ul .item-dentro a, #navbar-lateral ul .item-dentro p {
   color: #F58E08;
 }
 
