@@ -1,16 +1,13 @@
 
 
-
-let data = []
-
-var options = {
+let options = {
   grid: {
     borderColor: "transparent",
     strokeDashArray: 0,
   },
     series: [{
     name: 'notas',
-    data: [2.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2, 2.3, 1.4, 0.8]
+    data: []
   }],
     chart: {
     height: 350,
@@ -34,7 +31,7 @@ var options = {
   },
 
   xaxis: {
-    categories: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    categories: ["0","1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
     position: 'bottom',
     axisBorder: {
       show: true,
@@ -97,13 +94,29 @@ var options = {
   },
   };
 
-  var chart = new ApexCharts(document.querySelector("#chart"), options);
+ 
+
+let chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
 
-fetch('https://api-resolucoes.herokuapp.com/media-de-notas/')
-.then(function(response){
-  return response.json();
-})
-.then(function(notas){
-  console.log(notas)
-})
+let dataPorcento = [1, 2, 5,6,8]
+
+async function getData() {
+  const response = await fetch('https://api-resolucoes.herokuapp.com/media-de-notas/');
+  const { pontuacoes } = await response.json();
+
+  const dataY = pontuacoes.map(({porcentagem}) => Number(porcentagem));
+  const dataX = pontuacoes.map(({quantidade_alunos}) => quantidade_alunos);
+
+  chart.updateSeries([{
+    data: dataY
+  }])
+};
+
+getData();
+
+
+
+
+
+
