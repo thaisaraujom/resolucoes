@@ -26,7 +26,7 @@ simulados_barra.style.borderRadius = '5px'
 situacao_simulado.forEach((sit_single) => {
 
     situacoes.forEach((situacoes_single) => {
-        let situacao_graficos = document.querySelectorAll('.meus-graficos');
+        let situacao_graficos = document.querySelectorAll('.meus-graficos a');
 
         situacao_graficos.forEach(graficos_single => {
             graficos_single.addEventListener('click', function () {

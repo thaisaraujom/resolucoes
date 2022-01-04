@@ -10,6 +10,20 @@
             margin-left: 20px;
         }
     }
+    .meus-graficos a {
+        padding: .2% 1%;
+        background: #f58e08;
+
+        border-radius: 5px;
+        white-space: nowrap;
+
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+            transition: 0.5s opacity;
+        }
+    }
     .p-sem {
         font-weight: normal;
         font-size: 16px;

@@ -745,4 +745,21 @@
     font-size: 14px;
   }
 }
+.btn-save{
+  text-align: right;
+}
+.btn-save button{
+  background: #F58E08;
+  border: none;
+  cursor: pointer;
+  font: normal 20px 'Montserrat';
+  color: white;
+  padding: 5px;
+  font-weight: 700;
+  width: 20%;
+  border-radius: 5px;
+  margin-top: 5%;
+  box-shadow: 0 4px 4px #20202040;
+  
+}
 /*# sourceMappingURL=admin-secao-inicial.css.map */

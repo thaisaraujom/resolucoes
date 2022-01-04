@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/footer-light.css">
+    <link rel="stylesheet" href="assets/css/aluno-barra-de-pesquisa.css">
+    <link rel="stylesheet" href="assets/css/admin-dashboard.css">
+    <link rel="stylesheet" href="assets/css/admin-menu.css">
+    <link rel="stylesheet" href="assets/css/cursinho-dashboard-addquestao.css">
+    <link rel="stylesheet" href="assets/css/modal-adicionarquestao.css">
+    <link rel="stylesheet" href="assets/css/modal-apagar-parceiro.css">
+    <link rel="stylesheet" href="assets/css/cursinho-dashboard-addquestao.css">
+    <link rel="stylesheet" href="assets/css/modal-questao.css">
+    
+
+
+    <script src="assets/js/cursinho-dashboard-modais.js" defer></script>
+
+
+
+
+
+    <title>Adicionar questão - Cursinho | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item">
+
+                        <div>
+                            <div class="book ">
+                                <a href="#"><img class="icon_book" src="assets/img/admin-menu/books.svg"
+                                        alt=""></a>
+                                <a class="item-link item-book item-link-ativado" href="#">
+                                    <p>Lorem Ipsum</p>
+                                </a>
+                            </div>
+                            <div class="book-down">
+                                <a href="#c-enviar">
+                                    <p>Enviar Mensagem</p>
+                                </a>
+                                <a href="#c-mensagem">
+                                    <p>Mensagens</p>
+                                </a>
+                                <a href="#c-alunoC">
+                                    <p>Alunos</p>
+                                </a>
+                                <a href="#c-disciplinas">
+                                    <p>Disciplina</p>
+                                </a>
+                                <a href="#c-simulado">
+                                    <p>Indicadores</p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href=""><img class="icon_perfil" src="assets/img/aluno-questao/perfil.svg" alt=""></a>
+                        <a href="" class="item-link item-perfil">Perfil</a>
+                    </li>
+
+                    <div>
+                        <li class="nav-item">
+                            <img class="mais-cursinho" src="assets/img/dashboard-simulados/livros.svg" alt="">
+                            <a href="" class="item-link item-sobre">Disciplinas</a>
+                        </li>
+                    </div>
+                    <div class="sobre-down home-desativada">
+                    </div>
+
+                    <li class="nav-item">
+
+                        <div>
+                            <div class="book">
+                                <a href="#"><img class="icon_book" src="assets/img/dashboard-simulados/indicadores.svg"
+                                        alt=""></a>
+                                <a class="item-link item-book" href="#">
+                                    <p>Lorem Ipsum</p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="questao">
+        <div class="voltar">
+            <div class="icones">
+                <a href="aluno-dashboard.html" class="desktop"><img class="home desktop"
+                        src="assets/img/aluno-modulo/icon.svg" alt=""></a>
+                <img class="seta desktop" src="assets/img/aluno-modulo/seta.svg" alt="" style="max-height: 15px;">
+                <a href="aluno-dashboard.html" class="desktop">
+                    <p>Voltar</p>
+                </a>
+                <a href="aluno-dashboard.html"><img class="mobile seta-voltar"
+                        src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
+            </div>
+            <form action="">
+                <div class="filtrar-por">
+                    <select name="filtro1" id="filtrar1">
+                        <option value="1" selected hidden>Filtrar simulado</option>
+                        <option value="2">opção 1</option>
+                        <option value="3">opção 2</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div id="simu-disp">
+            <div id="cima">
+                <p>Simulado disponivel</p>
+                <a href="#"><button>Editar</button></a>
+            </div>
+            <div id="baixo">
+                <ul>
+                    <li>
+                        <h3>II SIMULADO DE MATEMATICA (45)</h3>
+                    </li>
+                    <li>Data de inicio: 00/00/000</li>
+                    <li>Data de entrega: 00/00/0000</li>
+                    <li>Tempo de prova: 180 minutos</li>
+                </ul>
+                <a href="#"><button>Ranking do simulado</button></a>
+            </div>
+        </div>
+        <div id="add-questao">
+            <div id="header">
+                <div id="busca">
+                    <form action="">
+                        <input type="text" name="buscarQ" id="buscar" placeholder="Buscar">
+                        <button type="submit" id="submit"><img src="assets/img/dashboard/search.svg"
+                                alt="search"></button>
+                    </form>
+                </div>
+                <p>45 questões cadastradas</p>
+                <button id="btn-add" onclick="AbrirModal2()">Adicionar questão</button>
+                <button id="btn-add-mobile" onclick="AbrirModal2()">+</button>
+            </div>
+            <div id="questoes">
+                <div class="questao">
+                    <p><span> 1-(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                        seleção
+                        brasileira de voleibol mascu
+                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                    <button><img src="assets/img/dashboard/trash.svg" alt="trashIcon" onclick="AbrirModal3()"></button>
+                </div>
+                <div class="questao">
+                    <p><span> 1-(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                        seleção
+                        brasileira de voleibol mascu
+                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                    <button><img src="assets/img/dashboard/trash.svg" alt="trashIcon" onclick="AbrirModal3()"></button>
+                </div>
+                <div class="questao">
+                    <p><span> 1-(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                        seleção
+                        brasileira de voleibol mascu
+                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                    <button><img src="assets/img/dashboard/trash.svg" alt="trashIcon" onclick="AbrirModal3()"></button>
+                </div>
+                <div class="questao">
+                    <p><span> 1-(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                        seleção
+                        brasileira de voleibol mascu
+                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                    <button><img src="assets/img/dashboard/trash.svg" alt="trashIcon" onclick="AbrirModal3()"></button>
+                </div>
+                <div class="questao">
+                    <p> <span> 1-(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                        seleção
+                        brasileira de voleibol mascu
+                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                    <button><img src="assets/img/dashboard/trash.svg" alt="trashIcon" onclick="AbrirModal3()"></button>
+                </div>
+            </div>
+            <form action="">
+                <div class="paginacao">
+                    <ul class="paginacao-admin">
+                        <li><img class="passar-pagina"
+                                src="./assets/img/admin-dashboard/esquerda-paginacao.svg" alt="">
+                        </li>
+                        <li><a>
+                                <div class="circle">1</div>
+                            </a></li>
+                        <li><a>
+                                <div class="circle circle-active">2</div>
+                            </a></li>
+                        <li><a>
+                                <div class="circle">3</div>
+                            </a></li>
+                        <li><a>
+                                <div class="circle">4</div>
+                            </a></li>
+                        <li><a>
+                                <div class="circle">5</div>
+                            </a></li>
+                        <li><img class="passar-pagina"
+                                src="./assets/img/admin-dashboard/direita-paginacao.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg" alt=""></a>
+
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="tela hide"></div>
+
+
+    <!-- Modais -->
+
+    <!-- Modal questões -->
+    <div class="modal-finalizar-overlay modal-questao" style="visibility:hidden">
+        <div class="modal-finalizar" id="modal-questoes">
+            <div class="modal-sair" id="sair-questao">
+                <h2>Questões</h2>
+                <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="" onclick="FecharModal1()">
+            </div>
+            <div class="modal-finalizar-conteudo modal-finalizar-conteudo-cadastro" id="modal-add">
+                <div class="top-questoes">
+                    <div id="pesquisa-questoes">
+                        <form action="">
+                            <input type="text">
+                            <button type="submit" id="btn-pesquisar"><img
+                                    src="assets/img/dashboard-simulados/lupaWhite.svg" alt=""></button>
+                        </form>
+                    </div>
+                    <div class="filtrar-por size">
+                        <label for="">Filtrar por: </label>
+                        <select name="filtro1" id="filtrar1-modal">
+                            <option value="1" selected hidden>Materia</option>
+                            <option value="2">opção 1</option>
+                        </select>
+                        <select name="filtro2" id="filtrar2-modal">
+                            <option value="1" selected hidden>Assunto</option>
+                            <option value="2">Opção 2</option>
+                        </select>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="content">
+                        <div class="custom-checkbox questao-modal">
+                            <input type="checkbox" name="questao" id="questao1">
+                            <label for="questao1">                                   
+                                    <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                                        seleção brasileira de voleibol mascu
+                                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                            </label>
+                        </div>
+                        
+                        <div class="custom-checkbox questao-modal">
+                            <input type="checkbox" name="questao" id="questao2">
+                            <label for="questao2">                                   
+                                    <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                                        seleção brasileira de voleibol mascu
+                                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                            </label>
+                        </div>
+
+                            <div class="custom-checkbox questao-modal">
+                            <input type="checkbox" name="questao" id="questao3">
+                            <label for="questao3">                                   
+                                    <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                                        seleção brasileira de voleibol mascu
+                                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                            </label>
+                        </div>
+
+                            <div class="custom-checkbox questao-modal">
+                            <input type="checkbox" name="questao" id="questao4">
+                            <label for="questao4">                                   
+                                    <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                                        seleção brasileira de voleibol mascu
+                                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                            </label>
+                        </div>
+
+                            <div class="custom-checkbox questao-modal">
+                            <input type="checkbox" name="questao" id="questao5">
+                            <label for="questao5">                                   
+                                    <p><span>(ENEM 2019 PPL)</span> O quadro apresenta a relação dos jogadores que fizeram parte da
+                                        seleção brasileira de voleibol mascu
+                                        lino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.</p>
+                            </label>
+                        </div>
+                    
+                    </div>
+                    <button id="btn-add-modal" type="submit">ADICIONAR</button>
+                </form>
+            
+
+            </div>
+        
+        </div>
+
+        <!-- Modal btn-add -->
+
+        <div class="modal-finalizar-overlay modal-add" style="visibility: hidden;">
+            <div class="modal-finalizar">
+                <div class="modal-sair">
+                    <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt=""
+                        onclick="FecharModal2()">
+                </div>
+
+                <div class="modal-finalizar-conteudo" id="alinhar">
+                    <p class="p-titulo-modal-finalizar">VOCÊ QUER</p>
+
+
+                    <a href="#"><button id="cadastrar">Cadastrar nova questao</button></a>
+                    <button id="adicionar" onclick="AbrirModal1()">Adicionar uma ja existente</button>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal apagar -->
+
+        <div class="modal-finalizar-overlay delete" style="visibility: hidden;">
+            <div class="modal-finalizar">
+                <div class="modal-sair">
+                    <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt=""
+                        onclick="FecharModal3()">
+                </div>
+
+                <div class="modal-finalizar-conteudo">
+                    <p class="p-titulo-modal-finalizar">Deseja apagar essa questão?</p>
+                    <p class="p-descricao-modal-finalizar">Essa questão sera apagada de todos o sistema</p>
+
+                    <form action="" class="decisao-botoes-modal">
+                        <button class="button-cancelar-modal" onclick="FecharModal3()">Cancelar</button>
+                        <button class="button-laranja-modal">Apagar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+</body>
+
+<script type="text/javascript" src="assets/js/menu.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="assets/js/telefone-mask.js"></script>
+<script src="./assets/js/perfil-select-cursinho-aluno.js"></script>
+<script src="assets/js/cursinho-dashboard-modais.js"></script>
+
+
+</html>

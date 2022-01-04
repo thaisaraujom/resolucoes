@@ -1,0 +1,262 @@
+
+#modal-questoes{
+    width: 55%;
+    max-width: 1070px;
+}
+#modal-add{
+    padding: 0;
+}
+#sair-questao{
+    align-items: center;
+    color: #f2f2f2;
+    justify-content: space-between;
+}
+#sair-questao h2{
+    margin-left: 2%;
+}
+.top-questoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding: 10px;
+}
+#pesquisa-questoes{
+    border: 1px solid #D7D5D4;
+    margin: 0;
+    padding: 2px;
+    border-radius: 40px;
+    width: 50%;
+    
+}
+#pesquisa-questoes input{
+    border: none;
+    width: 90%;
+}
+#pesquisa-questoes input:focus{
+    outline: none;
+}
+#btn-pesquisar{
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+.content::-webkit-scrollbar {
+    width: 5px;
+    background-color: #FFFFFF;
+}
+.content::-webkit-scrollbar-thumb {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    background-color: #f0f0f05e;
+}
+.content{
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+    height: 40vh;
+}
+.questao-modal{
+    background: #EAEAEA;
+    width: 90%;
+    height: 10vh;
+    margin: 1%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #00000040;
+    font: normal 18px "Montserrat";
+    border: none;
+    display: flex;
+}
+.questao-modal p{
+    margin-left: 3%;
+    margin-top: -2%;
+    height: 100%;
+}
+.questao-modal span{
+    font-weight: bold;  
+}
+.questao-modal option span{
+    font-weight: bold;
+}
+#btn-add-modal{
+    margin: 0%;
+    width: 100%;
+    height: 5vh;
+    border-radius: 0 0 15px 15px;
+    color: white;
+    background: #F58E08;
+    font: normal 18px "Montserrat";
+    
+}
+.size{
+    width: 55%;
+    text-align: center;
+    max-width: 390px;
+}
+.filtrar-por,
+.ordenar-por {
+  margin-top: 10px;
+}
+
+.filtrar-por > label {
+  color: #202020;
+}
+
+#filtrar1-modal,
+#filtrar2-modal {
+  background: #F2F2F2;
+  border-radius: 10px;
+  border: none;
+  height: 24px;
+  padding: 0 2% 0 1%;
+  font-size: 16px;
+  line-height: 20px;
+  color: #202020;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#filtrar1-modal,
+#filtrar2-modal {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 23%;
+  max-width: 85px;
+  padding: 0 3% 0 .5%;
+  background: #fff url("../img/admin-dashboard/sdrop.svg") 95.5% 50% no-repeat;
+  color: #000000;
+  font-family: "Montserrat";
+}
+.questao-modal input{
+    display: none;
+}
+.custom-checkbox input + label:before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    border: 1px solid #282C35;
+    border-radius: 4px; 
+    display: inline-block;
+}
+.custom-checkbox input:checked + label::before{
+    background-color: #F58E08;
+} 
+@media (max-width: 1025px){
+    .questao-modal p{
+        font-size: 18px;
+        margin-top: -5%;
+        margin-left: 5%;
+    }
+    .custom-checkbox input + label:before{
+        width: 10px;
+        height: 10px;
+    }
+    #filtrar1-modal,
+    #filtrar2-modal{
+        width: 30%;
+    }
+}
+@media (max-width: 850px){
+    #filtrar1-modal,
+    #filtrar2-modal{
+        font-size: 13px;
+    }
+    .questao-modal p{
+        font-size: 16px;
+        margin-top: -5%;
+        margin-left: 5%;
+    }
+    .size label{
+        font-size: 14px;
+    }
+}
+@media (max-width: 850px){
+    .questao-modal p{
+        font-size: 14px;
+        margin-top: -5%;
+        margin-left: 5%;
+    }
+    #filtrar1-modal,
+    #filtrar2-modal{
+    font-size: 16px;
+        width: 30%;
+    }
+    #pesquisa-questoes{
+        width: 50%;
+    }
+    #pesquisa-questoes input{
+        width: 92%;
+    }
+    #btn-add-modal{
+        border-radius: 0 0 5px 5px;
+    }
+    #modal-questoes{
+        width: 80%;
+    }
+}
+@media (max-width: 680px){
+    .top-questoes{
+        display: block;
+    }
+    #filtrar1-modal,
+    #filtrar2-modal{
+    font-size: 16px;
+    }
+    #pesquisa-questoes{
+        width: 70%;
+    }
+    #pesquisa-questoes input{
+        width: 90%;
+    }
+    .size{
+        width: 100%;
+        text-align: left;
+    }
+    
+}
+@media (max-width: 530px){
+    .questao-modal p{
+        font-size: 12px;
+        margin-top: -7%;
+        margin-left: 5%;
+    }
+}
+@media (max-width: 370px){
+    #modal-questoes{
+        width: 100%;
+    }
+    .questao-modal p{
+        font-size: 11px;
+        margin-top: -7%;
+        margin-left: 5%;
+    }
+}
+@media (max-width: 320px){
+    .questao-modal p{
+        font-size: 10px;
+        margin-top: -10%;
+        margin-left: 8%;
+    }
+    #filtrar1-modal,
+    #filtrar2-modal{
+        font-size: 14px;
+    }
+}
+@media (max-width: 280px){
+    #pesquisa-questoes{
+        width: 90%;
+    }
+    .questao-modal p{
+        font-size: 9.5px;
+        margin-top: -10%;
+        margin-left: 8%;
+    }
+    #filtrar1-modal,
+    #filtrar2-modal{
+    font-size: 12px;
+    }
+}

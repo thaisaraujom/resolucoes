@@ -16,6 +16,12 @@
 }
 .cards-materias {
     display: flex;
+<<<<<<< HEAD
+    justify-content: space-around;
+    width: 90%;
+    margin-bottom: 25px;
+}
+=======
     justify-content: flex-start;
     width: 90%;
     margin-bottom: 25px;
@@ -24,6 +30,7 @@
     display: flex;
     justify-content: space-around;
 }
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
 .card-materia {
     background: #282C35;
     border-radius: 10px;
@@ -75,6 +82,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
+=======
     overflow-y: scroll;
 }
 .plano-checkbox {
@@ -102,6 +111,7 @@
     background-color: #282C35;
     border-radius: 20px;
     border: 3px solid #E4E0E0;
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
 }
 .plano-estudos h4 {
     margin-top: 25px;
@@ -177,6 +187,57 @@
     text-align: left;
 }
 
+<<<<<<< HEAD
+#questao input[type="checkbox"] {
+    display: inline;
+    width: 15px;
+    height: 15px;
+    background-color:#E4E0E0;
+    border: 2px solid #282C35;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+#questao input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+}
+#questao input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color:#E4E0E0;
+    border: 1px solid #282C35;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+#questao input[type=checkbox]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color:#F58E08;
+}
+#questao input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid #F58E08;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+=======
 input[type="checkbox"] + label:before {
     border: 1px solid #282c35;
     content: "\00a0";
@@ -224,6 +285,7 @@ input[type="checkbox"] {
     a:active {
         color: #292323;
     }
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
 }
 .plano-input-label {
     margin: 5px 0;
@@ -285,6 +347,10 @@ input[type="checkbox"] {
     margin-right: 50px;
     cursor: pointer;
 }
+<<<<<<< HEAD
+
+
+=======
 .campo-busca {
     margin-right: 100px;
 }
@@ -397,6 +463,7 @@ input[type="checkbox"] {
 .filtro-botao-2 {
     display: none;
 }
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
 
 @media (max-width: 1140px){
     .conteudo-dashboard {
@@ -434,6 +501,12 @@ input[type="checkbox"] {
     body{
         background: #282C35;
     }
+<<<<<<< HEAD
+}
+@media (max-width: 600px) {
+    .cards-carrocel {
+        padding: 0 1%;
+=======
     .campo-busca {
         margin-right: 90px;
     }
@@ -481,5 +554,6 @@ input[type="checkbox"] {
     }
     .filtro-popup {
         top: 50px; left: 50px;
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
     }
 }

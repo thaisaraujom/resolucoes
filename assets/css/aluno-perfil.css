@@ -424,6 +424,8 @@ html {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
 .opcao-curso {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -478,6 +480,7 @@ html {
       flex-wrap: wrap;
 }
 
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
 #alt-radio-checked .campo label:not(.radio), #alt-radio-checked .campo-select label:not(.radio) {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -681,12 +684,15 @@ html {
   #questao .btn-senha {
     color: #282C35;
   }
+<<<<<<< HEAD
+=======
   #questao .letra-branca-bold {
     color: #282C35;
   }
   #questao .letra-branca-normal {
     color: #282C35;
   }
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
   footer {
     background-color: #ebe7e4;
   }

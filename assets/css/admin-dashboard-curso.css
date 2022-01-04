@@ -1,0 +1,88 @@
+.container-curso{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.titulo-admin{
+    margin-left: 15%;
+}
+.cont1{
+    width: 35%;
+    text-align: center;
+    background: #E4E0E0;
+    height: auto;
+    padding: 20px 15px;
+    border-radius: 15px;
+}
+.cont1 h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+.cont1 h1{
+    font-size: 48px;
+    font-weight: 600;
+    margin: 4% 0;
+}
+.cont1 h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+.cont-tab{
+    width: 60%;
+    background: #E4E0E0;
+    border-radius: 15px;
+    padding: 1.7% 0;
+}
+.tabela-1{
+    background-color: #C4C4C4;
+}
+.cont-tab table{
+    width: 100%;
+}
+.cont-tab td{
+    padding: 2px 15px;
+}
+.alinhar{
+    text-align: right;
+}
+.cont-tab th{
+    padding: 7px;
+    font-size: 20px;
+}
+#chart{
+    width: 100%;
+    margin-top: 2%;
+    background: #E4E0E0;
+    border-radius: 10px;
+}
+#chart h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.grafico:hover{
+    color: #F58E08;
+}
+@media (max-width:1025px){
+    .cont1 h2{
+        font-size: 1.2rem;
+    }
+    .cont1 h1{
+        font-size: 2.5rem;
+    }
+    .cont1 h3{
+        font-size: 1rem;
+    }
+}
+@media (max-width:830px){
+    .cont1{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .cont-tab{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}

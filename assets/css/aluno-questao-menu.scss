@@ -1,0 +1,107 @@
+.container-barra {
+    left: 0;
+}
+
+#navbar {
+    .drop {
+        display: flex;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.tela {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #020202d0;
+}
+
+.drop1 {
+    margin-left: -1000px;
+
+    transition: 3s;
+}
+
+.nav-out{
+    animation: vai 0.5s;
+}
+.nav-in{
+    animation: vem 0.5s;
+}
+
+
+@keyframes vem {
+    from {margin-left: -250px;}
+    to {margin-left: 0;}
+}
+@keyframes vai{
+    from {margin-left: 0;}
+    to {margin-left: -250px;}
+}
+
+#navbar {
+    .conteudo-interno2 {
+        margin-left: 20px;
+    }
+    .drop {
+        display: flex;
+        z-index: 800;
+    }
+    form {
+        .campo-busca {
+            position: relative;
+            width: 300px;
+        }
+
+        .buscar {
+            right: -53px;
+        }
+
+    }
+}
+
+#questao {
+    padding-left: 0;
+    .voltar {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .conteudo {
+        padding-right: 10px;
+    }
+    .finalizar-abrir-modal {
+        
+        left: 77%;
+    }
+    .titulo.desktop {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .conteudo {
+
+        .enunciado, .alternativas, .questionamento {
+            padding: 0 5%;
+        }
+    }
+
+}
+
+#footer {
+    padding-left: 0;
+    padding: 2%;
+    
+}
+
+@media (max-width: 1024px){
+    #questao .conteudo {
+        
+        .enunciado, .alternativas, .questionamento {
+            padding: 0;
+        }
+    }
+}

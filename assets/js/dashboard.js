@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+$('.cards-materias').slick({
+=======
 $('.add-carrocel').slick({
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
   dots: false,
   infinite: true,
   speed: 300,
@@ -32,6 +36,9 @@ $('.add-carrocel').slick({
     // settings: "unslick"
     // instead of a settings object
   ]
+<<<<<<< HEAD
+});
+=======
 });
 
 var hide = document.querySelector(".filtro")
@@ -47,3 +54,4 @@ hide2.addEventListener("click", function(){
     navbar__wrap.classList.toggle("hide2")
 })
 
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
