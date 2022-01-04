@@ -167,6 +167,21 @@
   margin-left: 4%;
 }
 
+.indicadores-do-aluno-nome select {
+  border: none;
+  background: rgba(196, 196, 196, 0.33);
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #000000;
+}
+
 .indicadores-grafico h3 {
   width: 100%;
   padding: 20px 0;
