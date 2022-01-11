@@ -21,7 +21,7 @@ html {
     margin-left: auto !important;
 }
 
-.owl-theme .owl-nav.disabled + .owl-dots {
+.owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 50px !important;
 }
 
@@ -155,12 +155,14 @@ html {
         display: flex;
         align-items: center;
     }
+
     .title {
         font: 700 35px "Montserrat", sans-serif;
         color: #282c35;
         border-bottom: 2px solid #282c35;
         display: inline;
     }
+
     .paragrafo {
         font: normal 18px "Montserrat";
         color: #282c35;
@@ -191,29 +193,43 @@ html {
         display: flex;
         align-items: flex-start;
         margin-top: 7%;
+        width: 100%;
+        justify-content: space-between;
+
         .check {
             display: flex;
-            margin-top: 15%;
+            margin-top: 20px;
+            width: 100%;
+
+            ul {
+                width: 100%;
+            }
         }
+
         .check-val {
+            
+            margin-bottom: 10px;
+            width: 100%;
+            img {
+                height: 17px;
+                width: auto;
+            }
+
             display: flex;
-        }
-        .check-val {
-            height: 20px;
-            width: auto;
-            margin-right: 5px;
+            align-items: center;
         }
     }
+
     .valores-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 5px;
         list-style: none;
-        margin-left: 15%;
+        margin-left: 5%;
     }
-    .visao {
-        margin-right: 15%;
-        margin-left: 15%;
+
+    .visao,
+    .missao,
+    .valores {
+        width: 22.5%;
+        align-items: center;
     }
 
     font: normal 15px "Montserrat";
@@ -230,21 +246,25 @@ html {
         align-items: center;
         margin-top: 4%;
     }
+
     .texto {
         width: 35%;
     }
+
     .title {
         font: 700 35px "Montserrat", sans-serif;
         color: #ffffff;
         border-bottom: 2px solid #ffffff;
         display: inline;
     }
+
     .paragrafo {
         font: 300 17px "Montserrat";
         line-height: 22px;
         color: #ffffff;
         padding-right: 5%;
     }
+
     .area {
         display: flex;
         flex-direction: column;
@@ -275,6 +295,7 @@ html {
     .area-conhecimento {
         display: flex;
         width: 65%;
+
         .area {
             margin-bottom: 3%;
             margin-right: 2%;
@@ -324,12 +345,14 @@ html {
         display: flex;
         justify-content: center;
     }
+
     .title {
         font: 700 35px "Montserrat", sans-serif;
         color: #ffffff;
         border-bottom: 2px solid #ffffff;
         display: inline;
     }
+
     .mensagem {
         margin-top: 5%;
         font: 300 25px "Montserrat", sans-serif;
@@ -337,13 +360,16 @@ html {
         text-align: center;
         line-height: 30px;
     }
+
     form {
         margin-top: 10%;
+
         label {
             font: 500 16px "Montserrat";
             color: #d7d5d4;
             padding-left: 3%;
         }
+
         input,
         textarea {
             text-align: justify;
@@ -357,18 +383,22 @@ html {
             color: #fff;
             font: 300 16px "Montserrat", sans-serif;
         }
+
         input {
             width: 540px;
             height: 40px;
         }
+
         textarea {
             resize: none;
             width: 540px;
             height: 170px;
         }
+
         .btn {
             text-align: center;
         }
+
         .btn-submit {
             background: #f58e08;
             border-radius: 17px;
@@ -386,6 +416,7 @@ html {
             opacity: 0.9;
         }
     }
+
     .redes {
         display: flex;
         flex-direction: column;
@@ -394,6 +425,7 @@ html {
         right: 10%;
         transform: translate(0, 95%);
     }
+
     .redes-img {
         display: flex;
 
@@ -401,6 +433,7 @@ html {
             opacity: 0.9;
         }
     }
+
     .redes-img-meio {
         margin: 55% 0;
     }
@@ -415,18 +448,22 @@ html {
     .help {
         font: bold 16px "Montserrat", sans-serif;
         letter-spacing: 1.5px;
+
         h4 {
             margin-bottom: 15%;
             color: #282c35;
         }
+
         li {
             font-weight: 500;
             list-style: none;
             margin-bottom: 5%;
             color: #282c35;
+
             a {
                 text-decoration: none;
             }
+
             a:link,
             a:visited {
                 text-decoration: none;
@@ -451,15 +488,14 @@ html {
             font-size: 40px;
         }
     }
-}
-
-@media (max-width: 1150px) {
     .inicio-img {
         margin-top: 5%;
+
         img {
             width: 320px;
         }
     }
+
     #contato {
         min-height: 60vh;
     }
@@ -469,14 +505,17 @@ html {
     #contato {
         min-height: 80vh;
     }
+
     .itens {
         display: flex;
         flex-direction: column;
     }
+
     .nav-item {
         margin-left: 0 !important;
         padding: 1%;
     }
+
     .botao-entrar {
         margin-left: 0 !important;
         margin-bottom: 20px;
@@ -493,16 +532,19 @@ html {
         margin-left: auto !important;
         margin-right: auto !important;
     }
+
     .owl-carousel .owl-item img {
         width: 5rem !important;
         height: auto;
     }
+
     #navbar {
         .logo {
             width: 93px !important;
             height: auto !important;
         }
     }
+
     .inicio-navbar {
         display: none;
     }
@@ -513,17 +555,20 @@ html {
 
     .inicio-wrap {
         flex-flow: column wrap;
+
         .inicio-texto h1 {
             font-size: 30px;
             margin-top: 40%;
             margin-bottom: 25%;
         }
+
         .inicio-img {
             width: 50%;
             margin-right: 3%;
             padding: 0;
             align-content: flex-end;
         }
+
         img {
             width: 225px;
             margin-bottom: 25%;
@@ -534,20 +579,25 @@ html {
 
     #quem-somos {
         padding-top: 57px !important;
+
         .title {
             font: bold 18px "Montserrat";
         }
+
         .paragrafo {
             font: 500 12px "Montserrat";
             line-height: 18px;
         }
+
         .overlay {
             flex-wrap: wrap;
         }
+
         .quem-somos-img {
             width: 100%;
             text-align: center;
         }
+
         .quem-somos-texto {
             order: 1;
         }
@@ -567,28 +617,35 @@ html {
         .valores {
             order: 5;
         }
+
         img {
             text-align: center;
             width: 274px;
             height: 182px;
         }
+
         .cultura {
             font: bold 10px "Montserrat";
-            flex-wrap: wrap;
+            flex-direction: column;
             padding-left: 0;
-            .visao {
-                margin-left: 0;
+
+            .visao, .missao, .valores {
+                width: 100%;
             }
+
+
             .check {
                 text-align: left;
+
                 .check-val {
                     text-align: left;
-                    margin: 10% 0;
                 }
+
                 img {
                     height: 15px;
                     width: 15px;
                 }
+
                 .area-img {
                     padding: 0;
                     margin: 0;
@@ -603,35 +660,44 @@ html {
 
     #simulacao {
         padding-top: 55px !important;
+
         .overlay {
             flex-direction: column;
         }
+
         .paragrafo {
             font: 400 12px "Montserrat";
             line-height: 15px;
         }
+
         .area {
             margin: 2% 2%;
         }
+
         .title {
             font: bold 18px "Montserrat";
         }
+
         .texto {
             width: 100%;
         }
+
         .area-conhecimento {
             flex-wrap: wrap;
             margin-top: 5%;
             width: 100%;
             justify-content: center;
         }
+
         img {
             .title {
                 font: bold 18px "Montserrat";
             }
+
             .title-area {
                 width: 100%;
             }
+
             .paragrafo {
                 font: 500 12px "Montserrat";
                 line-height: 18px;
@@ -641,6 +707,7 @@ html {
 
     #parceiros {
         padding-top: 55px !important;
+
         .title {
             font: bold 18px "Montserrat";
         }
@@ -648,47 +715,65 @@ html {
 
     #contato {
         padding-top: 55px !important;
+
         .title {
             font: bold 18px "Montserrat";
         }
+
         .mensagem {
             display: none;
         }
+
         form {
             width: 43vh;
         }
+
         label {
             font: 300 15px "Montserrat", sans-serif !important;
         }
+
         input,
         textarea {
             margin: 3% 0 !important;
             width: 100% !important;
         }
+
         input {
             height: 20% !important;
         }
+
         textarea {
             height: 15vh !important;
         }
+
         .redes {
             align-items: center;
             flex-direction: row-reverse;
         }
+
         .redes-img-meio {
             margin: 20vh 10%;
         }
+
+        .redes-img {
+            img {
+                width: 30px;
+            }
+        }
+
         .btn-submit {
             font-size: 15px !important;
             width: 112px !important;
             height: 25.39px !important;
         }
     }
+
     #rodape {
         img {
             width: 130px;
             height: auto;
         }
+
         .help {
             font-size: 12px;
         }
@@ -702,14 +787,17 @@ html {
             width: 100px !important;
             margin-top: 5% !important;
         }
+
         .matematica,
         .natureza {
             margin-right: 30px !important;
         }
+
         .area-img {
             width: 100px !important;
             height: 65px !important;
             border-radius: 5px !important;
+
             img {
                 width: 78px;
                 height: auto;
@@ -722,8 +810,10 @@ html {
     .inicio-wrap img {
         margin-right: 3% !important;
     }
+
     .redes {
         margin-top: 7%;
+
         img {
             width: 30px;
             height: auto;
