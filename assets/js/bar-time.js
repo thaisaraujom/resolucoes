@@ -72,6 +72,8 @@ function relogio(time) {
 		setTimeout('relogio()', 1000)
 	} else {
 		qtd_minutos.innerHTML = "00:00";
+		let form = document.getElementById('signup-form');
+		form.submit()
 	}
 }
 // setTimeout(createProgressbar, 1000);	

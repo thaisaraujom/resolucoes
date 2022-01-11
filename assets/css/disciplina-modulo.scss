@@ -39,7 +39,8 @@
         background: none;
         color: #f2f2f2;
         border: none;
-        margin-left: 10px;
+
+        line-height: 30px;
     }
     .voltar-modulo {
         display: flex;
@@ -121,6 +122,10 @@
         width: 100%;
         font-style: normal;
         font-weight: normal;
+
+    }
+    .titulo_admin_admin {
+        flex-wrap: wrap;
     }
 }
 
@@ -133,9 +138,7 @@
         .conteudo-disciplina-modulo {
             padding: 0 3%;
         }
-        .titulo-admin {
-            width: 50%;
-        }
+
     }
 }
 
@@ -179,6 +182,28 @@
         .capitulo-modulo-disciplina {
             font-size: 15px;
         }
+        .button-modulo {
+            margin-left: 0;
+        }
+        .titulo_disciplina_admin {
+            flex-wrap: wrap;
+        }
     }
 
+}
+
+@media (max-width: 375px) {
+    #questao {
+        .lupa-search {
+            left: 115px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    #questao {
+        .lupa-search {
+            left: 70px;
+        }
+    }
 }

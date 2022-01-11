@@ -38,6 +38,18 @@
                 <div class="conteudo-interno">
                     <div class="conteudo-interno2">
                         <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
                     </div>
 
 
@@ -57,8 +69,6 @@
         </nav>
     </header>
 
-
-
     <header id="navbar-lateral" class="drop1 ">
         <nav>
             <div class="logo-menu">
@@ -71,82 +81,72 @@
                     <li class="nav-item">
 
                         <div>
-                            <div class="home">
-                                <a href="#"><img class="icon_home" src="assets/img/aluno-questao/home.svg" alt=""></a>
-                                <a class="item-link item-home" href="#">
-                                    <p>Home</p>
+                            <div class="book">
+                                <a href="#"><img class="icon_book" src="assets/img/admin-menu/books.svg"
+                                        alt=""></a>
+                                <a class="item-link item-book" href="#">
+                                    <p>Lorem Ipsum</p>
                                 </a>
                             </div>
-                    </li>
+                            <div class="book-down">
+                                <a href="">
+                                    <p>Enviar mensagem</p>
+                                </a>
+                                <a href="">
+                                    <p>Mensagens</p>
+                                </a>
+                                <a href="">
+                                    <p>Alunos</p>
+                                </a>
+                                <a href="">
+                                    <p>Disciplinas</p>
+                                </a>
+                                <a href="">
+                                    <p>Simulados</p>
+                                </a>
+                            </div>
 
+                    </li>
 
                     <li class="nav-item">
                         <a href=""><img class="icon_perfil" src="assets/img/aluno-questao/perfil.svg" alt=""></a>
                         <a href="" class="item-link item-perfil">Perfil</a>
                     </li>
 
-                    <div>
-                        <li class="nav-item">
-                            <img class="mais-cursinho" src="assets/img/aluno-questao/sugerir.svg" alt="">
-                            <a href="" class="item-link item-sobre">Sobre o cursinho</a>
-                        </li>
-                    </div>
-                    <div class="sobre-down home-desativada">
-                        <a href="">
-                            <p>Lorem Ipsum</p>
-                        </a>
-                        <a href="">
-                            <p>Lorem Ipsum</p>
-                        </a>
-                        <a href="">
-                            <p>Lorem Ipsum</p>
-                        </a>
-                        <a href="">
-                            <p>Lorem Ipsum</p>
-                        </a>
-                        <a href="">
-                            <p>Lorem Ipsum</p>
-                        </a>
-                        <a href="">
-                            <p>Lorem Ipsum</p>
-                        </a>
-                        <a href="">
-                            <p>Lorem Ipsum</p>
-                        </a>
-                        <a href="">
-                            <p>Lorem Ipsum</p>
-                        </a>
-                    </div>
-
                     <li class="nav-item">
 
                         <div>
                             <div class="book">
-                                <a href="#"><img class="icon_book" src="assets/img/admin-menu/books.svg" alt=""></a>
-                                <a class="item-link item-book item-link-ativado" href="#">
-                                    <p>Lorem Ipsum</p>
+                                <a href="#"><img class="icon_book" src="assets/img/aluno-perfil/disciplinas.svg"
+                                        alt=""></a>
+                                <a class="item-link" href="#">
+                                    <p>Disciplinas</p>
                                 </a>
                             </div>
-                            <div class="book-down">
-                                <a href="#c-enviar">
-                                    <p>Enviar Mensagem</p>
+                            <div class="book-down desativar">
+                                <a href="">
+                                    <p>Português</p>
                                 </a>
-                                <a href="#c-mensagem">
-                                    <p>Últimas Mensagens</p>
+                                <a href="">
+                                    <p>Matemática</p>
                                 </a>
-                                <a href="#c-alunoC">
-                                    <p>Cadastro de Alunos</p>
+                                <a href="">
+                                    <p>Geografia</p>
                                 </a>
-                                <a href="#c-disciplinas">
-                                    <p>Cadastro de Disciplina</p>
+                                <a href="">
+                                    <p>História</p>
                                 </a>
-                                <a href="#c-simulado">
-                                    <p>Cadastro de Simulado</p>
+                                <a href="">
+                                    <p>Literatura</p>
                                 </a>
                             </div>
                             <div>
                     </li>
 
+                    <li class="nav-item">
+                        <a href=""><img class="icon_perfil" src="assets/img/aluno-questao/indicadores.svg" alt=""></a>
+                        <a href="" class="item-link item-perfil">Indicadores</a>
+                    </li>
                 </ul>
 
             </div>
@@ -290,6 +290,9 @@
                                         </ul>
                                     </div>
                                 </form>
+                                <div class="ver-todas">
+                                    <a class="p-ver-todas" href=""><p >Ver todas</p></a>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -468,6 +471,7 @@
                                     </ul>
                                 </div>
                             </form>
+                            
                         </div>
 
                     </div>
@@ -481,7 +485,7 @@
                     <div class="conteudo-section-admin">
                         <div class="cursinho-info-admin">
                             <p class="info-form-admin">Para cadastrar um novo simulado, clique no botão.</p>
-                            <button class="button-cadastrar">Cadastrar Simulado</button>
+                            <button class="button-cadastrar"><a href="" class="">Cadastrar Simulado</a></button>
                         </div>
 
                         <div class="cursinhos-admin">
@@ -496,7 +500,7 @@
                                 </div>
                             </form>
                             <div class="cursinho simulado">
-                                <div class="border-bottom">
+                                <div class="border-bottom view-r">
                                     <div class="info-cursinho info-simulado">
                                         <p class="simulado-disponivel">Simulado disponível</p>
                                         <p><strong>II SIMULADO DE MATEMÁTICA (45)</strong></p>
@@ -504,10 +508,34 @@
                                         <p>data de entrega: 00/00/0000</p>
                                         <p>data de entrega: 00/00/0000</p>
                                     </div>
+                                    <div class="visualizar-rank">
+                                        <a class="a-editar-rank" href="">visualizar ranking</a>
+                                    </div>
+                                </div>
+                                <div class="b-editar">
+                                    <a class="a-editar" href="">Editar</a>
+                                </div>
+                                
+                            </div>
+                            <div class="cursinho simulado">
+                                <div class="border-bottom view-r">
+                                    <div class="info-cursinho info-simulado">
+                                        <p class="simulado-disponivel">Simulado disponível</p>
+                                        <p><strong>II SIMULADO DE MATEMÁTICA (45)</strong></p>
+                                        <p>data de início: 00/00/0000 </p>
+                                        <p>data de entrega: 00/00/0000</p>
+                                        <p>data de entrega: 00/00/0000</p>
+                                    </div>
+                                    <div class="visualizar-rank">
+                                        <a class="a-editar-rank" href="">visualizar ranking</a>
+                                    </div>
+                                </div>
+                                <div class="b-editar">
+                                    <a class="a-editar" href="">Editar</a>
                                 </div>
                             </div>
                             <div class="cursinho simulado">
-                                <div class="border-bottom">
+                                <div class="border-bottom view-r">
                                     <div class="info-cursinho info-simulado">
                                         <p class="simulado-disponivel">Simulado disponível</p>
                                         <p><strong>II SIMULADO DE MATEMÁTICA (45)</strong></p>
@@ -515,28 +543,29 @@
                                         <p>data de entrega: 00/00/0000</p>
                                         <p>data de entrega: 00/00/0000</p>
                                     </div>
+                                    <div class="visualizar-rank">
+                                        <a class="a-editar-rank" href="">visualizar ranking</a>
+                                    </div>
+                                </div>
+                                <div class="b-editar">
+                                    <a class="a-editar" href="">Editar</a>
                                 </div>
                             </div>
                             <div class="cursinho simulado">
-                                <div class="border-bottom">
+                                <div class="border-bottom view-r">
                                     <div class="info-cursinho info-simulado">
                                         <p class="simulado-disponivel">Simulado disponível</p>
                                         <p><strong>II SIMULADO DE MATEMÁTICA (45)</strong></p>
                                         <p>data de início: 00/00/0000 </p>
                                         <p>data de entrega: 00/00/0000</p>
                                         <p>data de entrega: 00/00/0000</p>
+                                    </div>
+                                    <div class="visualizar-rank">
+                                        <a class="a-editar-rank" href="">visualizar ranking</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="cursinho simulado">
-                                <div class="border-bottom">
-                                    <div class="info-cursinho info-simulado">
-                                        <p class="simulado-disponivel">Simulado disponível</p>
-                                        <p><strong>II SIMULADO DE MATEMÁTICA (45)</strong></p>
-                                        <p>data de início: 00/00/0000 </p>
-                                        <p>data de entrega: 00/00/0000</p>
-                                        <p>data de entrega: 00/00/0000</p>
-                                    </div>
+                                <div class="b-editar">
+                                    <a class="a-editar" href="">Editar</a>
                                 </div>
                             </div>
                             <form action="">
@@ -564,6 +593,9 @@
                                     </ul>
                                 </div>
                             </form>
+                            <div class="editar-instrucao">
+                                <a class="p-editar-instrucao" href="">Editar introdução padrão</a>
+                            </div>
                         </div>
 
                     </div>
@@ -723,6 +755,29 @@
                                 <div class="alternativas-radio">
                                     <input type="radio" value="3" name="campo-radio" id="campo-radio4" />
                                     <label class="radio" for="campo-radio4">5 ou mais anos de cursinho</label>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="campo-meu-perfil">
+                            <label for="text2" class="materias-label perfil-label">Plano</label>
+    
+                            <div class="radio-meu-perfil">
+                                <div class="alternativas-radio">
+                                    <input checked type="radio" value="0" name="campo-radio3" id="campo-radio30" />
+                                    <label class="radio" for="campo-radio30">Plano Exercício</label>
+                                </div>
+                                <div class="alternativas-radio">
+                                    <input type="radio" value="1" name="campo-radio3" id="campo-radio31" />
+                                    <label class="radio" for="campo-radio31">Plano Videoaula</label>
+                                </div>
+                                <div class="alternativas-radio">
+                                    <input type="radio" value="2" name="campo-radio3" id="campo-radio32" />
+                                    <label class="radio" for="campo-radio32">Plano Exercício + Videoaula</label>
+                                </div>
+                                <div class="alternativas-radio">
+                                    <input type="radio" value="3" name="campo-radio3" id="campo-radio34" />
+                                    <label class="radio" for="campo-radio34">Plano Mentoria</label>
                                 </div>
                             </div>
     

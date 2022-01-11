@@ -70,7 +70,7 @@
   font-size: 18px;
   line-height: 24px;
   color: #282c35;
-  cursor: pointer;
+  cursor: auto;
   -webkit-appearance: none;
 }
 
@@ -156,6 +156,16 @@
 
 #questao .admin-quem-somos {
   margin: 10px 0;
+}
+
+#questao .botoes-acao button {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#questao .botoes-acao img {
+  width: 17px;
+  height: auto;
 }
 
 #questao .caixas_valor_mais {
@@ -734,5 +744,22 @@
   #questao .textarea-editavel {
     font-size: 14px;
   }
+}
+.btn-save{
+  text-align: right;
+}
+.btn-save button{
+  background: #F58E08;
+  border: none;
+  cursor: pointer;
+  font: normal 20px 'Montserrat';
+  color: white;
+  padding: 5px;
+  font-weight: 700;
+  width: 20%;
+  border-radius: 5px;
+  margin-top: 5%;
+  box-shadow: 0 4px 4px #20202040;
+  
 }
 /*# sourceMappingURL=admin-secao-inicial.css.map */

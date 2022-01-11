@@ -1,3 +1,9 @@
+.desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #questao .titulo {
   font-size: 15px;
 }
@@ -44,27 +50,36 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 10px;
+  cursor: pointer;
   width: 100%;
   height: 72px;
   max-width: 190px;
   min-width: 85px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   line-height: 30px;
   text-align: center;
-  color: #ffffff;
 }
 
 #questao .caixa.acertos {
   background-color: #53d63a;
+  color: #ffffff;
 }
 
 #questao .caixa.erros {
   background-color: #fa4954;
+  color: #ffffff;
 }
 
 #questao .caixa.duvidas {
   background-color: #f58e08;
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+#questao .caixa.branca {
+  background-color: #c4c4c4;
+  color: #ffffff;
   margin: 0 10px;
 }
 
@@ -266,12 +281,24 @@ footer .logo-rodape:hover {
           transform: scale(1.05);
 }
 
+@media (max-width: 1240px) {
+  #questao .caixa .texto-acertos,
+  #questao .caixa .texto-duvidas,
+  #questao .caixa .texto-erros,
+  #questao .caixa .texto-branco {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 @media (max-width: 1024px) {
   #questao .overlay {
     padding: 0 !important;
   }
   #questao .icones {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   footer {
     padding-left: 0 !important;
@@ -282,6 +309,14 @@ footer .logo-rodape:hover {
   footer {
     border-top: 1px solid #282c35;
   }
+  .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .desktop {
+    display: none;
+  }
 }
 
 @media (max-width: 700px) {
@@ -290,7 +325,8 @@ footer .logo-rodape:hover {
   }
   #questao .caixa .texto-acertos,
   #questao .caixa .texto-duvidas,
-  #questao .caixa .texto-erros {
+  #questao .caixa .texto-erros,
+  #questao .caixa .texto-branco {
     font-size: 10px;
     line-height: 12px;
   }
@@ -328,6 +364,21 @@ footer .logo-rodape:hover {
 @media (max-width: 480px) {
   footer .texto-rodape {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 410px) {
+  #questao .caixas-todas {
+    width: 100%;
+    -ms-flex-wrap: wrap  !important;
+        flex-wrap: wrap  !important;
+  }
+  #questao .caixa {
+    width: 80px;
+  }
+  #questao .caixa.branca {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 

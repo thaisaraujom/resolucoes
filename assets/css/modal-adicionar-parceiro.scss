@@ -96,7 +96,7 @@
     justify-content: center;
 }
 
-.input-parceiro {
+.input-parceiro, .select-modal {
     margin: 10px 0;
     background: #ffffff;
     border-radius: 10px;
@@ -134,4 +134,24 @@
         right: -5px;
         width: 20px;
     }
+}
+
+.margin-top-valor {
+    margin-top: 10px;
+}
+
+.padding-lr-valor {
+    padding: 0 100px;
+}
+
+.texta-sem-pointer {
+    cursor: auto !important;
+}
+
+.decisao-flex-row {
+    flex-direction: row;
+}
+
+.button-salvarE {
+    width: 50%;
 }

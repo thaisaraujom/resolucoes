@@ -1,0 +1,156 @@
+#novo-simu{
+    color: #E4E0E0;
+}
+#novo-simu h1{
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-left: 7%;
+    margin-bottom: 2%;
+}
+#novo-simu form{
+    width: 45vw;
+    font-size: 1.3rem;
+    text-align: right;
+}
+.input-txt{
+    width: 44%;
+    margin: 3% 3% 0 3%;
+    height: 4vh;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    border: none;
+    font: normal 14px "Montserrat";
+}
+#simu-data{
+    width: 22%;
+    font: normal 14px "Montserrat";
+    margin: 3% 24.5% 0 3%;
+    height: 4vh;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    border: none;
+}
+.horario{
+    height: 4vh;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    margin: 3% 4% 0 0;
+    border: none;
+    font: normal 14px "Montserrat";
+    padding: 3px;
+}
+.txt-horario{
+    font-size: 12px;
+    margin-left: 3%;
+}
+#instru{
+    text-align: left;
+    display: flex;
+    gap: 23%;
+    margin-left: 11%;
+    width: 50vw;
+    flex-wrap: wrap;
+}
+#novo-simu p{
+    text-align: left;
+    margin-left: 11%;
+    margin-top: 5%;
+}
+.simu-radio{
+    margin-top: 15%;
+}
+#simu-instru{
+    width: 25vw;
+    resize: none;
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+#btn{
+    text-align: left;
+}
+#btn button{
+    width: 11vw;
+    height: 5vh;
+    background-color: #F58E08;
+    border-radius: 20px;
+    border: none;
+    font: normal 16px "Montserrat";
+    color: white;
+    font-weight: 700;
+    margin-left: 10%;
+    cursor: pointer;
+}
+form label, p{
+    font-weight: 700;
+}
+
+.op{
+    font-weight: 400;
+}
+@media (max-width: 1050px){
+    #hr{
+        display: block;
+    }
+}
+@media (max-width:770px){
+    #novo-simu{
+        color:  #282C35;
+    }
+    .input-txt{
+        border: 1px solid #A29E9E;
+        font-size: 12px;
+    }
+    .horario{
+        border: 1px solid #A29E9E;
+    }
+    #simu-data{
+        border: 1px solid #A29E9E;
+        margin-bottom: 5%;
+        font-size: 11px;
+    }
+    #novo-simu form{
+        text-align: left;
+        font-size: 1rem;
+        width: 100%;
+    }
+    #btn button{
+        width: 15vw;
+        font-size: .8rem;
+    }
+    .op{
+        font-size: .8rem;
+    }
+    #simu-instru{
+        width: 100%;
+        margin: 5% 0;
+    }
+    
+}
+@media (max-width: 620px){
+    #novo-simu h1{
+        font-size: 1.7rem;
+    }
+    #simu-data{
+        font-size: 9px;
+    }
+}
+@media (max-width: 420px){
+    #novo-simu h1{
+        font-size: 1.3rem;
+    }
+    #btn button{
+        width: 20vw;
+        font-size: .8rem;
+    }
+}
+@media (max-width: 390px){
+    #situ-simu select{
+        width: 100%;
+    }
+    #date input{
+    width: 60%;
+    }
+    #novo-simu h1{
+        font-size: 1rem;
+    }
+}

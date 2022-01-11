@@ -1,5 +1,4 @@
 .anotacao--page {
-  margin-left: 60px;
   padding: 0;
 }
 
@@ -24,9 +23,7 @@
 }
 
 .anotacao--page__footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  margin-top: 100px;
 }
 
 .anotacao--page__controls-date-time {

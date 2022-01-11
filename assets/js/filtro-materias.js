@@ -114,19 +114,19 @@ materia.forEach((materia_single) => {
 
 // })
 
-const sel = document.getElementById('materias-selector');
-const modulosMaterias =  Array.from(document.querySelectorAll('.modulos'));
+// const sel = document.getElementById('materias-selector');
+// const modulosMaterias =  Array.from(document.querySelectorAll('.modulos'));
 
-sel.addEventListener('change', function(){
-    for(let i=0; i < modulosMaterias.length; i++){
-        if(modulosMaterias[i].dataset.item != sel.value){
-            modulosMaterias[i].classList.add('esconder-modulo');
-            modulosMaterias[i].classList.remove('hide');
-            modulosMaterias[i].classList.remove('active');
-        }else{
-            modulosMaterias[i].classList.remove('hide');
-            modulosMaterias[i].classList.remove('active');
-            modulosMaterias[i].classList.remove('esconder-modulo');
-        }
-    }   
-})
+// sel.addEventListener('change', function(){
+//     for(let i=0; i < modulosMaterias.length; i++){
+//         if(modulosMaterias[i].dataset.item != sel.value){
+//             modulosMaterias[i].classList.add('esconder-modulo');
+//             modulosMaterias[i].classList.remove('hide');
+//             modulosMaterias[i].classList.remove('active');
+//         }else{
+//             modulosMaterias[i].classList.remove('hide');
+//             modulosMaterias[i].classList.remove('active');
+//             modulosMaterias[i].classList.remove('esconder-modulo');
+//         }
+//     }   
+// })

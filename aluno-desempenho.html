@@ -121,6 +121,8 @@
                         <a href="aluno-dashboard.html" class="desktop">
                             <p>Voltar</p>
                         </a>
+
+                        <a href="aluno-dashboard.html"><img class="mobile seta-voltar" src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
                     </div>
                 </div>
 
@@ -134,26 +136,30 @@
 
                 <div class="conteudo-desempenho">
                     <div class="caixas-todas">
-                        <div class="caixa acertos">
+                        <div class="caixa acertos" data-filter="acerto" data-filterStatus="acertos">
                             <p class="texto-acertos">ACERTOS</p>
                             <p class="numero-acertos">28</p>
                         </div>
-                        <div class="caixa duvidas">
+                        <div class="caixa duvidas" data-filter="duvidaa" data-filterStatus="duvidas">
                             <p class="texto-duvidas">DÚVIDAS</p>
                             <p class="numero-duvidas">06</p>
                         </div>
-                        <div class="caixa erros">
+                        <div class="caixa erros" data-filter="erro" data-filterStatus="erros">
                             <p class="texto-erros">ERROS</p>
                             <p class="numero-erros">04</p>
+                        </div>
+                        <div class="caixa branca" data-filter="branco" data-filterStatus="branca">
+                            <p class="texto-branco">SEM RESPOSTA</p>
+                            <p class="numero-branco">02</p>
                         </div>
                     </div>
     
                     <div class="cards-todos">
-                        <div class="card acerto">
+                        <div class="card acerto duvidaa">
                             <p>01</p>
                             <div class="duvida"></div>
                         </div>
-                        <div class="card acerto">
+                        <div class="card acerto duvidaa">
                             <p>02</p>
                             <div class="duvida"></div>
                         </div>
@@ -165,15 +171,15 @@
                             <p>04</p>
                             <div></div>
                         </div>
-                        <div class="card acerto">
+                        <div class="card acerto duvidaa">
                             <p>05</p>
                             <div class="duvida"></div>
                         </div>
-                        <div class="card erro">
+                        <div class="card erro duvidaa">
                             <p>06</p>
                             <div class="duvida"></div>
                         </div>
-                        <div class="card acerto">
+                        <div class="card acerto duvidaa">
                             <p>07</p>
                             <div class="duvida"></div>
                         </div>
@@ -257,7 +263,7 @@
                             <p>27</p>
                             <div></div>
                         </div>
-                        <div class="card erro">
+                        <div class="card erro duvidaa">
                             <p>28</p>
                             <div class="duvida"></div>
                         </div>
@@ -269,7 +275,7 @@
                             <p>30</p>
                             <div></div>
                         </div>
-                        <div class="card acerto">
+                        <div class="card acerto duvidaa">
                             <p>31</p>
                             <div class="duvida"></div>
                         </div>
@@ -393,8 +399,13 @@
 
     <div class="tela hide"></div>
 
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
     <script type="text/javascript" src="assets/js/menu.js"></script>
     <script type="text/javascript" src="assets/js/barra-dificuldade-desempenho.js"></script>
+    <script type="text/javascript" src="assets/js/filtro-caixas.js"></script>
 </body>
 
 </html>

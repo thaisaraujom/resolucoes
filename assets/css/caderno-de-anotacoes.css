@@ -210,7 +210,7 @@ li {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .delete-icon {
     display: block;
     position: absolute;

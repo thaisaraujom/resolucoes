@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/index_imagens/logo-icon.svg">
+    <link rel="stylesheet" href="assets/css/aluno-questao.css">
+    <link rel="stylesheet" href="assets/css/footer-light.css">
+    <link rel="stylesheet" href="assets/css/aluno-perfil.css">
+
+    <link rel="stylesheet" href="assets/css/admin-menu.css">
+    <link rel="stylesheet" href="assets/css/cursinho-perfil.css">
+    <link rel="stylesheet" href="assets/css/disciplina-dashboard.css">
+    <link rel="stylesheet" href="assets/css/pagina-questao-adm.css">
+
+
+    <link rel="stylesheet" href="assets/css/modal-apagar-parceiro.css">
+    <link rel="stylesheet" href="assets/css/adicionar-questao.css">
+    <link rel="stylesheet" href="assets/css/indicadores.css">
+
+    <title>Indicadores | Resoluções.com</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav>
+            <div class="conteudo">
+                <div class="conteudo-interno">
+                    <div class="conteudo-interno2">
+                        <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="formulario">
+
+                            <form action="">
+                                <div class="campo-busca">
+                                    <input type="text" />
+                                    <button class="buscar" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="direita">
+                        <div class="texto">
+                            <a href="">
+                                <p>Sair</p>
+                            </a>
+                        </div>
+
+                        <div class="imagem">
+                            <a href=""><img src="assets/img/aluno-questao/sair.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <header id="navbar-lateral" class="drop1 ">
+        <nav>
+            <div class="logo-menu">
+                <div class="logo"><a href=""><img src="assets/img/index_imagens/logo.svg" alt=""></a></div>
+            </div>
+
+
+            <div class="menu">
+                <ul class="itens-menu">
+                    <li class="nav-item">
+
+                        <div>
+                            <div class="book">
+                                <a href="#"><img class="icon_book" src="assets/img/admin-menu/books-other.svg"
+                                        alt=""></a>
+                                <a class="item-link item-book" href="#">
+                                    <p>Lorem Ipsum</p>
+                                </a>
+                            </div>
+                            <div class="book-down">
+                                <a href="#c-modulo">
+                                    <p>Enviar mensagem</p>
+                                </a>
+                                <a href="#c-material">
+                                    <p>Mensagens</p>
+                                </a>
+                                <a href="#c-enviar">
+                                    <p>Alunos</p>
+                                </a>
+                                <a href="#c-mensagem">
+                                    <p>Disciplinas</p>
+                                </a>
+                                <a href="#c-alunoD">
+                                    <p>Simulados</p>
+                                </a>
+                            </div>
+                            <div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href=""><img class="icon_perfil" src="assets/img/aluno-questao/perfil.svg" alt=""></a>
+                        <a href="" class="item-link item-perfil">Perfil</a>
+                    </li>
+
+                    <div>
+                        <li class="nav-item">
+                            <img class="mais-cursinho" src="assets/img/pagina-questoes-adm/disciplinas.svg" alt="">
+                            <a href="" class="item-link item-sobre">Disciplinas</a>
+                        </li>
+                    </div>
+
+                    <li class="nav-item">
+
+                        <div>
+                            <div class="book">
+                                <a href="#"><img class="icon_book" src="assets/img/pagina-questoes-adm/indicadores.svg"
+                                        alt=""></a>
+                                <a class="item-link item-book" href="#">
+                                    <p>Indicadores</p>
+                                </a>
+                            </div>
+                            <div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="questao">
+        <div class="container">
+            <div class="overlay">
+                <div class="voltar">
+                    <div class="icones">
+                        <a href="aluno-dashboard.html" class="desktop"><img class="home desktop"
+                                src="assets/img/pagina-questoes-adm/casinha.svg" alt=""></a>
+                        <img class="seta desktop" src="assets/img/pagina-questoes-adm/Vector (Stroke).svg" alt="">
+                        <a href="aluno-dashboard.html" class="desktop">
+                            <p>Voltar</p>
+                        </a>
+                        <a href="aluno-dashboard.html"><img class="mobile seta-voltar"
+                                src="./assets/img/aluno-modulo/seta-voltar.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="conteudo-perfil">
+                    <div class="titulo mobile alt-titulo">
+                        <h1>INDICADORES</h1>
+                        <p>Filtrar por: </p>
+                        <select onchange="mudar(this.value)">
+                            
+                            <option value="indicadores-geral.html" selected>Geral</option>
+                            <option value="indicadores-aluno.html">Aluno</option> 
+                          </select>
+                    </div>
+
+                    <div class="titulo desktop alt-titulo">
+                        <h1>INDICADORES</h1>
+                        <p>Filtrar por: </p>
+                        <select onchange="mudar(this.value)">
+                            <option value="indicadores-geral.html" selected>Geral</option>
+                            <option value="indicadores-aluno.html">Aluno</option> 
+                          </select>
+                    </div>
+                    
+    
+                </div>
+                
+                <div class="indicadores-cards">
+                    <div class="indicadores-um-card">
+                        <h3>Ranking de Notas</h3>
+                        <span>Alunos Matriculados: 120</span>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Pedro Davi Monteiro</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>900</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Pedro Davi Monteiro</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>900</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Pedro Davi Monteiro</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>900</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Pedro Davi Monteiro</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>900</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Pedro Davi Monteiro</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>900</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Pedro Davi Monteiro</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>900</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Pedro Davi Monteiro</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>900</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Pedro Davi Monteiro</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>900</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Pedro Davi Monteiro</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>900</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Pedro Davi Monteiro</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>900</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="indicadores-um-card">
+                        <h3>Média de acertos</h3>
+                        <div class="um-card-span alt-span">
+                            <span>Simulado:</span>
+                            <span>Taxa de acertos:</span>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado A</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>50%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado B</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>100%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado C</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>80%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado D</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>75%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado E</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>60%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado F</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>0%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado G</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>1%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="indicadores-um-card alt-titulo-card">
+                        <h3>Progresso de atividades</h3>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado A</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>50%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado B</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>100%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado C</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>80%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado D</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>75%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado E</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>60%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado F</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>0%</p>
+                            </div>
+                        </div>
+                        <div class="indicadores-linhas linha-escura"> 
+                            <div class="indicadores-nome">
+                                <p>Simulado G</p>
+                            </div>
+                            <div class="indicadores-nota">
+                                <p>1%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indicadores-grafico" >
+                    <h3>Media de Notas dos Alunos</h3>
+                    <div id="chart">
+                    </div>
+                </div>
+        
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="texto-rodape">
+            <p>Resoluções.com © 2020 | Desenvolvido pela </p>
+        </div>
+
+        <div class="logo-rodape">
+            <a class="desktop" href=""><img class="img-logo" src="./assets/img/aluno-dashboard/logo-eject.svg"
+                    alt=""></a>
+            <a class="mobile" href="http://www.ejectufrn.com.br/"><img class="img-logo"
+                    src="./assets/img/aluno-dashboard/mobile-eject.svg" alt=""></a>
+            <a href="http://www.ejectufrn.com.br/">
+                <p class="p-logo">EJECT</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="tela hide"></div>
+
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="./assets/js/perfil-select-cursinho.js"></script>
+    <script type="text/javascript" src="assets/js/modal-disciplina-perfil.js"></script>
+    <script type="text/javascript" src="assets/js/adicionar-questao.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script type="text/javascript" src="assets/js/indicadores.js"></script>
+    <script>
+        function mudar(src){
+            window.location=src;
+        }
+    </script>
+    
+</body>
+
+</html>

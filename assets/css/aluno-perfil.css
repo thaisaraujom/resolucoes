@@ -67,7 +67,7 @@ html {
 }
 
 #questao .conteudo-perfil {
-  margin: 45px 80px 20px 80px;
+  margin: 45px 60px 20px 50px;
 }
 
 #questao .campos-preenchimento {
@@ -100,7 +100,8 @@ html {
 
 #questao .cursinho-perfil-aluno-error {
   color: red;
-  margin: 0px;
+  margin: 2px 0;
+  font-size: 13px;
 }
 
 #questao .campo input {
@@ -423,6 +424,63 @@ html {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+.opcao-curso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.letra-branca-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #D7D5D4;
+  margin-right: 10px;
+}
+
+.opcao-selecionada {
+  background: #D7D5D4;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.opcao-selecionada p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #282C35;
+}
+
+.letra-branca-normal {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+
+.alt-campo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
 #alt-radio-checked .campo label:not(.radio), #alt-radio-checked .campo-select label:not(.radio) {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -626,6 +684,15 @@ html {
   #questao .btn-senha {
     color: #282C35;
   }
+<<<<<<< HEAD
+=======
+  #questao .letra-branca-bold {
+    color: #282C35;
+  }
+  #questao .letra-branca-normal {
+    color: #282C35;
+  }
+>>>>>>> 90626ee235f10c6ee3414449add53957fe475e3e
   footer {
     background-color: #ebe7e4;
   }

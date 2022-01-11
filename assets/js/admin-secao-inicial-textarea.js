@@ -1,5 +1,4 @@
 const admin_editavel = document.querySelectorAll('.admin-editavel')
-console.log(admin_editavel)
 
 admin_editavel.forEach((editar_single) => {
     const textArea = editar_single.querySelector('.textarea-editavel')
@@ -13,6 +12,5 @@ admin_editavel.forEach((editar_single) => {
         textArea.style.borderRadius = '10px 10px 0 0'
         textArea.style.height = '100px'
         buttonSalvar.style.display = 'block'
-
     })
 })

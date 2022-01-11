@@ -53,7 +53,7 @@
 
         color: #282c35;
 
-        cursor: pointer;
+        cursor: auto;
 
         -webkit-appearance: none;
     }
@@ -137,6 +137,16 @@
     }
     .admin-quem-somos {
         margin: 10px 0;
+    }
+    .botoes-acao {
+        button {
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        img {
+            width: 17px;
+            height: auto;
+        }
     }
     .caixas_valor_mais {
         background: #fff;

@@ -317,7 +317,7 @@ a:active {
   color: #2c313b;
 }
 
-.button-cancelar-modal {
+button.button-cancelar-modal {
   border-radius: 17px;
   background: #ffffff;
   font-family: 'Montserrat', sans-serif;
@@ -327,7 +327,17 @@ a:active {
   color: #2c313b;
 }
 
-.button-laranja-modal {
+button.button-sim {
+  border-radius: 17px;
+  background: #D7D5D4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 2% 10%;
+  color: #2c313b;
+  text-transform: uppercase;
+}
+
+button.button-laranja-modal {
   background: #f58e08;
   border-radius: 17px;
   font-family: 'Montserrat', sans-serif;
@@ -335,6 +345,17 @@ a:active {
   padding: 2% 3%;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+button.button-nao {
+  background: #f58e08;
+  border-radius: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 2% 10%;
+  margin-left: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 @media (max-width: 500px) {
@@ -350,8 +371,23 @@ a:active {
   .p-descricao-modal-finalizar {
     font-size: 10px;
   }
+  button.button-sim, button.button-nao {
+    font-size: 12px;
+  }
 }
 .modal-finalizarDisciplina {
   max-width: 500px;
+}
+
+.modal-anotacao-apagar-conteudo {
+  margin: 20px 0 5px 0;
+}
+
+.modal-anotacao-apagar-conteudo .p-titulo-modal-finalizar {
+  margin-bottom: 30px;
+}
+
+.modal-anotacao {
+  background-color: #D7D5D4;
 }
 /*# sourceMappingURL=modal-apagar-parceiro.css.map */

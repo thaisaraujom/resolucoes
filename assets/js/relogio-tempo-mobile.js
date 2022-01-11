@@ -46,5 +46,8 @@ function relogio2(time) {
 		setTimeout('relogio2()', 1000)
 	} else {
 		qtd_minutos_simulado1.innerHTML = "00:00";
+		let form = document.getElementById('signup-form');
+		form.submit()
+
 	}
 }

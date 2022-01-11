@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/aluno-questao.css">
     <link rel="stylesheet" href="assets/css/aluno-capa-simulado.css">
+    <link rel="stylesheet" href="assets/css/modal-finalizar-questao-simulado.css">
 
     <title>Capa - Simulado | Resoluções.com</title>
 </head>
@@ -28,18 +29,6 @@
                 <div class="conteudo-interno">
                     <div class="conteudo-interno2">
                         <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
-                        <div class="formulario">
-
-                            <form action="">
-                                <div class="campo-busca">
-                                    <input type="text" />
-                                    <button class="buscar" type="submit">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </div>
-                            </form>
-
-                        </div>
                     </div>
 
 
@@ -61,6 +50,7 @@
 
 
 
+
     <header id="navbar-lateral" class="drop1 ">
         <nav>
             <div class="logo-menu">
@@ -70,11 +60,11 @@
 
             <div class="menu">
                 <ul class="itens-menu">
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img class="alt-img-perfil" src="assets/img/dashboard/foto-perfil.svg"
+                        alt=""></a><a class="item-link" href="aluno-dashboard.html">NOME DO ALUNO</a></li>
+
                     <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg"
                                 alt=""></a><a class="item-link" href="aluno-dashboard.html">Home</a></li>
-
-                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/apostilas-branco.svg"
-                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
 
                     <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg"
                                 alt=""></a><a class="item-link" href="aluno-modulo.html">Matérias</a></li>
@@ -82,8 +72,6 @@
                     <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
                             href="" class="item-link">Monitores</a></li>
 
-                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
-                            class="item-link">Perfil</a></li>
 
                     <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
                             href="" class="item-link">Sugerir Questão</a></li>
@@ -91,7 +79,7 @@
                     <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
                             href="" class="item-link">Anotações</a></li>
 
-                    <li class="nav-item item-simulado"><a href=""><img src="assets/img/aluno-questao/simulado-laranja.svg" alt=""></a><a
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/simulado.svg" alt=""></a><a
                             href="" class="item-link">Simulado</a></li>
                 </ul>
 
@@ -374,7 +362,7 @@
                         </div>
                     </div>
 
-                    <div class="questoes-simulado-feitas">
+                    <div class="questoes-simulado-feitas questoes-simulado-feitas1">
                         <p>Já feita: <span class="ja_feita"></span></p>
                     </div>
 
@@ -386,7 +374,7 @@
 
                     <div class="final-conteudo">
                         <a href=""><div class="finalizar-simulado">
-                            <p>Finalizar Simulado</p>
+                            <p class="p-finalizar-simulado">Finalizar Simulado</p>
                         </div></a>
                         <a href=""><div class="questao-proxima">
                             <p>Questões</p>
@@ -394,17 +382,54 @@
                             <img src="./assets/img/aluno-capa-simulado/seta-questao.svg" alt="">
                         </div></a>
                     </div>
+
+                    <form action="" id="signup-form'"></form>
                 </div>
             </div>
         </div>
     </section>
+
+    
+    <div class="modal-finalizar-overlay">
+        <div class="modal-finalizar">
+            <div class="modal-sair">
+                <img class="x-sair" src="./assets/img/modal-aluno-simulado/sair.svg" alt="">
+            </div>
+
+            <div class="modal-finalizar-conteudo">
+                <p class="p-titulo-modal-finalizar">Deseja finalizar esse simulado?</p>
+                <p class="p-descricao-modal-finalizar">Você não poderá mudar as repostas se optar por finalizar esse simulado.</p>
+
+                <div class="modal-tempo-restante-simulado">
+
+                    <div class="final-conteudo">
+                        <form action="">
+                            <div class="voltar-simulado desktop">
+                                <p>Desejo voltar para o simulado</p>
+                            </div>
+                            <div class="voltar-simulado mobile">
+                                <p>Voltar para o simulado</p>
+                            </div>
+                        </form>
+
+                        <form action="">
+                            <button><div class="finalizar">
+                                <p>Finalizar</p>
+                            </div></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div class="tela hide"></div>
 
     <script type="text/javascript" src="assets/js/menu.js"></script>
     <script type="text/javascript" src="assets/js/bar-time.js"></script>
     <script type="text/javascript" src="assets/js/bar-feitas.js"></script>
-
+    <script type="text/javascript" src="assets/js/modal-finalizar-simulado1.js"></script>
 </body>
 
 </html>

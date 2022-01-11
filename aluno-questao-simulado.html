@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="assets/css/aluno-questao.css">
     <link rel="stylesheet" href="assets/css/aluno-questao-simulado.css">
     <link rel="stylesheet" href="assets/css/modal-finalizar-questao-simulado.css">
+    <link rel="stylesheet" href="assets/css/aluno-questao-menu.css">
+    
 
     <title>Questão - Simulado | Resoluções.com</title>
 </head>
@@ -29,18 +31,6 @@
                 <div class="conteudo-interno">
                     <div class="conteudo-interno2">
                         <div class="drop"><i class="fas fa-ellipsis-v"></i></div>
-                        <div class="formulario">
-
-                            <form action="">
-                                <div class="campo-busca">
-                                    <input type="text" />
-                                    <button class="buscar" type="submit">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </div>
-                            </form>
-
-                        </div>
                     </div>
 
 
@@ -62,6 +52,7 @@
 
 
 
+
     <header id="navbar-lateral" class="drop1 ">
         <nav>
             <div class="logo-menu">
@@ -71,11 +62,11 @@
 
             <div class="menu">
                 <ul class="itens-menu">
+                    <li class="nav-item"><a href="aluno-dashboard.html"><img class="alt-img-perfil" src="assets/img/dashboard/foto-perfil.svg"
+                        alt=""></a><a class="item-link" href="aluno-dashboard.html">NOME DO ALUNO</a></li>
+
                     <li class="nav-item"><a href="aluno-dashboard.html"><img src="assets/img/aluno-questao/home.svg"
                                 alt=""></a><a class="item-link" href="aluno-dashboard.html">Home</a></li>
-
-                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/apostilas-branco.svg"
-                                alt=""></a><a class="item-link" href="">Apostilas</a></li>
 
                     <li class="nav-item"><a href="aluno-modulo.html"><img src="assets/img/aluno-questao/materias.svg"
                                 alt=""></a><a class="item-link" href="aluno-modulo.html">Matérias</a></li>
@@ -83,8 +74,6 @@
                     <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/monitores.svg" alt=""></a><a
                             href="" class="item-link">Monitores</a></li>
 
-                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/perfil.svg" alt=""></a><a href=""
-                            class="item-link">Perfil</a></li>
 
                     <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/sugerir.svg" alt=""></a><a
                             href="" class="item-link">Sugerir Questão</a></li>
@@ -92,9 +81,8 @@
                     <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/anotacoes.svg" alt=""></a><a
                             href="" class="item-link">Anotações</a></li>
 
-                    <li class="nav-item item-simulado"><a href=""><img
-                                src="assets/img/aluno-questao/simulado-laranja.svg" alt=""></a><a href=""
-                            class="item-link">Simulado</a></li>
+                    <li class="nav-item"><a href=""><img src="assets/img/aluno-questao/simulado.svg" alt=""></a><a
+                            href="" class="item-link">Simulado</a></li>
                 </ul>
 
                 <div class="help">
@@ -169,7 +157,7 @@
                         </div>
 
                         <div class="alternativas">
-                            <form>
+                            <form id="signup-form">
                                 <div class="custom-radio">
                                     <input type="radio" id="alt1" name="gender" value="a">
                                     <label for="alt1" class="alternativa-text" data-numero="1"><strong>a) </strong>1,90</label><br>
@@ -307,7 +295,7 @@
     
                     <div id="bar-time" class="bar_tempo">
                         <div class="bar_tempo_progresso">
-                            <span class="progresso_tempo">30</span>
+                            <span class="progresso_tempo">10</span>
                         </div>
                     </div>
 
