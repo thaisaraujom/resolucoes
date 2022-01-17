@@ -102,7 +102,7 @@ chart.render();
 let dataPorcento = [1, 2, 5,6,8]
 
 async function getData() {
-  const response = await fetch('https://api-resolucoes.herokuapp.com/media-de-notas/');
+  const response = await fetch('https://api-resolucoes.herokuapp.com/media-de-notas/?curso=medicina');
   const { pontuacoes } = await response.json();
 
   const dataY = pontuacoes.map(({porcentagem}) => Number(porcentagem));
