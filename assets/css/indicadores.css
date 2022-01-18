@@ -188,6 +188,35 @@
   text-align: center;
 }
 
+#questao .progresso-filtros {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#questao .progresso-filtros-a {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  text-decoration: underline;
+  margin-top: -15px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+#questao .progresso-filtros-a-active {
+  color: #F58E08;
+}
+
 @media (max-width: 770px) {
   .indicadores-cards {
     -webkit-box-orient: vertical;
