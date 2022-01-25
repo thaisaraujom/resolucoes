@@ -138,6 +138,29 @@
     padding: 20px 0;
     text-align: center;
 }
+#questao {
+    .progresso-filtros {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    .progresso-filtros-a {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        text-decoration: underline;
+        margin-top: -15px;
+        margin-right: 25px;
+        margin-bottom: 10px;
+        color: #000000;
+    }
+    .progresso-filtros-a-active {
+        color: #F58E08;
+    }
+}
 @media (max-width: 770px){
     .indicadores-cards {
         flex-direction: column;

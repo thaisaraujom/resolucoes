@@ -191,6 +191,38 @@ footer {
           justify-content: flex-end;
 }
 
+.div-peso {
+  margin-top: 50px;
+}
+
+.div-peso h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #969393;
+}
+
+.peso-peso {
+  width: 250px;
+  height: 40px;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
 @media (max-width: 770px) {
   footer {
     background: #F2F2F2;
